@@ -1,39 +1,46 @@
-# Letmegrpc - docker
+# GRPC Toolbox - Docker
 
-**letmgrpc-docker** sets up a container running [letmegrpc](https://github.com/gogo/letmegrpc).
+## Goals:
+- Gather a set of utilities to import/export/convert data to protobuf files.
 
-## What is letmegrpc
+### Features:
+- Generate a web form gui from a grpc specification
+- Generate gRPC proto file from JSON
+- Generate Protobuf v3 schemas and gRPC service definitions from OpenAPI specs
 
-**Letmegrpc** is project which generates a web form GUI from a [grpc](http://www.grpc.io/) definition.
+## Languages
+List:
+- Golang
+- Nodejs
+- Javascript
 
-![image](https://github.com/gogo/letmegrpc/blob/master/screenshot.png "ScreenShot")
-> Source of screenshot: https://github.com/gogo/letmegrpc
+## Quick start
 
-## How to use this image
+### Pre-requisistes
+- docker
+- docker-compose
+- (optional) crane
 
-**letmegrpc** server runs in default container port 8080. 
+## Dependencies
 
-### Default static configuration
+### Install `Docker` and related utilities
 
-`docker run -it --rm -p 8080:8080 rudiscz/letmegrpc`
+- MacOSX
+brew install docker
+brew install docker-compose
 
-If you run image without any configuration (except exposing the port) you can hit http://localhost:8080/TestService/Foo in your browser and a demo page will be displayed.
+- Linux (Alpine)
+...
 
-### Load service proto defition via shared folder
+- Linux (Ubuntu)
+...
 
-`docker run -it --rm -p 8080:8080 -v /docker/host/dir:/var/letmegrpc/protos -e PROTO_FILE file.proto -e SERVICE_ADDRESS localhost:8888 rudiscz/letmegrpc`
+### Install `Crane`
+go get -v github.com/michaelsauter/crane
 
-This image has specified mounting point `/var/letmegrpc/protos` where the server expects proto files. The mounting point is map to the local folder `/docker/host/dir`. 
-
-To specified which proto file should be used the image reads environment variable `PROTO_FILE`. A server url which hosts gRPC API service is defined in environment variable `SERVICE_ADDRESS`.
-
-### Create own image based this one
-
-docker run -it --rm -p 8080:8080 -v `pwd`/protos:/var/letmegrpc/protos -e PROTO_FILE music.proto rudiscz/letmegrpc
-
-TBD
-
-## Limitations
-
-- it will only work for single file proto specs
-- RPC methods must to start with capital case letter
+## References
+- https://github.com/gogo/letmegrpc
+- https://github.com/rpliva/letmegrpc-docker
+- https://github.com/kpango/jrpc
+- https://github.com/NYTimes/openapi2proto
+- https://github.com/michaelsauter/crane

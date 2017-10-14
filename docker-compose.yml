@@ -112,7 +112,7 @@ services:
     ports:
     - 8083:8083
     env_file: .env
-    volume:
+    volumes:
     - "$PWD/shared/testdata/protos:/data/jrpc/protos"
     depends_on:
     - etcd1
@@ -128,7 +128,7 @@ services:
     ports:
     - 8083:8083
     env_file: .env
-    volume:
+    volumes:
     - "$PWD/shared/testdata/protos:/data/jrpc/protos"
     depends_on:
     - etcd1
