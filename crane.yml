@@ -15,6 +15,46 @@ services:
   #  - etcd1
   #  command: ["grpc-toolbox"]
 
+  # Notes:
+  #  - From LOCAL:
+  #    - $ open http://localhost:8080/TestService/Foo
+  #    - $ open http://localhost:8080/Scraper/Engine
+  letmegrpc_dist:
+    container_name: letmegrpc-alpine
+    build:
+      context: ./shared/dist/letmegrpc
+      file: "letmegrpc-alpine.dockerfile" # available: letmegrpc-alpine3.6.dockerfile, letmegrpc-scratch.dockerfile, letmegrpc-tianon.dockerfile
+    env:
+    - PROTO_FILE=scraper.proto
+    - SERVICE_ADDRESS=localhost:8888
+    # - PROTOBUF_TAG=v3.1.0        
+    ports:
+    - 8080:8080
+    volume:
+    - "$PWD/shared/testdata/protos:/data/letmegrpc/protos"
+    requires:
+    - etcd1
+    links:
+    - etcd1
+    # command: ["letmegrpc", "--addr=$SERVICE_ADDRESS", "--httpaddr=0.0.0.0:8080", "--proto_path=/var/letmegrpc/protos", "/var/letmegrpc/protos/$PROTO_FILE"]
+
+  jrpc_dist:
+    container_name: jrpc-alpine
+    build:
+      context: ./shared/dist/jrpc
+      file: "jrpc-alpine.dockerfile"
+    env:
+    # - PROTOBUF_TAG=v3.1.0        
+    ports:
+    - 8083:8083
+    volume:
+    - "$PWD/shared/testdata/protos:/data/letmegrpc/protos"
+    requires:
+    - etcd1
+    links:
+    - etcd1
+    command: ["jrpc-web"]
+
   letmegrpc_dev:
     container_name: letmegrpc_dev-alpine
     build:
@@ -23,6 +63,7 @@ services:
     env:
     - PROTO_FILE=scraper.proto
     - SERVICE_ADDRESS=localhost:8888
+    # - PROTOBUF_TAG=v3.1.0
     rm: true
     interactive: true
     tty: true
@@ -41,6 +82,8 @@ services:
     build:
       context: .
       file: "letmegrpc-alpine.dockerfile"
+    env:
+    # - PROTOBUF_TAG=v3.1.0        
     rm: true
     interactive: true
     tty: true
@@ -58,28 +101,6 @@ services:
   #  - From LOCAL:
   #    - $ open http://localhost:8080/TestService/Foo
   #    - $ open http://localhost:8080/Scraper/Engine
-  letmegrpc_dist:
-    container_name: letmegrpc-alpine
-    build:
-      context: ./shared/dist/letmegrpc
-      file: "letmegrpc-alpine.dockerfile" # available: letmegrpc-alpine3.6.dockerfile, letmegrpc-scratch.dockerfile, letmegrpc-tianon.dockerfile
-    env:
-    - PROTO_FILE=scraper.proto
-    - SERVICE_ADDRESS=localhost:8888
-    ports:
-    - 8080:8080
-    volume:
-    - "$PWD/shared/testdata/protos:/data/letmegrpc/protos"
-    requires:
-    - etcd1
-    links:
-    - etcd1
-    # command: ["letmegrpc", "--addr=$SERVICE_ADDRESS", "--httpaddr=0.0.0.0:8080", "--proto_path=/var/letmegrpc/protos", "/var/letmegrpc/protos/$PROTO_FILE"]
-
-  # Notes:
-  #  - From LOCAL:
-  #    - $ open http://localhost:8080/TestService/Foo
-  #    - $ open http://localhost:8080/Scraper/Engine
   letmegrpc_dev_ubuntu:
     container_name: letmegrpc-ubuntu
     build:
@@ -88,6 +109,7 @@ services:
     env:
     - PROTO_FILE=scraper.proto
     - SERVICE_ADDRESS=localhost:8888
+    # - PROTOBUF_TAG=v3.1.0        
     ports:
     - 8080:8080
     volume:

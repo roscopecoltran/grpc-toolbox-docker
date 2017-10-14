@@ -39,7 +39,7 @@ ENV SERVICE_ADDRESS "localhost:12345"
 EXPOSE 8080 3003
 
 # ENTRYPOINT ["letmegrpc"]
-CMD ["letmegrpc", "--addr=$SERVICE_ADDRESS", "--httpaddr=0.0.0.0:8080", "--proto_path=/data/letmegrpc/protos", "/data/letmegrpc/protos/$PROTO_FILE"]
+CMD ["letmegrpc", "--addr=${SERVICE_ADDRESS}", "--httpaddr=0.0.0.0:8080", "--proto_path=/data/letmegrpc/protos", "/data/letmegrpc/protos/${PROTO_FILE}"]
 
 # Snippets
 # From CONTAINER:

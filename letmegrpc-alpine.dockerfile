@@ -10,16 +10,26 @@ ARG GOPATH=${GOPATH:-"/go"}
 ARG APK_INTERACTIVE=${APK_INTERACTIVE:-"bash nano tree"}
 ARG APK_RUNTIME=${APK_RUNTIME:-"go git openssl ca-certificates protobuf protobuf-c"}
 ARG APK_BUILD=${APK_BUILD:-"openssl-dev gcc g++ musl-dev protobuf-dev protobuf-c-dev make"}
+ARG GOSU_VERSION=${GOSU_VERSION:-"1.10"}
 
 # env
 ENV APP_BASENAME=${APP_BASENAME:-"letmegrpc"} \
     PATH="${GOPATH}/bin:/app:$PATH" \
     GOPATH=${GOPATH:-"/go"}
 
+# Install Gosu to /usr/local/bin/gosu
+ADD https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-amd64 /usr/local/sbin/gosu
+
+# NSSwitch configuration file
+COPY shared/docker/nsswitch.conf /etc/nsswitch.conf
+
 RUN \
+	chmod +x /usr/local/sbin/gosu \
+	&& adduser -D app -h /data -s /bin/sh \
+	\
 	# install APK dependencies: build, runtime and interactive pkgs
 		\
-	    	echo "http://dl-4.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories \
+	    	&& echo "http://dl-4.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories \
 	    	&& apk upgrade \
 	      	&& apk add --no-cache ${APK_RUNTIME} \
 	      	&& apk add --no-cache --virtual=.interactive-dependencies ${APK_INTERACTIVE} \
@@ -64,8 +74,8 @@ VOLUME ["/data"]
 EXPOSE 8080 3003
 
 # ENTRYPOINT ["letmegrpc"]
-CMD ["letmegrpc", "--addr=$SERVICE_ADDRESS", "--httpaddr=0.0.0.0:8080", "--proto_path=/data/letmegrpc/protos", "/data/letmegrpc/protos/$PROTO_FILE"]
-# letmegrpc --addr=$SERVICE_ADDRESS --httpaddr=0.0.0.0:8080 --proto_path=/data/letmegrpc/protos /data/letmegrpc/protos/$PROTO_FILE
+CMD ["letmegrpc", "--addr=${SERVICE_ADDRESS}", "--httpaddr=0.0.0.0:8080", "--proto_path=/data/letmegrpc/protos", "/data/letmegrpc/protos/${PROTO_FILE}"]
+# CMD ["/usr/local/sbin/gosu", "app", "${APP_BASENAME}-web"]
 
 # Snippets
 # From CONTAINER:
