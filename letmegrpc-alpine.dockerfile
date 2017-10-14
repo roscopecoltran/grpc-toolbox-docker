@@ -29,6 +29,7 @@ RUN \
 		\
 			&& go get -v -u github.com/Masterminds/glide \
 			&& go get -v -u github.com/mitchellh/gox \
+	\
 	# install letmegrpc
 		\
 			&& cd $GOPATH \
@@ -38,25 +39,36 @@ RUN \
 		    && go get -v google.golang.org/grpc \
 		    && go get -v golang.org/x/net/context \
 		    && (cd ./src/github.com/gogo/letmegrpc && make install) \
-	# install protoc-gen-gogo 
+	\
+	# install protoc-gen-gogo
 		\
 			&& go get -v github.com/gogo/protobuf/protoc-gen-gofast \
 		    && go get -v github.com/gogo/protobuf/proto \
 		    && go get -v github.com/gogo/protobuf/jsonpb \
 		    && go get -v github.com/gogo/protobuf/protoc-gen-gogo \
 		    && go get -v github.com/gogo/protobuf/gogoproto \
-	# clean APK build dependencies 
+	\
+	# clean APK build dependencies
 	    \
-			apk del --no-cache --virtual=.build-dependencies
+			&& apk del --no-cache --virtual=.build-dependencies	\
+	&& echo " --> Build process is finished"
+
+# COPY ./src/github.com/gogo /go/src/github.com/gogo
+# WORKDIR /go/src/github.com/gogo/letmegrpc
+# RUN gox -verbose -os="linux" -arch="amd64" -output="/app/${APP_BASENAME}-{{.Dir}}" $(glide novendor)
+
+# copy proto files used in service
+ADD shared/testdata/protos /data/letmegrpc/protos
 
 VOLUME ["/data"]
-
 EXPOSE 8080 3003
 
-CMD ["letmegrpc", "--addr=$SERVICE_ADDRESS", "--httpaddr=0.0.0.0:8080", "--proto_path=/data/letmegrpc/protos", "/var/letmegrpc/protos/$PROTO_FILE"]
+# ENTRYPOINT ["letmegrpc"]
+CMD ["letmegrpc", "--addr=$SERVICE_ADDRESS", "--httpaddr=0.0.0.0:8080", "--proto_path=/data/letmegrpc/protos", "/data/letmegrpc/protos/$PROTO_FILE"]
+# letmegrpc --addr=$SERVICE_ADDRESS --httpaddr=0.0.0.0:8080 --proto_path=/data/letmegrpc/protos /data/letmegrpc/protos/$PROTO_FILE
 
 # Snippets
 # From CONTAINER:
 #   - glide install --strip-vendor
 #   - gox -verbose -os="linux" -arch="amd64" -output="/app/{{.Dir}}" $(glide novendor)
-
+#   - letmegrpc --addr=$SERVICE_ADDRESS --httpaddr=0.0.0.0:8080 --proto_path=/data/letmegrpc/protos /data/letmegrpc/protos/$PROTO_FILE

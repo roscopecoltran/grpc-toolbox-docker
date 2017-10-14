@@ -28,7 +28,7 @@ RUN go get github.com/gogo/protobuf/protoc-gen-gofast \
     && go get github.com/gogo/protobuf/gogoproto
 
 # copy proto files used in service
-ADD protos /var/letmegrpc/protos
+ADD shared/testdata/protos /data/letmegrpc/protos
 
 # share folder with protos
 VOLUME ["/data/letmegrpc/protos"]
@@ -38,4 +38,9 @@ ENV SERVICE_ADDRESS "localhost:12345"
 
 EXPOSE 8080 3003
 
-CMD letmegrpc --addr=$SERVICE_ADDRESS --httpaddr=0.0.0.0:8080 --proto_path=/data/letmegrpc/protos /var/letmegrpc/protos/$PROTO_FILE
+# ENTRYPOINT ["letmegrpc"]
+CMD ["letmegrpc", "--addr=$SERVICE_ADDRESS", "--httpaddr=0.0.0.0:8080", "--proto_path=/data/letmegrpc/protos", "/data/letmegrpc/protos/$PROTO_FILE"]
+
+# Snippets
+# From CONTAINER:
+#   - letmegrpc --addr=$SERVICE_ADDRESS --httpaddr=0.0.0.0:8080 --proto_path=/data/letmegrpc/protos /data/letmegrpc/protos/$PROTO_FILE

@@ -7,10 +7,10 @@ import (
 
 const (
 	//Serverのポート
-	ServerPort = ":8080"
+	ServerPort = ":8083"
 
 	//ログ関連の設定
-	LogFilePath = "/tmp/api.log"
+	LogFilePath = "/data/logs/jrpc/api.log"
 	LogPerm     = 0755
 
 	// HTTPリクエストのタイムアウト

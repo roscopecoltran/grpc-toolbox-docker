@@ -2,6 +2,19 @@
 # Install CRANE binary: $ go get -v github.com/michaelsauter/crane
 services:
 
+  # grpc_toolbox:
+  #  container_name: grpc-toolbox
+  #  build:
+  #    context: .
+  #    file: "letmegrpc-alpine.dockerfile"
+  #  ports:
+  #  - 8083:8083
+  #  requires:
+  #  - etcd1
+  #  links:
+  #  - etcd1
+  #  command: ["grpc-toolbox"]
+
   letmegrpc_dev:
     container_name: letmegrpc_dev-alpine
     build:
@@ -16,7 +29,7 @@ services:
     ports:
     - 8080:8080
     volume:
-    - "$PWD/shared/data/protos:/data/letmegrpc/protos"
+    - "$PWD/shared/testdata/protos:/data/letmegrpc/protos"
     requires:
     - etcd1
     links:
@@ -34,42 +47,29 @@ services:
     ports:
     - 8083:8083
     #volume:
-    #- "$PWD/shared/data/protos:/data/letmegrpc/protos"
+    #- "$PWD/shared/testdata/protos:/data/letmegrpc/protos"
     requires:
     - etcd1
     links:
     - etcd1
     command: ["/bin/bash"]
 
-  # grpc_toolbox:
-  #  container_name: grpc-toolbox
-  #  build:
-  #    context: .
-  #    file: "letmegrpc-alpine.dockerfile"
-  #  ports:
-  #  - 8083:8083
-  #  requires:
-  #  - etcd1
-  #  links:
-  #  - etcd1
-  #  command: ["grpc-toolbox"]
-
   # Notes:
   #  - From LOCAL:
   #    - $ open http://localhost:8080/TestService/Foo
   #    - $ open http://localhost:8080/Scraper/Engine
-  letmegrpc_alpine:
+  letmegrpc_dist:
     container_name: letmegrpc-alpine
     build:
-      context: .
-      file: "letmegrpc-alpine.dockerfile"
+      context: ./shared/dist/letmegrpc
+      file: "letmegrpc-alpine.dockerfile" # available: letmegrpc-alpine3.6.dockerfile, letmegrpc-scratch.dockerfile, letmegrpc-tianon.dockerfile
     env:
     - PROTO_FILE=scraper.proto
     - SERVICE_ADDRESS=localhost:8888
     ports:
     - 8080:8080
     volume:
-    - "$PWD/shared/data/protos:/data/letmegrpc/protos"
+    - "$PWD/shared/testdata/protos:/data/letmegrpc/protos"
     requires:
     - etcd1
     links:
@@ -80,7 +80,7 @@ services:
   #  - From LOCAL:
   #    - $ open http://localhost:8080/TestService/Foo
   #    - $ open http://localhost:8080/Scraper/Engine
-  letmegrpc_ubuntu:
+  letmegrpc_dev_ubuntu:
     container_name: letmegrpc-ubuntu
     build:
       context: .
@@ -91,7 +91,7 @@ services:
     ports:
     - 8080:8080
     volume:
-    - "$PWD/shared/data/protos:/var/letmegrpc/protos"
+    - "$PWD/shared/testdata/protos:/var/letmegrpc/protos"
     requires:
     - etcd1
     links:
@@ -106,7 +106,7 @@ services:
     - "2379:2379"
     - "2380:2380"
     volume:
-    - ./shared/data/etcd/unit_1:/etcd-data
+    - "$PWD/shared/data/etcd/unit_1:/etcd-data"
     restart: always
     env:
     - ETCD_NAME=etcd1
@@ -122,20 +122,20 @@ services:
 groups:
   default:
   # - grpc_toolbox
-  - letmegrpc_alpine 
+  - letmegrpc_dist 
   - etcd1
   dev:
   - letmegrpc_dev
   - jrpc_dev
   - etcd1
   ubuntu:
-  - letmegrpc__ubuntu
+  - letmegrpc_ubuntu
   - etcd1
   alpine: 
-  - letmegrpc_alpine 
+  - letmegrpc_dist 
   - etcd1
 
 accelerated-mounts:
-  "$PWD/shared/data/protos:/var/letmegrpc/protos": # using ocaml
+  "$PWD/shared/testdata/protos:/var/letmegrpc/protos": # using ocaml
     uid: 1000
     gid: 1000

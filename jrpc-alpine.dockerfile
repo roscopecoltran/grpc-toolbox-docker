@@ -34,16 +34,18 @@ RUN \
 #	    \
 #			apk del --no-cache --virtual=.build-dependencies
 
-COPY ./src /go/src
+COPY ./src/github.com/kpango /go/src/github.com/kpango
 WORKDIR /go/src/github.com/kpango/jrpc
+
+RUN gox -verbose -os="linux" -arch="amd64" -output="/app/${APP_BASENAME}-{{.Dir}}" $(glide novendor)
 
 VOLUME ["/data"]
 
 EXPOSE 8083
 
-CMD ["/bin/bash"]
+CMD ["${APP_BASENAME}-web"]
 
-# CMD ["letmegrpc", "--addr=$SERVICE_ADDRESS", "--httpaddr=0.0.0.0:8080", "--proto_path=/data/letmegrpc/protos", "/var/letmegrpc/protos/$PROTO_FILE"]
+# CMD ["web", ""]
 # Snippets
 # From CONTAINER:
 #   - glide install --strip-vendor
