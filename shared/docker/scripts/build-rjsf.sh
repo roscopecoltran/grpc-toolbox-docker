@@ -17,7 +17,7 @@ function build_all() {
 	cd ${APP_WORKDIR}
 
 	# deps
-	npm i -g npm to update
+	# npm i -g npm to update
 	npm install
 
 	# playground
@@ -38,9 +38,12 @@ function build_all() {
 }
 
 case "$1" in
-  	'rebuild-all')
+  	'rebuild-start')
 		build_all
 		npm run start
+	;;
+  	'build-all')
+		build_all
 	;;
   	'build-all-bash')
 		build_all
@@ -53,6 +56,6 @@ case "$1" in
 	  	exec /bin/bash $@
 	;;
   	*)
-		npm run start
+		echo "Nothing to do"
 	;;
 esac

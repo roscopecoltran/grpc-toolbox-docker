@@ -13,7 +13,7 @@ ARG GOSU_VERSION=${GOSU_VERSION:-"1.10"}
 
 # env
 ENV APP_BASENAME=${APP_BASENAME:-"react-jsonschema-form"} \
-	RJSF_DEV_SERVER=${RJSF_DEV_SERVER:-"localhost:3008"}
+	RJSF_DEV_SERVER=${RJSF_DEV_SERVER:-"0.0.0.0:3008"}
 
 # Install Gosu to /usr/local/bin/gosu
 ADD https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-amd64 /usr/local/sbin/gosu
@@ -49,5 +49,5 @@ VOLUME ["/data"]
 
 EXPOSE 3008
 
-# CMD ["/bin/bash"]
-CMD ["/scripts/build-rjsf.sh", "build-all-bash"]
+CMD ["/bin/bash"]
+# CMD ["/scripts/build-rjsf.sh", "build-all-bash"]

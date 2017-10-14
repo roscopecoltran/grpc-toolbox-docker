@@ -139,7 +139,7 @@ services:
     ports:
     - 3008:3008
     environment:
-    - RJSF_DEV_SERVER=localhost:3008
+    - RJSF_DEV_SERVER=0.0.0.0:3008
     # - NODE_ENV=production
     # - NODE_PATH=/data/node_modules # ref. https://stackoverflow.com/questions/26293049/specify-path-to-node-modules-in-package-json
     volumes:
@@ -147,7 +147,7 @@ services:
     - "$PWD/shared/dist/rjsf:/data/build"
     - "$PWD/shared/testdata/jsonschema:/data/rjsf/jsonschema"
     working_dir: /nodejs/src/github.com/mozilla-services/react-jsonschema-form
-    command: ["/scripts/build-rjsf.sh", "rebuild-all"]
+    command: ["/scripts/build-rjsf.sh", "rebuild-start"]
     # command: ["/scripts/build-rjsf.sh", "rebuild-bash-all"]
 
   etcd1:

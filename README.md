@@ -43,4 +43,5 @@ go get -v github.com/michaelsauter/crane
 - https://github.com/rpliva/letmegrpc-docker
 - https://github.com/kpango/jrpc
 - https://github.com/NYTimes/openapi2proto
+- https://github.com/chrusty/protoc-gen-jsonschema
 - https://github.com/michaelsauter/crane
