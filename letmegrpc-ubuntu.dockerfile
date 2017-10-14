@@ -27,11 +27,11 @@ RUN go get github.com/gogo/protobuf/protoc-gen-gofast \
 ADD protos /var/letmegrpc/protos
 
 # share folder with protos
-VOLUME ["/var/letmegrpc/protos"]
+VOLUME ["/data/letmegrpc/protos"]
 
 ENV PROTO_FILE "test.proto"
 ENV SERVICE_ADDRESS "localhost:12345"
 
-EXPOSE 8080
+EXPOSE 8080 3003
 
-CMD letmegrpc --addr=$SERVICE_ADDRESS --httpaddr=0.0.0.0:8080 --proto_path=/var/letmegrpc/protos /var/letmegrpc/protos/$PROTO_FILE
+CMD letmegrpc --addr=$SERVICE_ADDRESS --httpaddr=0.0.0.0:8080 --proto_path=/data/letmegrpc/protos /var/letmegrpc/protos/$PROTO_FILE

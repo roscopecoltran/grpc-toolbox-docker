@@ -29,6 +29,8 @@ To specified which proto file should be used the image reads environment variabl
 
 ### Create own image based this one
 
+docker run -it --rm -p 8080:8080 -v `pwd`/protos:/var/letmegrpc/protos -e PROTO_FILE music.proto rudiscz/letmegrpc
+
 TBD
 
 ## Limitations

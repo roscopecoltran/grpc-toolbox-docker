@@ -1,0 +1,88 @@
+// Copyright (c) 2015, LetMeGRPCAuthors. All rights reserved.
+//
+// Redistribution and use in source and binary forms, with or without
+// modification, are permitted provided that the following conditions are
+// met:
+//
+//     * Redistributions of source code must retain the above copyright
+// notice, this list of conditions and the following disclaimer.
+//     * Redistributions in binary form must reproduce the above
+// copyright notice, this list of conditions and the following disclaimer
+// in the documentation and/or other materials provided with the
+// distribution.
+//
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+syntax = "proto3";
+
+package serve;
+
+enum Instrument {
+    Voice = 0;
+    Guitar = 1;
+    Drum = 2;
+}
+
+enum Genre {
+	Pop = 0;
+	Rock = 1;
+	Jazz = 2;
+	NintendoCore = 3;
+	Indie = 4;
+	Punk = 5;
+	Dance = 6;
+}
+
+message Artist {
+	//Pick something original
+	string Name = 1;
+	Instrument Role = 2;
+}
+
+message Song {
+	string Name = 1;
+	//1,2,3,4...
+	uint64 Track = 2;
+	double Duration = 3;
+	repeated Artist Composer = 4;
+}
+
+message Album {
+	//Untitled?
+	string Name = 1;
+	repeated Song Song = 2;
+	Genre Genre = 3;
+	//2015
+	string Year = 4;
+	//Uhm ja
+	repeated string Producer = 5;
+	bool Mediocre = 6;
+	bool Rated = 7;
+	string Epilogue = 8;
+	repeated bool Likes = 9;
+}
+
+message EndLess {
+	Tree Tree = 1;
+}
+
+message Tree {
+	string Value = 1;
+	Tree Left = 2;
+	Tree Right = 3;
+}
+
+service Label {
+	rpc Produce(Album) returns (Album);
+	rpc Loop(EndLess) returns (EndLess);
+}

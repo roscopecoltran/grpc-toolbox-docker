@@ -1,0 +1,110 @@
+---
+# Install CRANE binary: $ go get -v github.com/michaelsauter/crane
+services:
+
+  # Notes:
+  #  - From LOCAL:
+  #    - [TO DO]
+  #  - From DOCKER CONTAINER:
+  #    - $ letmegrpc --addr=$SERVICE_ADDRESS --httpaddr=0.0.0.0:8080 --proto_path=/var/letmegrpc/protos /var/letmegrpc/protos/$PROTO_FILE
+  dev:
+    container_name: letmegrpc-alpine
+    build:
+      context: .
+      file: "letmegrpc-alpine.dockerfile"
+    env:
+    - PROTO_FILE=scraper.proto
+    - SERVICE_ADDRESS=localhost:8888
+    rm: true
+    interactive: true
+    tty: true
+    ports:
+    - 8080:8080
+    volume:
+    - "$PWD/shared/data/protos:/data/letmegrpc/protos"
+    requires:
+    - etcd1
+    links:
+    - etcd1
+    command: ["/bin/bash"]
+
+  # Notes:
+  #  - From LOCAL:
+  #    - $ open http://localhost:8080/TestService/Foo
+  #    - $ open http://localhost:8080/Scraper/Engine
+  server_alpine:
+    container_name: letmegrpc-alpine
+    build:
+      context: .
+      file: "letmegrpc-alpine.dockerfile"
+    env:
+    - PROTO_FILE=scraper.proto
+    - SERVICE_ADDRESS=localhost:8888
+    ports:
+    - 8080:8080
+    volume:
+    - "$PWD/shared/data/protos:/data/letmegrpc/protos"
+    requires:
+    - etcd1
+    links:
+    - etcd1
+    # command: ["letmegrpc", "--addr=$SERVICE_ADDRESS", "--httpaddr=0.0.0.0:8080", "--proto_path=/var/letmegrpc/protos", "/var/letmegrpc/protos/$PROTO_FILE"]
+
+  # Notes:
+  #  - From LOCAL:
+  #    - $ open http://localhost:8080/TestService/Foo
+  #    - $ open http://localhost:8080/Scraper/Engine
+  letmegrpc_ubuntu:
+    container_name: letmegrpc-ubuntu
+    build:
+      context: .
+      file: "letmegrpc-ubuntu.dockerfile"
+    env:
+    - PROTO_FILE=scraper.proto
+    - SERVICE_ADDRESS=localhost:8888
+    ports:
+    - 8080:8080
+    volume:
+    - "$PWD/shared/data/protos:/var/letmegrpc/protos"
+    requires:
+    - etcd1
+    links:
+    - etcd1
+    # command: ["letmegrpc", "--addr=$SERVICE_ADDRESS", "--httpaddr=0.0.0.0:8080", "--proto_path=/var/letmegrpc/protos", "/var/letmegrpc/protos/$PROTO_FILE"]
+
+  letmegrpc_etcd1:
+    image: quay.io/coreos/etcd:v3.2.4
+    hostname: etcd1
+    container_name: letmegrpc-etcd1
+    ports:
+    - "2379:2379"
+    - "2380:2380"
+    volume:
+    - ./shared/data/etcd/unit_1:/etcd-data
+    restart: always
+    env:
+    - ETCD_NAME=etcd1
+    - ETCD_INITIAL_ADVERTISE_PEER_URLS=http://192.168.1.200:2380
+    - ETCD_LISTEN_PEER_URLS=http://0.0.0.0:2380
+    - ETCD_ADVERTISE_CLIENT_URLS=http://192.168.1.200:2379
+    - ETCD_LISTEN_CLIENT_URLS=http://0.0.0.0:2379
+    - ETCD_INITIAL_CLUSTER=etcd1=http://192.168.1.200:2380
+    - ETCD_DATA_DIR=/etcd-data
+    - ETCD_INITIAL_CLUSTER_TOKEN=etcd-cluster-1
+    - ETCD_INITIAL_CLUSTER_STATE=new
+
+groups:
+  default:
+  - dev
+  - etcd1
+  ubuntu:
+  - server_ubuntu
+  - etcd1
+  alpine: 
+  - server_alpine 
+  - etcd1
+
+accelerated-mounts:
+  "$PWD/shared/data/protos:/var/letmegrpc/protos": # using ocaml
+    uid: 1000
+    gid: 1000

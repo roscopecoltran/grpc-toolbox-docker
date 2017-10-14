@@ -1,0 +1,21 @@
+---
+Name: google-search
+Disabled: false
+Debug: false
+Route: "/google/search"
+BaseURL: https://www.google.com
+PatternURL: "/search?q={{query}}"
+Timeout: 3
+Selector: 0
+List:
+- Name: result
+  Block:
+    Items: "%23res%20div[class=g]"
+    Count: "%23resultStats"
+    Details:
+    - Title:
+      - Path: h3%20a
+      Url:
+      - Path: h3%20a
+      - Path: "@href"
+      - Path: query-param(q)
