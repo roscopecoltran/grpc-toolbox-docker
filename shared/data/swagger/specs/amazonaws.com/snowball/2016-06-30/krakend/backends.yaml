@@ -1,0 +1,517 @@
+backends:
+- group: amazon-import-export-snowball-2016-06-30
+  url_pattern: /#CancelJob
+  method: POST
+  encoding: json
+  host:
+  - http://snowball.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: AWS Snowball is a petabyte-scale data transport solution that uses
+      secure appliances to transfer large amounts of data between your on-premises
+      data centers and Amazon Simple Storage Service (Amazon S3). The Snowball commands
+      described here provide access to the same functionality that is available in
+      the AWS Snowball Management Console, which enables you to create and manage
+      jobs for Snowball. To transfer data locally with a Snowball appliance, you'll
+      need to use the Snowball client or the Amazon S3 API adapter for Snowball. For
+      more information, see the <a href="http://docs.aws.amazon.com/AWSImportExport/latest/ug/api-reference.html">User
+      Guide</a>.
+    version: 2016-06-30
+    slug: amazon-import-export-snowball-2016-06-30-canceljob
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://snowball.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-import-export-snowball-2016-06-30
+  url_pattern: /#CreateAddress
+  method: POST
+  encoding: json
+  host:
+  - http://snowball.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: AWS Snowball is a petabyte-scale data transport solution that uses
+      secure appliances to transfer large amounts of data between your on-premises
+      data centers and Amazon Simple Storage Service (Amazon S3). The Snowball commands
+      described here provide access to the same functionality that is available in
+      the AWS Snowball Management Console, which enables you to create and manage
+      jobs for Snowball. To transfer data locally with a Snowball appliance, you'll
+      need to use the Snowball client or the Amazon S3 API adapter for Snowball. For
+      more information, see the <a href="http://docs.aws.amazon.com/AWSImportExport/latest/ug/api-reference.html">User
+      Guide</a>.
+    version: 2016-06-30
+    slug: amazon-import-export-snowball-2016-06-30-createaddress
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://snowball.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-import-export-snowball-2016-06-30
+  url_pattern: /#CreateCluster
+  method: POST
+  encoding: json
+  host:
+  - http://snowball.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: AWS Snowball is a petabyte-scale data transport solution that uses
+      secure appliances to transfer large amounts of data between your on-premises
+      data centers and Amazon Simple Storage Service (Amazon S3). The Snowball commands
+      described here provide access to the same functionality that is available in
+      the AWS Snowball Management Console, which enables you to create and manage
+      jobs for Snowball. To transfer data locally with a Snowball appliance, you'll
+      need to use the Snowball client or the Amazon S3 API adapter for Snowball. For
+      more information, see the <a href="http://docs.aws.amazon.com/AWSImportExport/latest/ug/api-reference.html">User
+      Guide</a>.
+    version: 2016-06-30
+    slug: amazon-import-export-snowball-2016-06-30-createcluster
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://snowball.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-import-export-snowball-2016-06-30
+  url_pattern: /#CreateJob
+  method: POST
+  encoding: json
+  host:
+  - http://snowball.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: AWS Snowball is a petabyte-scale data transport solution that uses
+      secure appliances to transfer large amounts of data between your on-premises
+      data centers and Amazon Simple Storage Service (Amazon S3). The Snowball commands
+      described here provide access to the same functionality that is available in
+      the AWS Snowball Management Console, which enables you to create and manage
+      jobs for Snowball. To transfer data locally with a Snowball appliance, you'll
+      need to use the Snowball client or the Amazon S3 API adapter for Snowball. For
+      more information, see the <a href="http://docs.aws.amazon.com/AWSImportExport/latest/ug/api-reference.html">User
+      Guide</a>.
+    version: 2016-06-30
+    slug: amazon-import-export-snowball-2016-06-30-createjob
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://snowball.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-import-export-snowball-2016-06-30
+  url_pattern: /#DescribeAddress
+  method: POST
+  encoding: json
+  host:
+  - http://snowball.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: AWS Snowball is a petabyte-scale data transport solution that uses
+      secure appliances to transfer large amounts of data between your on-premises
+      data centers and Amazon Simple Storage Service (Amazon S3). The Snowball commands
+      described here provide access to the same functionality that is available in
+      the AWS Snowball Management Console, which enables you to create and manage
+      jobs for Snowball. To transfer data locally with a Snowball appliance, you'll
+      need to use the Snowball client or the Amazon S3 API adapter for Snowball. For
+      more information, see the <a href="http://docs.aws.amazon.com/AWSImportExport/latest/ug/api-reference.html">User
+      Guide</a>.
+    version: 2016-06-30
+    slug: amazon-import-export-snowball-2016-06-30-describeaddress
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://snowball.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-import-export-snowball-2016-06-30
+  url_pattern: /#DescribeAddresses
+  method: POST
+  encoding: json
+  host:
+  - http://snowball.amazonaws.com
+  query_string_params:
+  - MaxResults
+  - NextToken
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: AWS Snowball is a petabyte-scale data transport solution that uses
+      secure appliances to transfer large amounts of data between your on-premises
+      data centers and Amazon Simple Storage Service (Amazon S3). The Snowball commands
+      described here provide access to the same functionality that is available in
+      the AWS Snowball Management Console, which enables you to create and manage
+      jobs for Snowball. To transfer data locally with a Snowball appliance, you'll
+      need to use the Snowball client or the Amazon S3 API adapter for Snowball. For
+      more information, see the <a href="http://docs.aws.amazon.com/AWSImportExport/latest/ug/api-reference.html">User
+      Guide</a>.
+    version: 2016-06-30
+    slug: amazon-import-export-snowball-2016-06-30-describeaddresses
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://snowball.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-import-export-snowball-2016-06-30
+  url_pattern: /#DescribeCluster
+  method: POST
+  encoding: json
+  host:
+  - http://snowball.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: AWS Snowball is a petabyte-scale data transport solution that uses
+      secure appliances to transfer large amounts of data between your on-premises
+      data centers and Amazon Simple Storage Service (Amazon S3). The Snowball commands
+      described here provide access to the same functionality that is available in
+      the AWS Snowball Management Console, which enables you to create and manage
+      jobs for Snowball. To transfer data locally with a Snowball appliance, you'll
+      need to use the Snowball client or the Amazon S3 API adapter for Snowball. For
+      more information, see the <a href="http://docs.aws.amazon.com/AWSImportExport/latest/ug/api-reference.html">User
+      Guide</a>.
+    version: 2016-06-30
+    slug: amazon-import-export-snowball-2016-06-30-describecluster
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://snowball.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-import-export-snowball-2016-06-30
+  url_pattern: /#DescribeJob
+  method: POST
+  encoding: json
+  host:
+  - http://snowball.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: AWS Snowball is a petabyte-scale data transport solution that uses
+      secure appliances to transfer large amounts of data between your on-premises
+      data centers and Amazon Simple Storage Service (Amazon S3). The Snowball commands
+      described here provide access to the same functionality that is available in
+      the AWS Snowball Management Console, which enables you to create and manage
+      jobs for Snowball. To transfer data locally with a Snowball appliance, you'll
+      need to use the Snowball client or the Amazon S3 API adapter for Snowball. For
+      more information, see the <a href="http://docs.aws.amazon.com/AWSImportExport/latest/ug/api-reference.html">User
+      Guide</a>.
+    version: 2016-06-30
+    slug: amazon-import-export-snowball-2016-06-30-describejob
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://snowball.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-import-export-snowball-2016-06-30
+  url_pattern: /#GetJobManifest
+  method: POST
+  encoding: json
+  host:
+  - http://snowball.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: AWS Snowball is a petabyte-scale data transport solution that uses
+      secure appliances to transfer large amounts of data between your on-premises
+      data centers and Amazon Simple Storage Service (Amazon S3). The Snowball commands
+      described here provide access to the same functionality that is available in
+      the AWS Snowball Management Console, which enables you to create and manage
+      jobs for Snowball. To transfer data locally with a Snowball appliance, you'll
+      need to use the Snowball client or the Amazon S3 API adapter for Snowball. For
+      more information, see the <a href="http://docs.aws.amazon.com/AWSImportExport/latest/ug/api-reference.html">User
+      Guide</a>.
+    version: 2016-06-30
+    slug: amazon-import-export-snowball-2016-06-30-getjobmanifest
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://snowball.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-import-export-snowball-2016-06-30
+  url_pattern: /#GetJobUnlockCode
+  method: POST
+  encoding: json
+  host:
+  - http://snowball.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: AWS Snowball is a petabyte-scale data transport solution that uses
+      secure appliances to transfer large amounts of data between your on-premises
+      data centers and Amazon Simple Storage Service (Amazon S3). The Snowball commands
+      described here provide access to the same functionality that is available in
+      the AWS Snowball Management Console, which enables you to create and manage
+      jobs for Snowball. To transfer data locally with a Snowball appliance, you'll
+      need to use the Snowball client or the Amazon S3 API adapter for Snowball. For
+      more information, see the <a href="http://docs.aws.amazon.com/AWSImportExport/latest/ug/api-reference.html">User
+      Guide</a>.
+    version: 2016-06-30
+    slug: amazon-import-export-snowball-2016-06-30-getjobunlockcode
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://snowball.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-import-export-snowball-2016-06-30
+  url_pattern: /#GetSnowballUsage
+  method: POST
+  encoding: json
+  host:
+  - http://snowball.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: AWS Snowball is a petabyte-scale data transport solution that uses
+      secure appliances to transfer large amounts of data between your on-premises
+      data centers and Amazon Simple Storage Service (Amazon S3). The Snowball commands
+      described here provide access to the same functionality that is available in
+      the AWS Snowball Management Console, which enables you to create and manage
+      jobs for Snowball. To transfer data locally with a Snowball appliance, you'll
+      need to use the Snowball client or the Amazon S3 API adapter for Snowball. For
+      more information, see the <a href="http://docs.aws.amazon.com/AWSImportExport/latest/ug/api-reference.html">User
+      Guide</a>.
+    version: 2016-06-30
+    slug: amazon-import-export-snowball-2016-06-30-getsnowballusage
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://snowball.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-import-export-snowball-2016-06-30
+  url_pattern: /#ListClusterJobs
+  method: POST
+  encoding: json
+  host:
+  - http://snowball.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: AWS Snowball is a petabyte-scale data transport solution that uses
+      secure appliances to transfer large amounts of data between your on-premises
+      data centers and Amazon Simple Storage Service (Amazon S3). The Snowball commands
+      described here provide access to the same functionality that is available in
+      the AWS Snowball Management Console, which enables you to create and manage
+      jobs for Snowball. To transfer data locally with a Snowball appliance, you'll
+      need to use the Snowball client or the Amazon S3 API adapter for Snowball. For
+      more information, see the <a href="http://docs.aws.amazon.com/AWSImportExport/latest/ug/api-reference.html">User
+      Guide</a>.
+    version: 2016-06-30
+    slug: amazon-import-export-snowball-2016-06-30-listclusterjobs
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://snowball.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-import-export-snowball-2016-06-30
+  url_pattern: /#ListClusters
+  method: POST
+  encoding: json
+  host:
+  - http://snowball.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: AWS Snowball is a petabyte-scale data transport solution that uses
+      secure appliances to transfer large amounts of data between your on-premises
+      data centers and Amazon Simple Storage Service (Amazon S3). The Snowball commands
+      described here provide access to the same functionality that is available in
+      the AWS Snowball Management Console, which enables you to create and manage
+      jobs for Snowball. To transfer data locally with a Snowball appliance, you'll
+      need to use the Snowball client or the Amazon S3 API adapter for Snowball. For
+      more information, see the <a href="http://docs.aws.amazon.com/AWSImportExport/latest/ug/api-reference.html">User
+      Guide</a>.
+    version: 2016-06-30
+    slug: amazon-import-export-snowball-2016-06-30-listclusters
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://snowball.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-import-export-snowball-2016-06-30
+  url_pattern: /#ListJobs
+  method: POST
+  encoding: json
+  host:
+  - http://snowball.amazonaws.com
+  query_string_params:
+  - MaxResults
+  - NextToken
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: AWS Snowball is a petabyte-scale data transport solution that uses
+      secure appliances to transfer large amounts of data between your on-premises
+      data centers and Amazon Simple Storage Service (Amazon S3). The Snowball commands
+      described here provide access to the same functionality that is available in
+      the AWS Snowball Management Console, which enables you to create and manage
+      jobs for Snowball. To transfer data locally with a Snowball appliance, you'll
+      need to use the Snowball client or the Amazon S3 API adapter for Snowball. For
+      more information, see the <a href="http://docs.aws.amazon.com/AWSImportExport/latest/ug/api-reference.html">User
+      Guide</a>.
+    version: 2016-06-30
+    slug: amazon-import-export-snowball-2016-06-30-listjobs
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://snowball.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-import-export-snowball-2016-06-30
+  url_pattern: /#UpdateCluster
+  method: POST
+  encoding: json
+  host:
+  - http://snowball.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: AWS Snowball is a petabyte-scale data transport solution that uses
+      secure appliances to transfer large amounts of data between your on-premises
+      data centers and Amazon Simple Storage Service (Amazon S3). The Snowball commands
+      described here provide access to the same functionality that is available in
+      the AWS Snowball Management Console, which enables you to create and manage
+      jobs for Snowball. To transfer data locally with a Snowball appliance, you'll
+      need to use the Snowball client or the Amazon S3 API adapter for Snowball. For
+      more information, see the <a href="http://docs.aws.amazon.com/AWSImportExport/latest/ug/api-reference.html">User
+      Guide</a>.
+    version: 2016-06-30
+    slug: amazon-import-export-snowball-2016-06-30-updatecluster
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://snowball.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-import-export-snowball-2016-06-30
+  url_pattern: /#UpdateJob
+  method: POST
+  encoding: json
+  host:
+  - http://snowball.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: AWS Snowball is a petabyte-scale data transport solution that uses
+      secure appliances to transfer large amounts of data between your on-premises
+      data centers and Amazon Simple Storage Service (Amazon S3). The Snowball commands
+      described here provide access to the same functionality that is available in
+      the AWS Snowball Management Console, which enables you to create and manage
+      jobs for Snowball. To transfer data locally with a Snowball appliance, you'll
+      need to use the Snowball client or the Amazon S3 API adapter for Snowball. For
+      more information, see the <a href="http://docs.aws.amazon.com/AWSImportExport/latest/ug/api-reference.html">User
+      Guide</a>.
+    version: 2016-06-30
+    slug: amazon-import-export-snowball-2016-06-30-updatejob
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://snowball.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-import-export-snowball-2016-06-30
+  url_pattern: /
+  method: POST
+  encoding: json
+  host:
+  - http://snowball.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: AWS Snowball is a petabyte-scale data transport solution that uses
+      secure appliances to transfer large amounts of data between your on-premises
+      data centers and Amazon Simple Storage Service (Amazon S3). The Snowball commands
+      described here provide access to the same functionality that is available in
+      the AWS Snowball Management Console, which enables you to create and manage
+      jobs for Snowball. To transfer data locally with a Snowball appliance, you'll
+      need to use the Snowball client or the Amazon S3 API adapter for Snowball. For
+      more information, see the <a href="http://docs.aws.amazon.com/AWSImportExport/latest/ug/api-reference.html">User
+      Guide</a>.
+    version: 2016-06-30
+    slug: amazon-import-export-snowball-2016-06-30
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://snowball.amazonaws.com
+    topics:
+    - cloud

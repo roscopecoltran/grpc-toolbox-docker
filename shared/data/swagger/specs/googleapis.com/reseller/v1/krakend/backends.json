@@ -1,0 +1,838 @@
+{
+	"backends": [
+		{
+			"group": "enterprise-apps-reseller-v1",
+			"url_pattern": "/apps/reseller/v1/customers",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"alternateEmail",
+				"customerDomain",
+				"customerDomainVerified",
+				"customerId",
+				"kind",
+				"phoneNumber",
+				"resourceUiUrl"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages your customers and their subscriptions.",
+				"version": "v1",
+				"slug": "enterprise-apps-reseller-v1-apps-reseller-v1-customers",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"alternateEmail": "alternateEmail",
+					"customerDomain": "customerDomain",
+					"customerDomainVerified": "customerDomainVerified",
+					"customerId": "customerId",
+					"kind": "kind",
+					"phoneNumber": "phoneNumber",
+					"resourceUiUrl": "resourceUiUrl"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"enterprise"
+				]
+			}
+		},
+		{
+			"group": "enterprise-apps-reseller-v1",
+			"url_pattern": "/apps/reseller/v1/customers/{customerId}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"alternateEmail",
+				"customerDomain",
+				"customerDomainVerified",
+				"customerId",
+				"kind",
+				"phoneNumber",
+				"resourceUiUrl"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages your customers and their subscriptions.",
+				"version": "v1",
+				"slug": "enterprise-apps-reseller-v1-apps-reseller-v1-customers-customerid",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"alternateEmail": "alternateEmail",
+					"customerDomain": "customerDomain",
+					"customerDomainVerified": "customerDomainVerified",
+					"customerId": "customerId",
+					"kind": "kind",
+					"phoneNumber": "phoneNumber",
+					"resourceUiUrl": "resourceUiUrl"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"enterprise"
+				]
+			}
+		},
+		{
+			"group": "enterprise-apps-reseller-v1",
+			"url_pattern": "/apps/reseller/v1/customers/{customerId}/subscriptions",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"billingMethod",
+				"creationTime",
+				"customerDomain",
+				"customerId",
+				"dealCode",
+				"kind",
+				"plan",
+				"plan.commitmentInterval",
+				"plan.commitmentInterval.endTime",
+				"plan.commitmentInterval.startTime",
+				"plan.isCommitmentPlan",
+				"plan.planName",
+				"purchaseOrderId",
+				"resourceUiUrl",
+				"skuId",
+				"skuName",
+				"status",
+				"subscriptionId",
+				"suspensionReasons",
+				"transferInfo",
+				"transferInfo.minimumTransferableSeats",
+				"transferInfo.transferabilityExpirationTime",
+				"trialSettings",
+				"trialSettings.isInTrial",
+				"trialSettings.trialEndTime"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages your customers and their subscriptions.",
+				"version": "v1",
+				"slug": "enterprise-apps-reseller-v1-apps-reseller-v1-customers-customerid-subscriptions",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"billingMethod": "billingMethod",
+					"creationTime": "creationTime",
+					"customerDomain": "customerDomain",
+					"customerId": "customerId",
+					"dealCode": "dealCode",
+					"kind": "kind",
+					"plan": "plan",
+					"plan.commitmentInterval": "plan.commitmentInterval",
+					"plan.commitmentInterval.endTime": "plan.commitmentInterval.endTime",
+					"plan.commitmentInterval.startTime": "plan.commitmentInterval.startTime",
+					"plan.isCommitmentPlan": "plan.isCommitmentPlan",
+					"plan.planName": "plan.planName",
+					"purchaseOrderId": "purchaseOrderId",
+					"resourceUiUrl": "resourceUiUrl",
+					"skuId": "skuId",
+					"skuName": "skuName",
+					"status": "status",
+					"subscriptionId": "subscriptionId",
+					"suspensionReasons": "suspensionReasons",
+					"transferInfo": "transferInfo",
+					"transferInfo.minimumTransferableSeats": "transferInfo.minimumTransferableSeats",
+					"transferInfo.transferabilityExpirationTime": "transferInfo.transferabilityExpirationTime",
+					"trialSettings": "trialSettings",
+					"trialSettings.isInTrial": "trialSettings.isInTrial",
+					"trialSettings.trialEndTime": "trialSettings.trialEndTime"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"enterprise"
+				]
+			}
+		},
+		{
+			"group": "enterprise-apps-reseller-v1",
+			"url_pattern": "/apps/reseller/v1/customers/{customerId}/subscriptions/{subscriptionId}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"billingMethod",
+				"creationTime",
+				"customerDomain",
+				"customerId",
+				"dealCode",
+				"kind",
+				"plan",
+				"plan.commitmentInterval",
+				"plan.commitmentInterval.endTime",
+				"plan.commitmentInterval.startTime",
+				"plan.isCommitmentPlan",
+				"plan.planName",
+				"purchaseOrderId",
+				"resourceUiUrl",
+				"skuId",
+				"skuName",
+				"status",
+				"subscriptionId",
+				"suspensionReasons",
+				"transferInfo",
+				"transferInfo.minimumTransferableSeats",
+				"transferInfo.transferabilityExpirationTime",
+				"trialSettings",
+				"trialSettings.isInTrial",
+				"trialSettings.trialEndTime"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages your customers and their subscriptions.",
+				"version": "v1",
+				"slug": "enterprise-apps-reseller-v1-apps-reseller-v1-customers-customerid-subscriptions-subscriptionid",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"billingMethod": "billingMethod",
+					"creationTime": "creationTime",
+					"customerDomain": "customerDomain",
+					"customerId": "customerId",
+					"dealCode": "dealCode",
+					"kind": "kind",
+					"plan": "plan",
+					"plan.commitmentInterval": "plan.commitmentInterval",
+					"plan.commitmentInterval.endTime": "plan.commitmentInterval.endTime",
+					"plan.commitmentInterval.startTime": "plan.commitmentInterval.startTime",
+					"plan.isCommitmentPlan": "plan.isCommitmentPlan",
+					"plan.planName": "plan.planName",
+					"purchaseOrderId": "purchaseOrderId",
+					"resourceUiUrl": "resourceUiUrl",
+					"skuId": "skuId",
+					"skuName": "skuName",
+					"status": "status",
+					"subscriptionId": "subscriptionId",
+					"suspensionReasons": "suspensionReasons",
+					"transferInfo": "transferInfo",
+					"transferInfo.minimumTransferableSeats": "transferInfo.minimumTransferableSeats",
+					"transferInfo.transferabilityExpirationTime": "transferInfo.transferabilityExpirationTime",
+					"trialSettings": "trialSettings",
+					"trialSettings.isInTrial": "trialSettings.isInTrial",
+					"trialSettings.trialEndTime": "trialSettings.trialEndTime"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"enterprise"
+				]
+			}
+		},
+		{
+			"group": "enterprise-apps-reseller-v1",
+			"url_pattern": "/apps/reseller/v1/customers/{customerId}/subscriptions/{subscriptionId}/activate",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"billingMethod",
+				"creationTime",
+				"customerDomain",
+				"customerId",
+				"dealCode",
+				"kind",
+				"plan",
+				"plan.commitmentInterval",
+				"plan.commitmentInterval.endTime",
+				"plan.commitmentInterval.startTime",
+				"plan.isCommitmentPlan",
+				"plan.planName",
+				"purchaseOrderId",
+				"resourceUiUrl",
+				"skuId",
+				"skuName",
+				"status",
+				"subscriptionId",
+				"suspensionReasons",
+				"transferInfo",
+				"transferInfo.minimumTransferableSeats",
+				"transferInfo.transferabilityExpirationTime",
+				"trialSettings",
+				"trialSettings.isInTrial",
+				"trialSettings.trialEndTime"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages your customers and their subscriptions.",
+				"version": "v1",
+				"slug": "enterprise-apps-reseller-v1-apps-reseller-v1-customers-customerid-subscriptions-subscriptionid-activate",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"billingMethod": "billingMethod",
+					"creationTime": "creationTime",
+					"customerDomain": "customerDomain",
+					"customerId": "customerId",
+					"dealCode": "dealCode",
+					"kind": "kind",
+					"plan": "plan",
+					"plan.commitmentInterval": "plan.commitmentInterval",
+					"plan.commitmentInterval.endTime": "plan.commitmentInterval.endTime",
+					"plan.commitmentInterval.startTime": "plan.commitmentInterval.startTime",
+					"plan.isCommitmentPlan": "plan.isCommitmentPlan",
+					"plan.planName": "plan.planName",
+					"purchaseOrderId": "purchaseOrderId",
+					"resourceUiUrl": "resourceUiUrl",
+					"skuId": "skuId",
+					"skuName": "skuName",
+					"status": "status",
+					"subscriptionId": "subscriptionId",
+					"suspensionReasons": "suspensionReasons",
+					"transferInfo": "transferInfo",
+					"transferInfo.minimumTransferableSeats": "transferInfo.minimumTransferableSeats",
+					"transferInfo.transferabilityExpirationTime": "transferInfo.transferabilityExpirationTime",
+					"trialSettings": "trialSettings",
+					"trialSettings.isInTrial": "trialSettings.isInTrial",
+					"trialSettings.trialEndTime": "trialSettings.trialEndTime"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"enterprise"
+				]
+			}
+		},
+		{
+			"group": "enterprise-apps-reseller-v1",
+			"url_pattern": "/apps/reseller/v1/customers/{customerId}/subscriptions/{subscriptionId}/changePlan",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"billingMethod",
+				"creationTime",
+				"customerDomain",
+				"customerId",
+				"dealCode",
+				"kind",
+				"plan",
+				"plan.commitmentInterval",
+				"plan.commitmentInterval.endTime",
+				"plan.commitmentInterval.startTime",
+				"plan.isCommitmentPlan",
+				"plan.planName",
+				"purchaseOrderId",
+				"resourceUiUrl",
+				"skuId",
+				"skuName",
+				"status",
+				"subscriptionId",
+				"suspensionReasons",
+				"transferInfo",
+				"transferInfo.minimumTransferableSeats",
+				"transferInfo.transferabilityExpirationTime",
+				"trialSettings",
+				"trialSettings.isInTrial",
+				"trialSettings.trialEndTime"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages your customers and their subscriptions.",
+				"version": "v1",
+				"slug": "enterprise-apps-reseller-v1-apps-reseller-v1-customers-customerid-subscriptions-subscriptionid-changeplan",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"billingMethod": "billingMethod",
+					"creationTime": "creationTime",
+					"customerDomain": "customerDomain",
+					"customerId": "customerId",
+					"dealCode": "dealCode",
+					"kind": "kind",
+					"plan": "plan",
+					"plan.commitmentInterval": "plan.commitmentInterval",
+					"plan.commitmentInterval.endTime": "plan.commitmentInterval.endTime",
+					"plan.commitmentInterval.startTime": "plan.commitmentInterval.startTime",
+					"plan.isCommitmentPlan": "plan.isCommitmentPlan",
+					"plan.planName": "plan.planName",
+					"purchaseOrderId": "purchaseOrderId",
+					"resourceUiUrl": "resourceUiUrl",
+					"skuId": "skuId",
+					"skuName": "skuName",
+					"status": "status",
+					"subscriptionId": "subscriptionId",
+					"suspensionReasons": "suspensionReasons",
+					"transferInfo": "transferInfo",
+					"transferInfo.minimumTransferableSeats": "transferInfo.minimumTransferableSeats",
+					"transferInfo.transferabilityExpirationTime": "transferInfo.transferabilityExpirationTime",
+					"trialSettings": "trialSettings",
+					"trialSettings.isInTrial": "trialSettings.isInTrial",
+					"trialSettings.trialEndTime": "trialSettings.trialEndTime"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"enterprise"
+				]
+			}
+		},
+		{
+			"group": "enterprise-apps-reseller-v1",
+			"url_pattern": "/apps/reseller/v1/customers/{customerId}/subscriptions/{subscriptionId}/changeRenewalSettings",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"billingMethod",
+				"creationTime",
+				"customerDomain",
+				"customerId",
+				"dealCode",
+				"kind",
+				"plan",
+				"plan.commitmentInterval",
+				"plan.commitmentInterval.endTime",
+				"plan.commitmentInterval.startTime",
+				"plan.isCommitmentPlan",
+				"plan.planName",
+				"purchaseOrderId",
+				"resourceUiUrl",
+				"skuId",
+				"skuName",
+				"status",
+				"subscriptionId",
+				"suspensionReasons",
+				"transferInfo",
+				"transferInfo.minimumTransferableSeats",
+				"transferInfo.transferabilityExpirationTime",
+				"trialSettings",
+				"trialSettings.isInTrial",
+				"trialSettings.trialEndTime"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages your customers and their subscriptions.",
+				"version": "v1",
+				"slug": "enterprise-apps-reseller-v1-apps-reseller-v1-customers-customerid-subscriptions-subscriptionid-changerenewalsettings",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"billingMethod": "billingMethod",
+					"creationTime": "creationTime",
+					"customerDomain": "customerDomain",
+					"customerId": "customerId",
+					"dealCode": "dealCode",
+					"kind": "kind",
+					"plan": "plan",
+					"plan.commitmentInterval": "plan.commitmentInterval",
+					"plan.commitmentInterval.endTime": "plan.commitmentInterval.endTime",
+					"plan.commitmentInterval.startTime": "plan.commitmentInterval.startTime",
+					"plan.isCommitmentPlan": "plan.isCommitmentPlan",
+					"plan.planName": "plan.planName",
+					"purchaseOrderId": "purchaseOrderId",
+					"resourceUiUrl": "resourceUiUrl",
+					"skuId": "skuId",
+					"skuName": "skuName",
+					"status": "status",
+					"subscriptionId": "subscriptionId",
+					"suspensionReasons": "suspensionReasons",
+					"transferInfo": "transferInfo",
+					"transferInfo.minimumTransferableSeats": "transferInfo.minimumTransferableSeats",
+					"transferInfo.transferabilityExpirationTime": "transferInfo.transferabilityExpirationTime",
+					"trialSettings": "trialSettings",
+					"trialSettings.isInTrial": "trialSettings.isInTrial",
+					"trialSettings.trialEndTime": "trialSettings.trialEndTime"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"enterprise"
+				]
+			}
+		},
+		{
+			"group": "enterprise-apps-reseller-v1",
+			"url_pattern": "/apps/reseller/v1/customers/{customerId}/subscriptions/{subscriptionId}/changeSeats",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"billingMethod",
+				"creationTime",
+				"customerDomain",
+				"customerId",
+				"dealCode",
+				"kind",
+				"plan",
+				"plan.commitmentInterval",
+				"plan.commitmentInterval.endTime",
+				"plan.commitmentInterval.startTime",
+				"plan.isCommitmentPlan",
+				"plan.planName",
+				"purchaseOrderId",
+				"resourceUiUrl",
+				"skuId",
+				"skuName",
+				"status",
+				"subscriptionId",
+				"suspensionReasons",
+				"transferInfo",
+				"transferInfo.minimumTransferableSeats",
+				"transferInfo.transferabilityExpirationTime",
+				"trialSettings",
+				"trialSettings.isInTrial",
+				"trialSettings.trialEndTime"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages your customers and their subscriptions.",
+				"version": "v1",
+				"slug": "enterprise-apps-reseller-v1-apps-reseller-v1-customers-customerid-subscriptions-subscriptionid-changeseats",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"billingMethod": "billingMethod",
+					"creationTime": "creationTime",
+					"customerDomain": "customerDomain",
+					"customerId": "customerId",
+					"dealCode": "dealCode",
+					"kind": "kind",
+					"plan": "plan",
+					"plan.commitmentInterval": "plan.commitmentInterval",
+					"plan.commitmentInterval.endTime": "plan.commitmentInterval.endTime",
+					"plan.commitmentInterval.startTime": "plan.commitmentInterval.startTime",
+					"plan.isCommitmentPlan": "plan.isCommitmentPlan",
+					"plan.planName": "plan.planName",
+					"purchaseOrderId": "purchaseOrderId",
+					"resourceUiUrl": "resourceUiUrl",
+					"skuId": "skuId",
+					"skuName": "skuName",
+					"status": "status",
+					"subscriptionId": "subscriptionId",
+					"suspensionReasons": "suspensionReasons",
+					"transferInfo": "transferInfo",
+					"transferInfo.minimumTransferableSeats": "transferInfo.minimumTransferableSeats",
+					"transferInfo.transferabilityExpirationTime": "transferInfo.transferabilityExpirationTime",
+					"trialSettings": "trialSettings",
+					"trialSettings.isInTrial": "trialSettings.isInTrial",
+					"trialSettings.trialEndTime": "trialSettings.trialEndTime"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"enterprise"
+				]
+			}
+		},
+		{
+			"group": "enterprise-apps-reseller-v1",
+			"url_pattern": "/apps/reseller/v1/customers/{customerId}/subscriptions/{subscriptionId}/startPaidService",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"billingMethod",
+				"creationTime",
+				"customerDomain",
+				"customerId",
+				"dealCode",
+				"kind",
+				"plan",
+				"plan.commitmentInterval",
+				"plan.commitmentInterval.endTime",
+				"plan.commitmentInterval.startTime",
+				"plan.isCommitmentPlan",
+				"plan.planName",
+				"purchaseOrderId",
+				"resourceUiUrl",
+				"skuId",
+				"skuName",
+				"status",
+				"subscriptionId",
+				"suspensionReasons",
+				"transferInfo",
+				"transferInfo.minimumTransferableSeats",
+				"transferInfo.transferabilityExpirationTime",
+				"trialSettings",
+				"trialSettings.isInTrial",
+				"trialSettings.trialEndTime"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages your customers and their subscriptions.",
+				"version": "v1",
+				"slug": "enterprise-apps-reseller-v1-apps-reseller-v1-customers-customerid-subscriptions-subscriptionid-startpaidservice",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"billingMethod": "billingMethod",
+					"creationTime": "creationTime",
+					"customerDomain": "customerDomain",
+					"customerId": "customerId",
+					"dealCode": "dealCode",
+					"kind": "kind",
+					"plan": "plan",
+					"plan.commitmentInterval": "plan.commitmentInterval",
+					"plan.commitmentInterval.endTime": "plan.commitmentInterval.endTime",
+					"plan.commitmentInterval.startTime": "plan.commitmentInterval.startTime",
+					"plan.isCommitmentPlan": "plan.isCommitmentPlan",
+					"plan.planName": "plan.planName",
+					"purchaseOrderId": "purchaseOrderId",
+					"resourceUiUrl": "resourceUiUrl",
+					"skuId": "skuId",
+					"skuName": "skuName",
+					"status": "status",
+					"subscriptionId": "subscriptionId",
+					"suspensionReasons": "suspensionReasons",
+					"transferInfo": "transferInfo",
+					"transferInfo.minimumTransferableSeats": "transferInfo.minimumTransferableSeats",
+					"transferInfo.transferabilityExpirationTime": "transferInfo.transferabilityExpirationTime",
+					"trialSettings": "trialSettings",
+					"trialSettings.isInTrial": "trialSettings.isInTrial",
+					"trialSettings.trialEndTime": "trialSettings.trialEndTime"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"enterprise"
+				]
+			}
+		},
+		{
+			"group": "enterprise-apps-reseller-v1",
+			"url_pattern": "/apps/reseller/v1/customers/{customerId}/subscriptions/{subscriptionId}/suspend",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"billingMethod",
+				"creationTime",
+				"customerDomain",
+				"customerId",
+				"dealCode",
+				"kind",
+				"plan",
+				"plan.commitmentInterval",
+				"plan.commitmentInterval.endTime",
+				"plan.commitmentInterval.startTime",
+				"plan.isCommitmentPlan",
+				"plan.planName",
+				"purchaseOrderId",
+				"resourceUiUrl",
+				"skuId",
+				"skuName",
+				"status",
+				"subscriptionId",
+				"suspensionReasons",
+				"transferInfo",
+				"transferInfo.minimumTransferableSeats",
+				"transferInfo.transferabilityExpirationTime",
+				"trialSettings",
+				"trialSettings.isInTrial",
+				"trialSettings.trialEndTime"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages your customers and their subscriptions.",
+				"version": "v1",
+				"slug": "enterprise-apps-reseller-v1-apps-reseller-v1-customers-customerid-subscriptions-subscriptionid-suspend",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"billingMethod": "billingMethod",
+					"creationTime": "creationTime",
+					"customerDomain": "customerDomain",
+					"customerId": "customerId",
+					"dealCode": "dealCode",
+					"kind": "kind",
+					"plan": "plan",
+					"plan.commitmentInterval": "plan.commitmentInterval",
+					"plan.commitmentInterval.endTime": "plan.commitmentInterval.endTime",
+					"plan.commitmentInterval.startTime": "plan.commitmentInterval.startTime",
+					"plan.isCommitmentPlan": "plan.isCommitmentPlan",
+					"plan.planName": "plan.planName",
+					"purchaseOrderId": "purchaseOrderId",
+					"resourceUiUrl": "resourceUiUrl",
+					"skuId": "skuId",
+					"skuName": "skuName",
+					"status": "status",
+					"subscriptionId": "subscriptionId",
+					"suspensionReasons": "suspensionReasons",
+					"transferInfo": "transferInfo",
+					"transferInfo.minimumTransferableSeats": "transferInfo.minimumTransferableSeats",
+					"transferInfo.transferabilityExpirationTime": "transferInfo.transferabilityExpirationTime",
+					"trialSettings": "trialSettings",
+					"trialSettings.isInTrial": "trialSettings.isInTrial",
+					"trialSettings.trialEndTime": "trialSettings.trialEndTime"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"enterprise"
+				]
+			}
+		},
+		{
+			"group": "enterprise-apps-reseller-v1",
+			"url_pattern": "/apps/reseller/v1/resellernotify/getwatchdetails",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"serviceAccountEmailAddresses",
+				"topicName"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages your customers and their subscriptions.",
+				"version": "v1",
+				"slug": "enterprise-apps-reseller-v1-apps-reseller-v1-resellernotify-getwatchdetails",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"serviceAccountEmailAddresses": "serviceAccountEmailAddresses",
+					"topicName": "topicName"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"enterprise"
+				]
+			}
+		},
+		{
+			"group": "enterprise-apps-reseller-v1",
+			"url_pattern": "/apps/reseller/v1/resellernotify/register",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"topicName"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages your customers and their subscriptions.",
+				"version": "v1",
+				"slug": "enterprise-apps-reseller-v1-apps-reseller-v1-resellernotify-register",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"topicName": "topicName"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"enterprise"
+				]
+			}
+		},
+		{
+			"group": "enterprise-apps-reseller-v1",
+			"url_pattern": "/apps/reseller/v1/resellernotify/unregister",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"topicName"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages your customers and their subscriptions.",
+				"version": "v1",
+				"slug": "enterprise-apps-reseller-v1-apps-reseller-v1-resellernotify-unregister",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"topicName": "topicName"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"enterprise"
+				]
+			}
+		},
+		{
+			"group": "enterprise-apps-reseller-v1",
+			"url_pattern": "/apps/reseller/v1/subscriptions",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"kind",
+				"nextPageToken",
+				"subscriptions"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages your customers and their subscriptions.",
+				"version": "v1",
+				"slug": "enterprise-apps-reseller-v1-apps-reseller-v1-subscriptions",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"kind": "kind",
+					"nextPageToken": "nextPageToken",
+					"subscriptions": "subscriptions"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"enterprise"
+				]
+			}
+		}
+	]
+}

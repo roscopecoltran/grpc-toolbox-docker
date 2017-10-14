@@ -1,0 +1,1075 @@
+{
+	"backends": [
+		{
+			"group": "cloud-sql-administration-v1beta4",
+			"url_pattern": "/sql/v1beta4/flags",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"items",
+				"kind"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and configures Cloud SQL instances, which provide fully-managed MySQL databases.",
+				"version": "v1beta4",
+				"slug": "cloud-sql-administration-v1beta4-sql-v1beta4-flags",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"items": "items",
+					"kind": "kind"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-sql-administration-v1beta4",
+			"url_pattern": "/sql/v1beta4/projects/{project}/instances",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"items",
+				"kind",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and configures Cloud SQL instances, which provide fully-managed MySQL databases.",
+				"version": "v1beta4",
+				"slug": "cloud-sql-administration-v1beta4-sql-v1beta4-projects-project-instances",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-sql-administration-v1beta4",
+			"url_pattern": "/sql/v1beta4/projects/{project}/instances/{instance}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"backendType",
+				"connectionName",
+				"currentDiskSize",
+				"databaseVersion",
+				"etag",
+				"failoverReplica",
+				"failoverReplica.available",
+				"failoverReplica.name",
+				"gceZone",
+				"instanceType",
+				"ipAddresses",
+				"ipv6Address",
+				"kind",
+				"masterInstanceName",
+				"maxDiskSize",
+				"name",
+				"project",
+				"region",
+				"replicaNames",
+				"selfLink",
+				"serviceAccountEmailAddress",
+				"state",
+				"suspensionReason"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and configures Cloud SQL instances, which provide fully-managed MySQL databases.",
+				"version": "v1beta4",
+				"slug": "cloud-sql-administration-v1beta4-sql-v1beta4-projects-project-instances-instance",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"backendType": "backendType",
+					"connectionName": "connectionName",
+					"currentDiskSize": "currentDiskSize",
+					"databaseVersion": "databaseVersion",
+					"etag": "etag",
+					"failoverReplica": "failoverReplica",
+					"failoverReplica.available": "failoverReplica.available",
+					"failoverReplica.name": "failoverReplica.name",
+					"gceZone": "gceZone",
+					"instanceType": "instanceType",
+					"ipAddresses": "ipAddresses",
+					"ipv6Address": "ipv6Address",
+					"kind": "kind",
+					"masterInstanceName": "masterInstanceName",
+					"maxDiskSize": "maxDiskSize",
+					"name": "name",
+					"project": "project",
+					"region": "region",
+					"replicaNames": "replicaNames",
+					"selfLink": "selfLink",
+					"serviceAccountEmailAddress": "serviceAccountEmailAddress",
+					"state": "state",
+					"suspensionReason": "suspensionReason"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-sql-administration-v1beta4",
+			"url_pattern": "/sql/v1beta4/projects/{project}/instances/{instance}/backupRuns",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"items",
+				"kind",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and configures Cloud SQL instances, which provide fully-managed MySQL databases.",
+				"version": "v1beta4",
+				"slug": "cloud-sql-administration-v1beta4-sql-v1beta4-projects-project-instances-instance-backupruns",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-sql-administration-v1beta4",
+			"url_pattern": "/sql/v1beta4/projects/{project}/instances/{instance}/backupRuns/{id}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"description",
+				"endTime",
+				"enqueuedTime",
+				"id",
+				"instance",
+				"kind",
+				"selfLink",
+				"startTime",
+				"status",
+				"windowStartTime"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and configures Cloud SQL instances, which provide fully-managed MySQL databases.",
+				"version": "v1beta4",
+				"slug": "cloud-sql-administration-v1beta4-sql-v1beta4-projects-project-instances-instance-backupruns-id",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"description": "description",
+					"endTime": "endTime",
+					"enqueuedTime": "enqueuedTime",
+					"id": "id",
+					"instance": "instance",
+					"kind": "kind",
+					"selfLink": "selfLink",
+					"startTime": "startTime",
+					"status": "status",
+					"windowStartTime": "windowStartTime"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-sql-administration-v1beta4",
+			"url_pattern": "/sql/v1beta4/projects/{project}/instances/{instance}/clone",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"endTime",
+				"insertTime",
+				"kind",
+				"name",
+				"operationType",
+				"selfLink",
+				"startTime",
+				"status",
+				"targetId",
+				"targetLink",
+				"targetProject",
+				"user"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and configures Cloud SQL instances, which provide fully-managed MySQL databases.",
+				"version": "v1beta4",
+				"slug": "cloud-sql-administration-v1beta4-sql-v1beta4-projects-project-instances-instance-clone",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"endTime": "endTime",
+					"insertTime": "insertTime",
+					"kind": "kind",
+					"name": "name",
+					"operationType": "operationType",
+					"selfLink": "selfLink",
+					"startTime": "startTime",
+					"status": "status",
+					"targetId": "targetId",
+					"targetLink": "targetLink",
+					"targetProject": "targetProject",
+					"user": "user"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-sql-administration-v1beta4",
+			"url_pattern": "/sql/v1beta4/projects/{project}/instances/{instance}/createEphemeral",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"cert",
+				"certSerialNumber",
+				"commonName",
+				"createTime",
+				"expirationTime",
+				"instance",
+				"kind",
+				"selfLink",
+				"sha1Fingerprint"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and configures Cloud SQL instances, which provide fully-managed MySQL databases.",
+				"version": "v1beta4",
+				"slug": "cloud-sql-administration-v1beta4-sql-v1beta4-projects-project-instances-instance-createephemeral",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"cert": "cert",
+					"certSerialNumber": "certSerialNumber",
+					"commonName": "commonName",
+					"createTime": "createTime",
+					"expirationTime": "expirationTime",
+					"instance": "instance",
+					"kind": "kind",
+					"selfLink": "selfLink",
+					"sha1Fingerprint": "sha1Fingerprint"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-sql-administration-v1beta4",
+			"url_pattern": "/sql/v1beta4/projects/{project}/instances/{instance}/databases",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"items",
+				"kind"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and configures Cloud SQL instances, which provide fully-managed MySQL databases.",
+				"version": "v1beta4",
+				"slug": "cloud-sql-administration-v1beta4-sql-v1beta4-projects-project-instances-instance-databases",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"items": "items",
+					"kind": "kind"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-sql-administration-v1beta4",
+			"url_pattern": "/sql/v1beta4/projects/{project}/instances/{instance}/databases/{database}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"charset",
+				"collation",
+				"etag",
+				"instance",
+				"kind",
+				"name",
+				"project",
+				"selfLink"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and configures Cloud SQL instances, which provide fully-managed MySQL databases.",
+				"version": "v1beta4",
+				"slug": "cloud-sql-administration-v1beta4-sql-v1beta4-projects-project-instances-instance-databases-database",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"charset": "charset",
+					"collation": "collation",
+					"etag": "etag",
+					"instance": "instance",
+					"kind": "kind",
+					"name": "name",
+					"project": "project",
+					"selfLink": "selfLink"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-sql-administration-v1beta4",
+			"url_pattern": "/sql/v1beta4/projects/{project}/instances/{instance}/export",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"endTime",
+				"insertTime",
+				"kind",
+				"name",
+				"operationType",
+				"selfLink",
+				"startTime",
+				"status",
+				"targetId",
+				"targetLink",
+				"targetProject",
+				"user"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and configures Cloud SQL instances, which provide fully-managed MySQL databases.",
+				"version": "v1beta4",
+				"slug": "cloud-sql-administration-v1beta4-sql-v1beta4-projects-project-instances-instance-export",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"endTime": "endTime",
+					"insertTime": "insertTime",
+					"kind": "kind",
+					"name": "name",
+					"operationType": "operationType",
+					"selfLink": "selfLink",
+					"startTime": "startTime",
+					"status": "status",
+					"targetId": "targetId",
+					"targetLink": "targetLink",
+					"targetProject": "targetProject",
+					"user": "user"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-sql-administration-v1beta4",
+			"url_pattern": "/sql/v1beta4/projects/{project}/instances/{instance}/failover",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"endTime",
+				"insertTime",
+				"kind",
+				"name",
+				"operationType",
+				"selfLink",
+				"startTime",
+				"status",
+				"targetId",
+				"targetLink",
+				"targetProject",
+				"user"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and configures Cloud SQL instances, which provide fully-managed MySQL databases.",
+				"version": "v1beta4",
+				"slug": "cloud-sql-administration-v1beta4-sql-v1beta4-projects-project-instances-instance-failover",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"endTime": "endTime",
+					"insertTime": "insertTime",
+					"kind": "kind",
+					"name": "name",
+					"operationType": "operationType",
+					"selfLink": "selfLink",
+					"startTime": "startTime",
+					"status": "status",
+					"targetId": "targetId",
+					"targetLink": "targetLink",
+					"targetProject": "targetProject",
+					"user": "user"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-sql-administration-v1beta4",
+			"url_pattern": "/sql/v1beta4/projects/{project}/instances/{instance}/import",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"endTime",
+				"insertTime",
+				"kind",
+				"name",
+				"operationType",
+				"selfLink",
+				"startTime",
+				"status",
+				"targetId",
+				"targetLink",
+				"targetProject",
+				"user"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and configures Cloud SQL instances, which provide fully-managed MySQL databases.",
+				"version": "v1beta4",
+				"slug": "cloud-sql-administration-v1beta4-sql-v1beta4-projects-project-instances-instance-import",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"endTime": "endTime",
+					"insertTime": "insertTime",
+					"kind": "kind",
+					"name": "name",
+					"operationType": "operationType",
+					"selfLink": "selfLink",
+					"startTime": "startTime",
+					"status": "status",
+					"targetId": "targetId",
+					"targetLink": "targetLink",
+					"targetProject": "targetProject",
+					"user": "user"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-sql-administration-v1beta4",
+			"url_pattern": "/sql/v1beta4/projects/{project}/instances/{instance}/promoteReplica",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"endTime",
+				"insertTime",
+				"kind",
+				"name",
+				"operationType",
+				"selfLink",
+				"startTime",
+				"status",
+				"targetId",
+				"targetLink",
+				"targetProject",
+				"user"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and configures Cloud SQL instances, which provide fully-managed MySQL databases.",
+				"version": "v1beta4",
+				"slug": "cloud-sql-administration-v1beta4-sql-v1beta4-projects-project-instances-instance-promotereplica",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"endTime": "endTime",
+					"insertTime": "insertTime",
+					"kind": "kind",
+					"name": "name",
+					"operationType": "operationType",
+					"selfLink": "selfLink",
+					"startTime": "startTime",
+					"status": "status",
+					"targetId": "targetId",
+					"targetLink": "targetLink",
+					"targetProject": "targetProject",
+					"user": "user"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-sql-administration-v1beta4",
+			"url_pattern": "/sql/v1beta4/projects/{project}/instances/{instance}/resetSslConfig",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"endTime",
+				"insertTime",
+				"kind",
+				"name",
+				"operationType",
+				"selfLink",
+				"startTime",
+				"status",
+				"targetId",
+				"targetLink",
+				"targetProject",
+				"user"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and configures Cloud SQL instances, which provide fully-managed MySQL databases.",
+				"version": "v1beta4",
+				"slug": "cloud-sql-administration-v1beta4-sql-v1beta4-projects-project-instances-instance-resetsslconfig",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"endTime": "endTime",
+					"insertTime": "insertTime",
+					"kind": "kind",
+					"name": "name",
+					"operationType": "operationType",
+					"selfLink": "selfLink",
+					"startTime": "startTime",
+					"status": "status",
+					"targetId": "targetId",
+					"targetLink": "targetLink",
+					"targetProject": "targetProject",
+					"user": "user"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-sql-administration-v1beta4",
+			"url_pattern": "/sql/v1beta4/projects/{project}/instances/{instance}/restart",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"endTime",
+				"insertTime",
+				"kind",
+				"name",
+				"operationType",
+				"selfLink",
+				"startTime",
+				"status",
+				"targetId",
+				"targetLink",
+				"targetProject",
+				"user"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and configures Cloud SQL instances, which provide fully-managed MySQL databases.",
+				"version": "v1beta4",
+				"slug": "cloud-sql-administration-v1beta4-sql-v1beta4-projects-project-instances-instance-restart",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"endTime": "endTime",
+					"insertTime": "insertTime",
+					"kind": "kind",
+					"name": "name",
+					"operationType": "operationType",
+					"selfLink": "selfLink",
+					"startTime": "startTime",
+					"status": "status",
+					"targetId": "targetId",
+					"targetLink": "targetLink",
+					"targetProject": "targetProject",
+					"user": "user"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-sql-administration-v1beta4",
+			"url_pattern": "/sql/v1beta4/projects/{project}/instances/{instance}/restoreBackup",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"endTime",
+				"insertTime",
+				"kind",
+				"name",
+				"operationType",
+				"selfLink",
+				"startTime",
+				"status",
+				"targetId",
+				"targetLink",
+				"targetProject",
+				"user"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and configures Cloud SQL instances, which provide fully-managed MySQL databases.",
+				"version": "v1beta4",
+				"slug": "cloud-sql-administration-v1beta4-sql-v1beta4-projects-project-instances-instance-restorebackup",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"endTime": "endTime",
+					"insertTime": "insertTime",
+					"kind": "kind",
+					"name": "name",
+					"operationType": "operationType",
+					"selfLink": "selfLink",
+					"startTime": "startTime",
+					"status": "status",
+					"targetId": "targetId",
+					"targetLink": "targetLink",
+					"targetProject": "targetProject",
+					"user": "user"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-sql-administration-v1beta4",
+			"url_pattern": "/sql/v1beta4/projects/{project}/instances/{instance}/sslCerts",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"items",
+				"kind"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and configures Cloud SQL instances, which provide fully-managed MySQL databases.",
+				"version": "v1beta4",
+				"slug": "cloud-sql-administration-v1beta4-sql-v1beta4-projects-project-instances-instance-sslcerts",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"items": "items",
+					"kind": "kind"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-sql-administration-v1beta4",
+			"url_pattern": "/sql/v1beta4/projects/{project}/instances/{instance}/sslCerts/{sha1Fingerprint}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"cert",
+				"certSerialNumber",
+				"commonName",
+				"createTime",
+				"expirationTime",
+				"instance",
+				"kind",
+				"selfLink",
+				"sha1Fingerprint"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and configures Cloud SQL instances, which provide fully-managed MySQL databases.",
+				"version": "v1beta4",
+				"slug": "cloud-sql-administration-v1beta4-sql-v1beta4-projects-project-instances-instance-sslcerts-sha1fingerprint",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"cert": "cert",
+					"certSerialNumber": "certSerialNumber",
+					"commonName": "commonName",
+					"createTime": "createTime",
+					"expirationTime": "expirationTime",
+					"instance": "instance",
+					"kind": "kind",
+					"selfLink": "selfLink",
+					"sha1Fingerprint": "sha1Fingerprint"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-sql-administration-v1beta4",
+			"url_pattern": "/sql/v1beta4/projects/{project}/instances/{instance}/startReplica",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"endTime",
+				"insertTime",
+				"kind",
+				"name",
+				"operationType",
+				"selfLink",
+				"startTime",
+				"status",
+				"targetId",
+				"targetLink",
+				"targetProject",
+				"user"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and configures Cloud SQL instances, which provide fully-managed MySQL databases.",
+				"version": "v1beta4",
+				"slug": "cloud-sql-administration-v1beta4-sql-v1beta4-projects-project-instances-instance-startreplica",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"endTime": "endTime",
+					"insertTime": "insertTime",
+					"kind": "kind",
+					"name": "name",
+					"operationType": "operationType",
+					"selfLink": "selfLink",
+					"startTime": "startTime",
+					"status": "status",
+					"targetId": "targetId",
+					"targetLink": "targetLink",
+					"targetProject": "targetProject",
+					"user": "user"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-sql-administration-v1beta4",
+			"url_pattern": "/sql/v1beta4/projects/{project}/instances/{instance}/stopReplica",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"endTime",
+				"insertTime",
+				"kind",
+				"name",
+				"operationType",
+				"selfLink",
+				"startTime",
+				"status",
+				"targetId",
+				"targetLink",
+				"targetProject",
+				"user"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and configures Cloud SQL instances, which provide fully-managed MySQL databases.",
+				"version": "v1beta4",
+				"slug": "cloud-sql-administration-v1beta4-sql-v1beta4-projects-project-instances-instance-stopreplica",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"endTime": "endTime",
+					"insertTime": "insertTime",
+					"kind": "kind",
+					"name": "name",
+					"operationType": "operationType",
+					"selfLink": "selfLink",
+					"startTime": "startTime",
+					"status": "status",
+					"targetId": "targetId",
+					"targetLink": "targetLink",
+					"targetProject": "targetProject",
+					"user": "user"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-sql-administration-v1beta4",
+			"url_pattern": "/sql/v1beta4/projects/{project}/instances/{instance}/truncateLog",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"endTime",
+				"insertTime",
+				"kind",
+				"name",
+				"operationType",
+				"selfLink",
+				"startTime",
+				"status",
+				"targetId",
+				"targetLink",
+				"targetProject",
+				"user"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and configures Cloud SQL instances, which provide fully-managed MySQL databases.",
+				"version": "v1beta4",
+				"slug": "cloud-sql-administration-v1beta4-sql-v1beta4-projects-project-instances-instance-truncatelog",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"endTime": "endTime",
+					"insertTime": "insertTime",
+					"kind": "kind",
+					"name": "name",
+					"operationType": "operationType",
+					"selfLink": "selfLink",
+					"startTime": "startTime",
+					"status": "status",
+					"targetId": "targetId",
+					"targetLink": "targetLink",
+					"targetProject": "targetProject",
+					"user": "user"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-sql-administration-v1beta4",
+			"url_pattern": "/sql/v1beta4/projects/{project}/instances/{instance}/users",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"items",
+				"kind",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and configures Cloud SQL instances, which provide fully-managed MySQL databases.",
+				"version": "v1beta4",
+				"slug": "cloud-sql-administration-v1beta4-sql-v1beta4-projects-project-instances-instance-users",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-sql-administration-v1beta4",
+			"url_pattern": "/sql/v1beta4/projects/{project}/operations",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"items",
+				"kind",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and configures Cloud SQL instances, which provide fully-managed MySQL databases.",
+				"version": "v1beta4",
+				"slug": "cloud-sql-administration-v1beta4-sql-v1beta4-projects-project-operations",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-sql-administration-v1beta4",
+			"url_pattern": "/sql/v1beta4/projects/{project}/operations/{operation}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"endTime",
+				"insertTime",
+				"kind",
+				"name",
+				"operationType",
+				"selfLink",
+				"startTime",
+				"status",
+				"targetId",
+				"targetLink",
+				"targetProject",
+				"user"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and configures Cloud SQL instances, which provide fully-managed MySQL databases.",
+				"version": "v1beta4",
+				"slug": "cloud-sql-administration-v1beta4-sql-v1beta4-projects-project-operations-operation",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"endTime": "endTime",
+					"insertTime": "insertTime",
+					"kind": "kind",
+					"name": "name",
+					"operationType": "operationType",
+					"selfLink": "selfLink",
+					"startTime": "startTime",
+					"status": "status",
+					"targetId": "targetId",
+					"targetLink": "targetLink",
+					"targetProject": "targetProject",
+					"user": "user"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-sql-administration-v1beta4",
+			"url_pattern": "/sql/v1beta4/projects/{project}/tiers",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"items",
+				"kind"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and configures Cloud SQL instances, which provide fully-managed MySQL databases.",
+				"version": "v1beta4",
+				"slug": "cloud-sql-administration-v1beta4-sql-v1beta4-projects-project-tiers",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"items": "items",
+					"kind": "kind"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		}
+	]
+}

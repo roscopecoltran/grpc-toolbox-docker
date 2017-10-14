@@ -1,0 +1,987 @@
+backends:
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/accounts
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - items
+  - kind
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-accounts
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/accounts/{accountId}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - id
+  - kind
+  - name
+  - premium
+  - subAccounts
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-accounts-accountid
+    schemes:
+    - https
+    mapping:
+      id: id
+      kind: kind
+      name: name
+      premium: premium
+      subAccounts: subAccounts
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/accounts/{accountId}/adclients
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - items
+  - kind
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-accounts-accountid-adclients
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/accounts/{accountId}/adclients/{adClientId}/adunits
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - items
+  - kind
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-accounts-accountid-adclients-adclientid-adunits
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/accounts/{accountId}/adclients/{adClientId}/adunits/{adUnitId}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - code
+  - contentAdsSettings
+  - contentAdsSettings.backupOption
+  - contentAdsSettings.backupOption.color
+  - contentAdsSettings.backupOption.url
+  - contentAdsSettings.size
+  - feedAdsSettings
+  - feedAdsSettings.adPosition
+  - feedAdsSettings.frequency
+  - feedAdsSettings.minimumWordCount
+  - id
+  - kind
+  - mobileContentAdsSettings
+  - mobileContentAdsSettings.markupLanguage
+  - mobileContentAdsSettings.scriptingLanguage
+  - mobileContentAdsSettings.size
+  - name
+  - savedStyleId
+  - status
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-accounts-accountid-adclients-adclientid-adunits-adunitid
+    schemes:
+    - https
+    mapping:
+      code: code
+      contentAdsSettings: contentAdsSettings
+      contentAdsSettings.backupOption: contentAdsSettings.backupOption
+      contentAdsSettings.backupOption.color: contentAdsSettings.backupOption.color
+      contentAdsSettings.backupOption.url: contentAdsSettings.backupOption.url
+      contentAdsSettings.size: contentAdsSettings.size
+      feedAdsSettings: feedAdsSettings
+      feedAdsSettings.adPosition: feedAdsSettings.adPosition
+      feedAdsSettings.frequency: feedAdsSettings.frequency
+      feedAdsSettings.minimumWordCount: feedAdsSettings.minimumWordCount
+      id: id
+      kind: kind
+      mobileContentAdsSettings: mobileContentAdsSettings
+      mobileContentAdsSettings.markupLanguage: mobileContentAdsSettings.markupLanguage
+      mobileContentAdsSettings.scriptingLanguage: mobileContentAdsSettings.scriptingLanguage
+      mobileContentAdsSettings.size: mobileContentAdsSettings.size
+      name: name
+      savedStyleId: savedStyleId
+      status: status
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/accounts/{accountId}/adclients/{adClientId}/adunits/{adUnitId}/adcode
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - adCode
+  - kind
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-accounts-accountid-adclients-adclientid-adunits-adunitid-adcode
+    schemes:
+    - https
+    mapping:
+      adCode: adCode
+      kind: kind
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/accounts/{accountId}/adclients/{adClientId}/adunits/{adUnitId}/customchannels
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - items
+  - kind
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-accounts-accountid-adclients-adclientid-adunits-adunitid-customchannels
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/accounts/{accountId}/adclients/{adClientId}/customchannels
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - items
+  - kind
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-accounts-accountid-adclients-adclientid-customchannels
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/accounts/{accountId}/adclients/{adClientId}/customchannels/{customChannelId}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - code
+  - id
+  - kind
+  - name
+  - targetingInfo
+  - targetingInfo.adsAppearOn
+  - targetingInfo.description
+  - targetingInfo.location
+  - targetingInfo.siteLanguage
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-accounts-accountid-adclients-adclientid-customchannels-customchannelid
+    schemes:
+    - https
+    mapping:
+      code: code
+      id: id
+      kind: kind
+      name: name
+      targetingInfo: targetingInfo
+      targetingInfo.adsAppearOn: targetingInfo.adsAppearOn
+      targetingInfo.description: targetingInfo.description
+      targetingInfo.location: targetingInfo.location
+      targetingInfo.siteLanguage: targetingInfo.siteLanguage
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/accounts/{accountId}/adclients/{adClientId}/customchannels/{customChannelId}/adunits
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - items
+  - kind
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-accounts-accountid-adclients-adclientid-customchannels-customchannelid-adunits
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/accounts/{accountId}/adclients/{adClientId}/urlchannels
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - items
+  - kind
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-accounts-accountid-adclients-adclientid-urlchannels
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/accounts/{accountId}/alerts
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - items
+  - kind
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-accounts-accountid-alerts
+    schemes:
+    - https
+    mapping:
+      items: items
+      kind: kind
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/accounts/{accountId}/reports
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - averages
+  - headers
+  - headers.currency
+  - headers.name
+  - kind
+  - rows
+  - rows.items
+  - totalMatchedRows
+  - totals
+  - warnings
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-accounts-accountid-reports
+    schemes:
+    - https
+    mapping:
+      averages: averages
+      headers: headers
+      headers.currency: headers.currency
+      headers.name: headers.name
+      kind: kind
+      rows: rows
+      rows.items: rows.items
+      totalMatchedRows: totalMatchedRows
+      totals: totals
+      warnings: warnings
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/accounts/{accountId}/reports/saved
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - items
+  - kind
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-accounts-accountid-reports-saved
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/accounts/{accountId}/reports/{savedReportId}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - averages
+  - headers
+  - headers.currency
+  - headers.name
+  - kind
+  - rows
+  - rows.items
+  - totalMatchedRows
+  - totals
+  - warnings
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-accounts-accountid-reports-savedreportid
+    schemes:
+    - https
+    mapping:
+      averages: averages
+      headers: headers
+      headers.currency: headers.currency
+      headers.name: headers.name
+      kind: kind
+      rows: rows
+      rows.items: rows.items
+      totalMatchedRows: totalMatchedRows
+      totals: totals
+      warnings: warnings
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/accounts/{accountId}/savedadstyles
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - items
+  - kind
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-accounts-accountid-savedadstyles
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/accounts/{accountId}/savedadstyles/{savedAdStyleId}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - id
+  - kind
+  - name
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-accounts-accountid-savedadstyles-savedadstyleid
+    schemes:
+    - https
+    mapping:
+      id: id
+      kind: kind
+      name: name
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/adclients
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - items
+  - kind
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-adclients
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/adclients/{adClientId}/adunits
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - items
+  - kind
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-adclients-adclientid-adunits
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/adclients/{adClientId}/adunits/{adUnitId}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - code
+  - contentAdsSettings
+  - contentAdsSettings.backupOption
+  - contentAdsSettings.backupOption.color
+  - contentAdsSettings.backupOption.url
+  - contentAdsSettings.size
+  - feedAdsSettings
+  - feedAdsSettings.adPosition
+  - feedAdsSettings.frequency
+  - feedAdsSettings.minimumWordCount
+  - id
+  - kind
+  - mobileContentAdsSettings
+  - mobileContentAdsSettings.markupLanguage
+  - mobileContentAdsSettings.scriptingLanguage
+  - mobileContentAdsSettings.size
+  - name
+  - savedStyleId
+  - status
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-adclients-adclientid-adunits-adunitid
+    schemes:
+    - https
+    mapping:
+      code: code
+      contentAdsSettings: contentAdsSettings
+      contentAdsSettings.backupOption: contentAdsSettings.backupOption
+      contentAdsSettings.backupOption.color: contentAdsSettings.backupOption.color
+      contentAdsSettings.backupOption.url: contentAdsSettings.backupOption.url
+      contentAdsSettings.size: contentAdsSettings.size
+      feedAdsSettings: feedAdsSettings
+      feedAdsSettings.adPosition: feedAdsSettings.adPosition
+      feedAdsSettings.frequency: feedAdsSettings.frequency
+      feedAdsSettings.minimumWordCount: feedAdsSettings.minimumWordCount
+      id: id
+      kind: kind
+      mobileContentAdsSettings: mobileContentAdsSettings
+      mobileContentAdsSettings.markupLanguage: mobileContentAdsSettings.markupLanguage
+      mobileContentAdsSettings.scriptingLanguage: mobileContentAdsSettings.scriptingLanguage
+      mobileContentAdsSettings.size: mobileContentAdsSettings.size
+      name: name
+      savedStyleId: savedStyleId
+      status: status
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/adclients/{adClientId}/adunits/{adUnitId}/adcode
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - adCode
+  - kind
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-adclients-adclientid-adunits-adunitid-adcode
+    schemes:
+    - https
+    mapping:
+      adCode: adCode
+      kind: kind
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/adclients/{adClientId}/adunits/{adUnitId}/customchannels
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - items
+  - kind
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-adclients-adclientid-adunits-adunitid-customchannels
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/adclients/{adClientId}/customchannels
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - items
+  - kind
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-adclients-adclientid-customchannels
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/adclients/{adClientId}/customchannels/{customChannelId}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - code
+  - id
+  - kind
+  - name
+  - targetingInfo
+  - targetingInfo.adsAppearOn
+  - targetingInfo.description
+  - targetingInfo.location
+  - targetingInfo.siteLanguage
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-adclients-adclientid-customchannels-customchannelid
+    schemes:
+    - https
+    mapping:
+      code: code
+      id: id
+      kind: kind
+      name: name
+      targetingInfo: targetingInfo
+      targetingInfo.adsAppearOn: targetingInfo.adsAppearOn
+      targetingInfo.description: targetingInfo.description
+      targetingInfo.location: targetingInfo.location
+      targetingInfo.siteLanguage: targetingInfo.siteLanguage
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/adclients/{adClientId}/customchannels/{customChannelId}/adunits
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - items
+  - kind
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-adclients-adclientid-customchannels-customchannelid-adunits
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/adclients/{adClientId}/urlchannels
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - items
+  - kind
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-adclients-adclientid-urlchannels
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/alerts
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - items
+  - kind
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-alerts
+    schemes:
+    - https
+    mapping:
+      items: items
+      kind: kind
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/metadata/dimensions
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - items
+  - kind
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-metadata-dimensions
+    schemes:
+    - https
+    mapping:
+      items: items
+      kind: kind
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/metadata/metrics
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - items
+  - kind
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-metadata-metrics
+    schemes:
+    - https
+    mapping:
+      items: items
+      kind: kind
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/reports
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - averages
+  - headers
+  - headers.currency
+  - headers.name
+  - kind
+  - rows
+  - rows.items
+  - totalMatchedRows
+  - totals
+  - warnings
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-reports
+    schemes:
+    - https
+    mapping:
+      averages: averages
+      headers: headers
+      headers.currency: headers.currency
+      headers.name: headers.name
+      kind: kind
+      rows: rows
+      rows.items: rows.items
+      totalMatchedRows: totalMatchedRows
+      totals: totals
+      warnings: warnings
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/reports/saved
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - items
+  - kind
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-reports-saved
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/reports/{savedReportId}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - averages
+  - headers
+  - headers.currency
+  - headers.name
+  - kind
+  - rows
+  - rows.items
+  - totalMatchedRows
+  - totals
+  - warnings
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-reports-savedreportid
+    schemes:
+    - https
+    mapping:
+      averages: averages
+      headers: headers
+      headers.currency: headers.currency
+      headers.name: headers.name
+      kind: kind
+      rows: rows
+      rows.items: rows.items
+      totalMatchedRows: totalMatchedRows
+      totals: totals
+      warnings: warnings
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/savedadstyles
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - items
+  - kind
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-savedadstyles
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+    hosts:
+    - https://www.googleapis.com
+- group: adsense-management-v1-3
+  url_pattern: /adsense/v1.3/savedadstyles/{savedAdStyleId}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - id
+  - kind
+  - name
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses AdSense publishers' inventory and generates performance
+      reports.
+    version: v1.3
+    slug: adsense-management-v1-3-adsense-v1-3-savedadstyles-savedadstyleid
+    schemes:
+    - https
+    mapping:
+      id: id
+      kind: kind
+      name: name
+    hosts:
+    - https://www.googleapis.com

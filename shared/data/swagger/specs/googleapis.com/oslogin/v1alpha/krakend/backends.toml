@@ -1,0 +1,58 @@
+[[backends]]
+  group = "google-cloud-os-login-v1alpha"
+  url_pattern = "/v1alpha/{name}"
+  method = "GET"
+  host = ["https://oslogin.googleapis.com"]
+  url_keys = ["name"]
+  whitelist = ["expirationTimeUsec", "fingerprint", "key"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages OS login configuration for Directory API users."
+    version = "v1alpha"
+    slug = "google-cloud-os-login-v1alpha-v1alpha-name"
+    schemes = ["https"]
+    hosts = ["https://oslogin.googleapis.com"]
+    topics = ["users"]
+    [backends.extra_config.mapping]
+      expirationTimeUsec = "expirationTimeUsec"
+      fingerprint = "fingerprint"
+      key = "key"
+
+[[backends]]
+  group = "google-cloud-os-login-v1alpha"
+  url_pattern = "/v1alpha/{name}/loginProfile"
+  method = "GET"
+  host = ["https://oslogin.googleapis.com"]
+  url_keys = ["name"]
+  whitelist = ["name", "posixAccounts", "sshPublicKeys", "suspended"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages OS login configuration for Directory API users."
+    version = "v1alpha"
+    slug = "google-cloud-os-login-v1alpha-v1alpha-name-loginprofile"
+    schemes = ["https"]
+    hosts = ["https://oslogin.googleapis.com"]
+    topics = ["users"]
+    [backends.extra_config.mapping]
+      name = "name"
+      posixAccounts = "posixAccounts"
+      sshPublicKeys = "sshPublicKeys"
+      suspended = "suspended"
+
+[[backends]]
+  group = "google-cloud-os-login-v1alpha"
+  url_pattern = "/v1alpha/{parent}:importSshPublicKey"
+  method = "POST"
+  host = ["https://oslogin.googleapis.com"]
+  url_keys = ["parent"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages OS login configuration for Directory API users."
+    version = "v1alpha"
+    slug = "google-cloud-os-login-v1alpha-v1alpha-parent-importsshpublickey"
+    schemes = ["https"]
+    hosts = ["https://oslogin.googleapis.com"]
+    topics = ["users"]

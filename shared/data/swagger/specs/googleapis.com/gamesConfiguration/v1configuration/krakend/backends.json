@@ -1,0 +1,173 @@
+{
+	"backends": [
+		{
+			"group": "google-play-game-services-publishing-v1configuration",
+			"url_pattern": "/games/v1configuration/achievements/{achievementId}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"achievementType",
+				"id",
+				"initialState",
+				"kind",
+				"stepsToUnlock",
+				"token"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Publishing API for Google Play Game Services.",
+				"version": "v1configuration",
+				"slug": "google-play-game-services-publishing-v1configuration-games-v1configuration-achievements-achievementid",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"achievementType": "achievementType",
+					"id": "id",
+					"initialState": "initialState",
+					"kind": "kind",
+					"stepsToUnlock": "stepsToUnlock",
+					"token": "token"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-publishing-v1configuration",
+			"url_pattern": "/games/v1configuration/applications/{applicationId}/achievements",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"items",
+				"kind",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Publishing API for Google Play Game Services.",
+				"version": "v1configuration",
+				"slug": "google-play-game-services-publishing-v1configuration-games-v1configuration-applications-applicationid-achievements",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-publishing-v1configuration",
+			"url_pattern": "/games/v1configuration/applications/{applicationId}/leaderboards",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"items",
+				"kind",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Publishing API for Google Play Game Services.",
+				"version": "v1configuration",
+				"slug": "google-play-game-services-publishing-v1configuration-games-v1configuration-applications-applicationid-leaderboards",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-publishing-v1configuration",
+			"url_pattern": "/games/v1configuration/images/{resourceId}/imageType/{imageType}",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"imageType",
+				"kind",
+				"resourceId",
+				"url"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Publishing API for Google Play Game Services.",
+				"version": "v1configuration",
+				"slug": "google-play-game-services-publishing-v1configuration-games-v1configuration-images-resourceid-imagetype-imagetype",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"imageType": "imageType",
+					"kind": "kind",
+					"resourceId": "resourceId",
+					"url": "url"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-publishing-v1configuration",
+			"url_pattern": "/games/v1configuration/leaderboards/{leaderboardId}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"id",
+				"kind",
+				"scoreMax",
+				"scoreMin",
+				"scoreOrder",
+				"token"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Publishing API for Google Play Game Services.",
+				"version": "v1configuration",
+				"slug": "google-play-game-services-publishing-v1configuration-games-v1configuration-leaderboards-leaderboardid",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"id": "id",
+					"kind": "kind",
+					"scoreMax": "scoreMax",
+					"scoreMin": "scoreMin",
+					"scoreOrder": "scoreOrder",
+					"token": "token"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		}
+	]
+}

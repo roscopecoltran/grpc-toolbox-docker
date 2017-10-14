@@ -1,0 +1,204 @@
+{
+	"backends": [
+		{
+			"group": "ad-exchange-buyer-v1-2",
+			"url_pattern": "/adexchangebuyer/v1.2/accounts",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"items",
+				"kind"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Accesses your bidding-account information, submits creatives for validation, finds available direct deals, and retrieves performance reports.",
+				"version": "v1.2",
+				"slug": "ad-exchange-buyer-v1-2-adexchangebuyer-v1-2-accounts",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"items": "items",
+					"kind": "kind"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "ad-exchange-buyer-v1-2",
+			"url_pattern": "/adexchangebuyer/v1.2/accounts/{id}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"bidderLocation",
+				"bidderLocation.maximumQps",
+				"bidderLocation.region",
+				"bidderLocation.url",
+				"cookieMatchingNid",
+				"cookieMatchingUrl",
+				"id",
+				"kind",
+				"maximumActiveCreatives",
+				"maximumTotalQps",
+				"numberActiveCreatives"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Accesses your bidding-account information, submits creatives for validation, finds available direct deals, and retrieves performance reports.",
+				"version": "v1.2",
+				"slug": "ad-exchange-buyer-v1-2-adexchangebuyer-v1-2-accounts-id",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"bidderLocation": "bidderLocation",
+					"bidderLocation.maximumQps": "bidderLocation.maximumQps",
+					"bidderLocation.region": "bidderLocation.region",
+					"bidderLocation.url": "bidderLocation.url",
+					"cookieMatchingNid": "cookieMatchingNid",
+					"cookieMatchingUrl": "cookieMatchingUrl",
+					"id": "id",
+					"kind": "kind",
+					"maximumActiveCreatives": "maximumActiveCreatives",
+					"maximumTotalQps": "maximumTotalQps",
+					"numberActiveCreatives": "numberActiveCreatives"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "ad-exchange-buyer-v1-2",
+			"url_pattern": "/adexchangebuyer/v1.2/creatives",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"items",
+				"kind",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Accesses your bidding-account information, submits creatives for validation, finds available direct deals, and retrieves performance reports.",
+				"version": "v1.2",
+				"slug": "ad-exchange-buyer-v1-2-adexchangebuyer-v1-2-creatives",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "ad-exchange-buyer-v1-2",
+			"url_pattern": "/adexchangebuyer/v1.2/creatives/{accountId}/{buyerCreativeId}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"HTMLSnippet",
+				"accountId",
+				"advertiserId",
+				"advertiserName",
+				"agencyId",
+				"apiUploadTimestamp",
+				"attribute",
+				"buyerCreativeId",
+				"clickThroughUrl",
+				"corrections",
+				"corrections.details",
+				"corrections.details.items",
+				"corrections.reason",
+				"disapprovalReasons",
+				"disapprovalReasons.details",
+				"disapprovalReasons.details.items",
+				"disapprovalReasons.reason",
+				"filteringReasons",
+				"filteringReasons.date",
+				"filteringReasons.reasons",
+				"filteringReasons.reasons.items",
+				"filteringReasons.reasons.items.filteringCount",
+				"filteringReasons.reasons.items.filteringStatus",
+				"height",
+				"impressionTrackingUrl",
+				"kind",
+				"productCategories",
+				"restrictedCategories",
+				"sensitiveCategories",
+				"status",
+				"vendorType",
+				"version",
+				"videoURL",
+				"width"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Accesses your bidding-account information, submits creatives for validation, finds available direct deals, and retrieves performance reports.",
+				"version": "v1.2",
+				"slug": "ad-exchange-buyer-v1-2-adexchangebuyer-v1-2-creatives-accountid-buyercreativeid",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"HTMLSnippet": "HTMLSnippet",
+					"accountId": "accountId",
+					"advertiserId": "advertiserId",
+					"advertiserName": "advertiserName",
+					"agencyId": "agencyId",
+					"apiUploadTimestamp": "apiUploadTimestamp",
+					"attribute": "attribute",
+					"buyerCreativeId": "buyerCreativeId",
+					"clickThroughUrl": "clickThroughUrl",
+					"corrections": "corrections",
+					"corrections.details": "corrections.details",
+					"corrections.details.items": "corrections.details.items",
+					"corrections.reason": "corrections.reason",
+					"disapprovalReasons": "disapprovalReasons",
+					"disapprovalReasons.details": "disapprovalReasons.details",
+					"disapprovalReasons.details.items": "disapprovalReasons.details.items",
+					"disapprovalReasons.reason": "disapprovalReasons.reason",
+					"filteringReasons": "filteringReasons",
+					"filteringReasons.date": "filteringReasons.date",
+					"filteringReasons.reasons": "filteringReasons.reasons",
+					"filteringReasons.reasons.items": "filteringReasons.reasons.items",
+					"filteringReasons.reasons.items.filteringCount": "filteringReasons.reasons.items.filteringCount",
+					"filteringReasons.reasons.items.filteringStatus": "filteringReasons.reasons.items.filteringStatus",
+					"height": "height",
+					"impressionTrackingUrl": "impressionTrackingUrl",
+					"kind": "kind",
+					"productCategories": "productCategories",
+					"restrictedCategories": "restrictedCategories",
+					"sensitiveCategories": "sensitiveCategories",
+					"status": "status",
+					"vendorType": "vendorType",
+					"version": "version",
+					"videoURL": "videoURL",
+					"width": "width"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		}
+	]
+}

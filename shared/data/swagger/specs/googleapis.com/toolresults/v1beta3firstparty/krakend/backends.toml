@@ -1,0 +1,321 @@
+[[backends]]
+  group = "cloud-tool-results-firstparty-v1beta3firstparty"
+  url_pattern = "/toolresults/v1beta3firstparty/projects/{projectId}/histories"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["histories", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Reads and publishes results from Firebase Test Lab."
+    version = "v1beta3firstparty"
+    slug = "cloud-tool-results-firstparty-v1beta3firstparty-toolresults-v1beta3firstparty-projects-projectid-histories"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      histories = "histories"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "cloud-tool-results-firstparty-v1beta3firstparty"
+  url_pattern = "/toolresults/v1beta3firstparty/projects/{projectId}/histories/{historyId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["displayName", "historyId", "name"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Reads and publishes results from Firebase Test Lab."
+    version = "v1beta3firstparty"
+    slug = "cloud-tool-results-firstparty-v1beta3firstparty-toolresults-v1beta3firstparty-projects-projectid-histories-historyid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      displayName = "displayName"
+      historyId = "historyId"
+      name = "name"
+
+[[backends]]
+  group = "cloud-tool-results-firstparty-v1beta3firstparty"
+  url_pattern = "/toolresults/v1beta3firstparty/projects/{projectId}/histories/{historyId}/executions"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["executions", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Reads and publishes results from Firebase Test Lab."
+    version = "v1beta3firstparty"
+    slug = "cloud-tool-results-firstparty-v1beta3firstparty-toolresults-v1beta3firstparty-projects-projectid-histories-historyid-executions"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      executions = "executions"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "cloud-tool-results-firstparty-v1beta3firstparty"
+  url_pattern = "/toolresults/v1beta3firstparty/projects/{projectId}/histories/{historyId}/executions/{executionId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["executionId", "state", "testExecutionMatrixId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Reads and publishes results from Firebase Test Lab."
+    version = "v1beta3firstparty"
+    slug = "cloud-tool-results-firstparty-v1beta3firstparty-toolresults-v1beta3firstparty-projects-projectid-histories-historyid-executions-executionid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      executionId = "executionId"
+      state = "state"
+      testExecutionMatrixId = "testExecutionMatrixId"
+
+[[backends]]
+  group = "cloud-tool-results-firstparty-v1beta3firstparty"
+  url_pattern = "/toolresults/v1beta3firstparty/projects/{projectId}/histories/{historyId}/executions/{executionId}/clusters"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["clusters"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Reads and publishes results from Firebase Test Lab."
+    version = "v1beta3firstparty"
+    slug = "cloud-tool-results-firstparty-v1beta3firstparty-toolresults-v1beta3firstparty-projects-projectid-histories-historyid-executions-executionid-clusters"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      clusters = "clusters"
+
+[[backends]]
+  group = "cloud-tool-results-firstparty-v1beta3firstparty"
+  url_pattern = "/toolresults/v1beta3firstparty/projects/{projectId}/histories/{historyId}/executions/{executionId}/clusters/{clusterId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["activity", "clusterId", "screens"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Reads and publishes results from Firebase Test Lab."
+    version = "v1beta3firstparty"
+    slug = "cloud-tool-results-firstparty-v1beta3firstparty-toolresults-v1beta3firstparty-projects-projectid-histories-historyid-executions-executionid-clusters-clusterid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      activity = "activity"
+      clusterId = "clusterId"
+      screens = "screens"
+
+[[backends]]
+  group = "cloud-tool-results-firstparty-v1beta3firstparty"
+  url_pattern = "/toolresults/v1beta3firstparty/projects/{projectId}/histories/{historyId}/executions/{executionId}/steps"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["nextPageToken", "steps"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Reads and publishes results from Firebase Test Lab."
+    version = "v1beta3firstparty"
+    slug = "cloud-tool-results-firstparty-v1beta3firstparty-toolresults-v1beta3firstparty-projects-projectid-histories-historyid-executions-executionid-steps"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      steps = "steps"
+
+[[backends]]
+  group = "cloud-tool-results-firstparty-v1beta3firstparty"
+  url_pattern = "/toolresults/v1beta3firstparty/projects/{projectId}/histories/{historyId}/executions/{executionId}/steps/{stepId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["description", "dimensionValue", "hasImages", "labels", "name", "state", "stepId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Reads and publishes results from Firebase Test Lab."
+    version = "v1beta3firstparty"
+    slug = "cloud-tool-results-firstparty-v1beta3firstparty-toolresults-v1beta3firstparty-projects-projectid-histories-historyid-executions-executionid-steps-stepid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      description = "description"
+      dimensionValue = "dimensionValue"
+      hasImages = "hasImages"
+      labels = "labels"
+      name = "name"
+      state = "state"
+      stepId = "stepId"
+
+[[backends]]
+  group = "cloud-tool-results-firstparty-v1beta3firstparty"
+  url_pattern = "/toolresults/v1beta3firstparty/projects/{projectId}/histories/{historyId}/executions/{executionId}/steps/{stepId}/perfMetricsSummary"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["executionId", "historyId", "perfMetrics", "projectId", "stepId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Reads and publishes results from Firebase Test Lab."
+    version = "v1beta3firstparty"
+    slug = "cloud-tool-results-firstparty-v1beta3firstparty-toolresults-v1beta3firstparty-projects-projectid-histories-historyid-executions-executionid-steps-stepid-perfmetricssummary"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      executionId = "executionId"
+      historyId = "historyId"
+      perfMetrics = "perfMetrics"
+      projectId = "projectId"
+      stepId = "stepId"
+
+[[backends]]
+  group = "cloud-tool-results-firstparty-v1beta3firstparty"
+  url_pattern = "/toolresults/v1beta3firstparty/projects/{projectId}/histories/{historyId}/executions/{executionId}/steps/{stepId}/perfSampleSeries"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["perfSampleSeries"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Reads and publishes results from Firebase Test Lab."
+    version = "v1beta3firstparty"
+    slug = "cloud-tool-results-firstparty-v1beta3firstparty-toolresults-v1beta3firstparty-projects-projectid-histories-historyid-executions-executionid-steps-stepid-perfsampleseries"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      perfSampleSeries = "perfSampleSeries"
+
+[[backends]]
+  group = "cloud-tool-results-firstparty-v1beta3firstparty"
+  url_pattern = "/toolresults/v1beta3firstparty/projects/{projectId}/histories/{historyId}/executions/{executionId}/steps/{stepId}/perfSampleSeries/{sampleSeriesId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["executionId", "historyId", "projectId", "sampleSeriesId", "stepId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Reads and publishes results from Firebase Test Lab."
+    version = "v1beta3firstparty"
+    slug = "cloud-tool-results-firstparty-v1beta3firstparty-toolresults-v1beta3firstparty-projects-projectid-histories-historyid-executions-executionid-steps-stepid-perfsampleseries-sampleseriesid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      executionId = "executionId"
+      historyId = "historyId"
+      projectId = "projectId"
+      sampleSeriesId = "sampleSeriesId"
+      stepId = "stepId"
+
+[[backends]]
+  group = "cloud-tool-results-firstparty-v1beta3firstparty"
+  url_pattern = "/toolresults/v1beta3firstparty/projects/{projectId}/histories/{historyId}/executions/{executionId}/steps/{stepId}/perfSampleSeries/{sampleSeriesId}/samples"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["nextPageToken", "perfSamples"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Reads and publishes results from Firebase Test Lab."
+    version = "v1beta3firstparty"
+    slug = "cloud-tool-results-firstparty-v1beta3firstparty-toolresults-v1beta3firstparty-projects-projectid-histories-historyid-executions-executionid-steps-stepid-perfsampleseries-sampleseriesid-samples"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      perfSamples = "perfSamples"
+
+[[backends]]
+  group = "cloud-tool-results-firstparty-v1beta3firstparty"
+  url_pattern = "/toolresults/v1beta3firstparty/projects/{projectId}/histories/{historyId}/executions/{executionId}/steps/{stepId}/perfSampleSeries/{sampleSeriesId}/samples:batchCreate"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["perfSamples"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Reads and publishes results from Firebase Test Lab."
+    version = "v1beta3firstparty"
+    slug = "cloud-tool-results-firstparty-v1beta3firstparty-toolresults-v1beta3firstparty-projects-projectid-histories-historyid-executions-executionid-steps-stepid-perfsampleseries-sampleseriesid-samples-batchcreate"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      perfSamples = "perfSamples"
+
+[[backends]]
+  group = "cloud-tool-results-firstparty-v1beta3firstparty"
+  url_pattern = "/toolresults/v1beta3firstparty/projects/{projectId}/histories/{historyId}/executions/{executionId}/steps/{stepId}/thumbnails"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["nextPageToken", "thumbnails"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Reads and publishes results from Firebase Test Lab."
+    version = "v1beta3firstparty"
+    slug = "cloud-tool-results-firstparty-v1beta3firstparty-toolresults-v1beta3firstparty-projects-projectid-histories-historyid-executions-executionid-steps-stepid-thumbnails"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      thumbnails = "thumbnails"
+
+[[backends]]
+  group = "cloud-tool-results-firstparty-v1beta3firstparty"
+  url_pattern = "/toolresults/v1beta3firstparty/projects/{projectId}/histories/{historyId}/executions/{executionId}/steps/{stepId}:publishXunitXmlFiles"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["description", "dimensionValue", "hasImages", "labels", "name", "state", "stepId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Reads and publishes results from Firebase Test Lab."
+    version = "v1beta3firstparty"
+    slug = "cloud-tool-results-firstparty-v1beta3firstparty-toolresults-v1beta3firstparty-projects-projectid-histories-historyid-executions-executionid-steps-stepid-publishxunitxmlfiles"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      description = "description"
+      dimensionValue = "dimensionValue"
+      hasImages = "hasImages"
+      labels = "labels"
+      name = "name"
+      state = "state"
+      stepId = "stepId"
+
+[[backends]]
+  group = "cloud-tool-results-firstparty-v1beta3firstparty"
+  url_pattern = "/toolresults/v1beta3firstparty/projects/{projectId}/settings"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["defaultBucket", "name"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Reads and publishes results from Firebase Test Lab."
+    version = "v1beta3firstparty"
+    slug = "cloud-tool-results-firstparty-v1beta3firstparty-toolresults-v1beta3firstparty-projects-projectid-settings"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      defaultBucket = "defaultBucket"
+      name = "name"
+
+[[backends]]
+  group = "cloud-tool-results-firstparty-v1beta3firstparty"
+  url_pattern = "/toolresults/v1beta3firstparty/projects/{projectId}:initializeSettings"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["defaultBucket", "name"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Reads and publishes results from Firebase Test Lab."
+    version = "v1beta3firstparty"
+    slug = "cloud-tool-results-firstparty-v1beta3firstparty-toolresults-v1beta3firstparty-projects-projectid-initializesettings"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      defaultBucket = "defaultBucket"
+      name = "name"

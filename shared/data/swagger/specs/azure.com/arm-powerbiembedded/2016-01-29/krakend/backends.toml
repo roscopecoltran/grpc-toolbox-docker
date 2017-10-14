@@ -1,0 +1,72 @@
+[[backends]]
+  group = "power-bi-embedded-management-client-2016-01-29"
+  url_pattern = "/providers/Microsoft"
+  method = "POWERBI/OPERATIONS"
+  encoding = "json"
+  host = ["https://management.azure.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "azure.com"
+    description = "Client to manage your Power BI Embedded workspace collections and retrieve workspaces."
+    version = "2016-01-29"
+    slug = "power-bi-embedded-management-client-2016-01-29-providers-microsoft"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://management.azure.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "power-bi-embedded-management-client-2016-01-29"
+  url_pattern = "/subscriptions/{subscriptionId}/providers/Microsoft"
+  method = "POWERBI/LOCATIONS/{LOCATION}/CHECKNAMEAVAILABILITY"
+  encoding = "json"
+  host = ["https://management.azure.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "azure.com"
+    description = "Client to manage your Power BI Embedded workspace collections and retrieve workspaces."
+    version = "2016-01-29"
+    slug = "power-bi-embedded-management-client-2016-01-29-subscriptions-subscriptionid-providers-microsoft"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://management.azure.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "power-bi-embedded-management-client-2016-01-29"
+  url_pattern = "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/moveResources"
+  method = "POST"
+  encoding = "json"
+  host = ["https://management.azure.com"]
+  url_keys = ["resourceGroupName"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "azure.com"
+    description = "Client to manage your Power BI Embedded workspace collections and retrieve workspaces."
+    version = "2016-01-29"
+    slug = "power-bi-embedded-management-client-2016-01-29-subscriptions-subscriptionid-resourcegroups-resourcegroupname-moveresources"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://management.azure.com"]
+    topics = ["cloud", "workspacecollections"]
+
+[[backends]]
+  group = "power-bi-embedded-management-client-2016-01-29"
+  url_pattern = "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft"
+  method = "POWERBI/WORKSPACECOLLECTIONS"
+  encoding = "json"
+  host = ["https://management.azure.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "azure.com"
+    description = "Client to manage your Power BI Embedded workspace collections and retrieve workspaces."
+    version = "2016-01-29"
+    slug = "power-bi-embedded-management-client-2016-01-29-subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://management.azure.com"]
+    topics = ["cloud"]

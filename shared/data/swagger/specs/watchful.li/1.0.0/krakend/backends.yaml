@@ -1,0 +1,1091 @@
+backends:
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/audits
+  method: GET
+  host:
+  - https://watchful.li
+  whitelist:
+  - id
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-audits
+    schemes:
+    - https
+    mapping:
+      id: id
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/audits/metadata
+  method: GET
+  host:
+  - https://watchful.li
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-audits-metadata
+    schemes:
+    - https
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/audits/{id}
+  method: GET
+  host:
+  - https://watchful.li
+  whitelist:
+  - id
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-audits-id
+    schemes:
+    - https
+    mapping:
+      id: id
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/extensions
+  method: GET
+  host:
+  - https://watchful.li
+  whitelist:
+  - date
+  - ext_name
+  - idx_site
+  - newVersion
+  - url
+  - vUpdate
+  - version
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-extensions
+    schemes:
+    - https
+    mapping:
+      date: date
+      ext_name: ext_name
+      idx_site: idx_site
+      newVersion: newVersion
+      url: url
+      vUpdate: vUpdate
+      version: version
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/extensions/metadata
+  method: GET
+  host:
+  - https://watchful.li
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-extensions-metadata
+    schemes:
+    - https
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/extensions/{id}/ignore
+  method: POST
+  host:
+  - https://watchful.li
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-extensions-id-ignore
+    schemes:
+    - https
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/extensions/{id}/unignore
+  method: POST
+  host:
+  - https://watchful.li
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-extensions-id-unignore
+    schemes:
+    - https
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/extensions/{id}/update
+  method: POST
+  host:
+  - https://watchful.li
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-extensions-id-update
+    schemes:
+    - https
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/feedbacks
+  method: GET
+  host:
+  - https://watchful.li
+  whitelist:
+  - id
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-feedbacks
+    schemes:
+    - https
+    mapping:
+      id: id
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/feedbacks/metadata
+  method: GET
+  host:
+  - https://watchful.li
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-feedbacks-metadata
+    schemes:
+    - https
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/logs
+  method: GET
+  host:
+  - https://watchful.li
+  whitelist:
+  - Site name
+  - id_log
+  - idx_site
+  - log_date
+  - log_entry
+  - log_level
+  - log_type
+  - userid
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-logs
+    schemes:
+    - https
+    mapping:
+      Site name: Site name
+      id_log: id_log
+      idx_site: idx_site
+      log_date: log_date
+      log_entry: log_entry
+      log_level: log_level
+      log_type: log_type
+      userid: userid
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/logs/export
+  method: GET
+  host:
+  - https://watchful.li
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-logs-export
+    schemes:
+    - https
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/logs/metadata
+  method: GET
+  host:
+  - https://watchful.li
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-logs-metadata
+    schemes:
+    - https
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/logs/types
+  method: GET
+  host:
+  - https://watchful.li
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-logs-types
+    schemes:
+    - https
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/packages
+  method: POST
+  host:
+  - https://watchful.li
+  whitelist:
+  - id
+  - name
+  - nbSites
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-packages
+    schemes:
+    - https
+    mapping:
+      id: id
+      name: name
+      nbSites: nbSites
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/reports/sites/{id}
+  method: GET
+  host:
+  - https://watchful.li
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-reports-sites-id
+    schemes:
+    - https
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/reports/tags/{id}
+  method: GET
+  host:
+  - https://watchful.li
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-reports-tags-id
+    schemes:
+    - https
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/sites
+  method: GET
+  host:
+  - https://watchful.li
+  whitelist:
+  - access_url
+  - admin_url
+  - akeebaProfile
+  - backupSchedule
+  - canBackup
+  - canUpdate
+  - dateBackup
+  - date_last_check
+  - error
+  - ip
+  - jUpdate
+  - j_version
+  - monitorid
+  - name
+  - nbUpdates
+  - new_j_version
+  - notes
+  - published
+  - secret_word
+  - siteid
+  - tags
+  - up
+  - word_akeeba
+  - word_check
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-sites
+    schemes:
+    - https
+    mapping:
+      access_url: access_url
+      admin_url: admin_url
+      akeebaProfile: akeebaProfile
+      backupSchedule: backupSchedule
+      canBackup: canBackup
+      canUpdate: canUpdate
+      date_last_check: date_last_check
+      dateBackup: dateBackup
+      error: error
+      ip: ip
+      j_version: j_version
+      jUpdate: jUpdate
+      monitorid: monitorid
+      name: name
+      nbUpdates: nbUpdates
+      new_j_version: new_j_version
+      notes: notes
+      published: published
+      secret_word: secret_word
+      siteid: siteid
+      tags: tags
+      up: up
+      word_akeeba: word_akeeba
+      word_check: word_check
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/sites/metadata
+  method: GET
+  host:
+  - https://watchful.li
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-sites-metadata
+    schemes:
+    - https
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/sites/{id}
+  method: GET
+  host:
+  - https://watchful.li
+  whitelist:
+  - access_url
+  - admin_url
+  - akeebaProfile
+  - backupSchedule
+  - canBackup
+  - canUpdate
+  - dateBackup
+  - date_last_check
+  - error
+  - ip
+  - jUpdate
+  - j_version
+  - monitorid
+  - name
+  - nbUpdates
+  - new_j_version
+  - notes
+  - published
+  - secret_word
+  - siteid
+  - tags
+  - up
+  - word_akeeba
+  - word_check
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-sites-id
+    schemes:
+    - https
+    mapping:
+      access_url: access_url
+      admin_url: admin_url
+      akeebaProfile: akeebaProfile
+      backupSchedule: backupSchedule
+      canBackup: canBackup
+      canUpdate: canUpdate
+      date_last_check: date_last_check
+      dateBackup: dateBackup
+      error: error
+      ip: ip
+      j_version: j_version
+      jUpdate: jUpdate
+      monitorid: monitorid
+      name: name
+      nbUpdates: nbUpdates
+      new_j_version: new_j_version
+      notes: notes
+      published: published
+      secret_word: secret_word
+      siteid: siteid
+      tags: tags
+      up: up
+      word_akeeba: word_akeeba
+      word_check: word_check
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/sites/{id}/audits
+  method: GET
+  host:
+  - https://watchful.li
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-sites-id-audits
+    schemes:
+    - https
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/sites/{id}/backupnow
+  method: POST
+  host:
+  - https://watchful.li
+  whitelist:
+  - access_url
+  - admin_url
+  - akeebaProfile
+  - backupSchedule
+  - canBackup
+  - canUpdate
+  - dateBackup
+  - date_last_check
+  - error
+  - ip
+  - jUpdate
+  - j_version
+  - monitorid
+  - name
+  - nbUpdates
+  - new_j_version
+  - notes
+  - published
+  - secret_word
+  - siteid
+  - tags
+  - up
+  - word_akeeba
+  - word_check
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-sites-id-backupnow
+    schemes:
+    - https
+    mapping:
+      access_url: access_url
+      admin_url: admin_url
+      akeebaProfile: akeebaProfile
+      backupSchedule: backupSchedule
+      canBackup: canBackup
+      canUpdate: canUpdate
+      date_last_check: date_last_check
+      dateBackup: dateBackup
+      error: error
+      ip: ip
+      j_version: j_version
+      jUpdate: jUpdate
+      monitorid: monitorid
+      name: name
+      nbUpdates: nbUpdates
+      new_j_version: new_j_version
+      notes: notes
+      published: published
+      secret_word: secret_word
+      siteid: siteid
+      tags: tags
+      up: up
+      word_akeeba: word_akeeba
+      word_check: word_check
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/sites/{id}/backupprofiles
+  method: GET
+  host:
+  - https://watchful.li
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-sites-id-backupprofiles
+    schemes:
+    - https
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/sites/{id}/backups
+  method: GET
+  host:
+  - https://watchful.li
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-sites-id-backups
+    schemes:
+    - https
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/sites/{id}/backupstart
+  method: POST
+  host:
+  - https://watchful.li
+  whitelist:
+  - access_url
+  - admin_url
+  - akeebaProfile
+  - backupSchedule
+  - canBackup
+  - canUpdate
+  - dateBackup
+  - date_last_check
+  - error
+  - ip
+  - jUpdate
+  - j_version
+  - monitorid
+  - name
+  - nbUpdates
+  - new_j_version
+  - notes
+  - published
+  - secret_word
+  - siteid
+  - tags
+  - up
+  - word_akeeba
+  - word_check
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-sites-id-backupstart
+    schemes:
+    - https
+    mapping:
+      access_url: access_url
+      admin_url: admin_url
+      akeebaProfile: akeebaProfile
+      backupSchedule: backupSchedule
+      canBackup: canBackup
+      canUpdate: canUpdate
+      date_last_check: date_last_check
+      dateBackup: dateBackup
+      error: error
+      ip: ip
+      j_version: j_version
+      jUpdate: jUpdate
+      monitorid: monitorid
+      name: name
+      nbUpdates: nbUpdates
+      new_j_version: new_j_version
+      notes: notes
+      published: published
+      secret_word: secret_word
+      siteid: siteid
+      tags: tags
+      up: up
+      word_akeeba: word_akeeba
+      word_check: word_check
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/sites/{id}/backupstep
+  method: POST
+  host:
+  - https://watchful.li
+  whitelist:
+  - access_url
+  - admin_url
+  - akeebaProfile
+  - backupSchedule
+  - canBackup
+  - canUpdate
+  - dateBackup
+  - date_last_check
+  - error
+  - ip
+  - jUpdate
+  - j_version
+  - monitorid
+  - name
+  - nbUpdates
+  - new_j_version
+  - notes
+  - published
+  - secret_word
+  - siteid
+  - tags
+  - up
+  - word_akeeba
+  - word_check
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-sites-id-backupstep
+    schemes:
+    - https
+    mapping:
+      access_url: access_url
+      admin_url: admin_url
+      akeebaProfile: akeebaProfile
+      backupSchedule: backupSchedule
+      canBackup: canBackup
+      canUpdate: canUpdate
+      date_last_check: date_last_check
+      dateBackup: dateBackup
+      error: error
+      ip: ip
+      j_version: j_version
+      jUpdate: jUpdate
+      monitorid: monitorid
+      name: name
+      nbUpdates: nbUpdates
+      new_j_version: new_j_version
+      notes: notes
+      published: published
+      secret_word: secret_word
+      siteid: siteid
+      tags: tags
+      up: up
+      word_akeeba: word_akeeba
+      word_check: word_check
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/sites/{id}/extensions
+  method: GET
+  host:
+  - https://watchful.li
+  whitelist:
+  - date
+  - ext_name
+  - idx_site
+  - newVersion
+  - url
+  - vUpdate
+  - version
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-sites-id-extensions
+    schemes:
+    - https
+    mapping:
+      date: date
+      ext_name: ext_name
+      idx_site: idx_site
+      newVersion: newVersion
+      url: url
+      vUpdate: vUpdate
+      version: version
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/sites/{id}/logs
+  method: GET
+  host:
+  - https://watchful.li
+  whitelist:
+  - Site name
+  - id_log
+  - idx_site
+  - log_date
+  - log_entry
+  - log_level
+  - log_type
+  - userid
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-sites-id-logs
+    schemes:
+    - https
+    mapping:
+      Site name: Site name
+      id_log: id_log
+      idx_site: idx_site
+      log_date: log_date
+      log_entry: log_entry
+      log_level: log_level
+      log_type: log_type
+      userid: userid
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/sites/{id}/monitor
+  method: POST
+  host:
+  - https://watchful.li
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-sites-id-monitor
+    schemes:
+    - https
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/sites/{id}/scanner
+  method: GET
+  host:
+  - https://watchful.li
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-sites-id-scanner
+    schemes:
+    - https
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/sites/{id}/tags
+  method: GET
+  host:
+  - https://watchful.li
+  whitelist:
+  - id
+  - name
+  - nbSites
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-sites-id-tags
+    schemes:
+    - https
+    mapping:
+      id: id
+      name: name
+      nbSites: nbSites
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/sites/{id}/updatejoomla
+  method: POST
+  host:
+  - https://watchful.li
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-sites-id-updatejoomla
+    schemes:
+    - https
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/sites/{id}/uptime
+  method: GET
+  host:
+  - https://watchful.li
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-sites-id-uptime
+    schemes:
+    - https
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/sites/{id}/validate
+  method: GET
+  host:
+  - https://watchful.li
+  whitelist:
+  - Site name
+  - id_log
+  - idx_site
+  - log_date
+  - log_entry
+  - log_level
+  - log_type
+  - userid
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-sites-id-validate
+    schemes:
+    - https
+    mapping:
+      Site name: Site name
+      id_log: id_log
+      idx_site: idx_site
+      log_date: log_date
+      log_entry: log_entry
+      log_level: log_level
+      log_type: log_type
+      userid: userid
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/sites/{id}/validatedebug
+  method: GET
+  host:
+  - https://watchful.li
+  whitelist:
+  - Site name
+  - id_log
+  - idx_site
+  - log_date
+  - log_entry
+  - log_level
+  - log_type
+  - userid
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-sites-id-validatedebug
+    schemes:
+    - https
+    mapping:
+      Site name: Site name
+      id_log: id_log
+      idx_site: idx_site
+      log_date: log_date
+      log_entry: log_entry
+      log_level: log_level
+      log_type: log_type
+      userid: userid
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/ssousers
+  method: GET
+  host:
+  - https://watchful.li
+  whitelist:
+  - email
+  - groupid
+  - id
+  - lastLoginDate
+  - lastLoginSite
+  - name
+  - password
+  - userid
+  - username
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-ssousers
+    schemes:
+    - https
+    mapping:
+      email: email
+      groupid: groupid
+      id: id
+      lastLoginDate: lastLoginDate
+      lastLoginSite: lastLoginSite
+      name: name
+      password: password
+      userid: userid
+      username: username
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/ssousers/{id}
+  method: GET
+  host:
+  - https://watchful.li
+  whitelist:
+  - email
+  - groupid
+  - id
+  - lastLoginDate
+  - lastLoginSite
+  - name
+  - password
+  - userid
+  - username
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-ssousers-id
+    schemes:
+    - https
+    mapping:
+      email: email
+      groupid: groupid
+      id: id
+      lastLoginDate: lastLoginDate
+      lastLoginSite: lastLoginSite
+      name: name
+      password: password
+      userid: userid
+      username: username
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/tags
+  method: GET
+  host:
+  - https://watchful.li
+  whitelist:
+  - id
+  - name
+  - nbSites
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-tags
+    schemes:
+    - https
+    mapping:
+      id: id
+      name: name
+      nbSites: nbSites
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/tags/metadata
+  method: GET
+  host:
+  - https://watchful.li
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-tags-metadata
+    schemes:
+    - https
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/tags/{id}
+  method: GET
+  host:
+  - https://watchful.li
+  whitelist:
+  - id
+  - name
+  - nbSites
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-tags-id
+    schemes:
+    - https
+    mapping:
+      id: id
+      name: name
+      nbSites: nbSites
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/tags/{id}/sites
+  method: GET
+  host:
+  - https://watchful.li
+  whitelist:
+  - access_url
+  - admin_url
+  - akeebaProfile
+  - backupSchedule
+  - canBackup
+  - canUpdate
+  - dateBackup
+  - date_last_check
+  - error
+  - ip
+  - jUpdate
+  - j_version
+  - monitorid
+  - name
+  - nbUpdates
+  - new_j_version
+  - notes
+  - published
+  - secret_word
+  - siteid
+  - tags
+  - up
+  - word_akeeba
+  - word_check
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-tags-id-sites
+    schemes:
+    - https
+    mapping:
+      access_url: access_url
+      admin_url: admin_url
+      akeebaProfile: akeebaProfile
+      backupSchedule: backupSchedule
+      canBackup: canBackup
+      canUpdate: canUpdate
+      date_last_check: date_last_check
+      dateBackup: dateBackup
+      error: error
+      ip: ip
+      j_version: j_version
+      jUpdate: jUpdate
+      monitorid: monitorid
+      name: name
+      nbUpdates: nbUpdates
+      new_j_version: new_j_version
+      notes: notes
+      published: published
+      secret_word: secret_word
+      siteid: siteid
+      tags: tags
+      up: up
+      word_akeeba: word_akeeba
+      word_check: word_check
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/versions
+  method: GET
+  host:
+  - https://watchful.li
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-versions
+    schemes:
+    - https
+    hosts:
+    - https://watchful.li
+- group: watchful-li-1-0-0
+  url_pattern: /api/v1/versions/{id}
+  method: GET
+  host:
+  - https://watchful.li
+  concurrent_calls: 1
+  extra_config:
+    provider: watchful.li
+    version: 1.0.0
+    slug: watchful-li-1-0-0-api-v1-versions-id
+    schemes:
+    - https
+    hosts:
+    - https://watchful.li

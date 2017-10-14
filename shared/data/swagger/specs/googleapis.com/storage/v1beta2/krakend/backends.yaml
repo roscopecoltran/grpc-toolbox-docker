@@ -1,0 +1,619 @@
+backends:
+- group: cloud-storage-v1beta2
+  url_pattern: /storage/v1beta2/b
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - items
+  - kind
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Lets you store and retrieve potentially-large, immutable data objects.
+    version: v1beta2
+    slug: cloud-storage-v1beta2-storage-v1beta2-b
+    schemes:
+    - https
+    mapping:
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - storage
+- group: cloud-storage-v1beta2
+  url_pattern: /storage/v1beta2/b/{bucket}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - acl
+  - cors
+  - cors.maxAgeSeconds
+  - cors.method
+  - cors.method.items
+  - cors.origin
+  - cors.origin.items
+  - cors.responseHeader
+  - cors.responseHeader.items
+  - defaultObjectAcl
+  - etag
+  - id
+  - kind
+  - lifecycle
+  - lifecycle.rule
+  - lifecycle.rule.items
+  - lifecycle.rule.items.action
+  - lifecycle.rule.items.condition
+  - lifecycle.rule.items.condition.age
+  - lifecycle.rule.items.condition.createdBefore
+  - lifecycle.rule.items.condition.isLive
+  - lifecycle.rule.items.condition.numNewerVersions
+  - location
+  - logging
+  - logging.logBucket
+  - logging.logObjectPrefix
+  - metageneration
+  - name
+  - owner
+  - owner.entity
+  - owner.entityId
+  - selfLink
+  - storageClass
+  - timeCreated
+  - versioning
+  - versioning.enabled
+  - website
+  - website.mainPageSuffix
+  - website.notFoundPage
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Lets you store and retrieve potentially-large, immutable data objects.
+    version: v1beta2
+    slug: cloud-storage-v1beta2-storage-v1beta2-b-bucket
+    schemes:
+    - https
+    mapping:
+      acl: acl
+      cors: cors
+      cors.maxAgeSeconds: cors.maxAgeSeconds
+      cors.method: cors.method
+      cors.method.items: cors.method.items
+      cors.origin: cors.origin
+      cors.origin.items: cors.origin.items
+      cors.responseHeader: cors.responseHeader
+      cors.responseHeader.items: cors.responseHeader.items
+      defaultObjectAcl: defaultObjectAcl
+      etag: etag
+      id: id
+      kind: kind
+      lifecycle: lifecycle
+      lifecycle.rule: lifecycle.rule
+      lifecycle.rule.items: lifecycle.rule.items
+      lifecycle.rule.items.action: lifecycle.rule.items.action
+      lifecycle.rule.items.condition: lifecycle.rule.items.condition
+      lifecycle.rule.items.condition.age: lifecycle.rule.items.condition.age
+      lifecycle.rule.items.condition.createdBefore: lifecycle.rule.items.condition.createdBefore
+      lifecycle.rule.items.condition.isLive: lifecycle.rule.items.condition.isLive
+      lifecycle.rule.items.condition.numNewerVersions: lifecycle.rule.items.condition.numNewerVersions
+      location: location
+      logging: logging
+      logging.logBucket: logging.logBucket
+      logging.logObjectPrefix: logging.logObjectPrefix
+      metageneration: metageneration
+      name: name
+      owner: owner
+      owner.entity: owner.entity
+      owner.entityId: owner.entityId
+      selfLink: selfLink
+      storageClass: storageClass
+      timeCreated: timeCreated
+      versioning: versioning
+      versioning.enabled: versioning.enabled
+      website: website
+      website.mainPageSuffix: website.mainPageSuffix
+      website.notFoundPage: website.notFoundPage
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - storage
+- group: cloud-storage-v1beta2
+  url_pattern: /storage/v1beta2/b/{bucket}/acl
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - items
+  - kind
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Lets you store and retrieve potentially-large, immutable data objects.
+    version: v1beta2
+    slug: cloud-storage-v1beta2-storage-v1beta2-b-bucket-acl
+    schemes:
+    - https
+    mapping:
+      items: items
+      kind: kind
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - storage
+- group: cloud-storage-v1beta2
+  url_pattern: /storage/v1beta2/b/{bucket}/acl/{entity}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - bucket
+  - domain
+  - email
+  - entity
+  - entityId
+  - etag
+  - id
+  - kind
+  - role
+  - selfLink
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Lets you store and retrieve potentially-large, immutable data objects.
+    version: v1beta2
+    slug: cloud-storage-v1beta2-storage-v1beta2-b-bucket-acl-entity
+    schemes:
+    - https
+    mapping:
+      bucket: bucket
+      domain: domain
+      email: email
+      entity: entity
+      entityId: entityId
+      etag: etag
+      id: id
+      kind: kind
+      role: role
+      selfLink: selfLink
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - storage
+- group: cloud-storage-v1beta2
+  url_pattern: /storage/v1beta2/b/{bucket}/defaultObjectAcl
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - items
+  - kind
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Lets you store and retrieve potentially-large, immutable data objects.
+    version: v1beta2
+    slug: cloud-storage-v1beta2-storage-v1beta2-b-bucket-defaultobjectacl
+    schemes:
+    - https
+    mapping:
+      items: items
+      kind: kind
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - storage
+- group: cloud-storage-v1beta2
+  url_pattern: /storage/v1beta2/b/{bucket}/defaultObjectAcl/{entity}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - bucket
+  - domain
+  - email
+  - entity
+  - entityId
+  - etag
+  - generation
+  - id
+  - kind
+  - object
+  - role
+  - selfLink
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Lets you store and retrieve potentially-large, immutable data objects.
+    version: v1beta2
+    slug: cloud-storage-v1beta2-storage-v1beta2-b-bucket-defaultobjectacl-entity
+    schemes:
+    - https
+    mapping:
+      bucket: bucket
+      domain: domain
+      email: email
+      entity: entity
+      entityId: entityId
+      etag: etag
+      generation: generation
+      id: id
+      kind: kind
+      object: object
+      role: role
+      selfLink: selfLink
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - storage
+- group: cloud-storage-v1beta2
+  url_pattern: /storage/v1beta2/b/{bucket}/o
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - items
+  - kind
+  - nextPageToken
+  - prefixes
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Lets you store and retrieve potentially-large, immutable data objects.
+    version: v1beta2
+    slug: cloud-storage-v1beta2-storage-v1beta2-b-bucket-o
+    schemes:
+    - https
+    mapping:
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+      prefixes: prefixes
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - storage
+- group: cloud-storage-v1beta2
+  url_pattern: /storage/v1beta2/b/{bucket}/o/watch
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - address
+  - expiration
+  - id
+  - kind
+  - params
+  - params.additionalProperties
+  - payload
+  - resourceId
+  - resourceUri
+  - token
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Lets you store and retrieve potentially-large, immutable data objects.
+    version: v1beta2
+    slug: cloud-storage-v1beta2-storage-v1beta2-b-bucket-o-watch
+    schemes:
+    - https
+    mapping:
+      address: address
+      expiration: expiration
+      id: id
+      kind: kind
+      params: params
+      params.additionalProperties: params.additionalProperties
+      payload: payload
+      resourceId: resourceId
+      resourceUri: resourceUri
+      token: token
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - storage
+- group: cloud-storage-v1beta2
+  url_pattern: /storage/v1beta2/b/{bucket}/o/{object}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - acl
+  - bucket
+  - cacheControl
+  - componentCount
+  - contentDisposition
+  - contentEncoding
+  - contentLanguage
+  - contentType
+  - crc32c
+  - etag
+  - generation
+  - id
+  - kind
+  - md5Hash
+  - mediaLink
+  - metadata
+  - metadata.additionalProperties
+  - metageneration
+  - name
+  - owner
+  - owner.entity
+  - owner.entityId
+  - selfLink
+  - size
+  - storageClass
+  - timeDeleted
+  - updated
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Lets you store and retrieve potentially-large, immutable data objects.
+    version: v1beta2
+    slug: cloud-storage-v1beta2-storage-v1beta2-b-bucket-o-object
+    schemes:
+    - https
+    mapping:
+      acl: acl
+      bucket: bucket
+      cacheControl: cacheControl
+      componentCount: componentCount
+      contentDisposition: contentDisposition
+      contentEncoding: contentEncoding
+      contentLanguage: contentLanguage
+      contentType: contentType
+      crc32c: crc32c
+      etag: etag
+      generation: generation
+      id: id
+      kind: kind
+      md5Hash: md5Hash
+      mediaLink: mediaLink
+      metadata: metadata
+      metadata.additionalProperties: metadata.additionalProperties
+      metageneration: metageneration
+      name: name
+      owner: owner
+      owner.entity: owner.entity
+      owner.entityId: owner.entityId
+      selfLink: selfLink
+      size: size
+      storageClass: storageClass
+      timeDeleted: timeDeleted
+      updated: updated
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - storage
+- group: cloud-storage-v1beta2
+  url_pattern: /storage/v1beta2/b/{bucket}/o/{object}/acl
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - items
+  - kind
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Lets you store and retrieve potentially-large, immutable data objects.
+    version: v1beta2
+    slug: cloud-storage-v1beta2-storage-v1beta2-b-bucket-o-object-acl
+    schemes:
+    - https
+    mapping:
+      items: items
+      kind: kind
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - storage
+- group: cloud-storage-v1beta2
+  url_pattern: /storage/v1beta2/b/{bucket}/o/{object}/acl/{entity}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - bucket
+  - domain
+  - email
+  - entity
+  - entityId
+  - etag
+  - generation
+  - id
+  - kind
+  - object
+  - role
+  - selfLink
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Lets you store and retrieve potentially-large, immutable data objects.
+    version: v1beta2
+    slug: cloud-storage-v1beta2-storage-v1beta2-b-bucket-o-object-acl-entity
+    schemes:
+    - https
+    mapping:
+      bucket: bucket
+      domain: domain
+      email: email
+      entity: entity
+      entityId: entityId
+      etag: etag
+      generation: generation
+      id: id
+      kind: kind
+      object: object
+      role: role
+      selfLink: selfLink
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - storage
+- group: cloud-storage-v1beta2
+  url_pattern: /storage/v1beta2/b/{destinationBucket}/o/{destinationObject}/compose
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - acl
+  - bucket
+  - cacheControl
+  - componentCount
+  - contentDisposition
+  - contentEncoding
+  - contentLanguage
+  - contentType
+  - crc32c
+  - etag
+  - generation
+  - id
+  - kind
+  - md5Hash
+  - mediaLink
+  - metadata
+  - metadata.additionalProperties
+  - metageneration
+  - name
+  - owner
+  - owner.entity
+  - owner.entityId
+  - selfLink
+  - size
+  - storageClass
+  - timeDeleted
+  - updated
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Lets you store and retrieve potentially-large, immutable data objects.
+    version: v1beta2
+    slug: cloud-storage-v1beta2-storage-v1beta2-b-destinationbucket-o-destinationobject-compose
+    schemes:
+    - https
+    mapping:
+      acl: acl
+      bucket: bucket
+      cacheControl: cacheControl
+      componentCount: componentCount
+      contentDisposition: contentDisposition
+      contentEncoding: contentEncoding
+      contentLanguage: contentLanguage
+      contentType: contentType
+      crc32c: crc32c
+      etag: etag
+      generation: generation
+      id: id
+      kind: kind
+      md5Hash: md5Hash
+      mediaLink: mediaLink
+      metadata: metadata
+      metadata.additionalProperties: metadata.additionalProperties
+      metageneration: metageneration
+      name: name
+      owner: owner
+      owner.entity: owner.entity
+      owner.entityId: owner.entityId
+      selfLink: selfLink
+      size: size
+      storageClass: storageClass
+      timeDeleted: timeDeleted
+      updated: updated
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - storage
+- group: cloud-storage-v1beta2
+  url_pattern: /storage/v1beta2/b/{sourceBucket}/o/{sourceObject}/copyTo/b/{destinationBucket}/o/{destinationObject}
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - acl
+  - bucket
+  - cacheControl
+  - componentCount
+  - contentDisposition
+  - contentEncoding
+  - contentLanguage
+  - contentType
+  - crc32c
+  - etag
+  - generation
+  - id
+  - kind
+  - md5Hash
+  - mediaLink
+  - metadata
+  - metadata.additionalProperties
+  - metageneration
+  - name
+  - owner
+  - owner.entity
+  - owner.entityId
+  - selfLink
+  - size
+  - storageClass
+  - timeDeleted
+  - updated
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Lets you store and retrieve potentially-large, immutable data objects.
+    version: v1beta2
+    slug: cloud-storage-v1beta2-storage-v1beta2-b-sourcebucket-o-sourceobject-copyto-b-destinationbucket-o-destinationobject
+    schemes:
+    - https
+    mapping:
+      acl: acl
+      bucket: bucket
+      cacheControl: cacheControl
+      componentCount: componentCount
+      contentDisposition: contentDisposition
+      contentEncoding: contentEncoding
+      contentLanguage: contentLanguage
+      contentType: contentType
+      crc32c: crc32c
+      etag: etag
+      generation: generation
+      id: id
+      kind: kind
+      md5Hash: md5Hash
+      mediaLink: mediaLink
+      metadata: metadata
+      metadata.additionalProperties: metadata.additionalProperties
+      metageneration: metageneration
+      name: name
+      owner: owner
+      owner.entity: owner.entity
+      owner.entityId: owner.entityId
+      selfLink: selfLink
+      size: size
+      storageClass: storageClass
+      timeDeleted: timeDeleted
+      updated: updated
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - storage
+- group: cloud-storage-v1beta2
+  url_pattern: /storage/v1beta2/channels/stop
+  method: POST
+  host:
+  - https://www.googleapis.com
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Lets you store and retrieve potentially-large, immutable data objects.
+    version: v1beta2
+    slug: cloud-storage-v1beta2-storage-v1beta2-channels-stop
+    schemes:
+    - https
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - storage

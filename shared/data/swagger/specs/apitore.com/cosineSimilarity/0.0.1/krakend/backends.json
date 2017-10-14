@@ -1,0 +1,88 @@
+{
+	"backends": [
+		{
+			"group": "cosine-similarity-0-0-1",
+			"url_pattern": "/api/49/cosine-similarity/vec-vec",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://api.apitore.com"
+			],
+			"whitelist": [
+				"endTime",
+				"log",
+				"processTime",
+				"score",
+				"startTime"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "apitore.com",
+				"description": "Cosine Similarity.\u003cBR /\u003e[Endpoint] https://api.apitore.com/api/49",
+				"version": "0.0.1",
+				"slug": "cosine-similarity-0-0-1-api-49-cosine-similarity-vec-vec",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"endTime": "endTime",
+					"log": "log",
+					"processTime": "processTime",
+					"score": "score",
+					"startTime": "startTime"
+				},
+				"hosts": [
+					"https://api.apitore.com"
+				]
+			}
+		},
+		{
+			"group": "cosine-similarity-0-0-1",
+			"url_pattern": "/api/49/cosine-similarity/vec-word",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://api.apitore.com"
+			],
+			"whitelist": [
+				"endTime",
+				"log",
+				"processTime",
+				"score",
+				"startTime"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "apitore.com",
+				"description": "Cosine Similarity.\u003cBR /\u003e[Endpoint] https://api.apitore.com/api/49",
+				"version": "0.0.1",
+				"slug": "cosine-similarity-0-0-1-api-49-cosine-similarity-vec-word",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"endTime": "endTime",
+					"log": "log",
+					"processTime": "processTime",
+					"score": "score",
+					"startTime": "startTime"
+				},
+				"hosts": [
+					"https://api.apitore.com"
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,478 @@
+[[backends]]
+  group = "tag-manager-v1"
+  url_pattern = "/tagmanager/v1/accounts"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["accounts"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses Tag Manager accounts and containers."
+    version = "v1"
+    slug = "tag-manager-v1-tagmanager-v1-accounts"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      accounts = "accounts"
+
+[[backends]]
+  group = "tag-manager-v1"
+  url_pattern = "/tagmanager/v1/accounts/{accountId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["accountId", "fingerprint", "name", "shareData"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses Tag Manager accounts and containers."
+    version = "v1"
+    slug = "tag-manager-v1-tagmanager-v1-accounts-accountid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      accountId = "accountId"
+      fingerprint = "fingerprint"
+      name = "name"
+      shareData = "shareData"
+
+[[backends]]
+  group = "tag-manager-v1"
+  url_pattern = "/tagmanager/v1/accounts/{accountId}/containers"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["containers"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses Tag Manager accounts and containers."
+    version = "v1"
+    slug = "tag-manager-v1-tagmanager-v1-accounts-accountid-containers"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      containers = "containers"
+
+[[backends]]
+  group = "tag-manager-v1"
+  url_pattern = "/tagmanager/v1/accounts/{accountId}/containers/{containerId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["accountId", "containerId", "domainName", "enabledBuiltInVariable", "fingerprint", "name", "notes", "publicId", "timeZoneCountryId", "timeZoneId", "usageContext"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses Tag Manager accounts and containers."
+    version = "v1"
+    slug = "tag-manager-v1-tagmanager-v1-accounts-accountid-containers-containerid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      accountId = "accountId"
+      containerId = "containerId"
+      domainName = "domainName"
+      enabledBuiltInVariable = "enabledBuiltInVariable"
+      fingerprint = "fingerprint"
+      name = "name"
+      notes = "notes"
+      publicId = "publicId"
+      timeZoneCountryId = "timeZoneCountryId"
+      timeZoneId = "timeZoneId"
+      usageContext = "usageContext"
+
+[[backends]]
+  group = "tag-manager-v1"
+  url_pattern = "/tagmanager/v1/accounts/{accountId}/containers/{containerId}/environments"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["environments"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses Tag Manager accounts and containers."
+    version = "v1"
+    slug = "tag-manager-v1-tagmanager-v1-accounts-accountid-containers-containerid-environments"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      environments = "environments"
+
+[[backends]]
+  group = "tag-manager-v1"
+  url_pattern = "/tagmanager/v1/accounts/{accountId}/containers/{containerId}/environments/{environmentId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["accountId", "authorizationCode", "authorizationTimestampMs", "containerId", "containerVersionId", "description", "enableDebug", "environmentId", "fingerprint", "name", "url"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses Tag Manager accounts and containers."
+    version = "v1"
+    slug = "tag-manager-v1-tagmanager-v1-accounts-accountid-containers-containerid-environments-environmentid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      accountId = "accountId"
+      authorizationCode = "authorizationCode"
+      authorizationTimestampMs = "authorizationTimestampMs"
+      containerId = "containerId"
+      containerVersionId = "containerVersionId"
+      description = "description"
+      enableDebug = "enableDebug"
+      environmentId = "environmentId"
+      fingerprint = "fingerprint"
+      name = "name"
+      url = "url"
+
+[[backends]]
+  group = "tag-manager-v1"
+  url_pattern = "/tagmanager/v1/accounts/{accountId}/containers/{containerId}/folders"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["folders"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses Tag Manager accounts and containers."
+    version = "v1"
+    slug = "tag-manager-v1-tagmanager-v1-accounts-accountid-containers-containerid-folders"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      folders = "folders"
+
+[[backends]]
+  group = "tag-manager-v1"
+  url_pattern = "/tagmanager/v1/accounts/{accountId}/containers/{containerId}/folders/{folderId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["accountId", "containerId", "fingerprint", "folderId", "name"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses Tag Manager accounts and containers."
+    version = "v1"
+    slug = "tag-manager-v1-tagmanager-v1-accounts-accountid-containers-containerid-folders-folderid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      accountId = "accountId"
+      containerId = "containerId"
+      fingerprint = "fingerprint"
+      folderId = "folderId"
+      name = "name"
+
+[[backends]]
+  group = "tag-manager-v1"
+  url_pattern = "/tagmanager/v1/accounts/{accountId}/containers/{containerId}/folders/{folderId}/entities"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["tag", "trigger", "variable"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses Tag Manager accounts and containers."
+    version = "v1"
+    slug = "tag-manager-v1-tagmanager-v1-accounts-accountid-containers-containerid-folders-folderid-entities"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      tag = "tag"
+      trigger = "trigger"
+      variable = "variable"
+
+[[backends]]
+  group = "tag-manager-v1"
+  url_pattern = "/tagmanager/v1/accounts/{accountId}/containers/{containerId}/tags"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["tags"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses Tag Manager accounts and containers."
+    version = "v1"
+    slug = "tag-manager-v1-tagmanager-v1-accounts-accountid-containers-containerid-tags"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      tags = "tags"
+
+[[backends]]
+  group = "tag-manager-v1"
+  url_pattern = "/tagmanager/v1/accounts/{accountId}/containers/{containerId}/tags/{tagId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["accountId", "blockingRuleId", "blockingTriggerId", "containerId", "fingerprint", "firingRuleId", "firingTriggerId", "liveOnly", "name", "notes", "parameter", "parentFolderId", "scheduleEndMs", "scheduleStartMs", "setupTag", "tagFiringOption", "tagId", "teardownTag"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses Tag Manager accounts and containers."
+    version = "v1"
+    slug = "tag-manager-v1-tagmanager-v1-accounts-accountid-containers-containerid-tags-tagid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      accountId = "accountId"
+      blockingRuleId = "blockingRuleId"
+      blockingTriggerId = "blockingTriggerId"
+      containerId = "containerId"
+      fingerprint = "fingerprint"
+      firingRuleId = "firingRuleId"
+      firingTriggerId = "firingTriggerId"
+      liveOnly = "liveOnly"
+      name = "name"
+      notes = "notes"
+      parameter = "parameter"
+      parentFolderId = "parentFolderId"
+      scheduleEndMs = "scheduleEndMs"
+      scheduleStartMs = "scheduleStartMs"
+      setupTag = "setupTag"
+      tagFiringOption = "tagFiringOption"
+      tagId = "tagId"
+      teardownTag = "teardownTag"
+
+[[backends]]
+  group = "tag-manager-v1"
+  url_pattern = "/tagmanager/v1/accounts/{accountId}/containers/{containerId}/triggers"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["triggers"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses Tag Manager accounts and containers."
+    version = "v1"
+    slug = "tag-manager-v1-tagmanager-v1-accounts-accountid-containers-containerid-triggers"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      triggers = "triggers"
+
+[[backends]]
+  group = "tag-manager-v1"
+  url_pattern = "/tagmanager/v1/accounts/{accountId}/containers/{containerId}/triggers/{triggerId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["accountId", "autoEventFilter", "containerId", "customEventFilter", "filter", "fingerprint", "name", "parentFolderId", "triggerId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses Tag Manager accounts and containers."
+    version = "v1"
+    slug = "tag-manager-v1-tagmanager-v1-accounts-accountid-containers-containerid-triggers-triggerid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      accountId = "accountId"
+      autoEventFilter = "autoEventFilter"
+      containerId = "containerId"
+      customEventFilter = "customEventFilter"
+      filter = "filter"
+      fingerprint = "fingerprint"
+      name = "name"
+      parentFolderId = "parentFolderId"
+      triggerId = "triggerId"
+
+[[backends]]
+  group = "tag-manager-v1"
+  url_pattern = "/tagmanager/v1/accounts/{accountId}/containers/{containerId}/variables"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["variables"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses Tag Manager accounts and containers."
+    version = "v1"
+    slug = "tag-manager-v1-tagmanager-v1-accounts-accountid-containers-containerid-variables"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      variables = "variables"
+
+[[backends]]
+  group = "tag-manager-v1"
+  url_pattern = "/tagmanager/v1/accounts/{accountId}/containers/{containerId}/variables/{variableId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["accountId", "containerId", "disablingTriggerId", "enablingTriggerId", "fingerprint", "name", "notes", "parameter", "parentFolderId", "scheduleEndMs", "scheduleStartMs", "variableId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses Tag Manager accounts and containers."
+    version = "v1"
+    slug = "tag-manager-v1-tagmanager-v1-accounts-accountid-containers-containerid-variables-variableid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      accountId = "accountId"
+      containerId = "containerId"
+      disablingTriggerId = "disablingTriggerId"
+      enablingTriggerId = "enablingTriggerId"
+      fingerprint = "fingerprint"
+      name = "name"
+      notes = "notes"
+      parameter = "parameter"
+      parentFolderId = "parentFolderId"
+      scheduleEndMs = "scheduleEndMs"
+      scheduleStartMs = "scheduleStartMs"
+      variableId = "variableId"
+
+[[backends]]
+  group = "tag-manager-v1"
+  url_pattern = "/tagmanager/v1/accounts/{accountId}/containers/{containerId}/versions"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["containerVersion", "containerVersionHeader"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses Tag Manager accounts and containers."
+    version = "v1"
+    slug = "tag-manager-v1-tagmanager-v1-accounts-accountid-containers-containerid-versions"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      containerVersion = "containerVersion"
+      containerVersionHeader = "containerVersionHeader"
+
+[[backends]]
+  group = "tag-manager-v1"
+  url_pattern = "/tagmanager/v1/accounts/{accountId}/containers/{containerId}/versions/{containerVersionId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["accountId", "containerId", "containerVersionId", "deleted", "fingerprint", "folder", "macro", "name", "notes", "rule", "tag", "trigger", "variable"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses Tag Manager accounts and containers."
+    version = "v1"
+    slug = "tag-manager-v1-tagmanager-v1-accounts-accountid-containers-containerid-versions-containerversionid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      accountId = "accountId"
+      containerId = "containerId"
+      containerVersionId = "containerVersionId"
+      deleted = "deleted"
+      fingerprint = "fingerprint"
+      folder = "folder"
+      macro = "macro"
+      name = "name"
+      notes = "notes"
+      rule = "rule"
+      tag = "tag"
+      trigger = "trigger"
+      variable = "variable"
+
+[[backends]]
+  group = "tag-manager-v1"
+  url_pattern = "/tagmanager/v1/accounts/{accountId}/containers/{containerId}/versions/{containerVersionId}/publish"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["compilerError"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses Tag Manager accounts and containers."
+    version = "v1"
+    slug = "tag-manager-v1-tagmanager-v1-accounts-accountid-containers-containerid-versions-containerversionid-publish"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      compilerError = "compilerError"
+
+[[backends]]
+  group = "tag-manager-v1"
+  url_pattern = "/tagmanager/v1/accounts/{accountId}/containers/{containerId}/versions/{containerVersionId}/restore"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["accountId", "containerId", "containerVersionId", "deleted", "fingerprint", "folder", "macro", "name", "notes", "rule", "tag", "trigger", "variable"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses Tag Manager accounts and containers."
+    version = "v1"
+    slug = "tag-manager-v1-tagmanager-v1-accounts-accountid-containers-containerid-versions-containerversionid-restore"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      accountId = "accountId"
+      containerId = "containerId"
+      containerVersionId = "containerVersionId"
+      deleted = "deleted"
+      fingerprint = "fingerprint"
+      folder = "folder"
+      macro = "macro"
+      name = "name"
+      notes = "notes"
+      rule = "rule"
+      tag = "tag"
+      trigger = "trigger"
+      variable = "variable"
+
+[[backends]]
+  group = "tag-manager-v1"
+  url_pattern = "/tagmanager/v1/accounts/{accountId}/containers/{containerId}/versions/{containerVersionId}/undelete"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["accountId", "containerId", "containerVersionId", "deleted", "fingerprint", "folder", "macro", "name", "notes", "rule", "tag", "trigger", "variable"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses Tag Manager accounts and containers."
+    version = "v1"
+    slug = "tag-manager-v1-tagmanager-v1-accounts-accountid-containers-containerid-versions-containerversionid-undelete"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      accountId = "accountId"
+      containerId = "containerId"
+      containerVersionId = "containerVersionId"
+      deleted = "deleted"
+      fingerprint = "fingerprint"
+      folder = "folder"
+      macro = "macro"
+      name = "name"
+      notes = "notes"
+      rule = "rule"
+      tag = "tag"
+      trigger = "trigger"
+      variable = "variable"
+
+[[backends]]
+  group = "tag-manager-v1"
+  url_pattern = "/tagmanager/v1/accounts/{accountId}/permissions"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["userAccess"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses Tag Manager accounts and containers."
+    version = "v1"
+    slug = "tag-manager-v1-tagmanager-v1-accounts-accountid-permissions"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      userAccess = "userAccess"
+
+[[backends]]
+  group = "tag-manager-v1"
+  url_pattern = "/tagmanager/v1/accounts/{accountId}/permissions/{permissionId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["accountId", "containerAccess", "emailAddress", "permissionId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses Tag Manager accounts and containers."
+    version = "v1"
+    slug = "tag-manager-v1-tagmanager-v1-accounts-accountid-permissions-permissionid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      accountId = "accountId"
+      containerAccess = "containerAccess"
+      emailAddress = "emailAddress"
+      permissionId = "permissionId"

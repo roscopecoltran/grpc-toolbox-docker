@@ -1,0 +1,91 @@
+[[backends]]
+  group = "enterprise-license-manager-v1"
+  url_pattern = "/apps/licensing/v1/product/{productId}/sku/{skuId}/user"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etags", "kind", "productId", "productName", "selfLink", "skuId", "skuName", "userId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Views and manages licenses for your domain."
+    version = "v1"
+    slug = "enterprise-license-manager-v1-apps-licensing-v1-product-productid-sku-skuid-user"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["enterprise"]
+    [backends.extra_config.mapping]
+      etags = "etags"
+      kind = "kind"
+      productId = "productId"
+      productName = "productName"
+      selfLink = "selfLink"
+      skuId = "skuId"
+      skuName = "skuName"
+      userId = "userId"
+
+[[backends]]
+  group = "enterprise-license-manager-v1"
+  url_pattern = "/apps/licensing/v1/product/{productId}/sku/{skuId}/user/{userId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etags", "kind", "productId", "productName", "selfLink", "skuId", "skuName", "userId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Views and manages licenses for your domain."
+    version = "v1"
+    slug = "enterprise-license-manager-v1-apps-licensing-v1-product-productid-sku-skuid-user-userid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["enterprise"]
+    [backends.extra_config.mapping]
+      etags = "etags"
+      kind = "kind"
+      productId = "productId"
+      productName = "productName"
+      selfLink = "selfLink"
+      skuId = "skuId"
+      skuName = "skuName"
+      userId = "userId"
+
+[[backends]]
+  group = "enterprise-license-manager-v1"
+  url_pattern = "/apps/licensing/v1/product/{productId}/sku/{skuId}/users"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Views and manages licenses for your domain."
+    version = "v1"
+    slug = "enterprise-license-manager-v1-apps-licensing-v1-product-productid-sku-skuid-users"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["enterprise"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "enterprise-license-manager-v1"
+  url_pattern = "/apps/licensing/v1/product/{productId}/users"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Views and manages licenses for your domain."
+    version = "v1"
+    slug = "enterprise-license-manager-v1-apps-licensing-v1-product-productid-users"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["enterprise"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"

@@ -1,0 +1,80 @@
+[[backends]]
+  group = "twitter-apis-0-0-2"
+  url_pattern = "/api/23/twitter/mytimeline"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.apitore.com"]
+  whitelist = ["endTime", "log", "numofTweets", "processTime", "query", "startTime", "tweets"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "apitore.com"
+    description = "Call Twitter APIs.<BR />[Endpoint] https://api.apitore.com/api/23"
+    version = "0.0.2"
+    slug = "twitter-apis-0-0-2-api-23-twitter-mytimeline"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.apitore.com"]
+    topics = ["text"]
+    [backends.extra_config.mapping]
+      endTime = "endTime"
+      log = "log"
+      numofTweets = "numofTweets"
+      processTime = "processTime"
+      query = "query"
+      startTime = "startTime"
+      tweets = "tweets"
+
+[[backends]]
+  group = "twitter-apis-0-0-2"
+  url_pattern = "/api/23/twitter/mytweet"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.apitore.com"]
+  whitelist = ["endTime", "log", "numofTweets", "processTime", "query", "startTime", "tweets"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "apitore.com"
+    description = "Call Twitter APIs.<BR />[Endpoint] https://api.apitore.com/api/23"
+    version = "0.0.2"
+    slug = "twitter-apis-0-0-2-api-23-twitter-mytweet"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.apitore.com"]
+    topics = ["text"]
+    [backends.extra_config.mapping]
+      endTime = "endTime"
+      log = "log"
+      numofTweets = "numofTweets"
+      processTime = "processTime"
+      query = "query"
+      startTime = "startTime"
+      tweets = "tweets"
+
+[[backends]]
+  group = "twitter-apis-0-0-2"
+  url_pattern = "/api/23/twitter/search"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.apitore.com"]
+  whitelist = ["endTime", "log", "numofTweets", "processTime", "query", "startTime", "tweets"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "apitore.com"
+    description = "Call Twitter APIs.<BR />[Endpoint] https://api.apitore.com/api/23"
+    version = "0.0.2"
+    slug = "twitter-apis-0-0-2-api-23-twitter-search"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.apitore.com"]
+    topics = ["text"]
+    [backends.extra_config.mapping]
+      endTime = "endTime"
+      log = "log"
+      numofTweets = "numofTweets"
+      processTime = "processTime"
+      query = "query"
+      startTime = "startTime"
+      tweets = "tweets"

@@ -1,0 +1,703 @@
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["static", "text"]
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/formats"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-formats"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["static", "text"]
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/glossary"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-glossary"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["account", "glossary", "text"]
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/languages"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-languages"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["static", "text"]
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/me"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  whitelist = ["billing", "billing.city", "billing.country", "billing.name", "billing.state", "billing.street", "billing.zip", "created_at", "id", "links", "links.projects", "links.projects.href", "links.self", "links.self.href", "name", "stats", "stats.started_projects", "stats.total_projects"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-me"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["account", "text"]
+    [backends.extra_config.mapping]
+      billing = "billing"
+      city = "city"
+      country = "country"
+      created_at = "created_at"
+      href = "href"
+      id = "id"
+      links = "links"
+      name = "name"
+      projects = "projects"
+      self = "self"
+      started_projects = "started_projects"
+      state = "state"
+      stats = "stats"
+      street = "street"
+      total_projects = "total_projects"
+      zip = "zip"
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/projects"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  query_string_params = ["page", "per_page"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-projects"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["project", "text"]
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/projects/{id}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  url_keys = ["id"]
+  whitelist = ["callback_url", "created_at", "custom", "delivery_at", "errors", "id", "price", "price.amount", "price.currency", "source_language", "status", "target_languages", "valid_until", "word_count"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-projects-id"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["project", "text"]
+    [backends.extra_config.mapping]
+      amount = "amount"
+      callback_url = "callback_url"
+      created_at = "created_at"
+      currency = "currency"
+      custom = "custom"
+      delivery_at = "delivery_at"
+      errors = "errors"
+      id = "id"
+      price = "price"
+      source_language = "source_language"
+      status = "status"
+      target_languages = "target_languages"
+      valid_until = "valid_until"
+      word_count = "word_count"
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/projects/{id}/callback/{actionType}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  url_keys = ["actionType", "id"]
+  whitelist = ["result", "url"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-projects-id-callback-actiontype"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["project", "text"]
+    [backends.extra_config.mapping]
+      result = "result"
+      url = "url"
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/projects/{id}/cancel"
+  method = "POST"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  url_keys = ["id"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-projects-id-cancel"
+    schemes = ["https"]
+    form_data = ["reason"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["project", "text"]
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/projects/{id}/download"
+  method = "POST"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  url_keys = ["id"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-projects-id-download"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["project", "text"]
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/projects/{id}/download/{language}"
+  method = "POST"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  url_keys = ["id", "language"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-projects-id-download-language"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["project", "text"]
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/projects/{id}/launch"
+  method = "POST"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  url_keys = ["id"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-projects-id-launch"
+    schemes = ["https"]
+    form_data = ["budget_code", "payment_code", "payment_method"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["project", "text"]
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/projects/{id}/package"
+  method = "POST"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  url_keys = ["id"]
+  query_string_params = ["async"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-projects-id-package"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["project", "text"]
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/projects/{id}/package/check"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  url_keys = ["id"]
+  query_string_params = ["key"]
+  whitelist = ["status"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-projects-id-package-check"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["project", "text"]
+    [backends.extra_config.mapping]
+      status = "status"
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/projects/{id}/package/{language}"
+  method = "POST"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  url_keys = ["id", "language"]
+  query_string_params = ["async"]
+  whitelist = ["key", "status"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-projects-id-package-language"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["project", "text"]
+    [backends.extra_config.mapping]
+      key = "key"
+      status = "status"
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/projects/{id}/progress"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  url_keys = ["id"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-projects-id-progress"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["project", "text"]
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/projects/{id}/reports"
+  method = "POST"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  url_keys = ["id"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-projects-id-reports"
+    schemes = ["https"]
+    form_data = ["activity_type", "message"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["project", "text"]
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/projects/{projectId}/activities"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  url_keys = ["projectId"]
+  query_string_params = ["page", "per_page"]
+  whitelist = ["activities"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-projects-projectid-activities"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["activity", "text"]
+    [backends.extra_config.mapping]
+      activities = "activities"
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/projects/{projectId}/activities/{activityId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  url_keys = ["activityId", "projectId"]
+  whitelist = ["activity_at", "id", "source_text", "target_text", "translator"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-projects-projectid-activities-activityid"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["activity", "text"]
+    [backends.extra_config.mapping]
+      activity_at = "activity_at"
+      id = "id"
+      source_text = "source_text"
+      target_text = "target_text"
+      translator = "translator"
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/projects/{projectId}/activities/{activityId}/comments"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  url_keys = ["activityId", "projectId"]
+  whitelist = ["activities"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-projects-projectid-activities-activityid-comments"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["activity", "text"]
+    [backends.extra_config.mapping]
+      activities = "activities"
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/projects/{projectId}/comments"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  url_keys = ["projectId"]
+  query_string_params = ["page", "per_page"]
+  whitelist = ["activities"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-projects-projectid-comments"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["activity", "text"]
+    [backends.extra_config.mapping]
+      activities = "activities"
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/projects/{projectId}/documents"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  url_keys = ["projectId"]
+  whitelist = ["documents"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-projects-projectid-documents"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["document", "text"]
+    [backends.extra_config.mapping]
+      documents = "documents"
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/projects/{projectId}/documents/{documentId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  url_keys = ["documentId", "projectId"]
+  whitelist = ["id", "name", "scheme", "uploaded_at", "word_count"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-projects-projectid-documents-documentid"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["document", "text"]
+    [backends.extra_config.mapping]
+      id = "id"
+      name = "name"
+      scheme = "scheme"
+      uploaded_at = "uploaded_at"
+      word_count = "word_count"
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/projects/{projectId}/documents/{documentId}/download"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  url_keys = ["documentId", "projectId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-projects-projectid-documents-documentid-download"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["document", "text"]
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/projects/{projectId}/glossaries"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  url_keys = ["projectId"]
+  whitelist = ["glossaries"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-projects-projectid-glossaries"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["glossary", "text"]
+    [backends.extra_config.mapping]
+      glossaries = "glossaries"
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/projects/{projectId}/glossaries/{glossaryId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  url_keys = ["glossaryId", "projectId"]
+  whitelist = ["id", "name", "uploaded_at"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-projects-projectid-glossaries-glossaryid"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["glossary", "text"]
+    [backends.extra_config.mapping]
+      id = "id"
+      name = "name"
+      uploaded_at = "uploaded_at"
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/projects/{projectId}/glossaries/{glossaryId}/download"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  url_keys = ["glossaryId", "projectId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-projects-projectid-glossaries-glossaryid-download"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["glossary", "text"]
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/projects/{projectId}/styleguides"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  url_keys = ["projectId"]
+  whitelist = ["styleguides"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-projects-projectid-styleguides"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["style-guide", "text"]
+    [backends.extra_config.mapping]
+      styleguides = "styleguides"
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/projects/{projectId}/styleguides/{styleGuideId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  url_keys = ["projectId", "styleGuideId"]
+  whitelist = ["id", "name", "uploaded_at"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-projects-projectid-styleguides-styleguideid"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["style-guide", "text"]
+    [backends.extra_config.mapping]
+      id = "id"
+      name = "name"
+      uploaded_at = "uploaded_at"
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/projects/{projectId}/styleguides/{styleGuideId}/download"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  url_keys = ["projectId", "styleGuideId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-projects-projectid-styleguides-styleguideid-download"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["style-guide", "text"]
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/styleguide"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-styleguide"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["account", "style-guide", "text"]
+
+[[backends]]
+  group = "motaword-alpha-0-1-0"
+  url_pattern = "/token"
+  method = "POST"
+  encoding = "json"
+  host = ["https://api.motaword.com"]
+  header = ["Authorization"]
+  whitelist = ["access_token", "expires_in", "scope", "token_type"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "motaword.com"
+    description = "Use MotaWord API to post and track your translation projects."
+    version = "alpha-0.1.0"
+    slug = "motaword-alpha-0-1-0-token"
+    schemes = ["https"]
+    form_data = ["grant_type"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://api.motaword.com"]
+    topics = ["auth", "text"]
+    [backends.extra_config.mapping]
+      access_token = "access_token"
+      expires_in = "expires_in"
+      scope = "scope"
+      token_type = "token_type"

@@ -1,0 +1,672 @@
+[[backends]]
+  group = "google-container-engine-v1"
+  url_pattern = "/v1/projects/{projectId}/zones/{zone}/clusters"
+  method = "GET"
+  host = ["https://container.googleapis.com"]
+  url_keys = ["projectId", "zone"]
+  whitelist = ["clusters", "missingZones"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Container Engine API is used for building and managing container based applications, powered by the open source Kubernetes technology."
+    version = "v1"
+    slug = "google-container-engine-v1-v1-projects-projectid-zones-zone-clusters"
+    schemes = ["https"]
+    hosts = ["https://container.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      clusters = "clusters"
+      missingZones = "missingZones"
+
+[[backends]]
+  group = "google-container-engine-v1"
+  url_pattern = "/v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}"
+  method = "GET"
+  host = ["https://container.googleapis.com"]
+  url_keys = ["clusterId", "projectId", "zone"]
+  whitelist = ["clusterIpv4Cidr", "createTime", "currentMasterVersion", "currentNodeCount", "currentNodeVersion", "description", "enableKubernetesAlpha", "endpoint", "expireTime", "initialClusterVersion", "initialNodeCount", "instanceGroupUrls", "labelFingerprint", "locations", "loggingService", "monitoringService", "name", "network", "nodeIpv4CidrSize", "nodePools", "resourceLabels", "resourceLabels.additionalProperties", "selfLink", "servicesIpv4Cidr", "status", "statusMessage", "subnetwork", "zone"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Container Engine API is used for building and managing container based applications, powered by the open source Kubernetes technology."
+    version = "v1"
+    slug = "google-container-engine-v1-v1-projects-projectid-zones-zone-clusters-clusterid"
+    schemes = ["https"]
+    hosts = ["https://container.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      additionalProperties = "additionalProperties"
+      clusterIpv4Cidr = "clusterIpv4Cidr"
+      createTime = "createTime"
+      currentMasterVersion = "currentMasterVersion"
+      currentNodeCount = "currentNodeCount"
+      currentNodeVersion = "currentNodeVersion"
+      description = "description"
+      enableKubernetesAlpha = "enableKubernetesAlpha"
+      endpoint = "endpoint"
+      expireTime = "expireTime"
+      initialClusterVersion = "initialClusterVersion"
+      initialNodeCount = "initialNodeCount"
+      instanceGroupUrls = "instanceGroupUrls"
+      labelFingerprint = "labelFingerprint"
+      locations = "locations"
+      loggingService = "loggingService"
+      monitoringService = "monitoringService"
+      name = "name"
+      network = "network"
+      nodeIpv4CidrSize = "nodeIpv4CidrSize"
+      nodePools = "nodePools"
+      resourceLabels = "resourceLabels"
+      selfLink = "selfLink"
+      servicesIpv4Cidr = "servicesIpv4Cidr"
+      status = "status"
+      statusMessage = "statusMessage"
+      subnetwork = "subnetwork"
+      zone = "zone"
+
+[[backends]]
+  group = "google-container-engine-v1"
+  url_pattern = "/v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}/addons"
+  method = "POST"
+  host = ["https://container.googleapis.com"]
+  url_keys = ["clusterId", "projectId", "zone"]
+  whitelist = ["detail", "endTime", "name", "operationType", "selfLink", "startTime", "status", "statusMessage", "targetLink", "zone"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Container Engine API is used for building and managing container based applications, powered by the open source Kubernetes technology."
+    version = "v1"
+    slug = "google-container-engine-v1-v1-projects-projectid-zones-zone-clusters-clusterid-addons"
+    schemes = ["https"]
+    hosts = ["https://container.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      detail = "detail"
+      endTime = "endTime"
+      name = "name"
+      operationType = "operationType"
+      selfLink = "selfLink"
+      startTime = "startTime"
+      status = "status"
+      statusMessage = "statusMessage"
+      targetLink = "targetLink"
+      zone = "zone"
+
+[[backends]]
+  group = "google-container-engine-v1"
+  url_pattern = "/v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}/legacyAbac"
+  method = "POST"
+  host = ["https://container.googleapis.com"]
+  url_keys = ["clusterId", "projectId", "zone"]
+  whitelist = ["detail", "endTime", "name", "operationType", "selfLink", "startTime", "status", "statusMessage", "targetLink", "zone"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Container Engine API is used for building and managing container based applications, powered by the open source Kubernetes technology."
+    version = "v1"
+    slug = "google-container-engine-v1-v1-projects-projectid-zones-zone-clusters-clusterid-legacyabac"
+    schemes = ["https"]
+    hosts = ["https://container.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      detail = "detail"
+      endTime = "endTime"
+      name = "name"
+      operationType = "operationType"
+      selfLink = "selfLink"
+      startTime = "startTime"
+      status = "status"
+      statusMessage = "statusMessage"
+      targetLink = "targetLink"
+      zone = "zone"
+
+[[backends]]
+  group = "google-container-engine-v1"
+  url_pattern = "/v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}/locations"
+  method = "POST"
+  host = ["https://container.googleapis.com"]
+  url_keys = ["clusterId", "projectId", "zone"]
+  whitelist = ["detail", "endTime", "name", "operationType", "selfLink", "startTime", "status", "statusMessage", "targetLink", "zone"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Container Engine API is used for building and managing container based applications, powered by the open source Kubernetes technology."
+    version = "v1"
+    slug = "google-container-engine-v1-v1-projects-projectid-zones-zone-clusters-clusterid-locations"
+    schemes = ["https"]
+    hosts = ["https://container.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      detail = "detail"
+      endTime = "endTime"
+      name = "name"
+      operationType = "operationType"
+      selfLink = "selfLink"
+      startTime = "startTime"
+      status = "status"
+      statusMessage = "statusMessage"
+      targetLink = "targetLink"
+      zone = "zone"
+
+[[backends]]
+  group = "google-container-engine-v1"
+  url_pattern = "/v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}/logging"
+  method = "POST"
+  host = ["https://container.googleapis.com"]
+  url_keys = ["clusterId", "projectId", "zone"]
+  whitelist = ["detail", "endTime", "name", "operationType", "selfLink", "startTime", "status", "statusMessage", "targetLink", "zone"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Container Engine API is used for building and managing container based applications, powered by the open source Kubernetes technology."
+    version = "v1"
+    slug = "google-container-engine-v1-v1-projects-projectid-zones-zone-clusters-clusterid-logging"
+    schemes = ["https"]
+    hosts = ["https://container.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      detail = "detail"
+      endTime = "endTime"
+      name = "name"
+      operationType = "operationType"
+      selfLink = "selfLink"
+      startTime = "startTime"
+      status = "status"
+      statusMessage = "statusMessage"
+      targetLink = "targetLink"
+      zone = "zone"
+
+[[backends]]
+  group = "google-container-engine-v1"
+  url_pattern = "/v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}/master"
+  method = "POST"
+  host = ["https://container.googleapis.com"]
+  url_keys = ["clusterId", "projectId", "zone"]
+  whitelist = ["detail", "endTime", "name", "operationType", "selfLink", "startTime", "status", "statusMessage", "targetLink", "zone"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Container Engine API is used for building and managing container based applications, powered by the open source Kubernetes technology."
+    version = "v1"
+    slug = "google-container-engine-v1-v1-projects-projectid-zones-zone-clusters-clusterid-master"
+    schemes = ["https"]
+    hosts = ["https://container.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      detail = "detail"
+      endTime = "endTime"
+      name = "name"
+      operationType = "operationType"
+      selfLink = "selfLink"
+      startTime = "startTime"
+      status = "status"
+      statusMessage = "statusMessage"
+      targetLink = "targetLink"
+      zone = "zone"
+
+[[backends]]
+  group = "google-container-engine-v1"
+  url_pattern = "/v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}/monitoring"
+  method = "POST"
+  host = ["https://container.googleapis.com"]
+  url_keys = ["clusterId", "projectId", "zone"]
+  whitelist = ["detail", "endTime", "name", "operationType", "selfLink", "startTime", "status", "statusMessage", "targetLink", "zone"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Container Engine API is used for building and managing container based applications, powered by the open source Kubernetes technology."
+    version = "v1"
+    slug = "google-container-engine-v1-v1-projects-projectid-zones-zone-clusters-clusterid-monitoring"
+    schemes = ["https"]
+    hosts = ["https://container.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      detail = "detail"
+      endTime = "endTime"
+      name = "name"
+      operationType = "operationType"
+      selfLink = "selfLink"
+      startTime = "startTime"
+      status = "status"
+      statusMessage = "statusMessage"
+      targetLink = "targetLink"
+      zone = "zone"
+
+[[backends]]
+  group = "google-container-engine-v1"
+  url_pattern = "/v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}/nodePools"
+  method = "GET"
+  host = ["https://container.googleapis.com"]
+  url_keys = ["clusterId", "projectId", "zone"]
+  whitelist = ["nodePools"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Container Engine API is used for building and managing container based applications, powered by the open source Kubernetes technology."
+    version = "v1"
+    slug = "google-container-engine-v1-v1-projects-projectid-zones-zone-clusters-clusterid-nodepools"
+    schemes = ["https"]
+    hosts = ["https://container.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      nodePools = "nodePools"
+
+[[backends]]
+  group = "google-container-engine-v1"
+  url_pattern = "/v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}/nodePools/{nodePoolId}"
+  method = "GET"
+  host = ["https://container.googleapis.com"]
+  url_keys = ["clusterId", "nodePoolId", "projectId", "zone"]
+  whitelist = ["initialNodeCount", "instanceGroupUrls", "name", "selfLink", "status", "statusMessage", "version"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Container Engine API is used for building and managing container based applications, powered by the open source Kubernetes technology."
+    version = "v1"
+    slug = "google-container-engine-v1-v1-projects-projectid-zones-zone-clusters-clusterid-nodepools-nodepoolid"
+    schemes = ["https"]
+    hosts = ["https://container.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      initialNodeCount = "initialNodeCount"
+      instanceGroupUrls = "instanceGroupUrls"
+      name = "name"
+      selfLink = "selfLink"
+      status = "status"
+      statusMessage = "statusMessage"
+      version = "version"
+
+[[backends]]
+  group = "google-container-engine-v1"
+  url_pattern = "/v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}/nodePools/{nodePoolId}/autoscaling"
+  method = "POST"
+  host = ["https://container.googleapis.com"]
+  url_keys = ["clusterId", "nodePoolId", "projectId", "zone"]
+  whitelist = ["detail", "endTime", "name", "operationType", "selfLink", "startTime", "status", "statusMessage", "targetLink", "zone"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Container Engine API is used for building and managing container based applications, powered by the open source Kubernetes technology."
+    version = "v1"
+    slug = "google-container-engine-v1-v1-projects-projectid-zones-zone-clusters-clusterid-nodepools-nodepoolid-autoscaling"
+    schemes = ["https"]
+    hosts = ["https://container.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      detail = "detail"
+      endTime = "endTime"
+      name = "name"
+      operationType = "operationType"
+      selfLink = "selfLink"
+      startTime = "startTime"
+      status = "status"
+      statusMessage = "statusMessage"
+      targetLink = "targetLink"
+      zone = "zone"
+
+[[backends]]
+  group = "google-container-engine-v1"
+  url_pattern = "/v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}/nodePools/{nodePoolId}/setManagement"
+  method = "POST"
+  host = ["https://container.googleapis.com"]
+  url_keys = ["clusterId", "nodePoolId", "projectId", "zone"]
+  whitelist = ["detail", "endTime", "name", "operationType", "selfLink", "startTime", "status", "statusMessage", "targetLink", "zone"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Container Engine API is used for building and managing container based applications, powered by the open source Kubernetes technology."
+    version = "v1"
+    slug = "google-container-engine-v1-v1-projects-projectid-zones-zone-clusters-clusterid-nodepools-nodepoolid-setmanagement"
+    schemes = ["https"]
+    hosts = ["https://container.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      detail = "detail"
+      endTime = "endTime"
+      name = "name"
+      operationType = "operationType"
+      selfLink = "selfLink"
+      startTime = "startTime"
+      status = "status"
+      statusMessage = "statusMessage"
+      targetLink = "targetLink"
+      zone = "zone"
+
+[[backends]]
+  group = "google-container-engine-v1"
+  url_pattern = "/v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}/nodePools/{nodePoolId}/setSize"
+  method = "POST"
+  host = ["https://container.googleapis.com"]
+  url_keys = ["clusterId", "nodePoolId", "projectId", "zone"]
+  whitelist = ["detail", "endTime", "name", "operationType", "selfLink", "startTime", "status", "statusMessage", "targetLink", "zone"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Container Engine API is used for building and managing container based applications, powered by the open source Kubernetes technology."
+    version = "v1"
+    slug = "google-container-engine-v1-v1-projects-projectid-zones-zone-clusters-clusterid-nodepools-nodepoolid-setsize"
+    schemes = ["https"]
+    hosts = ["https://container.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      detail = "detail"
+      endTime = "endTime"
+      name = "name"
+      operationType = "operationType"
+      selfLink = "selfLink"
+      startTime = "startTime"
+      status = "status"
+      statusMessage = "statusMessage"
+      targetLink = "targetLink"
+      zone = "zone"
+
+[[backends]]
+  group = "google-container-engine-v1"
+  url_pattern = "/v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}/nodePools/{nodePoolId}/update"
+  method = "POST"
+  host = ["https://container.googleapis.com"]
+  url_keys = ["clusterId", "nodePoolId", "projectId", "zone"]
+  whitelist = ["detail", "endTime", "name", "operationType", "selfLink", "startTime", "status", "statusMessage", "targetLink", "zone"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Container Engine API is used for building and managing container based applications, powered by the open source Kubernetes technology."
+    version = "v1"
+    slug = "google-container-engine-v1-v1-projects-projectid-zones-zone-clusters-clusterid-nodepools-nodepoolid-update"
+    schemes = ["https"]
+    hosts = ["https://container.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      detail = "detail"
+      endTime = "endTime"
+      name = "name"
+      operationType = "operationType"
+      selfLink = "selfLink"
+      startTime = "startTime"
+      status = "status"
+      statusMessage = "statusMessage"
+      targetLink = "targetLink"
+      zone = "zone"
+
+[[backends]]
+  group = "google-container-engine-v1"
+  url_pattern = "/v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}/nodePools/{nodePoolId}:rollback"
+  method = "POST"
+  host = ["https://container.googleapis.com"]
+  url_keys = ["clusterId", "nodePoolId", "projectId", "zone"]
+  whitelist = ["detail", "endTime", "name", "operationType", "selfLink", "startTime", "status", "statusMessage", "targetLink", "zone"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Container Engine API is used for building and managing container based applications, powered by the open source Kubernetes technology."
+    version = "v1"
+    slug = "google-container-engine-v1-v1-projects-projectid-zones-zone-clusters-clusterid-nodepools-nodepoolid-rollback"
+    schemes = ["https"]
+    hosts = ["https://container.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      detail = "detail"
+      endTime = "endTime"
+      name = "name"
+      operationType = "operationType"
+      selfLink = "selfLink"
+      startTime = "startTime"
+      status = "status"
+      statusMessage = "statusMessage"
+      targetLink = "targetLink"
+      zone = "zone"
+
+[[backends]]
+  group = "google-container-engine-v1"
+  url_pattern = "/v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}/resourceLabels"
+  method = "POST"
+  host = ["https://container.googleapis.com"]
+  url_keys = ["clusterId", "projectId", "zone"]
+  whitelist = ["detail", "endTime", "name", "operationType", "selfLink", "startTime", "status", "statusMessage", "targetLink", "zone"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Container Engine API is used for building and managing container based applications, powered by the open source Kubernetes technology."
+    version = "v1"
+    slug = "google-container-engine-v1-v1-projects-projectid-zones-zone-clusters-clusterid-resourcelabels"
+    schemes = ["https"]
+    hosts = ["https://container.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      detail = "detail"
+      endTime = "endTime"
+      name = "name"
+      operationType = "operationType"
+      selfLink = "selfLink"
+      startTime = "startTime"
+      status = "status"
+      statusMessage = "statusMessage"
+      targetLink = "targetLink"
+      zone = "zone"
+
+[[backends]]
+  group = "google-container-engine-v1"
+  url_pattern = "/v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}:completeIpRotation"
+  method = "POST"
+  host = ["https://container.googleapis.com"]
+  url_keys = ["clusterId", "projectId", "zone"]
+  whitelist = ["detail", "endTime", "name", "operationType", "selfLink", "startTime", "status", "statusMessage", "targetLink", "zone"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Container Engine API is used for building and managing container based applications, powered by the open source Kubernetes technology."
+    version = "v1"
+    slug = "google-container-engine-v1-v1-projects-projectid-zones-zone-clusters-clusterid-completeiprotation"
+    schemes = ["https"]
+    hosts = ["https://container.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      detail = "detail"
+      endTime = "endTime"
+      name = "name"
+      operationType = "operationType"
+      selfLink = "selfLink"
+      startTime = "startTime"
+      status = "status"
+      statusMessage = "statusMessage"
+      targetLink = "targetLink"
+      zone = "zone"
+
+[[backends]]
+  group = "google-container-engine-v1"
+  url_pattern = "/v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}:setMaintenancePolicy"
+  method = "POST"
+  host = ["https://container.googleapis.com"]
+  url_keys = ["clusterId", "projectId", "zone"]
+  whitelist = ["detail", "endTime", "name", "operationType", "selfLink", "startTime", "status", "statusMessage", "targetLink", "zone"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Container Engine API is used for building and managing container based applications, powered by the open source Kubernetes technology."
+    version = "v1"
+    slug = "google-container-engine-v1-v1-projects-projectid-zones-zone-clusters-clusterid-setmaintenancepolicy"
+    schemes = ["https"]
+    hosts = ["https://container.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      detail = "detail"
+      endTime = "endTime"
+      name = "name"
+      operationType = "operationType"
+      selfLink = "selfLink"
+      startTime = "startTime"
+      status = "status"
+      statusMessage = "statusMessage"
+      targetLink = "targetLink"
+      zone = "zone"
+
+[[backends]]
+  group = "google-container-engine-v1"
+  url_pattern = "/v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}:setMasterAuth"
+  method = "POST"
+  host = ["https://container.googleapis.com"]
+  url_keys = ["clusterId", "projectId", "zone"]
+  whitelist = ["detail", "endTime", "name", "operationType", "selfLink", "startTime", "status", "statusMessage", "targetLink", "zone"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Container Engine API is used for building and managing container based applications, powered by the open source Kubernetes technology."
+    version = "v1"
+    slug = "google-container-engine-v1-v1-projects-projectid-zones-zone-clusters-clusterid-setmasterauth"
+    schemes = ["https"]
+    hosts = ["https://container.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      detail = "detail"
+      endTime = "endTime"
+      name = "name"
+      operationType = "operationType"
+      selfLink = "selfLink"
+      startTime = "startTime"
+      status = "status"
+      statusMessage = "statusMessage"
+      targetLink = "targetLink"
+      zone = "zone"
+
+[[backends]]
+  group = "google-container-engine-v1"
+  url_pattern = "/v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}:setNetworkPolicy"
+  method = "POST"
+  host = ["https://container.googleapis.com"]
+  url_keys = ["clusterId", "projectId", "zone"]
+  whitelist = ["detail", "endTime", "name", "operationType", "selfLink", "startTime", "status", "statusMessage", "targetLink", "zone"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Container Engine API is used for building and managing container based applications, powered by the open source Kubernetes technology."
+    version = "v1"
+    slug = "google-container-engine-v1-v1-projects-projectid-zones-zone-clusters-clusterid-setnetworkpolicy"
+    schemes = ["https"]
+    hosts = ["https://container.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      detail = "detail"
+      endTime = "endTime"
+      name = "name"
+      operationType = "operationType"
+      selfLink = "selfLink"
+      startTime = "startTime"
+      status = "status"
+      statusMessage = "statusMessage"
+      targetLink = "targetLink"
+      zone = "zone"
+
+[[backends]]
+  group = "google-container-engine-v1"
+  url_pattern = "/v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}:startIpRotation"
+  method = "POST"
+  host = ["https://container.googleapis.com"]
+  url_keys = ["clusterId", "projectId", "zone"]
+  whitelist = ["detail", "endTime", "name", "operationType", "selfLink", "startTime", "status", "statusMessage", "targetLink", "zone"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Container Engine API is used for building and managing container based applications, powered by the open source Kubernetes technology."
+    version = "v1"
+    slug = "google-container-engine-v1-v1-projects-projectid-zones-zone-clusters-clusterid-startiprotation"
+    schemes = ["https"]
+    hosts = ["https://container.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      detail = "detail"
+      endTime = "endTime"
+      name = "name"
+      operationType = "operationType"
+      selfLink = "selfLink"
+      startTime = "startTime"
+      status = "status"
+      statusMessage = "statusMessage"
+      targetLink = "targetLink"
+      zone = "zone"
+
+[[backends]]
+  group = "google-container-engine-v1"
+  url_pattern = "/v1/projects/{projectId}/zones/{zone}/operations"
+  method = "GET"
+  host = ["https://container.googleapis.com"]
+  url_keys = ["projectId", "zone"]
+  whitelist = ["missingZones", "operations"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Container Engine API is used for building and managing container based applications, powered by the open source Kubernetes technology."
+    version = "v1"
+    slug = "google-container-engine-v1-v1-projects-projectid-zones-zone-operations"
+    schemes = ["https"]
+    hosts = ["https://container.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      missingZones = "missingZones"
+      operations = "operations"
+
+[[backends]]
+  group = "google-container-engine-v1"
+  url_pattern = "/v1/projects/{projectId}/zones/{zone}/operations/{operationId}"
+  method = "GET"
+  host = ["https://container.googleapis.com"]
+  url_keys = ["operationId", "projectId", "zone"]
+  whitelist = ["detail", "endTime", "name", "operationType", "selfLink", "startTime", "status", "statusMessage", "targetLink", "zone"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Container Engine API is used for building and managing container based applications, powered by the open source Kubernetes technology."
+    version = "v1"
+    slug = "google-container-engine-v1-v1-projects-projectid-zones-zone-operations-operationid"
+    schemes = ["https"]
+    hosts = ["https://container.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      detail = "detail"
+      endTime = "endTime"
+      name = "name"
+      operationType = "operationType"
+      selfLink = "selfLink"
+      startTime = "startTime"
+      status = "status"
+      statusMessage = "statusMessage"
+      targetLink = "targetLink"
+      zone = "zone"
+
+[[backends]]
+  group = "google-container-engine-v1"
+  url_pattern = "/v1/projects/{projectId}/zones/{zone}/operations/{operationId}:cancel"
+  method = "POST"
+  host = ["https://container.googleapis.com"]
+  url_keys = ["operationId", "projectId", "zone"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Container Engine API is used for building and managing container based applications, powered by the open source Kubernetes technology."
+    version = "v1"
+    slug = "google-container-engine-v1-v1-projects-projectid-zones-zone-operations-operationid-cancel"
+    schemes = ["https"]
+    hosts = ["https://container.googleapis.com"]
+    topics = ["projects"]
+
+[[backends]]
+  group = "google-container-engine-v1"
+  url_pattern = "/v1/projects/{projectId}/zones/{zone}/serverconfig"
+  method = "GET"
+  host = ["https://container.googleapis.com"]
+  url_keys = ["projectId", "zone"]
+  whitelist = ["defaultClusterVersion", "defaultImageType", "validImageTypes", "validMasterVersions", "validNodeVersions"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Container Engine API is used for building and managing container based applications, powered by the open source Kubernetes technology."
+    version = "v1"
+    slug = "google-container-engine-v1-v1-projects-projectid-zones-zone-serverconfig"
+    schemes = ["https"]
+    hosts = ["https://container.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      defaultClusterVersion = "defaultClusterVersion"
+      defaultImageType = "defaultImageType"
+      validImageTypes = "validImageTypes"
+      validMasterVersions = "validMasterVersions"
+      validNodeVersions = "validNodeVersions"

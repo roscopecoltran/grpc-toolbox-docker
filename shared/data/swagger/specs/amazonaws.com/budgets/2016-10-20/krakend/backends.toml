@@ -1,0 +1,233 @@
+[[backends]]
+  group = "aws-budgets-2016-10-20"
+  url_pattern = "/#CreateNotification"
+  method = "POST"
+  encoding = "json"
+  host = ["http://budgets.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "All public APIs for AWS Budgets"
+    version = "2016-10-20"
+    slug = "aws-budgets-2016-10-20-createnotification"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://budgets.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-budgets-2016-10-20"
+  url_pattern = "/#CreateSubscriber"
+  method = "POST"
+  encoding = "json"
+  host = ["http://budgets.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "All public APIs for AWS Budgets"
+    version = "2016-10-20"
+    slug = "aws-budgets-2016-10-20-createsubscriber"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://budgets.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-budgets-2016-10-20"
+  url_pattern = "/#DeleteBudget"
+  method = "PARAMETERS"
+  encoding = "json"
+  host = ["http://budgets.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "All public APIs for AWS Budgets"
+    version = "2016-10-20"
+    slug = "aws-budgets-2016-10-20-deletebudget"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://budgets.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-budgets-2016-10-20"
+  url_pattern = "/#DeleteNotification"
+  method = "POST"
+  encoding = "json"
+  host = ["http://budgets.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "All public APIs for AWS Budgets"
+    version = "2016-10-20"
+    slug = "aws-budgets-2016-10-20-deletenotification"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://budgets.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-budgets-2016-10-20"
+  url_pattern = "/#DeleteSubscriber"
+  method = "POST"
+  encoding = "json"
+  host = ["http://budgets.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "All public APIs for AWS Budgets"
+    version = "2016-10-20"
+    slug = "aws-budgets-2016-10-20-deletesubscriber"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://budgets.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-budgets-2016-10-20"
+  url_pattern = "/#DescribeBudget"
+  method = "PARAMETERS"
+  encoding = "json"
+  host = ["http://budgets.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "All public APIs for AWS Budgets"
+    version = "2016-10-20"
+    slug = "aws-budgets-2016-10-20-describebudget"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://budgets.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-budgets-2016-10-20"
+  url_pattern = "/#DescribeBudgets"
+  method = "POST"
+  encoding = "json"
+  host = ["http://budgets.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "All public APIs for AWS Budgets"
+    version = "2016-10-20"
+    slug = "aws-budgets-2016-10-20-describebudgets"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://budgets.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-budgets-2016-10-20"
+  url_pattern = "/#DescribeNotificationsForBudget"
+  method = "PARAMETERS"
+  encoding = "json"
+  host = ["http://budgets.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "All public APIs for AWS Budgets"
+    version = "2016-10-20"
+    slug = "aws-budgets-2016-10-20-describenotificationsforbudget"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://budgets.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-budgets-2016-10-20"
+  url_pattern = "/#DescribeSubscribersForNotification"
+  method = "POST"
+  encoding = "json"
+  host = ["http://budgets.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "All public APIs for AWS Budgets"
+    version = "2016-10-20"
+    slug = "aws-budgets-2016-10-20-describesubscribersfornotification"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://budgets.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-budgets-2016-10-20"
+  url_pattern = "/#UpdateBudget"
+  method = "PARAMETERS"
+  encoding = "json"
+  host = ["http://budgets.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "All public APIs for AWS Budgets"
+    version = "2016-10-20"
+    slug = "aws-budgets-2016-10-20-updatebudget"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://budgets.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-budgets-2016-10-20"
+  url_pattern = "/#UpdateNotification"
+  method = "POST"
+  encoding = "json"
+  host = ["http://budgets.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "All public APIs for AWS Budgets"
+    version = "2016-10-20"
+    slug = "aws-budgets-2016-10-20-updatenotification"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://budgets.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-budgets-2016-10-20"
+  url_pattern = "/#UpdateSubscriber"
+  method = "POST"
+  encoding = "json"
+  host = ["http://budgets.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "All public APIs for AWS Budgets"
+    version = "2016-10-20"
+    slug = "aws-budgets-2016-10-20-updatesubscriber"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://budgets.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-budgets-2016-10-20"
+  url_pattern = "/"
+  method = "POST"
+  encoding = "json"
+  host = ["http://budgets.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "All public APIs for AWS Budgets"
+    version = "2016-10-20"
+    slug = "aws-budgets-2016-10-20"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://budgets.amazonaws.com"]
+    topics = ["cloud"]

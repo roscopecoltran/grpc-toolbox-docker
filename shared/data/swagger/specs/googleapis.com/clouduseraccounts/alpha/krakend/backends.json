@@ -1,0 +1,900 @@
+{
+	"backends": [
+		{
+			"group": "cloud-user-accounts-alpha",
+			"url_pattern": "/clouduseraccounts/alpha/projects/{project}/global/groups",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"id",
+				"items",
+				"kind",
+				"nextPageToken",
+				"selfLink"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages users and groups for accessing Google Compute Engine virtual machines.",
+				"version": "alpha",
+				"slug": "cloud-user-accounts-alpha-clouduseraccounts-alpha-projects-project-global-groups",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"id": "id",
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken",
+					"selfLink": "selfLink"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-user-accounts-alpha",
+			"url_pattern": "/clouduseraccounts/alpha/projects/{project}/global/groups/{groupName}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"creationTimestamp",
+				"description",
+				"id",
+				"kind",
+				"members",
+				"name",
+				"selfLink"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages users and groups for accessing Google Compute Engine virtual machines.",
+				"version": "alpha",
+				"slug": "cloud-user-accounts-alpha-clouduseraccounts-alpha-projects-project-global-groups-groupname",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"creationTimestamp": "creationTimestamp",
+					"description": "description",
+					"id": "id",
+					"kind": "kind",
+					"members": "members",
+					"name": "name",
+					"selfLink": "selfLink"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-user-accounts-alpha",
+			"url_pattern": "/clouduseraccounts/alpha/projects/{project}/global/groups/{groupName}/addMember",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"clientOperationId",
+				"creationTimestamp",
+				"description",
+				"endTime",
+				"error",
+				"error.errors",
+				"error.errors.items",
+				"error.errors.items.code",
+				"error.errors.items.location",
+				"error.errors.items.message",
+				"httpErrorMessage",
+				"httpErrorStatusCode",
+				"id",
+				"insertTime",
+				"kind",
+				"name",
+				"operationType",
+				"progress",
+				"region",
+				"selfLink",
+				"startTime",
+				"status",
+				"statusMessage",
+				"targetId",
+				"targetLink",
+				"user",
+				"warnings",
+				"warnings.code",
+				"warnings.data",
+				"warnings.data.items",
+				"warnings.data.items.key",
+				"warnings.data.items.value",
+				"warnings.message",
+				"zone"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages users and groups for accessing Google Compute Engine virtual machines.",
+				"version": "alpha",
+				"slug": "cloud-user-accounts-alpha-clouduseraccounts-alpha-projects-project-global-groups-groupname-addmember",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"clientOperationId": "clientOperationId",
+					"creationTimestamp": "creationTimestamp",
+					"description": "description",
+					"endTime": "endTime",
+					"error": "error",
+					"error.errors": "error.errors",
+					"error.errors.items": "error.errors.items",
+					"error.errors.items.code": "error.errors.items.code",
+					"error.errors.items.location": "error.errors.items.location",
+					"error.errors.items.message": "error.errors.items.message",
+					"httpErrorMessage": "httpErrorMessage",
+					"httpErrorStatusCode": "httpErrorStatusCode",
+					"id": "id",
+					"insertTime": "insertTime",
+					"kind": "kind",
+					"name": "name",
+					"operationType": "operationType",
+					"progress": "progress",
+					"region": "region",
+					"selfLink": "selfLink",
+					"startTime": "startTime",
+					"status": "status",
+					"statusMessage": "statusMessage",
+					"targetId": "targetId",
+					"targetLink": "targetLink",
+					"user": "user",
+					"warnings": "warnings",
+					"warnings.code": "warnings.code",
+					"warnings.data": "warnings.data",
+					"warnings.data.items": "warnings.data.items",
+					"warnings.data.items.key": "warnings.data.items.key",
+					"warnings.data.items.value": "warnings.data.items.value",
+					"warnings.message": "warnings.message",
+					"zone": "zone"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-user-accounts-alpha",
+			"url_pattern": "/clouduseraccounts/alpha/projects/{project}/global/groups/{groupName}/removeMember",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"clientOperationId",
+				"creationTimestamp",
+				"description",
+				"endTime",
+				"error",
+				"error.errors",
+				"error.errors.items",
+				"error.errors.items.code",
+				"error.errors.items.location",
+				"error.errors.items.message",
+				"httpErrorMessage",
+				"httpErrorStatusCode",
+				"id",
+				"insertTime",
+				"kind",
+				"name",
+				"operationType",
+				"progress",
+				"region",
+				"selfLink",
+				"startTime",
+				"status",
+				"statusMessage",
+				"targetId",
+				"targetLink",
+				"user",
+				"warnings",
+				"warnings.code",
+				"warnings.data",
+				"warnings.data.items",
+				"warnings.data.items.key",
+				"warnings.data.items.value",
+				"warnings.message",
+				"zone"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages users and groups for accessing Google Compute Engine virtual machines.",
+				"version": "alpha",
+				"slug": "cloud-user-accounts-alpha-clouduseraccounts-alpha-projects-project-global-groups-groupname-removemember",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"clientOperationId": "clientOperationId",
+					"creationTimestamp": "creationTimestamp",
+					"description": "description",
+					"endTime": "endTime",
+					"error": "error",
+					"error.errors": "error.errors",
+					"error.errors.items": "error.errors.items",
+					"error.errors.items.code": "error.errors.items.code",
+					"error.errors.items.location": "error.errors.items.location",
+					"error.errors.items.message": "error.errors.items.message",
+					"httpErrorMessage": "httpErrorMessage",
+					"httpErrorStatusCode": "httpErrorStatusCode",
+					"id": "id",
+					"insertTime": "insertTime",
+					"kind": "kind",
+					"name": "name",
+					"operationType": "operationType",
+					"progress": "progress",
+					"region": "region",
+					"selfLink": "selfLink",
+					"startTime": "startTime",
+					"status": "status",
+					"statusMessage": "statusMessage",
+					"targetId": "targetId",
+					"targetLink": "targetLink",
+					"user": "user",
+					"warnings": "warnings",
+					"warnings.code": "warnings.code",
+					"warnings.data": "warnings.data",
+					"warnings.data.items": "warnings.data.items",
+					"warnings.data.items.key": "warnings.data.items.key",
+					"warnings.data.items.value": "warnings.data.items.value",
+					"warnings.message": "warnings.message",
+					"zone": "zone"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-user-accounts-alpha",
+			"url_pattern": "/clouduseraccounts/alpha/projects/{project}/global/groups/{resource}/getIamPolicy",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"auditConfigs",
+				"bindings",
+				"etag",
+				"iamOwned",
+				"rules",
+				"version"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages users and groups for accessing Google Compute Engine virtual machines.",
+				"version": "alpha",
+				"slug": "cloud-user-accounts-alpha-clouduseraccounts-alpha-projects-project-global-groups-resource-getiampolicy",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"auditConfigs": "auditConfigs",
+					"bindings": "bindings",
+					"etag": "etag",
+					"iamOwned": "iamOwned",
+					"rules": "rules",
+					"version": "version"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-user-accounts-alpha",
+			"url_pattern": "/clouduseraccounts/alpha/projects/{project}/global/groups/{resource}/setIamPolicy",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"auditConfigs",
+				"bindings",
+				"etag",
+				"iamOwned",
+				"rules",
+				"version"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages users and groups for accessing Google Compute Engine virtual machines.",
+				"version": "alpha",
+				"slug": "cloud-user-accounts-alpha-clouduseraccounts-alpha-projects-project-global-groups-resource-setiampolicy",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"auditConfigs": "auditConfigs",
+					"bindings": "bindings",
+					"etag": "etag",
+					"iamOwned": "iamOwned",
+					"rules": "rules",
+					"version": "version"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-user-accounts-alpha",
+			"url_pattern": "/clouduseraccounts/alpha/projects/{project}/global/groups/{resource}/testIamPermissions",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"permissions"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages users and groups for accessing Google Compute Engine virtual machines.",
+				"version": "alpha",
+				"slug": "cloud-user-accounts-alpha-clouduseraccounts-alpha-projects-project-global-groups-resource-testiampermissions",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"permissions": "permissions"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-user-accounts-alpha",
+			"url_pattern": "/clouduseraccounts/alpha/projects/{project}/global/operations",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"id",
+				"items",
+				"kind",
+				"nextPageToken",
+				"selfLink"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages users and groups for accessing Google Compute Engine virtual machines.",
+				"version": "alpha",
+				"slug": "cloud-user-accounts-alpha-clouduseraccounts-alpha-projects-project-global-operations",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"id": "id",
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken",
+					"selfLink": "selfLink"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-user-accounts-alpha",
+			"url_pattern": "/clouduseraccounts/alpha/projects/{project}/global/operations/{operation}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"clientOperationId",
+				"creationTimestamp",
+				"description",
+				"endTime",
+				"error",
+				"error.errors",
+				"error.errors.items",
+				"error.errors.items.code",
+				"error.errors.items.location",
+				"error.errors.items.message",
+				"httpErrorMessage",
+				"httpErrorStatusCode",
+				"id",
+				"insertTime",
+				"kind",
+				"name",
+				"operationType",
+				"progress",
+				"region",
+				"selfLink",
+				"startTime",
+				"status",
+				"statusMessage",
+				"targetId",
+				"targetLink",
+				"user",
+				"warnings",
+				"warnings.code",
+				"warnings.data",
+				"warnings.data.items",
+				"warnings.data.items.key",
+				"warnings.data.items.value",
+				"warnings.message",
+				"zone"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages users and groups for accessing Google Compute Engine virtual machines.",
+				"version": "alpha",
+				"slug": "cloud-user-accounts-alpha-clouduseraccounts-alpha-projects-project-global-operations-operation",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"clientOperationId": "clientOperationId",
+					"creationTimestamp": "creationTimestamp",
+					"description": "description",
+					"endTime": "endTime",
+					"error": "error",
+					"error.errors": "error.errors",
+					"error.errors.items": "error.errors.items",
+					"error.errors.items.code": "error.errors.items.code",
+					"error.errors.items.location": "error.errors.items.location",
+					"error.errors.items.message": "error.errors.items.message",
+					"httpErrorMessage": "httpErrorMessage",
+					"httpErrorStatusCode": "httpErrorStatusCode",
+					"id": "id",
+					"insertTime": "insertTime",
+					"kind": "kind",
+					"name": "name",
+					"operationType": "operationType",
+					"progress": "progress",
+					"region": "region",
+					"selfLink": "selfLink",
+					"startTime": "startTime",
+					"status": "status",
+					"statusMessage": "statusMessage",
+					"targetId": "targetId",
+					"targetLink": "targetLink",
+					"user": "user",
+					"warnings": "warnings",
+					"warnings.code": "warnings.code",
+					"warnings.data": "warnings.data",
+					"warnings.data.items": "warnings.data.items",
+					"warnings.data.items.key": "warnings.data.items.key",
+					"warnings.data.items.value": "warnings.data.items.value",
+					"warnings.message": "warnings.message",
+					"zone": "zone"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-user-accounts-alpha",
+			"url_pattern": "/clouduseraccounts/alpha/projects/{project}/global/users",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"id",
+				"items",
+				"kind",
+				"nextPageToken",
+				"selfLink"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages users and groups for accessing Google Compute Engine virtual machines.",
+				"version": "alpha",
+				"slug": "cloud-user-accounts-alpha-clouduseraccounts-alpha-projects-project-global-users",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"id": "id",
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken",
+					"selfLink": "selfLink"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-user-accounts-alpha",
+			"url_pattern": "/clouduseraccounts/alpha/projects/{project}/global/users/{resource}/getIamPolicy",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"auditConfigs",
+				"bindings",
+				"etag",
+				"iamOwned",
+				"rules",
+				"version"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages users and groups for accessing Google Compute Engine virtual machines.",
+				"version": "alpha",
+				"slug": "cloud-user-accounts-alpha-clouduseraccounts-alpha-projects-project-global-users-resource-getiampolicy",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"auditConfigs": "auditConfigs",
+					"bindings": "bindings",
+					"etag": "etag",
+					"iamOwned": "iamOwned",
+					"rules": "rules",
+					"version": "version"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-user-accounts-alpha",
+			"url_pattern": "/clouduseraccounts/alpha/projects/{project}/global/users/{resource}/setIamPolicy",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"auditConfigs",
+				"bindings",
+				"etag",
+				"iamOwned",
+				"rules",
+				"version"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages users and groups for accessing Google Compute Engine virtual machines.",
+				"version": "alpha",
+				"slug": "cloud-user-accounts-alpha-clouduseraccounts-alpha-projects-project-global-users-resource-setiampolicy",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"auditConfigs": "auditConfigs",
+					"bindings": "bindings",
+					"etag": "etag",
+					"iamOwned": "iamOwned",
+					"rules": "rules",
+					"version": "version"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-user-accounts-alpha",
+			"url_pattern": "/clouduseraccounts/alpha/projects/{project}/global/users/{resource}/testIamPermissions",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"permissions"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages users and groups for accessing Google Compute Engine virtual machines.",
+				"version": "alpha",
+				"slug": "cloud-user-accounts-alpha-clouduseraccounts-alpha-projects-project-global-users-resource-testiampermissions",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"permissions": "permissions"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-user-accounts-alpha",
+			"url_pattern": "/clouduseraccounts/alpha/projects/{project}/global/users/{user}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"creationTimestamp",
+				"description",
+				"groups",
+				"id",
+				"kind",
+				"name",
+				"owner",
+				"publicKeys",
+				"selfLink"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages users and groups for accessing Google Compute Engine virtual machines.",
+				"version": "alpha",
+				"slug": "cloud-user-accounts-alpha-clouduseraccounts-alpha-projects-project-global-users-user",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"creationTimestamp": "creationTimestamp",
+					"description": "description",
+					"groups": "groups",
+					"id": "id",
+					"kind": "kind",
+					"name": "name",
+					"owner": "owner",
+					"publicKeys": "publicKeys",
+					"selfLink": "selfLink"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-user-accounts-alpha",
+			"url_pattern": "/clouduseraccounts/alpha/projects/{project}/global/users/{user}/addPublicKey",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"clientOperationId",
+				"creationTimestamp",
+				"description",
+				"endTime",
+				"error",
+				"error.errors",
+				"error.errors.items",
+				"error.errors.items.code",
+				"error.errors.items.location",
+				"error.errors.items.message",
+				"httpErrorMessage",
+				"httpErrorStatusCode",
+				"id",
+				"insertTime",
+				"kind",
+				"name",
+				"operationType",
+				"progress",
+				"region",
+				"selfLink",
+				"startTime",
+				"status",
+				"statusMessage",
+				"targetId",
+				"targetLink",
+				"user",
+				"warnings",
+				"warnings.code",
+				"warnings.data",
+				"warnings.data.items",
+				"warnings.data.items.key",
+				"warnings.data.items.value",
+				"warnings.message",
+				"zone"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages users and groups for accessing Google Compute Engine virtual machines.",
+				"version": "alpha",
+				"slug": "cloud-user-accounts-alpha-clouduseraccounts-alpha-projects-project-global-users-user-addpublickey",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"clientOperationId": "clientOperationId",
+					"creationTimestamp": "creationTimestamp",
+					"description": "description",
+					"endTime": "endTime",
+					"error": "error",
+					"error.errors": "error.errors",
+					"error.errors.items": "error.errors.items",
+					"error.errors.items.code": "error.errors.items.code",
+					"error.errors.items.location": "error.errors.items.location",
+					"error.errors.items.message": "error.errors.items.message",
+					"httpErrorMessage": "httpErrorMessage",
+					"httpErrorStatusCode": "httpErrorStatusCode",
+					"id": "id",
+					"insertTime": "insertTime",
+					"kind": "kind",
+					"name": "name",
+					"operationType": "operationType",
+					"progress": "progress",
+					"region": "region",
+					"selfLink": "selfLink",
+					"startTime": "startTime",
+					"status": "status",
+					"statusMessage": "statusMessage",
+					"targetId": "targetId",
+					"targetLink": "targetLink",
+					"user": "user",
+					"warnings": "warnings",
+					"warnings.code": "warnings.code",
+					"warnings.data": "warnings.data",
+					"warnings.data.items": "warnings.data.items",
+					"warnings.data.items.key": "warnings.data.items.key",
+					"warnings.data.items.value": "warnings.data.items.value",
+					"warnings.message": "warnings.message",
+					"zone": "zone"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-user-accounts-alpha",
+			"url_pattern": "/clouduseraccounts/alpha/projects/{project}/global/users/{user}/removePublicKey",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"clientOperationId",
+				"creationTimestamp",
+				"description",
+				"endTime",
+				"error",
+				"error.errors",
+				"error.errors.items",
+				"error.errors.items.code",
+				"error.errors.items.location",
+				"error.errors.items.message",
+				"httpErrorMessage",
+				"httpErrorStatusCode",
+				"id",
+				"insertTime",
+				"kind",
+				"name",
+				"operationType",
+				"progress",
+				"region",
+				"selfLink",
+				"startTime",
+				"status",
+				"statusMessage",
+				"targetId",
+				"targetLink",
+				"user",
+				"warnings",
+				"warnings.code",
+				"warnings.data",
+				"warnings.data.items",
+				"warnings.data.items.key",
+				"warnings.data.items.value",
+				"warnings.message",
+				"zone"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages users and groups for accessing Google Compute Engine virtual machines.",
+				"version": "alpha",
+				"slug": "cloud-user-accounts-alpha-clouduseraccounts-alpha-projects-project-global-users-user-removepublickey",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"clientOperationId": "clientOperationId",
+					"creationTimestamp": "creationTimestamp",
+					"description": "description",
+					"endTime": "endTime",
+					"error": "error",
+					"error.errors": "error.errors",
+					"error.errors.items": "error.errors.items",
+					"error.errors.items.code": "error.errors.items.code",
+					"error.errors.items.location": "error.errors.items.location",
+					"error.errors.items.message": "error.errors.items.message",
+					"httpErrorMessage": "httpErrorMessage",
+					"httpErrorStatusCode": "httpErrorStatusCode",
+					"id": "id",
+					"insertTime": "insertTime",
+					"kind": "kind",
+					"name": "name",
+					"operationType": "operationType",
+					"progress": "progress",
+					"region": "region",
+					"selfLink": "selfLink",
+					"startTime": "startTime",
+					"status": "status",
+					"statusMessage": "statusMessage",
+					"targetId": "targetId",
+					"targetLink": "targetLink",
+					"user": "user",
+					"warnings": "warnings",
+					"warnings.code": "warnings.code",
+					"warnings.data": "warnings.data",
+					"warnings.data.items": "warnings.data.items",
+					"warnings.data.items.key": "warnings.data.items.key",
+					"warnings.data.items.value": "warnings.data.items.value",
+					"warnings.message": "warnings.message",
+					"zone": "zone"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-user-accounts-alpha",
+			"url_pattern": "/clouduseraccounts/alpha/projects/{project}/zones/{zone}/authorizedKeysView/{user}",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages users and groups for accessing Google Compute Engine virtual machines.",
+				"version": "alpha",
+				"slug": "cloud-user-accounts-alpha-clouduseraccounts-alpha-projects-project-zones-zone-authorizedkeysview-user",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "cloud-user-accounts-alpha",
+			"url_pattern": "/clouduseraccounts/alpha/projects/{project}/zones/{zone}/linuxAccountViews",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and manages users and groups for accessing Google Compute Engine virtual machines.",
+				"version": "alpha",
+				"slug": "cloud-user-accounts-alpha-clouduseraccounts-alpha-projects-project-zones-zone-linuxaccountviews",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		}
+	]
+}

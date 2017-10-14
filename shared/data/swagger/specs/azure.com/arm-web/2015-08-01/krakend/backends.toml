@@ -1,0 +1,60 @@
+[[backends]]
+  group = "website-management-client-2015-08-01"
+  url_pattern = "/providers/Microsoft"
+  method = "WEB/PUBLISHINGUSERS/WEB"
+  host = ["https://management.azure.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "azure.com"
+    description = "Use these APIs to manage Azure Websites resources through the Azure Resource Manager. All task operations conform to the HTTP/1.1 protocol specification and each operation returns an x-ms-request-id header that can be used to obtain information about the request. You must make sure that requests made to these resources are secure. For more information, see https://msdn.microsoft.com/en-us/library/azure/dn790557.aspx."
+    version = "2015-08-01"
+    slug = "website-management-client-2015-08-01-providers-microsoft"
+    schemes = ["https"]
+    hosts = ["https://management.azure.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "website-management-client-2015-08-01"
+  url_pattern = "/subscriptions/{subscriptionId}/providers/Microsoft"
+  method = "CERTIFICATEREGISTRATION/CERTIFICATEORDERS"
+  host = ["https://management.azure.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "azure.com"
+    description = "Use these APIs to manage Azure Websites resources through the Azure Resource Manager. All task operations conform to the HTTP/1.1 protocol specification and each operation returns an x-ms-request-id header that can be used to obtain information about the request. You must make sure that requests made to these resources are secure. For more information, see https://msdn.microsoft.com/en-us/library/azure/dn790557.aspx."
+    version = "2015-08-01"
+    slug = "website-management-client-2015-08-01-subscriptions-subscriptionid-providers-microsoft"
+    schemes = ["https"]
+    hosts = ["https://management.azure.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "website-management-client-2015-08-01"
+  url_pattern = "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/moveResources"
+  method = "POST"
+  host = ["https://management.azure.com"]
+  url_keys = ["resourceGroupName"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "azure.com"
+    description = "Use these APIs to manage Azure Websites resources through the Azure Resource Manager. All task operations conform to the HTTP/1.1 protocol specification and each operation returns an x-ms-request-id header that can be used to obtain information about the request. You must make sure that requests made to these resources are secure. For more information, see https://msdn.microsoft.com/en-us/library/azure/dn790557.aspx."
+    version = "2015-08-01"
+    slug = "website-management-client-2015-08-01-subscriptions-subscriptionid-resourcegroups-resourcegroupname-moveresources"
+    schemes = ["https"]
+    hosts = ["https://management.azure.com"]
+    topics = ["cloud", "globalresourcegroups"]
+
+[[backends]]
+  group = "website-management-client-2015-08-01"
+  url_pattern = "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft"
+  method = "CERTIFICATEREGISTRATION/CERTIFICATEORDERS"
+  host = ["https://management.azure.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "azure.com"
+    description = "Use these APIs to manage Azure Websites resources through the Azure Resource Manager. All task operations conform to the HTTP/1.1 protocol specification and each operation returns an x-ms-request-id header that can be used to obtain information about the request. You must make sure that requests made to these resources are secure. For more information, see https://msdn.microsoft.com/en-us/library/azure/dn790557.aspx."
+    version = "2015-08-01"
+    slug = "website-management-client-2015-08-01-subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft"
+    schemes = ["https"]
+    hosts = ["https://management.azure.com"]
+    topics = ["cloud"]

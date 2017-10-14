@@ -1,0 +1,271 @@
+[[backends]]
+  group = "kinto-1-17"
+  url_pattern = "/v1/"
+  method = "GET"
+  encoding = "json"
+  host = ["https://firefox.settings.services.mozilla.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "mozilla.com"
+    version = "1.17"
+    slug = "kinto-1-17-v1"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://firefox.settings.services.mozilla.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "kinto-1-17"
+  url_pattern = "/v1/__api__"
+  method = "GET"
+  encoding = "json"
+  host = ["https://firefox.settings.services.mozilla.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "mozilla.com"
+    version = "1.17"
+    slug = "kinto-1-17-v1-api"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://firefox.settings.services.mozilla.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "kinto-1-17"
+  url_pattern = "/v1/__heartbeat__"
+  method = "GET"
+  encoding = "json"
+  host = ["https://firefox.settings.services.mozilla.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "mozilla.com"
+    version = "1.17"
+    slug = "kinto-1-17-v1-heartbeat"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://firefox.settings.services.mozilla.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "kinto-1-17"
+  url_pattern = "/v1/__lbheartbeat__"
+  method = "GET"
+  encoding = "json"
+  host = ["https://firefox.settings.services.mozilla.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "mozilla.com"
+    version = "1.17"
+    slug = "kinto-1-17-v1-lbheartbeat"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://firefox.settings.services.mozilla.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "kinto-1-17"
+  url_pattern = "/v1/__version__"
+  method = "GET"
+  encoding = "json"
+  host = ["https://firefox.settings.services.mozilla.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "mozilla.com"
+    version = "1.17"
+    slug = "kinto-1-17-v1-version"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://firefox.settings.services.mozilla.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "kinto-1-17"
+  url_pattern = "/v1/batch"
+  method = "POST"
+  encoding = "json"
+  host = ["https://firefox.settings.services.mozilla.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "mozilla.com"
+    version = "1.17"
+    slug = "kinto-1-17-v1-batch"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://firefox.settings.services.mozilla.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "kinto-1-17"
+  url_pattern = "/v1/buckets"
+  method = "GET"
+  encoding = "json"
+  host = ["https://firefox.settings.services.mozilla.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "mozilla.com"
+    version = "1.17"
+    slug = "kinto-1-17-v1-buckets"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://firefox.settings.services.mozilla.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "kinto-1-17"
+  url_pattern = "/v1/buckets/monitor/collections/changes/records"
+  method = "GET"
+  encoding = "json"
+  host = ["https://firefox.settings.services.mozilla.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "mozilla.com"
+    version = "1.17"
+    slug = "kinto-1-17-v1-buckets-monitor-collections-changes-records"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://firefox.settings.services.mozilla.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "kinto-1-17"
+  url_pattern = "/v1/buckets/{bucket_id}/collections"
+  method = "GET"
+  encoding = "json"
+  host = ["https://firefox.settings.services.mozilla.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "mozilla.com"
+    version = "1.17"
+    slug = "kinto-1-17-v1-buckets-bucket-id-collections"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://firefox.settings.services.mozilla.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "kinto-1-17"
+  url_pattern = "/v1/buckets/{bucket_id}/collections/{collection_id}/records"
+  method = "GET"
+  encoding = "json"
+  host = ["https://firefox.settings.services.mozilla.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "mozilla.com"
+    version = "1.17"
+    slug = "kinto-1-17-v1-buckets-bucket-id-collections-collection-id-records"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://firefox.settings.services.mozilla.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "kinto-1-17"
+  url_pattern = "/v1/buckets/{bucket_id}/collections/{collection_id}/records/{id}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://firefox.settings.services.mozilla.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "mozilla.com"
+    version = "1.17"
+    slug = "kinto-1-17-v1-buckets-bucket-id-collections-collection-id-records-id"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://firefox.settings.services.mozilla.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "kinto-1-17"
+  url_pattern = "/v1/buckets/{bucket_id}/collections/{id}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://firefox.settings.services.mozilla.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "mozilla.com"
+    version = "1.17"
+    slug = "kinto-1-17-v1-buckets-bucket-id-collections-id"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://firefox.settings.services.mozilla.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "kinto-1-17"
+  url_pattern = "/v1/buckets/{bucket_id}/groups"
+  method = "GET"
+  encoding = "json"
+  host = ["https://firefox.settings.services.mozilla.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "mozilla.com"
+    version = "1.17"
+    slug = "kinto-1-17-v1-buckets-bucket-id-groups"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://firefox.settings.services.mozilla.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "kinto-1-17"
+  url_pattern = "/v1/buckets/{bucket_id}/groups/{id}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://firefox.settings.services.mozilla.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "mozilla.com"
+    version = "1.17"
+    slug = "kinto-1-17-v1-buckets-bucket-id-groups-id"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://firefox.settings.services.mozilla.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "kinto-1-17"
+  url_pattern = "/v1/buckets/{id}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://firefox.settings.services.mozilla.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "mozilla.com"
+    version = "1.17"
+    slug = "kinto-1-17-v1-buckets-id"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://firefox.settings.services.mozilla.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "kinto-1-17"
+  url_pattern = "/v1/contribute"
+  method = "JSON"
+  encoding = "json"
+  host = ["https://firefox.settings.services.mozilla.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "mozilla.com"
+    version = "1.17"
+    slug = "kinto-1-17-v1-contribute"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://firefox.settings.services.mozilla.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "kinto-1-17"
+  url_pattern = "/v1/{prefix}/{api_ver:\\d+}/{application_guid}/{application_ver}/{metrics:"
+  method = "*}"
+  encoding = "json"
+  host = ["https://firefox.settings.services.mozilla.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "mozilla.com"
+    version = "1.17"
+    slug = "kinto-1-17-v1-prefix-api-ver-d-application-guid-application-ver-metrics"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://firefox.settings.services.mozilla.com"]
+    topics = ["cloud"]

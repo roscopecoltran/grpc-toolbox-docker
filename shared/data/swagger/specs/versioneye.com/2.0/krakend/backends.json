@@ -1,0 +1,1019 @@
+{
+	"backends": [
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/github",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-github",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/github/hook/{project_id}",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-github-hook-project-id",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/github/sync",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-github-sync",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/github/{repo_key}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-github-repo-key",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/me",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-me",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/me/comments",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-me-comments",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/me/favorites",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-me-favorites",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/me/notifications",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-me-notifications",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/organisations",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-organisations",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/organisations/{orga_name}/inventory",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-organisations-orga-name-inventory",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/organisations/{orga_name}/inventory_diff",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-organisations-orga-name-inventory-diff",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/organisations/{orga_name}/projects",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-organisations-orga-name-projects",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/organisations/{orga_name}/teams",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-organisations-orga-name-teams",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/products/search/{q}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-products-search-q",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/products/sha/{sha}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-products-sha-sha",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/products/{lang}/{prod_key}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-products-lang-prod-key",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/products/{lang}/{prod_key}/follow",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-products-lang-prod-key-follow",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/products/{lang}/{prod_key}/references",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-products-lang-prod-key-references",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/products/{lang}/{prod_key}/versions",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-products-lang-prod-key-versions",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/products/{lang}/{prod_key}/{prod_version}/license",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-products-lang-prod-key-prod-version-license",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/products/{lang}/{prod_key}/{prod_version}/scm_changes",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-products-lang-prod-key-prod-version-scm-changes",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/projects",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-projects",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/projects/{group_id}/{artifact_id}/merge_ga/{child_id}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-projects-group-id-artifact-id-merge-ga-child-id",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/projects/{parent_id}/merge/{child_id}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-projects-parent-id-merge-child-id",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/projects/{parent_id}/unmerge/{child_id}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-projects-parent-id-unmerge-child-id",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/projects/{project_key}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-projects-project-key",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/projects/{project_key}/dependencies",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-projects-project-key-dependencies",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/projects/{project_key}/licenses",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-projects-project-key-licenses",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/security",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-security",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/services/ping",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-services-ping",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/sessions",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-sessions",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/sessions/login",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-sessions-login",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/users/{username}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-users-username",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/users/{username}/comments",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-users-username-comments",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		},
+		{
+			"group": "available-api-endpoints-2-0",
+			"url_pattern": "/api/v2/users/{username}/favorites",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://www.versioneye.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "versioneye.com",
+				"description": "VersionEye is a cross-platform search engine for free/libre/open source software libraries.",
+				"version": "2.0",
+				"slug": "available-api-endpoints-2-0-api-v2-users-username-favorites",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://www.versioneye.com"
+				],
+				"topics": [
+					"open-data",
+					"search"
+				]
+			}
+		}
+	]
+}

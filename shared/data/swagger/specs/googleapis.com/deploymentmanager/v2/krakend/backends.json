@@ -1,0 +1,662 @@
+{
+	"backends": [
+		{
+			"group": "google-cloud-deployment-manager-v2",
+			"url_pattern": "/deploymentmanager/v2/projects/{project}/global/deployments",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"deployments",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Declares, configures, and deploys complex solutions on Google Cloud Platform.",
+				"version": "v2",
+				"slug": "google-cloud-deployment-manager-v2-deploymentmanager-v2-projects-project-global-deployments",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"deployments": "deployments",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-cloud-deployment-manager-v2",
+			"url_pattern": "/deploymentmanager/v2/projects/{project}/global/deployments/{deployment}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"description",
+				"fingerprint",
+				"id",
+				"insertTime",
+				"labels",
+				"manifest",
+				"name",
+				"selfLink"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Declares, configures, and deploys complex solutions on Google Cloud Platform.",
+				"version": "v2",
+				"slug": "google-cloud-deployment-manager-v2-deploymentmanager-v2-projects-project-global-deployments-deployment",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"description": "description",
+					"fingerprint": "fingerprint",
+					"id": "id",
+					"insertTime": "insertTime",
+					"labels": "labels",
+					"manifest": "manifest",
+					"name": "name",
+					"selfLink": "selfLink"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-cloud-deployment-manager-v2",
+			"url_pattern": "/deploymentmanager/v2/projects/{project}/global/deployments/{deployment}/cancelPreview",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"clientOperationId",
+				"creationTimestamp",
+				"description",
+				"endTime",
+				"error",
+				"error.errors",
+				"error.errors.items",
+				"error.errors.items.code",
+				"error.errors.items.location",
+				"error.errors.items.message",
+				"httpErrorMessage",
+				"httpErrorStatusCode",
+				"id",
+				"insertTime",
+				"kind",
+				"name",
+				"operationType",
+				"progress",
+				"region",
+				"selfLink",
+				"startTime",
+				"status",
+				"statusMessage",
+				"targetId",
+				"targetLink",
+				"user",
+				"warnings",
+				"warnings.code",
+				"warnings.data",
+				"warnings.data.items",
+				"warnings.data.items.key",
+				"warnings.data.items.value",
+				"warnings.message",
+				"zone"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Declares, configures, and deploys complex solutions on Google Cloud Platform.",
+				"version": "v2",
+				"slug": "google-cloud-deployment-manager-v2-deploymentmanager-v2-projects-project-global-deployments-deployment-cancelpreview",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"clientOperationId": "clientOperationId",
+					"creationTimestamp": "creationTimestamp",
+					"description": "description",
+					"endTime": "endTime",
+					"error": "error",
+					"error.errors": "error.errors",
+					"error.errors.items": "error.errors.items",
+					"error.errors.items.code": "error.errors.items.code",
+					"error.errors.items.location": "error.errors.items.location",
+					"error.errors.items.message": "error.errors.items.message",
+					"httpErrorMessage": "httpErrorMessage",
+					"httpErrorStatusCode": "httpErrorStatusCode",
+					"id": "id",
+					"insertTime": "insertTime",
+					"kind": "kind",
+					"name": "name",
+					"operationType": "operationType",
+					"progress": "progress",
+					"region": "region",
+					"selfLink": "selfLink",
+					"startTime": "startTime",
+					"status": "status",
+					"statusMessage": "statusMessage",
+					"targetId": "targetId",
+					"targetLink": "targetLink",
+					"user": "user",
+					"warnings": "warnings",
+					"warnings.code": "warnings.code",
+					"warnings.data": "warnings.data",
+					"warnings.data.items": "warnings.data.items",
+					"warnings.data.items.key": "warnings.data.items.key",
+					"warnings.data.items.value": "warnings.data.items.value",
+					"warnings.message": "warnings.message",
+					"zone": "zone"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-cloud-deployment-manager-v2",
+			"url_pattern": "/deploymentmanager/v2/projects/{project}/global/deployments/{deployment}/manifests",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"manifests",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Declares, configures, and deploys complex solutions on Google Cloud Platform.",
+				"version": "v2",
+				"slug": "google-cloud-deployment-manager-v2-deploymentmanager-v2-projects-project-global-deployments-deployment-manifests",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"manifests": "manifests",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-cloud-deployment-manager-v2",
+			"url_pattern": "/deploymentmanager/v2/projects/{project}/global/deployments/{deployment}/manifests/{manifest}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"expandedConfig",
+				"id",
+				"imports",
+				"insertTime",
+				"layout",
+				"name",
+				"selfLink"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Declares, configures, and deploys complex solutions on Google Cloud Platform.",
+				"version": "v2",
+				"slug": "google-cloud-deployment-manager-v2-deploymentmanager-v2-projects-project-global-deployments-deployment-manifests-manifest",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"expandedConfig": "expandedConfig",
+					"id": "id",
+					"imports": "imports",
+					"insertTime": "insertTime",
+					"layout": "layout",
+					"name": "name",
+					"selfLink": "selfLink"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-cloud-deployment-manager-v2",
+			"url_pattern": "/deploymentmanager/v2/projects/{project}/global/deployments/{deployment}/resources",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"nextPageToken",
+				"resources"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Declares, configures, and deploys complex solutions on Google Cloud Platform.",
+				"version": "v2",
+				"slug": "google-cloud-deployment-manager-v2-deploymentmanager-v2-projects-project-global-deployments-deployment-resources",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"nextPageToken": "nextPageToken",
+					"resources": "resources"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-cloud-deployment-manager-v2",
+			"url_pattern": "/deploymentmanager/v2/projects/{project}/global/deployments/{deployment}/resources/{resource}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"finalProperties",
+				"id",
+				"insertTime",
+				"manifest",
+				"name",
+				"updateTime",
+				"url",
+				"warnings",
+				"warnings.code",
+				"warnings.data",
+				"warnings.data.items",
+				"warnings.data.items.key",
+				"warnings.data.items.value",
+				"warnings.message"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Declares, configures, and deploys complex solutions on Google Cloud Platform.",
+				"version": "v2",
+				"slug": "google-cloud-deployment-manager-v2-deploymentmanager-v2-projects-project-global-deployments-deployment-resources-resource",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"finalProperties": "finalProperties",
+					"id": "id",
+					"insertTime": "insertTime",
+					"manifest": "manifest",
+					"name": "name",
+					"updateTime": "updateTime",
+					"url": "url",
+					"warnings": "warnings",
+					"warnings.code": "warnings.code",
+					"warnings.data": "warnings.data",
+					"warnings.data.items": "warnings.data.items",
+					"warnings.data.items.key": "warnings.data.items.key",
+					"warnings.data.items.value": "warnings.data.items.value",
+					"warnings.message": "warnings.message"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-cloud-deployment-manager-v2",
+			"url_pattern": "/deploymentmanager/v2/projects/{project}/global/deployments/{deployment}/stop",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"clientOperationId",
+				"creationTimestamp",
+				"description",
+				"endTime",
+				"error",
+				"error.errors",
+				"error.errors.items",
+				"error.errors.items.code",
+				"error.errors.items.location",
+				"error.errors.items.message",
+				"httpErrorMessage",
+				"httpErrorStatusCode",
+				"id",
+				"insertTime",
+				"kind",
+				"name",
+				"operationType",
+				"progress",
+				"region",
+				"selfLink",
+				"startTime",
+				"status",
+				"statusMessage",
+				"targetId",
+				"targetLink",
+				"user",
+				"warnings",
+				"warnings.code",
+				"warnings.data",
+				"warnings.data.items",
+				"warnings.data.items.key",
+				"warnings.data.items.value",
+				"warnings.message",
+				"zone"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Declares, configures, and deploys complex solutions on Google Cloud Platform.",
+				"version": "v2",
+				"slug": "google-cloud-deployment-manager-v2-deploymentmanager-v2-projects-project-global-deployments-deployment-stop",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"clientOperationId": "clientOperationId",
+					"creationTimestamp": "creationTimestamp",
+					"description": "description",
+					"endTime": "endTime",
+					"error": "error",
+					"error.errors": "error.errors",
+					"error.errors.items": "error.errors.items",
+					"error.errors.items.code": "error.errors.items.code",
+					"error.errors.items.location": "error.errors.items.location",
+					"error.errors.items.message": "error.errors.items.message",
+					"httpErrorMessage": "httpErrorMessage",
+					"httpErrorStatusCode": "httpErrorStatusCode",
+					"id": "id",
+					"insertTime": "insertTime",
+					"kind": "kind",
+					"name": "name",
+					"operationType": "operationType",
+					"progress": "progress",
+					"region": "region",
+					"selfLink": "selfLink",
+					"startTime": "startTime",
+					"status": "status",
+					"statusMessage": "statusMessage",
+					"targetId": "targetId",
+					"targetLink": "targetLink",
+					"user": "user",
+					"warnings": "warnings",
+					"warnings.code": "warnings.code",
+					"warnings.data": "warnings.data",
+					"warnings.data.items": "warnings.data.items",
+					"warnings.data.items.key": "warnings.data.items.key",
+					"warnings.data.items.value": "warnings.data.items.value",
+					"warnings.message": "warnings.message",
+					"zone": "zone"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-cloud-deployment-manager-v2",
+			"url_pattern": "/deploymentmanager/v2/projects/{project}/global/deployments/{resource}/getIamPolicy",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"auditConfigs",
+				"bindings",
+				"etag",
+				"iamOwned",
+				"rules",
+				"version"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Declares, configures, and deploys complex solutions on Google Cloud Platform.",
+				"version": "v2",
+				"slug": "google-cloud-deployment-manager-v2-deploymentmanager-v2-projects-project-global-deployments-resource-getiampolicy",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"auditConfigs": "auditConfigs",
+					"bindings": "bindings",
+					"etag": "etag",
+					"iamOwned": "iamOwned",
+					"rules": "rules",
+					"version": "version"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-cloud-deployment-manager-v2",
+			"url_pattern": "/deploymentmanager/v2/projects/{project}/global/deployments/{resource}/setIamPolicy",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"auditConfigs",
+				"bindings",
+				"etag",
+				"iamOwned",
+				"rules",
+				"version"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Declares, configures, and deploys complex solutions on Google Cloud Platform.",
+				"version": "v2",
+				"slug": "google-cloud-deployment-manager-v2-deploymentmanager-v2-projects-project-global-deployments-resource-setiampolicy",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"auditConfigs": "auditConfigs",
+					"bindings": "bindings",
+					"etag": "etag",
+					"iamOwned": "iamOwned",
+					"rules": "rules",
+					"version": "version"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-cloud-deployment-manager-v2",
+			"url_pattern": "/deploymentmanager/v2/projects/{project}/global/deployments/{resource}/testIamPermissions",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"permissions"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Declares, configures, and deploys complex solutions on Google Cloud Platform.",
+				"version": "v2",
+				"slug": "google-cloud-deployment-manager-v2-deploymentmanager-v2-projects-project-global-deployments-resource-testiampermissions",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"permissions": "permissions"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-cloud-deployment-manager-v2",
+			"url_pattern": "/deploymentmanager/v2/projects/{project}/global/operations",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"nextPageToken",
+				"operations"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Declares, configures, and deploys complex solutions on Google Cloud Platform.",
+				"version": "v2",
+				"slug": "google-cloud-deployment-manager-v2-deploymentmanager-v2-projects-project-global-operations",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"nextPageToken": "nextPageToken",
+					"operations": "operations"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-cloud-deployment-manager-v2",
+			"url_pattern": "/deploymentmanager/v2/projects/{project}/global/operations/{operation}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"clientOperationId",
+				"creationTimestamp",
+				"description",
+				"endTime",
+				"error",
+				"error.errors",
+				"error.errors.items",
+				"error.errors.items.code",
+				"error.errors.items.location",
+				"error.errors.items.message",
+				"httpErrorMessage",
+				"httpErrorStatusCode",
+				"id",
+				"insertTime",
+				"kind",
+				"name",
+				"operationType",
+				"progress",
+				"region",
+				"selfLink",
+				"startTime",
+				"status",
+				"statusMessage",
+				"targetId",
+				"targetLink",
+				"user",
+				"warnings",
+				"warnings.code",
+				"warnings.data",
+				"warnings.data.items",
+				"warnings.data.items.key",
+				"warnings.data.items.value",
+				"warnings.message",
+				"zone"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Declares, configures, and deploys complex solutions on Google Cloud Platform.",
+				"version": "v2",
+				"slug": "google-cloud-deployment-manager-v2-deploymentmanager-v2-projects-project-global-operations-operation",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"clientOperationId": "clientOperationId",
+					"creationTimestamp": "creationTimestamp",
+					"description": "description",
+					"endTime": "endTime",
+					"error": "error",
+					"error.errors": "error.errors",
+					"error.errors.items": "error.errors.items",
+					"error.errors.items.code": "error.errors.items.code",
+					"error.errors.items.location": "error.errors.items.location",
+					"error.errors.items.message": "error.errors.items.message",
+					"httpErrorMessage": "httpErrorMessage",
+					"httpErrorStatusCode": "httpErrorStatusCode",
+					"id": "id",
+					"insertTime": "insertTime",
+					"kind": "kind",
+					"name": "name",
+					"operationType": "operationType",
+					"progress": "progress",
+					"region": "region",
+					"selfLink": "selfLink",
+					"startTime": "startTime",
+					"status": "status",
+					"statusMessage": "statusMessage",
+					"targetId": "targetId",
+					"targetLink": "targetLink",
+					"user": "user",
+					"warnings": "warnings",
+					"warnings.code": "warnings.code",
+					"warnings.data": "warnings.data",
+					"warnings.data.items": "warnings.data.items",
+					"warnings.data.items.key": "warnings.data.items.key",
+					"warnings.data.items.value": "warnings.data.items.value",
+					"warnings.message": "warnings.message",
+					"zone": "zone"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-cloud-deployment-manager-v2",
+			"url_pattern": "/deploymentmanager/v2/projects/{project}/global/types",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"nextPageToken",
+				"types"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Declares, configures, and deploys complex solutions on Google Cloud Platform.",
+				"version": "v2",
+				"slug": "google-cloud-deployment-manager-v2-deploymentmanager-v2-projects-project-global-types",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"nextPageToken": "nextPageToken",
+					"types": "types"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		}
+	]
+}

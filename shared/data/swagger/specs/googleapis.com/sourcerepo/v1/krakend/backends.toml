@@ -1,0 +1,127 @@
+[[backends]]
+  group = "cloud-source-repositories-v1"
+  url_pattern = "/v1/{name}"
+  method = "GET"
+  host = ["https://sourcerepo.googleapis.com"]
+  url_keys = ["name"]
+  whitelist = ["name", "size", "url"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access source code repositories hosted by Google."
+    version = "v1"
+    slug = "cloud-source-repositories-v1-v1-name"
+    schemes = ["https"]
+    hosts = ["https://sourcerepo.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      name = "name"
+      size = "size"
+      url = "url"
+
+[[backends]]
+  group = "cloud-source-repositories-v1"
+  url_pattern = "/v1/{name}/repos"
+  method = "GET"
+  host = ["https://sourcerepo.googleapis.com"]
+  url_keys = ["name"]
+  query_string_params = ["pageSize", "pageToken"]
+  whitelist = ["nextPageToken", "repos"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access source code repositories hosted by Google."
+    version = "v1"
+    slug = "cloud-source-repositories-v1-v1-name-repos"
+    schemes = ["https"]
+    hosts = ["https://sourcerepo.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      repos = "repos"
+
+[[backends]]
+  group = "cloud-source-repositories-v1"
+  url_pattern = "/v1/{parent}/repos"
+  method = "POST"
+  host = ["https://sourcerepo.googleapis.com"]
+  url_keys = ["parent"]
+  whitelist = ["name", "size", "url"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access source code repositories hosted by Google."
+    version = "v1"
+    slug = "cloud-source-repositories-v1-v1-parent-repos"
+    schemes = ["https"]
+    hosts = ["https://sourcerepo.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      name = "name"
+      size = "size"
+      url = "url"
+
+[[backends]]
+  group = "cloud-source-repositories-v1"
+  url_pattern = "/v1/{resource}:getIamPolicy"
+  method = "GET"
+  host = ["https://sourcerepo.googleapis.com"]
+  url_keys = ["resource"]
+  whitelist = ["auditConfigs", "bindings", "etag", "iamOwned", "version"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access source code repositories hosted by Google."
+    version = "v1"
+    slug = "cloud-source-repositories-v1-v1-resource-getiampolicy"
+    schemes = ["https"]
+    hosts = ["https://sourcerepo.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      auditConfigs = "auditConfigs"
+      bindings = "bindings"
+      etag = "etag"
+      iamOwned = "iamOwned"
+      version = "version"
+
+[[backends]]
+  group = "cloud-source-repositories-v1"
+  url_pattern = "/v1/{resource}:setIamPolicy"
+  method = "POST"
+  host = ["https://sourcerepo.googleapis.com"]
+  url_keys = ["resource"]
+  whitelist = ["auditConfigs", "bindings", "etag", "iamOwned", "version"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access source code repositories hosted by Google."
+    version = "v1"
+    slug = "cloud-source-repositories-v1-v1-resource-setiampolicy"
+    schemes = ["https"]
+    hosts = ["https://sourcerepo.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      auditConfigs = "auditConfigs"
+      bindings = "bindings"
+      etag = "etag"
+      iamOwned = "iamOwned"
+      version = "version"
+
+[[backends]]
+  group = "cloud-source-repositories-v1"
+  url_pattern = "/v1/{resource}:testIamPermissions"
+  method = "POST"
+  host = ["https://sourcerepo.googleapis.com"]
+  url_keys = ["resource"]
+  whitelist = ["permissions"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access source code repositories hosted by Google."
+    version = "v1"
+    slug = "cloud-source-repositories-v1-v1-resource-testiampermissions"
+    schemes = ["https"]
+    hosts = ["https://sourcerepo.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      permissions = "permissions"

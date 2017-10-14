@@ -1,0 +1,121 @@
+[[backends]]
+  group = "google-cloud-dns-v1"
+  url_pattern = "/dns/v1/projects/{project}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["id", "kind", "number"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Configures and serves authoritative DNS records."
+    version = "v1"
+    slug = "google-cloud-dns-v1-dns-v1-projects-project"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      id = "id"
+      kind = "kind"
+      number = "number"
+
+[[backends]]
+  group = "google-cloud-dns-v1"
+  url_pattern = "/dns/v1/projects/{project}/managedZones"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "managedZones", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Configures and serves authoritative DNS records."
+    version = "v1"
+    slug = "google-cloud-dns-v1-dns-v1-projects-project-managedzones"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      managedZones = "managedZones"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "google-cloud-dns-v1"
+  url_pattern = "/dns/v1/projects/{project}/managedZones/{managedZone}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["creationTime", "description", "dnsName", "id", "kind", "name", "nameServerSet", "nameServers"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Configures and serves authoritative DNS records."
+    version = "v1"
+    slug = "google-cloud-dns-v1-dns-v1-projects-project-managedzones-managedzone"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      creationTime = "creationTime"
+      description = "description"
+      dnsName = "dnsName"
+      id = "id"
+      kind = "kind"
+      name = "name"
+      nameServerSet = "nameServerSet"
+      nameServers = "nameServers"
+
+[[backends]]
+  group = "google-cloud-dns-v1"
+  url_pattern = "/dns/v1/projects/{project}/managedZones/{managedZone}/changes"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["changes", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Configures and serves authoritative DNS records."
+    version = "v1"
+    slug = "google-cloud-dns-v1-dns-v1-projects-project-managedzones-managedzone-changes"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      changes = "changes"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "google-cloud-dns-v1"
+  url_pattern = "/dns/v1/projects/{project}/managedZones/{managedZone}/changes/{changeId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["additions", "deletions", "id", "kind", "startTime", "status"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Configures and serves authoritative DNS records."
+    version = "v1"
+    slug = "google-cloud-dns-v1-dns-v1-projects-project-managedzones-managedzone-changes-changeid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      additions = "additions"
+      deletions = "deletions"
+      id = "id"
+      kind = "kind"
+      startTime = "startTime"
+      status = "status"
+
+[[backends]]
+  group = "google-cloud-dns-v1"
+  url_pattern = "/dns/v1/projects/{project}/managedZones/{managedZone}/rrsets"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "nextPageToken", "rrsets"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Configures and serves authoritative DNS records."
+    version = "v1"
+    slug = "google-cloud-dns-v1-dns-v1-projects-project-managedzones-managedzone-rrsets"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+      rrsets = "rrsets"

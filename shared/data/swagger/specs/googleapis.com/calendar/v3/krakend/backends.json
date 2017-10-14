@@ -1,0 +1,1334 @@
+{
+	"backends": [
+		{
+			"group": "calendar-v3",
+			"url_pattern": "/calendar/v3/calendars",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"description",
+				"etag",
+				"id",
+				"kind",
+				"location",
+				"summary",
+				"timeZone"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manipulates events and other calendar data.",
+				"version": "v3",
+				"slug": "calendar-v3-calendar-v3-calendars",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"description": "description",
+					"etag": "etag",
+					"id": "id",
+					"kind": "kind",
+					"location": "location",
+					"summary": "summary",
+					"timeZone": "timeZone"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"time-management"
+				]
+			}
+		},
+		{
+			"group": "calendar-v3",
+			"url_pattern": "/calendar/v3/calendars/{calendarId}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"description",
+				"etag",
+				"id",
+				"kind",
+				"location",
+				"summary",
+				"timeZone"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manipulates events and other calendar data.",
+				"version": "v3",
+				"slug": "calendar-v3-calendar-v3-calendars-calendarid",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"description": "description",
+					"etag": "etag",
+					"id": "id",
+					"kind": "kind",
+					"location": "location",
+					"summary": "summary",
+					"timeZone": "timeZone"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"time-management"
+				]
+			}
+		},
+		{
+			"group": "calendar-v3",
+			"url_pattern": "/calendar/v3/calendars/{calendarId}/acl",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"etag",
+				"items",
+				"kind",
+				"nextPageToken",
+				"nextSyncToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manipulates events and other calendar data.",
+				"version": "v3",
+				"slug": "calendar-v3-calendar-v3-calendars-calendarid-acl",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"etag": "etag",
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken",
+					"nextSyncToken": "nextSyncToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"time-management"
+				]
+			}
+		},
+		{
+			"group": "calendar-v3",
+			"url_pattern": "/calendar/v3/calendars/{calendarId}/acl/watch",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"address",
+				"expiration",
+				"id",
+				"kind",
+				"params",
+				"params.additionalProperties",
+				"payload",
+				"resourceId",
+				"resourceUri",
+				"token"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manipulates events and other calendar data.",
+				"version": "v3",
+				"slug": "calendar-v3-calendar-v3-calendars-calendarid-acl-watch",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"address": "address",
+					"expiration": "expiration",
+					"id": "id",
+					"kind": "kind",
+					"params": "params",
+					"params.additionalProperties": "params.additionalProperties",
+					"payload": "payload",
+					"resourceId": "resourceId",
+					"resourceUri": "resourceUri",
+					"token": "token"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"time-management"
+				]
+			}
+		},
+		{
+			"group": "calendar-v3",
+			"url_pattern": "/calendar/v3/calendars/{calendarId}/acl/{ruleId}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"etag",
+				"id",
+				"kind",
+				"role",
+				"scope",
+				"scope.value"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manipulates events and other calendar data.",
+				"version": "v3",
+				"slug": "calendar-v3-calendar-v3-calendars-calendarid-acl-ruleid",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"etag": "etag",
+					"id": "id",
+					"kind": "kind",
+					"role": "role",
+					"scope": "scope",
+					"scope.value": "scope.value"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"time-management"
+				]
+			}
+		},
+		{
+			"group": "calendar-v3",
+			"url_pattern": "/calendar/v3/calendars/{calendarId}/clear",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manipulates events and other calendar data.",
+				"version": "v3",
+				"slug": "calendar-v3-calendar-v3-calendars-calendarid-clear",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"time-management"
+				]
+			}
+		},
+		{
+			"group": "calendar-v3",
+			"url_pattern": "/calendar/v3/calendars/{calendarId}/events",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"accessRole",
+				"defaultReminders",
+				"description",
+				"etag",
+				"items",
+				"kind",
+				"nextPageToken",
+				"nextSyncToken",
+				"summary",
+				"timeZone",
+				"updated"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manipulates events and other calendar data.",
+				"version": "v3",
+				"slug": "calendar-v3-calendar-v3-calendars-calendarid-events",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"accessRole": "accessRole",
+					"defaultReminders": "defaultReminders",
+					"description": "description",
+					"etag": "etag",
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken",
+					"nextSyncToken": "nextSyncToken",
+					"summary": "summary",
+					"timeZone": "timeZone",
+					"updated": "updated"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"time-management"
+				]
+			}
+		},
+		{
+			"group": "calendar-v3",
+			"url_pattern": "/calendar/v3/calendars/{calendarId}/events/import",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"anyoneCanAddSelf",
+				"attachments",
+				"attendees",
+				"attendeesOmitted",
+				"colorId",
+				"created",
+				"creator",
+				"creator.displayName",
+				"creator.email",
+				"creator.id",
+				"creator.self",
+				"description",
+				"endTimeUnspecified",
+				"etag",
+				"extendedProperties",
+				"extendedProperties.private",
+				"extendedProperties.private.additionalProperties",
+				"extendedProperties.shared",
+				"extendedProperties.shared.additionalProperties",
+				"gadget",
+				"gadget.display",
+				"gadget.height",
+				"gadget.iconLink",
+				"gadget.link",
+				"gadget.preferences",
+				"gadget.preferences.additionalProperties",
+				"gadget.title",
+				"gadget.width",
+				"guestsCanInviteOthers",
+				"guestsCanModify",
+				"guestsCanSeeOtherGuests",
+				"hangoutLink",
+				"htmlLink",
+				"iCalUID",
+				"id",
+				"kind",
+				"location",
+				"locked",
+				"organizer",
+				"organizer.displayName",
+				"organizer.email",
+				"organizer.id",
+				"organizer.self",
+				"privateCopy",
+				"recurrence",
+				"recurringEventId",
+				"reminders",
+				"reminders.overrides",
+				"reminders.useDefault",
+				"sequence",
+				"source",
+				"source.title",
+				"source.url",
+				"status",
+				"summary",
+				"transparency",
+				"updated",
+				"visibility"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manipulates events and other calendar data.",
+				"version": "v3",
+				"slug": "calendar-v3-calendar-v3-calendars-calendarid-events-import",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"anyoneCanAddSelf": "anyoneCanAddSelf",
+					"attachments": "attachments",
+					"attendees": "attendees",
+					"attendeesOmitted": "attendeesOmitted",
+					"colorId": "colorId",
+					"created": "created",
+					"creator": "creator",
+					"creator.displayName": "creator.displayName",
+					"creator.email": "creator.email",
+					"creator.id": "creator.id",
+					"creator.self": "creator.self",
+					"description": "description",
+					"endTimeUnspecified": "endTimeUnspecified",
+					"etag": "etag",
+					"extendedProperties": "extendedProperties",
+					"extendedProperties.private": "extendedProperties.private",
+					"extendedProperties.private.additionalProperties": "extendedProperties.private.additionalProperties",
+					"extendedProperties.shared": "extendedProperties.shared",
+					"extendedProperties.shared.additionalProperties": "extendedProperties.shared.additionalProperties",
+					"gadget": "gadget",
+					"gadget.display": "gadget.display",
+					"gadget.height": "gadget.height",
+					"gadget.iconLink": "gadget.iconLink",
+					"gadget.link": "gadget.link",
+					"gadget.preferences": "gadget.preferences",
+					"gadget.preferences.additionalProperties": "gadget.preferences.additionalProperties",
+					"gadget.title": "gadget.title",
+					"gadget.width": "gadget.width",
+					"guestsCanInviteOthers": "guestsCanInviteOthers",
+					"guestsCanModify": "guestsCanModify",
+					"guestsCanSeeOtherGuests": "guestsCanSeeOtherGuests",
+					"hangoutLink": "hangoutLink",
+					"htmlLink": "htmlLink",
+					"iCalUID": "iCalUID",
+					"id": "id",
+					"kind": "kind",
+					"location": "location",
+					"locked": "locked",
+					"organizer": "organizer",
+					"organizer.displayName": "organizer.displayName",
+					"organizer.email": "organizer.email",
+					"organizer.id": "organizer.id",
+					"organizer.self": "organizer.self",
+					"privateCopy": "privateCopy",
+					"recurrence": "recurrence",
+					"recurringEventId": "recurringEventId",
+					"reminders": "reminders",
+					"reminders.overrides": "reminders.overrides",
+					"reminders.useDefault": "reminders.useDefault",
+					"sequence": "sequence",
+					"source": "source",
+					"source.title": "source.title",
+					"source.url": "source.url",
+					"status": "status",
+					"summary": "summary",
+					"transparency": "transparency",
+					"updated": "updated",
+					"visibility": "visibility"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"time-management"
+				]
+			}
+		},
+		{
+			"group": "calendar-v3",
+			"url_pattern": "/calendar/v3/calendars/{calendarId}/events/quickAdd",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"anyoneCanAddSelf",
+				"attachments",
+				"attendees",
+				"attendeesOmitted",
+				"colorId",
+				"created",
+				"creator",
+				"creator.displayName",
+				"creator.email",
+				"creator.id",
+				"creator.self",
+				"description",
+				"endTimeUnspecified",
+				"etag",
+				"extendedProperties",
+				"extendedProperties.private",
+				"extendedProperties.private.additionalProperties",
+				"extendedProperties.shared",
+				"extendedProperties.shared.additionalProperties",
+				"gadget",
+				"gadget.display",
+				"gadget.height",
+				"gadget.iconLink",
+				"gadget.link",
+				"gadget.preferences",
+				"gadget.preferences.additionalProperties",
+				"gadget.title",
+				"gadget.width",
+				"guestsCanInviteOthers",
+				"guestsCanModify",
+				"guestsCanSeeOtherGuests",
+				"hangoutLink",
+				"htmlLink",
+				"iCalUID",
+				"id",
+				"kind",
+				"location",
+				"locked",
+				"organizer",
+				"organizer.displayName",
+				"organizer.email",
+				"organizer.id",
+				"organizer.self",
+				"privateCopy",
+				"recurrence",
+				"recurringEventId",
+				"reminders",
+				"reminders.overrides",
+				"reminders.useDefault",
+				"sequence",
+				"source",
+				"source.title",
+				"source.url",
+				"status",
+				"summary",
+				"transparency",
+				"updated",
+				"visibility"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manipulates events and other calendar data.",
+				"version": "v3",
+				"slug": "calendar-v3-calendar-v3-calendars-calendarid-events-quickadd",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"anyoneCanAddSelf": "anyoneCanAddSelf",
+					"attachments": "attachments",
+					"attendees": "attendees",
+					"attendeesOmitted": "attendeesOmitted",
+					"colorId": "colorId",
+					"created": "created",
+					"creator": "creator",
+					"creator.displayName": "creator.displayName",
+					"creator.email": "creator.email",
+					"creator.id": "creator.id",
+					"creator.self": "creator.self",
+					"description": "description",
+					"endTimeUnspecified": "endTimeUnspecified",
+					"etag": "etag",
+					"extendedProperties": "extendedProperties",
+					"extendedProperties.private": "extendedProperties.private",
+					"extendedProperties.private.additionalProperties": "extendedProperties.private.additionalProperties",
+					"extendedProperties.shared": "extendedProperties.shared",
+					"extendedProperties.shared.additionalProperties": "extendedProperties.shared.additionalProperties",
+					"gadget": "gadget",
+					"gadget.display": "gadget.display",
+					"gadget.height": "gadget.height",
+					"gadget.iconLink": "gadget.iconLink",
+					"gadget.link": "gadget.link",
+					"gadget.preferences": "gadget.preferences",
+					"gadget.preferences.additionalProperties": "gadget.preferences.additionalProperties",
+					"gadget.title": "gadget.title",
+					"gadget.width": "gadget.width",
+					"guestsCanInviteOthers": "guestsCanInviteOthers",
+					"guestsCanModify": "guestsCanModify",
+					"guestsCanSeeOtherGuests": "guestsCanSeeOtherGuests",
+					"hangoutLink": "hangoutLink",
+					"htmlLink": "htmlLink",
+					"iCalUID": "iCalUID",
+					"id": "id",
+					"kind": "kind",
+					"location": "location",
+					"locked": "locked",
+					"organizer": "organizer",
+					"organizer.displayName": "organizer.displayName",
+					"organizer.email": "organizer.email",
+					"organizer.id": "organizer.id",
+					"organizer.self": "organizer.self",
+					"privateCopy": "privateCopy",
+					"recurrence": "recurrence",
+					"recurringEventId": "recurringEventId",
+					"reminders": "reminders",
+					"reminders.overrides": "reminders.overrides",
+					"reminders.useDefault": "reminders.useDefault",
+					"sequence": "sequence",
+					"source": "source",
+					"source.title": "source.title",
+					"source.url": "source.url",
+					"status": "status",
+					"summary": "summary",
+					"transparency": "transparency",
+					"updated": "updated",
+					"visibility": "visibility"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"time-management"
+				]
+			}
+		},
+		{
+			"group": "calendar-v3",
+			"url_pattern": "/calendar/v3/calendars/{calendarId}/events/watch",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"address",
+				"expiration",
+				"id",
+				"kind",
+				"params",
+				"params.additionalProperties",
+				"payload",
+				"resourceId",
+				"resourceUri",
+				"token"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manipulates events and other calendar data.",
+				"version": "v3",
+				"slug": "calendar-v3-calendar-v3-calendars-calendarid-events-watch",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"address": "address",
+					"expiration": "expiration",
+					"id": "id",
+					"kind": "kind",
+					"params": "params",
+					"params.additionalProperties": "params.additionalProperties",
+					"payload": "payload",
+					"resourceId": "resourceId",
+					"resourceUri": "resourceUri",
+					"token": "token"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"time-management"
+				]
+			}
+		},
+		{
+			"group": "calendar-v3",
+			"url_pattern": "/calendar/v3/calendars/{calendarId}/events/{eventId}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"anyoneCanAddSelf",
+				"attachments",
+				"attendees",
+				"attendeesOmitted",
+				"colorId",
+				"created",
+				"creator",
+				"creator.displayName",
+				"creator.email",
+				"creator.id",
+				"creator.self",
+				"description",
+				"endTimeUnspecified",
+				"etag",
+				"extendedProperties",
+				"extendedProperties.private",
+				"extendedProperties.private.additionalProperties",
+				"extendedProperties.shared",
+				"extendedProperties.shared.additionalProperties",
+				"gadget",
+				"gadget.display",
+				"gadget.height",
+				"gadget.iconLink",
+				"gadget.link",
+				"gadget.preferences",
+				"gadget.preferences.additionalProperties",
+				"gadget.title",
+				"gadget.width",
+				"guestsCanInviteOthers",
+				"guestsCanModify",
+				"guestsCanSeeOtherGuests",
+				"hangoutLink",
+				"htmlLink",
+				"iCalUID",
+				"id",
+				"kind",
+				"location",
+				"locked",
+				"organizer",
+				"organizer.displayName",
+				"organizer.email",
+				"organizer.id",
+				"organizer.self",
+				"privateCopy",
+				"recurrence",
+				"recurringEventId",
+				"reminders",
+				"reminders.overrides",
+				"reminders.useDefault",
+				"sequence",
+				"source",
+				"source.title",
+				"source.url",
+				"status",
+				"summary",
+				"transparency",
+				"updated",
+				"visibility"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manipulates events and other calendar data.",
+				"version": "v3",
+				"slug": "calendar-v3-calendar-v3-calendars-calendarid-events-eventid",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"anyoneCanAddSelf": "anyoneCanAddSelf",
+					"attachments": "attachments",
+					"attendees": "attendees",
+					"attendeesOmitted": "attendeesOmitted",
+					"colorId": "colorId",
+					"created": "created",
+					"creator": "creator",
+					"creator.displayName": "creator.displayName",
+					"creator.email": "creator.email",
+					"creator.id": "creator.id",
+					"creator.self": "creator.self",
+					"description": "description",
+					"endTimeUnspecified": "endTimeUnspecified",
+					"etag": "etag",
+					"extendedProperties": "extendedProperties",
+					"extendedProperties.private": "extendedProperties.private",
+					"extendedProperties.private.additionalProperties": "extendedProperties.private.additionalProperties",
+					"extendedProperties.shared": "extendedProperties.shared",
+					"extendedProperties.shared.additionalProperties": "extendedProperties.shared.additionalProperties",
+					"gadget": "gadget",
+					"gadget.display": "gadget.display",
+					"gadget.height": "gadget.height",
+					"gadget.iconLink": "gadget.iconLink",
+					"gadget.link": "gadget.link",
+					"gadget.preferences": "gadget.preferences",
+					"gadget.preferences.additionalProperties": "gadget.preferences.additionalProperties",
+					"gadget.title": "gadget.title",
+					"gadget.width": "gadget.width",
+					"guestsCanInviteOthers": "guestsCanInviteOthers",
+					"guestsCanModify": "guestsCanModify",
+					"guestsCanSeeOtherGuests": "guestsCanSeeOtherGuests",
+					"hangoutLink": "hangoutLink",
+					"htmlLink": "htmlLink",
+					"iCalUID": "iCalUID",
+					"id": "id",
+					"kind": "kind",
+					"location": "location",
+					"locked": "locked",
+					"organizer": "organizer",
+					"organizer.displayName": "organizer.displayName",
+					"organizer.email": "organizer.email",
+					"organizer.id": "organizer.id",
+					"organizer.self": "organizer.self",
+					"privateCopy": "privateCopy",
+					"recurrence": "recurrence",
+					"recurringEventId": "recurringEventId",
+					"reminders": "reminders",
+					"reminders.overrides": "reminders.overrides",
+					"reminders.useDefault": "reminders.useDefault",
+					"sequence": "sequence",
+					"source": "source",
+					"source.title": "source.title",
+					"source.url": "source.url",
+					"status": "status",
+					"summary": "summary",
+					"transparency": "transparency",
+					"updated": "updated",
+					"visibility": "visibility"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"time-management"
+				]
+			}
+		},
+		{
+			"group": "calendar-v3",
+			"url_pattern": "/calendar/v3/calendars/{calendarId}/events/{eventId}/instances",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"accessRole",
+				"defaultReminders",
+				"description",
+				"etag",
+				"items",
+				"kind",
+				"nextPageToken",
+				"nextSyncToken",
+				"summary",
+				"timeZone",
+				"updated"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manipulates events and other calendar data.",
+				"version": "v3",
+				"slug": "calendar-v3-calendar-v3-calendars-calendarid-events-eventid-instances",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"accessRole": "accessRole",
+					"defaultReminders": "defaultReminders",
+					"description": "description",
+					"etag": "etag",
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken",
+					"nextSyncToken": "nextSyncToken",
+					"summary": "summary",
+					"timeZone": "timeZone",
+					"updated": "updated"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"time-management"
+				]
+			}
+		},
+		{
+			"group": "calendar-v3",
+			"url_pattern": "/calendar/v3/calendars/{calendarId}/events/{eventId}/move",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"anyoneCanAddSelf",
+				"attachments",
+				"attendees",
+				"attendeesOmitted",
+				"colorId",
+				"created",
+				"creator",
+				"creator.displayName",
+				"creator.email",
+				"creator.id",
+				"creator.self",
+				"description",
+				"endTimeUnspecified",
+				"etag",
+				"extendedProperties",
+				"extendedProperties.private",
+				"extendedProperties.private.additionalProperties",
+				"extendedProperties.shared",
+				"extendedProperties.shared.additionalProperties",
+				"gadget",
+				"gadget.display",
+				"gadget.height",
+				"gadget.iconLink",
+				"gadget.link",
+				"gadget.preferences",
+				"gadget.preferences.additionalProperties",
+				"gadget.title",
+				"gadget.width",
+				"guestsCanInviteOthers",
+				"guestsCanModify",
+				"guestsCanSeeOtherGuests",
+				"hangoutLink",
+				"htmlLink",
+				"iCalUID",
+				"id",
+				"kind",
+				"location",
+				"locked",
+				"organizer",
+				"organizer.displayName",
+				"organizer.email",
+				"organizer.id",
+				"organizer.self",
+				"privateCopy",
+				"recurrence",
+				"recurringEventId",
+				"reminders",
+				"reminders.overrides",
+				"reminders.useDefault",
+				"sequence",
+				"source",
+				"source.title",
+				"source.url",
+				"status",
+				"summary",
+				"transparency",
+				"updated",
+				"visibility"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manipulates events and other calendar data.",
+				"version": "v3",
+				"slug": "calendar-v3-calendar-v3-calendars-calendarid-events-eventid-move",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"anyoneCanAddSelf": "anyoneCanAddSelf",
+					"attachments": "attachments",
+					"attendees": "attendees",
+					"attendeesOmitted": "attendeesOmitted",
+					"colorId": "colorId",
+					"created": "created",
+					"creator": "creator",
+					"creator.displayName": "creator.displayName",
+					"creator.email": "creator.email",
+					"creator.id": "creator.id",
+					"creator.self": "creator.self",
+					"description": "description",
+					"endTimeUnspecified": "endTimeUnspecified",
+					"etag": "etag",
+					"extendedProperties": "extendedProperties",
+					"extendedProperties.private": "extendedProperties.private",
+					"extendedProperties.private.additionalProperties": "extendedProperties.private.additionalProperties",
+					"extendedProperties.shared": "extendedProperties.shared",
+					"extendedProperties.shared.additionalProperties": "extendedProperties.shared.additionalProperties",
+					"gadget": "gadget",
+					"gadget.display": "gadget.display",
+					"gadget.height": "gadget.height",
+					"gadget.iconLink": "gadget.iconLink",
+					"gadget.link": "gadget.link",
+					"gadget.preferences": "gadget.preferences",
+					"gadget.preferences.additionalProperties": "gadget.preferences.additionalProperties",
+					"gadget.title": "gadget.title",
+					"gadget.width": "gadget.width",
+					"guestsCanInviteOthers": "guestsCanInviteOthers",
+					"guestsCanModify": "guestsCanModify",
+					"guestsCanSeeOtherGuests": "guestsCanSeeOtherGuests",
+					"hangoutLink": "hangoutLink",
+					"htmlLink": "htmlLink",
+					"iCalUID": "iCalUID",
+					"id": "id",
+					"kind": "kind",
+					"location": "location",
+					"locked": "locked",
+					"organizer": "organizer",
+					"organizer.displayName": "organizer.displayName",
+					"organizer.email": "organizer.email",
+					"organizer.id": "organizer.id",
+					"organizer.self": "organizer.self",
+					"privateCopy": "privateCopy",
+					"recurrence": "recurrence",
+					"recurringEventId": "recurringEventId",
+					"reminders": "reminders",
+					"reminders.overrides": "reminders.overrides",
+					"reminders.useDefault": "reminders.useDefault",
+					"sequence": "sequence",
+					"source": "source",
+					"source.title": "source.title",
+					"source.url": "source.url",
+					"status": "status",
+					"summary": "summary",
+					"transparency": "transparency",
+					"updated": "updated",
+					"visibility": "visibility"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"time-management"
+				]
+			}
+		},
+		{
+			"group": "calendar-v3",
+			"url_pattern": "/calendar/v3/channels/stop",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manipulates events and other calendar data.",
+				"version": "v3",
+				"slug": "calendar-v3-calendar-v3-channels-stop",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"time-management"
+				]
+			}
+		},
+		{
+			"group": "calendar-v3",
+			"url_pattern": "/calendar/v3/colors",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"calendar",
+				"event",
+				"kind",
+				"updated"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manipulates events and other calendar data.",
+				"version": "v3",
+				"slug": "calendar-v3-calendar-v3-colors",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"calendar": "calendar",
+					"event": "event",
+					"kind": "kind",
+					"updated": "updated"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"time-management"
+				]
+			}
+		},
+		{
+			"group": "calendar-v3",
+			"url_pattern": "/calendar/v3/freeBusy",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"calendars",
+				"groups",
+				"kind",
+				"timeMax",
+				"timeMin"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manipulates events and other calendar data.",
+				"version": "v3",
+				"slug": "calendar-v3-calendar-v3-freebusy",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"calendars": "calendars",
+					"groups": "groups",
+					"kind": "kind",
+					"timeMax": "timeMax",
+					"timeMin": "timeMin"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"time-management"
+				]
+			}
+		},
+		{
+			"group": "calendar-v3",
+			"url_pattern": "/calendar/v3/users/me/calendarList",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"etag",
+				"items",
+				"kind",
+				"nextPageToken",
+				"nextSyncToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manipulates events and other calendar data.",
+				"version": "v3",
+				"slug": "calendar-v3-calendar-v3-users-me-calendarlist",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"etag": "etag",
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken",
+					"nextSyncToken": "nextSyncToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"time-management"
+				]
+			}
+		},
+		{
+			"group": "calendar-v3",
+			"url_pattern": "/calendar/v3/users/me/calendarList/watch",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"address",
+				"expiration",
+				"id",
+				"kind",
+				"params",
+				"params.additionalProperties",
+				"payload",
+				"resourceId",
+				"resourceUri",
+				"token"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manipulates events and other calendar data.",
+				"version": "v3",
+				"slug": "calendar-v3-calendar-v3-users-me-calendarlist-watch",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"address": "address",
+					"expiration": "expiration",
+					"id": "id",
+					"kind": "kind",
+					"params": "params",
+					"params.additionalProperties": "params.additionalProperties",
+					"payload": "payload",
+					"resourceId": "resourceId",
+					"resourceUri": "resourceUri",
+					"token": "token"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"time-management"
+				]
+			}
+		},
+		{
+			"group": "calendar-v3",
+			"url_pattern": "/calendar/v3/users/me/calendarList/{calendarId}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"accessRole",
+				"backgroundColor",
+				"colorId",
+				"defaultReminders",
+				"deleted",
+				"description",
+				"etag",
+				"foregroundColor",
+				"hidden",
+				"id",
+				"kind",
+				"location",
+				"notificationSettings",
+				"notificationSettings.notifications",
+				"primary",
+				"selected",
+				"summary",
+				"summaryOverride",
+				"timeZone"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manipulates events and other calendar data.",
+				"version": "v3",
+				"slug": "calendar-v3-calendar-v3-users-me-calendarlist-calendarid",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"accessRole": "accessRole",
+					"backgroundColor": "backgroundColor",
+					"colorId": "colorId",
+					"defaultReminders": "defaultReminders",
+					"deleted": "deleted",
+					"description": "description",
+					"etag": "etag",
+					"foregroundColor": "foregroundColor",
+					"hidden": "hidden",
+					"id": "id",
+					"kind": "kind",
+					"location": "location",
+					"notificationSettings": "notificationSettings",
+					"notificationSettings.notifications": "notificationSettings.notifications",
+					"primary": "primary",
+					"selected": "selected",
+					"summary": "summary",
+					"summaryOverride": "summaryOverride",
+					"timeZone": "timeZone"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"time-management"
+				]
+			}
+		},
+		{
+			"group": "calendar-v3",
+			"url_pattern": "/calendar/v3/users/me/settings",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"etag",
+				"items",
+				"kind",
+				"nextPageToken",
+				"nextSyncToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manipulates events and other calendar data.",
+				"version": "v3",
+				"slug": "calendar-v3-calendar-v3-users-me-settings",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"etag": "etag",
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken",
+					"nextSyncToken": "nextSyncToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"time-management"
+				]
+			}
+		},
+		{
+			"group": "calendar-v3",
+			"url_pattern": "/calendar/v3/users/me/settings/watch",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"address",
+				"expiration",
+				"id",
+				"kind",
+				"params",
+				"params.additionalProperties",
+				"payload",
+				"resourceId",
+				"resourceUri",
+				"token"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manipulates events and other calendar data.",
+				"version": "v3",
+				"slug": "calendar-v3-calendar-v3-users-me-settings-watch",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"address": "address",
+					"expiration": "expiration",
+					"id": "id",
+					"kind": "kind",
+					"params": "params",
+					"params.additionalProperties": "params.additionalProperties",
+					"payload": "payload",
+					"resourceId": "resourceId",
+					"resourceUri": "resourceUri",
+					"token": "token"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"time-management"
+				]
+			}
+		},
+		{
+			"group": "calendar-v3",
+			"url_pattern": "/calendar/v3/users/me/settings/{setting}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"etag",
+				"id",
+				"kind",
+				"value"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manipulates events and other calendar data.",
+				"version": "v3",
+				"slug": "calendar-v3-calendar-v3-users-me-settings-setting",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"etag": "etag",
+					"id": "id",
+					"kind": "kind",
+					"value": "value"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"time-management"
+				]
+			}
+		}
+	]
+}

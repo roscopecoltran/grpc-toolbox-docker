@@ -1,0 +1,618 @@
+[[backends]]
+  group = "spotify-v1"
+  url_pattern = "/v1/albums"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.spotify.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "spotify.com"
+    version = "v1"
+    slug = "spotify-v1-v1-albums"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.spotify.com"]
+    topics = ["media"]
+
+[[backends]]
+  group = "spotify-v1"
+  url_pattern = "/v1/albums/{id}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.spotify.com"]
+  whitelist = ["album_type", "artists", "available_markets", "copyrights", "copyrights.text", "external_ids", "external_ids.additionalProperties", "external_urls", "external_urls.additionalProperties", "genres", "href", "id", "images", "name", "popularity", "release_date", "release_date_precision", "uri"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "spotify.com"
+    version = "v1"
+    slug = "spotify-v1-v1-albums-id"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.spotify.com"]
+    topics = ["media"]
+    [backends.extra_config.mapping]
+      additionalProperties = "additionalProperties"
+      album_type = "album_type"
+      artists = "artists"
+      available_markets = "available_markets"
+      copyrights = "copyrights"
+      external_ids = "external_ids"
+      external_urls = "external_urls"
+      genres = "genres"
+      href = "href"
+      id = "id"
+      images = "images"
+      name = "name"
+      popularity = "popularity"
+      release_date = "release_date"
+      release_date_precision = "release_date_precision"
+      text = "text"
+      uri = "uri"
+
+[[backends]]
+  group = "spotify-v1"
+  url_pattern = "/v1/albums/{id}/tracks"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.spotify.com"]
+  whitelist = ["href", "items", "limit", "next", "offset", "previous", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "spotify.com"
+    version = "v1"
+    slug = "spotify-v1-v1-albums-id-tracks"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.spotify.com"]
+    topics = ["media"]
+    [backends.extra_config.mapping]
+      href = "href"
+      items = "items"
+      limit = "limit"
+      next = "next"
+      offset = "offset"
+      previous = "previous"
+      total = "total"
+
+[[backends]]
+  group = "spotify-v1"
+  url_pattern = "/v1/artists"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.spotify.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "spotify.com"
+    version = "v1"
+    slug = "spotify-v1-v1-artists"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.spotify.com"]
+    topics = ["media"]
+
+[[backends]]
+  group = "spotify-v1"
+  url_pattern = "/v1/artists/{id}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.spotify.com"]
+  whitelist = ["external_urls", "external_urls.additionalProperties", "genres", "href", "id", "images", "name", "popularity", "uri"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "spotify.com"
+    version = "v1"
+    slug = "spotify-v1-v1-artists-id"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.spotify.com"]
+    topics = ["media"]
+    [backends.extra_config.mapping]
+      additionalProperties = "additionalProperties"
+      external_urls = "external_urls"
+      genres = "genres"
+      href = "href"
+      id = "id"
+      images = "images"
+      name = "name"
+      popularity = "popularity"
+      uri = "uri"
+
+[[backends]]
+  group = "spotify-v1"
+  url_pattern = "/v1/artists/{id}/albums"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.spotify.com"]
+  whitelist = ["href", "items", "limit", "next", "offset", "previous", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "spotify.com"
+    version = "v1"
+    slug = "spotify-v1-v1-artists-id-albums"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.spotify.com"]
+    topics = ["media"]
+    [backends.extra_config.mapping]
+      href = "href"
+      items = "items"
+      limit = "limit"
+      next = "next"
+      offset = "offset"
+      previous = "previous"
+      total = "total"
+
+[[backends]]
+  group = "spotify-v1"
+  url_pattern = "/v1/artists/{id}/related-artists"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.spotify.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "spotify.com"
+    version = "v1"
+    slug = "spotify-v1-v1-artists-id-related-artists"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.spotify.com"]
+    topics = ["media"]
+
+[[backends]]
+  group = "spotify-v1"
+  url_pattern = "/v1/artists/{id}/top-tracks"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.spotify.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "spotify.com"
+    version = "v1"
+    slug = "spotify-v1-v1-artists-id-top-tracks"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.spotify.com"]
+    topics = ["media"]
+
+[[backends]]
+  group = "spotify-v1"
+  url_pattern = "/v1/browse/categories"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.spotify.com"]
+  whitelist = ["href", "items", "limit", "next", "offset", "previous", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "spotify.com"
+    version = "v1"
+    slug = "spotify-v1-v1-browse-categories"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.spotify.com"]
+    topics = ["media"]
+    [backends.extra_config.mapping]
+      href = "href"
+      items = "items"
+      limit = "limit"
+      next = "next"
+      offset = "offset"
+      previous = "previous"
+      total = "total"
+
+[[backends]]
+  group = "spotify-v1"
+  url_pattern = "/v1/browse/categories/{category_id}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.spotify.com"]
+  whitelist = ["href", "icons", "id", "name"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "spotify.com"
+    version = "v1"
+    slug = "spotify-v1-v1-browse-categories-category-id"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.spotify.com"]
+    topics = ["media"]
+    [backends.extra_config.mapping]
+      href = "href"
+      icons = "icons"
+      id = "id"
+      name = "name"
+
+[[backends]]
+  group = "spotify-v1"
+  url_pattern = "/v1/browse/categories/{category_id}/playlists"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.spotify.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "spotify.com"
+    version = "v1"
+    slug = "spotify-v1-v1-browse-categories-category-id-playlists"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.spotify.com"]
+    topics = ["media"]
+
+[[backends]]
+  group = "spotify-v1"
+  url_pattern = "/v1/browse/featured-playlists"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.spotify.com"]
+  whitelist = ["message"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "spotify.com"
+    version = "v1"
+    slug = "spotify-v1-v1-browse-featured-playlists"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.spotify.com"]
+    topics = ["media"]
+    [backends.extra_config.mapping]
+      message = "message"
+
+[[backends]]
+  group = "spotify-v1"
+  url_pattern = "/v1/browse/new-releases"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.spotify.com"]
+  whitelist = ["href", "items", "limit", "next", "offset", "previous", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "spotify.com"
+    version = "v1"
+    slug = "spotify-v1-v1-browse-new-releases"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.spotify.com"]
+    topics = ["media"]
+    [backends.extra_config.mapping]
+      href = "href"
+      items = "items"
+      limit = "limit"
+      next = "next"
+      offset = "offset"
+      previous = "previous"
+      total = "total"
+
+[[backends]]
+  group = "spotify-v1"
+  url_pattern = "/v1/me"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.spotify.com"]
+  whitelist = ["birthdate", "country", "displayName", "email", "external_urls", "external_urls.additionalProperties", "href", "id", "product", "uri"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "spotify.com"
+    version = "v1"
+    slug = "spotify-v1-v1-me"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.spotify.com"]
+    topics = ["media"]
+    [backends.extra_config.mapping]
+      additionalProperties = "additionalProperties"
+      birthdate = "birthdate"
+      country = "country"
+      displayName = "displayName"
+      email = "email"
+      external_urls = "external_urls"
+      href = "href"
+      id = "id"
+      product = "product"
+      uri = "uri"
+
+[[backends]]
+  group = "spotify-v1"
+  url_pattern = "/v1/me/following"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.spotify.com"]
+  whitelist = ["artists", "artists.cursor", "artists.cursor.after", "artists.href", "artists.items", "artists.limit", "artists.next", "artists.total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "spotify.com"
+    version = "v1"
+    slug = "spotify-v1-v1-me-following"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.spotify.com"]
+    topics = ["media"]
+    [backends.extra_config.mapping]
+      after = "after"
+      artists = "artists"
+      cursor = "cursor"
+      href = "href"
+      items = "items"
+      limit = "limit"
+      next = "next"
+      total = "total"
+
+[[backends]]
+  group = "spotify-v1"
+  url_pattern = "/v1/me/following/contains"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.spotify.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "spotify.com"
+    version = "v1"
+    slug = "spotify-v1-v1-me-following-contains"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.spotify.com"]
+    topics = ["media"]
+
+[[backends]]
+  group = "spotify-v1"
+  url_pattern = "/v1/me/tracks"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.spotify.com"]
+  whitelist = ["href", "items", "limit", "next", "offset", "previous", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "spotify.com"
+    version = "v1"
+    slug = "spotify-v1-v1-me-tracks"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.spotify.com"]
+    topics = ["media"]
+    [backends.extra_config.mapping]
+      href = "href"
+      items = "items"
+      limit = "limit"
+      next = "next"
+      offset = "offset"
+      previous = "previous"
+      total = "total"
+
+[[backends]]
+  group = "spotify-v1"
+  url_pattern = "/v1/me/tracks/contains"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.spotify.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "spotify.com"
+    version = "v1"
+    slug = "spotify-v1-v1-me-tracks-contains"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.spotify.com"]
+    topics = ["media"]
+
+[[backends]]
+  group = "spotify-v1"
+  url_pattern = "/v1/search"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.spotify.com"]
+  whitelist = ["albums", "albums.href", "albums.items", "albums.limit", "albums.next", "albums.offset", "albums.previous", "albums.total", "artists", "artists.href", "artists.items", "artists.limit", "artists.next", "artists.offset", "artists.previous", "artists.total", "tracks", "tracks.href", "tracks.items", "tracks.limit", "tracks.next", "tracks.offset", "tracks.previous", "tracks.total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "spotify.com"
+    version = "v1"
+    slug = "spotify-v1-v1-search"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.spotify.com"]
+    topics = ["media"]
+    [backends.extra_config.mapping]
+      albums = "albums"
+      artists = "artists"
+      href = "href"
+      items = "items"
+      limit = "limit"
+      next = "next"
+      offset = "offset"
+      previous = "previous"
+      total = "total"
+      tracks = "tracks"
+
+[[backends]]
+  group = "spotify-v1"
+  url_pattern = "/v1/tracks"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.spotify.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "spotify.com"
+    version = "v1"
+    slug = "spotify-v1-v1-tracks"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.spotify.com"]
+    topics = ["media"]
+
+[[backends]]
+  group = "spotify-v1"
+  url_pattern = "/v1/tracks/{id}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.spotify.com"]
+  whitelist = ["artists", "available_markets", "disc_number", "duration_ms", "explicit", "external_ids", "external_ids.additionalProperties", "external_urls", "external_urls.additionalProperties", "href", "id", "is_playable", "linked_from", "linked_from.external_urls", "linked_from.external_urls.additionalProperties", "linked_from.href", "linked_from.id", "linked_from.uri", "name", "preview_url", "track_number", "uri"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "spotify.com"
+    version = "v1"
+    slug = "spotify-v1-v1-tracks-id"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.spotify.com"]
+    topics = ["media"]
+    [backends.extra_config.mapping]
+      additionalProperties = "additionalProperties"
+      artists = "artists"
+      available_markets = "available_markets"
+      disc_number = "disc_number"
+      duration_ms = "duration_ms"
+      explicit = "explicit"
+      external_ids = "external_ids"
+      external_urls = "external_urls"
+      href = "href"
+      id = "id"
+      is_playable = "is_playable"
+      linked_from = "linked_from"
+      name = "name"
+      preview_url = "preview_url"
+      track_number = "track_number"
+      uri = "uri"
+
+[[backends]]
+  group = "spotify-v1"
+  url_pattern = "/v1/users/{user_id}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.spotify.com"]
+  whitelist = ["displayName", "external_urls", "external_urls.additionalProperties", "href", "id", "uri"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "spotify.com"
+    version = "v1"
+    slug = "spotify-v1-v1-users-user-id"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.spotify.com"]
+    topics = ["media"]
+    [backends.extra_config.mapping]
+      additionalProperties = "additionalProperties"
+      displayName = "displayName"
+      external_urls = "external_urls"
+      href = "href"
+      id = "id"
+      uri = "uri"
+
+[[backends]]
+  group = "spotify-v1"
+  url_pattern = "/v1/users/{user_id}/playlists"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.spotify.com"]
+  whitelist = ["href", "items", "limit", "next", "offset", "previous", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "spotify.com"
+    version = "v1"
+    slug = "spotify-v1-v1-users-user-id-playlists"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.spotify.com"]
+    topics = ["media"]
+    [backends.extra_config.mapping]
+      href = "href"
+      items = "items"
+      limit = "limit"
+      next = "next"
+      offset = "offset"
+      previous = "previous"
+      total = "total"
+
+[[backends]]
+  group = "spotify-v1"
+  url_pattern = "/v1/users/{user_id}/playlists/{playlist_id}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.spotify.com"]
+  whitelist = ["collaborative", "description", "external_urls", "external_urls.additionalProperties", "followers", "followers.href", "followers.total", "href", "id", "images", "name", "public", "snapshot_id", "uri"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "spotify.com"
+    version = "v1"
+    slug = "spotify-v1-v1-users-user-id-playlists-playlist-id"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.spotify.com"]
+    topics = ["media"]
+    [backends.extra_config.mapping]
+      additionalProperties = "additionalProperties"
+      collaborative = "collaborative"
+      description = "description"
+      external_urls = "external_urls"
+      followers = "followers"
+      href = "href"
+      id = "id"
+      images = "images"
+      name = "name"
+      public = "public"
+      snapshot_id = "snapshot_id"
+      total = "total"
+      uri = "uri"
+
+[[backends]]
+  group = "spotify-v1"
+  url_pattern = "/v1/users/{user_id}/playlists/{playlist_id}/followers/contains"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.spotify.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "spotify.com"
+    version = "v1"
+    slug = "spotify-v1-v1-users-user-id-playlists-playlist-id-followers-contains"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.spotify.com"]
+    topics = ["media"]
+
+[[backends]]
+  group = "spotify-v1"
+  url_pattern = "/v1/users/{user_id}/playlists/{playlist_id}/tracks"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.spotify.com"]
+  whitelist = ["href", "items", "limit", "next", "offset", "previous", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "spotify.com"
+    version = "v1"
+    slug = "spotify-v1-v1-users-user-id-playlists-playlist-id-tracks"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.spotify.com"]
+    topics = ["media"]
+    [backends.extra_config.mapping]
+      href = "href"
+      items = "items"
+      limit = "limit"
+      next = "next"
+      offset = "offset"
+      previous = "previous"
+      total = "total"

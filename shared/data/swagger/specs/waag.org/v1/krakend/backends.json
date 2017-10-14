@@ -1,0 +1,811 @@
+{
+	"backends": [
+		{
+			"group": "citysdk-linked-data-v1",
+			"url_pattern": "/layers",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.citysdk.waag.org"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "waag.org",
+				"description": "An API for the distribution and annotation of open data, for small cities and big metropolitan areas.",
+				"version": "v1",
+				"slug": "citysdk-linked-data-v1-layers",
+				"schemes": [
+					"http"
+				],
+				"produces": [
+					"json",
+					"ld+json"
+				],
+				"hosts": [
+					"http://api.citysdk.waag.org"
+				],
+				"topics": [
+					"layers",
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "citysdk-linked-data-v1",
+			"url_pattern": "/layers/{layer}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.citysdk.waag.org"
+			],
+			"url_keys": [
+				"layer"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "waag.org",
+				"description": "An API for the distribution and annotation of open data, for small cities and big metropolitan areas.",
+				"version": "v1",
+				"slug": "citysdk-linked-data-v1-layers-layer",
+				"schemes": [
+					"http"
+				],
+				"produces": [
+					"json",
+					"ld+json"
+				],
+				"hosts": [
+					"http://api.citysdk.waag.org"
+				],
+				"topics": [
+					"layers",
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "citysdk-linked-data-v1",
+			"url_pattern": "/layers/{layer}/context",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.citysdk.waag.org"
+			],
+			"url_keys": [
+				"layer"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "waag.org",
+				"description": "An API for the distribution and annotation of open data, for small cities and big metropolitan areas.",
+				"version": "v1",
+				"slug": "citysdk-linked-data-v1-layers-layer-context",
+				"schemes": [
+					"http"
+				],
+				"produces": [
+					"json",
+					"ld+json"
+				],
+				"hosts": [
+					"http://api.citysdk.waag.org"
+				],
+				"topics": [
+					"layers",
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "citysdk-linked-data-v1",
+			"url_pattern": "/layers/{layer}/fields",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.citysdk.waag.org"
+			],
+			"url_keys": [
+				"layer"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "waag.org",
+				"description": "An API for the distribution and annotation of open data, for small cities and big metropolitan areas.",
+				"version": "v1",
+				"slug": "citysdk-linked-data-v1-layers-layer-fields",
+				"schemes": [
+					"http"
+				],
+				"produces": [
+					"json",
+					"ld+json"
+				],
+				"hosts": [
+					"http://api.citysdk.waag.org"
+				],
+				"topics": [
+					"layers",
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "citysdk-linked-data-v1",
+			"url_pattern": "/layers/{layer}/fields/{field}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.citysdk.waag.org"
+			],
+			"url_keys": [
+				"field",
+				"layer"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "waag.org",
+				"description": "An API for the distribution and annotation of open data, for small cities and big metropolitan areas.",
+				"version": "v1",
+				"slug": "citysdk-linked-data-v1-layers-layer-fields-field",
+				"schemes": [
+					"http"
+				],
+				"produces": [
+					"json",
+					"ld+json"
+				],
+				"hosts": [
+					"http://api.citysdk.waag.org"
+				],
+				"topics": [
+					"layers",
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "citysdk-linked-data-v1",
+			"url_pattern": "/layers/{layer}/objects",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.citysdk.waag.org"
+			],
+			"url_keys": [
+				"layer"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "waag.org",
+				"description": "An API for the distribution and annotation of open data, for small cities and big metropolitan areas.",
+				"version": "v1",
+				"slug": "citysdk-linked-data-v1-layers-layer-objects",
+				"schemes": [
+					"http"
+				],
+				"produces": [
+					"json",
+					"ld+json"
+				],
+				"hosts": [
+					"http://api.citysdk.waag.org"
+				],
+				"topics": [
+					"layers",
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "citysdk-linked-data-v1",
+			"url_pattern": "/layers/{layer}/objects/{cdk_id}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.citysdk.waag.org"
+			],
+			"url_keys": [
+				"cdk_id",
+				"layer"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "waag.org",
+				"description": "An API for the distribution and annotation of open data, for small cities and big metropolitan areas.",
+				"version": "v1",
+				"slug": "citysdk-linked-data-v1-layers-layer-objects-cdk-id",
+				"schemes": [
+					"http"
+				],
+				"produces": [
+					"json",
+					"ld+json"
+				],
+				"hosts": [
+					"http://api.citysdk.waag.org"
+				],
+				"topics": [
+					"layers",
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "citysdk-linked-data-v1",
+			"url_pattern": "/layers/{layer}/owners",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.citysdk.waag.org"
+			],
+			"url_keys": [
+				"layer"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "waag.org",
+				"description": "An API for the distribution and annotation of open data, for small cities and big metropolitan areas.",
+				"version": "v1",
+				"slug": "citysdk-linked-data-v1-layers-layer-owners",
+				"schemes": [
+					"http"
+				],
+				"produces": [
+					"json",
+					"ld+json"
+				],
+				"hosts": [
+					"http://api.citysdk.waag.org"
+				],
+				"topics": [
+					"layers",
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "citysdk-linked-data-v1",
+			"url_pattern": "/ngsi10/contextEntities/{entity}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.citysdk.waag.org"
+			],
+			"url_keys": [
+				"entity"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "waag.org",
+				"description": "An API for the distribution and annotation of open data, for small cities and big metropolitan areas.",
+				"version": "v1",
+				"slug": "citysdk-linked-data-v1-ngsi10-contextentities-entity",
+				"schemes": [
+					"http"
+				],
+				"produces": [
+					"json",
+					"ld+json"
+				],
+				"hosts": [
+					"http://api.citysdk.waag.org"
+				],
+				"topics": [
+					"ngsi10",
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "citysdk-linked-data-v1",
+			"url_pattern": "/ngsi10/contextEntities/{entity}/attributes/{attribute}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.citysdk.waag.org"
+			],
+			"url_keys": [
+				"attribute",
+				"entity"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "waag.org",
+				"description": "An API for the distribution and annotation of open data, for small cities and big metropolitan areas.",
+				"version": "v1",
+				"slug": "citysdk-linked-data-v1-ngsi10-contextentities-entity-attributes-attribute",
+				"schemes": [
+					"http"
+				],
+				"produces": [
+					"json",
+					"ld+json"
+				],
+				"hosts": [
+					"http://api.citysdk.waag.org"
+				],
+				"topics": [
+					"ngsi10",
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "citysdk-linked-data-v1",
+			"url_pattern": "/ngsi10/contextEntityTypes/{cetype}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.citysdk.waag.org"
+			],
+			"url_keys": [
+				"cetype"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "waag.org",
+				"description": "An API for the distribution and annotation of open data, for small cities and big metropolitan areas.",
+				"version": "v1",
+				"slug": "citysdk-linked-data-v1-ngsi10-contextentitytypes-cetype",
+				"schemes": [
+					"http"
+				],
+				"produces": [
+					"json",
+					"ld+json"
+				],
+				"hosts": [
+					"http://api.citysdk.waag.org"
+				],
+				"topics": [
+					"ngsi10",
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "citysdk-linked-data-v1",
+			"url_pattern": "/ngsi10/contextEntityTypes/{cetype}/attributes/{attribute}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.citysdk.waag.org"
+			],
+			"url_keys": [
+				"attribute",
+				"cetype"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "waag.org",
+				"description": "An API for the distribution and annotation of open data, for small cities and big metropolitan areas.",
+				"version": "v1",
+				"slug": "citysdk-linked-data-v1-ngsi10-contextentitytypes-cetype-attributes-attribute",
+				"schemes": [
+					"http"
+				],
+				"produces": [
+					"json",
+					"ld+json"
+				],
+				"hosts": [
+					"http://api.citysdk.waag.org"
+				],
+				"topics": [
+					"ngsi10",
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "citysdk-linked-data-v1",
+			"url_pattern": "/ngsi10/queryContext",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://api.citysdk.waag.org"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "waag.org",
+				"description": "An API for the distribution and annotation of open data, for small cities and big metropolitan areas.",
+				"version": "v1",
+				"slug": "citysdk-linked-data-v1-ngsi10-querycontext",
+				"schemes": [
+					"http"
+				],
+				"produces": [
+					"json",
+					"ld+json"
+				],
+				"hosts": [
+					"http://api.citysdk.waag.org"
+				],
+				"topics": [
+					"ngsi10",
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "citysdk-linked-data-v1",
+			"url_pattern": "/ngsi10/subscribeContext",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://api.citysdk.waag.org"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "waag.org",
+				"description": "An API for the distribution and annotation of open data, for small cities and big metropolitan areas.",
+				"version": "v1",
+				"slug": "citysdk-linked-data-v1-ngsi10-subscribecontext",
+				"schemes": [
+					"http"
+				],
+				"produces": [
+					"json",
+					"ld+json"
+				],
+				"hosts": [
+					"http://api.citysdk.waag.org"
+				],
+				"topics": [
+					"ngsi10",
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "citysdk-linked-data-v1",
+			"url_pattern": "/ngsi10/unsubscribeContext",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://api.citysdk.waag.org"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "waag.org",
+				"description": "An API for the distribution and annotation of open data, for small cities and big metropolitan areas.",
+				"version": "v1",
+				"slug": "citysdk-linked-data-v1-ngsi10-unsubscribecontext",
+				"schemes": [
+					"http"
+				],
+				"produces": [
+					"json",
+					"ld+json"
+				],
+				"hosts": [
+					"http://api.citysdk.waag.org"
+				],
+				"topics": [
+					"ngsi10",
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "citysdk-linked-data-v1",
+			"url_pattern": "/ngsi10/updateContext",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://api.citysdk.waag.org"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "waag.org",
+				"description": "An API for the distribution and annotation of open data, for small cities and big metropolitan areas.",
+				"version": "v1",
+				"slug": "citysdk-linked-data-v1-ngsi10-updatecontext",
+				"schemes": [
+					"http"
+				],
+				"produces": [
+					"json",
+					"ld+json"
+				],
+				"hosts": [
+					"http://api.citysdk.waag.org"
+				],
+				"topics": [
+					"ngsi10",
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "citysdk-linked-data-v1",
+			"url_pattern": "/ngsi10/updateContextSubscription",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://api.citysdk.waag.org"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "waag.org",
+				"description": "An API for the distribution and annotation of open data, for small cities and big metropolitan areas.",
+				"version": "v1",
+				"slug": "citysdk-linked-data-v1-ngsi10-updatecontextsubscription",
+				"schemes": [
+					"http"
+				],
+				"produces": [
+					"json",
+					"ld+json"
+				],
+				"hosts": [
+					"http://api.citysdk.waag.org"
+				],
+				"topics": [
+					"ngsi10",
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "citysdk-linked-data-v1",
+			"url_pattern": "/objects",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.citysdk.waag.org"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "waag.org",
+				"description": "An API for the distribution and annotation of open data, for small cities and big metropolitan areas.",
+				"version": "v1",
+				"slug": "citysdk-linked-data-v1-objects",
+				"schemes": [
+					"http"
+				],
+				"produces": [
+					"json",
+					"ld+json"
+				],
+				"hosts": [
+					"http://api.citysdk.waag.org"
+				],
+				"topics": [
+					"objects",
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "citysdk-linked-data-v1",
+			"url_pattern": "/objects/{cdk_id}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.citysdk.waag.org"
+			],
+			"url_keys": [
+				"cdk_id"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "waag.org",
+				"description": "An API for the distribution and annotation of open data, for small cities and big metropolitan areas.",
+				"version": "v1",
+				"slug": "citysdk-linked-data-v1-objects-cdk-id",
+				"schemes": [
+					"http"
+				],
+				"produces": [
+					"json",
+					"ld+json"
+				],
+				"hosts": [
+					"http://api.citysdk.waag.org"
+				],
+				"topics": [
+					"objects",
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "citysdk-linked-data-v1",
+			"url_pattern": "/objects/{cdk_id}/layers",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.citysdk.waag.org"
+			],
+			"url_keys": [
+				"cdk_id"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "waag.org",
+				"description": "An API for the distribution and annotation of open data, for small cities and big metropolitan areas.",
+				"version": "v1",
+				"slug": "citysdk-linked-data-v1-objects-cdk-id-layers",
+				"schemes": [
+					"http"
+				],
+				"produces": [
+					"json",
+					"ld+json"
+				],
+				"hosts": [
+					"http://api.citysdk.waag.org"
+				],
+				"topics": [
+					"objects",
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "citysdk-linked-data-v1",
+			"url_pattern": "/objects/{cdk_id}/layers/{layer}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.citysdk.waag.org"
+			],
+			"url_keys": [
+				"cdk_id",
+				"layer"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "waag.org",
+				"description": "An API for the distribution and annotation of open data, for small cities and big metropolitan areas.",
+				"version": "v1",
+				"slug": "citysdk-linked-data-v1-objects-cdk-id-layers-layer",
+				"schemes": [
+					"http"
+				],
+				"produces": [
+					"json",
+					"ld+json"
+				],
+				"hosts": [
+					"http://api.citysdk.waag.org"
+				],
+				"topics": [
+					"objects",
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "citysdk-linked-data-v1",
+			"url_pattern": "/owners",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.citysdk.waag.org"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "waag.org",
+				"description": "An API for the distribution and annotation of open data, for small cities and big metropolitan areas.",
+				"version": "v1",
+				"slug": "citysdk-linked-data-v1-owners",
+				"schemes": [
+					"http"
+				],
+				"produces": [
+					"json",
+					"ld+json"
+				],
+				"hosts": [
+					"http://api.citysdk.waag.org"
+				],
+				"topics": [
+					"open-data",
+					"owners"
+				]
+			}
+		},
+		{
+			"group": "citysdk-linked-data-v1",
+			"url_pattern": "/owners/{owner}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.citysdk.waag.org"
+			],
+			"url_keys": [
+				"owner"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "waag.org",
+				"description": "An API for the distribution and annotation of open data, for small cities and big metropolitan areas.",
+				"version": "v1",
+				"slug": "citysdk-linked-data-v1-owners-owner",
+				"schemes": [
+					"http"
+				],
+				"produces": [
+					"json",
+					"ld+json"
+				],
+				"hosts": [
+					"http://api.citysdk.waag.org"
+				],
+				"topics": [
+					"open-data",
+					"owners"
+				]
+			}
+		},
+		{
+			"group": "citysdk-linked-data-v1",
+			"url_pattern": "/owners/{owner}/layers",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.citysdk.waag.org"
+			],
+			"url_keys": [
+				"owner"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "waag.org",
+				"description": "An API for the distribution and annotation of open data, for small cities and big metropolitan areas.",
+				"version": "v1",
+				"slug": "citysdk-linked-data-v1-owners-owner-layers",
+				"schemes": [
+					"http"
+				],
+				"produces": [
+					"json",
+					"ld+json"
+				],
+				"hosts": [
+					"http://api.citysdk.waag.org"
+				],
+				"topics": [
+					"open-data",
+					"owners"
+				]
+			}
+		},
+		{
+			"group": "citysdk-linked-data-v1",
+			"url_pattern": "/session",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.citysdk.waag.org"
+			],
+			"query_string_params": [
+				"name",
+				"password"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "waag.org",
+				"description": "An API for the distribution and annotation of open data, for small cities and big metropolitan areas.",
+				"version": "v1",
+				"slug": "citysdk-linked-data-v1-session",
+				"schemes": [
+					"http"
+				],
+				"produces": [
+					"json",
+					"ld+json"
+				],
+				"hosts": [
+					"http://api.citysdk.waag.org"
+				],
+				"topics": [
+					"open-data",
+					"session"
+				]
+			}
+		}
+	]
+}

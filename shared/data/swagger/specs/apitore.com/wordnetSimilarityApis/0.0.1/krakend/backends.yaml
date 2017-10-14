@@ -1,0 +1,353 @@
+backends:
+- group: wordnet-similarity-apis-0-0-1
+  url_pattern: /api/47/wordnet-similarity/hirststonge
+  method: GET
+  encoding: json
+  host:
+  - https://api.apitore.com
+  whitelist:
+  - endTime
+  - log
+  - method
+  - pos1
+  - pos2
+  - processTime
+  - similarity
+  - startTime
+  - word1
+  - word2
+  concurrent_calls: 1
+  extra_config:
+    provider: apitore.com
+    description: Calculate word similarity.<BR />[Endpoint] https://api.apitore.com/api/47
+    version: 0.0.1
+    slug: wordnet-similarity-apis-0-0-1-api-47-wordnet-similarity-hirststonge
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      endTime: endTime
+      log: log
+      method: method
+      pos1: pos1
+      pos2: pos2
+      processTime: processTime
+      similarity: similarity
+      startTime: startTime
+      word1: word1
+      word2: word2
+    hosts:
+    - https://api.apitore.com
+    topics:
+    - text
+- group: wordnet-similarity-apis-0-0-1
+  url_pattern: /api/47/wordnet-similarity/jiangconrath
+  method: GET
+  encoding: json
+  host:
+  - https://api.apitore.com
+  whitelist:
+  - endTime
+  - log
+  - method
+  - pos1
+  - pos2
+  - processTime
+  - similarity
+  - startTime
+  - word1
+  - word2
+  concurrent_calls: 1
+  extra_config:
+    provider: apitore.com
+    description: Calculate word similarity.<BR />[Endpoint] https://api.apitore.com/api/47
+    version: 0.0.1
+    slug: wordnet-similarity-apis-0-0-1-api-47-wordnet-similarity-jiangconrath
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      endTime: endTime
+      log: log
+      method: method
+      pos1: pos1
+      pos2: pos2
+      processTime: processTime
+      similarity: similarity
+      startTime: startTime
+      word1: word1
+      word2: word2
+    hosts:
+    - https://api.apitore.com
+    topics:
+    - text
+- group: wordnet-similarity-apis-0-0-1
+  url_pattern: /api/47/wordnet-similarity/leacockchodorow
+  method: GET
+  encoding: json
+  host:
+  - https://api.apitore.com
+  whitelist:
+  - endTime
+  - log
+  - method
+  - pos1
+  - pos2
+  - processTime
+  - similarity
+  - startTime
+  - word1
+  - word2
+  concurrent_calls: 1
+  extra_config:
+    provider: apitore.com
+    description: Calculate word similarity.<BR />[Endpoint] https://api.apitore.com/api/47
+    version: 0.0.1
+    slug: wordnet-similarity-apis-0-0-1-api-47-wordnet-similarity-leacockchodorow
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      endTime: endTime
+      log: log
+      method: method
+      pos1: pos1
+      pos2: pos2
+      processTime: processTime
+      similarity: similarity
+      startTime: startTime
+      word1: word1
+      word2: word2
+    hosts:
+    - https://api.apitore.com
+    topics:
+    - text
+- group: wordnet-similarity-apis-0-0-1
+  url_pattern: /api/47/wordnet-similarity/lesk
+  method: GET
+  encoding: json
+  host:
+  - https://api.apitore.com
+  whitelist:
+  - endTime
+  - log
+  - method
+  - pos1
+  - pos2
+  - processTime
+  - similarity
+  - startTime
+  - word1
+  - word2
+  concurrent_calls: 1
+  extra_config:
+    provider: apitore.com
+    description: Calculate word similarity.<BR />[Endpoint] https://api.apitore.com/api/47
+    version: 0.0.1
+    slug: wordnet-similarity-apis-0-0-1-api-47-wordnet-similarity-lesk
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      endTime: endTime
+      log: log
+      method: method
+      pos1: pos1
+      pos2: pos2
+      processTime: processTime
+      similarity: similarity
+      startTime: startTime
+      word1: word1
+      word2: word2
+    hosts:
+    - https://api.apitore.com
+    topics:
+    - text
+- group: wordnet-similarity-apis-0-0-1
+  url_pattern: /api/47/wordnet-similarity/lin
+  method: GET
+  encoding: json
+  host:
+  - https://api.apitore.com
+  whitelist:
+  - endTime
+  - log
+  - method
+  - pos1
+  - pos2
+  - processTime
+  - similarity
+  - startTime
+  - word1
+  - word2
+  concurrent_calls: 1
+  extra_config:
+    provider: apitore.com
+    description: Calculate word similarity.<BR />[Endpoint] https://api.apitore.com/api/47
+    version: 0.0.1
+    slug: wordnet-similarity-apis-0-0-1-api-47-wordnet-similarity-lin
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      endTime: endTime
+      log: log
+      method: method
+      pos1: pos1
+      pos2: pos2
+      processTime: processTime
+      similarity: similarity
+      startTime: startTime
+      word1: word1
+      word2: word2
+    hosts:
+    - https://api.apitore.com
+    topics:
+    - text
+- group: wordnet-similarity-apis-0-0-1
+  url_pattern: /api/47/wordnet-similarity/path
+  method: GET
+  encoding: json
+  host:
+  - https://api.apitore.com
+  whitelist:
+  - endTime
+  - log
+  - method
+  - pos1
+  - pos2
+  - processTime
+  - similarity
+  - startTime
+  - word1
+  - word2
+  concurrent_calls: 1
+  extra_config:
+    provider: apitore.com
+    description: Calculate word similarity.<BR />[Endpoint] https://api.apitore.com/api/47
+    version: 0.0.1
+    slug: wordnet-similarity-apis-0-0-1-api-47-wordnet-similarity-path
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      endTime: endTime
+      log: log
+      method: method
+      pos1: pos1
+      pos2: pos2
+      processTime: processTime
+      similarity: similarity
+      startTime: startTime
+      word1: word1
+      word2: word2
+    hosts:
+    - https://api.apitore.com
+    topics:
+    - text
+- group: wordnet-similarity-apis-0-0-1
+  url_pattern: /api/47/wordnet-similarity/resnik
+  method: GET
+  encoding: json
+  host:
+  - https://api.apitore.com
+  whitelist:
+  - endTime
+  - log
+  - method
+  - pos1
+  - pos2
+  - processTime
+  - similarity
+  - startTime
+  - word1
+  - word2
+  concurrent_calls: 1
+  extra_config:
+    provider: apitore.com
+    description: Calculate word similarity.<BR />[Endpoint] https://api.apitore.com/api/47
+    version: 0.0.1
+    slug: wordnet-similarity-apis-0-0-1-api-47-wordnet-similarity-resnik
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      endTime: endTime
+      log: log
+      method: method
+      pos1: pos1
+      pos2: pos2
+      processTime: processTime
+      similarity: similarity
+      startTime: startTime
+      word1: word1
+      word2: word2
+    hosts:
+    - https://api.apitore.com
+    topics:
+    - text
+- group: wordnet-similarity-apis-0-0-1
+  url_pattern: /api/47/wordnet-similarity/wupalmer
+  method: GET
+  encoding: json
+  host:
+  - https://api.apitore.com
+  whitelist:
+  - endTime
+  - log
+  - method
+  - pos1
+  - pos2
+  - processTime
+  - similarity
+  - startTime
+  - word1
+  - word2
+  concurrent_calls: 1
+  extra_config:
+    provider: apitore.com
+    description: Calculate word similarity.<BR />[Endpoint] https://api.apitore.com/api/47
+    version: 0.0.1
+    slug: wordnet-similarity-apis-0-0-1-api-47-wordnet-similarity-wupalmer
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      endTime: endTime
+      log: log
+      method: method
+      pos1: pos1
+      pos2: pos2
+      processTime: processTime
+      similarity: similarity
+      startTime: startTime
+      word1: word1
+      word2: word2
+    hosts:
+    - https://api.apitore.com
+    topics:
+    - text

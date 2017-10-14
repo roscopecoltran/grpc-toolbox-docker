@@ -1,0 +1,2536 @@
+backends:
+- group: data2crm-api-1
+  url_pattern: /v1/account
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-account
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/account/count
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - total
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-account-count
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      total: total
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/account/describe
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - entity
+  - schema
+  - schema.create
+  - schema.fetch
+  - schema.fetchAll
+  - schema.update
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-account-describe
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      entity: entity
+      schema: schema
+      schema.create: schema.create
+      schema.fetch: schema.fetch
+      schema.fetchAll: schema.fetchAll
+      schema.update: schema.update
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/account/{account_id}
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - embedded
+  - embedded.account_category
+  - embedded.address_type
+  - embedded.annual_revenue
+  - embedded.billing_city
+  - embedded.billing_country
+  - embedded.billing_state
+  - embedded.billing_street
+  - embedded.billing_zip
+  - embedded.created_at
+  - embedded.description
+  - embedded.email
+  - embedded.email_alt
+  - embedded.employees
+  - embedded.facebook
+  - embedded.fax
+  - embedded.industry
+  - embedded.livejournal
+  - embedded.name
+  - embedded.owner
+  - embedded.ownership
+  - embedded.phone
+  - embedded.phone_alt
+  - embedded.rating
+  - embedded.shipping_city
+  - embedded.shipping_country
+  - embedded.shipping_state
+  - embedded.shipping_street
+  - embedded.shipping_zip
+  - embedded.sic_code
+  - embedded.tickersymbol
+  - embedded.twitter
+  - embedded.updated_at
+  - embedded.website
+  - embedded.website_alt
+  - id
+  - relation
+  - relation.owner_id
+  - relation.parent_id
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-account-account-id
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      embedded: embedded
+      embedded.account_category: embedded.account_category
+      embedded.address_type: embedded.address_type
+      embedded.annual_revenue: embedded.annual_revenue
+      embedded.billing_city: embedded.billing_city
+      embedded.billing_country: embedded.billing_country
+      embedded.billing_state: embedded.billing_state
+      embedded.billing_street: embedded.billing_street
+      embedded.billing_zip: embedded.billing_zip
+      embedded.created_at: embedded.created_at
+      embedded.description: embedded.description
+      embedded.email: embedded.email
+      embedded.email_alt: embedded.email_alt
+      embedded.employees: embedded.employees
+      embedded.facebook: embedded.facebook
+      embedded.fax: embedded.fax
+      embedded.industry: embedded.industry
+      embedded.livejournal: embedded.livejournal
+      embedded.name: embedded.name
+      embedded.owner: embedded.owner
+      embedded.ownership: embedded.ownership
+      embedded.phone: embedded.phone
+      embedded.phone_alt: embedded.phone_alt
+      embedded.rating: embedded.rating
+      embedded.shipping_city: embedded.shipping_city
+      embedded.shipping_country: embedded.shipping_country
+      embedded.shipping_state: embedded.shipping_state
+      embedded.shipping_street: embedded.shipping_street
+      embedded.shipping_zip: embedded.shipping_zip
+      embedded.sic_code: embedded.sic_code
+      embedded.tickersymbol: embedded.tickersymbol
+      embedded.twitter: embedded.twitter
+      embedded.updated_at: embedded.updated_at
+      embedded.website: embedded.website
+      embedded.website_alt: embedded.website_alt
+      id: id
+      relation: relation
+      relation.owner_id: relation.owner_id
+      relation.parent_id: relation.parent_id
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/attachment
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-attachment
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/attachment/count
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - total
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-attachment-count
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      total: total
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/attachment/describe
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - entity
+  - schema
+  - schema.create
+  - schema.fetch
+  - schema.fetchAll
+  - schema.update
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-attachment-describe
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      entity: entity
+      schema: schema
+      schema.create: schema.create
+      schema.fetch: schema.fetch
+      schema.fetchAll: schema.fetchAll
+      schema.update: schema.update
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/attachment/{attachment_id}
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - embedded
+  - embedded.contact_name
+  - embedded.created_at
+  - embedded.description
+  - embedded.link
+  - embedded.mime_type
+  - embedded.name
+  - embedded.owner_user_name
+  - embedded.parent_name
+  - embedded.size
+  - embedded.updated_at
+  - id
+  - relation
+  - relation.owner_user_id
+  - relation.parent_id
+  - relation.parent_type
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-attachment-attachment-id
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      embedded: embedded
+      embedded.contact_name: embedded.contact_name
+      embedded.created_at: embedded.created_at
+      embedded.description: embedded.description
+      embedded.link: embedded.link
+      embedded.mime_type: embedded.mime_type
+      embedded.name: embedded.name
+      embedded.owner_user_name: embedded.owner_user_name
+      embedded.parent_name: embedded.parent_name
+      embedded.size: embedded.size
+      embedded.updated_at: embedded.updated_at
+      id: id
+      relation: relation
+      relation.owner_user_id: relation.owner_user_id
+      relation.parent_id: relation.parent_id
+      relation.parent_type: relation.parent_type
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/call
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-call
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/call/count
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - total
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-call-count
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      total: total
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/call/describe
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - entity
+  - schema
+  - schema.create
+  - schema.fetch
+  - schema.fetchAll
+  - schema.update
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-call-describe
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      entity: entity
+      schema: schema
+      schema.create: schema.create
+      schema.fetch: schema.fetch
+      schema.fetchAll: schema.fetchAll
+      schema.update: schema.update
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/call/{call_id}
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - embedded
+  - embedded.created_at
+  - embedded.description
+  - embedded.direction
+  - embedded.ended_at
+  - embedded.purpose
+  - embedded.result
+  - embedded.started_at
+  - embedded.status
+  - embedded.subject
+  - embedded.updated_at
+  - id
+  - relation
+  - relation.contact_id
+  - relation.owner_user_id
+  - relation.parent_id
+  - relation.parent_type
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-call-call-id
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      embedded: embedded
+      embedded.created_at: embedded.created_at
+      embedded.description: embedded.description
+      embedded.direction: embedded.direction
+      embedded.ended_at: embedded.ended_at
+      embedded.purpose: embedded.purpose
+      embedded.result: embedded.result
+      embedded.started_at: embedded.started_at
+      embedded.status: embedded.status
+      embedded.subject: embedded.subject
+      embedded.updated_at: embedded.updated_at
+      id: id
+      relation: relation
+      relation.contact_id: relation.contact_id
+      relation.owner_user_id: relation.owner_user_id
+      relation.parent_id: relation.parent_id
+      relation.parent_type: relation.parent_type
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/contact
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-contact
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/contact/count
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - total
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-contact-count
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      total: total
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/contact/describe
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - entity
+  - schema
+  - schema.create
+  - schema.fetch
+  - schema.fetchAll
+  - schema.update
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-contact-describe
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      entity: entity
+      schema: schema
+      schema.create: schema.create
+      schema.fetch: schema.fetch
+      schema.fetchAll: schema.fetchAll
+      schema.update: schema.update
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/contact/{contact_id}
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - embedded
+  - embedded.account_name
+  - embedded.address_city
+  - embedded.address_country
+  - embedded.address_state
+  - embedded.address_street
+  - embedded.address_zip
+  - embedded.alternate_address_city
+  - embedded.alternate_address_country
+  - embedded.alternate_address_state
+  - embedded.alternate_address_street
+  - embedded.alternate_address_zip
+  - embedded.created_at
+  - embedded.date_created
+  - embedded.date_updated
+  - embedded.department
+  - embedded.description
+  - embedded.do_not_call
+  - embedded.email
+  - embedded.email_alt
+  - embedded.fax
+  - embedded.first_name
+  - embedded.full_name
+  - embedded.last_name
+  - embedded.lead_source
+  - embedded.name
+  - embedded.phone_home
+  - embedded.phone_mobile
+  - embedded.phone_work
+  - embedded.salutation
+  - embedded.sync_to_outlook
+  - embedded.title
+  - embedded.updated_at
+  - embedded.user
+  - id
+  - relation
+  - relation.account_id
+  - relation.owner_id
+  - relation.report_to_id
+  - relation.user_id
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-contact-contact-id
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      embedded: embedded
+      embedded.account_name: embedded.account_name
+      embedded.address_city: embedded.address_city
+      embedded.address_country: embedded.address_country
+      embedded.address_state: embedded.address_state
+      embedded.address_street: embedded.address_street
+      embedded.address_zip: embedded.address_zip
+      embedded.alternate_address_city: embedded.alternate_address_city
+      embedded.alternate_address_country: embedded.alternate_address_country
+      embedded.alternate_address_state: embedded.alternate_address_state
+      embedded.alternate_address_street: embedded.alternate_address_street
+      embedded.alternate_address_zip: embedded.alternate_address_zip
+      embedded.created_at: embedded.created_at
+      embedded.date_created: embedded.date_created
+      embedded.date_updated: embedded.date_updated
+      embedded.department: embedded.department
+      embedded.description: embedded.description
+      embedded.do_not_call: embedded.do_not_call
+      embedded.email: embedded.email
+      embedded.email_alt: embedded.email_alt
+      embedded.fax: embedded.fax
+      embedded.first_name: embedded.first_name
+      embedded.full_name: embedded.full_name
+      embedded.last_name: embedded.last_name
+      embedded.lead_source: embedded.lead_source
+      embedded.name: embedded.name
+      embedded.phone_home: embedded.phone_home
+      embedded.phone_mobile: embedded.phone_mobile
+      embedded.phone_work: embedded.phone_work
+      embedded.salutation: embedded.salutation
+      embedded.sync_to_outlook: embedded.sync_to_outlook
+      embedded.title: embedded.title
+      embedded.updated_at: embedded.updated_at
+      embedded.user: embedded.user
+      id: id
+      relation: relation
+      relation.account_id: relation.account_id
+      relation.owner_id: relation.owner_id
+      relation.report_to_id: relation.report_to_id
+      relation.user_id: relation.user_id
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/crm
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-crm
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/crm/count
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - total
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-crm-count
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      total: total
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/crm/{crm_id}
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - api_url
+  - id
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-crm-crm-id
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      api_url: api_url
+      id: id
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/customField
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-customfield
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/customField/{custom_field_id}
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - embedded
+  - embedded.decimal_places
+  - embedded.default_value
+  - embedded.description
+  - embedded.entity
+  - embedded.label
+  - embedded.length
+  - embedded.name
+  - embedded.required
+  - embedded.select
+  - id
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-customfield-custom-field-id
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      embedded: embedded
+      embedded.decimal_places: embedded.decimal_places
+      embedded.default_value: embedded.default_value
+      embedded.description: embedded.description
+      embedded.entity: embedded.entity
+      embedded.label: embedded.label
+      embedded.length: embedded.length
+      embedded.name: embedded.name
+      embedded.required: embedded.required
+      embedded.select: embedded.select
+      id: id
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/email
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-email
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/email/count
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - total
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-email-count
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      total: total
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/email/describe
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - entity
+  - schema
+  - schema.create
+  - schema.fetch
+  - schema.fetchAll
+  - schema.update
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-email-describe
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      entity: entity
+      schema: schema
+      schema.create: schema.create
+      schema.fetch: schema.fetch
+      schema.fetchAll: schema.fetchAll
+      schema.update: schema.update
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/email/{email_id}
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - embedded
+  - embedded.bcc
+  - embedded.body
+  - embedded.cc
+  - embedded.created_at
+  - embedded.direction
+  - embedded.from
+  - embedded.sent_at
+  - embedded.status
+  - embedded.subject
+  - embedded.to
+  - embedded.updated_at
+  - id
+  - relation
+  - relation.owner_user_id
+  - relation.parent_id
+  - relation.parent_type
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-email-email-id
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      embedded: embedded
+      embedded.bcc: embedded.bcc
+      embedded.body: embedded.body
+      embedded.cc: embedded.cc
+      embedded.created_at: embedded.created_at
+      embedded.direction: embedded.direction
+      embedded.from: embedded.from
+      embedded.sent_at: embedded.sent_at
+      embedded.status: embedded.status
+      embedded.subject: embedded.subject
+      embedded.to: embedded.to
+      embedded.updated_at: embedded.updated_at
+      id: id
+      relation: relation
+      relation.owner_user_id: relation.owner_user_id
+      relation.parent_id: relation.parent_id
+      relation.parent_type: relation.parent_type
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/event
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-event
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/event/count
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - total
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-event-count
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      total: total
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/event/describe
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - entity
+  - schema
+  - schema.create
+  - schema.fetch
+  - schema.fetchAll
+  - schema.update
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-event-describe
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      entity: entity
+      schema: schema
+      schema.create: schema.create
+      schema.fetch: schema.fetch
+      schema.fetchAll: schema.fetchAll
+      schema.update: schema.update
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/event/{event_id}
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - embedded
+  - embedded.access
+  - embedded.created_at
+  - embedded.description
+  - embedded.ended_at
+  - embedded.is_all_day
+  - embedded.location
+  - embedded.started_at
+  - embedded.subject
+  - embedded.updated_at
+  - id
+  - relation
+  - relation.contact_id
+  - relation.owner_user_id
+  - relation.parent_id
+  - relation.parent_type
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-event-event-id
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      embedded: embedded
+      embedded.access: embedded.access
+      embedded.created_at: embedded.created_at
+      embedded.description: embedded.description
+      embedded.ended_at: embedded.ended_at
+      embedded.is_all_day: embedded.is_all_day
+      embedded.location: embedded.location
+      embedded.started_at: embedded.started_at
+      embedded.subject: embedded.subject
+      embedded.updated_at: embedded.updated_at
+      id: id
+      relation: relation
+      relation.contact_id: relation.contact_id
+      relation.owner_user_id: relation.owner_user_id
+      relation.parent_id: relation.parent_id
+      relation.parent_type: relation.parent_type
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/lead
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-lead
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/lead/count
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - total
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-lead-count
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      total: total
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/lead/describe
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - entity
+  - schema
+  - schema.create
+  - schema.fetch
+  - schema.fetchAll
+  - schema.update
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-lead-describe
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      entity: entity
+      schema: schema
+      schema.create: schema.create
+      schema.fetch: schema.fetch
+      schema.fetchAll: schema.fetchAll
+      schema.update: schema.update
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/lead/{lead_id}
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - embedded
+  - embedded.account_name
+  - embedded.alt_city
+  - embedded.alt_country
+  - embedded.alt_state
+  - embedded.alt_street
+  - embedded.alt_zip_code
+  - embedded.annual_revenue
+  - embedded.birth_date
+  - embedded.city
+  - embedded.company
+  - embedded.country
+  - embedded.date_created
+  - embedded.date_updated
+  - embedded.department
+  - embedded.description
+  - embedded.do_not_call
+  - embedded.email
+  - embedded.email_home
+  - embedded.email_other
+  - embedded.fax
+  - embedded.first_name
+  - embedded.industry
+  - embedded.last_name
+  - embedded.lead_source
+  - embedded.lead_source_description
+  - embedded.opened
+  - embedded.pager
+  - embedded.phone_home
+  - embedded.phone_mobile
+  - embedded.phone_other
+  - embedded.phone_work
+  - embedded.referred_by
+  - embedded.salutation
+  - embedded.skype_id
+  - embedded.state
+  - embedded.status
+  - embedded.status_description
+  - embedded.street
+  - embedded.suite
+  - embedded.title
+  - embedded.website
+  - embedded.zip_code
+  - id
+  - relation
+  - relation.account_id
+  - relation.assigned_user_id
+  - relation.campaign_id
+  - relation.contact_id
+  - relation.event_id
+  - relation.opportunity_id
+  - relation.owner_id
+  - relation.task_id
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-lead-lead-id
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      embedded: embedded
+      embedded.account_name: embedded.account_name
+      embedded.alt_city: embedded.alt_city
+      embedded.alt_country: embedded.alt_country
+      embedded.alt_state: embedded.alt_state
+      embedded.alt_street: embedded.alt_street
+      embedded.alt_zip_code: embedded.alt_zip_code
+      embedded.annual_revenue: embedded.annual_revenue
+      embedded.birth_date: embedded.birth_date
+      embedded.city: embedded.city
+      embedded.company: embedded.company
+      embedded.country: embedded.country
+      embedded.date_created: embedded.date_created
+      embedded.date_updated: embedded.date_updated
+      embedded.department: embedded.department
+      embedded.description: embedded.description
+      embedded.do_not_call: embedded.do_not_call
+      embedded.email: embedded.email
+      embedded.email_home: embedded.email_home
+      embedded.email_other: embedded.email_other
+      embedded.fax: embedded.fax
+      embedded.first_name: embedded.first_name
+      embedded.industry: embedded.industry
+      embedded.last_name: embedded.last_name
+      embedded.lead_source: embedded.lead_source
+      embedded.lead_source_description: embedded.lead_source_description
+      embedded.opened: embedded.opened
+      embedded.pager: embedded.pager
+      embedded.phone_home: embedded.phone_home
+      embedded.phone_mobile: embedded.phone_mobile
+      embedded.phone_other: embedded.phone_other
+      embedded.phone_work: embedded.phone_work
+      embedded.referred_by: embedded.referred_by
+      embedded.salutation: embedded.salutation
+      embedded.skype_id: embedded.skype_id
+      embedded.state: embedded.state
+      embedded.status: embedded.status
+      embedded.status_description: embedded.status_description
+      embedded.street: embedded.street
+      embedded.suite: embedded.suite
+      embedded.title: embedded.title
+      embedded.website: embedded.website
+      embedded.zip_code: embedded.zip_code
+      id: id
+      relation: relation
+      relation.account_id: relation.account_id
+      relation.assigned_user_id: relation.assigned_user_id
+      relation.campaign_id: relation.campaign_id
+      relation.contact_id: relation.contact_id
+      relation.event_id: relation.event_id
+      relation.opportunity_id: relation.opportunity_id
+      relation.owner_id: relation.owner_id
+      relation.task_id: relation.task_id
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/meeting
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-meeting
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/meeting/count
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - total
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-meeting-count
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      total: total
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/meeting/describe
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - entity
+  - schema
+  - schema.create
+  - schema.fetch
+  - schema.fetchAll
+  - schema.update
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-meeting-describe
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      entity: entity
+      schema: schema
+      schema.create: schema.create
+      schema.fetch: schema.fetch
+      schema.fetchAll: schema.fetchAll
+      schema.update: schema.update
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/meeting/{meeting_id}
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - embedded
+  - embedded.created_at
+  - embedded.description
+  - embedded.ended_at
+  - embedded.location
+  - embedded.result
+  - embedded.started_at
+  - embedded.status
+  - embedded.subject
+  - embedded.updated_at
+  - id
+  - relation
+  - relation.contact_id
+  - relation.owner_user_id
+  - relation.parent_id
+  - relation.parent_type
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-meeting-meeting-id
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      embedded: embedded
+      embedded.created_at: embedded.created_at
+      embedded.description: embedded.description
+      embedded.ended_at: embedded.ended_at
+      embedded.location: embedded.location
+      embedded.result: embedded.result
+      embedded.started_at: embedded.started_at
+      embedded.status: embedded.status
+      embedded.subject: embedded.subject
+      embedded.updated_at: embedded.updated_at
+      id: id
+      relation: relation
+      relation.contact_id: relation.contact_id
+      relation.owner_user_id: relation.owner_user_id
+      relation.parent_id: relation.parent_id
+      relation.parent_type: relation.parent_type
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/note
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-note
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/note/count
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - total
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-note-count
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      total: total
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/note/describe
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - entity
+  - schema
+  - schema.create
+  - schema.fetch
+  - schema.fetchAll
+  - schema.update
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-note-describe
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      entity: entity
+      schema: schema
+      schema.create: schema.create
+      schema.fetch: schema.fetch
+      schema.fetchAll: schema.fetchAll
+      schema.update: schema.update
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/note/{note_id}
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - embedded
+  - embedded.body
+  - embedded.contact_name
+  - embedded.created_at
+  - embedded.owner_user_name
+  - embedded.parent_name
+  - embedded.subject
+  - embedded.updated_at
+  - id
+  - relation
+  - relation.owner_user_id
+  - relation.parent_id
+  - relation.parent_type
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-note-note-id
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      embedded: embedded
+      embedded.body: embedded.body
+      embedded.contact_name: embedded.contact_name
+      embedded.created_at: embedded.created_at
+      embedded.owner_user_name: embedded.owner_user_name
+      embedded.parent_name: embedded.parent_name
+      embedded.subject: embedded.subject
+      embedded.updated_at: embedded.updated_at
+      id: id
+      relation: relation
+      relation.owner_user_id: relation.owner_user_id
+      relation.parent_id: relation.parent_id
+      relation.parent_type: relation.parent_type
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/opportunity
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-opportunity
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/opportunity/count
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - total
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-opportunity-count
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      total: total
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/opportunity/describe
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - entity
+  - schema
+  - schema.create
+  - schema.fetch
+  - schema.fetchAll
+  - schema.update
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-opportunity-describe
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      entity: entity
+      schema: schema
+      schema.create: schema.create
+      schema.fetch: schema.fetch
+      schema.fetchAll: schema.fetchAll
+      schema.update: schema.update
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/opportunity/{opportunity_id}
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - embedded
+  - embedded.account_name
+  - embedded.amount
+  - embedded.assigned_user_name
+  - embedded.campaign_id
+  - embedded.campaign_name
+  - embedded.currency_name
+  - embedded.currency_symbol
+  - embedded.date_closed
+  - embedded.date_created
+  - embedded.description
+  - embedded.lead_source
+  - embedded.name
+  - embedded.next_step
+  - embedded.probability
+  - embedded.sales_stage
+  - id
+  - relation
+  - relation.account_id
+  - relation.assigned_user_id
+  - relation.contact_id
+  - relation.lead_id
+  - relation.owner_id
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-opportunity-opportunity-id
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      embedded: embedded
+      embedded.account_name: embedded.account_name
+      embedded.amount: embedded.amount
+      embedded.assigned_user_name: embedded.assigned_user_name
+      embedded.campaign_id: embedded.campaign_id
+      embedded.campaign_name: embedded.campaign_name
+      embedded.currency_name: embedded.currency_name
+      embedded.currency_symbol: embedded.currency_symbol
+      embedded.date_closed: embedded.date_closed
+      embedded.date_created: embedded.date_created
+      embedded.description: embedded.description
+      embedded.lead_source: embedded.lead_source
+      embedded.name: embedded.name
+      embedded.next_step: embedded.next_step
+      embedded.probability: embedded.probability
+      embedded.sales_stage: embedded.sales_stage
+      id: id
+      relation: relation
+      relation.account_id: relation.account_id
+      relation.assigned_user_id: relation.assigned_user_id
+      relation.contact_id: relation.contact_id
+      relation.lead_id: relation.lead_id
+      relation.owner_id: relation.owner_id
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/task
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-task
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/task/count
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - total
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-task-count
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      total: total
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/task/describe
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - entity
+  - schema
+  - schema.create
+  - schema.fetch
+  - schema.fetchAll
+  - schema.update
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-task-describe
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      entity: entity
+      schema: schema
+      schema.create: schema.create
+      schema.fetch: schema.fetch
+      schema.fetchAll: schema.fetchAll
+      schema.update: schema.update
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/task/{task_id}
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - embedded
+  - embedded.account
+  - embedded.contact
+  - embedded.created_date
+  - embedded.description
+  - embedded.due_date
+  - embedded.lead
+  - embedded.name
+  - embedded.opportunity
+  - embedded.owner
+  - embedded.priority
+  - embedded.publicly_visible
+  - embedded.reminder_date
+  - embedded.start_date
+  - embedded.status
+  - embedded.updated_date
+  - id
+  - relation
+  - relation.account_id
+  - relation.assigned_user_id
+  - relation.contact_id
+  - relation.lead_id
+  - relation.opportunity_id
+  - relation.owner_id
+  - relation.parent_id
+  - relation.reporter_id
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-task-task-id
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      embedded: embedded
+      embedded.account: embedded.account
+      embedded.contact: embedded.contact
+      embedded.created_date: embedded.created_date
+      embedded.description: embedded.description
+      embedded.due_date: embedded.due_date
+      embedded.lead: embedded.lead
+      embedded.name: embedded.name
+      embedded.opportunity: embedded.opportunity
+      embedded.owner: embedded.owner
+      embedded.priority: embedded.priority
+      embedded.publicly_visible: embedded.publicly_visible
+      embedded.reminder_date: embedded.reminder_date
+      embedded.start_date: embedded.start_date
+      embedded.status: embedded.status
+      embedded.updated_date: embedded.updated_date
+      id: id
+      relation: relation
+      relation.account_id: relation.account_id
+      relation.assigned_user_id: relation.assigned_user_id
+      relation.contact_id: relation.contact_id
+      relation.lead_id: relation.lead_id
+      relation.opportunity_id: relation.opportunity_id
+      relation.owner_id: relation.owner_id
+      relation.parent_id: relation.parent_id
+      relation.reporter_id: relation.reporter_id
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/user
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-user
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/user/count
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - total
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-user-count
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      total: total
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/user/describe
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - entity
+  - schema
+  - schema.create
+  - schema.fetch
+  - schema.fetchAll
+  - schema.update
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-user-describe
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      entity: entity
+      schema: schema
+      schema.create: schema.create
+      schema.fetch: schema.fetch
+      schema.fetchAll: schema.fetchAll
+      schema.update: schema.update
+    hosts:
+    - http://api.data2crm.com:80
+- group: data2crm-api-1
+  url_pattern: /v1/user/{user_id}
+  method: GET
+  encoding: json
+  host:
+  - http://api.data2crm.com:80
+  whitelist:
+  - embedded
+  - embedded.address_city
+  - embedded.address_country
+  - embedded.address_postal_code
+  - embedded.address_state
+  - embedded.address_street
+  - embedded.confirm_password
+  - embedded.created_by
+  - embedded.department
+  - embedded.description
+  - embedded.email
+  - embedded.email_other
+  - embedded.firstname
+  - embedded.fullname
+  - embedded.is_active
+  - embedded.is_admin
+  - embedded.lastname
+  - embedded.modified_by
+  - embedded.name
+  - embedded.phone_home
+  - embedded.phone_mobile
+  - embedded.phone_other
+  - embedded.phone_work
+  - embedded.position
+  - embedded.role
+  - embedded.signature
+  - embedded.status
+  - embedded.title
+  - embedded.user_password
+  - embedded.website
+  - id
+  - relation
+  - relation.roleid
+  concurrent_calls: 1
+  extra_config:
+    provider: data2crm.com
+    description: '<p>Make use of our in-depth documentation to get more information
+      about the various functions of the service. Those willing to explore the mechanics
+      of Data2CRM.API can test it in live regime using the short code samples.</p><p>Select
+      CRM: <span id="docs-select-crm" style="font-weight: bold">Loading... please
+      wait</span></p><p>Here are the API access keys:<br><b>X-API2CRM-USERKEY</b>:
+      <span id="docs-user-key">e2a6379ab878ae7e58119d4ec842bf9c926e05b5</span><br><b>X-API2CRM-CRMKEY</b>:
+      <span id="docs-crm-key">7ae5b17008fb414d84981191cf3b66a476ef8bef</span></p><p
+      id="docs-crm-access">The CRM access details are:<br><b>URL</b>: <a id="docs-crm-url"
+      href="https://login.salesforce.com/" target="_blank">https://login.salesforce.com/</a><br><b>E-mail
+      / Username</b>: <span id="docs-crm-username">developers.data2crm.api+1@magneticone.com</span><br><b>Password</b>:
+      <span id="docs-crm-password">data2crmapi123</span></p>'
+    version: "1"
+    slug: data2crm-api-1-v1-user-user-id
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    - hal+json
+    mapping:
+      embedded: embedded
+      embedded.address_city: embedded.address_city
+      embedded.address_country: embedded.address_country
+      embedded.address_postal_code: embedded.address_postal_code
+      embedded.address_state: embedded.address_state
+      embedded.address_street: embedded.address_street
+      embedded.confirm_password: embedded.confirm_password
+      embedded.created_by: embedded.created_by
+      embedded.department: embedded.department
+      embedded.description: embedded.description
+      embedded.email: embedded.email
+      embedded.email_other: embedded.email_other
+      embedded.firstname: embedded.firstname
+      embedded.fullname: embedded.fullname
+      embedded.is_active: embedded.is_active
+      embedded.is_admin: embedded.is_admin
+      embedded.lastname: embedded.lastname
+      embedded.modified_by: embedded.modified_by
+      embedded.name: embedded.name
+      embedded.phone_home: embedded.phone_home
+      embedded.phone_mobile: embedded.phone_mobile
+      embedded.phone_other: embedded.phone_other
+      embedded.phone_work: embedded.phone_work
+      embedded.position: embedded.position
+      embedded.role: embedded.role
+      embedded.signature: embedded.signature
+      embedded.status: embedded.status
+      embedded.title: embedded.title
+      embedded.user_password: embedded.user_password
+      embedded.website: embedded.website
+      id: id
+      relation: relation
+      relation.roleid: relation.roleid
+    hosts:
+    - http://api.data2crm.com:80

@@ -1,0 +1,353 @@
+{
+	"backends": [
+		{
+			"group": "google-cloud-dataproc-v1alpha1",
+			"url_pattern": "/v1alpha1/projects/{projectId}/regions/{region}/clusters",
+			"method": "GET",
+			"host": [
+				"https://dataproc.googleapis.com"
+			],
+			"url_keys": [
+				"projectId",
+				"region"
+			],
+			"query_string_params": [
+				"filter",
+				"pageSize",
+				"pageToken"
+			],
+			"whitelist": [
+				"clusters",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Hadoop-based clusters and jobs on Google Cloud Platform.",
+				"version": "v1alpha1",
+				"slug": "google-cloud-dataproc-v1alpha1-v1alpha1-projects-projectid-regions-region-clusters",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"clusters": "clusters",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://dataproc.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		},
+		{
+			"group": "google-cloud-dataproc-v1alpha1",
+			"url_pattern": "/v1alpha1/projects/{projectId}/regions/{region}/clusters/{clusterName}",
+			"method": "GET",
+			"host": [
+				"https://dataproc.googleapis.com"
+			],
+			"url_keys": [
+				"clusterName",
+				"projectId",
+				"region"
+			],
+			"whitelist": [
+				"clusterName",
+				"clusterUuid",
+				"createTime",
+				"labels",
+				"labels.additionalProperties",
+				"projectId",
+				"statusHistory"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Hadoop-based clusters and jobs on Google Cloud Platform.",
+				"version": "v1alpha1",
+				"slug": "google-cloud-dataproc-v1alpha1-v1alpha1-projects-projectid-regions-region-clusters-clustername",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"clusterName": "clusterName",
+					"clusterUuid": "clusterUuid",
+					"createTime": "createTime",
+					"labels": "labels",
+					"labels.additionalProperties": "labels.additionalProperties",
+					"projectId": "projectId",
+					"statusHistory": "statusHistory"
+				},
+				"hosts": [
+					"https://dataproc.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		},
+		{
+			"group": "google-cloud-dataproc-v1alpha1",
+			"url_pattern": "/v1alpha1/projects/{projectId}/regions/{region}/jobs/{jobId}",
+			"method": "GET",
+			"host": [
+				"https://dataproc.googleapis.com"
+			],
+			"url_keys": [
+				"jobId",
+				"projectId",
+				"region"
+			],
+			"whitelist": [
+				"driverControlFilesUri",
+				"driverInputResourceUri",
+				"driverOutputResourceUri",
+				"driverOutputUri",
+				"interactive",
+				"labels",
+				"labels.additionalProperties",
+				"statusHistory",
+				"submittedBy",
+				"yarnApplications"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Hadoop-based clusters and jobs on Google Cloud Platform.",
+				"version": "v1alpha1",
+				"slug": "google-cloud-dataproc-v1alpha1-v1alpha1-projects-projectid-regions-region-jobs-jobid",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"driverControlFilesUri": "driverControlFilesUri",
+					"driverInputResourceUri": "driverInputResourceUri",
+					"driverOutputResourceUri": "driverOutputResourceUri",
+					"driverOutputUri": "driverOutputUri",
+					"interactive": "interactive",
+					"labels": "labels",
+					"labels.additionalProperties": "labels.additionalProperties",
+					"statusHistory": "statusHistory",
+					"submittedBy": "submittedBy",
+					"yarnApplications": "yarnApplications"
+				},
+				"hosts": [
+					"https://dataproc.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		},
+		{
+			"group": "google-cloud-dataproc-v1alpha1",
+			"url_pattern": "/v1alpha1/projects/{projectId}/regions/{region}/jobs/{jobId}:cancel",
+			"method": "POST",
+			"host": [
+				"https://dataproc.googleapis.com"
+			],
+			"url_keys": [
+				"jobId",
+				"projectId",
+				"region"
+			],
+			"whitelist": [
+				"driverControlFilesUri",
+				"driverInputResourceUri",
+				"driverOutputResourceUri",
+				"driverOutputUri",
+				"interactive",
+				"labels",
+				"labels.additionalProperties",
+				"statusHistory",
+				"submittedBy",
+				"yarnApplications"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Hadoop-based clusters and jobs on Google Cloud Platform.",
+				"version": "v1alpha1",
+				"slug": "google-cloud-dataproc-v1alpha1-v1alpha1-projects-projectid-regions-region-jobs-jobid-cancel",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"driverControlFilesUri": "driverControlFilesUri",
+					"driverInputResourceUri": "driverInputResourceUri",
+					"driverOutputResourceUri": "driverOutputResourceUri",
+					"driverOutputUri": "driverOutputUri",
+					"interactive": "interactive",
+					"labels": "labels",
+					"labels.additionalProperties": "labels.additionalProperties",
+					"statusHistory": "statusHistory",
+					"submittedBy": "submittedBy",
+					"yarnApplications": "yarnApplications"
+				},
+				"hosts": [
+					"https://dataproc.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		},
+		{
+			"group": "google-cloud-dataproc-v1alpha1",
+			"url_pattern": "/v1alpha1/projects/{projectId}/regions/{region}/jobs:list",
+			"method": "POST",
+			"host": [
+				"https://dataproc.googleapis.com"
+			],
+			"url_keys": [
+				"projectId",
+				"region"
+			],
+			"whitelist": [
+				"jobs",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Hadoop-based clusters and jobs on Google Cloud Platform.",
+				"version": "v1alpha1",
+				"slug": "google-cloud-dataproc-v1alpha1-v1alpha1-projects-projectid-regions-region-jobs-list",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"jobs": "jobs",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://dataproc.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		},
+		{
+			"group": "google-cloud-dataproc-v1alpha1",
+			"url_pattern": "/v1alpha1/projects/{projectId}/regions/{region}/jobs:submit",
+			"method": "POST",
+			"host": [
+				"https://dataproc.googleapis.com"
+			],
+			"url_keys": [
+				"projectId",
+				"region"
+			],
+			"whitelist": [
+				"driverControlFilesUri",
+				"driverInputResourceUri",
+				"driverOutputResourceUri",
+				"driverOutputUri",
+				"interactive",
+				"labels",
+				"labels.additionalProperties",
+				"statusHistory",
+				"submittedBy",
+				"yarnApplications"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Hadoop-based clusters and jobs on Google Cloud Platform.",
+				"version": "v1alpha1",
+				"slug": "google-cloud-dataproc-v1alpha1-v1alpha1-projects-projectid-regions-region-jobs-submit",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"driverControlFilesUri": "driverControlFilesUri",
+					"driverInputResourceUri": "driverInputResourceUri",
+					"driverOutputResourceUri": "driverOutputResourceUri",
+					"driverOutputUri": "driverOutputUri",
+					"interactive": "interactive",
+					"labels": "labels",
+					"labels.additionalProperties": "labels.additionalProperties",
+					"statusHistory": "statusHistory",
+					"submittedBy": "submittedBy",
+					"yarnApplications": "yarnApplications"
+				},
+				"hosts": [
+					"https://dataproc.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		},
+		{
+			"group": "google-cloud-dataproc-v1alpha1",
+			"url_pattern": "/v1alpha1/{name}",
+			"method": "GET",
+			"host": [
+				"https://dataproc.googleapis.com"
+			],
+			"url_keys": [
+				"name"
+			],
+			"query_string_params": [
+				"filter",
+				"pageSize",
+				"pageToken"
+			],
+			"whitelist": [
+				"nextPageToken",
+				"operations"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Hadoop-based clusters and jobs on Google Cloud Platform.",
+				"version": "v1alpha1",
+				"slug": "google-cloud-dataproc-v1alpha1-v1alpha1-name",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"nextPageToken": "nextPageToken",
+					"operations": "operations"
+				},
+				"hosts": [
+					"https://dataproc.googleapis.com"
+				],
+				"topics": [
+					"operations"
+				]
+			}
+		},
+		{
+			"group": "google-cloud-dataproc-v1alpha1",
+			"url_pattern": "/v1alpha1/{name}:cancel",
+			"method": "POST",
+			"host": [
+				"https://dataproc.googleapis.com"
+			],
+			"url_keys": [
+				"name"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Hadoop-based clusters and jobs on Google Cloud Platform.",
+				"version": "v1alpha1",
+				"slug": "google-cloud-dataproc-v1alpha1-v1alpha1-name-cancel",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://dataproc.googleapis.com"
+				],
+				"topics": [
+					"operations"
+				]
+			}
+		}
+	]
+}

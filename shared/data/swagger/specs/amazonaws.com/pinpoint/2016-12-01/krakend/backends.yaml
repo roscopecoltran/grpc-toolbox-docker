@@ -1,0 +1,353 @@
+backends:
+- group: amazon-pinpoint-2016-12-01
+  url_pattern: /v1/apps
+  method: GET
+  encoding: json
+  host:
+  - http://pinpoint.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2016-12-01
+    slug: amazon-pinpoint-2016-12-01-v1-apps
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://pinpoint.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-pinpoint-2016-12-01
+  url_pattern: /v1/apps/{application-id}
+  method: GET
+  encoding: json
+  host:
+  - http://pinpoint.amazonaws.com
+  url_keys:
+  - application-id
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2016-12-01
+    slug: amazon-pinpoint-2016-12-01-v1-apps-application-id
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://pinpoint.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-pinpoint-2016-12-01
+  url_pattern: /v1/apps/{application-id}/campaigns
+  method: GET
+  encoding: json
+  host:
+  - http://pinpoint.amazonaws.com
+  url_keys:
+  - application-id
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2016-12-01
+    slug: amazon-pinpoint-2016-12-01-v1-apps-application-id-campaigns
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://pinpoint.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-pinpoint-2016-12-01
+  url_pattern: /v1/apps/{application-id}/campaigns/{campaign-id}/activities
+  method: GET
+  encoding: json
+  host:
+  - http://pinpoint.amazonaws.com
+  url_keys:
+  - application-id
+  - campaign-id
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2016-12-01
+    slug: amazon-pinpoint-2016-12-01-v1-apps-application-id-campaigns-campaign-id-activities
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://pinpoint.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-pinpoint-2016-12-01
+  url_pattern: /v1/apps/{application-id}/campaigns/{campaign-id}/versions
+  method: GET
+  encoding: json
+  host:
+  - http://pinpoint.amazonaws.com
+  url_keys:
+  - application-id
+  - campaign-id
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2016-12-01
+    slug: amazon-pinpoint-2016-12-01-v1-apps-application-id-campaigns-campaign-id-versions
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://pinpoint.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-pinpoint-2016-12-01
+  url_pattern: /v1/apps/{application-id}/campaigns/{campaign-id}/versions/{version}
+  method: GET
+  encoding: json
+  host:
+  - http://pinpoint.amazonaws.com
+  url_keys:
+  - application-id
+  - campaign-id
+  - version
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2016-12-01
+    slug: amazon-pinpoint-2016-12-01-v1-apps-application-id-campaigns-campaign-id-versions-version
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://pinpoint.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-pinpoint-2016-12-01
+  url_pattern: /v1/apps/{application-id}/eventstream
+  method: POST
+  encoding: json
+  host:
+  - http://pinpoint.amazonaws.com
+  url_keys:
+  - application-id
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2016-12-01
+    slug: amazon-pinpoint-2016-12-01-v1-apps-application-id-eventstream
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://pinpoint.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-pinpoint-2016-12-01
+  url_pattern: /v1/apps/{application-id}/jobs/import
+  method: GET
+  encoding: json
+  host:
+  - http://pinpoint.amazonaws.com
+  url_keys:
+  - application-id
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2016-12-01
+    slug: amazon-pinpoint-2016-12-01-v1-apps-application-id-jobs-import
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://pinpoint.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-pinpoint-2016-12-01
+  url_pattern: /v1/apps/{application-id}/jobs/import/{job-id}
+  method: GET
+  encoding: json
+  host:
+  - http://pinpoint.amazonaws.com
+  url_keys:
+  - application-id
+  - job-id
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2016-12-01
+    slug: amazon-pinpoint-2016-12-01-v1-apps-application-id-jobs-import-job-id
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://pinpoint.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-pinpoint-2016-12-01
+  url_pattern: /v1/apps/{application-id}/messages
+  method: POST
+  encoding: json
+  host:
+  - http://pinpoint.amazonaws.com
+  url_keys:
+  - application-id
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2016-12-01
+    slug: amazon-pinpoint-2016-12-01-v1-apps-application-id-messages
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://pinpoint.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-pinpoint-2016-12-01
+  url_pattern: /v1/apps/{application-id}/segments
+  method: GET
+  encoding: json
+  host:
+  - http://pinpoint.amazonaws.com
+  url_keys:
+  - application-id
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2016-12-01
+    slug: amazon-pinpoint-2016-12-01-v1-apps-application-id-segments
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://pinpoint.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-pinpoint-2016-12-01
+  url_pattern: /v1/apps/{application-id}/segments/{segment-id}/jobs/import
+  method: GET
+  encoding: json
+  host:
+  - http://pinpoint.amazonaws.com
+  url_keys:
+  - application-id
+  - segment-id
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2016-12-01
+    slug: amazon-pinpoint-2016-12-01-v1-apps-application-id-segments-segment-id-jobs-import
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://pinpoint.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-pinpoint-2016-12-01
+  url_pattern: /v1/apps/{application-id}/segments/{segment-id}/versions
+  method: GET
+  encoding: json
+  host:
+  - http://pinpoint.amazonaws.com
+  url_keys:
+  - application-id
+  - segment-id
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2016-12-01
+    slug: amazon-pinpoint-2016-12-01-v1-apps-application-id-segments-segment-id-versions
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://pinpoint.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-pinpoint-2016-12-01
+  url_pattern: /v1/apps/{application-id}/segments/{segment-id}/versions/{version}
+  method: GET
+  encoding: json
+  host:
+  - http://pinpoint.amazonaws.com
+  url_keys:
+  - application-id
+  - segment-id
+  - version
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2016-12-01
+    slug: amazon-pinpoint-2016-12-01-v1-apps-application-id-segments-segment-id-versions-version
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://pinpoint.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-pinpoint-2016-12-01
+  url_pattern: /v1/apps/{application-id}/users-messages
+  method: POST
+  encoding: json
+  host:
+  - http://pinpoint.amazonaws.com
+  url_keys:
+  - application-id
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2016-12-01
+    slug: amazon-pinpoint-2016-12-01-v1-apps-application-id-users-messages
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://pinpoint.amazonaws.com
+    topics:
+    - cloud

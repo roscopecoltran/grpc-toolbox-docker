@@ -1,0 +1,846 @@
+backends:
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#AddTagsToResource
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-addtagstoresource
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#AuthorizeDBSecurityGroupIngress
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-authorizedbsecuritygroupingress
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#CopyDBSnapshot
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-copydbsnapshot
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#CreateDBInstance
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-createdbinstance
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#CreateDBInstanceReadReplica
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-createdbinstancereadreplica
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#CreateDBParameterGroup
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-createdbparametergroup
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#CreateDBSecurityGroup
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-createdbsecuritygroup
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#CreateDBSnapshot
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-createdbsnapshot
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#CreateDBSubnetGroup
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-createdbsubnetgroup
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#CreateEventSubscription
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-createeventsubscription
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#CreateOptionGroup
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-createoptiongroup
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#DeleteDBInstance
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-deletedbinstance
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#DeleteDBParameterGroup
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-deletedbparametergroup
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#DeleteDBSecurityGroup
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-deletedbsecuritygroup
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#DeleteDBSnapshot
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-deletedbsnapshot
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#DeleteDBSubnetGroup
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-deletedbsubnetgroup
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#DeleteEventSubscription
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-deleteeventsubscription
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#DeleteOptionGroup
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-deleteoptiongroup
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#DescribeDBEngineVersions
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxRecords
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-describedbengineversions
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#DescribeDBInstances
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxRecords
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-describedbinstances
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#DescribeDBParameterGroups
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxRecords
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-describedbparametergroups
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#DescribeDBParameters
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxRecords
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-describedbparameters
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#DescribeDBSecurityGroups
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxRecords
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-describedbsecuritygroups
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#DescribeDBSnapshots
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxRecords
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-describedbsnapshots
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#DescribeDBSubnetGroups
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxRecords
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-describedbsubnetgroups
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#DescribeEngineDefaultParameters
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxRecords
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-describeenginedefaultparameters
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#DescribeEventCategories
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-describeeventcategories
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#DescribeEventSubscriptions
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxRecords
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-describeeventsubscriptions
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#DescribeEvents
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxRecords
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-describeevents
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#DescribeOptionGroupOptions
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxRecords
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-describeoptiongroupoptions
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#DescribeOptionGroups
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxRecords
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-describeoptiongroups
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#DescribeOrderableDBInstanceOptions
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxRecords
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-describeorderabledbinstanceoptions
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#DescribeReservedDBInstances
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxRecords
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-describereserveddbinstances
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#DescribeReservedDBInstancesOfferings
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxRecords
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-describereserveddbinstancesofferings
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#ListTagsForResource
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-listtagsforresource
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#ModifyDBInstance
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-modifydbinstance
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#ModifyDBParameterGroup
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-modifydbparametergroup
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#ModifyDBSubnetGroup
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-modifydbsubnetgroup
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#ModifyEventSubscription
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-modifyeventsubscription
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#ModifyOptionGroup
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-modifyoptiongroup
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#PromoteReadReplica
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-promotereadreplica
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#PurchaseReservedDBInstancesOffering
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-purchasereserveddbinstancesoffering
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#RebootDBInstance
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-rebootdbinstance
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#RemoveSourceIdentifierFromSubscription
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-removesourceidentifierfromsubscription
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#RemoveTagsFromResource
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-removetagsfromresource
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#ResetDBParameterGroup
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-resetdbparametergroup
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#RestoreDBInstanceFromDBSnapshot
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-restoredbinstancefromdbsnapshot
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#RestoreDBInstanceToPointInTime
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-restoredbinstancetopointintime
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /#RevokeDBSecurityGroupIngress
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10-revokedbsecuritygroupingress
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-relational-database-service-2013-01-10
+  url_pattern: /
+  method: POST
+  host:
+  - http://rds.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2013-01-10
+    slug: amazon-relational-database-service-2013-01-10
+    schemes:
+    - http
+    hosts:
+    - http://rds.amazonaws.com
+    topics:
+    - cloud

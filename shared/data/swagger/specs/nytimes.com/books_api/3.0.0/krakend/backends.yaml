@@ -1,0 +1,145 @@
+backends:
+- group: books-3-0-0
+  url_pattern: /svc/books/v3/lists
+  method: '{FORMAT}'
+  encoding: json
+  host:
+  - https://api.nytimes.com
+  concurrent_calls: 1
+  extra_config:
+    provider: nytimes.com
+    description: The Books API provides information about book reviews and The New
+      York Times bestsellers lists.
+    version: 3.0.0
+    slug: books-3-0-0-svc-books-v3-lists
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.nytimes.com
+    topics:
+    - media
+    - open-data
+- group: books-3-0-0
+  url_pattern: /svc/books/v3/lists/best-sellers/history
+  method: JSON
+  encoding: json
+  host:
+  - https://api.nytimes.com
+  concurrent_calls: 1
+  extra_config:
+    provider: nytimes.com
+    description: The Books API provides information about book reviews and The New
+      York Times bestsellers lists.
+    version: 3.0.0
+    slug: books-3-0-0-svc-books-v3-lists-best-sellers-history
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.nytimes.com
+    topics:
+    - media
+    - open-data
+- group: books-3-0-0
+  url_pattern: /svc/books/v3/lists/names
+  method: '{FORMAT}'
+  encoding: json
+  host:
+  - https://api.nytimes.com
+  concurrent_calls: 1
+  extra_config:
+    provider: nytimes.com
+    description: The Books API provides information about book reviews and The New
+      York Times bestsellers lists.
+    version: 3.0.0
+    slug: books-3-0-0-svc-books-v3-lists-names
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.nytimes.com
+    topics:
+    - media
+    - open-data
+- group: books-3-0-0
+  url_pattern: /svc/books/v3/lists/overview
+  method: '{FORMAT}'
+  encoding: json
+  host:
+  - https://api.nytimes.com
+  concurrent_calls: 1
+  extra_config:
+    provider: nytimes.com
+    description: The Books API provides information about book reviews and The New
+      York Times bestsellers lists.
+    version: 3.0.0
+    slug: books-3-0-0-svc-books-v3-lists-overview
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.nytimes.com
+    topics:
+    - media
+    - open-data
+- group: books-3-0-0
+  url_pattern: /svc/books/v3/lists/{date}/{list}
+  method: JSON
+  encoding: json
+  host:
+  - https://api.nytimes.com
+  concurrent_calls: 1
+  extra_config:
+    provider: nytimes.com
+    description: The Books API provides information about book reviews and The New
+      York Times bestsellers lists.
+    version: 3.0.0
+    slug: books-3-0-0-svc-books-v3-lists-date-list
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.nytimes.com
+    topics:
+    - media
+    - open-data
+- group: books-3-0-0
+  url_pattern: /svc/books/v3/reviews
+  method: '{FORMAT}'
+  encoding: json
+  host:
+  - https://api.nytimes.com
+  concurrent_calls: 1
+  extra_config:
+    provider: nytimes.com
+    description: The Books API provides information about book reviews and The New
+      York Times bestsellers lists.
+    version: 3.0.0
+    slug: books-3-0-0-svc-books-v3-reviews
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.nytimes.com
+    topics:
+    - media
+    - open-data

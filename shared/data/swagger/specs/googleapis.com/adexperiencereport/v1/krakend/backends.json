@@ -1,0 +1,67 @@
+{
+	"backends": [
+		{
+			"group": "google-ad-experience-report-v1",
+			"url_pattern": "/v1/violatingSites",
+			"method": "GET",
+			"host": [
+				"https://adexperiencereport.googleapis.com"
+			],
+			"whitelist": [
+				"violatingSites"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "View Ad Experience Report data, and get a list of sites that have a significant number of annoying ads.",
+				"version": "v1",
+				"slug": "google-ad-experience-report-v1-v1-violatingsites",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"violatingSites": "violatingSites"
+				},
+				"hosts": [
+					"https://adexperiencereport.googleapis.com"
+				],
+				"topics": [
+					"violatingsites"
+				]
+			}
+		},
+		{
+			"group": "google-ad-experience-report-v1",
+			"url_pattern": "/v1/{name}",
+			"method": "GET",
+			"host": [
+				"https://adexperiencereport.googleapis.com"
+			],
+			"url_keys": [
+				"name"
+			],
+			"whitelist": [
+				"reviewedSite"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "View Ad Experience Report data, and get a list of sites that have a significant number of annoying ads.",
+				"version": "v1",
+				"slug": "google-ad-experience-report-v1-v1-name",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"reviewedSite": "reviewedSite"
+				},
+				"hosts": [
+					"https://adexperiencereport.googleapis.com"
+				],
+				"topics": [
+					"sites"
+				]
+			}
+		}
+	]
+}

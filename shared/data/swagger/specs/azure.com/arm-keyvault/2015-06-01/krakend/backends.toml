@@ -1,0 +1,40 @@
+[[backends]]
+  group = "keyvaultmanagementclient-2015-06-01"
+  url_pattern = "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft"
+  method = "KEYVAULT/VAULTS"
+  encoding = "json"
+  host = ["https://management.azure.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "azure.com"
+    description = "The Azure management API provides a RESTful set of web services that interact with Azure Key Vault."
+    version = "2015-06-01"
+    slug = "keyvaultmanagementclient-2015-06-01-subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://management.azure.com"]
+    topics = ["cloud", "developer-tools", "security"]
+
+[[backends]]
+  group = "keyvaultmanagementclient-2015-06-01"
+  url_pattern = "/subscriptions/{subscriptionId}/resources"
+  method = "GET"
+  encoding = "json"
+  host = ["https://management.azure.com"]
+  query_string_params = ["$filter", "$top", "api-version"]
+  whitelist = ["nextLink", "value"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "azure.com"
+    description = "The Azure management API provides a RESTful set of web services that interact with Azure Key Vault."
+    version = "2015-06-01"
+    slug = "keyvaultmanagementclient-2015-06-01-subscriptions-subscriptionid-resources"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://management.azure.com"]
+    topics = ["cloud", "developer-tools", "security", "vaults"]
+    [backends.extra_config.mapping]
+      nextLink = "nextLink"
+      value = "value"

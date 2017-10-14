@@ -1,0 +1,39 @@
+backends:
+- group: import-io-1-0
+  url_pattern: /extractor/{extractorId}/csv/latest
+  method: GET
+  host:
+  - https://data.import.io
+  url_keys:
+  - extractorId
+  concurrent_calls: 1
+  extra_config:
+    provider: import.io
+    version: "1.0"
+    slug: import-io-1-0-extractor-extractorid-csv-latest
+    schemes:
+    - https
+    hosts:
+    - https://data.import.io
+    topics:
+    - data-import-io
+    - tools
+- group: import-io-1-0
+  url_pattern: /extractor/{extractorId}/json/latest
+  method: GET
+  host:
+  - https://data.import.io
+  url_keys:
+  - extractorId
+  concurrent_calls: 1
+  extra_config:
+    provider: import.io
+    version: "1.0"
+    slug: import-io-1-0-extractor-extractorid-json-latest
+    schemes:
+    - https
+    hosts:
+    - https://data.import.io
+    topics:
+    - data-import-io
+    - tools

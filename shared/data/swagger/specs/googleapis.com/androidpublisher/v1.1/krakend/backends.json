@@ -1,0 +1,104 @@
+{
+	"backends": [
+		{
+			"group": "google-play-developer-v1-1",
+			"url_pattern": "/androidpublisher/v1.1/applications/{packageName}/inapp/{productId}/purchases/{token}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"consumptionState",
+				"developerPayload",
+				"kind",
+				"orderId",
+				"purchaseState",
+				"purchaseTime"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Lets Android application developers access their Google Play accounts.",
+				"version": "v1.1",
+				"slug": "google-play-developer-v1-1-androidpublisher-v1-1-applications-packagename-inapp-productid-purchases-token",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"consumptionState": "consumptionState",
+					"developerPayload": "developerPayload",
+					"kind": "kind",
+					"orderId": "orderId",
+					"purchaseState": "purchaseState",
+					"purchaseTime": "purchaseTime"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"developer-tools"
+				]
+			}
+		},
+		{
+			"group": "google-play-developer-v1-1",
+			"url_pattern": "/androidpublisher/v1.1/applications/{packageName}/subscriptions/{subscriptionId}/purchases/{token}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"autoRenewing",
+				"initiationTimestampMsec",
+				"kind",
+				"validUntilTimestampMsec"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Lets Android application developers access their Google Play accounts.",
+				"version": "v1.1",
+				"slug": "google-play-developer-v1-1-androidpublisher-v1-1-applications-packagename-subscriptions-subscriptionid-purchases-token",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"autoRenewing": "autoRenewing",
+					"initiationTimestampMsec": "initiationTimestampMsec",
+					"kind": "kind",
+					"validUntilTimestampMsec": "validUntilTimestampMsec"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"developer-tools"
+				]
+			}
+		},
+		{
+			"group": "google-play-developer-v1-1",
+			"url_pattern": "/androidpublisher/v1.1/applications/{packageName}/subscriptions/{subscriptionId}/purchases/{token}/cancel",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Lets Android application developers access their Google Play accounts.",
+				"version": "v1.1",
+				"slug": "google-play-developer-v1-1-androidpublisher-v1-1-applications-packagename-subscriptions-subscriptionid-purchases-token-cancel",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"developer-tools"
+				]
+			}
+		}
+	]
+}

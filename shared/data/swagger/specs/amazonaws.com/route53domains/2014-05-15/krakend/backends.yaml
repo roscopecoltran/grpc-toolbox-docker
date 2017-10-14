@@ -1,0 +1,536 @@
+backends:
+- group: amazon-route-53-domains-2014-05-15
+  url_pattern: /#DeleteTagsForDomain
+  method: POST
+  encoding: json
+  host:
+  - http://route53domains.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: Amazon Route 53 API actions let you register domain names and perform
+      related operations.
+    version: 2014-05-15
+    slug: amazon-route-53-domains-2014-05-15-deletetagsfordomain
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://route53domains.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-route-53-domains-2014-05-15
+  url_pattern: /#DisableDomainAutoRenew
+  method: POST
+  encoding: json
+  host:
+  - http://route53domains.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: Amazon Route 53 API actions let you register domain names and perform
+      related operations.
+    version: 2014-05-15
+    slug: amazon-route-53-domains-2014-05-15-disabledomainautorenew
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://route53domains.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-route-53-domains-2014-05-15
+  url_pattern: /#DisableDomainTransferLock
+  method: POST
+  encoding: json
+  host:
+  - http://route53domains.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: Amazon Route 53 API actions let you register domain names and perform
+      related operations.
+    version: 2014-05-15
+    slug: amazon-route-53-domains-2014-05-15-disabledomaintransferlock
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://route53domains.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-route-53-domains-2014-05-15
+  url_pattern: /#EnableDomainAutoRenew
+  method: POST
+  encoding: json
+  host:
+  - http://route53domains.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: Amazon Route 53 API actions let you register domain names and perform
+      related operations.
+    version: 2014-05-15
+    slug: amazon-route-53-domains-2014-05-15-enabledomainautorenew
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://route53domains.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-route-53-domains-2014-05-15
+  url_pattern: /#EnableDomainTransferLock
+  method: POST
+  encoding: json
+  host:
+  - http://route53domains.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: Amazon Route 53 API actions let you register domain names and perform
+      related operations.
+    version: 2014-05-15
+    slug: amazon-route-53-domains-2014-05-15-enabledomaintransferlock
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://route53domains.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-route-53-domains-2014-05-15
+  url_pattern: /#GetContactReachabilityStatus
+  method: POST
+  encoding: json
+  host:
+  - http://route53domains.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: Amazon Route 53 API actions let you register domain names and perform
+      related operations.
+    version: 2014-05-15
+    slug: amazon-route-53-domains-2014-05-15-getcontactreachabilitystatus
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://route53domains.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-route-53-domains-2014-05-15
+  url_pattern: /#GetDomainDetail
+  method: POST
+  encoding: json
+  host:
+  - http://route53domains.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: Amazon Route 53 API actions let you register domain names and perform
+      related operations.
+    version: 2014-05-15
+    slug: amazon-route-53-domains-2014-05-15-getdomaindetail
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://route53domains.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-route-53-domains-2014-05-15
+  url_pattern: /#GetDomainSuggestions
+  method: POST
+  encoding: json
+  host:
+  - http://route53domains.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: Amazon Route 53 API actions let you register domain names and perform
+      related operations.
+    version: 2014-05-15
+    slug: amazon-route-53-domains-2014-05-15-getdomainsuggestions
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://route53domains.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-route-53-domains-2014-05-15
+  url_pattern: /#GetOperationDetail
+  method: POST
+  encoding: json
+  host:
+  - http://route53domains.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: Amazon Route 53 API actions let you register domain names and perform
+      related operations.
+    version: 2014-05-15
+    slug: amazon-route-53-domains-2014-05-15-getoperationdetail
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://route53domains.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-route-53-domains-2014-05-15
+  url_pattern: /#ListDomains
+  method: POST
+  encoding: json
+  host:
+  - http://route53domains.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxItems
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: Amazon Route 53 API actions let you register domain names and perform
+      related operations.
+    version: 2014-05-15
+    slug: amazon-route-53-domains-2014-05-15-listdomains
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://route53domains.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-route-53-domains-2014-05-15
+  url_pattern: /#ListOperations
+  method: POST
+  encoding: json
+  host:
+  - http://route53domains.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxItems
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: Amazon Route 53 API actions let you register domain names and perform
+      related operations.
+    version: 2014-05-15
+    slug: amazon-route-53-domains-2014-05-15-listoperations
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://route53domains.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-route-53-domains-2014-05-15
+  url_pattern: /#ListTagsForDomain
+  method: POST
+  encoding: json
+  host:
+  - http://route53domains.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: Amazon Route 53 API actions let you register domain names and perform
+      related operations.
+    version: 2014-05-15
+    slug: amazon-route-53-domains-2014-05-15-listtagsfordomain
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://route53domains.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-route-53-domains-2014-05-15
+  url_pattern: /#RegisterDomain
+  method: POST
+  encoding: json
+  host:
+  - http://route53domains.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: Amazon Route 53 API actions let you register domain names and perform
+      related operations.
+    version: 2014-05-15
+    slug: amazon-route-53-domains-2014-05-15-registerdomain
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://route53domains.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-route-53-domains-2014-05-15
+  url_pattern: /#RenewDomain
+  method: POST
+  encoding: json
+  host:
+  - http://route53domains.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: Amazon Route 53 API actions let you register domain names and perform
+      related operations.
+    version: 2014-05-15
+    slug: amazon-route-53-domains-2014-05-15-renewdomain
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://route53domains.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-route-53-domains-2014-05-15
+  url_pattern: /#ResendContactReachabilityEmail
+  method: POST
+  encoding: json
+  host:
+  - http://route53domains.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: Amazon Route 53 API actions let you register domain names and perform
+      related operations.
+    version: 2014-05-15
+    slug: amazon-route-53-domains-2014-05-15-resendcontactreachabilityemail
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://route53domains.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-route-53-domains-2014-05-15
+  url_pattern: /#RetrieveDomainAuthCode
+  method: POST
+  encoding: json
+  host:
+  - http://route53domains.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: Amazon Route 53 API actions let you register domain names and perform
+      related operations.
+    version: 2014-05-15
+    slug: amazon-route-53-domains-2014-05-15-retrievedomainauthcode
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://route53domains.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-route-53-domains-2014-05-15
+  url_pattern: /#TransferDomain
+  method: POST
+  encoding: json
+  host:
+  - http://route53domains.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: Amazon Route 53 API actions let you register domain names and perform
+      related operations.
+    version: 2014-05-15
+    slug: amazon-route-53-domains-2014-05-15-transferdomain
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://route53domains.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-route-53-domains-2014-05-15
+  url_pattern: /#UpdateDomainContact
+  method: POST
+  encoding: json
+  host:
+  - http://route53domains.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: Amazon Route 53 API actions let you register domain names and perform
+      related operations.
+    version: 2014-05-15
+    slug: amazon-route-53-domains-2014-05-15-updatedomaincontact
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://route53domains.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-route-53-domains-2014-05-15
+  url_pattern: /#UpdateDomainContactPrivacy
+  method: POST
+  encoding: json
+  host:
+  - http://route53domains.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: Amazon Route 53 API actions let you register domain names and perform
+      related operations.
+    version: 2014-05-15
+    slug: amazon-route-53-domains-2014-05-15-updatedomaincontactprivacy
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://route53domains.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-route-53-domains-2014-05-15
+  url_pattern: /#UpdateDomainNameservers
+  method: POST
+  encoding: json
+  host:
+  - http://route53domains.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: Amazon Route 53 API actions let you register domain names and perform
+      related operations.
+    version: 2014-05-15
+    slug: amazon-route-53-domains-2014-05-15-updatedomainnameservers
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://route53domains.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-route-53-domains-2014-05-15
+  url_pattern: /#UpdateTagsForDomain
+  method: POST
+  encoding: json
+  host:
+  - http://route53domains.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: Amazon Route 53 API actions let you register domain names and perform
+      related operations.
+    version: 2014-05-15
+    slug: amazon-route-53-domains-2014-05-15-updatetagsfordomain
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://route53domains.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-route-53-domains-2014-05-15
+  url_pattern: /#ViewBilling
+  method: POST
+  encoding: json
+  host:
+  - http://route53domains.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: Amazon Route 53 API actions let you register domain names and perform
+      related operations.
+    version: 2014-05-15
+    slug: amazon-route-53-domains-2014-05-15-viewbilling
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://route53domains.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-route-53-domains-2014-05-15
+  url_pattern: /
+  method: POST
+  encoding: json
+  host:
+  - http://route53domains.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: Amazon Route 53 API actions let you register domain names and perform
+      related operations.
+    version: 2014-05-15
+    slug: amazon-route-53-domains-2014-05-15
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://route53domains.amazonaws.com
+    topics:
+    - cloud

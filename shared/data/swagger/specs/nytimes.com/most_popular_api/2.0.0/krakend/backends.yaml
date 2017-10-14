@@ -1,0 +1,76 @@
+backends:
+- group: most-popular-2-0-0
+  url_pattern: /svc/mostpopular/v2/mostemailed/{section}/{time-period}
+  method: JSON
+  encoding: json
+  host:
+  - https://api.nytimes.com
+  concurrent_calls: 1
+  extra_config:
+    provider: nytimes.com
+    description: Get lists of NYT Articles based on shares, emails, and views.
+    version: 2.0.0
+    slug: most-popular-2-0-0-svc-mostpopular-v2-mostemailed-section-time-period
+    schemes:
+    - http
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://api.nytimes.com
+    - https://api.nytimes.com
+    topics:
+    - media
+    - open-data
+- group: most-popular-2-0-0
+  url_pattern: /svc/mostpopular/v2/mostshared/{section}/{time-period}
+  method: JSON
+  encoding: json
+  host:
+  - https://api.nytimes.com
+  concurrent_calls: 1
+  extra_config:
+    provider: nytimes.com
+    description: Get lists of NYT Articles based on shares, emails, and views.
+    version: 2.0.0
+    slug: most-popular-2-0-0-svc-mostpopular-v2-mostshared-section-time-period
+    schemes:
+    - http
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://api.nytimes.com
+    - https://api.nytimes.com
+    topics:
+    - media
+    - open-data
+- group: most-popular-2-0-0
+  url_pattern: /svc/mostpopular/v2/mostviewed/{section}/{time-period}
+  method: JSON
+  encoding: json
+  host:
+  - https://api.nytimes.com
+  concurrent_calls: 1
+  extra_config:
+    provider: nytimes.com
+    description: Get lists of NYT Articles based on shares, emails, and views.
+    version: 2.0.0
+    slug: most-popular-2-0-0-svc-mostpopular-v2-mostviewed-section-time-period
+    schemes:
+    - http
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://api.nytimes.com
+    - https://api.nytimes.com
+    topics:
+    - media
+    - open-data

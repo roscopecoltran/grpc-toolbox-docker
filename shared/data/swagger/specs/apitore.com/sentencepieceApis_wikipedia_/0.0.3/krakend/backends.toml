@@ -1,0 +1,49 @@
+[[backends]]
+  group = "sentencepiece-apis-wikipedia-0-0-3"
+  url_pattern = "/api/37/sentencepiece-bpe-wiki/get"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.apitore.com"]
+  whitelist = ["endTime", "log", "processTime", "startTime", "tokens"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "apitore.com"
+    description = "SentencePiece tokenizer (wikipedia).<BR />[Endpoint] https://api.apitore.com/api/37"
+    version = "0.0.3"
+    slug = "sentencepiece-apis-wikipedia-0-0-3-api-37-sentencepiece-bpe-wiki-get"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.apitore.com"]
+    topics = ["text"]
+    [backends.extra_config.mapping]
+      endTime = "endTime"
+      log = "log"
+      processTime = "processTime"
+      startTime = "startTime"
+      tokens = "tokens"
+
+[[backends]]
+  group = "sentencepiece-apis-wikipedia-0-0-3"
+  url_pattern = "/api/37/sentencepiece-unigram-wiki/get"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.apitore.com"]
+  whitelist = ["endTime", "log", "processTime", "startTime", "tokens"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "apitore.com"
+    description = "SentencePiece tokenizer (wikipedia).<BR />[Endpoint] https://api.apitore.com/api/37"
+    version = "0.0.3"
+    slug = "sentencepiece-apis-wikipedia-0-0-3-api-37-sentencepiece-unigram-wiki-get"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.apitore.com"]
+    topics = ["text"]
+    [backends.extra_config.mapping]
+      endTime = "endTime"
+      log = "log"
+      processTime = "processTime"
+      startTime = "startTime"
+      tokens = "tokens"

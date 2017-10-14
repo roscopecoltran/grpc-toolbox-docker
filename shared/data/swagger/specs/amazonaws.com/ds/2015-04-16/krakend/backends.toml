@@ -1,0 +1,720 @@
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#AddTagsToResource"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-addtagstoresource"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#CancelSchemaExtension"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-cancelschemaextension"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#ConnectDirectory"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-connectdirectory"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#CreateAlias"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-createalias"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#CreateComputer"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-createcomputer"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#CreateConditionalForwarder"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-createconditionalforwarder"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#CreateDirectory"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-createdirectory"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#CreateMicrosoftAD"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-createmicrosoftad"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#CreateSnapshot"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-createsnapshot"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#CreateTrust"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-createtrust"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#DeleteConditionalForwarder"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-deleteconditionalforwarder"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#DeleteDirectory"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-deletedirectory"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#DeleteSnapshot"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-deletesnapshot"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#DeleteTrust"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-deletetrust"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#DeregisterEventTopic"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-deregistereventtopic"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#DescribeConditionalForwarders"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-describeconditionalforwarders"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#DescribeDirectories"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-describedirectories"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#DescribeDomainControllers"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  query_string_params = ["Limit", "NextToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-describedomaincontrollers"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#DescribeEventTopics"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-describeeventtopics"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#DescribeSnapshots"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-describesnapshots"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#DescribeTrusts"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-describetrusts"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#DisableRadius"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-disableradius"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#DisableSso"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-disablesso"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#EnableRadius"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-enableradius"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#EnableSso"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-enablesso"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#GetDirectoryLimits"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-getdirectorylimits"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#GetSnapshotLimits"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-getsnapshotlimits"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#ListIpRoutes"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-listiproutes"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#ListSchemaExtensions"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-listschemaextensions"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#ListTagsForResource"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-listtagsforresource"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#RegisterEventTopic"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-registereventtopic"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#RemoveIpRoutes"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-removeiproutes"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#RemoveTagsFromResource"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-removetagsfromresource"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#RestoreFromSnapshot"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-restorefromsnapshot"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#StartSchemaExtension"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-startschemaextension"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#UpdateConditionalForwarder"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-updateconditionalforwarder"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#UpdateNumberOfDomainControllers"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-updatenumberofdomaincontrollers"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#UpdateRadius"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-updateradius"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/#VerifyTrust"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16-verifytrust"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-directory-service-2015-04-16"
+  url_pattern = "/"
+  method = "POST"
+  encoding = "json"
+  host = ["http://ds.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Directory Service</fullname> <p>AWS Directory Service is a web service that makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. This guide provides detailed information about AWS Directory Service operations, data types, parameters, and errors. For information about AWS Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">AWS Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">AWS Directory Service Administration Guide</a>.</p> <note> <p>AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>"
+    version = "2015-04-16"
+    slug = "aws-directory-service-2015-04-16"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://ds.amazonaws.com"]
+    topics = ["cloud"]

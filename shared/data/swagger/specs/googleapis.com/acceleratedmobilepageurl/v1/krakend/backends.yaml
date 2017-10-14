@@ -1,0 +1,25 @@
+backends:
+- group: accelerated-mobile-pages-amp-url-v1
+  url_pattern: /v1/ampUrls:batchGet
+  method: POST
+  host:
+  - https://acceleratedmobilepageurl.googleapis.com
+  whitelist:
+  - ampUrls
+  - urlErrors
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: |
+      Retrieves the list of AMP URLs (and equivalent AMP Cache URLs) for a given list of public URL(s).
+    version: v1
+    slug: accelerated-mobile-pages-amp-url-v1-v1-ampurls-batchget
+    schemes:
+    - https
+    mapping:
+      ampUrls: ampUrls
+      urlErrors: urlErrors
+    hosts:
+    - https://acceleratedmobilepageurl.googleapis.com
+    topics:
+    - ampurls

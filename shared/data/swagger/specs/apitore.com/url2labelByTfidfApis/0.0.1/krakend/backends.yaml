@@ -1,0 +1,37 @@
+backends:
+- group: url2label-by-tfidf-apis-0-0-1
+  url_pattern: /api/20/url2label-tfidf/get
+  method: GET
+  encoding: json
+  host:
+  - https://api.apitore.com
+  whitelist:
+  - endTime
+  - input
+  - labels
+  - log
+  - num
+  - processTime
+  - startTime
+  concurrent_calls: 1
+  extra_config:
+    provider: apitore.com
+    description: Url to label by tfidf of contents.<BR />[Endpoint] https://api.apitore.com/api/20
+    version: 0.0.1
+    slug: url2label-by-tfidf-apis-0-0-1-api-20-url2label-tfidf-get
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      endTime: endTime
+      input: input
+      labels: labels
+      log: log
+      num: num
+      processTime: processTime
+      startTime: startTime
+    hosts:
+    - https://api.apitore.com

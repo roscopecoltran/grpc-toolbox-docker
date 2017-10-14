@@ -1,0 +1,129 @@
+[[backends]]
+  group = "google-service-control-v1"
+  url_pattern = "/v1/services/{serviceName}:allocateQuota"
+  method = "POST"
+  host = ["https://servicecontrol.googleapis.com"]
+  url_keys = ["serviceName"]
+  whitelist = ["allocateErrors", "operationId", "quotaMetrics", "serviceConfigId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Google Service Control provides control plane functionality to managed services, such as logging, monitoring, and status checks."
+    version = "v1"
+    slug = "google-service-control-v1-v1-services-servicename-allocatequota"
+    schemes = ["https"]
+    hosts = ["https://servicecontrol.googleapis.com"]
+    topics = ["services"]
+    [backends.extra_config.mapping]
+      allocateErrors = "allocateErrors"
+      operationId = "operationId"
+      quotaMetrics = "quotaMetrics"
+      serviceConfigId = "serviceConfigId"
+
+[[backends]]
+  group = "google-service-control-v1"
+  url_pattern = "/v1/services/{serviceName}:check"
+  method = "POST"
+  host = ["https://servicecontrol.googleapis.com"]
+  url_keys = ["serviceName"]
+  whitelist = ["checkErrors", "operationId", "serviceConfigId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Google Service Control provides control plane functionality to managed services, such as logging, monitoring, and status checks."
+    version = "v1"
+    slug = "google-service-control-v1-v1-services-servicename-check"
+    schemes = ["https"]
+    hosts = ["https://servicecontrol.googleapis.com"]
+    topics = ["services"]
+    [backends.extra_config.mapping]
+      checkErrors = "checkErrors"
+      operationId = "operationId"
+      serviceConfigId = "serviceConfigId"
+
+[[backends]]
+  group = "google-service-control-v1"
+  url_pattern = "/v1/services/{serviceName}:endReconciliation"
+  method = "POST"
+  host = ["https://servicecontrol.googleapis.com"]
+  url_keys = ["serviceName"]
+  whitelist = ["operationId", "quotaMetrics", "reconciliationErrors", "serviceConfigId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Google Service Control provides control plane functionality to managed services, such as logging, monitoring, and status checks."
+    version = "v1"
+    slug = "google-service-control-v1-v1-services-servicename-endreconciliation"
+    schemes = ["https"]
+    hosts = ["https://servicecontrol.googleapis.com"]
+    topics = ["services"]
+    [backends.extra_config.mapping]
+      operationId = "operationId"
+      quotaMetrics = "quotaMetrics"
+      reconciliationErrors = "reconciliationErrors"
+      serviceConfigId = "serviceConfigId"
+
+[[backends]]
+  group = "google-service-control-v1"
+  url_pattern = "/v1/services/{serviceName}:releaseQuota"
+  method = "POST"
+  host = ["https://servicecontrol.googleapis.com"]
+  url_keys = ["serviceName"]
+  whitelist = ["operationId", "quotaMetrics", "releaseErrors", "serviceConfigId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Google Service Control provides control plane functionality to managed services, such as logging, monitoring, and status checks."
+    version = "v1"
+    slug = "google-service-control-v1-v1-services-servicename-releasequota"
+    schemes = ["https"]
+    hosts = ["https://servicecontrol.googleapis.com"]
+    topics = ["services"]
+    [backends.extra_config.mapping]
+      operationId = "operationId"
+      quotaMetrics = "quotaMetrics"
+      releaseErrors = "releaseErrors"
+      serviceConfigId = "serviceConfigId"
+
+[[backends]]
+  group = "google-service-control-v1"
+  url_pattern = "/v1/services/{serviceName}:report"
+  method = "POST"
+  host = ["https://servicecontrol.googleapis.com"]
+  url_keys = ["serviceName"]
+  whitelist = ["reportErrors", "reportInfos", "serviceConfigId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Google Service Control provides control plane functionality to managed services, such as logging, monitoring, and status checks."
+    version = "v1"
+    slug = "google-service-control-v1-v1-services-servicename-report"
+    schemes = ["https"]
+    hosts = ["https://servicecontrol.googleapis.com"]
+    topics = ["services"]
+    [backends.extra_config.mapping]
+      reportErrors = "reportErrors"
+      reportInfos = "reportInfos"
+      serviceConfigId = "serviceConfigId"
+
+[[backends]]
+  group = "google-service-control-v1"
+  url_pattern = "/v1/services/{serviceName}:startReconciliation"
+  method = "POST"
+  host = ["https://servicecontrol.googleapis.com"]
+  url_keys = ["serviceName"]
+  whitelist = ["operationId", "quotaMetrics", "reconciliationErrors", "serviceConfigId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Google Service Control provides control plane functionality to managed services, such as logging, monitoring, and status checks."
+    version = "v1"
+    slug = "google-service-control-v1-v1-services-servicename-startreconciliation"
+    schemes = ["https"]
+    hosts = ["https://servicecontrol.googleapis.com"]
+    topics = ["services"]
+    [backends.extra_config.mapping]
+      operationId = "operationId"
+      quotaMetrics = "quotaMetrics"
+      reconciliationErrors = "reconciliationErrors"
+      serviceConfigId = "serviceConfigId"

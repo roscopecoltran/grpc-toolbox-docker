@@ -1,0 +1,89 @@
+[[backends]]
+  group = "tradeworks-1-0"
+  url_pattern = "/rest/strategies/strategyId/{strategyId}"
+  method = "GET"
+  host = ["http://devui.magick.nu"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "magick.nu"
+    description = "Authentication is required to access all methods of the API. Enter username and password.\n                Credentials are automatically set as you type."
+    version = "1.0"
+    slug = "tradeworks-1-0-rest-strategies-strategyid-strategyid"
+    schemes = ["http"]
+    hosts = ["http://devui.magick.nu"]
+    topics = ["financial"]
+
+[[backends]]
+  group = "tradeworks-1-0"
+  url_pattern = "/rest/strategies/templates"
+  method = "GET"
+  host = ["http://devui.magick.nu"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "magick.nu"
+    description = "Authentication is required to access all methods of the API. Enter username and password.\n                Credentials are automatically set as you type."
+    version = "1.0"
+    slug = "tradeworks-1-0-rest-strategies-templates"
+    schemes = ["http"]
+    hosts = ["http://devui.magick.nu"]
+    topics = ["financial"]
+
+[[backends]]
+  group = "tradeworks-1-0"
+  url_pattern = "/rest/tradingAccounts"
+  method = "POST"
+  host = ["http://devui.magick.nu"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "magick.nu"
+    description = "Authentication is required to access all methods of the API. Enter username and password.\n                Credentials are automatically set as you type."
+    version = "1.0"
+    slug = "tradeworks-1-0-rest-tradingaccounts"
+    schemes = ["http"]
+    hosts = ["http://devui.magick.nu"]
+    topics = ["financial"]
+
+[[backends]]
+  group = "tradeworks-1-0"
+  url_pattern = "/rest/users"
+  method = "POST"
+  host = ["http://devui.magick.nu"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "magick.nu"
+    description = "Authentication is required to access all methods of the API. Enter username and password.\n                Credentials are automatically set as you type."
+    version = "1.0"
+    slug = "tradeworks-1-0-rest-users"
+    schemes = ["http"]
+    hosts = ["http://devui.magick.nu"]
+    topics = ["financial"]
+
+[[backends]]
+  group = "tradeworks-1-0"
+  url_pattern = "/rest/users/email/{email}"
+  method = "GET"
+  host = ["http://devui.magick.nu"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "magick.nu"
+    description = "Authentication is required to access all methods of the API. Enter username and password.\n                Credentials are automatically set as you type."
+    version = "1.0"
+    slug = "tradeworks-1-0-rest-users-email-email"
+    schemes = ["http"]
+    hosts = ["http://devui.magick.nu"]
+    topics = ["financial"]
+
+[[backends]]
+  group = "tradeworks-1-0"
+  url_pattern = "/rest/users/username/{username}"
+  method = "GET"
+  host = ["http://devui.magick.nu"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "magick.nu"
+    description = "Authentication is required to access all methods of the API. Enter username and password.\n                Credentials are automatically set as you type."
+    version = "1.0"
+    slug = "tradeworks-1-0-rest-users-username-username"
+    schemes = ["http"]
+    hosts = ["http://devui.magick.nu"]
+    topics = ["financial"]

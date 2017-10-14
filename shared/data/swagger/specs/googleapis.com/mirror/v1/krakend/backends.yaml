@@ -1,0 +1,316 @@
+backends:
+- group: google-mirror-v1
+  url_pattern: /mirror/v1/accounts/{userToken}/{accountType}/{accountName}
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - authTokens
+  - features
+  - password
+  - userData
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Interacts with Glass users via the timeline.
+    version: v1
+    slug: google-mirror-v1-mirror-v1-accounts-usertoken-accounttype-accountname
+    schemes:
+    - https
+    mapping:
+      authTokens: authTokens
+      features: features
+      password: password
+      userData: userData
+    hosts:
+    - https://www.googleapis.com
+- group: google-mirror-v1
+  url_pattern: /mirror/v1/contacts
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - items
+  - kind
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Interacts with Glass users via the timeline.
+    version: v1
+    slug: google-mirror-v1-mirror-v1-contacts
+    schemes:
+    - https
+    mapping:
+      items: items
+      kind: kind
+    hosts:
+    - https://www.googleapis.com
+- group: google-mirror-v1
+  url_pattern: /mirror/v1/contacts/{id}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - acceptCommands
+  - acceptTypes
+  - displayName
+  - id
+  - imageUrls
+  - kind
+  - phoneNumber
+  - priority
+  - sharingFeatures
+  - source
+  - speakableName
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Interacts with Glass users via the timeline.
+    version: v1
+    slug: google-mirror-v1-mirror-v1-contacts-id
+    schemes:
+    - https
+    mapping:
+      acceptCommands: acceptCommands
+      acceptTypes: acceptTypes
+      displayName: displayName
+      id: id
+      imageUrls: imageUrls
+      kind: kind
+      phoneNumber: phoneNumber
+      priority: priority
+      sharingFeatures: sharingFeatures
+      source: source
+      speakableName: speakableName
+    hosts:
+    - https://www.googleapis.com
+- group: google-mirror-v1
+  url_pattern: /mirror/v1/locations
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - items
+  - kind
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Interacts with Glass users via the timeline.
+    version: v1
+    slug: google-mirror-v1-mirror-v1-locations
+    schemes:
+    - https
+    mapping:
+      items: items
+      kind: kind
+    hosts:
+    - https://www.googleapis.com
+- group: google-mirror-v1
+  url_pattern: /mirror/v1/locations/{id}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - accuracy
+  - address
+  - displayName
+  - id
+  - kind
+  - latitude
+  - longitude
+  - timestamp
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Interacts with Glass users via the timeline.
+    version: v1
+    slug: google-mirror-v1-mirror-v1-locations-id
+    schemes:
+    - https
+    mapping:
+      accuracy: accuracy
+      address: address
+      displayName: displayName
+      id: id
+      kind: kind
+      latitude: latitude
+      longitude: longitude
+      timestamp: timestamp
+    hosts:
+    - https://www.googleapis.com
+- group: google-mirror-v1
+  url_pattern: /mirror/v1/settings/{id}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - id
+  - kind
+  - value
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Interacts with Glass users via the timeline.
+    version: v1
+    slug: google-mirror-v1-mirror-v1-settings-id
+    schemes:
+    - https
+    mapping:
+      id: id
+      kind: kind
+      value: value
+    hosts:
+    - https://www.googleapis.com
+- group: google-mirror-v1
+  url_pattern: /mirror/v1/subscriptions
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - items
+  - kind
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Interacts with Glass users via the timeline.
+    version: v1
+    slug: google-mirror-v1-mirror-v1-subscriptions
+    schemes:
+    - https
+    mapping:
+      items: items
+      kind: kind
+    hosts:
+    - https://www.googleapis.com
+- group: google-mirror-v1
+  url_pattern: /mirror/v1/timeline
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - items
+  - kind
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Interacts with Glass users via the timeline.
+    version: v1
+    slug: google-mirror-v1-mirror-v1-timeline
+    schemes:
+    - https
+    mapping:
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+    hosts:
+    - https://www.googleapis.com
+- group: google-mirror-v1
+  url_pattern: /mirror/v1/timeline/{id}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - attachments
+  - bundleId
+  - canonicalUrl
+  - created
+  - displayTime
+  - etag
+  - html
+  - id
+  - inReplyTo
+  - isBundleCover
+  - isDeleted
+  - isPinned
+  - kind
+  - menuItems
+  - pinScore
+  - recipients
+  - selfLink
+  - sourceItemId
+  - speakableText
+  - speakableType
+  - text
+  - title
+  - updated
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Interacts with Glass users via the timeline.
+    version: v1
+    slug: google-mirror-v1-mirror-v1-timeline-id
+    schemes:
+    - https
+    mapping:
+      attachments: attachments
+      bundleId: bundleId
+      canonicalUrl: canonicalUrl
+      created: created
+      displayTime: displayTime
+      etag: etag
+      html: html
+      id: id
+      inReplyTo: inReplyTo
+      isBundleCover: isBundleCover
+      isDeleted: isDeleted
+      isPinned: isPinned
+      kind: kind
+      menuItems: menuItems
+      pinScore: pinScore
+      recipients: recipients
+      selfLink: selfLink
+      sourceItemId: sourceItemId
+      speakableText: speakableText
+      speakableType: speakableType
+      text: text
+      title: title
+      updated: updated
+    hosts:
+    - https://www.googleapis.com
+- group: google-mirror-v1
+  url_pattern: /mirror/v1/timeline/{itemId}/attachments
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - items
+  - kind
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Interacts with Glass users via the timeline.
+    version: v1
+    slug: google-mirror-v1-mirror-v1-timeline-itemid-attachments
+    schemes:
+    - https
+    mapping:
+      items: items
+      kind: kind
+    hosts:
+    - https://www.googleapis.com
+- group: google-mirror-v1
+  url_pattern: /mirror/v1/timeline/{itemId}/attachments/{attachmentId}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - contentType
+  - contentUrl
+  - id
+  - isProcessingContent
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Interacts with Glass users via the timeline.
+    version: v1
+    slug: google-mirror-v1-mirror-v1-timeline-itemid-attachments-attachmentid
+    schemes:
+    - https
+    mapping:
+      contentType: contentType
+      contentUrl: contentUrl
+      id: id
+      isProcessingContent: isProcessingContent
+    hosts:
+    - https://www.googleapis.com

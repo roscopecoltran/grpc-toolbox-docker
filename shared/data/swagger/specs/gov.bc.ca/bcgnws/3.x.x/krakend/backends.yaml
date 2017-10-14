@@ -1,0 +1,379 @@
+backends:
+- group: bc-geographical-names-web-service-3-x-x
+  url_pattern: /pub/bcgnws/featureCategories
+  method: GET
+  encoding: json
+  host:
+  - https://apps.gov.bc.ca
+  concurrent_calls: 1
+  extra_config:
+    provider: gov.bc.ca
+    description: This REST API provides searchable access to information about geographical
+      names in the province of British Columbia, including name status and details
+      about the corresponding geographic feature.
+    version: 3.x.x
+    slug: bc-geographical-names-web-service-3-x-x-pub-bcgnws-featurecategories
+    schemes:
+    - https
+    - http
+    produces:
+    - json
+    - vnd.google-earth.kml+xml
+    - xml
+    - csv
+    hosts:
+    - https://apps.gov.bc.ca
+    - http://apps.gov.bc.ca
+    topics:
+    - open-data
+- group: bc-geographical-names-web-service-3-x-x
+  url_pattern: /pub/bcgnws/featureClasses
+  method: GET
+  encoding: json
+  host:
+  - https://apps.gov.bc.ca
+  concurrent_calls: 1
+  extra_config:
+    provider: gov.bc.ca
+    description: This REST API provides searchable access to information about geographical
+      names in the province of British Columbia, including name status and details
+      about the corresponding geographic feature.
+    version: 3.x.x
+    slug: bc-geographical-names-web-service-3-x-x-pub-bcgnws-featureclasses
+    schemes:
+    - https
+    - http
+    produces:
+    - json
+    - vnd.google-earth.kml+xml
+    - xml
+    - csv
+    hosts:
+    - https://apps.gov.bc.ca
+    - http://apps.gov.bc.ca
+    topics:
+    - open-data
+- group: bc-geographical-names-web-service-3-x-x
+  url_pattern: /pub/bcgnws/featureTypes
+  method: GET
+  encoding: json
+  host:
+  - https://apps.gov.bc.ca
+  concurrent_calls: 1
+  extra_config:
+    provider: gov.bc.ca
+    description: This REST API provides searchable access to information about geographical
+      names in the province of British Columbia, including name status and details
+      about the corresponding geographic feature.
+    version: 3.x.x
+    slug: bc-geographical-names-web-service-3-x-x-pub-bcgnws-featuretypes
+    schemes:
+    - https
+    - http
+    produces:
+    - json
+    - vnd.google-earth.kml+xml
+    - xml
+    - csv
+    hosts:
+    - https://apps.gov.bc.ca
+    - http://apps.gov.bc.ca
+    topics:
+    - open-data
+- group: bc-geographical-names-web-service-3-x-x
+  url_pattern: /pub/bcgnws/features/{featureId}
+  method: GET
+  encoding: json
+  host:
+  - https://apps.gov.bc.ca
+  concurrent_calls: 1
+  extra_config:
+    provider: gov.bc.ca
+    description: This REST API provides searchable access to information about geographical
+      names in the province of British Columbia, including name status and details
+      about the corresponding geographic feature.
+    version: 3.x.x
+    slug: bc-geographical-names-web-service-3-x-x-pub-bcgnws-features-featureid
+    schemes:
+    - https
+    - http
+    produces:
+    - json
+    - vnd.google-earth.kml+xml
+    - xml
+    - csv
+    hosts:
+    - https://apps.gov.bc.ca
+    - http://apps.gov.bc.ca
+    topics:
+    - open-data
+- group: bc-geographical-names-web-service-3-x-x
+  url_pattern: /pub/bcgnws/nameAuthorities
+  method: GET
+  encoding: json
+  host:
+  - https://apps.gov.bc.ca
+  concurrent_calls: 1
+  extra_config:
+    provider: gov.bc.ca
+    description: This REST API provides searchable access to information about geographical
+      names in the province of British Columbia, including name status and details
+      about the corresponding geographic feature.
+    version: 3.x.x
+    slug: bc-geographical-names-web-service-3-x-x-pub-bcgnws-nameauthorities
+    schemes:
+    - https
+    - http
+    produces:
+    - json
+    - vnd.google-earth.kml+xml
+    - xml
+    - csv
+    hosts:
+    - https://apps.gov.bc.ca
+    - http://apps.gov.bc.ca
+    topics:
+    - open-data
+- group: bc-geographical-names-web-service-3-x-x
+  url_pattern: /pub/bcgnws/names/changes
+  method: GET
+  encoding: json
+  host:
+  - https://apps.gov.bc.ca
+  concurrent_calls: 1
+  extra_config:
+    provider: gov.bc.ca
+    description: This REST API provides searchable access to information about geographical
+      names in the province of British Columbia, including name status and details
+      about the corresponding geographic feature.
+    version: 3.x.x
+    slug: bc-geographical-names-web-service-3-x-x-pub-bcgnws-names-changes
+    schemes:
+    - https
+    - http
+    produces:
+    - json
+    - vnd.google-earth.kml+xml
+    - xml
+    - csv
+    hosts:
+    - https://apps.gov.bc.ca
+    - http://apps.gov.bc.ca
+    topics:
+    - open-data
+- group: bc-geographical-names-web-service-3-x-x
+  url_pattern: /pub/bcgnws/names/decisions/recent
+  method: GET
+  encoding: json
+  host:
+  - https://apps.gov.bc.ca
+  concurrent_calls: 1
+  extra_config:
+    provider: gov.bc.ca
+    description: This REST API provides searchable access to information about geographical
+      names in the province of British Columbia, including name status and details
+      about the corresponding geographic feature.
+    version: 3.x.x
+    slug: bc-geographical-names-web-service-3-x-x-pub-bcgnws-names-decisions-recent
+    schemes:
+    - https
+    - http
+    produces:
+    - json
+    - vnd.google-earth.kml+xml
+    - xml
+    - csv
+    hosts:
+    - https://apps.gov.bc.ca
+    - http://apps.gov.bc.ca
+    topics:
+    - open-data
+- group: bc-geographical-names-web-service-3-x-x
+  url_pattern: /pub/bcgnws/names/decisions/year
+  method: GET
+  encoding: json
+  host:
+  - https://apps.gov.bc.ca
+  concurrent_calls: 1
+  extra_config:
+    provider: gov.bc.ca
+    description: This REST API provides searchable access to information about geographical
+      names in the province of British Columbia, including name status and details
+      about the corresponding geographic feature.
+    version: 3.x.x
+    slug: bc-geographical-names-web-service-3-x-x-pub-bcgnws-names-decisions-year
+    schemes:
+    - https
+    - http
+    produces:
+    - json
+    - vnd.google-earth.kml+xml
+    - xml
+    - csv
+    hosts:
+    - https://apps.gov.bc.ca
+    - http://apps.gov.bc.ca
+    topics:
+    - open-data
+- group: bc-geographical-names-web-service-3-x-x
+  url_pattern: /pub/bcgnws/names/inside
+  method: GET
+  encoding: json
+  host:
+  - https://apps.gov.bc.ca
+  concurrent_calls: 1
+  extra_config:
+    provider: gov.bc.ca
+    description: This REST API provides searchable access to information about geographical
+      names in the province of British Columbia, including name status and details
+      about the corresponding geographic feature.
+    version: 3.x.x
+    slug: bc-geographical-names-web-service-3-x-x-pub-bcgnws-names-inside
+    schemes:
+    - https
+    - http
+    produces:
+    - json
+    - vnd.google-earth.kml+xml
+    - xml
+    - csv
+    hosts:
+    - https://apps.gov.bc.ca
+    - http://apps.gov.bc.ca
+    topics:
+    - open-data
+- group: bc-geographical-names-web-service-3-x-x
+  url_pattern: /pub/bcgnws/names/near
+  method: GET
+  encoding: json
+  host:
+  - https://apps.gov.bc.ca
+  concurrent_calls: 1
+  extra_config:
+    provider: gov.bc.ca
+    description: This REST API provides searchable access to information about geographical
+      names in the province of British Columbia, including name status and details
+      about the corresponding geographic feature.
+    version: 3.x.x
+    slug: bc-geographical-names-web-service-3-x-x-pub-bcgnws-names-near
+    schemes:
+    - https
+    - http
+    produces:
+    - json
+    - vnd.google-earth.kml+xml
+    - xml
+    - csv
+    hosts:
+    - https://apps.gov.bc.ca
+    - http://apps.gov.bc.ca
+    topics:
+    - open-data
+- group: bc-geographical-names-web-service-3-x-x
+  url_pattern: /pub/bcgnws/names/notOfficial/search
+  method: GET
+  encoding: json
+  host:
+  - https://apps.gov.bc.ca
+  concurrent_calls: 1
+  extra_config:
+    provider: gov.bc.ca
+    description: This REST API provides searchable access to information about geographical
+      names in the province of British Columbia, including name status and details
+      about the corresponding geographic feature.
+    version: 3.x.x
+    slug: bc-geographical-names-web-service-3-x-x-pub-bcgnws-names-notofficial-search
+    schemes:
+    - https
+    - http
+    produces:
+    - json
+    - vnd.google-earth.kml+xml
+    - xml
+    - csv
+    hosts:
+    - https://apps.gov.bc.ca
+    - http://apps.gov.bc.ca
+    topics:
+    - open-data
+- group: bc-geographical-names-web-service-3-x-x
+  url_pattern: /pub/bcgnws/names/official/search
+  method: GET
+  encoding: json
+  host:
+  - https://apps.gov.bc.ca
+  concurrent_calls: 1
+  extra_config:
+    provider: gov.bc.ca
+    description: This REST API provides searchable access to information about geographical
+      names in the province of British Columbia, including name status and details
+      about the corresponding geographic feature.
+    version: 3.x.x
+    slug: bc-geographical-names-web-service-3-x-x-pub-bcgnws-names-official-search
+    schemes:
+    - https
+    - http
+    produces:
+    - json
+    - vnd.google-earth.kml+xml
+    - xml
+    - csv
+    hosts:
+    - https://apps.gov.bc.ca
+    - http://apps.gov.bc.ca
+    topics:
+    - open-data
+- group: bc-geographical-names-web-service-3-x-x
+  url_pattern: /pub/bcgnws/names/search
+  method: GET
+  encoding: json
+  host:
+  - https://apps.gov.bc.ca
+  concurrent_calls: 1
+  extra_config:
+    provider: gov.bc.ca
+    description: This REST API provides searchable access to information about geographical
+      names in the province of British Columbia, including name status and details
+      about the corresponding geographic feature.
+    version: 3.x.x
+    slug: bc-geographical-names-web-service-3-x-x-pub-bcgnws-names-search
+    schemes:
+    - https
+    - http
+    produces:
+    - json
+    - vnd.google-earth.kml+xml
+    - xml
+    - csv
+    hosts:
+    - https://apps.gov.bc.ca
+    - http://apps.gov.bc.ca
+    topics:
+    - open-data
+- group: bc-geographical-names-web-service-3-x-x
+  url_pattern: /pub/bcgnws/names/{nameId}
+  method: '{OUTPUTFORMAT}'
+  encoding: json
+  host:
+  - https://apps.gov.bc.ca
+  concurrent_calls: 1
+  extra_config:
+    provider: gov.bc.ca
+    description: This REST API provides searchable access to information about geographical
+      names in the province of British Columbia, including name status and details
+      about the corresponding geographic feature.
+    version: 3.x.x
+    slug: bc-geographical-names-web-service-3-x-x-pub-bcgnws-names-nameid
+    schemes:
+    - https
+    - http
+    produces:
+    - json
+    - vnd.google-earth.kml+xml
+    - xml
+    - csv
+    hosts:
+    - https://apps.gov.bc.ca
+    - http://apps.gov.bc.ca
+    topics:
+    - open-data

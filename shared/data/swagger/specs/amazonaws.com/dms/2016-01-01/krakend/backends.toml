@@ -1,0 +1,731 @@
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#CreateEndpoint"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-createendpoint"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#CreateEventSubscription"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-createeventsubscription"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#CreateReplicationInstance"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-createreplicationinstance"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#CreateReplicationSubnetGroup"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-createreplicationsubnetgroup"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#CreateReplicationTask"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-createreplicationtask"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#DeleteCertificate"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-deletecertificate"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#DeleteEndpoint"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-deleteendpoint"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#DeleteEventSubscription"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-deleteeventsubscription"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#DeleteReplicationInstance"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-deletereplicationinstance"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#DeleteReplicationSubnetGroup"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-deletereplicationsubnetgroup"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#DeleteReplicationTask"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-deletereplicationtask"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#DescribeAccountAttributes"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-describeaccountattributes"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#DescribeCertificates"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  query_string_params = ["Marker", "MaxRecords"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-describecertificates"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#DescribeConnections"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  query_string_params = ["Marker", "MaxRecords"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-describeconnections"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#DescribeEndpointTypes"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  query_string_params = ["Marker", "MaxRecords"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-describeendpointtypes"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#DescribeEndpoints"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  query_string_params = ["Marker", "MaxRecords"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-describeendpoints"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#DescribeEventCategories"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-describeeventcategories"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#DescribeEventSubscriptions"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  query_string_params = ["Marker", "MaxRecords"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-describeeventsubscriptions"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#DescribeEvents"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  query_string_params = ["Marker", "MaxRecords"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-describeevents"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#DescribeOrderableReplicationInstances"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  query_string_params = ["Marker", "MaxRecords"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-describeorderablereplicationinstances"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#DescribeRefreshSchemasStatus"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-describerefreshschemasstatus"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#DescribeReplicationInstances"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  query_string_params = ["Marker", "MaxRecords"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-describereplicationinstances"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#DescribeReplicationSubnetGroups"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  query_string_params = ["Marker", "MaxRecords"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-describereplicationsubnetgroups"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#DescribeReplicationTasks"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  query_string_params = ["Marker", "MaxRecords"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-describereplicationtasks"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#DescribeSchemas"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  query_string_params = ["Marker", "MaxRecords"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-describeschemas"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#DescribeTableStatistics"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  query_string_params = ["Marker", "MaxRecords"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-describetablestatistics"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#ImportCertificate"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-importcertificate"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#ListTagsForResource"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-listtagsforresource"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#ModifyEndpoint"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-modifyendpoint"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#ModifyEventSubscription"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-modifyeventsubscription"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#ModifyReplicationInstance"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-modifyreplicationinstance"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#ModifyReplicationSubnetGroup"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-modifyreplicationsubnetgroup"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#ModifyReplicationTask"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-modifyreplicationtask"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#RefreshSchemas"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-refreshschemas"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#ReloadTables"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-reloadtables"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#RemoveTagsFromResource"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-removetagsfromresource"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#StartReplicationTask"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-startreplicationtask"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#StopReplicationTask"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-stopreplicationtask"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/#TestConnection"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01-testconnection"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-database-migration-service-2016-01-01"
+  url_pattern = "/"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dms.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Database Migration Service</fullname> <p>AWS Database Migration Service (AWS DMS) can migrate your data to and from the most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server Enterprise (ASE). The service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to MySQL or SQL Server to PostgreSQL.</p> <p>For more information about AWS DMS, see the AWS DMS user guide at <a href=\"http://docs.aws.amazon.com/dms/latest/userguide/Welcome.html\"> What Is AWS Database Migration Service? </a> </p>"
+    version = "2016-01-01"
+    slug = "aws-database-migration-service-2016-01-01"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dms.amazonaws.com"]
+    topics = ["cloud"]

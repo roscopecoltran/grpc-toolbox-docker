@@ -1,0 +1,54 @@
+[[backends]]
+  group = "google-site-verification-v1"
+  url_pattern = "/siteVerification/v1/token"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["method", "token"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Verifies ownership of websites or domains with Google."
+    version = "v1"
+    slug = "google-site-verification-v1-siteverification-v1-token"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      method = "method"
+      token = "token"
+
+[[backends]]
+  group = "google-site-verification-v1"
+  url_pattern = "/siteVerification/v1/webResource"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["items"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Verifies ownership of websites or domains with Google."
+    version = "v1"
+    slug = "google-site-verification-v1-siteverification-v1-webresource"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      items = "items"
+
+[[backends]]
+  group = "google-site-verification-v1"
+  url_pattern = "/siteVerification/v1/webResource/{id}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["id", "owners", "site", "site.identifier"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Verifies ownership of websites or domains with Google."
+    version = "v1"
+    slug = "google-site-verification-v1-siteverification-v1-webresource-id"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      id = "id"
+      identifier = "identifier"
+      owners = "owners"
+      site = "site"

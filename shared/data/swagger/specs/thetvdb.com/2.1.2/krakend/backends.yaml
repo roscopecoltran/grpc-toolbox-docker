@@ -1,0 +1,1728 @@
+backends:
+- group: thetvdb-api-v2-2-1-2
+  url_pattern: /episodes/{id}
+  method: GET
+  encoding: json
+  host:
+  - https://api-dev.thetvdb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: thetvdb.com
+    description: |-
+      API v2 targets v1 functionality with a few minor additions. The API is accessible via https://api.thetvdb.com and provides the following REST endpoints in JSON format.
+
+
+      How to use this API documentation
+      ----------------
+
+
+      You may browse the API routes without authentication, but if you wish to send requests to the API and see response data, then you must authenticate.
+      1. Obtain a JWT token by `POST`ing  to the `/login` route in the `Authentication` section with your API key and credentials.
+      1. Paste the JWT token from the response into the "JWT Token" field at the top of the page and click the 'Add Token' button.
+
+
+      You will now be able to use the remaining routes to send requests to the API and get a response.
+
+
+      Language Selection
+      ----------------
+
+
+      Language selection is done via the `Accept-Language` header. At the moment, you may only pass one language abbreviation in the header at a time. Valid language abbreviations can be found at the `/languages` route..
+
+
+      Authentication
+      ----------------
+
+
+      Authentication to use the API is similar to the How-to section above. Users must `POST` to the `/login` route with their API key and credentials in the following format in order to obtain a JWT token.
+
+      `{"apikey":"APIKEY","username":"USERNAME","userkey":"USERKEY"}`
+
+      Note that the username and key are ONLY required for the `/user` routes. The user's key is labled `Account Identifier` in the account section of the main site.
+      The token is then used in all subsequent requests by providing it in the `Authorization` header. The header will look like: `Authorization: Bearer <yourJWTtoken>`. Currently, the token expires after 24 hours. You can `GET` the `/refresh_token` route to extend that expiration date.
+
+
+      Versioning
+      ----------------
+
+
+      You may request a different version of the API by including an `Accept` header in your request with the following format: `Accept:application/vnd.thetvdb.v$VERSION`. This documentation automatically uses the version seen at the top and bottom of the page.
+    version: 2.1.2
+    slug: thetvdb-api-v2-2-1-2-episodes-id
+    schemes:
+    - https
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api-dev.thetvdb.com
+    - http://api-dev.thetvdb.com
+    topics:
+    - episodes
+    - media
+    - open-data
+- group: thetvdb-api-v2-2-1-2
+  url_pattern: /languages
+  method: GET
+  encoding: json
+  host:
+  - https://api-dev.thetvdb.com
+  whitelist:
+  - data
+  concurrent_calls: 1
+  extra_config:
+    provider: thetvdb.com
+    description: |-
+      API v2 targets v1 functionality with a few minor additions. The API is accessible via https://api.thetvdb.com and provides the following REST endpoints in JSON format.
+
+
+      How to use this API documentation
+      ----------------
+
+
+      You may browse the API routes without authentication, but if you wish to send requests to the API and see response data, then you must authenticate.
+      1. Obtain a JWT token by `POST`ing  to the `/login` route in the `Authentication` section with your API key and credentials.
+      1. Paste the JWT token from the response into the "JWT Token" field at the top of the page and click the 'Add Token' button.
+
+
+      You will now be able to use the remaining routes to send requests to the API and get a response.
+
+
+      Language Selection
+      ----------------
+
+
+      Language selection is done via the `Accept-Language` header. At the moment, you may only pass one language abbreviation in the header at a time. Valid language abbreviations can be found at the `/languages` route..
+
+
+      Authentication
+      ----------------
+
+
+      Authentication to use the API is similar to the How-to section above. Users must `POST` to the `/login` route with their API key and credentials in the following format in order to obtain a JWT token.
+
+      `{"apikey":"APIKEY","username":"USERNAME","userkey":"USERKEY"}`
+
+      Note that the username and key are ONLY required for the `/user` routes. The user's key is labled `Account Identifier` in the account section of the main site.
+      The token is then used in all subsequent requests by providing it in the `Authorization` header. The header will look like: `Authorization: Bearer <yourJWTtoken>`. Currently, the token expires after 24 hours. You can `GET` the `/refresh_token` route to extend that expiration date.
+
+
+      Versioning
+      ----------------
+
+
+      You may request a different version of the API by including an `Accept` header in your request with the following format: `Accept:application/vnd.thetvdb.v$VERSION`. This documentation automatically uses the version seen at the top and bottom of the page.
+    version: 2.1.2
+    slug: thetvdb-api-v2-2-1-2-languages
+    schemes:
+    - https
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      data: data
+    hosts:
+    - https://api-dev.thetvdb.com
+    - http://api-dev.thetvdb.com
+    topics:
+    - languages
+    - media
+    - open-data
+- group: thetvdb-api-v2-2-1-2
+  url_pattern: /languages/{id}
+  method: GET
+  encoding: json
+  host:
+  - https://api-dev.thetvdb.com
+  whitelist:
+  - abbreviation
+  - englishName
+  - id
+  - name
+  concurrent_calls: 1
+  extra_config:
+    provider: thetvdb.com
+    description: |-
+      API v2 targets v1 functionality with a few minor additions. The API is accessible via https://api.thetvdb.com and provides the following REST endpoints in JSON format.
+
+
+      How to use this API documentation
+      ----------------
+
+
+      You may browse the API routes without authentication, but if you wish to send requests to the API and see response data, then you must authenticate.
+      1. Obtain a JWT token by `POST`ing  to the `/login` route in the `Authentication` section with your API key and credentials.
+      1. Paste the JWT token from the response into the "JWT Token" field at the top of the page and click the 'Add Token' button.
+
+
+      You will now be able to use the remaining routes to send requests to the API and get a response.
+
+
+      Language Selection
+      ----------------
+
+
+      Language selection is done via the `Accept-Language` header. At the moment, you may only pass one language abbreviation in the header at a time. Valid language abbreviations can be found at the `/languages` route..
+
+
+      Authentication
+      ----------------
+
+
+      Authentication to use the API is similar to the How-to section above. Users must `POST` to the `/login` route with their API key and credentials in the following format in order to obtain a JWT token.
+
+      `{"apikey":"APIKEY","username":"USERNAME","userkey":"USERKEY"}`
+
+      Note that the username and key are ONLY required for the `/user` routes. The user's key is labled `Account Identifier` in the account section of the main site.
+      The token is then used in all subsequent requests by providing it in the `Authorization` header. The header will look like: `Authorization: Bearer <yourJWTtoken>`. Currently, the token expires after 24 hours. You can `GET` the `/refresh_token` route to extend that expiration date.
+
+
+      Versioning
+      ----------------
+
+
+      You may request a different version of the API by including an `Accept` header in your request with the following format: `Accept:application/vnd.thetvdb.v$VERSION`. This documentation automatically uses the version seen at the top and bottom of the page.
+    version: 2.1.2
+    slug: thetvdb-api-v2-2-1-2-languages-id
+    schemes:
+    - https
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      abbreviation: abbreviation
+      englishName: englishName
+      id: id
+      name: name
+    hosts:
+    - https://api-dev.thetvdb.com
+    - http://api-dev.thetvdb.com
+    topics:
+    - languages
+    - media
+    - open-data
+- group: thetvdb-api-v2-2-1-2
+  url_pattern: /login
+  method: POST
+  encoding: json
+  host:
+  - https://api-dev.thetvdb.com
+  whitelist:
+  - token
+  concurrent_calls: 1
+  extra_config:
+    provider: thetvdb.com
+    description: |-
+      API v2 targets v1 functionality with a few minor additions. The API is accessible via https://api.thetvdb.com and provides the following REST endpoints in JSON format.
+
+
+      How to use this API documentation
+      ----------------
+
+
+      You may browse the API routes without authentication, but if you wish to send requests to the API and see response data, then you must authenticate.
+      1. Obtain a JWT token by `POST`ing  to the `/login` route in the `Authentication` section with your API key and credentials.
+      1. Paste the JWT token from the response into the "JWT Token" field at the top of the page and click the 'Add Token' button.
+
+
+      You will now be able to use the remaining routes to send requests to the API and get a response.
+
+
+      Language Selection
+      ----------------
+
+
+      Language selection is done via the `Accept-Language` header. At the moment, you may only pass one language abbreviation in the header at a time. Valid language abbreviations can be found at the `/languages` route..
+
+
+      Authentication
+      ----------------
+
+
+      Authentication to use the API is similar to the How-to section above. Users must `POST` to the `/login` route with their API key and credentials in the following format in order to obtain a JWT token.
+
+      `{"apikey":"APIKEY","username":"USERNAME","userkey":"USERKEY"}`
+
+      Note that the username and key are ONLY required for the `/user` routes. The user's key is labled `Account Identifier` in the account section of the main site.
+      The token is then used in all subsequent requests by providing it in the `Authorization` header. The header will look like: `Authorization: Bearer <yourJWTtoken>`. Currently, the token expires after 24 hours. You can `GET` the `/refresh_token` route to extend that expiration date.
+
+
+      Versioning
+      ----------------
+
+
+      You may request a different version of the API by including an `Accept` header in your request with the following format: `Accept:application/vnd.thetvdb.v$VERSION`. This documentation automatically uses the version seen at the top and bottom of the page.
+    version: 2.1.2
+    slug: thetvdb-api-v2-2-1-2-login
+    schemes:
+    - https
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      token: token
+    hosts:
+    - https://api-dev.thetvdb.com
+    - http://api-dev.thetvdb.com
+    topics:
+    - authentication
+    - media
+    - open-data
+- group: thetvdb-api-v2-2-1-2
+  url_pattern: /refresh_token
+  method: GET
+  encoding: json
+  host:
+  - https://api-dev.thetvdb.com
+  whitelist:
+  - token
+  concurrent_calls: 1
+  extra_config:
+    provider: thetvdb.com
+    description: |-
+      API v2 targets v1 functionality with a few minor additions. The API is accessible via https://api.thetvdb.com and provides the following REST endpoints in JSON format.
+
+
+      How to use this API documentation
+      ----------------
+
+
+      You may browse the API routes without authentication, but if you wish to send requests to the API and see response data, then you must authenticate.
+      1. Obtain a JWT token by `POST`ing  to the `/login` route in the `Authentication` section with your API key and credentials.
+      1. Paste the JWT token from the response into the "JWT Token" field at the top of the page and click the 'Add Token' button.
+
+
+      You will now be able to use the remaining routes to send requests to the API and get a response.
+
+
+      Language Selection
+      ----------------
+
+
+      Language selection is done via the `Accept-Language` header. At the moment, you may only pass one language abbreviation in the header at a time. Valid language abbreviations can be found at the `/languages` route..
+
+
+      Authentication
+      ----------------
+
+
+      Authentication to use the API is similar to the How-to section above. Users must `POST` to the `/login` route with their API key and credentials in the following format in order to obtain a JWT token.
+
+      `{"apikey":"APIKEY","username":"USERNAME","userkey":"USERKEY"}`
+
+      Note that the username and key are ONLY required for the `/user` routes. The user's key is labled `Account Identifier` in the account section of the main site.
+      The token is then used in all subsequent requests by providing it in the `Authorization` header. The header will look like: `Authorization: Bearer <yourJWTtoken>`. Currently, the token expires after 24 hours. You can `GET` the `/refresh_token` route to extend that expiration date.
+
+
+      Versioning
+      ----------------
+
+
+      You may request a different version of the API by including an `Accept` header in your request with the following format: `Accept:application/vnd.thetvdb.v$VERSION`. This documentation automatically uses the version seen at the top and bottom of the page.
+    version: 2.1.2
+    slug: thetvdb-api-v2-2-1-2-refresh-token
+    schemes:
+    - https
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      token: token
+    hosts:
+    - https://api-dev.thetvdb.com
+    - http://api-dev.thetvdb.com
+    topics:
+    - authentication
+    - media
+    - open-data
+- group: thetvdb-api-v2-2-1-2
+  url_pattern: /search/series
+  method: GET
+  encoding: json
+  host:
+  - https://api-dev.thetvdb.com
+  whitelist:
+  - aliases
+  - banner
+  - firstAired
+  - id
+  - network
+  - overview
+  - seriesName
+  - status
+  concurrent_calls: 1
+  extra_config:
+    provider: thetvdb.com
+    description: |-
+      API v2 targets v1 functionality with a few minor additions. The API is accessible via https://api.thetvdb.com and provides the following REST endpoints in JSON format.
+
+
+      How to use this API documentation
+      ----------------
+
+
+      You may browse the API routes without authentication, but if you wish to send requests to the API and see response data, then you must authenticate.
+      1. Obtain a JWT token by `POST`ing  to the `/login` route in the `Authentication` section with your API key and credentials.
+      1. Paste the JWT token from the response into the "JWT Token" field at the top of the page and click the 'Add Token' button.
+
+
+      You will now be able to use the remaining routes to send requests to the API and get a response.
+
+
+      Language Selection
+      ----------------
+
+
+      Language selection is done via the `Accept-Language` header. At the moment, you may only pass one language abbreviation in the header at a time. Valid language abbreviations can be found at the `/languages` route..
+
+
+      Authentication
+      ----------------
+
+
+      Authentication to use the API is similar to the How-to section above. Users must `POST` to the `/login` route with their API key and credentials in the following format in order to obtain a JWT token.
+
+      `{"apikey":"APIKEY","username":"USERNAME","userkey":"USERKEY"}`
+
+      Note that the username and key are ONLY required for the `/user` routes. The user's key is labled `Account Identifier` in the account section of the main site.
+      The token is then used in all subsequent requests by providing it in the `Authorization` header. The header will look like: `Authorization: Bearer <yourJWTtoken>`. Currently, the token expires after 24 hours. You can `GET` the `/refresh_token` route to extend that expiration date.
+
+
+      Versioning
+      ----------------
+
+
+      You may request a different version of the API by including an `Accept` header in your request with the following format: `Accept:application/vnd.thetvdb.v$VERSION`. This documentation automatically uses the version seen at the top and bottom of the page.
+    version: 2.1.2
+    slug: thetvdb-api-v2-2-1-2-search-series
+    schemes:
+    - https
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      aliases: aliases
+      banner: banner
+      firstAired: firstAired
+      id: id
+      network: network
+      overview: overview
+      seriesName: seriesName
+      status: status
+    hosts:
+    - https://api-dev.thetvdb.com
+    - http://api-dev.thetvdb.com
+    topics:
+    - media
+    - open-data
+    - search
+- group: thetvdb-api-v2-2-1-2
+  url_pattern: /search/series/params
+  method: GET
+  encoding: json
+  host:
+  - https://api-dev.thetvdb.com
+  whitelist:
+  - data
+  concurrent_calls: 1
+  extra_config:
+    provider: thetvdb.com
+    description: |-
+      API v2 targets v1 functionality with a few minor additions. The API is accessible via https://api.thetvdb.com and provides the following REST endpoints in JSON format.
+
+
+      How to use this API documentation
+      ----------------
+
+
+      You may browse the API routes without authentication, but if you wish to send requests to the API and see response data, then you must authenticate.
+      1. Obtain a JWT token by `POST`ing  to the `/login` route in the `Authentication` section with your API key and credentials.
+      1. Paste the JWT token from the response into the "JWT Token" field at the top of the page and click the 'Add Token' button.
+
+
+      You will now be able to use the remaining routes to send requests to the API and get a response.
+
+
+      Language Selection
+      ----------------
+
+
+      Language selection is done via the `Accept-Language` header. At the moment, you may only pass one language abbreviation in the header at a time. Valid language abbreviations can be found at the `/languages` route..
+
+
+      Authentication
+      ----------------
+
+
+      Authentication to use the API is similar to the How-to section above. Users must `POST` to the `/login` route with their API key and credentials in the following format in order to obtain a JWT token.
+
+      `{"apikey":"APIKEY","username":"USERNAME","userkey":"USERKEY"}`
+
+      Note that the username and key are ONLY required for the `/user` routes. The user's key is labled `Account Identifier` in the account section of the main site.
+      The token is then used in all subsequent requests by providing it in the `Authorization` header. The header will look like: `Authorization: Bearer <yourJWTtoken>`. Currently, the token expires after 24 hours. You can `GET` the `/refresh_token` route to extend that expiration date.
+
+
+      Versioning
+      ----------------
+
+
+      You may request a different version of the API by including an `Accept` header in your request with the following format: `Accept:application/vnd.thetvdb.v$VERSION`. This documentation automatically uses the version seen at the top and bottom of the page.
+    version: 2.1.2
+    slug: thetvdb-api-v2-2-1-2-search-series-params
+    schemes:
+    - https
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      data: data
+    hosts:
+    - https://api-dev.thetvdb.com
+    - http://api-dev.thetvdb.com
+    topics:
+    - media
+    - open-data
+    - search
+- group: thetvdb-api-v2-2-1-2
+  url_pattern: /series/{id}
+  method: GET
+  encoding: json
+  host:
+  - https://api-dev.thetvdb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: thetvdb.com
+    description: |-
+      API v2 targets v1 functionality with a few minor additions. The API is accessible via https://api.thetvdb.com and provides the following REST endpoints in JSON format.
+
+
+      How to use this API documentation
+      ----------------
+
+
+      You may browse the API routes without authentication, but if you wish to send requests to the API and see response data, then you must authenticate.
+      1. Obtain a JWT token by `POST`ing  to the `/login` route in the `Authentication` section with your API key and credentials.
+      1. Paste the JWT token from the response into the "JWT Token" field at the top of the page and click the 'Add Token' button.
+
+
+      You will now be able to use the remaining routes to send requests to the API and get a response.
+
+
+      Language Selection
+      ----------------
+
+
+      Language selection is done via the `Accept-Language` header. At the moment, you may only pass one language abbreviation in the header at a time. Valid language abbreviations can be found at the `/languages` route..
+
+
+      Authentication
+      ----------------
+
+
+      Authentication to use the API is similar to the How-to section above. Users must `POST` to the `/login` route with their API key and credentials in the following format in order to obtain a JWT token.
+
+      `{"apikey":"APIKEY","username":"USERNAME","userkey":"USERKEY"}`
+
+      Note that the username and key are ONLY required for the `/user` routes. The user's key is labled `Account Identifier` in the account section of the main site.
+      The token is then used in all subsequent requests by providing it in the `Authorization` header. The header will look like: `Authorization: Bearer <yourJWTtoken>`. Currently, the token expires after 24 hours. You can `GET` the `/refresh_token` route to extend that expiration date.
+
+
+      Versioning
+      ----------------
+
+
+      You may request a different version of the API by including an `Accept` header in your request with the following format: `Accept:application/vnd.thetvdb.v$VERSION`. This documentation automatically uses the version seen at the top and bottom of the page.
+    version: 2.1.2
+    slug: thetvdb-api-v2-2-1-2-series-id
+    schemes:
+    - https
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api-dev.thetvdb.com
+    - http://api-dev.thetvdb.com
+    topics:
+    - media
+    - open-data
+    - series
+- group: thetvdb-api-v2-2-1-2
+  url_pattern: /series/{id}/actors
+  method: GET
+  encoding: json
+  host:
+  - https://api-dev.thetvdb.com
+  whitelist:
+  - data
+  concurrent_calls: 1
+  extra_config:
+    provider: thetvdb.com
+    description: |-
+      API v2 targets v1 functionality with a few minor additions. The API is accessible via https://api.thetvdb.com and provides the following REST endpoints in JSON format.
+
+
+      How to use this API documentation
+      ----------------
+
+
+      You may browse the API routes without authentication, but if you wish to send requests to the API and see response data, then you must authenticate.
+      1. Obtain a JWT token by `POST`ing  to the `/login` route in the `Authentication` section with your API key and credentials.
+      1. Paste the JWT token from the response into the "JWT Token" field at the top of the page and click the 'Add Token' button.
+
+
+      You will now be able to use the remaining routes to send requests to the API and get a response.
+
+
+      Language Selection
+      ----------------
+
+
+      Language selection is done via the `Accept-Language` header. At the moment, you may only pass one language abbreviation in the header at a time. Valid language abbreviations can be found at the `/languages` route..
+
+
+      Authentication
+      ----------------
+
+
+      Authentication to use the API is similar to the How-to section above. Users must `POST` to the `/login` route with their API key and credentials in the following format in order to obtain a JWT token.
+
+      `{"apikey":"APIKEY","username":"USERNAME","userkey":"USERKEY"}`
+
+      Note that the username and key are ONLY required for the `/user` routes. The user's key is labled `Account Identifier` in the account section of the main site.
+      The token is then used in all subsequent requests by providing it in the `Authorization` header. The header will look like: `Authorization: Bearer <yourJWTtoken>`. Currently, the token expires after 24 hours. You can `GET` the `/refresh_token` route to extend that expiration date.
+
+
+      Versioning
+      ----------------
+
+
+      You may request a different version of the API by including an `Accept` header in your request with the following format: `Accept:application/vnd.thetvdb.v$VERSION`. This documentation automatically uses the version seen at the top and bottom of the page.
+    version: 2.1.2
+    slug: thetvdb-api-v2-2-1-2-series-id-actors
+    schemes:
+    - https
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      data: data
+    hosts:
+    - https://api-dev.thetvdb.com
+    - http://api-dev.thetvdb.com
+    topics:
+    - media
+    - open-data
+    - series
+- group: thetvdb-api-v2-2-1-2
+  url_pattern: /series/{id}/episodes
+  method: GET
+  encoding: json
+  host:
+  - https://api-dev.thetvdb.com
+  whitelist:
+  - data
+  concurrent_calls: 1
+  extra_config:
+    provider: thetvdb.com
+    description: |-
+      API v2 targets v1 functionality with a few minor additions. The API is accessible via https://api.thetvdb.com and provides the following REST endpoints in JSON format.
+
+
+      How to use this API documentation
+      ----------------
+
+
+      You may browse the API routes without authentication, but if you wish to send requests to the API and see response data, then you must authenticate.
+      1. Obtain a JWT token by `POST`ing  to the `/login` route in the `Authentication` section with your API key and credentials.
+      1. Paste the JWT token from the response into the "JWT Token" field at the top of the page and click the 'Add Token' button.
+
+
+      You will now be able to use the remaining routes to send requests to the API and get a response.
+
+
+      Language Selection
+      ----------------
+
+
+      Language selection is done via the `Accept-Language` header. At the moment, you may only pass one language abbreviation in the header at a time. Valid language abbreviations can be found at the `/languages` route..
+
+
+      Authentication
+      ----------------
+
+
+      Authentication to use the API is similar to the How-to section above. Users must `POST` to the `/login` route with their API key and credentials in the following format in order to obtain a JWT token.
+
+      `{"apikey":"APIKEY","username":"USERNAME","userkey":"USERKEY"}`
+
+      Note that the username and key are ONLY required for the `/user` routes. The user's key is labled `Account Identifier` in the account section of the main site.
+      The token is then used in all subsequent requests by providing it in the `Authorization` header. The header will look like: `Authorization: Bearer <yourJWTtoken>`. Currently, the token expires after 24 hours. You can `GET` the `/refresh_token` route to extend that expiration date.
+
+
+      Versioning
+      ----------------
+
+
+      You may request a different version of the API by including an `Accept` header in your request with the following format: `Accept:application/vnd.thetvdb.v$VERSION`. This documentation automatically uses the version seen at the top and bottom of the page.
+    version: 2.1.2
+    slug: thetvdb-api-v2-2-1-2-series-id-episodes
+    schemes:
+    - https
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      data: data
+    hosts:
+    - https://api-dev.thetvdb.com
+    - http://api-dev.thetvdb.com
+    topics:
+    - media
+    - open-data
+    - series
+- group: thetvdb-api-v2-2-1-2
+  url_pattern: /series/{id}/episodes/query
+  method: GET
+  encoding: json
+  host:
+  - https://api-dev.thetvdb.com
+  whitelist:
+  - data
+  concurrent_calls: 1
+  extra_config:
+    provider: thetvdb.com
+    description: |-
+      API v2 targets v1 functionality with a few minor additions. The API is accessible via https://api.thetvdb.com and provides the following REST endpoints in JSON format.
+
+
+      How to use this API documentation
+      ----------------
+
+
+      You may browse the API routes without authentication, but if you wish to send requests to the API and see response data, then you must authenticate.
+      1. Obtain a JWT token by `POST`ing  to the `/login` route in the `Authentication` section with your API key and credentials.
+      1. Paste the JWT token from the response into the "JWT Token" field at the top of the page and click the 'Add Token' button.
+
+
+      You will now be able to use the remaining routes to send requests to the API and get a response.
+
+
+      Language Selection
+      ----------------
+
+
+      Language selection is done via the `Accept-Language` header. At the moment, you may only pass one language abbreviation in the header at a time. Valid language abbreviations can be found at the `/languages` route..
+
+
+      Authentication
+      ----------------
+
+
+      Authentication to use the API is similar to the How-to section above. Users must `POST` to the `/login` route with their API key and credentials in the following format in order to obtain a JWT token.
+
+      `{"apikey":"APIKEY","username":"USERNAME","userkey":"USERKEY"}`
+
+      Note that the username and key are ONLY required for the `/user` routes. The user's key is labled `Account Identifier` in the account section of the main site.
+      The token is then used in all subsequent requests by providing it in the `Authorization` header. The header will look like: `Authorization: Bearer <yourJWTtoken>`. Currently, the token expires after 24 hours. You can `GET` the `/refresh_token` route to extend that expiration date.
+
+
+      Versioning
+      ----------------
+
+
+      You may request a different version of the API by including an `Accept` header in your request with the following format: `Accept:application/vnd.thetvdb.v$VERSION`. This documentation automatically uses the version seen at the top and bottom of the page.
+    version: 2.1.2
+    slug: thetvdb-api-v2-2-1-2-series-id-episodes-query
+    schemes:
+    - https
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      data: data
+    hosts:
+    - https://api-dev.thetvdb.com
+    - http://api-dev.thetvdb.com
+    topics:
+    - media
+    - open-data
+    - series
+- group: thetvdb-api-v2-2-1-2
+  url_pattern: /series/{id}/episodes/query/params
+  method: GET
+  encoding: json
+  host:
+  - https://api-dev.thetvdb.com
+  whitelist:
+  - data
+  concurrent_calls: 1
+  extra_config:
+    provider: thetvdb.com
+    description: |-
+      API v2 targets v1 functionality with a few minor additions. The API is accessible via https://api.thetvdb.com and provides the following REST endpoints in JSON format.
+
+
+      How to use this API documentation
+      ----------------
+
+
+      You may browse the API routes without authentication, but if you wish to send requests to the API and see response data, then you must authenticate.
+      1. Obtain a JWT token by `POST`ing  to the `/login` route in the `Authentication` section with your API key and credentials.
+      1. Paste the JWT token from the response into the "JWT Token" field at the top of the page and click the 'Add Token' button.
+
+
+      You will now be able to use the remaining routes to send requests to the API and get a response.
+
+
+      Language Selection
+      ----------------
+
+
+      Language selection is done via the `Accept-Language` header. At the moment, you may only pass one language abbreviation in the header at a time. Valid language abbreviations can be found at the `/languages` route..
+
+
+      Authentication
+      ----------------
+
+
+      Authentication to use the API is similar to the How-to section above. Users must `POST` to the `/login` route with their API key and credentials in the following format in order to obtain a JWT token.
+
+      `{"apikey":"APIKEY","username":"USERNAME","userkey":"USERKEY"}`
+
+      Note that the username and key are ONLY required for the `/user` routes. The user's key is labled `Account Identifier` in the account section of the main site.
+      The token is then used in all subsequent requests by providing it in the `Authorization` header. The header will look like: `Authorization: Bearer <yourJWTtoken>`. Currently, the token expires after 24 hours. You can `GET` the `/refresh_token` route to extend that expiration date.
+
+
+      Versioning
+      ----------------
+
+
+      You may request a different version of the API by including an `Accept` header in your request with the following format: `Accept:application/vnd.thetvdb.v$VERSION`. This documentation automatically uses the version seen at the top and bottom of the page.
+    version: 2.1.2
+    slug: thetvdb-api-v2-2-1-2-series-id-episodes-query-params
+    schemes:
+    - https
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      data: data
+    hosts:
+    - https://api-dev.thetvdb.com
+    - http://api-dev.thetvdb.com
+    topics:
+    - media
+    - open-data
+    - series
+- group: thetvdb-api-v2-2-1-2
+  url_pattern: /series/{id}/episodes/summary
+  method: GET
+  encoding: json
+  host:
+  - https://api-dev.thetvdb.com
+  whitelist:
+  - airedEpisodes
+  - airedSeasons
+  - dvdEpisodes
+  - dvdSeasons
+  concurrent_calls: 1
+  extra_config:
+    provider: thetvdb.com
+    description: |-
+      API v2 targets v1 functionality with a few minor additions. The API is accessible via https://api.thetvdb.com and provides the following REST endpoints in JSON format.
+
+
+      How to use this API documentation
+      ----------------
+
+
+      You may browse the API routes without authentication, but if you wish to send requests to the API and see response data, then you must authenticate.
+      1. Obtain a JWT token by `POST`ing  to the `/login` route in the `Authentication` section with your API key and credentials.
+      1. Paste the JWT token from the response into the "JWT Token" field at the top of the page and click the 'Add Token' button.
+
+
+      You will now be able to use the remaining routes to send requests to the API and get a response.
+
+
+      Language Selection
+      ----------------
+
+
+      Language selection is done via the `Accept-Language` header. At the moment, you may only pass one language abbreviation in the header at a time. Valid language abbreviations can be found at the `/languages` route..
+
+
+      Authentication
+      ----------------
+
+
+      Authentication to use the API is similar to the How-to section above. Users must `POST` to the `/login` route with their API key and credentials in the following format in order to obtain a JWT token.
+
+      `{"apikey":"APIKEY","username":"USERNAME","userkey":"USERKEY"}`
+
+      Note that the username and key are ONLY required for the `/user` routes. The user's key is labled `Account Identifier` in the account section of the main site.
+      The token is then used in all subsequent requests by providing it in the `Authorization` header. The header will look like: `Authorization: Bearer <yourJWTtoken>`. Currently, the token expires after 24 hours. You can `GET` the `/refresh_token` route to extend that expiration date.
+
+
+      Versioning
+      ----------------
+
+
+      You may request a different version of the API by including an `Accept` header in your request with the following format: `Accept:application/vnd.thetvdb.v$VERSION`. This documentation automatically uses the version seen at the top and bottom of the page.
+    version: 2.1.2
+    slug: thetvdb-api-v2-2-1-2-series-id-episodes-summary
+    schemes:
+    - https
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      airedEpisodes: airedEpisodes
+      airedSeasons: airedSeasons
+      dvdEpisodes: dvdEpisodes
+      dvdSeasons: dvdSeasons
+    hosts:
+    - https://api-dev.thetvdb.com
+    - http://api-dev.thetvdb.com
+    topics:
+    - media
+    - open-data
+    - series
+- group: thetvdb-api-v2-2-1-2
+  url_pattern: /series/{id}/filter
+  method: GET
+  encoding: json
+  host:
+  - https://api-dev.thetvdb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: thetvdb.com
+    description: |-
+      API v2 targets v1 functionality with a few minor additions. The API is accessible via https://api.thetvdb.com and provides the following REST endpoints in JSON format.
+
+
+      How to use this API documentation
+      ----------------
+
+
+      You may browse the API routes without authentication, but if you wish to send requests to the API and see response data, then you must authenticate.
+      1. Obtain a JWT token by `POST`ing  to the `/login` route in the `Authentication` section with your API key and credentials.
+      1. Paste the JWT token from the response into the "JWT Token" field at the top of the page and click the 'Add Token' button.
+
+
+      You will now be able to use the remaining routes to send requests to the API and get a response.
+
+
+      Language Selection
+      ----------------
+
+
+      Language selection is done via the `Accept-Language` header. At the moment, you may only pass one language abbreviation in the header at a time. Valid language abbreviations can be found at the `/languages` route..
+
+
+      Authentication
+      ----------------
+
+
+      Authentication to use the API is similar to the How-to section above. Users must `POST` to the `/login` route with their API key and credentials in the following format in order to obtain a JWT token.
+
+      `{"apikey":"APIKEY","username":"USERNAME","userkey":"USERKEY"}`
+
+      Note that the username and key are ONLY required for the `/user` routes. The user's key is labled `Account Identifier` in the account section of the main site.
+      The token is then used in all subsequent requests by providing it in the `Authorization` header. The header will look like: `Authorization: Bearer <yourJWTtoken>`. Currently, the token expires after 24 hours. You can `GET` the `/refresh_token` route to extend that expiration date.
+
+
+      Versioning
+      ----------------
+
+
+      You may request a different version of the API by including an `Accept` header in your request with the following format: `Accept:application/vnd.thetvdb.v$VERSION`. This documentation automatically uses the version seen at the top and bottom of the page.
+    version: 2.1.2
+    slug: thetvdb-api-v2-2-1-2-series-id-filter
+    schemes:
+    - https
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api-dev.thetvdb.com
+    - http://api-dev.thetvdb.com
+    topics:
+    - media
+    - open-data
+    - series
+- group: thetvdb-api-v2-2-1-2
+  url_pattern: /series/{id}/filter/params
+  method: GET
+  encoding: json
+  host:
+  - https://api-dev.thetvdb.com
+  whitelist:
+  - data
+  concurrent_calls: 1
+  extra_config:
+    provider: thetvdb.com
+    description: |-
+      API v2 targets v1 functionality with a few minor additions. The API is accessible via https://api.thetvdb.com and provides the following REST endpoints in JSON format.
+
+
+      How to use this API documentation
+      ----------------
+
+
+      You may browse the API routes without authentication, but if you wish to send requests to the API and see response data, then you must authenticate.
+      1. Obtain a JWT token by `POST`ing  to the `/login` route in the `Authentication` section with your API key and credentials.
+      1. Paste the JWT token from the response into the "JWT Token" field at the top of the page and click the 'Add Token' button.
+
+
+      You will now be able to use the remaining routes to send requests to the API and get a response.
+
+
+      Language Selection
+      ----------------
+
+
+      Language selection is done via the `Accept-Language` header. At the moment, you may only pass one language abbreviation in the header at a time. Valid language abbreviations can be found at the `/languages` route..
+
+
+      Authentication
+      ----------------
+
+
+      Authentication to use the API is similar to the How-to section above. Users must `POST` to the `/login` route with their API key and credentials in the following format in order to obtain a JWT token.
+
+      `{"apikey":"APIKEY","username":"USERNAME","userkey":"USERKEY"}`
+
+      Note that the username and key are ONLY required for the `/user` routes. The user's key is labled `Account Identifier` in the account section of the main site.
+      The token is then used in all subsequent requests by providing it in the `Authorization` header. The header will look like: `Authorization: Bearer <yourJWTtoken>`. Currently, the token expires after 24 hours. You can `GET` the `/refresh_token` route to extend that expiration date.
+
+
+      Versioning
+      ----------------
+
+
+      You may request a different version of the API by including an `Accept` header in your request with the following format: `Accept:application/vnd.thetvdb.v$VERSION`. This documentation automatically uses the version seen at the top and bottom of the page.
+    version: 2.1.2
+    slug: thetvdb-api-v2-2-1-2-series-id-filter-params
+    schemes:
+    - https
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      data: data
+    hosts:
+    - https://api-dev.thetvdb.com
+    - http://api-dev.thetvdb.com
+    topics:
+    - media
+    - open-data
+    - series
+- group: thetvdb-api-v2-2-1-2
+  url_pattern: /series/{id}/images
+  method: GET
+  encoding: json
+  host:
+  - https://api-dev.thetvdb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: thetvdb.com
+    description: |-
+      API v2 targets v1 functionality with a few minor additions. The API is accessible via https://api.thetvdb.com and provides the following REST endpoints in JSON format.
+
+
+      How to use this API documentation
+      ----------------
+
+
+      You may browse the API routes without authentication, but if you wish to send requests to the API and see response data, then you must authenticate.
+      1. Obtain a JWT token by `POST`ing  to the `/login` route in the `Authentication` section with your API key and credentials.
+      1. Paste the JWT token from the response into the "JWT Token" field at the top of the page and click the 'Add Token' button.
+
+
+      You will now be able to use the remaining routes to send requests to the API and get a response.
+
+
+      Language Selection
+      ----------------
+
+
+      Language selection is done via the `Accept-Language` header. At the moment, you may only pass one language abbreviation in the header at a time. Valid language abbreviations can be found at the `/languages` route..
+
+
+      Authentication
+      ----------------
+
+
+      Authentication to use the API is similar to the How-to section above. Users must `POST` to the `/login` route with their API key and credentials in the following format in order to obtain a JWT token.
+
+      `{"apikey":"APIKEY","username":"USERNAME","userkey":"USERKEY"}`
+
+      Note that the username and key are ONLY required for the `/user` routes. The user's key is labled `Account Identifier` in the account section of the main site.
+      The token is then used in all subsequent requests by providing it in the `Authorization` header. The header will look like: `Authorization: Bearer <yourJWTtoken>`. Currently, the token expires after 24 hours. You can `GET` the `/refresh_token` route to extend that expiration date.
+
+
+      Versioning
+      ----------------
+
+
+      You may request a different version of the API by including an `Accept` header in your request with the following format: `Accept:application/vnd.thetvdb.v$VERSION`. This documentation automatically uses the version seen at the top and bottom of the page.
+    version: 2.1.2
+    slug: thetvdb-api-v2-2-1-2-series-id-images
+    schemes:
+    - https
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api-dev.thetvdb.com
+    - http://api-dev.thetvdb.com
+    topics:
+    - media
+    - open-data
+    - series
+- group: thetvdb-api-v2-2-1-2
+  url_pattern: /series/{id}/images/query
+  method: GET
+  encoding: json
+  host:
+  - https://api-dev.thetvdb.com
+  whitelist:
+  - data
+  concurrent_calls: 1
+  extra_config:
+    provider: thetvdb.com
+    description: |-
+      API v2 targets v1 functionality with a few minor additions. The API is accessible via https://api.thetvdb.com and provides the following REST endpoints in JSON format.
+
+
+      How to use this API documentation
+      ----------------
+
+
+      You may browse the API routes without authentication, but if you wish to send requests to the API and see response data, then you must authenticate.
+      1. Obtain a JWT token by `POST`ing  to the `/login` route in the `Authentication` section with your API key and credentials.
+      1. Paste the JWT token from the response into the "JWT Token" field at the top of the page and click the 'Add Token' button.
+
+
+      You will now be able to use the remaining routes to send requests to the API and get a response.
+
+
+      Language Selection
+      ----------------
+
+
+      Language selection is done via the `Accept-Language` header. At the moment, you may only pass one language abbreviation in the header at a time. Valid language abbreviations can be found at the `/languages` route..
+
+
+      Authentication
+      ----------------
+
+
+      Authentication to use the API is similar to the How-to section above. Users must `POST` to the `/login` route with their API key and credentials in the following format in order to obtain a JWT token.
+
+      `{"apikey":"APIKEY","username":"USERNAME","userkey":"USERKEY"}`
+
+      Note that the username and key are ONLY required for the `/user` routes. The user's key is labled `Account Identifier` in the account section of the main site.
+      The token is then used in all subsequent requests by providing it in the `Authorization` header. The header will look like: `Authorization: Bearer <yourJWTtoken>`. Currently, the token expires after 24 hours. You can `GET` the `/refresh_token` route to extend that expiration date.
+
+
+      Versioning
+      ----------------
+
+
+      You may request a different version of the API by including an `Accept` header in your request with the following format: `Accept:application/vnd.thetvdb.v$VERSION`. This documentation automatically uses the version seen at the top and bottom of the page.
+    version: 2.1.2
+    slug: thetvdb-api-v2-2-1-2-series-id-images-query
+    schemes:
+    - https
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      data: data
+    hosts:
+    - https://api-dev.thetvdb.com
+    - http://api-dev.thetvdb.com
+    topics:
+    - media
+    - open-data
+    - series
+- group: thetvdb-api-v2-2-1-2
+  url_pattern: /series/{id}/images/query/params
+  method: GET
+  encoding: json
+  host:
+  - https://api-dev.thetvdb.com
+  whitelist:
+  - data
+  concurrent_calls: 1
+  extra_config:
+    provider: thetvdb.com
+    description: |-
+      API v2 targets v1 functionality with a few minor additions. The API is accessible via https://api.thetvdb.com and provides the following REST endpoints in JSON format.
+
+
+      How to use this API documentation
+      ----------------
+
+
+      You may browse the API routes without authentication, but if you wish to send requests to the API and see response data, then you must authenticate.
+      1. Obtain a JWT token by `POST`ing  to the `/login` route in the `Authentication` section with your API key and credentials.
+      1. Paste the JWT token from the response into the "JWT Token" field at the top of the page and click the 'Add Token' button.
+
+
+      You will now be able to use the remaining routes to send requests to the API and get a response.
+
+
+      Language Selection
+      ----------------
+
+
+      Language selection is done via the `Accept-Language` header. At the moment, you may only pass one language abbreviation in the header at a time. Valid language abbreviations can be found at the `/languages` route..
+
+
+      Authentication
+      ----------------
+
+
+      Authentication to use the API is similar to the How-to section above. Users must `POST` to the `/login` route with their API key and credentials in the following format in order to obtain a JWT token.
+
+      `{"apikey":"APIKEY","username":"USERNAME","userkey":"USERKEY"}`
+
+      Note that the username and key are ONLY required for the `/user` routes. The user's key is labled `Account Identifier` in the account section of the main site.
+      The token is then used in all subsequent requests by providing it in the `Authorization` header. The header will look like: `Authorization: Bearer <yourJWTtoken>`. Currently, the token expires after 24 hours. You can `GET` the `/refresh_token` route to extend that expiration date.
+
+
+      Versioning
+      ----------------
+
+
+      You may request a different version of the API by including an `Accept` header in your request with the following format: `Accept:application/vnd.thetvdb.v$VERSION`. This documentation automatically uses the version seen at the top and bottom of the page.
+    version: 2.1.2
+    slug: thetvdb-api-v2-2-1-2-series-id-images-query-params
+    schemes:
+    - https
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      data: data
+    hosts:
+    - https://api-dev.thetvdb.com
+    - http://api-dev.thetvdb.com
+    topics:
+    - media
+    - open-data
+    - series
+- group: thetvdb-api-v2-2-1-2
+  url_pattern: /updated/query
+  method: GET
+  encoding: json
+  host:
+  - https://api-dev.thetvdb.com
+  whitelist:
+  - data
+  concurrent_calls: 1
+  extra_config:
+    provider: thetvdb.com
+    description: |-
+      API v2 targets v1 functionality with a few minor additions. The API is accessible via https://api.thetvdb.com and provides the following REST endpoints in JSON format.
+
+
+      How to use this API documentation
+      ----------------
+
+
+      You may browse the API routes without authentication, but if you wish to send requests to the API and see response data, then you must authenticate.
+      1. Obtain a JWT token by `POST`ing  to the `/login` route in the `Authentication` section with your API key and credentials.
+      1. Paste the JWT token from the response into the "JWT Token" field at the top of the page and click the 'Add Token' button.
+
+
+      You will now be able to use the remaining routes to send requests to the API and get a response.
+
+
+      Language Selection
+      ----------------
+
+
+      Language selection is done via the `Accept-Language` header. At the moment, you may only pass one language abbreviation in the header at a time. Valid language abbreviations can be found at the `/languages` route..
+
+
+      Authentication
+      ----------------
+
+
+      Authentication to use the API is similar to the How-to section above. Users must `POST` to the `/login` route with their API key and credentials in the following format in order to obtain a JWT token.
+
+      `{"apikey":"APIKEY","username":"USERNAME","userkey":"USERKEY"}`
+
+      Note that the username and key are ONLY required for the `/user` routes. The user's key is labled `Account Identifier` in the account section of the main site.
+      The token is then used in all subsequent requests by providing it in the `Authorization` header. The header will look like: `Authorization: Bearer <yourJWTtoken>`. Currently, the token expires after 24 hours. You can `GET` the `/refresh_token` route to extend that expiration date.
+
+
+      Versioning
+      ----------------
+
+
+      You may request a different version of the API by including an `Accept` header in your request with the following format: `Accept:application/vnd.thetvdb.v$VERSION`. This documentation automatically uses the version seen at the top and bottom of the page.
+    version: 2.1.2
+    slug: thetvdb-api-v2-2-1-2-updated-query
+    schemes:
+    - https
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      data: data
+    hosts:
+    - https://api-dev.thetvdb.com
+    - http://api-dev.thetvdb.com
+    topics:
+    - media
+    - open-data
+    - updates
+- group: thetvdb-api-v2-2-1-2
+  url_pattern: /updated/query/params
+  method: GET
+  encoding: json
+  host:
+  - https://api-dev.thetvdb.com
+  whitelist:
+  - data
+  concurrent_calls: 1
+  extra_config:
+    provider: thetvdb.com
+    description: |-
+      API v2 targets v1 functionality with a few minor additions. The API is accessible via https://api.thetvdb.com and provides the following REST endpoints in JSON format.
+
+
+      How to use this API documentation
+      ----------------
+
+
+      You may browse the API routes without authentication, but if you wish to send requests to the API and see response data, then you must authenticate.
+      1. Obtain a JWT token by `POST`ing  to the `/login` route in the `Authentication` section with your API key and credentials.
+      1. Paste the JWT token from the response into the "JWT Token" field at the top of the page and click the 'Add Token' button.
+
+
+      You will now be able to use the remaining routes to send requests to the API and get a response.
+
+
+      Language Selection
+      ----------------
+
+
+      Language selection is done via the `Accept-Language` header. At the moment, you may only pass one language abbreviation in the header at a time. Valid language abbreviations can be found at the `/languages` route..
+
+
+      Authentication
+      ----------------
+
+
+      Authentication to use the API is similar to the How-to section above. Users must `POST` to the `/login` route with their API key and credentials in the following format in order to obtain a JWT token.
+
+      `{"apikey":"APIKEY","username":"USERNAME","userkey":"USERKEY"}`
+
+      Note that the username and key are ONLY required for the `/user` routes. The user's key is labled `Account Identifier` in the account section of the main site.
+      The token is then used in all subsequent requests by providing it in the `Authorization` header. The header will look like: `Authorization: Bearer <yourJWTtoken>`. Currently, the token expires after 24 hours. You can `GET` the `/refresh_token` route to extend that expiration date.
+
+
+      Versioning
+      ----------------
+
+
+      You may request a different version of the API by including an `Accept` header in your request with the following format: `Accept:application/vnd.thetvdb.v$VERSION`. This documentation automatically uses the version seen at the top and bottom of the page.
+    version: 2.1.2
+    slug: thetvdb-api-v2-2-1-2-updated-query-params
+    schemes:
+    - https
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      data: data
+    hosts:
+    - https://api-dev.thetvdb.com
+    - http://api-dev.thetvdb.com
+    topics:
+    - media
+    - open-data
+    - updates
+- group: thetvdb-api-v2-2-1-2
+  url_pattern: /user
+  method: GET
+  encoding: json
+  host:
+  - https://api-dev.thetvdb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: thetvdb.com
+    description: |-
+      API v2 targets v1 functionality with a few minor additions. The API is accessible via https://api.thetvdb.com and provides the following REST endpoints in JSON format.
+
+
+      How to use this API documentation
+      ----------------
+
+
+      You may browse the API routes without authentication, but if you wish to send requests to the API and see response data, then you must authenticate.
+      1. Obtain a JWT token by `POST`ing  to the `/login` route in the `Authentication` section with your API key and credentials.
+      1. Paste the JWT token from the response into the "JWT Token" field at the top of the page and click the 'Add Token' button.
+
+
+      You will now be able to use the remaining routes to send requests to the API and get a response.
+
+
+      Language Selection
+      ----------------
+
+
+      Language selection is done via the `Accept-Language` header. At the moment, you may only pass one language abbreviation in the header at a time. Valid language abbreviations can be found at the `/languages` route..
+
+
+      Authentication
+      ----------------
+
+
+      Authentication to use the API is similar to the How-to section above. Users must `POST` to the `/login` route with their API key and credentials in the following format in order to obtain a JWT token.
+
+      `{"apikey":"APIKEY","username":"USERNAME","userkey":"USERKEY"}`
+
+      Note that the username and key are ONLY required for the `/user` routes. The user's key is labled `Account Identifier` in the account section of the main site.
+      The token is then used in all subsequent requests by providing it in the `Authorization` header. The header will look like: `Authorization: Bearer <yourJWTtoken>`. Currently, the token expires after 24 hours. You can `GET` the `/refresh_token` route to extend that expiration date.
+
+
+      Versioning
+      ----------------
+
+
+      You may request a different version of the API by including an `Accept` header in your request with the following format: `Accept:application/vnd.thetvdb.v$VERSION`. This documentation automatically uses the version seen at the top and bottom of the page.
+    version: 2.1.2
+    slug: thetvdb-api-v2-2-1-2-user
+    schemes:
+    - https
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api-dev.thetvdb.com
+    - http://api-dev.thetvdb.com
+    topics:
+    - media
+    - open-data
+    - users
+- group: thetvdb-api-v2-2-1-2
+  url_pattern: /user/favorites
+  method: GET
+  encoding: json
+  host:
+  - https://api-dev.thetvdb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: thetvdb.com
+    description: |-
+      API v2 targets v1 functionality with a few minor additions. The API is accessible via https://api.thetvdb.com and provides the following REST endpoints in JSON format.
+
+
+      How to use this API documentation
+      ----------------
+
+
+      You may browse the API routes without authentication, but if you wish to send requests to the API and see response data, then you must authenticate.
+      1. Obtain a JWT token by `POST`ing  to the `/login` route in the `Authentication` section with your API key and credentials.
+      1. Paste the JWT token from the response into the "JWT Token" field at the top of the page and click the 'Add Token' button.
+
+
+      You will now be able to use the remaining routes to send requests to the API and get a response.
+
+
+      Language Selection
+      ----------------
+
+
+      Language selection is done via the `Accept-Language` header. At the moment, you may only pass one language abbreviation in the header at a time. Valid language abbreviations can be found at the `/languages` route..
+
+
+      Authentication
+      ----------------
+
+
+      Authentication to use the API is similar to the How-to section above. Users must `POST` to the `/login` route with their API key and credentials in the following format in order to obtain a JWT token.
+
+      `{"apikey":"APIKEY","username":"USERNAME","userkey":"USERKEY"}`
+
+      Note that the username and key are ONLY required for the `/user` routes. The user's key is labled `Account Identifier` in the account section of the main site.
+      The token is then used in all subsequent requests by providing it in the `Authorization` header. The header will look like: `Authorization: Bearer <yourJWTtoken>`. Currently, the token expires after 24 hours. You can `GET` the `/refresh_token` route to extend that expiration date.
+
+
+      Versioning
+      ----------------
+
+
+      You may request a different version of the API by including an `Accept` header in your request with the following format: `Accept:application/vnd.thetvdb.v$VERSION`. This documentation automatically uses the version seen at the top and bottom of the page.
+    version: 2.1.2
+    slug: thetvdb-api-v2-2-1-2-user-favorites
+    schemes:
+    - https
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api-dev.thetvdb.com
+    - http://api-dev.thetvdb.com
+    topics:
+    - media
+    - open-data
+    - users
+- group: thetvdb-api-v2-2-1-2
+  url_pattern: /user/ratings
+  method: GET
+  encoding: json
+  host:
+  - https://api-dev.thetvdb.com
+  whitelist:
+  - data
+  concurrent_calls: 1
+  extra_config:
+    provider: thetvdb.com
+    description: |-
+      API v2 targets v1 functionality with a few minor additions. The API is accessible via https://api.thetvdb.com and provides the following REST endpoints in JSON format.
+
+
+      How to use this API documentation
+      ----------------
+
+
+      You may browse the API routes without authentication, but if you wish to send requests to the API and see response data, then you must authenticate.
+      1. Obtain a JWT token by `POST`ing  to the `/login` route in the `Authentication` section with your API key and credentials.
+      1. Paste the JWT token from the response into the "JWT Token" field at the top of the page and click the 'Add Token' button.
+
+
+      You will now be able to use the remaining routes to send requests to the API and get a response.
+
+
+      Language Selection
+      ----------------
+
+
+      Language selection is done via the `Accept-Language` header. At the moment, you may only pass one language abbreviation in the header at a time. Valid language abbreviations can be found at the `/languages` route..
+
+
+      Authentication
+      ----------------
+
+
+      Authentication to use the API is similar to the How-to section above. Users must `POST` to the `/login` route with their API key and credentials in the following format in order to obtain a JWT token.
+
+      `{"apikey":"APIKEY","username":"USERNAME","userkey":"USERKEY"}`
+
+      Note that the username and key are ONLY required for the `/user` routes. The user's key is labled `Account Identifier` in the account section of the main site.
+      The token is then used in all subsequent requests by providing it in the `Authorization` header. The header will look like: `Authorization: Bearer <yourJWTtoken>`. Currently, the token expires after 24 hours. You can `GET` the `/refresh_token` route to extend that expiration date.
+
+
+      Versioning
+      ----------------
+
+
+      You may request a different version of the API by including an `Accept` header in your request with the following format: `Accept:application/vnd.thetvdb.v$VERSION`. This documentation automatically uses the version seen at the top and bottom of the page.
+    version: 2.1.2
+    slug: thetvdb-api-v2-2-1-2-user-ratings
+    schemes:
+    - https
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      data: data
+    hosts:
+    - https://api-dev.thetvdb.com
+    - http://api-dev.thetvdb.com
+    topics:
+    - media
+    - open-data
+    - users
+- group: thetvdb-api-v2-2-1-2
+  url_pattern: /user/ratings/query
+  method: GET
+  encoding: json
+  host:
+  - https://api-dev.thetvdb.com
+  whitelist:
+  - data
+  concurrent_calls: 1
+  extra_config:
+    provider: thetvdb.com
+    description: |-
+      API v2 targets v1 functionality with a few minor additions. The API is accessible via https://api.thetvdb.com and provides the following REST endpoints in JSON format.
+
+
+      How to use this API documentation
+      ----------------
+
+
+      You may browse the API routes without authentication, but if you wish to send requests to the API and see response data, then you must authenticate.
+      1. Obtain a JWT token by `POST`ing  to the `/login` route in the `Authentication` section with your API key and credentials.
+      1. Paste the JWT token from the response into the "JWT Token" field at the top of the page and click the 'Add Token' button.
+
+
+      You will now be able to use the remaining routes to send requests to the API and get a response.
+
+
+      Language Selection
+      ----------------
+
+
+      Language selection is done via the `Accept-Language` header. At the moment, you may only pass one language abbreviation in the header at a time. Valid language abbreviations can be found at the `/languages` route..
+
+
+      Authentication
+      ----------------
+
+
+      Authentication to use the API is similar to the How-to section above. Users must `POST` to the `/login` route with their API key and credentials in the following format in order to obtain a JWT token.
+
+      `{"apikey":"APIKEY","username":"USERNAME","userkey":"USERKEY"}`
+
+      Note that the username and key are ONLY required for the `/user` routes. The user's key is labled `Account Identifier` in the account section of the main site.
+      The token is then used in all subsequent requests by providing it in the `Authorization` header. The header will look like: `Authorization: Bearer <yourJWTtoken>`. Currently, the token expires after 24 hours. You can `GET` the `/refresh_token` route to extend that expiration date.
+
+
+      Versioning
+      ----------------
+
+
+      You may request a different version of the API by including an `Accept` header in your request with the following format: `Accept:application/vnd.thetvdb.v$VERSION`. This documentation automatically uses the version seen at the top and bottom of the page.
+    version: 2.1.2
+    slug: thetvdb-api-v2-2-1-2-user-ratings-query
+    schemes:
+    - https
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      data: data
+    hosts:
+    - https://api-dev.thetvdb.com
+    - http://api-dev.thetvdb.com
+    topics:
+    - media
+    - open-data
+    - users
+- group: thetvdb-api-v2-2-1-2
+  url_pattern: /user/ratings/query/params
+  method: GET
+  encoding: json
+  host:
+  - https://api-dev.thetvdb.com
+  whitelist:
+  - data
+  concurrent_calls: 1
+  extra_config:
+    provider: thetvdb.com
+    description: |-
+      API v2 targets v1 functionality with a few minor additions. The API is accessible via https://api.thetvdb.com and provides the following REST endpoints in JSON format.
+
+
+      How to use this API documentation
+      ----------------
+
+
+      You may browse the API routes without authentication, but if you wish to send requests to the API and see response data, then you must authenticate.
+      1. Obtain a JWT token by `POST`ing  to the `/login` route in the `Authentication` section with your API key and credentials.
+      1. Paste the JWT token from the response into the "JWT Token" field at the top of the page and click the 'Add Token' button.
+
+
+      You will now be able to use the remaining routes to send requests to the API and get a response.
+
+
+      Language Selection
+      ----------------
+
+
+      Language selection is done via the `Accept-Language` header. At the moment, you may only pass one language abbreviation in the header at a time. Valid language abbreviations can be found at the `/languages` route..
+
+
+      Authentication
+      ----------------
+
+
+      Authentication to use the API is similar to the How-to section above. Users must `POST` to the `/login` route with their API key and credentials in the following format in order to obtain a JWT token.
+
+      `{"apikey":"APIKEY","username":"USERNAME","userkey":"USERKEY"}`
+
+      Note that the username and key are ONLY required for the `/user` routes. The user's key is labled `Account Identifier` in the account section of the main site.
+      The token is then used in all subsequent requests by providing it in the `Authorization` header. The header will look like: `Authorization: Bearer <yourJWTtoken>`. Currently, the token expires after 24 hours. You can `GET` the `/refresh_token` route to extend that expiration date.
+
+
+      Versioning
+      ----------------
+
+
+      You may request a different version of the API by including an `Accept` header in your request with the following format: `Accept:application/vnd.thetvdb.v$VERSION`. This documentation automatically uses the version seen at the top and bottom of the page.
+    version: 2.1.2
+    slug: thetvdb-api-v2-2-1-2-user-ratings-query-params
+    schemes:
+    - https
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      data: data
+    hosts:
+    - https://api-dev.thetvdb.com
+    - http://api-dev.thetvdb.com
+    topics:
+    - media
+    - open-data
+    - users

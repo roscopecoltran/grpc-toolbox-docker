@@ -1,0 +1,673 @@
+backends:
+- group: oxford-dictionaries-1-8-0
+  url_pattern: /api/v1/domains/{source_domains_language}/{target_domains_language}
+  method: GET
+  encoding: json
+  host:
+  - https://od-api-demo.oxforddictionaries.com:443
+  whitelist:
+  - metadata
+  - results
+  - results.additionalProperties
+  - results.additionalProperties.en
+  concurrent_calls: 1
+  extra_config:
+    provider: oxforddictionaries.com
+    version: 1.8.0
+    slug: oxford-dictionaries-1-8-0-api-v1-domains-source-domains-language-target-domains-language
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      results: results
+      results.additionalProperties: results.additionalProperties
+      results.additionalProperties.en: results.additionalProperties.en
+    hosts:
+    - https://od-api-demo.oxforddictionaries.com:443
+    topics:
+    - text
+- group: oxford-dictionaries-1-8-0
+  url_pattern: /api/v1/domains/{source_language}
+  method: GET
+  encoding: json
+  host:
+  - https://od-api-demo.oxforddictionaries.com:443
+  whitelist:
+  - metadata
+  - results
+  - results.additionalProperties
+  - results.additionalProperties.en
+  concurrent_calls: 1
+  extra_config:
+    provider: oxforddictionaries.com
+    version: 1.8.0
+    slug: oxford-dictionaries-1-8-0-api-v1-domains-source-language
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      results: results
+      results.additionalProperties: results.additionalProperties
+      results.additionalProperties.en: results.additionalProperties.en
+    hosts:
+    - https://od-api-demo.oxforddictionaries.com:443
+    topics:
+    - text
+- group: oxford-dictionaries-1-8-0
+  url_pattern: /api/v1/entries/{source_language}/{word_id}/sentences
+  method: GET
+  encoding: json
+  host:
+  - https://od-api-demo.oxforddictionaries.com:443
+  whitelist:
+  - metadata
+  - results
+  concurrent_calls: 1
+  extra_config:
+    provider: oxforddictionaries.com
+    version: 1.8.0
+    slug: oxford-dictionaries-1-8-0-api-v1-entries-source-language-word-id-sentences
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      results: results
+    hosts:
+    - https://od-api-demo.oxforddictionaries.com:443
+    topics:
+    - text
+- group: oxford-dictionaries-1-8-0
+  url_pattern: /api/v1/entries/{source_lang}/{word_id}
+  method: GET
+  encoding: json
+  host:
+  - https://od-api-demo.oxforddictionaries.com:443
+  whitelist:
+  - metadata
+  - results
+  concurrent_calls: 1
+  extra_config:
+    provider: oxforddictionaries.com
+    version: 1.8.0
+    slug: oxford-dictionaries-1-8-0-api-v1-entries-source-lang-word-id
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      results: results
+    hosts:
+    - https://od-api-demo.oxforddictionaries.com:443
+    topics:
+    - text
+- group: oxford-dictionaries-1-8-0
+  url_pattern: /api/v1/entries/{source_lang}/{word_id}/antonyms
+  method: GET
+  encoding: json
+  host:
+  - https://od-api-demo.oxforddictionaries.com:443
+  whitelist:
+  - metadata
+  - results
+  concurrent_calls: 1
+  extra_config:
+    provider: oxforddictionaries.com
+    version: 1.8.0
+    slug: oxford-dictionaries-1-8-0-api-v1-entries-source-lang-word-id-antonyms
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      results: results
+    hosts:
+    - https://od-api-demo.oxforddictionaries.com:443
+    topics:
+    - text
+- group: oxford-dictionaries-1-8-0
+  url_pattern: /api/v1/entries/{source_lang}/{word_id}/regions={region}
+  method: GET
+  encoding: json
+  host:
+  - https://od-api-demo.oxforddictionaries.com:443
+  whitelist:
+  - metadata
+  - results
+  concurrent_calls: 1
+  extra_config:
+    provider: oxforddictionaries.com
+    version: 1.8.0
+    slug: oxford-dictionaries-1-8-0-api-v1-entries-source-lang-word-id-regions-region
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      results: results
+    hosts:
+    - https://od-api-demo.oxforddictionaries.com:443
+    topics:
+    - text
+- group: oxford-dictionaries-1-8-0
+  url_pattern: /api/v1/entries/{source_lang}/{word_id}/synonyms
+  method: GET
+  encoding: json
+  host:
+  - https://od-api-demo.oxforddictionaries.com:443
+  whitelist:
+  - metadata
+  - results
+  concurrent_calls: 1
+  extra_config:
+    provider: oxforddictionaries.com
+    version: 1.8.0
+    slug: oxford-dictionaries-1-8-0-api-v1-entries-source-lang-word-id-synonyms
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      results: results
+    hosts:
+    - https://od-api-demo.oxforddictionaries.com:443
+    topics:
+    - text
+- group: oxford-dictionaries-1-8-0
+  url_pattern: /api/v1/entries/{source_lang}/{word_id}/synonyms;antonyms
+  method: GET
+  encoding: json
+  host:
+  - https://od-api-demo.oxforddictionaries.com:443
+  whitelist:
+  - metadata
+  - results
+  concurrent_calls: 1
+  extra_config:
+    provider: oxforddictionaries.com
+    version: 1.8.0
+    slug: oxford-dictionaries-1-8-0-api-v1-entries-source-lang-word-id-synonyms-antonyms
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      results: results
+    hosts:
+    - https://od-api-demo.oxforddictionaries.com:443
+    topics:
+    - text
+- group: oxford-dictionaries-1-8-0
+  url_pattern: /api/v1/entries/{source_lang}/{word_id}/{filters}
+  method: GET
+  encoding: json
+  host:
+  - https://od-api-demo.oxforddictionaries.com:443
+  whitelist:
+  - metadata
+  - results
+  concurrent_calls: 1
+  extra_config:
+    provider: oxforddictionaries.com
+    version: 1.8.0
+    slug: oxford-dictionaries-1-8-0-api-v1-entries-source-lang-word-id-filters
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      results: results
+    hosts:
+    - https://od-api-demo.oxforddictionaries.com:443
+    topics:
+    - text
+- group: oxford-dictionaries-1-8-0
+  url_pattern: /api/v1/entries/{source_translation_language}/{word_id}/translations={target_translation_language}
+  method: GET
+  encoding: json
+  host:
+  - https://od-api-demo.oxforddictionaries.com:443
+  whitelist:
+  - metadata
+  - results
+  concurrent_calls: 1
+  extra_config:
+    provider: oxforddictionaries.com
+    version: 1.8.0
+    slug: oxford-dictionaries-1-8-0-api-v1-entries-source-translation-language-word-id-translations-target-translation-language
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      results: results
+    hosts:
+    - https://od-api-demo.oxforddictionaries.com:443
+    topics:
+    - text
+- group: oxford-dictionaries-1-8-0
+  url_pattern: /api/v1/filters
+  method: GET
+  encoding: json
+  host:
+  - https://od-api-demo.oxforddictionaries.com:443
+  whitelist:
+  - metadata
+  - results
+  concurrent_calls: 1
+  extra_config:
+    provider: oxforddictionaries.com
+    version: 1.8.0
+    slug: oxford-dictionaries-1-8-0-api-v1-filters
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      results: results
+    hosts:
+    - https://od-api-demo.oxforddictionaries.com:443
+    topics:
+    - text
+- group: oxford-dictionaries-1-8-0
+  url_pattern: /api/v1/filters/{endpoint}
+  method: GET
+  encoding: json
+  host:
+  - https://od-api-demo.oxforddictionaries.com:443
+  whitelist:
+  - metadata
+  - results
+  concurrent_calls: 1
+  extra_config:
+    provider: oxforddictionaries.com
+    version: 1.8.0
+    slug: oxford-dictionaries-1-8-0-api-v1-filters-endpoint
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      results: results
+    hosts:
+    - https://od-api-demo.oxforddictionaries.com:443
+    topics:
+    - text
+- group: oxford-dictionaries-1-8-0
+  url_pattern: /api/v1/grammaticalFeatures/{source_language}
+  method: GET
+  encoding: json
+  host:
+  - https://od-api-demo.oxforddictionaries.com:443
+  whitelist:
+  - metadata
+  - results
+  - results.additionalProperties
+  - results.additionalProperties.en
+  concurrent_calls: 1
+  extra_config:
+    provider: oxforddictionaries.com
+    version: 1.8.0
+    slug: oxford-dictionaries-1-8-0-api-v1-grammaticalfeatures-source-language
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      results: results
+      results.additionalProperties: results.additionalProperties
+      results.additionalProperties.en: results.additionalProperties.en
+    hosts:
+    - https://od-api-demo.oxforddictionaries.com:443
+    topics:
+    - text
+- group: oxford-dictionaries-1-8-0
+  url_pattern: /api/v1/inflections/{source_lang}/{word_id}
+  method: GET
+  encoding: json
+  host:
+  - https://od-api-demo.oxforddictionaries.com:443
+  whitelist:
+  - metadata
+  - results
+  concurrent_calls: 1
+  extra_config:
+    provider: oxforddictionaries.com
+    version: 1.8.0
+    slug: oxford-dictionaries-1-8-0-api-v1-inflections-source-lang-word-id
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      results: results
+    hosts:
+    - https://od-api-demo.oxforddictionaries.com:443
+    topics:
+    - text
+- group: oxford-dictionaries-1-8-0
+  url_pattern: /api/v1/inflections/{source_lang}/{word_id}/{filters}
+  method: GET
+  encoding: json
+  host:
+  - https://od-api-demo.oxforddictionaries.com:443
+  whitelist:
+  - metadata
+  - results
+  concurrent_calls: 1
+  extra_config:
+    provider: oxforddictionaries.com
+    version: 1.8.0
+    slug: oxford-dictionaries-1-8-0-api-v1-inflections-source-lang-word-id-filters
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      results: results
+    hosts:
+    - https://od-api-demo.oxforddictionaries.com:443
+    topics:
+    - text
+- group: oxford-dictionaries-1-8-0
+  url_pattern: /api/v1/languages
+  method: GET
+  encoding: json
+  host:
+  - https://od-api-demo.oxforddictionaries.com:443
+  whitelist:
+  - metadata
+  - results
+  - results.region
+  - results.source
+  - results.sourceLanguage
+  - results.sourceLanguage.id
+  - results.sourceLanguage.language
+  - results.targetLanguage
+  - results.targetLanguage.id
+  - results.targetLanguage.language
+  concurrent_calls: 1
+  extra_config:
+    provider: oxforddictionaries.com
+    version: 1.8.0
+    slug: oxford-dictionaries-1-8-0-api-v1-languages
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      results: results
+      results.region: results.region
+      results.source: results.source
+      results.sourceLanguage: results.sourceLanguage
+      results.sourceLanguage.id: results.sourceLanguage.id
+      results.sourceLanguage.language: results.sourceLanguage.language
+      results.targetLanguage: results.targetLanguage
+      results.targetLanguage.id: results.targetLanguage.id
+      results.targetLanguage.language: results.targetLanguage.language
+    hosts:
+    - https://od-api-demo.oxforddictionaries.com:443
+    topics:
+    - text
+- group: oxford-dictionaries-1-8-0
+  url_pattern: /api/v1/lexicalcategories/{language}
+  method: GET
+  encoding: json
+  host:
+  - https://od-api-demo.oxforddictionaries.com:443
+  whitelist:
+  - metadata
+  - results
+  - results.additionalProperties
+  - results.additionalProperties.en
+  concurrent_calls: 1
+  extra_config:
+    provider: oxforddictionaries.com
+    version: 1.8.0
+    slug: oxford-dictionaries-1-8-0-api-v1-lexicalcategories-language
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      results: results
+      results.additionalProperties: results.additionalProperties
+      results.additionalProperties.en: results.additionalProperties.en
+    hosts:
+    - https://od-api-demo.oxforddictionaries.com:443
+    topics:
+    - text
+- group: oxford-dictionaries-1-8-0
+  url_pattern: /api/v1/regions/{source_language}
+  method: GET
+  encoding: json
+  host:
+  - https://od-api-demo.oxforddictionaries.com:443
+  whitelist:
+  - metadata
+  - results
+  concurrent_calls: 1
+  extra_config:
+    provider: oxforddictionaries.com
+    version: 1.8.0
+    slug: oxford-dictionaries-1-8-0-api-v1-regions-source-language
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      results: results
+    hosts:
+    - https://od-api-demo.oxforddictionaries.com:443
+    topics:
+    - text
+- group: oxford-dictionaries-1-8-0
+  url_pattern: /api/v1/registers/{source_language}
+  method: GET
+  encoding: json
+  host:
+  - https://od-api-demo.oxforddictionaries.com:443
+  whitelist:
+  - metadata
+  - results
+  - results.additionalProperties
+  - results.additionalProperties.en
+  concurrent_calls: 1
+  extra_config:
+    provider: oxforddictionaries.com
+    version: 1.8.0
+    slug: oxford-dictionaries-1-8-0-api-v1-registers-source-language
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      results: results
+      results.additionalProperties: results.additionalProperties
+      results.additionalProperties.en: results.additionalProperties.en
+    hosts:
+    - https://od-api-demo.oxforddictionaries.com:443
+    topics:
+    - text
+- group: oxford-dictionaries-1-8-0
+  url_pattern: /api/v1/registers/{source_register_language}/{target_register_language}
+  method: GET
+  encoding: json
+  host:
+  - https://od-api-demo.oxforddictionaries.com:443
+  whitelist:
+  - metadata
+  - results
+  - results.additionalProperties
+  - results.additionalProperties.en
+  concurrent_calls: 1
+  extra_config:
+    provider: oxforddictionaries.com
+    version: 1.8.0
+    slug: oxford-dictionaries-1-8-0-api-v1-registers-source-register-language-target-register-language
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      results: results
+      results.additionalProperties: results.additionalProperties
+      results.additionalProperties.en: results.additionalProperties.en
+    hosts:
+    - https://od-api-demo.oxforddictionaries.com:443
+    topics:
+    - text
+- group: oxford-dictionaries-1-8-0
+  url_pattern: /api/v1/search/{source_lang}
+  method: GET
+  encoding: json
+  host:
+  - https://od-api-demo.oxforddictionaries.com:443
+  whitelist:
+  - metadata
+  - results
+  - results.id
+  - results.matchType
+  - results.region
+  - results.word
+  concurrent_calls: 1
+  extra_config:
+    provider: oxforddictionaries.com
+    version: 1.8.0
+    slug: oxford-dictionaries-1-8-0-api-v1-search-source-lang
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      results: results
+      results.id: results.id
+      results.matchType: results.matchType
+      results.region: results.region
+      results.word: results.word
+    hosts:
+    - https://od-api-demo.oxforddictionaries.com:443
+    topics:
+    - text
+- group: oxford-dictionaries-1-8-0
+  url_pattern: /api/v1/search/{source_search_language}/translations={target_search_language}
+  method: GET
+  encoding: json
+  host:
+  - https://od-api-demo.oxforddictionaries.com:443
+  whitelist:
+  - metadata
+  - results
+  - results.id
+  - results.matchType
+  - results.region
+  - results.word
+  concurrent_calls: 1
+  extra_config:
+    provider: oxforddictionaries.com
+    version: 1.8.0
+    slug: oxford-dictionaries-1-8-0-api-v1-search-source-search-language-translations-target-search-language
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      results: results
+      results.id: results.id
+      results.matchType: results.matchType
+      results.region: results.region
+      results.word: results.word
+    hosts:
+    - https://od-api-demo.oxforddictionaries.com:443
+    topics:
+    - text
+- group: oxford-dictionaries-1-8-0
+  url_pattern: /api/v1/wordlist/{source_lang}/{filters_advanced}
+  method: GET
+  encoding: json
+  host:
+  - https://od-api-demo.oxforddictionaries.com:443
+  whitelist:
+  - metadata
+  - results
+  - results.id
+  - results.matchType
+  - results.region
+  - results.word
+  concurrent_calls: 1
+  extra_config:
+    provider: oxforddictionaries.com
+    version: 1.8.0
+    slug: oxford-dictionaries-1-8-0-api-v1-wordlist-source-lang-filters-advanced
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      results: results
+      results.id: results.id
+      results.matchType: results.matchType
+      results.region: results.region
+      results.word: results.word
+    hosts:
+    - https://od-api-demo.oxforddictionaries.com:443
+    topics:
+    - text
+- group: oxford-dictionaries-1-8-0
+  url_pattern: /api/v1/wordlist/{source_lang}/{filters_basic}
+  method: GET
+  encoding: json
+  host:
+  - https://od-api-demo.oxforddictionaries.com:443
+  whitelist:
+  - metadata
+  - results
+  - results.id
+  - results.matchType
+  - results.region
+  - results.word
+  concurrent_calls: 1
+  extra_config:
+    provider: oxforddictionaries.com
+    version: 1.8.0
+    slug: oxford-dictionaries-1-8-0-api-v1-wordlist-source-lang-filters-basic
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      results: results
+      results.id: results.id
+      results.matchType: results.matchType
+      results.region: results.region
+      results.word: results.word
+    hosts:
+    - https://od-api-demo.oxforddictionaries.com:443
+    topics:
+    - text

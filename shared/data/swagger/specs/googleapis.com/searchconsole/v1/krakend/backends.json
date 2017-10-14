@@ -1,0 +1,39 @@
+{
+	"backends": [
+		{
+			"group": "google-search-console-url-testing-tools-v1",
+			"url_pattern": "/v1/urlTestingTools/mobileFriendlyTest:run",
+			"method": "POST",
+			"host": [
+				"https://searchconsole.googleapis.com"
+			],
+			"whitelist": [
+				"mobileFriendliness",
+				"mobileFriendlyIssues",
+				"resourceIssues"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Provides tools for running validation tests against single URLs",
+				"version": "v1",
+				"slug": "google-search-console-url-testing-tools-v1-v1-urltestingtools-mobilefriendlytest-run",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"mobileFriendliness": "mobileFriendliness",
+					"mobileFriendlyIssues": "mobileFriendlyIssues",
+					"resourceIssues": "resourceIssues"
+				},
+				"hosts": [
+					"https://searchconsole.googleapis.com"
+				],
+				"topics": [
+					"search",
+					"urltestingtools"
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,696 @@
+[[backends]]
+  group = "blogger-v3"
+  url_pattern = "/blogger/v3/blogs/byurl"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["customMetaData", "description", "id", "kind", "locale", "locale.country", "locale.language", "locale.variant", "name", "pages", "pages.selfLink", "pages.totalItems", "posts", "posts.items", "posts.selfLink", "posts.totalItems", "published", "selfLink", "status", "updated", "url"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for access to the data within Blogger."
+    version = "v3"
+    slug = "blogger-v3-blogger-v3-blogs-byurl"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["social"]
+    [backends.extra_config.mapping]
+      country = "country"
+      customMetaData = "customMetaData"
+      description = "description"
+      id = "id"
+      items = "items"
+      kind = "kind"
+      language = "language"
+      locale = "locale"
+      name = "name"
+      pages = "pages"
+      posts = "posts"
+      published = "published"
+      selfLink = "selfLink"
+      status = "status"
+      totalItems = "totalItems"
+      updated = "updated"
+      url = "url"
+      variant = "variant"
+
+[[backends]]
+  group = "blogger-v3"
+  url_pattern = "/blogger/v3/blogs/{blogId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["customMetaData", "description", "id", "kind", "locale", "locale.country", "locale.language", "locale.variant", "name", "pages", "pages.selfLink", "pages.totalItems", "posts", "posts.items", "posts.selfLink", "posts.totalItems", "published", "selfLink", "status", "updated", "url"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for access to the data within Blogger."
+    version = "v3"
+    slug = "blogger-v3-blogger-v3-blogs-blogid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["social"]
+    [backends.extra_config.mapping]
+      country = "country"
+      customMetaData = "customMetaData"
+      description = "description"
+      id = "id"
+      items = "items"
+      kind = "kind"
+      language = "language"
+      locale = "locale"
+      name = "name"
+      pages = "pages"
+      posts = "posts"
+      published = "published"
+      selfLink = "selfLink"
+      status = "status"
+      totalItems = "totalItems"
+      updated = "updated"
+      url = "url"
+      variant = "variant"
+
+[[backends]]
+  group = "blogger-v3"
+  url_pattern = "/blogger/v3/blogs/{blogId}/comments"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken", "prevPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for access to the data within Blogger."
+    version = "v3"
+    slug = "blogger-v3-blogger-v3-blogs-blogid-comments"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["social"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+      prevPageToken = "prevPageToken"
+
+[[backends]]
+  group = "blogger-v3"
+  url_pattern = "/blogger/v3/blogs/{blogId}/pages"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for access to the data within Blogger."
+    version = "v3"
+    slug = "blogger-v3-blogger-v3-blogs-blogid-pages"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["social"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "blogger-v3"
+  url_pattern = "/blogger/v3/blogs/{blogId}/pages/{pageId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["author", "author.displayName", "author.id", "author.image", "author.image.url", "author.url", "blog", "blog.id", "content", "etag", "id", "kind", "published", "selfLink", "status", "title", "updated", "url"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for access to the data within Blogger."
+    version = "v3"
+    slug = "blogger-v3-blogger-v3-blogs-blogid-pages-pageid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["social"]
+    [backends.extra_config.mapping]
+      author = "author"
+      blog = "blog"
+      content = "content"
+      displayName = "displayName"
+      etag = "etag"
+      id = "id"
+      image = "image"
+      kind = "kind"
+      published = "published"
+      selfLink = "selfLink"
+      status = "status"
+      title = "title"
+      updated = "updated"
+      url = "url"
+
+[[backends]]
+  group = "blogger-v3"
+  url_pattern = "/blogger/v3/blogs/{blogId}/pages/{pageId}/publish"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["author", "author.displayName", "author.id", "author.image", "author.image.url", "author.url", "blog", "blog.id", "content", "etag", "id", "kind", "published", "selfLink", "status", "title", "updated", "url"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for access to the data within Blogger."
+    version = "v3"
+    slug = "blogger-v3-blogger-v3-blogs-blogid-pages-pageid-publish"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["social"]
+    [backends.extra_config.mapping]
+      author = "author"
+      blog = "blog"
+      content = "content"
+      displayName = "displayName"
+      etag = "etag"
+      id = "id"
+      image = "image"
+      kind = "kind"
+      published = "published"
+      selfLink = "selfLink"
+      status = "status"
+      title = "title"
+      updated = "updated"
+      url = "url"
+
+[[backends]]
+  group = "blogger-v3"
+  url_pattern = "/blogger/v3/blogs/{blogId}/pages/{pageId}/revert"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["author", "author.displayName", "author.id", "author.image", "author.image.url", "author.url", "blog", "blog.id", "content", "etag", "id", "kind", "published", "selfLink", "status", "title", "updated", "url"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for access to the data within Blogger."
+    version = "v3"
+    slug = "blogger-v3-blogger-v3-blogs-blogid-pages-pageid-revert"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["social"]
+    [backends.extra_config.mapping]
+      author = "author"
+      blog = "blog"
+      content = "content"
+      displayName = "displayName"
+      etag = "etag"
+      id = "id"
+      image = "image"
+      kind = "kind"
+      published = "published"
+      selfLink = "selfLink"
+      status = "status"
+      title = "title"
+      updated = "updated"
+      url = "url"
+
+[[backends]]
+  group = "blogger-v3"
+  url_pattern = "/blogger/v3/blogs/{blogId}/pageviews"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["blogId", "counts", "counts.count", "counts.timeRange", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for access to the data within Blogger."
+    version = "v3"
+    slug = "blogger-v3-blogger-v3-blogs-blogid-pageviews"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["social"]
+    [backends.extra_config.mapping]
+      blogId = "blogId"
+      count = "count"
+      counts = "counts"
+      kind = "kind"
+      timeRange = "timeRange"
+
+[[backends]]
+  group = "blogger-v3"
+  url_pattern = "/blogger/v3/blogs/{blogId}/posts"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for access to the data within Blogger."
+    version = "v3"
+    slug = "blogger-v3-blogger-v3-blogs-blogid-posts"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["social"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "blogger-v3"
+  url_pattern = "/blogger/v3/blogs/{blogId}/posts/bypath"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["author", "author.displayName", "author.id", "author.image", "author.image.url", "author.url", "blog", "blog.id", "content", "customMetaData", "etag", "id", "images", "images.url", "kind", "labels", "location", "location.lat", "location.lng", "location.name", "location.span", "published", "readerComments", "replies", "replies.items", "replies.selfLink", "replies.totalItems", "selfLink", "status", "title", "titleLink", "updated", "url"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for access to the data within Blogger."
+    version = "v3"
+    slug = "blogger-v3-blogger-v3-blogs-blogid-posts-bypath"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["social"]
+    [backends.extra_config.mapping]
+      author = "author"
+      blog = "blog"
+      content = "content"
+      customMetaData = "customMetaData"
+      displayName = "displayName"
+      etag = "etag"
+      id = "id"
+      image = "image"
+      images = "images"
+      items = "items"
+      kind = "kind"
+      labels = "labels"
+      lat = "lat"
+      lng = "lng"
+      location = "location"
+      name = "name"
+      published = "published"
+      readerComments = "readerComments"
+      replies = "replies"
+      selfLink = "selfLink"
+      span = "span"
+      status = "status"
+      title = "title"
+      titleLink = "titleLink"
+      totalItems = "totalItems"
+      updated = "updated"
+      url = "url"
+
+[[backends]]
+  group = "blogger-v3"
+  url_pattern = "/blogger/v3/blogs/{blogId}/posts/search"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for access to the data within Blogger."
+    version = "v3"
+    slug = "blogger-v3-blogger-v3-blogs-blogid-posts-search"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["social"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "blogger-v3"
+  url_pattern = "/blogger/v3/blogs/{blogId}/posts/{postId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["author", "author.displayName", "author.id", "author.image", "author.image.url", "author.url", "blog", "blog.id", "content", "customMetaData", "etag", "id", "images", "images.url", "kind", "labels", "location", "location.lat", "location.lng", "location.name", "location.span", "published", "readerComments", "replies", "replies.items", "replies.selfLink", "replies.totalItems", "selfLink", "status", "title", "titleLink", "updated", "url"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for access to the data within Blogger."
+    version = "v3"
+    slug = "blogger-v3-blogger-v3-blogs-blogid-posts-postid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["social"]
+    [backends.extra_config.mapping]
+      author = "author"
+      blog = "blog"
+      content = "content"
+      customMetaData = "customMetaData"
+      displayName = "displayName"
+      etag = "etag"
+      id = "id"
+      image = "image"
+      images = "images"
+      items = "items"
+      kind = "kind"
+      labels = "labels"
+      lat = "lat"
+      lng = "lng"
+      location = "location"
+      name = "name"
+      published = "published"
+      readerComments = "readerComments"
+      replies = "replies"
+      selfLink = "selfLink"
+      span = "span"
+      status = "status"
+      title = "title"
+      titleLink = "titleLink"
+      totalItems = "totalItems"
+      updated = "updated"
+      url = "url"
+
+[[backends]]
+  group = "blogger-v3"
+  url_pattern = "/blogger/v3/blogs/{blogId}/posts/{postId}/comments"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken", "prevPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for access to the data within Blogger."
+    version = "v3"
+    slug = "blogger-v3-blogger-v3-blogs-blogid-posts-postid-comments"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["social"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+      prevPageToken = "prevPageToken"
+
+[[backends]]
+  group = "blogger-v3"
+  url_pattern = "/blogger/v3/blogs/{blogId}/posts/{postId}/comments/{commentId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["author", "author.displayName", "author.id", "author.image", "author.image.url", "author.url", "blog", "blog.id", "content", "id", "inReplyTo", "inReplyTo.id", "kind", "post", "post.id", "published", "selfLink", "status", "updated"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for access to the data within Blogger."
+    version = "v3"
+    slug = "blogger-v3-blogger-v3-blogs-blogid-posts-postid-comments-commentid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["social"]
+    [backends.extra_config.mapping]
+      author = "author"
+      blog = "blog"
+      content = "content"
+      displayName = "displayName"
+      id = "id"
+      image = "image"
+      inReplyTo = "inReplyTo"
+      kind = "kind"
+      post = "post"
+      published = "published"
+      selfLink = "selfLink"
+      status = "status"
+      updated = "updated"
+      url = "url"
+
+[[backends]]
+  group = "blogger-v3"
+  url_pattern = "/blogger/v3/blogs/{blogId}/posts/{postId}/comments/{commentId}/approve"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["author", "author.displayName", "author.id", "author.image", "author.image.url", "author.url", "blog", "blog.id", "content", "id", "inReplyTo", "inReplyTo.id", "kind", "post", "post.id", "published", "selfLink", "status", "updated"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for access to the data within Blogger."
+    version = "v3"
+    slug = "blogger-v3-blogger-v3-blogs-blogid-posts-postid-comments-commentid-approve"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["social"]
+    [backends.extra_config.mapping]
+      author = "author"
+      blog = "blog"
+      content = "content"
+      displayName = "displayName"
+      id = "id"
+      image = "image"
+      inReplyTo = "inReplyTo"
+      kind = "kind"
+      post = "post"
+      published = "published"
+      selfLink = "selfLink"
+      status = "status"
+      updated = "updated"
+      url = "url"
+
+[[backends]]
+  group = "blogger-v3"
+  url_pattern = "/blogger/v3/blogs/{blogId}/posts/{postId}/comments/{commentId}/removecontent"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["author", "author.displayName", "author.id", "author.image", "author.image.url", "author.url", "blog", "blog.id", "content", "id", "inReplyTo", "inReplyTo.id", "kind", "post", "post.id", "published", "selfLink", "status", "updated"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for access to the data within Blogger."
+    version = "v3"
+    slug = "blogger-v3-blogger-v3-blogs-blogid-posts-postid-comments-commentid-removecontent"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["social"]
+    [backends.extra_config.mapping]
+      author = "author"
+      blog = "blog"
+      content = "content"
+      displayName = "displayName"
+      id = "id"
+      image = "image"
+      inReplyTo = "inReplyTo"
+      kind = "kind"
+      post = "post"
+      published = "published"
+      selfLink = "selfLink"
+      status = "status"
+      updated = "updated"
+      url = "url"
+
+[[backends]]
+  group = "blogger-v3"
+  url_pattern = "/blogger/v3/blogs/{blogId}/posts/{postId}/comments/{commentId}/spam"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["author", "author.displayName", "author.id", "author.image", "author.image.url", "author.url", "blog", "blog.id", "content", "id", "inReplyTo", "inReplyTo.id", "kind", "post", "post.id", "published", "selfLink", "status", "updated"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for access to the data within Blogger."
+    version = "v3"
+    slug = "blogger-v3-blogger-v3-blogs-blogid-posts-postid-comments-commentid-spam"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["social"]
+    [backends.extra_config.mapping]
+      author = "author"
+      blog = "blog"
+      content = "content"
+      displayName = "displayName"
+      id = "id"
+      image = "image"
+      inReplyTo = "inReplyTo"
+      kind = "kind"
+      post = "post"
+      published = "published"
+      selfLink = "selfLink"
+      status = "status"
+      updated = "updated"
+      url = "url"
+
+[[backends]]
+  group = "blogger-v3"
+  url_pattern = "/blogger/v3/blogs/{blogId}/posts/{postId}/publish"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["author", "author.displayName", "author.id", "author.image", "author.image.url", "author.url", "blog", "blog.id", "content", "customMetaData", "etag", "id", "images", "images.url", "kind", "labels", "location", "location.lat", "location.lng", "location.name", "location.span", "published", "readerComments", "replies", "replies.items", "replies.selfLink", "replies.totalItems", "selfLink", "status", "title", "titleLink", "updated", "url"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for access to the data within Blogger."
+    version = "v3"
+    slug = "blogger-v3-blogger-v3-blogs-blogid-posts-postid-publish"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["social"]
+    [backends.extra_config.mapping]
+      author = "author"
+      blog = "blog"
+      content = "content"
+      customMetaData = "customMetaData"
+      displayName = "displayName"
+      etag = "etag"
+      id = "id"
+      image = "image"
+      images = "images"
+      items = "items"
+      kind = "kind"
+      labels = "labels"
+      lat = "lat"
+      lng = "lng"
+      location = "location"
+      name = "name"
+      published = "published"
+      readerComments = "readerComments"
+      replies = "replies"
+      selfLink = "selfLink"
+      span = "span"
+      status = "status"
+      title = "title"
+      titleLink = "titleLink"
+      totalItems = "totalItems"
+      updated = "updated"
+      url = "url"
+
+[[backends]]
+  group = "blogger-v3"
+  url_pattern = "/blogger/v3/blogs/{blogId}/posts/{postId}/revert"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["author", "author.displayName", "author.id", "author.image", "author.image.url", "author.url", "blog", "blog.id", "content", "customMetaData", "etag", "id", "images", "images.url", "kind", "labels", "location", "location.lat", "location.lng", "location.name", "location.span", "published", "readerComments", "replies", "replies.items", "replies.selfLink", "replies.totalItems", "selfLink", "status", "title", "titleLink", "updated", "url"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for access to the data within Blogger."
+    version = "v3"
+    slug = "blogger-v3-blogger-v3-blogs-blogid-posts-postid-revert"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["social"]
+    [backends.extra_config.mapping]
+      author = "author"
+      blog = "blog"
+      content = "content"
+      customMetaData = "customMetaData"
+      displayName = "displayName"
+      etag = "etag"
+      id = "id"
+      image = "image"
+      images = "images"
+      items = "items"
+      kind = "kind"
+      labels = "labels"
+      lat = "lat"
+      lng = "lng"
+      location = "location"
+      name = "name"
+      published = "published"
+      readerComments = "readerComments"
+      replies = "replies"
+      selfLink = "selfLink"
+      span = "span"
+      status = "status"
+      title = "title"
+      titleLink = "titleLink"
+      totalItems = "totalItems"
+      updated = "updated"
+      url = "url"
+
+[[backends]]
+  group = "blogger-v3"
+  url_pattern = "/blogger/v3/users/{userId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["about", "blogs", "blogs.selfLink", "created", "displayName", "id", "kind", "locale", "locale.country", "locale.language", "locale.variant", "selfLink", "url"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for access to the data within Blogger."
+    version = "v3"
+    slug = "blogger-v3-blogger-v3-users-userid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["social"]
+    [backends.extra_config.mapping]
+      about = "about"
+      blogs = "blogs"
+      country = "country"
+      created = "created"
+      displayName = "displayName"
+      id = "id"
+      kind = "kind"
+      language = "language"
+      locale = "locale"
+      selfLink = "selfLink"
+      url = "url"
+      variant = "variant"
+
+[[backends]]
+  group = "blogger-v3"
+  url_pattern = "/blogger/v3/users/{userId}/blogs"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["blogUserInfos", "items", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for access to the data within Blogger."
+    version = "v3"
+    slug = "blogger-v3-blogger-v3-users-userid-blogs"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["social"]
+    [backends.extra_config.mapping]
+      blogUserInfos = "blogUserInfos"
+      items = "items"
+      kind = "kind"
+
+[[backends]]
+  group = "blogger-v3"
+  url_pattern = "/blogger/v3/users/{userId}/blogs/{blogId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for access to the data within Blogger."
+    version = "v3"
+    slug = "blogger-v3-blogger-v3-users-userid-blogs-blogid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["social"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+
+[[backends]]
+  group = "blogger-v3"
+  url_pattern = "/blogger/v3/users/{userId}/blogs/{blogId}/posts"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for access to the data within Blogger."
+    version = "v3"
+    slug = "blogger-v3-blogger-v3-users-userid-blogs-blogid-posts"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["social"]
+    [backends.extra_config.mapping]
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "blogger-v3"
+  url_pattern = "/blogger/v3/users/{userId}/blogs/{blogId}/posts/{postId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for access to the data within Blogger."
+    version = "v3"
+    slug = "blogger-v3-blogger-v3-users-userid-blogs-blogid-posts-postid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["social"]
+    [backends.extra_config.mapping]
+      kind = "kind"

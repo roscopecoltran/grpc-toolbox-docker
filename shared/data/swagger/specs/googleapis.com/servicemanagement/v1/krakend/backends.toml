@@ -1,0 +1,384 @@
+[[backends]]
+  group = "google-service-management-v1"
+  url_pattern = "/v1/operations"
+  method = "GET"
+  host = ["https://servicemanagement.googleapis.com"]
+  query_string_params = ["filter", "name", "pageSize", "pageToken"]
+  whitelist = ["nextPageToken", "operations"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Google Service Management allows service producers to publish their services on Google Cloud Platform so that they can be discovered and used by service consumers."
+    version = "v1"
+    slug = "google-service-management-v1-v1-operations"
+    schemes = ["https"]
+    hosts = ["https://servicemanagement.googleapis.com"]
+    topics = ["operations"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      operations = "operations"
+
+[[backends]]
+  group = "google-service-management-v1"
+  url_pattern = "/v1/services"
+  method = "GET"
+  host = ["https://servicemanagement.googleapis.com"]
+  query_string_params = ["consumerId", "pageSize", "pageToken", "producerProjectId"]
+  whitelist = ["nextPageToken", "services"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Google Service Management allows service producers to publish their services on Google Cloud Platform so that they can be discovered and used by service consumers."
+    version = "v1"
+    slug = "google-service-management-v1-v1-services"
+    schemes = ["https"]
+    hosts = ["https://servicemanagement.googleapis.com"]
+    topics = ["services"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      services = "services"
+
+[[backends]]
+  group = "google-service-management-v1"
+  url_pattern = "/v1/services/{serviceName}"
+  method = "GET"
+  host = ["https://servicemanagement.googleapis.com"]
+  url_keys = ["serviceName"]
+  whitelist = ["producerProjectId", "serviceName"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Google Service Management allows service producers to publish their services on Google Cloud Platform so that they can be discovered and used by service consumers."
+    version = "v1"
+    slug = "google-service-management-v1-v1-services-servicename"
+    schemes = ["https"]
+    hosts = ["https://servicemanagement.googleapis.com"]
+    topics = ["services"]
+    [backends.extra_config.mapping]
+      producerProjectId = "producerProjectId"
+      serviceName = "serviceName"
+
+[[backends]]
+  group = "google-service-management-v1"
+  url_pattern = "/v1/services/{serviceName}/config"
+  method = "GET"
+  host = ["https://servicemanagement.googleapis.com"]
+  url_keys = ["serviceName"]
+  query_string_params = ["configId", "view"]
+  whitelist = ["apis", "configVersion", "endpoints", "enums", "id", "logs", "metrics", "monitoredResources", "name", "producerProjectId", "systemTypes", "title", "types"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Google Service Management allows service producers to publish their services on Google Cloud Platform so that they can be discovered and used by service consumers."
+    version = "v1"
+    slug = "google-service-management-v1-v1-services-servicename-config"
+    schemes = ["https"]
+    hosts = ["https://servicemanagement.googleapis.com"]
+    topics = ["services"]
+    [backends.extra_config.mapping]
+      apis = "apis"
+      configVersion = "configVersion"
+      endpoints = "endpoints"
+      enums = "enums"
+      id = "id"
+      logs = "logs"
+      metrics = "metrics"
+      monitoredResources = "monitoredResources"
+      name = "name"
+      producerProjectId = "producerProjectId"
+      systemTypes = "systemTypes"
+      title = "title"
+      types = "types"
+
+[[backends]]
+  group = "google-service-management-v1"
+  url_pattern = "/v1/services/{serviceName}/configs"
+  method = "GET"
+  host = ["https://servicemanagement.googleapis.com"]
+  url_keys = ["serviceName"]
+  query_string_params = ["pageSize", "pageToken"]
+  whitelist = ["nextPageToken", "serviceConfigs"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Google Service Management allows service producers to publish their services on Google Cloud Platform so that they can be discovered and used by service consumers."
+    version = "v1"
+    slug = "google-service-management-v1-v1-services-servicename-configs"
+    schemes = ["https"]
+    hosts = ["https://servicemanagement.googleapis.com"]
+    topics = ["services"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      serviceConfigs = "serviceConfigs"
+
+[[backends]]
+  group = "google-service-management-v1"
+  url_pattern = "/v1/services/{serviceName}/configs/{configId}"
+  method = "GET"
+  host = ["https://servicemanagement.googleapis.com"]
+  url_keys = ["configId", "serviceName"]
+  query_string_params = ["view"]
+  whitelist = ["apis", "configVersion", "endpoints", "enums", "id", "logs", "metrics", "monitoredResources", "name", "producerProjectId", "systemTypes", "title", "types"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Google Service Management allows service producers to publish their services on Google Cloud Platform so that they can be discovered and used by service consumers."
+    version = "v1"
+    slug = "google-service-management-v1-v1-services-servicename-configs-configid"
+    schemes = ["https"]
+    hosts = ["https://servicemanagement.googleapis.com"]
+    topics = ["services"]
+    [backends.extra_config.mapping]
+      apis = "apis"
+      configVersion = "configVersion"
+      endpoints = "endpoints"
+      enums = "enums"
+      id = "id"
+      logs = "logs"
+      metrics = "metrics"
+      monitoredResources = "monitoredResources"
+      name = "name"
+      producerProjectId = "producerProjectId"
+      systemTypes = "systemTypes"
+      title = "title"
+      types = "types"
+
+[[backends]]
+  group = "google-service-management-v1"
+  url_pattern = "/v1/services/{serviceName}/configs:submit"
+  method = "POST"
+  host = ["https://servicemanagement.googleapis.com"]
+  url_keys = ["serviceName"]
+  whitelist = ["done", "metadata", "name", "response"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Google Service Management allows service producers to publish their services on Google Cloud Platform so that they can be discovered and used by service consumers."
+    version = "v1"
+    slug = "google-service-management-v1-v1-services-servicename-configs-submit"
+    schemes = ["https"]
+    hosts = ["https://servicemanagement.googleapis.com"]
+    topics = ["services"]
+    [backends.extra_config.mapping]
+      done = "done"
+      metadata = "metadata"
+      name = "name"
+      response = "response"
+
+[[backends]]
+  group = "google-service-management-v1"
+  url_pattern = "/v1/services/{serviceName}/rollouts"
+  method = "GET"
+  host = ["https://servicemanagement.googleapis.com"]
+  url_keys = ["serviceName"]
+  query_string_params = ["filter", "pageSize", "pageToken"]
+  whitelist = ["nextPageToken", "rollouts"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Google Service Management allows service producers to publish their services on Google Cloud Platform so that they can be discovered and used by service consumers."
+    version = "v1"
+    slug = "google-service-management-v1-v1-services-servicename-rollouts"
+    schemes = ["https"]
+    hosts = ["https://servicemanagement.googleapis.com"]
+    topics = ["services"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      rollouts = "rollouts"
+
+[[backends]]
+  group = "google-service-management-v1"
+  url_pattern = "/v1/services/{serviceName}/rollouts/{rolloutId}"
+  method = "GET"
+  host = ["https://servicemanagement.googleapis.com"]
+  url_keys = ["rolloutId", "serviceName"]
+  whitelist = ["createTime", "createdBy", "rolloutId", "serviceName", "status"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Google Service Management allows service producers to publish their services on Google Cloud Platform so that they can be discovered and used by service consumers."
+    version = "v1"
+    slug = "google-service-management-v1-v1-services-servicename-rollouts-rolloutid"
+    schemes = ["https"]
+    hosts = ["https://servicemanagement.googleapis.com"]
+    topics = ["services"]
+    [backends.extra_config.mapping]
+      createTime = "createTime"
+      createdBy = "createdBy"
+      rolloutId = "rolloutId"
+      serviceName = "serviceName"
+      status = "status"
+
+[[backends]]
+  group = "google-service-management-v1"
+  url_pattern = "/v1/services/{serviceName}:disable"
+  method = "POST"
+  host = ["https://servicemanagement.googleapis.com"]
+  url_keys = ["serviceName"]
+  whitelist = ["done", "metadata", "name", "response"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Google Service Management allows service producers to publish their services on Google Cloud Platform so that they can be discovered and used by service consumers."
+    version = "v1"
+    slug = "google-service-management-v1-v1-services-servicename-disable"
+    schemes = ["https"]
+    hosts = ["https://servicemanagement.googleapis.com"]
+    topics = ["services"]
+    [backends.extra_config.mapping]
+      done = "done"
+      metadata = "metadata"
+      name = "name"
+      response = "response"
+
+[[backends]]
+  group = "google-service-management-v1"
+  url_pattern = "/v1/services/{serviceName}:enable"
+  method = "POST"
+  host = ["https://servicemanagement.googleapis.com"]
+  url_keys = ["serviceName"]
+  whitelist = ["done", "metadata", "name", "response"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Google Service Management allows service producers to publish their services on Google Cloud Platform so that they can be discovered and used by service consumers."
+    version = "v1"
+    slug = "google-service-management-v1-v1-services-servicename-enable"
+    schemes = ["https"]
+    hosts = ["https://servicemanagement.googleapis.com"]
+    topics = ["services"]
+    [backends.extra_config.mapping]
+      done = "done"
+      metadata = "metadata"
+      name = "name"
+      response = "response"
+
+[[backends]]
+  group = "google-service-management-v1"
+  url_pattern = "/v1/services/{serviceName}:undelete"
+  method = "POST"
+  host = ["https://servicemanagement.googleapis.com"]
+  url_keys = ["serviceName"]
+  whitelist = ["done", "metadata", "name", "response"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Google Service Management allows service producers to publish their services on Google Cloud Platform so that they can be discovered and used by service consumers."
+    version = "v1"
+    slug = "google-service-management-v1-v1-services-servicename-undelete"
+    schemes = ["https"]
+    hosts = ["https://servicemanagement.googleapis.com"]
+    topics = ["services"]
+    [backends.extra_config.mapping]
+      done = "done"
+      metadata = "metadata"
+      name = "name"
+      response = "response"
+
+[[backends]]
+  group = "google-service-management-v1"
+  url_pattern = "/v1/services:generateConfigReport"
+  method = "POST"
+  host = ["https://servicemanagement.googleapis.com"]
+  whitelist = ["changeReports", "diagnostics", "id", "serviceName"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Google Service Management allows service producers to publish their services on Google Cloud Platform so that they can be discovered and used by service consumers."
+    version = "v1"
+    slug = "google-service-management-v1-v1-services-generateconfigreport"
+    schemes = ["https"]
+    hosts = ["https://servicemanagement.googleapis.com"]
+    topics = ["services"]
+    [backends.extra_config.mapping]
+      changeReports = "changeReports"
+      diagnostics = "diagnostics"
+      id = "id"
+      serviceName = "serviceName"
+
+[[backends]]
+  group = "google-service-management-v1"
+  url_pattern = "/v1/{name}"
+  method = "GET"
+  host = ["https://servicemanagement.googleapis.com"]
+  url_keys = ["name"]
+  whitelist = ["done", "metadata", "name", "response"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Google Service Management allows service producers to publish their services on Google Cloud Platform so that they can be discovered and used by service consumers."
+    version = "v1"
+    slug = "google-service-management-v1-v1-name"
+    schemes = ["https"]
+    hosts = ["https://servicemanagement.googleapis.com"]
+    topics = ["operations"]
+    [backends.extra_config.mapping]
+      done = "done"
+      metadata = "metadata"
+      name = "name"
+      response = "response"
+
+[[backends]]
+  group = "google-service-management-v1"
+  url_pattern = "/v1/{resource}:getIamPolicy"
+  method = "POST"
+  host = ["https://servicemanagement.googleapis.com"]
+  url_keys = ["resource"]
+  whitelist = ["auditConfigs", "bindings", "etag", "iamOwned", "version"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Google Service Management allows service producers to publish their services on Google Cloud Platform so that they can be discovered and used by service consumers."
+    version = "v1"
+    slug = "google-service-management-v1-v1-resource-getiampolicy"
+    schemes = ["https"]
+    hosts = ["https://servicemanagement.googleapis.com"]
+    topics = ["services"]
+    [backends.extra_config.mapping]
+      auditConfigs = "auditConfigs"
+      bindings = "bindings"
+      etag = "etag"
+      iamOwned = "iamOwned"
+      version = "version"
+
+[[backends]]
+  group = "google-service-management-v1"
+  url_pattern = "/v1/{resource}:setIamPolicy"
+  method = "POST"
+  host = ["https://servicemanagement.googleapis.com"]
+  url_keys = ["resource"]
+  whitelist = ["auditConfigs", "bindings", "etag", "iamOwned", "version"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Google Service Management allows service producers to publish their services on Google Cloud Platform so that they can be discovered and used by service consumers."
+    version = "v1"
+    slug = "google-service-management-v1-v1-resource-setiampolicy"
+    schemes = ["https"]
+    hosts = ["https://servicemanagement.googleapis.com"]
+    topics = ["services"]
+    [backends.extra_config.mapping]
+      auditConfigs = "auditConfigs"
+      bindings = "bindings"
+      etag = "etag"
+      iamOwned = "iamOwned"
+      version = "version"
+
+[[backends]]
+  group = "google-service-management-v1"
+  url_pattern = "/v1/{resource}:testIamPermissions"
+  method = "POST"
+  host = ["https://servicemanagement.googleapis.com"]
+  url_keys = ["resource"]
+  whitelist = ["permissions"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Google Service Management allows service producers to publish their services on Google Cloud Platform so that they can be discovered and used by service consumers."
+    version = "v1"
+    slug = "google-service-management-v1-v1-resource-testiampermissions"
+    schemes = ["https"]
+    hosts = ["https://servicemanagement.googleapis.com"]
+    topics = ["services"]
+    [backends.extra_config.mapping]
+      permissions = "permissions"

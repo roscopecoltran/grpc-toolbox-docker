@@ -1,0 +1,52 @@
+{
+	"backends": [
+		{
+			"group": "pioneer-blog-feeds-apis-0-0-1",
+			"url_pattern": "/api/30/feeds/blog",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://api.apitore.com"
+			],
+			"whitelist": [
+				"endTime",
+				"entries",
+				"lastUpdatedAt",
+				"log",
+				"num",
+				"page",
+				"processTime",
+				"startTime"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "apitore.com",
+				"description": "Various blog feeds.\u003cBR /\u003e[Endpoint] https://api.apitore.com/api/30",
+				"version": "0.0.1",
+				"slug": "pioneer-blog-feeds-apis-0-0-1-api-30-feeds-blog",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"endTime": "endTime",
+					"entries": "entries",
+					"lastUpdatedAt": "lastUpdatedAt",
+					"log": "log",
+					"num": "num",
+					"page": "page",
+					"processTime": "processTime",
+					"startTime": "startTime"
+				},
+				"hosts": [
+					"https://api.apitore.com"
+				]
+			}
+		}
+	]
+}

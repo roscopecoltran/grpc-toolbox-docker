@@ -1,0 +1,160 @@
+{
+	"backends": [
+		{
+			"group": "stationsdatenbereitstellung-2-1-02",
+			"url_pattern": "/stada/v2/stations",
+			"method": "GET",
+			"host": [
+				"https://api.deutschebahn.com"
+			],
+			"whitelist": [
+				"limit",
+				"offset",
+				"result",
+				"total"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "deutschebahn.com",
+				"description": "An API providing master data for german railway stations by DB Station\u0026Service AG. ",
+				"version": "2.1.02",
+				"slug": "stationsdatenbereitstellung-2-1-02-stada-v2-stations",
+				"schemes": [
+					"https",
+					"http"
+				],
+				"mapping": {
+					"limit": "limit",
+					"offset": "offset",
+					"result": "result",
+					"total": "total"
+				},
+				"hosts": [
+					"https://api.deutschebahn.com",
+					"http://api.deutschebahn.com"
+				],
+				"topics": [
+					"open-data",
+					"transport"
+				]
+			}
+		},
+		{
+			"group": "stationsdatenbereitstellung-2-1-02",
+			"url_pattern": "/stada/v2/stations/{id}",
+			"method": "GET",
+			"host": [
+				"https://api.deutschebahn.com"
+			],
+			"whitelist": [
+				"limit",
+				"offset",
+				"result",
+				"total"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "deutschebahn.com",
+				"description": "An API providing master data for german railway stations by DB Station\u0026Service AG. ",
+				"version": "2.1.02",
+				"slug": "stationsdatenbereitstellung-2-1-02-stada-v2-stations-id",
+				"schemes": [
+					"https",
+					"http"
+				],
+				"mapping": {
+					"limit": "limit",
+					"offset": "offset",
+					"result": "result",
+					"total": "total"
+				},
+				"hosts": [
+					"https://api.deutschebahn.com",
+					"http://api.deutschebahn.com"
+				],
+				"topics": [
+					"open-data",
+					"transport"
+				]
+			}
+		},
+		{
+			"group": "stationsdatenbereitstellung-2-1-02",
+			"url_pattern": "/stada/v2/szentralen",
+			"method": "GET",
+			"host": [
+				"https://api.deutschebahn.com"
+			],
+			"whitelist": [
+				"limit",
+				"offset",
+				"result",
+				"total"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "deutschebahn.com",
+				"description": "An API providing master data for german railway stations by DB Station\u0026Service AG. ",
+				"version": "2.1.02",
+				"slug": "stationsdatenbereitstellung-2-1-02-stada-v2-szentralen",
+				"schemes": [
+					"https",
+					"http"
+				],
+				"mapping": {
+					"limit": "limit",
+					"offset": "offset",
+					"result": "result",
+					"total": "total"
+				},
+				"hosts": [
+					"https://api.deutschebahn.com",
+					"http://api.deutschebahn.com"
+				],
+				"topics": [
+					"open-data",
+					"transport"
+				]
+			}
+		},
+		{
+			"group": "stationsdatenbereitstellung-2-1-02",
+			"url_pattern": "/stada/v2/szentralen/{id}",
+			"method": "GET",
+			"host": [
+				"https://api.deutschebahn.com"
+			],
+			"whitelist": [
+				"limit",
+				"offset",
+				"result",
+				"total"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "deutschebahn.com",
+				"description": "An API providing master data for german railway stations by DB Station\u0026Service AG. ",
+				"version": "2.1.02",
+				"slug": "stationsdatenbereitstellung-2-1-02-stada-v2-szentralen-id",
+				"schemes": [
+					"https",
+					"http"
+				],
+				"mapping": {
+					"limit": "limit",
+					"offset": "offset",
+					"result": "result",
+					"total": "total"
+				},
+				"hosts": [
+					"https://api.deutschebahn.com",
+					"http://api.deutschebahn.com"
+				],
+				"topics": [
+					"open-data",
+					"transport"
+				]
+			}
+		}
+	]
+}

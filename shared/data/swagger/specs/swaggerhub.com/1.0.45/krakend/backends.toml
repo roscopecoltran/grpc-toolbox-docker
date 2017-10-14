@@ -1,0 +1,269 @@
+[[backends]]
+  group = "swaggerhub-registry-1-0-45"
+  url_pattern = "/apis"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.swaggerhub.com"]
+  query_string_params = ["limit", "order", "page", "query", "sort", "state", "tag"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "swaggerhub.com"
+    description = "# Introduction\nThis is the registry API for SwaggerHub. It allows you to access, manage, and update your APIs and Domains in SwaggerHub bypassing the Web application.\n\n# Authentication\nUse your personal API Key: you may find it by visiting the   [API Key page](https://app.swaggerhub.com/settings/apiKey).\n"
+    version = "1.0.45"
+    slug = "swaggerhub-registry-1-0-45-apis"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://api.swaggerhub.com"]
+    topics = ["apis", "developer-tools"]
+
+[[backends]]
+  group = "swaggerhub-registry-1-0-45"
+  url_pattern = "/apis/{owner}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.swaggerhub.com"]
+  url_keys = ["owner"]
+  query_string_params = ["limit", "order", "page", "sort"]
+  whitelist = ["apis", "created", "description", "modified", "name", "offset", "specificationVersion", "totalCount", "url"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "swaggerhub.com"
+    description = "# Introduction\nThis is the registry API for SwaggerHub. It allows you to access, manage, and update your APIs and Domains in SwaggerHub bypassing the Web application.\n\n# Authentication\nUse your personal API Key: you may find it by visiting the   [API Key page](https://app.swaggerhub.com/settings/apiKey).\n"
+    version = "1.0.45"
+    slug = "swaggerhub-registry-1-0-45-apis-owner"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://api.swaggerhub.com"]
+    topics = ["apis", "developer-tools"]
+    [backends.extra_config.mapping]
+      apis = "apis"
+      created = "created"
+      description = "description"
+      modified = "modified"
+      name = "name"
+      offset = "offset"
+      specificationVersion = "specificationVersion"
+      totalCount = "totalCount"
+      url = "url"
+
+[[backends]]
+  group = "swaggerhub-registry-1-0-45"
+  url_pattern = "/apis/{owner}/{api}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.swaggerhub.com"]
+  url_keys = ["api", "owner"]
+  whitelist = ["apis", "created", "description", "modified", "name", "offset", "specificationVersion", "totalCount", "url"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "swaggerhub.com"
+    description = "# Introduction\nThis is the registry API for SwaggerHub. It allows you to access, manage, and update your APIs and Domains in SwaggerHub bypassing the Web application.\n\n# Authentication\nUse your personal API Key: you may find it by visiting the   [API Key page](https://app.swaggerhub.com/settings/apiKey).\n"
+    version = "1.0.45"
+    slug = "swaggerhub-registry-1-0-45-apis-owner-api"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://api.swaggerhub.com"]
+    topics = ["apis", "developer-tools"]
+    [backends.extra_config.mapping]
+      apis = "apis"
+      created = "created"
+      description = "description"
+      modified = "modified"
+      name = "name"
+      offset = "offset"
+      specificationVersion = "specificationVersion"
+      totalCount = "totalCount"
+      url = "url"
+
+[[backends]]
+  group = "swaggerhub-registry-1-0-45"
+  url_pattern = "/apis/{owner}/{api}/"
+  method = "COLLABORATION"
+  encoding = "json"
+  host = ["https://api.swaggerhub.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "swaggerhub.com"
+    description = "# Introduction\nThis is the registry API for SwaggerHub. It allows you to access, manage, and update your APIs and Domains in SwaggerHub bypassing the Web application.\n\n# Authentication\nUse your personal API Key: you may find it by visiting the   [API Key page](https://app.swaggerhub.com/settings/apiKey).\n"
+    version = "1.0.45"
+    slug = "swaggerhub-registry-1-0-45-apis-owner-api"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://api.swaggerhub.com"]
+    topics = ["developer-tools"]
+
+[[backends]]
+  group = "swaggerhub-registry-1-0-45"
+  url_pattern = "/apis/{owner}/{api}/{version}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.swaggerhub.com"]
+  url_keys = ["api", "owner", "version"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "swaggerhub.com"
+    description = "# Introduction\nThis is the registry API for SwaggerHub. It allows you to access, manage, and update your APIs and Domains in SwaggerHub bypassing the Web application.\n\n# Authentication\nUse your personal API Key: you may find it by visiting the   [API Key page](https://app.swaggerhub.com/settings/apiKey).\n"
+    version = "1.0.45"
+    slug = "swaggerhub-registry-1-0-45-apis-owner-api-version"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://api.swaggerhub.com"]
+    topics = ["apis", "developer-tools"]
+
+[[backends]]
+  group = "swaggerhub-registry-1-0-45"
+  url_pattern = "/apis/{owner}/{api}/{version}/swagger"
+  method = "JSON"
+  encoding = "json"
+  host = ["https://api.swaggerhub.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "swaggerhub.com"
+    description = "# Introduction\nThis is the registry API for SwaggerHub. It allows you to access, manage, and update your APIs and Domains in SwaggerHub bypassing the Web application.\n\n# Authentication\nUse your personal API Key: you may find it by visiting the   [API Key page](https://app.swaggerhub.com/settings/apiKey).\n"
+    version = "1.0.45"
+    slug = "swaggerhub-registry-1-0-45-apis-owner-api-version-swagger"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://api.swaggerhub.com"]
+    topics = ["developer-tools"]
+
+[[backends]]
+  group = "swaggerhub-registry-1-0-45"
+  url_pattern = "/domains"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.swaggerhub.com"]
+  query_string_params = ["limit", "order", "page", "query", "sort", "state", "tag"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "swaggerhub.com"
+    description = "# Introduction\nThis is the registry API for SwaggerHub. It allows you to access, manage, and update your APIs and Domains in SwaggerHub bypassing the Web application.\n\n# Authentication\nUse your personal API Key: you may find it by visiting the   [API Key page](https://app.swaggerhub.com/settings/apiKey).\n"
+    version = "1.0.45"
+    slug = "swaggerhub-registry-1-0-45-domains"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://api.swaggerhub.com"]
+    topics = ["developer-tools", "domains"]
+
+[[backends]]
+  group = "swaggerhub-registry-1-0-45"
+  url_pattern = "/domains/{owner}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.swaggerhub.com"]
+  url_keys = ["owner"]
+  query_string_params = ["limit", "order", "page", "sort"]
+  whitelist = ["apis", "created", "description", "modified", "name", "offset", "specificationVersion", "totalCount", "url"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "swaggerhub.com"
+    description = "# Introduction\nThis is the registry API for SwaggerHub. It allows you to access, manage, and update your APIs and Domains in SwaggerHub bypassing the Web application.\n\n# Authentication\nUse your personal API Key: you may find it by visiting the   [API Key page](https://app.swaggerhub.com/settings/apiKey).\n"
+    version = "1.0.45"
+    slug = "swaggerhub-registry-1-0-45-domains-owner"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://api.swaggerhub.com"]
+    topics = ["developer-tools", "domains"]
+    [backends.extra_config.mapping]
+      apis = "apis"
+      created = "created"
+      description = "description"
+      modified = "modified"
+      name = "name"
+      offset = "offset"
+      specificationVersion = "specificationVersion"
+      totalCount = "totalCount"
+      url = "url"
+
+[[backends]]
+  group = "swaggerhub-registry-1-0-45"
+  url_pattern = "/domains/{owner}/{domain}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.swaggerhub.com"]
+  url_keys = ["domain", "owner"]
+  whitelist = ["apis", "created", "description", "modified", "name", "offset", "specificationVersion", "totalCount", "url"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "swaggerhub.com"
+    description = "# Introduction\nThis is the registry API for SwaggerHub. It allows you to access, manage, and update your APIs and Domains in SwaggerHub bypassing the Web application.\n\n# Authentication\nUse your personal API Key: you may find it by visiting the   [API Key page](https://app.swaggerhub.com/settings/apiKey).\n"
+    version = "1.0.45"
+    slug = "swaggerhub-registry-1-0-45-domains-owner-domain"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://api.swaggerhub.com"]
+    topics = ["developer-tools", "domains"]
+    [backends.extra_config.mapping]
+      apis = "apis"
+      created = "created"
+      description = "description"
+      modified = "modified"
+      name = "name"
+      offset = "offset"
+      specificationVersion = "specificationVersion"
+      totalCount = "totalCount"
+      url = "url"
+
+[[backends]]
+  group = "swaggerhub-registry-1-0-45"
+  url_pattern = "/domains/{owner}/{domain}/{version}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.swaggerhub.com"]
+  url_keys = ["domain", "owner", "version"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "swaggerhub.com"
+    description = "# Introduction\nThis is the registry API for SwaggerHub. It allows you to access, manage, and update your APIs and Domains in SwaggerHub bypassing the Web application.\n\n# Authentication\nUse your personal API Key: you may find it by visiting the   [API Key page](https://app.swaggerhub.com/settings/apiKey).\n"
+    version = "1.0.45"
+    slug = "swaggerhub-registry-1-0-45-domains-owner-domain-version"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://api.swaggerhub.com"]
+    topics = ["developer-tools", "domains"]
+
+[[backends]]
+  group = "swaggerhub-registry-1-0-45"
+  url_pattern = "/domains/{owner}/{domain}/{version}/domain"
+  method = "JSON"
+  encoding = "json"
+  host = ["https://api.swaggerhub.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "swaggerhub.com"
+    description = "# Introduction\nThis is the registry API for SwaggerHub. It allows you to access, manage, and update your APIs and Domains in SwaggerHub bypassing the Web application.\n\n# Authentication\nUse your personal API Key: you may find it by visiting the   [API Key page](https://app.swaggerhub.com/settings/apiKey).\n"
+    version = "1.0.45"
+    slug = "swaggerhub-registry-1-0-45-domains-owner-domain-version-domain"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://api.swaggerhub.com"]
+    topics = ["developer-tools"]
+
+[[backends]]
+  group = "swaggerhub-registry-1-0-45"
+  url_pattern = "/specs"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.swaggerhub.com"]
+  query_string_params = ["limit", "order", "owner", "page", "query", "sort", "specType", "state", "visibility"]
+  whitelist = ["apis", "created", "description", "modified", "name", "offset", "specificationVersion", "totalCount", "url"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "swaggerhub.com"
+    description = "# Introduction\nThis is the registry API for SwaggerHub. It allows you to access, manage, and update your APIs and Domains in SwaggerHub bypassing the Web application.\n\n# Authentication\nUse your personal API Key: you may find it by visiting the   [API Key page](https://app.swaggerhub.com/settings/apiKey).\n"
+    version = "1.0.45"
+    slug = "swaggerhub-registry-1-0-45-specs"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://api.swaggerhub.com"]
+    topics = ["apis", "developer-tools", "domains"]
+    [backends.extra_config.mapping]
+      apis = "apis"
+      created = "created"
+      description = "description"
+      modified = "modified"
+      name = "name"
+      offset = "offset"
+      specificationVersion = "specificationVersion"
+      totalCount = "totalCount"
+      url = "url"

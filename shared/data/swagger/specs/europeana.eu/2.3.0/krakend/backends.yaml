@@ -1,0 +1,241 @@
+backends:
+- group: europeana-2-3-0
+  url_pattern: /api/v2/dataset/{id}
+  method: JSON
+  encoding: json
+  host:
+  - http://www.europeana.eu
+  concurrent_calls: 1
+  extra_config:
+    provider: europeana.eu
+    description: This Swagger API console provides an overview of an interface to
+      the Europeana REST API. You can build and test anything from the simplest search
+      to a complex query using facetList such as dates, geotags and permissions. For
+      more help and information, head to our comprehensive <a href="http://labs.europeana.eu/api/">online
+      documentation</a>.
+    version: 2.3.0
+    slug: europeana-2-3-0-api-v2-dataset-id
+    schemes:
+    - http
+    consumes:
+    - json
+    hosts:
+    - http://www.europeana.eu
+    topics:
+    - open-data
+- group: europeana-2-3-0
+  url_pattern: /api/v2/datasets
+  method: JSON
+  encoding: json
+  host:
+  - http://www.europeana.eu
+  concurrent_calls: 1
+  extra_config:
+    provider: europeana.eu
+    description: This Swagger API console provides an overview of an interface to
+      the Europeana REST API. You can build and test anything from the simplest search
+      to a complex query using facetList such as dates, geotags and permissions. For
+      more help and information, head to our comprehensive <a href="http://labs.europeana.eu/api/">online
+      documentation</a>.
+    version: 2.3.0
+    slug: europeana-2-3-0-api-v2-datasets
+    schemes:
+    - http
+    consumes:
+    - json
+    hosts:
+    - http://www.europeana.eu
+    topics:
+    - open-data
+- group: europeana-2-3-0
+  url_pattern: /api/v2/opensearch
+  method: RSS
+  encoding: json
+  host:
+  - http://www.europeana.eu
+  concurrent_calls: 1
+  extra_config:
+    provider: europeana.eu
+    description: This Swagger API console provides an overview of an interface to
+      the Europeana REST API. You can build and test anything from the simplest search
+      to a complex query using facetList such as dates, geotags and permissions. For
+      more help and information, head to our comprehensive <a href="http://labs.europeana.eu/api/">online
+      documentation</a>.
+    version: 2.3.0
+    slug: europeana-2-3-0-api-v2-opensearch
+    schemes:
+    - http
+    consumes:
+    - json
+    hosts:
+    - http://www.europeana.eu
+    topics:
+    - open-data
+- group: europeana-2-3-0
+  url_pattern: /api/v2/provider/{id}
+  method: JSON
+  encoding: json
+  host:
+  - http://www.europeana.eu
+  concurrent_calls: 1
+  extra_config:
+    provider: europeana.eu
+    description: This Swagger API console provides an overview of an interface to
+      the Europeana REST API. You can build and test anything from the simplest search
+      to a complex query using facetList such as dates, geotags and permissions. For
+      more help and information, head to our comprehensive <a href="http://labs.europeana.eu/api/">online
+      documentation</a>.
+    version: 2.3.0
+    slug: europeana-2-3-0-api-v2-provider-id
+    schemes:
+    - http
+    consumes:
+    - json
+    hosts:
+    - http://www.europeana.eu
+    topics:
+    - open-data
+- group: europeana-2-3-0
+  url_pattern: /api/v2/provider/{id}/datasets
+  method: JSON
+  encoding: json
+  host:
+  - http://www.europeana.eu
+  concurrent_calls: 1
+  extra_config:
+    provider: europeana.eu
+    description: This Swagger API console provides an overview of an interface to
+      the Europeana REST API. You can build and test anything from the simplest search
+      to a complex query using facetList such as dates, geotags and permissions. For
+      more help and information, head to our comprehensive <a href="http://labs.europeana.eu/api/">online
+      documentation</a>.
+    version: 2.3.0
+    slug: europeana-2-3-0-api-v2-provider-id-datasets
+    schemes:
+    - http
+    consumes:
+    - json
+    hosts:
+    - http://www.europeana.eu
+    topics:
+    - open-data
+- group: europeana-2-3-0
+  url_pattern: /api/v2/providers
+  method: JSON
+  encoding: json
+  host:
+  - http://www.europeana.eu
+  concurrent_calls: 1
+  extra_config:
+    provider: europeana.eu
+    description: This Swagger API console provides an overview of an interface to
+      the Europeana REST API. You can build and test anything from the simplest search
+      to a complex query using facetList such as dates, geotags and permissions. For
+      more help and information, head to our comprehensive <a href="http://labs.europeana.eu/api/">online
+      documentation</a>.
+    version: 2.3.0
+    slug: europeana-2-3-0-api-v2-providers
+    schemes:
+    - http
+    consumes:
+    - json
+    hosts:
+    - http://www.europeana.eu
+    topics:
+    - open-data
+- group: europeana-2-3-0
+  url_pattern: /api/v2/record/{collectionId}/{recordId}
+  method: JSON
+  encoding: json
+  host:
+  - http://www.europeana.eu
+  concurrent_calls: 1
+  extra_config:
+    provider: europeana.eu
+    description: This Swagger API console provides an overview of an interface to
+      the Europeana REST API. You can build and test anything from the simplest search
+      to a complex query using facetList such as dates, geotags and permissions. For
+      more help and information, head to our comprehensive <a href="http://labs.europeana.eu/api/">online
+      documentation</a>.
+    version: 2.3.0
+    slug: europeana-2-3-0-api-v2-record-collectionid-recordid
+    schemes:
+    - http
+    consumes:
+    - json
+    hosts:
+    - http://www.europeana.eu
+    topics:
+    - open-data
+- group: europeana-2-3-0
+  url_pattern: /api/v2/search
+  method: JSON
+  encoding: json
+  host:
+  - http://www.europeana.eu
+  concurrent_calls: 1
+  extra_config:
+    provider: europeana.eu
+    description: This Swagger API console provides an overview of an interface to
+      the Europeana REST API. You can build and test anything from the simplest search
+      to a complex query using facetList such as dates, geotags and permissions. For
+      more help and information, head to our comprehensive <a href="http://labs.europeana.eu/api/">online
+      documentation</a>.
+    version: 2.3.0
+    slug: europeana-2-3-0-api-v2-search
+    schemes:
+    - http
+    consumes:
+    - json
+    hosts:
+    - http://www.europeana.eu
+    topics:
+    - open-data
+- group: europeana-2-3-0
+  url_pattern: /api/v2/suggestions
+  method: JSON
+  encoding: json
+  host:
+  - http://www.europeana.eu
+  concurrent_calls: 1
+  extra_config:
+    provider: europeana.eu
+    description: This Swagger API console provides an overview of an interface to
+      the Europeana REST API. You can build and test anything from the simplest search
+      to a complex query using facetList such as dates, geotags and permissions. For
+      more help and information, head to our comprehensive <a href="http://labs.europeana.eu/api/">online
+      documentation</a>.
+    version: 2.3.0
+    slug: europeana-2-3-0-api-v2-suggestions
+    schemes:
+    - http
+    consumes:
+    - json
+    hosts:
+    - http://www.europeana.eu
+    topics:
+    - open-data
+- group: europeana-2-3-0
+  url_pattern: /api/v2/translateQuery
+  method: JSON
+  encoding: json
+  host:
+  - http://www.europeana.eu
+  concurrent_calls: 1
+  extra_config:
+    provider: europeana.eu
+    description: This Swagger API console provides an overview of an interface to
+      the Europeana REST API. You can build and test anything from the simplest search
+      to a complex query using facetList such as dates, geotags and permissions. For
+      more help and information, head to our comprehensive <a href="http://labs.europeana.eu/api/">online
+      documentation</a>.
+    version: 2.3.0
+    slug: europeana-2-3-0-api-v2-translatequery
+    schemes:
+    - http
+    consumes:
+    - json
+    hosts:
+    - http://www.europeana.eu
+    topics:
+    - open-data

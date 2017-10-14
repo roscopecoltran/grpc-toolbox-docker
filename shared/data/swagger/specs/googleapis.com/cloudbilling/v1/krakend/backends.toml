@@ -1,0 +1,124 @@
+[[backends]]
+  group = "google-cloud-billing-v1"
+  url_pattern = "/v1/billingAccounts"
+  method = "GET"
+  host = ["https://cloudbilling.googleapis.com"]
+  query_string_params = ["pageSize", "pageToken"]
+  whitelist = ["billingAccounts", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Allows developers to manage billing for their Google Cloud Platform projects\n    programmatically."
+    version = "v1"
+    slug = "google-cloud-billing-v1-v1-billingaccounts"
+    schemes = ["https"]
+    hosts = ["https://cloudbilling.googleapis.com"]
+    topics = ["billingaccounts"]
+    [backends.extra_config.mapping]
+      billingAccounts = "billingAccounts"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "google-cloud-billing-v1"
+  url_pattern = "/v1/services"
+  method = "GET"
+  host = ["https://cloudbilling.googleapis.com"]
+  query_string_params = ["pageSize", "pageToken"]
+  whitelist = ["nextPageToken", "services"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Allows developers to manage billing for their Google Cloud Platform projects\n    programmatically."
+    version = "v1"
+    slug = "google-cloud-billing-v1-v1-services"
+    schemes = ["https"]
+    hosts = ["https://cloudbilling.googleapis.com"]
+    topics = ["services"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      services = "services"
+
+[[backends]]
+  group = "google-cloud-billing-v1"
+  url_pattern = "/v1/{name}"
+  method = "GET"
+  host = ["https://cloudbilling.googleapis.com"]
+  url_keys = ["name"]
+  whitelist = ["displayName", "name", "open"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Allows developers to manage billing for their Google Cloud Platform projects\n    programmatically."
+    version = "v1"
+    slug = "google-cloud-billing-v1-v1-name"
+    schemes = ["https"]
+    hosts = ["https://cloudbilling.googleapis.com"]
+    topics = ["billingaccounts"]
+    [backends.extra_config.mapping]
+      displayName = "displayName"
+      name = "name"
+      open = "open"
+
+[[backends]]
+  group = "google-cloud-billing-v1"
+  url_pattern = "/v1/{name}/billingInfo"
+  method = "GET"
+  host = ["https://cloudbilling.googleapis.com"]
+  url_keys = ["name"]
+  whitelist = ["billingAccountName", "billingEnabled", "name", "projectId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Allows developers to manage billing for their Google Cloud Platform projects\n    programmatically."
+    version = "v1"
+    slug = "google-cloud-billing-v1-v1-name-billinginfo"
+    schemes = ["https"]
+    hosts = ["https://cloudbilling.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      billingAccountName = "billingAccountName"
+      billingEnabled = "billingEnabled"
+      name = "name"
+      projectId = "projectId"
+
+[[backends]]
+  group = "google-cloud-billing-v1"
+  url_pattern = "/v1/{name}/projects"
+  method = "GET"
+  host = ["https://cloudbilling.googleapis.com"]
+  url_keys = ["name"]
+  query_string_params = ["pageSize", "pageToken"]
+  whitelist = ["nextPageToken", "projectBillingInfo"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Allows developers to manage billing for their Google Cloud Platform projects\n    programmatically."
+    version = "v1"
+    slug = "google-cloud-billing-v1-v1-name-projects"
+    schemes = ["https"]
+    hosts = ["https://cloudbilling.googleapis.com"]
+    topics = ["billingaccounts"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      projectBillingInfo = "projectBillingInfo"
+
+[[backends]]
+  group = "google-cloud-billing-v1"
+  url_pattern = "/v1/{parent}/skus"
+  method = "GET"
+  host = ["https://cloudbilling.googleapis.com"]
+  url_keys = ["parent"]
+  query_string_params = ["currencyCode", "endTime", "pageSize", "pageToken", "startTime"]
+  whitelist = ["nextPageToken", "skus"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Allows developers to manage billing for their Google Cloud Platform projects\n    programmatically."
+    version = "v1"
+    slug = "google-cloud-billing-v1-v1-parent-skus"
+    schemes = ["https"]
+    hosts = ["https://cloudbilling.googleapis.com"]
+    topics = ["services"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      skus = "skus"

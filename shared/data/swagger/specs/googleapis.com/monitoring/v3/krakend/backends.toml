@@ -1,0 +1,147 @@
+[[backends]]
+  group = "stackdriver-monitoring-v3"
+  url_pattern = "/v3/{name}"
+  method = "GET"
+  host = ["https://monitoring.googleapis.com"]
+  url_keys = ["name"]
+  whitelist = ["displayName", "filter", "isCluster", "name", "parentName"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages your Stackdriver Monitoring data and configurations. Most projects must be associated with a Stackdriver account, with a few exceptions as noted on the individual method pages."
+    version = "v3"
+    slug = "stackdriver-monitoring-v3-v3-name"
+    schemes = ["https"]
+    hosts = ["https://monitoring.googleapis.com"]
+    topics = ["monitoring", "projects"]
+    [backends.extra_config.mapping]
+      displayName = "displayName"
+      filter = "filter"
+      isCluster = "isCluster"
+      name = "name"
+      parentName = "parentName"
+
+[[backends]]
+  group = "stackdriver-monitoring-v3"
+  url_pattern = "/v3/{name}/collectdTimeSeries"
+  method = "POST"
+  host = ["https://monitoring.googleapis.com"]
+  url_keys = ["name"]
+  whitelist = ["payloadErrors"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages your Stackdriver Monitoring data and configurations. Most projects must be associated with a Stackdriver account, with a few exceptions as noted on the individual method pages."
+    version = "v3"
+    slug = "stackdriver-monitoring-v3-v3-name-collectdtimeseries"
+    schemes = ["https"]
+    hosts = ["https://monitoring.googleapis.com"]
+    topics = ["monitoring", "projects"]
+    [backends.extra_config.mapping]
+      payloadErrors = "payloadErrors"
+
+[[backends]]
+  group = "stackdriver-monitoring-v3"
+  url_pattern = "/v3/{name}/groups"
+  method = "GET"
+  host = ["https://monitoring.googleapis.com"]
+  url_keys = ["name"]
+  query_string_params = ["ancestorsOfGroup", "childrenOfGroup", "descendantsOfGroup", "pageSize", "pageToken"]
+  whitelist = ["group", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages your Stackdriver Monitoring data and configurations. Most projects must be associated with a Stackdriver account, with a few exceptions as noted on the individual method pages."
+    version = "v3"
+    slug = "stackdriver-monitoring-v3-v3-name-groups"
+    schemes = ["https"]
+    hosts = ["https://monitoring.googleapis.com"]
+    topics = ["monitoring", "projects"]
+    [backends.extra_config.mapping]
+      group = "group"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "stackdriver-monitoring-v3"
+  url_pattern = "/v3/{name}/members"
+  method = "GET"
+  host = ["https://monitoring.googleapis.com"]
+  url_keys = ["name"]
+  query_string_params = ["filter", "interval.endTime", "interval.startTime", "pageSize", "pageToken"]
+  whitelist = ["members", "nextPageToken", "totalSize"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages your Stackdriver Monitoring data and configurations. Most projects must be associated with a Stackdriver account, with a few exceptions as noted on the individual method pages."
+    version = "v3"
+    slug = "stackdriver-monitoring-v3-v3-name-members"
+    schemes = ["https"]
+    hosts = ["https://monitoring.googleapis.com"]
+    topics = ["monitoring", "projects"]
+    [backends.extra_config.mapping]
+      members = "members"
+      nextPageToken = "nextPageToken"
+      totalSize = "totalSize"
+
+[[backends]]
+  group = "stackdriver-monitoring-v3"
+  url_pattern = "/v3/{name}/metricDescriptors"
+  method = "GET"
+  host = ["https://monitoring.googleapis.com"]
+  url_keys = ["name"]
+  query_string_params = ["filter", "pageSize", "pageToken"]
+  whitelist = ["metricDescriptors", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages your Stackdriver Monitoring data and configurations. Most projects must be associated with a Stackdriver account, with a few exceptions as noted on the individual method pages."
+    version = "v3"
+    slug = "stackdriver-monitoring-v3-v3-name-metricdescriptors"
+    schemes = ["https"]
+    hosts = ["https://monitoring.googleapis.com"]
+    topics = ["monitoring", "projects"]
+    [backends.extra_config.mapping]
+      metricDescriptors = "metricDescriptors"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "stackdriver-monitoring-v3"
+  url_pattern = "/v3/{name}/monitoredResourceDescriptors"
+  method = "GET"
+  host = ["https://monitoring.googleapis.com"]
+  url_keys = ["name"]
+  query_string_params = ["filter", "pageSize", "pageToken"]
+  whitelist = ["nextPageToken", "resourceDescriptors"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages your Stackdriver Monitoring data and configurations. Most projects must be associated with a Stackdriver account, with a few exceptions as noted on the individual method pages."
+    version = "v3"
+    slug = "stackdriver-monitoring-v3-v3-name-monitoredresourcedescriptors"
+    schemes = ["https"]
+    hosts = ["https://monitoring.googleapis.com"]
+    topics = ["monitoring", "projects"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      resourceDescriptors = "resourceDescriptors"
+
+[[backends]]
+  group = "stackdriver-monitoring-v3"
+  url_pattern = "/v3/{name}/timeSeries"
+  method = "GET"
+  host = ["https://monitoring.googleapis.com"]
+  url_keys = ["name"]
+  query_string_params = ["aggregation.alignmentPeriod", "aggregation.crossSeriesReducer", "aggregation.groupByFields", "aggregation.perSeriesAligner", "filter", "interval.endTime", "interval.startTime", "orderBy", "pageSize", "pageToken", "view"]
+  whitelist = ["nextPageToken", "timeSeries"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages your Stackdriver Monitoring data and configurations. Most projects must be associated with a Stackdriver account, with a few exceptions as noted on the individual method pages."
+    version = "v3"
+    slug = "stackdriver-monitoring-v3-v3-name-timeseries"
+    schemes = ["https"]
+    hosts = ["https://monitoring.googleapis.com"]
+    topics = ["monitoring", "projects"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      timeSeries = "timeSeries"

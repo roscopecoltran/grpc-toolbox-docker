@@ -1,0 +1,39 @@
+backends:
+- group: sentence-similarity-0-0-1
+  url_pattern: /api/53/sentence-similarity/eval
+  method: POST
+  encoding: json
+  host:
+  - https://api.apitore.com
+  whitelist:
+  - endTime
+  - log
+  - processTime
+  - similarity
+  - startTime
+  - text1
+  - text2
+  concurrent_calls: 1
+  extra_config:
+    provider: apitore.com
+    description: Sentence Similarity.<BR />[Endpoint] https://api.apitore.com/api/53
+    version: 0.0.1
+    slug: sentence-similarity-0-0-1-api-53-sentence-similarity-eval
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      endTime: endTime
+      log: log
+      processTime: processTime
+      similarity: similarity
+      startTime: startTime
+      text1: text1
+      text2: text2
+    hosts:
+    - https://api.apitore.com
+    topics:
+    - text

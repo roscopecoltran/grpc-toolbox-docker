@@ -1,0 +1,96 @@
+[[backends]]
+  group = "google-cloud-speech-v1"
+  url_pattern = "/v1/operations"
+  method = "GET"
+  host = ["https://speech.googleapis.com"]
+  query_string_params = ["filter", "name", "pageSize", "pageToken"]
+  whitelist = ["nextPageToken", "operations"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Converts audio to text by applying powerful neural network models."
+    version = "v1"
+    slug = "google-cloud-speech-v1-v1-operations"
+    schemes = ["https"]
+    hosts = ["https://speech.googleapis.com"]
+    topics = ["operations"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      operations = "operations"
+
+[[backends]]
+  group = "google-cloud-speech-v1"
+  url_pattern = "/v1/operations/{name}"
+  method = "GET"
+  host = ["https://speech.googleapis.com"]
+  url_keys = ["name"]
+  whitelist = ["done", "metadata", "name", "response"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Converts audio to text by applying powerful neural network models."
+    version = "v1"
+    slug = "google-cloud-speech-v1-v1-operations-name"
+    schemes = ["https"]
+    hosts = ["https://speech.googleapis.com"]
+    topics = ["operations"]
+    [backends.extra_config.mapping]
+      done = "done"
+      metadata = "metadata"
+      name = "name"
+      response = "response"
+
+[[backends]]
+  group = "google-cloud-speech-v1"
+  url_pattern = "/v1/operations/{name}:cancel"
+  method = "POST"
+  host = ["https://speech.googleapis.com"]
+  url_keys = ["name"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Converts audio to text by applying powerful neural network models."
+    version = "v1"
+    slug = "google-cloud-speech-v1-v1-operations-name-cancel"
+    schemes = ["https"]
+    hosts = ["https://speech.googleapis.com"]
+    topics = ["operations"]
+
+[[backends]]
+  group = "google-cloud-speech-v1"
+  url_pattern = "/v1/speech:longrunningrecognize"
+  method = "POST"
+  host = ["https://speech.googleapis.com"]
+  whitelist = ["done", "metadata", "name", "response"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Converts audio to text by applying powerful neural network models."
+    version = "v1"
+    slug = "google-cloud-speech-v1-v1-speech-longrunningrecognize"
+    schemes = ["https"]
+    hosts = ["https://speech.googleapis.com"]
+    topics = ["speech"]
+    [backends.extra_config.mapping]
+      done = "done"
+      metadata = "metadata"
+      name = "name"
+      response = "response"
+
+[[backends]]
+  group = "google-cloud-speech-v1"
+  url_pattern = "/v1/speech:recognize"
+  method = "POST"
+  host = ["https://speech.googleapis.com"]
+  whitelist = ["results"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Converts audio to text by applying powerful neural network models."
+    version = "v1"
+    slug = "google-cloud-speech-v1-v1-speech-recognize"
+    schemes = ["https"]
+    hosts = ["https://speech.googleapis.com"]
+    topics = ["speech"]
+    [backends.extra_config.mapping]
+      results = "results"

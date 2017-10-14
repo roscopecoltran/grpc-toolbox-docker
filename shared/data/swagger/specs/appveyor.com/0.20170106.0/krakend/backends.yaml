@@ -1,0 +1,1054 @@
+backends:
+- group: appveyor-0-20170106-0
+  url_pattern: /api/account/encrypt
+  method: POST
+  encoding: json
+  host:
+  - https://ci.appveyor.com
+  concurrent_calls: 1
+  extra_config:
+    provider: appveyor.com
+    description: |
+      AppVeyor is a hosted continuous integration service which runs on Microsoft
+      Windows.  The AppVeyor REST API provides a RESTful way to interact with the
+      AppVeyor service.  This includes managing projects, builds, deployments,
+      and the teams that build them.
+
+      Additional help and discussion of the AppVeyor REST API is available at
+      http://help.appveyor.com/discussions
+
+      This Swagger definition is an **unofficial** description of the AppVeyor
+      REST API maintained at https://github.com/kevinoid/appveyor-swagger
+      Please report any issues or suggestions for this Swagger definition at
+      https://github.com/kevinoid/appveyor-swagger/issues/new
+
+      #### API Conventions
+
+      Fields which are missing from update operations (`PUT` requests) are
+      typically reset to their default values.  So although most fields are not
+      technically required, they should usually be specified in practice.
+    version: 0.20170106.0
+    slug: appveyor-0-20170106-0-api-account-encrypt
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    - xml
+    hosts:
+    - https://ci.appveyor.com
+    topics:
+    - developer-tools
+- group: appveyor-0-20170106-0
+  url_pattern: /api/buildjobs/{jobId}/log
+  method: GET
+  encoding: json
+  host:
+  - https://ci.appveyor.com
+  concurrent_calls: 1
+  extra_config:
+    provider: appveyor.com
+    description: |
+      AppVeyor is a hosted continuous integration service which runs on Microsoft
+      Windows.  The AppVeyor REST API provides a RESTful way to interact with the
+      AppVeyor service.  This includes managing projects, builds, deployments,
+      and the teams that build them.
+
+      Additional help and discussion of the AppVeyor REST API is available at
+      http://help.appveyor.com/discussions
+
+      This Swagger definition is an **unofficial** description of the AppVeyor
+      REST API maintained at https://github.com/kevinoid/appveyor-swagger
+      Please report any issues or suggestions for this Swagger definition at
+      https://github.com/kevinoid/appveyor-swagger/issues/new
+
+      #### API Conventions
+
+      Fields which are missing from update operations (`PUT` requests) are
+      typically reset to their default values.  So although most fields are not
+      technically required, they should usually be specified in practice.
+    version: 0.20170106.0
+    slug: appveyor-0-20170106-0-api-buildjobs-jobid-log
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    - xml
+    hosts:
+    - https://ci.appveyor.com
+    topics:
+    - developer-tools
+- group: appveyor-0-20170106-0
+  url_pattern: /api/builds
+  method: POST
+  encoding: json
+  host:
+  - https://ci.appveyor.com
+  concurrent_calls: 1
+  extra_config:
+    provider: appveyor.com
+    description: |
+      AppVeyor is a hosted continuous integration service which runs on Microsoft
+      Windows.  The AppVeyor REST API provides a RESTful way to interact with the
+      AppVeyor service.  This includes managing projects, builds, deployments,
+      and the teams that build them.
+
+      Additional help and discussion of the AppVeyor REST API is available at
+      http://help.appveyor.com/discussions
+
+      This Swagger definition is an **unofficial** description of the AppVeyor
+      REST API maintained at https://github.com/kevinoid/appveyor-swagger
+      Please report any issues or suggestions for this Swagger definition at
+      https://github.com/kevinoid/appveyor-swagger/issues/new
+
+      #### API Conventions
+
+      Fields which are missing from update operations (`PUT` requests) are
+      typically reset to their default values.  So although most fields are not
+      technically required, they should usually be specified in practice.
+    version: 0.20170106.0
+    slug: appveyor-0-20170106-0-api-builds
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    - xml
+    hosts:
+    - https://ci.appveyor.com
+    topics:
+    - developer-tools
+- group: appveyor-0-20170106-0
+  url_pattern: /api/collaborators
+  method: GET
+  encoding: json
+  host:
+  - https://ci.appveyor.com
+  concurrent_calls: 1
+  extra_config:
+    provider: appveyor.com
+    description: |
+      AppVeyor is a hosted continuous integration service which runs on Microsoft
+      Windows.  The AppVeyor REST API provides a RESTful way to interact with the
+      AppVeyor service.  This includes managing projects, builds, deployments,
+      and the teams that build them.
+
+      Additional help and discussion of the AppVeyor REST API is available at
+      http://help.appveyor.com/discussions
+
+      This Swagger definition is an **unofficial** description of the AppVeyor
+      REST API maintained at https://github.com/kevinoid/appveyor-swagger
+      Please report any issues or suggestions for this Swagger definition at
+      https://github.com/kevinoid/appveyor-swagger/issues/new
+
+      #### API Conventions
+
+      Fields which are missing from update operations (`PUT` requests) are
+      typically reset to their default values.  So although most fields are not
+      technically required, they should usually be specified in practice.
+    version: 0.20170106.0
+    slug: appveyor-0-20170106-0-api-collaborators
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    - xml
+    hosts:
+    - https://ci.appveyor.com
+    topics:
+    - developer-tools
+- group: appveyor-0-20170106-0
+  url_pattern: /api/collaborators/{userId}
+  method: GET
+  encoding: json
+  host:
+  - https://ci.appveyor.com
+  whitelist:
+  - roles
+  concurrent_calls: 1
+  extra_config:
+    provider: appveyor.com
+    description: |
+      AppVeyor is a hosted continuous integration service which runs on Microsoft
+      Windows.  The AppVeyor REST API provides a RESTful way to interact with the
+      AppVeyor service.  This includes managing projects, builds, deployments,
+      and the teams that build them.
+
+      Additional help and discussion of the AppVeyor REST API is available at
+      http://help.appveyor.com/discussions
+
+      This Swagger definition is an **unofficial** description of the AppVeyor
+      REST API maintained at https://github.com/kevinoid/appveyor-swagger
+      Please report any issues or suggestions for this Swagger definition at
+      https://github.com/kevinoid/appveyor-swagger/issues/new
+
+      #### API Conventions
+
+      Fields which are missing from update operations (`PUT` requests) are
+      typically reset to their default values.  So although most fields are not
+      technically required, they should usually be specified in practice.
+    version: 0.20170106.0
+    slug: appveyor-0-20170106-0-api-collaborators-userid
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    - xml
+    mapping:
+      roles: roles
+    hosts:
+    - https://ci.appveyor.com
+    topics:
+    - developer-tools
+- group: appveyor-0-20170106-0
+  url_pattern: /api/deployments
+  method: POST
+  encoding: json
+  host:
+  - https://ci.appveyor.com
+  concurrent_calls: 1
+  extra_config:
+    provider: appveyor.com
+    description: |
+      AppVeyor is a hosted continuous integration service which runs on Microsoft
+      Windows.  The AppVeyor REST API provides a RESTful way to interact with the
+      AppVeyor service.  This includes managing projects, builds, deployments,
+      and the teams that build them.
+
+      Additional help and discussion of the AppVeyor REST API is available at
+      http://help.appveyor.com/discussions
+
+      This Swagger definition is an **unofficial** description of the AppVeyor
+      REST API maintained at https://github.com/kevinoid/appveyor-swagger
+      Please report any issues or suggestions for this Swagger definition at
+      https://github.com/kevinoid/appveyor-swagger/issues/new
+
+      #### API Conventions
+
+      Fields which are missing from update operations (`PUT` requests) are
+      typically reset to their default values.  So although most fields are not
+      technically required, they should usually be specified in practice.
+    version: 0.20170106.0
+    slug: appveyor-0-20170106-0-api-deployments
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    - xml
+    hosts:
+    - https://ci.appveyor.com
+    topics:
+    - developer-tools
+- group: appveyor-0-20170106-0
+  url_pattern: /api/deployments/{deploymentId}
+  method: GET
+  encoding: json
+  host:
+  - https://ci.appveyor.com
+  concurrent_calls: 1
+  extra_config:
+    provider: appveyor.com
+    description: |
+      AppVeyor is a hosted continuous integration service which runs on Microsoft
+      Windows.  The AppVeyor REST API provides a RESTful way to interact with the
+      AppVeyor service.  This includes managing projects, builds, deployments,
+      and the teams that build them.
+
+      Additional help and discussion of the AppVeyor REST API is available at
+      http://help.appveyor.com/discussions
+
+      This Swagger definition is an **unofficial** description of the AppVeyor
+      REST API maintained at https://github.com/kevinoid/appveyor-swagger
+      Please report any issues or suggestions for this Swagger definition at
+      https://github.com/kevinoid/appveyor-swagger/issues/new
+
+      #### API Conventions
+
+      Fields which are missing from update operations (`PUT` requests) are
+      typically reset to their default values.  So although most fields are not
+      technically required, they should usually be specified in practice.
+    version: 0.20170106.0
+    slug: appveyor-0-20170106-0-api-deployments-deploymentid
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    - xml
+    hosts:
+    - https://ci.appveyor.com
+    topics:
+    - developer-tools
+- group: appveyor-0-20170106-0
+  url_pattern: /api/environments
+  method: GET
+  encoding: json
+  host:
+  - https://ci.appveyor.com
+  concurrent_calls: 1
+  extra_config:
+    provider: appveyor.com
+    description: |
+      AppVeyor is a hosted continuous integration service which runs on Microsoft
+      Windows.  The AppVeyor REST API provides a RESTful way to interact with the
+      AppVeyor service.  This includes managing projects, builds, deployments,
+      and the teams that build them.
+
+      Additional help and discussion of the AppVeyor REST API is available at
+      http://help.appveyor.com/discussions
+
+      This Swagger definition is an **unofficial** description of the AppVeyor
+      REST API maintained at https://github.com/kevinoid/appveyor-swagger
+      Please report any issues or suggestions for this Swagger definition at
+      https://github.com/kevinoid/appveyor-swagger/issues/new
+
+      #### API Conventions
+
+      Fields which are missing from update operations (`PUT` requests) are
+      typically reset to their default values.  So although most fields are not
+      technically required, they should usually be specified in practice.
+    version: 0.20170106.0
+    slug: appveyor-0-20170106-0-api-environments
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    - xml
+    hosts:
+    - https://ci.appveyor.com
+    topics:
+    - developer-tools
+- group: appveyor-0-20170106-0
+  url_pattern: /api/environments/{deploymentEnvironmentId}/deployments
+  method: GET
+  encoding: json
+  host:
+  - https://ci.appveyor.com
+  whitelist:
+  - deployments
+  concurrent_calls: 1
+  extra_config:
+    provider: appveyor.com
+    description: |
+      AppVeyor is a hosted continuous integration service which runs on Microsoft
+      Windows.  The AppVeyor REST API provides a RESTful way to interact with the
+      AppVeyor service.  This includes managing projects, builds, deployments,
+      and the teams that build them.
+
+      Additional help and discussion of the AppVeyor REST API is available at
+      http://help.appveyor.com/discussions
+
+      This Swagger definition is an **unofficial** description of the AppVeyor
+      REST API maintained at https://github.com/kevinoid/appveyor-swagger
+      Please report any issues or suggestions for this Swagger definition at
+      https://github.com/kevinoid/appveyor-swagger/issues/new
+
+      #### API Conventions
+
+      Fields which are missing from update operations (`PUT` requests) are
+      typically reset to their default values.  So although most fields are not
+      technically required, they should usually be specified in practice.
+    version: 0.20170106.0
+    slug: appveyor-0-20170106-0-api-environments-deploymentenvironmentid-deployments
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    - xml
+    mapping:
+      deployments: deployments
+    hosts:
+    - https://ci.appveyor.com
+    topics:
+    - developer-tools
+- group: appveyor-0-20170106-0
+  url_pattern: /api/environments/{deploymentEnvironmentId}/settings
+  method: GET
+  encoding: json
+  host:
+  - https://ci.appveyor.com
+  concurrent_calls: 1
+  extra_config:
+    provider: appveyor.com
+    description: |
+      AppVeyor is a hosted continuous integration service which runs on Microsoft
+      Windows.  The AppVeyor REST API provides a RESTful way to interact with the
+      AppVeyor service.  This includes managing projects, builds, deployments,
+      and the teams that build them.
+
+      Additional help and discussion of the AppVeyor REST API is available at
+      http://help.appveyor.com/discussions
+
+      This Swagger definition is an **unofficial** description of the AppVeyor
+      REST API maintained at https://github.com/kevinoid/appveyor-swagger
+      Please report any issues or suggestions for this Swagger definition at
+      https://github.com/kevinoid/appveyor-swagger/issues/new
+
+      #### API Conventions
+
+      Fields which are missing from update operations (`PUT` requests) are
+      typically reset to their default values.  So although most fields are not
+      technically required, they should usually be specified in practice.
+    version: 0.20170106.0
+    slug: appveyor-0-20170106-0-api-environments-deploymentenvironmentid-settings
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    - xml
+    hosts:
+    - https://ci.appveyor.com
+    topics:
+    - developer-tools
+- group: appveyor-0-20170106-0
+  url_pattern: /api/projects
+  method: GET
+  encoding: json
+  host:
+  - https://ci.appveyor.com
+  concurrent_calls: 1
+  extra_config:
+    provider: appveyor.com
+    description: |
+      AppVeyor is a hosted continuous integration service which runs on Microsoft
+      Windows.  The AppVeyor REST API provides a RESTful way to interact with the
+      AppVeyor service.  This includes managing projects, builds, deployments,
+      and the teams that build them.
+
+      Additional help and discussion of the AppVeyor REST API is available at
+      http://help.appveyor.com/discussions
+
+      This Swagger definition is an **unofficial** description of the AppVeyor
+      REST API maintained at https://github.com/kevinoid/appveyor-swagger
+      Please report any issues or suggestions for this Swagger definition at
+      https://github.com/kevinoid/appveyor-swagger/issues/new
+
+      #### API Conventions
+
+      Fields which are missing from update operations (`PUT` requests) are
+      typically reset to their default values.  So although most fields are not
+      technically required, they should usually be specified in practice.
+    version: 0.20170106.0
+    slug: appveyor-0-20170106-0-api-projects
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    - xml
+    hosts:
+    - https://ci.appveyor.com
+    topics:
+    - developer-tools
+- group: appveyor-0-20170106-0
+  url_pattern: /api/projects/status/{badgeRepoProvider}/{repoAccountName}/{repoSlug}
+  method: GET
+  encoding: json
+  host:
+  - https://ci.appveyor.com
+  concurrent_calls: 1
+  extra_config:
+    provider: appveyor.com
+    description: |
+      AppVeyor is a hosted continuous integration service which runs on Microsoft
+      Windows.  The AppVeyor REST API provides a RESTful way to interact with the
+      AppVeyor service.  This includes managing projects, builds, deployments,
+      and the teams that build them.
+
+      Additional help and discussion of the AppVeyor REST API is available at
+      http://help.appveyor.com/discussions
+
+      This Swagger definition is an **unofficial** description of the AppVeyor
+      REST API maintained at https://github.com/kevinoid/appveyor-swagger
+      Please report any issues or suggestions for this Swagger definition at
+      https://github.com/kevinoid/appveyor-swagger/issues/new
+
+      #### API Conventions
+
+      Fields which are missing from update operations (`PUT` requests) are
+      typically reset to their default values.  So although most fields are not
+      technically required, they should usually be specified in practice.
+    version: 0.20170106.0
+    slug: appveyor-0-20170106-0-api-projects-status-badgerepoprovider-repoaccountname-reposlug
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    - xml
+    hosts:
+    - https://ci.appveyor.com
+    topics:
+    - developer-tools
+- group: appveyor-0-20170106-0
+  url_pattern: /api/projects/status/{statusBadgeId}
+  method: GET
+  encoding: json
+  host:
+  - https://ci.appveyor.com
+  concurrent_calls: 1
+  extra_config:
+    provider: appveyor.com
+    description: |
+      AppVeyor is a hosted continuous integration service which runs on Microsoft
+      Windows.  The AppVeyor REST API provides a RESTful way to interact with the
+      AppVeyor service.  This includes managing projects, builds, deployments,
+      and the teams that build them.
+
+      Additional help and discussion of the AppVeyor REST API is available at
+      http://help.appveyor.com/discussions
+
+      This Swagger definition is an **unofficial** description of the AppVeyor
+      REST API maintained at https://github.com/kevinoid/appveyor-swagger
+      Please report any issues or suggestions for this Swagger definition at
+      https://github.com/kevinoid/appveyor-swagger/issues/new
+
+      #### API Conventions
+
+      Fields which are missing from update operations (`PUT` requests) are
+      typically reset to their default values.  So although most fields are not
+      technically required, they should usually be specified in practice.
+    version: 0.20170106.0
+    slug: appveyor-0-20170106-0-api-projects-status-statusbadgeid
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    - xml
+    hosts:
+    - https://ci.appveyor.com
+    topics:
+    - developer-tools
+- group: appveyor-0-20170106-0
+  url_pattern: /api/projects/status/{statusBadgeId}/branch/{buildBranch}
+  method: GET
+  encoding: json
+  host:
+  - https://ci.appveyor.com
+  concurrent_calls: 1
+  extra_config:
+    provider: appveyor.com
+    description: |
+      AppVeyor is a hosted continuous integration service which runs on Microsoft
+      Windows.  The AppVeyor REST API provides a RESTful way to interact with the
+      AppVeyor service.  This includes managing projects, builds, deployments,
+      and the teams that build them.
+
+      Additional help and discussion of the AppVeyor REST API is available at
+      http://help.appveyor.com/discussions
+
+      This Swagger definition is an **unofficial** description of the AppVeyor
+      REST API maintained at https://github.com/kevinoid/appveyor-swagger
+      Please report any issues or suggestions for this Swagger definition at
+      https://github.com/kevinoid/appveyor-swagger/issues/new
+
+      #### API Conventions
+
+      Fields which are missing from update operations (`PUT` requests) are
+      typically reset to their default values.  So although most fields are not
+      technically required, they should usually be specified in practice.
+    version: 0.20170106.0
+    slug: appveyor-0-20170106-0-api-projects-status-statusbadgeid-branch-buildbranch
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    - xml
+    hosts:
+    - https://ci.appveyor.com
+    topics:
+    - developer-tools
+- group: appveyor-0-20170106-0
+  url_pattern: /api/projects/{accountName}/{projectSlug}
+  method: GET
+  encoding: json
+  host:
+  - https://ci.appveyor.com
+  concurrent_calls: 1
+  extra_config:
+    provider: appveyor.com
+    description: |
+      AppVeyor is a hosted continuous integration service which runs on Microsoft
+      Windows.  The AppVeyor REST API provides a RESTful way to interact with the
+      AppVeyor service.  This includes managing projects, builds, deployments,
+      and the teams that build them.
+
+      Additional help and discussion of the AppVeyor REST API is available at
+      http://help.appveyor.com/discussions
+
+      This Swagger definition is an **unofficial** description of the AppVeyor
+      REST API maintained at https://github.com/kevinoid/appveyor-swagger
+      Please report any issues or suggestions for this Swagger definition at
+      https://github.com/kevinoid/appveyor-swagger/issues/new
+
+      #### API Conventions
+
+      Fields which are missing from update operations (`PUT` requests) are
+      typically reset to their default values.  So although most fields are not
+      technically required, they should usually be specified in practice.
+    version: 0.20170106.0
+    slug: appveyor-0-20170106-0-api-projects-accountname-projectslug
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    - xml
+    hosts:
+    - https://ci.appveyor.com
+    topics:
+    - developer-tools
+- group: appveyor-0-20170106-0
+  url_pattern: /api/projects/{accountName}/{projectSlug}/branch/{buildBranch}
+  method: GET
+  encoding: json
+  host:
+  - https://ci.appveyor.com
+  concurrent_calls: 1
+  extra_config:
+    provider: appveyor.com
+    description: |
+      AppVeyor is a hosted continuous integration service which runs on Microsoft
+      Windows.  The AppVeyor REST API provides a RESTful way to interact with the
+      AppVeyor service.  This includes managing projects, builds, deployments,
+      and the teams that build them.
+
+      Additional help and discussion of the AppVeyor REST API is available at
+      http://help.appveyor.com/discussions
+
+      This Swagger definition is an **unofficial** description of the AppVeyor
+      REST API maintained at https://github.com/kevinoid/appveyor-swagger
+      Please report any issues or suggestions for this Swagger definition at
+      https://github.com/kevinoid/appveyor-swagger/issues/new
+
+      #### API Conventions
+
+      Fields which are missing from update operations (`PUT` requests) are
+      typically reset to their default values.  So although most fields are not
+      technically required, they should usually be specified in practice.
+    version: 0.20170106.0
+    slug: appveyor-0-20170106-0-api-projects-accountname-projectslug-branch-buildbranch
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    - xml
+    hosts:
+    - https://ci.appveyor.com
+    topics:
+    - developer-tools
+- group: appveyor-0-20170106-0
+  url_pattern: /api/projects/{accountName}/{projectSlug}/build/{buildVersion}
+  method: GET
+  encoding: json
+  host:
+  - https://ci.appveyor.com
+  concurrent_calls: 1
+  extra_config:
+    provider: appveyor.com
+    description: |
+      AppVeyor is a hosted continuous integration service which runs on Microsoft
+      Windows.  The AppVeyor REST API provides a RESTful way to interact with the
+      AppVeyor service.  This includes managing projects, builds, deployments,
+      and the teams that build them.
+
+      Additional help and discussion of the AppVeyor REST API is available at
+      http://help.appveyor.com/discussions
+
+      This Swagger definition is an **unofficial** description of the AppVeyor
+      REST API maintained at https://github.com/kevinoid/appveyor-swagger
+      Please report any issues or suggestions for this Swagger definition at
+      https://github.com/kevinoid/appveyor-swagger/issues/new
+
+      #### API Conventions
+
+      Fields which are missing from update operations (`PUT` requests) are
+      typically reset to their default values.  So although most fields are not
+      technically required, they should usually be specified in practice.
+    version: 0.20170106.0
+    slug: appveyor-0-20170106-0-api-projects-accountname-projectslug-build-buildversion
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    - xml
+    hosts:
+    - https://ci.appveyor.com
+    topics:
+    - developer-tools
+- group: appveyor-0-20170106-0
+  url_pattern: /api/projects/{accountName}/{projectSlug}/deployments
+  method: GET
+  encoding: json
+  host:
+  - https://ci.appveyor.com
+  whitelist:
+  - deployments
+  concurrent_calls: 1
+  extra_config:
+    provider: appveyor.com
+    description: |
+      AppVeyor is a hosted continuous integration service which runs on Microsoft
+      Windows.  The AppVeyor REST API provides a RESTful way to interact with the
+      AppVeyor service.  This includes managing projects, builds, deployments,
+      and the teams that build them.
+
+      Additional help and discussion of the AppVeyor REST API is available at
+      http://help.appveyor.com/discussions
+
+      This Swagger definition is an **unofficial** description of the AppVeyor
+      REST API maintained at https://github.com/kevinoid/appveyor-swagger
+      Please report any issues or suggestions for this Swagger definition at
+      https://github.com/kevinoid/appveyor-swagger/issues/new
+
+      #### API Conventions
+
+      Fields which are missing from update operations (`PUT` requests) are
+      typically reset to their default values.  So although most fields are not
+      technically required, they should usually be specified in practice.
+    version: 0.20170106.0
+    slug: appveyor-0-20170106-0-api-projects-accountname-projectslug-deployments
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    - xml
+    mapping:
+      deployments: deployments
+    hosts:
+    - https://ci.appveyor.com
+    topics:
+    - developer-tools
+- group: appveyor-0-20170106-0
+  url_pattern: /api/projects/{accountName}/{projectSlug}/history
+  method: GET
+  encoding: json
+  host:
+  - https://ci.appveyor.com
+  whitelist:
+  - builds
+  concurrent_calls: 1
+  extra_config:
+    provider: appveyor.com
+    description: |
+      AppVeyor is a hosted continuous integration service which runs on Microsoft
+      Windows.  The AppVeyor REST API provides a RESTful way to interact with the
+      AppVeyor service.  This includes managing projects, builds, deployments,
+      and the teams that build them.
+
+      Additional help and discussion of the AppVeyor REST API is available at
+      http://help.appveyor.com/discussions
+
+      This Swagger definition is an **unofficial** description of the AppVeyor
+      REST API maintained at https://github.com/kevinoid/appveyor-swagger
+      Please report any issues or suggestions for this Swagger definition at
+      https://github.com/kevinoid/appveyor-swagger/issues/new
+
+      #### API Conventions
+
+      Fields which are missing from update operations (`PUT` requests) are
+      typically reset to their default values.  So although most fields are not
+      technically required, they should usually be specified in practice.
+    version: 0.20170106.0
+    slug: appveyor-0-20170106-0-api-projects-accountname-projectslug-history
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    - xml
+    mapping:
+      builds: builds
+    hosts:
+    - https://ci.appveyor.com
+    topics:
+    - developer-tools
+- group: appveyor-0-20170106-0
+  url_pattern: /api/projects/{accountName}/{projectSlug}/settings
+  method: GET
+  encoding: json
+  host:
+  - https://ci.appveyor.com
+  whitelist:
+  - buildClouds
+  - defaultImageName
+  - images
+  concurrent_calls: 1
+  extra_config:
+    provider: appveyor.com
+    description: |
+      AppVeyor is a hosted continuous integration service which runs on Microsoft
+      Windows.  The AppVeyor REST API provides a RESTful way to interact with the
+      AppVeyor service.  This includes managing projects, builds, deployments,
+      and the teams that build them.
+
+      Additional help and discussion of the AppVeyor REST API is available at
+      http://help.appveyor.com/discussions
+
+      This Swagger definition is an **unofficial** description of the AppVeyor
+      REST API maintained at https://github.com/kevinoid/appveyor-swagger
+      Please report any issues or suggestions for this Swagger definition at
+      https://github.com/kevinoid/appveyor-swagger/issues/new
+
+      #### API Conventions
+
+      Fields which are missing from update operations (`PUT` requests) are
+      typically reset to their default values.  So although most fields are not
+      technically required, they should usually be specified in practice.
+    version: 0.20170106.0
+    slug: appveyor-0-20170106-0-api-projects-accountname-projectslug-settings
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    - xml
+    mapping:
+      buildClouds: buildClouds
+      defaultImageName: defaultImageName
+      images: images
+    hosts:
+    - https://ci.appveyor.com
+    topics:
+    - developer-tools
+- group: appveyor-0-20170106-0
+  url_pattern: /api/projects/{accountName}/{projectSlug}/settings/yaml
+  method: GET
+  encoding: json
+  host:
+  - https://ci.appveyor.com
+  concurrent_calls: 1
+  extra_config:
+    provider: appveyor.com
+    description: |
+      AppVeyor is a hosted continuous integration service which runs on Microsoft
+      Windows.  The AppVeyor REST API provides a RESTful way to interact with the
+      AppVeyor service.  This includes managing projects, builds, deployments,
+      and the teams that build them.
+
+      Additional help and discussion of the AppVeyor REST API is available at
+      http://help.appveyor.com/discussions
+
+      This Swagger definition is an **unofficial** description of the AppVeyor
+      REST API maintained at https://github.com/kevinoid/appveyor-swagger
+      Please report any issues or suggestions for this Swagger definition at
+      https://github.com/kevinoid/appveyor-swagger/issues/new
+
+      #### API Conventions
+
+      Fields which are missing from update operations (`PUT` requests) are
+      typically reset to their default values.  So although most fields are not
+      technically required, they should usually be specified in practice.
+    version: 0.20170106.0
+    slug: appveyor-0-20170106-0-api-projects-accountname-projectslug-settings-yaml
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    - xml
+    hosts:
+    - https://ci.appveyor.com
+    topics:
+    - developer-tools
+- group: appveyor-0-20170106-0
+  url_pattern: /api/roles
+  method: GET
+  encoding: json
+  host:
+  - https://ci.appveyor.com
+  concurrent_calls: 1
+  extra_config:
+    provider: appveyor.com
+    description: |
+      AppVeyor is a hosted continuous integration service which runs on Microsoft
+      Windows.  The AppVeyor REST API provides a RESTful way to interact with the
+      AppVeyor service.  This includes managing projects, builds, deployments,
+      and the teams that build them.
+
+      Additional help and discussion of the AppVeyor REST API is available at
+      http://help.appveyor.com/discussions
+
+      This Swagger definition is an **unofficial** description of the AppVeyor
+      REST API maintained at https://github.com/kevinoid/appveyor-swagger
+      Please report any issues or suggestions for this Swagger definition at
+      https://github.com/kevinoid/appveyor-swagger/issues/new
+
+      #### API Conventions
+
+      Fields which are missing from update operations (`PUT` requests) are
+      typically reset to their default values.  So although most fields are not
+      technically required, they should usually be specified in practice.
+    version: 0.20170106.0
+    slug: appveyor-0-20170106-0-api-roles
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    - xml
+    hosts:
+    - https://ci.appveyor.com
+    topics:
+    - developer-tools
+- group: appveyor-0-20170106-0
+  url_pattern: /api/roles/{roleId}
+  method: GET
+  encoding: json
+  host:
+  - https://ci.appveyor.com
+  concurrent_calls: 1
+  extra_config:
+    provider: appveyor.com
+    description: |
+      AppVeyor is a hosted continuous integration service which runs on Microsoft
+      Windows.  The AppVeyor REST API provides a RESTful way to interact with the
+      AppVeyor service.  This includes managing projects, builds, deployments,
+      and the teams that build them.
+
+      Additional help and discussion of the AppVeyor REST API is available at
+      http://help.appveyor.com/discussions
+
+      This Swagger definition is an **unofficial** description of the AppVeyor
+      REST API maintained at https://github.com/kevinoid/appveyor-swagger
+      Please report any issues or suggestions for this Swagger definition at
+      https://github.com/kevinoid/appveyor-swagger/issues/new
+
+      #### API Conventions
+
+      Fields which are missing from update operations (`PUT` requests) are
+      typically reset to their default values.  So although most fields are not
+      technically required, they should usually be specified in practice.
+    version: 0.20170106.0
+    slug: appveyor-0-20170106-0-api-roles-roleid
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    - xml
+    hosts:
+    - https://ci.appveyor.com
+    topics:
+    - developer-tools
+- group: appveyor-0-20170106-0
+  url_pattern: /api/users
+  method: GET
+  encoding: json
+  host:
+  - https://ci.appveyor.com
+  concurrent_calls: 1
+  extra_config:
+    provider: appveyor.com
+    description: |
+      AppVeyor is a hosted continuous integration service which runs on Microsoft
+      Windows.  The AppVeyor REST API provides a RESTful way to interact with the
+      AppVeyor service.  This includes managing projects, builds, deployments,
+      and the teams that build them.
+
+      Additional help and discussion of the AppVeyor REST API is available at
+      http://help.appveyor.com/discussions
+
+      This Swagger definition is an **unofficial** description of the AppVeyor
+      REST API maintained at https://github.com/kevinoid/appveyor-swagger
+      Please report any issues or suggestions for this Swagger definition at
+      https://github.com/kevinoid/appveyor-swagger/issues/new
+
+      #### API Conventions
+
+      Fields which are missing from update operations (`PUT` requests) are
+      typically reset to their default values.  So although most fields are not
+      technically required, they should usually be specified in practice.
+    version: 0.20170106.0
+    slug: appveyor-0-20170106-0-api-users
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    - xml
+    hosts:
+    - https://ci.appveyor.com
+    topics:
+    - developer-tools
+- group: appveyor-0-20170106-0
+  url_pattern: /api/users/{userId}
+  method: GET
+  encoding: json
+  host:
+  - https://ci.appveyor.com
+  whitelist:
+  - roles
+  concurrent_calls: 1
+  extra_config:
+    provider: appveyor.com
+    description: |
+      AppVeyor is a hosted continuous integration service which runs on Microsoft
+      Windows.  The AppVeyor REST API provides a RESTful way to interact with the
+      AppVeyor service.  This includes managing projects, builds, deployments,
+      and the teams that build them.
+
+      Additional help and discussion of the AppVeyor REST API is available at
+      http://help.appveyor.com/discussions
+
+      This Swagger definition is an **unofficial** description of the AppVeyor
+      REST API maintained at https://github.com/kevinoid/appveyor-swagger
+      Please report any issues or suggestions for this Swagger definition at
+      https://github.com/kevinoid/appveyor-swagger/issues/new
+
+      #### API Conventions
+
+      Fields which are missing from update operations (`PUT` requests) are
+      typically reset to their default values.  So although most fields are not
+      technically required, they should usually be specified in practice.
+    version: 0.20170106.0
+    slug: appveyor-0-20170106-0-api-users-userid
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    - xml
+    mapping:
+      roles: roles
+    hosts:
+    - https://ci.appveyor.com
+    topics:
+    - developer-tools

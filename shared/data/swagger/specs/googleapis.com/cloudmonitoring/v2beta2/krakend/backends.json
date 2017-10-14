@@ -1,0 +1,144 @@
+{
+	"backends": [
+		{
+			"group": "cloud-monitoring-v2beta2",
+			"url_pattern": "/cloudmonitoring/v2beta2/projects/{project}/metricDescriptors",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"kind",
+				"metrics",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Accesses Google Cloud Monitoring data.",
+				"version": "v2beta2",
+				"slug": "cloud-monitoring-v2beta2-cloudmonitoring-v2beta2-projects-project-metricdescriptors",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"kind": "kind",
+					"metrics": "metrics",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"monitoring"
+				]
+			}
+		},
+		{
+			"group": "cloud-monitoring-v2beta2",
+			"url_pattern": "/cloudmonitoring/v2beta2/projects/{project}/timeseries/{metric}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"kind",
+				"nextPageToken",
+				"oldest",
+				"timeseries",
+				"youngest"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Accesses Google Cloud Monitoring data.",
+				"version": "v2beta2",
+				"slug": "cloud-monitoring-v2beta2-cloudmonitoring-v2beta2-projects-project-timeseries-metric",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"kind": "kind",
+					"nextPageToken": "nextPageToken",
+					"oldest": "oldest",
+					"timeseries": "timeseries",
+					"youngest": "youngest"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"monitoring"
+				]
+			}
+		},
+		{
+			"group": "cloud-monitoring-v2beta2",
+			"url_pattern": "/cloudmonitoring/v2beta2/projects/{project}/timeseries:write",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"kind"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Accesses Google Cloud Monitoring data.",
+				"version": "v2beta2",
+				"slug": "cloud-monitoring-v2beta2-cloudmonitoring-v2beta2-projects-project-timeseries-write",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"kind": "kind"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"monitoring"
+				]
+			}
+		},
+		{
+			"group": "cloud-monitoring-v2beta2",
+			"url_pattern": "/cloudmonitoring/v2beta2/projects/{project}/timeseriesDescriptors/{metric}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"kind",
+				"nextPageToken",
+				"oldest",
+				"timeseries",
+				"youngest"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Accesses Google Cloud Monitoring data.",
+				"version": "v2beta2",
+				"slug": "cloud-monitoring-v2beta2-cloudmonitoring-v2beta2-projects-project-timeseriesdescriptors-metric",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"kind": "kind",
+					"nextPageToken": "nextPageToken",
+					"oldest": "oldest",
+					"timeseries": "timeseries",
+					"youngest": "youngest"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"monitoring"
+				]
+			}
+		}
+	]
+}

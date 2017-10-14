@@ -1,0 +1,1059 @@
+backends:
+- group: taxamo-1
+  url_pattern: /api/v1/dictionaries/countries
+  method: GET
+  encoding: json
+  host:
+  - https://api.taxamo.com
+  query_string_params:
+  - tax_supported
+  whitelist:
+  - dictionary
+  concurrent_calls: 1
+  extra_config:
+    provider: taxamo.com
+    description: Taxamo’s elegant suite of APIs and comprehensive reporting dashboard
+      enables digital merchants to easily comply with EU regulatory requirements on
+      tax calculation, evidence collection, tax return creation and data storage.
+    version: "1"
+    slug: taxamo-1-api-v1-dictionaries-countries
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      dictionary: dictionary
+    hosts:
+    - https://api.taxamo.com
+    topics:
+    - dictionaries
+    - payment
+- group: taxamo-1
+  url_pattern: /api/v1/dictionaries/currencies
+  method: GET
+  encoding: json
+  host:
+  - https://api.taxamo.com
+  whitelist:
+  - dictionary
+  concurrent_calls: 1
+  extra_config:
+    provider: taxamo.com
+    description: Taxamo’s elegant suite of APIs and comprehensive reporting dashboard
+      enables digital merchants to easily comply with EU regulatory requirements on
+      tax calculation, evidence collection, tax return creation and data storage.
+    version: "1"
+    slug: taxamo-1-api-v1-dictionaries-currencies
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      dictionary: dictionary
+    hosts:
+    - https://api.taxamo.com
+    topics:
+    - dictionaries
+    - payment
+- group: taxamo-1
+  url_pattern: /api/v1/dictionaries/product_types
+  method: GET
+  encoding: json
+  host:
+  - https://api.taxamo.com
+  whitelist:
+  - dictionary
+  concurrent_calls: 1
+  extra_config:
+    provider: taxamo.com
+    description: Taxamo’s elegant suite of APIs and comprehensive reporting dashboard
+      enables digital merchants to easily comply with EU regulatory requirements on
+      tax calculation, evidence collection, tax return creation and data storage.
+    version: "1"
+    slug: taxamo-1-api-v1-dictionaries-product-types
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      dictionary: dictionary
+    hosts:
+    - https://api.taxamo.com
+    topics:
+    - dictionaries
+    - payment
+- group: taxamo-1
+  url_pattern: /api/v1/geoip
+  method: GET
+  encoding: json
+  host:
+  - https://api.taxamo.com
+  whitelist:
+  - country_code
+  - remote_addr
+  concurrent_calls: 1
+  extra_config:
+    provider: taxamo.com
+    description: Taxamo’s elegant suite of APIs and comprehensive reporting dashboard
+      enables digital merchants to easily comply with EU regulatory requirements on
+      tax calculation, evidence collection, tax return creation and data storage.
+    version: "1"
+    slug: taxamo-1-api-v1-geoip
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      country_code: country_code
+      remote_addr: remote_addr
+    hosts:
+    - https://api.taxamo.com
+    topics:
+    - geoip
+    - payment
+- group: taxamo-1
+  url_pattern: /api/v1/geoip/{ip}
+  method: GET
+  encoding: json
+  host:
+  - https://api.taxamo.com
+  url_keys:
+  - ip
+  whitelist:
+  - country_code
+  - remote_addr
+  concurrent_calls: 1
+  extra_config:
+    provider: taxamo.com
+    description: Taxamo’s elegant suite of APIs and comprehensive reporting dashboard
+      enables digital merchants to easily comply with EU regulatory requirements on
+      tax calculation, evidence collection, tax return creation and data storage.
+    version: "1"
+    slug: taxamo-1-api-v1-geoip-ip
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      country_code: country_code
+      remote_addr: remote_addr
+    hosts:
+    - https://api.taxamo.com
+    topics:
+    - geoip
+    - payment
+- group: taxamo-1
+  url_pattern: /api/v1/reports/domestic/summary
+  method: GET
+  encoding: json
+  host:
+  - https://api.taxamo.com
+  query_string_params:
+  - country_code
+  - currency_code
+  - end_month
+  - format
+  - fx_date_type
+  - start_month
+  whitelist:
+  - currency_code
+  - domestic_refunds_amount
+  - domestic_refunds_tax_amount
+  - domestic_sales_amount
+  - domestic_tax_amount
+  - end_date
+  - eu_tax_deducted_refunds
+  - eu_tax_deducted_sales
+  - global_refunds_amount
+  - global_refunds_tax_amount
+  - global_sales_amount
+  - global_sales_tax_amount
+  - start_date
+  concurrent_calls: 1
+  extra_config:
+    provider: taxamo.com
+    description: Taxamo’s elegant suite of APIs and comprehensive reporting dashboard
+      enables digital merchants to easily comply with EU regulatory requirements on
+      tax calculation, evidence collection, tax return creation and data storage.
+    version: "1"
+    slug: taxamo-1-api-v1-reports-domestic-summary
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      currency_code: currency_code
+      domestic_refunds_amount: domestic_refunds_amount
+      domestic_refunds_tax_amount: domestic_refunds_tax_amount
+      domestic_sales_amount: domestic_sales_amount
+      domestic_tax_amount: domestic_tax_amount
+      end_date: end_date
+      eu_tax_deducted_refunds: eu_tax_deducted_refunds
+      eu_tax_deducted_sales: eu_tax_deducted_sales
+      global_refunds_amount: global_refunds_amount
+      global_refunds_tax_amount: global_refunds_tax_amount
+      global_sales_amount: global_sales_amount
+      global_sales_tax_amount: global_sales_tax_amount
+      start_date: start_date
+    hosts:
+    - https://api.taxamo.com
+    topics:
+    - payment
+    - reporting
+- group: taxamo-1
+  url_pattern: /api/v1/reports/eu/vies
+  method: GET
+  encoding: json
+  host:
+  - https://api.taxamo.com
+  query_string_params:
+  - currency_code
+  - end_month
+  - eu_country_code
+  - format
+  - fx_date_type
+  - lff_sequence_number
+  - period_length
+  - start_month
+  - tax_id
+  - transformation
+  whitelist:
+  - currency_code
+  - end_date
+  - report
+  - start_date
+  concurrent_calls: 1
+  extra_config:
+    provider: taxamo.com
+    description: Taxamo’s elegant suite of APIs and comprehensive reporting dashboard
+      enables digital merchants to easily comply with EU regulatory requirements on
+      tax calculation, evidence collection, tax return creation and data storage.
+    version: "1"
+    slug: taxamo-1-api-v1-reports-eu-vies
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      currency_code: currency_code
+      end_date: end_date
+      report: report
+      start_date: start_date
+    hosts:
+    - https://api.taxamo.com
+    topics:
+    - payment
+    - reporting
+- group: taxamo-1
+  url_pattern: /api/v1/settlement/detailed_refunds
+  method: GET
+  encoding: json
+  host:
+  - https://api.taxamo.com
+  query_string_params:
+  - country_codes
+  - date_from
+  - date_to
+  - format
+  - limit
+  - offset
+  whitelist:
+  - report
+  concurrent_calls: 1
+  extra_config:
+    provider: taxamo.com
+    description: Taxamo’s elegant suite of APIs and comprehensive reporting dashboard
+      enables digital merchants to easily comply with EU regulatory requirements on
+      tax calculation, evidence collection, tax return creation and data storage.
+    version: "1"
+    slug: taxamo-1-api-v1-settlement-detailed-refunds
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      report: report
+    hosts:
+    - https://api.taxamo.com
+    topics:
+    - payment
+    - settlement
+- group: taxamo-1
+  url_pattern: /api/v1/settlement/refunds
+  method: GET
+  encoding: json
+  host:
+  - https://api.taxamo.com
+  query_string_params:
+  - date_from
+  - format
+  - moss_country_code
+  - tax_region
+  whitelist:
+  - report
+  concurrent_calls: 1
+  extra_config:
+    provider: taxamo.com
+    description: Taxamo’s elegant suite of APIs and comprehensive reporting dashboard
+      enables digital merchants to easily comply with EU regulatory requirements on
+      tax calculation, evidence collection, tax return creation and data storage.
+    version: "1"
+    slug: taxamo-1-api-v1-settlement-refunds
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      report: report
+    hosts:
+    - https://api.taxamo.com
+    topics:
+    - payment
+    - settlement
+- group: taxamo-1
+  url_pattern: /api/v1/settlement/summary/{quarter}
+  method: GET
+  encoding: json
+  host:
+  - https://api.taxamo.com
+  url_keys:
+  - quarter
+  query_string_params:
+  - end_month
+  - moss_country_code
+  - start_month
+  - tax_region
+  concurrent_calls: 1
+  extra_config:
+    provider: taxamo.com
+    description: Taxamo’s elegant suite of APIs and comprehensive reporting dashboard
+      enables digital merchants to easily comply with EU regulatory requirements on
+      tax calculation, evidence collection, tax return creation and data storage.
+    version: "1"
+    slug: taxamo-1-api-v1-settlement-summary-quarter
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.taxamo.com
+    topics:
+    - payment
+    - settlement
+- group: taxamo-1
+  url_pattern: /api/v1/settlement/{quarter}
+  method: GET
+  encoding: json
+  host:
+  - https://api.taxamo.com
+  url_keys:
+  - quarter
+  query_string_params:
+  - currency_code
+  - end_month
+  - format
+  - moss_country_code
+  - moss_tax_id
+  - refund_date_kind_override
+  - start_month
+  - tax_country_code
+  - tax_id
+  whitelist:
+  - end_date
+  - fx_rate_date
+  - indicative
+  - report
+  - start_date
+  concurrent_calls: 1
+  extra_config:
+    provider: taxamo.com
+    description: Taxamo’s elegant suite of APIs and comprehensive reporting dashboard
+      enables digital merchants to easily comply with EU regulatory requirements on
+      tax calculation, evidence collection, tax return creation and data storage.
+    version: "1"
+    slug: taxamo-1-api-v1-settlement-quarter
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      end_date: end_date
+      fx_rate_date: fx_rate_date
+      indicative: indicative
+      report: report
+      start_date: start_date
+    hosts:
+    - https://api.taxamo.com
+    topics:
+    - payment
+    - settlement
+- group: taxamo-1
+  url_pattern: /api/v1/stats/settlement/by_country
+  method: GET
+  encoding: json
+  host:
+  - https://api.taxamo.com
+  query_string_params:
+  - date_from
+  - date_to
+  whitelist:
+  - by_country
+  concurrent_calls: 1
+  extra_config:
+    provider: taxamo.com
+    description: Taxamo’s elegant suite of APIs and comprehensive reporting dashboard
+      enables digital merchants to easily comply with EU regulatory requirements on
+      tax calculation, evidence collection, tax return creation and data storage.
+    version: "1"
+    slug: taxamo-1-api-v1-stats-settlement-by-country
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      by_country: by_country
+    hosts:
+    - https://api.taxamo.com
+    topics:
+    - payment
+    - statistics
+- group: taxamo-1
+  url_pattern: /api/v1/stats/settlement/by_taxation_type
+  method: GET
+  encoding: json
+  host:
+  - https://api.taxamo.com
+  query_string_params:
+  - date_from
+  - date_to
+  concurrent_calls: 1
+  extra_config:
+    provider: taxamo.com
+    description: Taxamo’s elegant suite of APIs and comprehensive reporting dashboard
+      enables digital merchants to easily comply with EU regulatory requirements on
+      tax calculation, evidence collection, tax return creation and data storage.
+    version: "1"
+    slug: taxamo-1-api-v1-stats-settlement-by-taxation-type
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.taxamo.com
+    topics:
+    - payment
+    - statistics
+- group: taxamo-1
+  url_pattern: /api/v1/stats/settlement/daily
+  method: GET
+  encoding: json
+  host:
+  - https://api.taxamo.com
+  query_string_params:
+  - date_from
+  - date_to
+  - interval
+  whitelist:
+  - settlement_daily
+  concurrent_calls: 1
+  extra_config:
+    provider: taxamo.com
+    description: Taxamo’s elegant suite of APIs and comprehensive reporting dashboard
+      enables digital merchants to easily comply with EU regulatory requirements on
+      tax calculation, evidence collection, tax return creation and data storage.
+    version: "1"
+    slug: taxamo-1-api-v1-stats-settlement-daily
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      settlement_daily: settlement_daily
+    hosts:
+    - https://api.taxamo.com
+    topics:
+    - payment
+    - statistics
+- group: taxamo-1
+  url_pattern: /api/v1/stats/transactions
+  method: GET
+  encoding: json
+  host:
+  - https://api.taxamo.com
+  query_string_params:
+  - date_from
+  - date_to
+  - interval
+  concurrent_calls: 1
+  extra_config:
+    provider: taxamo.com
+    description: Taxamo’s elegant suite of APIs and comprehensive reporting dashboard
+      enables digital merchants to easily comply with EU regulatory requirements on
+      tax calculation, evidence collection, tax return creation and data storage.
+    version: "1"
+    slug: taxamo-1-api-v1-stats-transactions
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.taxamo.com
+    topics:
+    - payment
+    - statistics
+- group: taxamo-1
+  url_pattern: /api/v1/stats/transactions/by_country
+  method: GET
+  encoding: json
+  host:
+  - https://api.taxamo.com
+  query_string_params:
+  - date_from
+  - date_to
+  - global_currency_code
+  whitelist:
+  - by_country
+  concurrent_calls: 1
+  extra_config:
+    provider: taxamo.com
+    description: Taxamo’s elegant suite of APIs and comprehensive reporting dashboard
+      enables digital merchants to easily comply with EU regulatory requirements on
+      tax calculation, evidence collection, tax return creation and data storage.
+    version: "1"
+    slug: taxamo-1-api-v1-stats-transactions-by-country
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      by_country: by_country
+    hosts:
+    - https://api.taxamo.com
+    topics:
+    - payment
+    - statistics
+- group: taxamo-1
+  url_pattern: /api/v1/tax/calculate
+  method: GET
+  encoding: json
+  host:
+  - https://api.taxamo.com
+  query_string_params:
+  - amount
+  - billing_country_code
+  - buyer_credit_card_prefix
+  - buyer_tax_number
+  - currency_code
+  - force_country_code
+  - invoice_address_city
+  - invoice_address_postal_code
+  - invoice_address_region
+  - order_date
+  - product_type
+  - quantity
+  - tax_deducted
+  - total_amount
+  - unit_price
+  whitelist:
+  - storage_required_fields
+  - tax_required_fields
+  concurrent_calls: 1
+  extra_config:
+    provider: taxamo.com
+    description: Taxamo’s elegant suite of APIs and comprehensive reporting dashboard
+      enables digital merchants to easily comply with EU regulatory requirements on
+      tax calculation, evidence collection, tax return creation and data storage.
+    version: "1"
+    slug: taxamo-1-api-v1-tax-calculate
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      storage_required_fields: storage_required_fields
+      tax_required_fields: tax_required_fields
+    hosts:
+    - https://api.taxamo.com
+    topics:
+    - payment
+    - tax
+- group: taxamo-1
+  url_pattern: /api/v1/tax/location/calculate
+  method: GET
+  encoding: json
+  host:
+  - https://api.taxamo.com
+  query_string_params:
+  - billing_country_code
+  - buyer_credit_card_prefix
+  whitelist:
+  - billing_country_code
+  - buyer_credit_card_prefix
+  - buyer_ip
+  - tax_country_code
+  - tax_deducted
+  - tax_supported
+  concurrent_calls: 1
+  extra_config:
+    provider: taxamo.com
+    description: Taxamo’s elegant suite of APIs and comprehensive reporting dashboard
+      enables digital merchants to easily comply with EU regulatory requirements on
+      tax calculation, evidence collection, tax return creation and data storage.
+    version: "1"
+    slug: taxamo-1-api-v1-tax-location-calculate
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      billing_country_code: billing_country_code
+      buyer_credit_card_prefix: buyer_credit_card_prefix
+      buyer_ip: buyer_ip
+      tax_country_code: tax_country_code
+      tax_deducted: tax_deducted
+      tax_supported: tax_supported
+    hosts:
+    - https://api.taxamo.com
+    topics:
+    - payment
+    - tax
+- group: taxamo-1
+  url_pattern: /api/v1/tax/vat_numbers/{tax_number}/validate
+  method: GET
+  encoding: json
+  host:
+  - https://api.taxamo.com
+  url_keys:
+  - tax_number
+  query_string_params:
+  - country_code
+  whitelist:
+  - billing_country_code
+  - buyer_tax_number
+  - buyer_tax_number_valid
+  - tax_deducted
+  concurrent_calls: 1
+  extra_config:
+    provider: taxamo.com
+    description: Taxamo’s elegant suite of APIs and comprehensive reporting dashboard
+      enables digital merchants to easily comply with EU regulatory requirements on
+      tax calculation, evidence collection, tax return creation and data storage.
+    version: "1"
+    slug: taxamo-1-api-v1-tax-vat-numbers-tax-number-validate
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      billing_country_code: billing_country_code
+      buyer_tax_number: buyer_tax_number
+      buyer_tax_number_valid: buyer_tax_number_valid
+      tax_deducted: tax_deducted
+    hosts:
+    - https://api.taxamo.com
+    topics:
+    - payment
+    - tax
+- group: taxamo-1
+  url_pattern: /api/v1/transactions
+  method: GET
+  encoding: json
+  host:
+  - https://api.taxamo.com
+  query_string_params:
+  - currency_code
+  - filter_text
+  - format
+  - has_note
+  - invoice_number
+  - key_or_custom_id
+  - limit
+  - offset
+  - order_date_from
+  - order_date_to
+  - original_transaction_key
+  - sort_reverse
+  - statuses
+  - tax_country_code
+  - tax_country_codes
+  - total_amount_greater_than
+  - total_amount_less_than
+  whitelist:
+  - transactions
+  concurrent_calls: 1
+  extra_config:
+    provider: taxamo.com
+    description: Taxamo’s elegant suite of APIs and comprehensive reporting dashboard
+      enables digital merchants to easily comply with EU regulatory requirements on
+      tax calculation, evidence collection, tax return creation and data storage.
+    version: "1"
+    slug: taxamo-1-api-v1-transactions
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      transactions: transactions
+    hosts:
+    - https://api.taxamo.com
+    topics:
+    - payment
+    - transactions
+- group: taxamo-1
+  url_pattern: /api/v1/transactions/{key}
+  method: GET
+  encoding: json
+  host:
+  - https://api.taxamo.com
+  url_keys:
+  - key
+  whitelist:
+  - storage_required_fields
+  - tax_required_fields
+  concurrent_calls: 1
+  extra_config:
+    provider: taxamo.com
+    description: Taxamo’s elegant suite of APIs and comprehensive reporting dashboard
+      enables digital merchants to easily comply with EU regulatory requirements on
+      tax calculation, evidence collection, tax return creation and data storage.
+    version: "1"
+    slug: taxamo-1-api-v1-transactions-key
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      storage_required_fields: storage_required_fields
+      tax_required_fields: tax_required_fields
+    hosts:
+    - https://api.taxamo.com
+    topics:
+    - payment
+    - transactions
+- group: taxamo-1
+  url_pattern: /api/v1/transactions/{key}/confirm
+  method: POST
+  encoding: json
+  host:
+  - https://api.taxamo.com
+  url_keys:
+  - key
+  whitelist:
+  - storage_required_fields
+  - tax_required_fields
+  concurrent_calls: 1
+  extra_config:
+    provider: taxamo.com
+    description: Taxamo’s elegant suite of APIs and comprehensive reporting dashboard
+      enables digital merchants to easily comply with EU regulatory requirements on
+      tax calculation, evidence collection, tax return creation and data storage.
+    version: "1"
+    slug: taxamo-1-api-v1-transactions-key-confirm
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      storage_required_fields: storage_required_fields
+      tax_required_fields: tax_required_fields
+    hosts:
+    - https://api.taxamo.com
+    topics:
+    - payment
+    - transactions
+- group: taxamo-1
+  url_pattern: /api/v1/transactions/{key}/invoice/refunds/{refund_note_number}/send_email
+  method: POST
+  encoding: json
+  host:
+  - https://api.taxamo.com
+  url_keys:
+  - key
+  - refund_note_number
+  whitelist:
+  - success
+  concurrent_calls: 1
+  extra_config:
+    provider: taxamo.com
+    description: Taxamo’s elegant suite of APIs and comprehensive reporting dashboard
+      enables digital merchants to easily comply with EU regulatory requirements on
+      tax calculation, evidence collection, tax return creation and data storage.
+    version: "1"
+    slug: taxamo-1-api-v1-transactions-key-invoice-refunds-refund-note-number-send-email
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      success: success
+    hosts:
+    - https://api.taxamo.com
+    topics:
+    - invoices
+    - payment
+- group: taxamo-1
+  url_pattern: /api/v1/transactions/{key}/invoice/send_email
+  method: POST
+  encoding: json
+  host:
+  - https://api.taxamo.com
+  url_keys:
+  - key
+  whitelist:
+  - success
+  concurrent_calls: 1
+  extra_config:
+    provider: taxamo.com
+    description: Taxamo’s elegant suite of APIs and comprehensive reporting dashboard
+      enables digital merchants to easily comply with EU regulatory requirements on
+      tax calculation, evidence collection, tax return creation and data storage.
+    version: "1"
+    slug: taxamo-1-api-v1-transactions-key-invoice-send-email
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      success: success
+    hosts:
+    - https://api.taxamo.com
+    topics:
+    - invoices
+    - payment
+- group: taxamo-1
+  url_pattern: /api/v1/transactions/{key}/payments
+  method: GET
+  encoding: json
+  host:
+  - https://api.taxamo.com
+  url_keys:
+  - key
+  query_string_params:
+  - limit
+  - offset
+  whitelist:
+  - payments
+  concurrent_calls: 1
+  extra_config:
+    provider: taxamo.com
+    description: Taxamo’s elegant suite of APIs and comprehensive reporting dashboard
+      enables digital merchants to easily comply with EU regulatory requirements on
+      tax calculation, evidence collection, tax return creation and data storage.
+    version: "1"
+    slug: taxamo-1-api-v1-transactions-key-payments
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      payments: payments
+    hosts:
+    - https://api.taxamo.com
+    topics:
+    - payment
+    - payments
+- group: taxamo-1
+  url_pattern: /api/v1/transactions/{key}/payments/capture
+  method: POST
+  encoding: json
+  host:
+  - https://api.taxamo.com
+  url_keys:
+  - key
+  whitelist:
+  - success
+  concurrent_calls: 1
+  extra_config:
+    provider: taxamo.com
+    description: Taxamo’s elegant suite of APIs and comprehensive reporting dashboard
+      enables digital merchants to easily comply with EU regulatory requirements on
+      tax calculation, evidence collection, tax return creation and data storage.
+    version: "1"
+    slug: taxamo-1-api-v1-transactions-key-payments-capture
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      success: success
+    hosts:
+    - https://api.taxamo.com
+    topics:
+    - payment
+    - payments
+- group: taxamo-1
+  url_pattern: /api/v1/transactions/{key}/refunds
+  method: GET
+  encoding: json
+  host:
+  - https://api.taxamo.com
+  url_keys:
+  - key
+  whitelist:
+  - refunds
+  concurrent_calls: 1
+  extra_config:
+    provider: taxamo.com
+    description: Taxamo’s elegant suite of APIs and comprehensive reporting dashboard
+      enables digital merchants to easily comply with EU regulatory requirements on
+      tax calculation, evidence collection, tax return creation and data storage.
+    version: "1"
+    slug: taxamo-1-api-v1-transactions-key-refunds
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      refunds: refunds
+    hosts:
+    - https://api.taxamo.com
+    topics:
+    - payment
+    - refunds
+- group: taxamo-1
+  url_pattern: /api/v1/transactions/{key}/unconfirm
+  method: POST
+  encoding: json
+  host:
+  - https://api.taxamo.com
+  url_keys:
+  - key
+  whitelist:
+  - storage_required_fields
+  - tax_required_fields
+  concurrent_calls: 1
+  extra_config:
+    provider: taxamo.com
+    description: Taxamo’s elegant suite of APIs and comprehensive reporting dashboard
+      enables digital merchants to easily comply with EU regulatory requirements on
+      tax calculation, evidence collection, tax return creation and data storage.
+    version: "1"
+    slug: taxamo-1-api-v1-transactions-key-unconfirm
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      storage_required_fields: storage_required_fields
+      tax_required_fields: tax_required_fields
+    hosts:
+    - https://api.taxamo.com
+    topics:
+    - payment
+    - transactions
+- group: taxamo-1
+  url_pattern: /api/v1/verification/sms
+  method: POST
+  encoding: json
+  host:
+  - https://api.taxamo.com
+  whitelist:
+  - success
+  concurrent_calls: 1
+  extra_config:
+    provider: taxamo.com
+    description: Taxamo’s elegant suite of APIs and comprehensive reporting dashboard
+      enables digital merchants to easily comply with EU regulatory requirements on
+      tax calculation, evidence collection, tax return creation and data storage.
+    version: "1"
+    slug: taxamo-1-api-v1-verification-sms
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      success: success
+    hosts:
+    - https://api.taxamo.com
+    topics:
+    - payment
+    - verification
+- group: taxamo-1
+  url_pattern: /api/v1/verification/sms/{token}
+  method: GET
+  encoding: json
+  host:
+  - https://api.taxamo.com
+  url_keys:
+  - token
+  whitelist:
+  - country_code
+  concurrent_calls: 1
+  extra_config:
+    provider: taxamo.com
+    description: Taxamo’s elegant suite of APIs and comprehensive reporting dashboard
+      enables digital merchants to easily comply with EU regulatory requirements on
+      tax calculation, evidence collection, tax return creation and data storage.
+    version: "1"
+    slug: taxamo-1-api-v1-verification-sms-token
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      country_code: country_code
+    hosts:
+    - https://api.taxamo.com
+    topics:
+    - payment
+    - verification

@@ -1,0 +1,403 @@
+{
+	"backends": [
+		{
+			"group": "google-play-movies-partner-v1",
+			"url_pattern": "/v1/accounts/{accountId}/avails",
+			"method": "GET",
+			"host": [
+				"https://playmoviespartner.googleapis.com"
+			],
+			"url_keys": [
+				"accountId"
+			],
+			"query_string_params": [
+				"altId",
+				"altIds",
+				"pageSize",
+				"pageToken",
+				"pphNames",
+				"studioNames",
+				"territories",
+				"title",
+				"videoIds"
+			],
+			"whitelist": [
+				"avails",
+				"nextPageToken",
+				"totalSize"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Gets the delivery status of titles for Google Play Movies Partners.",
+				"version": "v1",
+				"slug": "google-play-movies-partner-v1-v1-accounts-accountid-avails",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"avails": "avails",
+					"nextPageToken": "nextPageToken",
+					"totalSize": "totalSize"
+				},
+				"hosts": [
+					"https://playmoviespartner.googleapis.com"
+				],
+				"topics": [
+					"accounts"
+				]
+			}
+		},
+		{
+			"group": "google-play-movies-partner-v1",
+			"url_pattern": "/v1/accounts/{accountId}/avails/{availId}",
+			"method": "GET",
+			"host": [
+				"https://playmoviespartner.googleapis.com"
+			],
+			"url_keys": [
+				"accountId",
+				"availId"
+			],
+			"whitelist": [
+				"altId",
+				"availId",
+				"captionExemption",
+				"captionIncluded",
+				"contentId",
+				"displayName",
+				"encodeId",
+				"end",
+				"episodeAltId",
+				"episodeNumber",
+				"episodeTitleInternalAlias",
+				"formatProfile",
+				"licenseType",
+				"pphNames",
+				"priceType",
+				"priceValue",
+				"productId",
+				"ratingReason",
+				"ratingSystem",
+				"ratingValue",
+				"releaseDate",
+				"seasonAltId",
+				"seasonNumber",
+				"seasonTitleInternalAlias",
+				"seriesAltId",
+				"seriesTitleInternalAlias",
+				"start",
+				"storeLanguage",
+				"suppressionLiftDate",
+				"territory",
+				"titleInternalAlias",
+				"videoId",
+				"workType"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Gets the delivery status of titles for Google Play Movies Partners.",
+				"version": "v1",
+				"slug": "google-play-movies-partner-v1-v1-accounts-accountid-avails-availid",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"altId": "altId",
+					"availId": "availId",
+					"captionExemption": "captionExemption",
+					"captionIncluded": "captionIncluded",
+					"contentId": "contentId",
+					"displayName": "displayName",
+					"encodeId": "encodeId",
+					"end": "end",
+					"episodeAltId": "episodeAltId",
+					"episodeNumber": "episodeNumber",
+					"episodeTitleInternalAlias": "episodeTitleInternalAlias",
+					"formatProfile": "formatProfile",
+					"licenseType": "licenseType",
+					"pphNames": "pphNames",
+					"priceType": "priceType",
+					"priceValue": "priceValue",
+					"productId": "productId",
+					"ratingReason": "ratingReason",
+					"ratingSystem": "ratingSystem",
+					"ratingValue": "ratingValue",
+					"releaseDate": "releaseDate",
+					"seasonAltId": "seasonAltId",
+					"seasonNumber": "seasonNumber",
+					"seasonTitleInternalAlias": "seasonTitleInternalAlias",
+					"seriesAltId": "seriesAltId",
+					"seriesTitleInternalAlias": "seriesTitleInternalAlias",
+					"start": "start",
+					"storeLanguage": "storeLanguage",
+					"suppressionLiftDate": "suppressionLiftDate",
+					"territory": "territory",
+					"titleInternalAlias": "titleInternalAlias",
+					"videoId": "videoId",
+					"workType": "workType"
+				},
+				"hosts": [
+					"https://playmoviespartner.googleapis.com"
+				],
+				"topics": [
+					"accounts"
+				]
+			}
+		},
+		{
+			"group": "google-play-movies-partner-v1",
+			"url_pattern": "/v1/accounts/{accountId}/orders",
+			"method": "GET",
+			"host": [
+				"https://playmoviespartner.googleapis.com"
+			],
+			"url_keys": [
+				"accountId"
+			],
+			"query_string_params": [
+				"customId",
+				"name",
+				"pageSize",
+				"pageToken",
+				"pphNames",
+				"status",
+				"studioNames",
+				"videoIds"
+			],
+			"whitelist": [
+				"nextPageToken",
+				"orders",
+				"totalSize"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Gets the delivery status of titles for Google Play Movies Partners.",
+				"version": "v1",
+				"slug": "google-play-movies-partner-v1-v1-accounts-accountid-orders",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"nextPageToken": "nextPageToken",
+					"orders": "orders",
+					"totalSize": "totalSize"
+				},
+				"hosts": [
+					"https://playmoviespartner.googleapis.com"
+				],
+				"topics": [
+					"accounts"
+				]
+			}
+		},
+		{
+			"group": "google-play-movies-partner-v1",
+			"url_pattern": "/v1/accounts/{accountId}/orders/{orderId}",
+			"method": "GET",
+			"host": [
+				"https://playmoviespartner.googleapis.com"
+			],
+			"url_keys": [
+				"accountId",
+				"orderId"
+			],
+			"whitelist": [
+				"approvedTime",
+				"channelId",
+				"channelName",
+				"countries",
+				"customId",
+				"earliestAvailStartTime",
+				"episodeName",
+				"legacyPriority",
+				"name",
+				"normalizedPriority",
+				"orderId",
+				"orderedTime",
+				"pphName",
+				"priority",
+				"receivedTime",
+				"rejectionNote",
+				"seasonName",
+				"showName",
+				"status",
+				"statusDetail",
+				"studioName",
+				"videoId"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Gets the delivery status of titles for Google Play Movies Partners.",
+				"version": "v1",
+				"slug": "google-play-movies-partner-v1-v1-accounts-accountid-orders-orderid",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"approvedTime": "approvedTime",
+					"channelId": "channelId",
+					"channelName": "channelName",
+					"countries": "countries",
+					"customId": "customId",
+					"earliestAvailStartTime": "earliestAvailStartTime",
+					"episodeName": "episodeName",
+					"legacyPriority": "legacyPriority",
+					"name": "name",
+					"normalizedPriority": "normalizedPriority",
+					"orderId": "orderId",
+					"orderedTime": "orderedTime",
+					"pphName": "pphName",
+					"priority": "priority",
+					"receivedTime": "receivedTime",
+					"rejectionNote": "rejectionNote",
+					"seasonName": "seasonName",
+					"showName": "showName",
+					"status": "status",
+					"statusDetail": "statusDetail",
+					"studioName": "studioName",
+					"videoId": "videoId"
+				},
+				"hosts": [
+					"https://playmoviespartner.googleapis.com"
+				],
+				"topics": [
+					"accounts"
+				]
+			}
+		},
+		{
+			"group": "google-play-movies-partner-v1",
+			"url_pattern": "/v1/accounts/{accountId}/storeInfos",
+			"method": "GET",
+			"host": [
+				"https://playmoviespartner.googleapis.com"
+			],
+			"url_keys": [
+				"accountId"
+			],
+			"query_string_params": [
+				"countries",
+				"mids",
+				"name",
+				"pageSize",
+				"pageToken",
+				"pphNames",
+				"seasonIds",
+				"studioNames",
+				"videoId",
+				"videoIds"
+			],
+			"whitelist": [
+				"nextPageToken",
+				"storeInfos",
+				"totalSize"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Gets the delivery status of titles for Google Play Movies Partners.",
+				"version": "v1",
+				"slug": "google-play-movies-partner-v1-v1-accounts-accountid-storeinfos",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"nextPageToken": "nextPageToken",
+					"storeInfos": "storeInfos",
+					"totalSize": "totalSize"
+				},
+				"hosts": [
+					"https://playmoviespartner.googleapis.com"
+				],
+				"topics": [
+					"accounts"
+				]
+			}
+		},
+		{
+			"group": "google-play-movies-partner-v1",
+			"url_pattern": "/v1/accounts/{accountId}/storeInfos/{videoId}/country/{country}",
+			"method": "GET",
+			"host": [
+				"https://playmoviespartner.googleapis.com"
+			],
+			"url_keys": [
+				"accountId",
+				"country",
+				"videoId"
+			],
+			"whitelist": [
+				"audioTracks",
+				"country",
+				"editLevelEidr",
+				"episodeNumber",
+				"hasAudio51",
+				"hasEstOffer",
+				"hasHdOffer",
+				"hasInfoCards",
+				"hasSdOffer",
+				"hasVodOffer",
+				"liveTime",
+				"mid",
+				"name",
+				"pphNames",
+				"seasonId",
+				"seasonName",
+				"seasonNumber",
+				"showId",
+				"showName",
+				"studioName",
+				"subtitles",
+				"titleLevelEidr",
+				"trailerId",
+				"videoId"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Gets the delivery status of titles for Google Play Movies Partners.",
+				"version": "v1",
+				"slug": "google-play-movies-partner-v1-v1-accounts-accountid-storeinfos-videoid-country-country",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"audioTracks": "audioTracks",
+					"country": "country",
+					"editLevelEidr": "editLevelEidr",
+					"episodeNumber": "episodeNumber",
+					"hasAudio51": "hasAudio51",
+					"hasEstOffer": "hasEstOffer",
+					"hasHdOffer": "hasHdOffer",
+					"hasInfoCards": "hasInfoCards",
+					"hasSdOffer": "hasSdOffer",
+					"hasVodOffer": "hasVodOffer",
+					"liveTime": "liveTime",
+					"mid": "mid",
+					"name": "name",
+					"pphNames": "pphNames",
+					"seasonId": "seasonId",
+					"seasonName": "seasonName",
+					"seasonNumber": "seasonNumber",
+					"showId": "showId",
+					"showName": "showName",
+					"studioName": "studioName",
+					"subtitles": "subtitles",
+					"titleLevelEidr": "titleLevelEidr",
+					"trailerId": "trailerId",
+					"videoId": "videoId"
+				},
+				"hosts": [
+					"https://playmoviespartner.googleapis.com"
+				],
+				"topics": [
+					"accounts"
+				]
+			}
+		}
+	]
+}

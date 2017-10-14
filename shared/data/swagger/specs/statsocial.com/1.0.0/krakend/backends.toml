@@ -1,0 +1,173 @@
+[[backends]]
+  group = "statsocial-platform-1-0-0"
+  url_pattern = "/api/applications/status/"
+  method = "GET"
+  encoding = "json"
+  host = ["http://api.statsocial.com"]
+  whitelist = ["msg", "success"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "statsocial.com"
+    description = "API Reference: <br><br> The StatSocial API is organized around REST. Our API is designed to have predictable, resource-oriented URLs and to use HTTP response codes to indicate API errors. We use built-in HTTP features, like HTTP authentication and HTTP verbs, which can be understood by off-the-shelf HTTP clients, and we support cross-origin resource sharing to allow you to interact securely with our API from a client-side web application (remember that you should never expose your secret API key in any public website's client-side code). JSON will be returned in all responses from the API, including errors (though if you're using API bindings, we will convert the response to the appropriate language-specific object).<br><br>Contact help@statsocial.com to obtain a test API key"
+    version = "1.0.0."
+    slug = "statsocial-platform-1-0-0-api-applications-status"
+    schemes = ["http"]
+    produces = ["json"]
+    hosts = ["http://api.statsocial.com"]
+    topics = ["marketing", "social"]
+    [backends.extra_config.mapping]
+      msg = "msg"
+      success = "success"
+
+[[backends]]
+  group = "statsocial-platform-1-0-0"
+  url_pattern = "/api/reports/"
+  method = "GET"
+  encoding = "json"
+  host = ["http://api.statsocial.com"]
+  whitelist = ["msg", "success"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "statsocial.com"
+    description = "API Reference: <br><br> The StatSocial API is organized around REST. Our API is designed to have predictable, resource-oriented URLs and to use HTTP response codes to indicate API errors. We use built-in HTTP features, like HTTP authentication and HTTP verbs, which can be understood by off-the-shelf HTTP clients, and we support cross-origin resource sharing to allow you to interact securely with our API from a client-side web application (remember that you should never expose your secret API key in any public website's client-side code). JSON will be returned in all responses from the API, including errors (though if you're using API bindings, we will convert the response to the appropriate language-specific object).<br><br>Contact help@statsocial.com to obtain a test API key"
+    version = "1.0.0."
+    slug = "statsocial-platform-1-0-0-api-reports"
+    schemes = ["http"]
+    produces = ["json"]
+    hosts = ["http://api.statsocial.com"]
+    topics = ["marketing", "social"]
+    [backends.extra_config.mapping]
+      msg = "msg"
+      success = "success"
+
+[[backends]]
+  group = "statsocial-platform-1-0-0"
+  url_pattern = "/api/reports/custom/create/"
+  method = "GET"
+  encoding = "json"
+  host = ["http://api.statsocial.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "statsocial.com"
+    description = "API Reference: <br><br> The StatSocial API is organized around REST. Our API is designed to have predictable, resource-oriented URLs and to use HTTP response codes to indicate API errors. We use built-in HTTP features, like HTTP authentication and HTTP verbs, which can be understood by off-the-shelf HTTP clients, and we support cross-origin resource sharing to allow you to interact securely with our API from a client-side web application (remember that you should never expose your secret API key in any public website's client-side code). JSON will be returned in all responses from the API, including errors (though if you're using API bindings, we will convert the response to the appropriate language-specific object).<br><br>Contact help@statsocial.com to obtain a test API key"
+    version = "1.0.0."
+    slug = "statsocial-platform-1-0-0-api-reports-custom-create"
+    schemes = ["http"]
+    produces = ["json"]
+    hosts = ["http://api.statsocial.com"]
+    topics = ["marketing", "social"]
+
+[[backends]]
+  group = "statsocial-platform-1-0-0"
+  url_pattern = "/api/reports/custom/generate/"
+  method = "GET"
+  encoding = "json"
+  host = ["http://api.statsocial.com"]
+  whitelist = ["msg", "success"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "statsocial.com"
+    description = "API Reference: <br><br> The StatSocial API is organized around REST. Our API is designed to have predictable, resource-oriented URLs and to use HTTP response codes to indicate API errors. We use built-in HTTP features, like HTTP authentication and HTTP verbs, which can be understood by off-the-shelf HTTP clients, and we support cross-origin resource sharing to allow you to interact securely with our API from a client-side web application (remember that you should never expose your secret API key in any public website's client-side code). JSON will be returned in all responses from the API, including errors (though if you're using API bindings, we will convert the response to the appropriate language-specific object).<br><br>Contact help@statsocial.com to obtain a test API key"
+    version = "1.0.0."
+    slug = "statsocial-platform-1-0-0-api-reports-custom-generate"
+    schemes = ["http"]
+    produces = ["json"]
+    hosts = ["http://api.statsocial.com"]
+    topics = ["marketing", "social"]
+    [backends.extra_config.mapping]
+      msg = "msg"
+      success = "success"
+
+[[backends]]
+  group = "statsocial-platform-1-0-0"
+  url_pattern = "/api/reports/custom/insert/"
+  method = "GET"
+  encoding = "json"
+  host = ["http://api.statsocial.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "statsocial.com"
+    description = "API Reference: <br><br> The StatSocial API is organized around REST. Our API is designed to have predictable, resource-oriented URLs and to use HTTP response codes to indicate API errors. We use built-in HTTP features, like HTTP authentication and HTTP verbs, which can be understood by off-the-shelf HTTP clients, and we support cross-origin resource sharing to allow you to interact securely with our API from a client-side web application (remember that you should never expose your secret API key in any public website's client-side code). JSON will be returned in all responses from the API, including errors (though if you're using API bindings, we will convert the response to the appropriate language-specific object).<br><br>Contact help@statsocial.com to obtain a test API key"
+    version = "1.0.0."
+    slug = "statsocial-platform-1-0-0-api-reports-custom-insert"
+    schemes = ["http"]
+    produces = ["json"]
+    hosts = ["http://api.statsocial.com"]
+    topics = ["marketing", "social"]
+
+[[backends]]
+  group = "statsocial-platform-1-0-0"
+  url_pattern = "/api/reports/dates/"
+  method = "GET"
+  encoding = "json"
+  host = ["http://api.statsocial.com"]
+  whitelist = ["data", "msg", "success"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "statsocial.com"
+    description = "API Reference: <br><br> The StatSocial API is organized around REST. Our API is designed to have predictable, resource-oriented URLs and to use HTTP response codes to indicate API errors. We use built-in HTTP features, like HTTP authentication and HTTP verbs, which can be understood by off-the-shelf HTTP clients, and we support cross-origin resource sharing to allow you to interact securely with our API from a client-side web application (remember that you should never expose your secret API key in any public website's client-side code). JSON will be returned in all responses from the API, including errors (though if you're using API bindings, we will convert the response to the appropriate language-specific object).<br><br>Contact help@statsocial.com to obtain a test API key"
+    version = "1.0.0."
+    slug = "statsocial-platform-1-0-0-api-reports-dates"
+    schemes = ["http"]
+    produces = ["json"]
+    hosts = ["http://api.statsocial.com"]
+    topics = ["marketing", "social"]
+    [backends.extra_config.mapping]
+      data = "data"
+      msg = "msg"
+      success = "success"
+
+[[backends]]
+  group = "statsocial-platform-1-0-0"
+  url_pattern = "/api/reports/status/"
+  method = "GET"
+  encoding = "json"
+  host = ["http://api.statsocial.com"]
+  whitelist = ["msg", "success"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "statsocial.com"
+    description = "API Reference: <br><br> The StatSocial API is organized around REST. Our API is designed to have predictable, resource-oriented URLs and to use HTTP response codes to indicate API errors. We use built-in HTTP features, like HTTP authentication and HTTP verbs, which can be understood by off-the-shelf HTTP clients, and we support cross-origin resource sharing to allow you to interact securely with our API from a client-side web application (remember that you should never expose your secret API key in any public website's client-side code). JSON will be returned in all responses from the API, including errors (though if you're using API bindings, we will convert the response to the appropriate language-specific object).<br><br>Contact help@statsocial.com to obtain a test API key"
+    version = "1.0.0."
+    slug = "statsocial-platform-1-0-0-api-reports-status"
+    schemes = ["http"]
+    produces = ["json"]
+    hosts = ["http://api.statsocial.com"]
+    topics = ["marketing", "social"]
+    [backends.extra_config.mapping]
+      msg = "msg"
+      success = "success"
+
+[[backends]]
+  group = "statsocial-platform-1-0-0"
+  url_pattern = "/api/reports/tweet/create/"
+  method = "GET"
+  encoding = "json"
+  host = ["http://api.statsocial.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "statsocial.com"
+    description = "API Reference: <br><br> The StatSocial API is organized around REST. Our API is designed to have predictable, resource-oriented URLs and to use HTTP response codes to indicate API errors. We use built-in HTTP features, like HTTP authentication and HTTP verbs, which can be understood by off-the-shelf HTTP clients, and we support cross-origin resource sharing to allow you to interact securely with our API from a client-side web application (remember that you should never expose your secret API key in any public website's client-side code). JSON will be returned in all responses from the API, including errors (though if you're using API bindings, we will convert the response to the appropriate language-specific object).<br><br>Contact help@statsocial.com to obtain a test API key"
+    version = "1.0.0."
+    slug = "statsocial-platform-1-0-0-api-reports-tweet-create"
+    schemes = ["http"]
+    produces = ["json"]
+    hosts = ["http://api.statsocial.com"]
+    topics = ["marketing", "social"]
+
+[[backends]]
+  group = "statsocial-platform-1-0-0"
+  url_pattern = "/api/reports/twitter/create/"
+  method = "GET"
+  encoding = "json"
+  host = ["http://api.statsocial.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "statsocial.com"
+    description = "API Reference: <br><br> The StatSocial API is organized around REST. Our API is designed to have predictable, resource-oriented URLs and to use HTTP response codes to indicate API errors. We use built-in HTTP features, like HTTP authentication and HTTP verbs, which can be understood by off-the-shelf HTTP clients, and we support cross-origin resource sharing to allow you to interact securely with our API from a client-side web application (remember that you should never expose your secret API key in any public website's client-side code). JSON will be returned in all responses from the API, including errors (though if you're using API bindings, we will convert the response to the appropriate language-specific object).<br><br>Contact help@statsocial.com to obtain a test API key"
+    version = "1.0.0."
+    slug = "statsocial-platform-1-0-0-api-reports-twitter-create"
+    schemes = ["http"]
+    produces = ["json"]
+    hosts = ["http://api.statsocial.com"]
+    topics = ["marketing", "social"]

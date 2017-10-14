@@ -1,0 +1,337 @@
+{
+	"backends": [
+		{
+			"group": "google-oauth2-v1",
+			"url_pattern": "/oauth2/v1/certs",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Obtains end-user authorization grants for use with other Google APIs.",
+				"version": "v1",
+				"slug": "google-oauth2-v1-oauth2-v1-certs",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"security"
+				]
+			}
+		},
+		{
+			"group": "google-oauth2-v1",
+			"url_pattern": "/oauth2/v1/raw_public_keys",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"keyvalues",
+				"keyvalues.algorithm",
+				"keyvalues.exponent",
+				"keyvalues.keyid",
+				"keyvalues.modulus"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Obtains end-user authorization grants for use with other Google APIs.",
+				"version": "v1",
+				"slug": "google-oauth2-v1-oauth2-v1-raw-public-keys",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"keyvalues": "keyvalues",
+					"keyvalues.algorithm": "keyvalues.algorithm",
+					"keyvalues.exponent": "keyvalues.exponent",
+					"keyvalues.keyid": "keyvalues.keyid",
+					"keyvalues.modulus": "keyvalues.modulus"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"security"
+				]
+			}
+		},
+		{
+			"group": "google-oauth2-v1",
+			"url_pattern": "/oauth2/v1/tokeninfo",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"query_string_params": [
+				"access_token",
+				"id_token"
+			],
+			"whitelist": [
+				"access_type",
+				"audience",
+				"email",
+				"email_verified",
+				"expires_in",
+				"issued_at",
+				"issued_to",
+				"issuer",
+				"nonce",
+				"scope",
+				"user_id",
+				"verified_email"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Obtains end-user authorization grants for use with other Google APIs.",
+				"version": "v1",
+				"slug": "google-oauth2-v1-oauth2-v1-tokeninfo",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"access_type": "access_type",
+					"audience": "audience",
+					"email": "email",
+					"email_verified": "email_verified",
+					"expires_in": "expires_in",
+					"issued_at": "issued_at",
+					"issued_to": "issued_to",
+					"issuer": "issuer",
+					"nonce": "nonce",
+					"scope": "scope",
+					"user_id": "user_id",
+					"verified_email": "verified_email"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"security"
+				]
+			}
+		},
+		{
+			"group": "google-oauth2-v1",
+			"url_pattern": "/oauth2/v1/userinfo",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"email",
+				"family_name",
+				"gender",
+				"given_name",
+				"hd",
+				"id",
+				"link",
+				"locale",
+				"name",
+				"picture",
+				"verified_email"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Obtains end-user authorization grants for use with other Google APIs.",
+				"version": "v1",
+				"slug": "google-oauth2-v1-oauth2-v1-userinfo",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"email": "email",
+					"family_name": "family_name",
+					"gender": "gender",
+					"given_name": "given_name",
+					"hd": "hd",
+					"id": "id",
+					"link": "link",
+					"locale": "locale",
+					"name": "name",
+					"picture": "picture",
+					"verified_email": "verified_email"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"security",
+					"userinfo"
+				]
+			}
+		},
+		{
+			"group": "google-oauth2-v1",
+			"url_pattern": "/service_accounts/v1/jwk/{robotEmail}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"url_keys": [
+				"robotEmail"
+			],
+			"whitelist": [
+				"keys",
+				"keys.alg",
+				"keys.e",
+				"keys.kid",
+				"keys.kty",
+				"keys.n",
+				"keys.use"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Obtains end-user authorization grants for use with other Google APIs.",
+				"version": "v1",
+				"slug": "google-oauth2-v1-service-accounts-v1-jwk-robotemail",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"keys": "keys",
+					"keys.alg": "keys.alg",
+					"keys.e": "keys.e",
+					"keys.kid": "keys.kid",
+					"keys.kty": "keys.kty",
+					"keys.n": "keys.n",
+					"keys.use": "keys.use"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"security"
+				]
+			}
+		},
+		{
+			"group": "google-oauth2-v1",
+			"url_pattern": "/service_accounts/v1/metadata/raw/{robotEmail}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"url_keys": [
+				"robotEmail"
+			],
+			"whitelist": [
+				"keyvalues",
+				"keyvalues.algorithm",
+				"keyvalues.exponent",
+				"keyvalues.keyid",
+				"keyvalues.modulus"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Obtains end-user authorization grants for use with other Google APIs.",
+				"version": "v1",
+				"slug": "google-oauth2-v1-service-accounts-v1-metadata-raw-robotemail",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"keyvalues": "keyvalues",
+					"keyvalues.algorithm": "keyvalues.algorithm",
+					"keyvalues.exponent": "keyvalues.exponent",
+					"keyvalues.keyid": "keyvalues.keyid",
+					"keyvalues.modulus": "keyvalues.modulus"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"security"
+				]
+			}
+		},
+		{
+			"group": "google-oauth2-v1",
+			"url_pattern": "/service_accounts/v1/metadata/x509/{robotEmail}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"url_keys": [
+				"robotEmail"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Obtains end-user authorization grants for use with other Google APIs.",
+				"version": "v1",
+				"slug": "google-oauth2-v1-service-accounts-v1-metadata-x509-robotemail",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"security"
+				]
+			}
+		},
+		{
+			"group": "google-oauth2-v1",
+			"url_pattern": "/userinfo/v2/me",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"email",
+				"family_name",
+				"gender",
+				"given_name",
+				"hd",
+				"id",
+				"link",
+				"locale",
+				"name",
+				"picture",
+				"verified_email"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Obtains end-user authorization grants for use with other Google APIs.",
+				"version": "v1",
+				"slug": "google-oauth2-v1-userinfo-v2-me",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"email": "email",
+					"family_name": "family_name",
+					"gender": "gender",
+					"given_name": "given_name",
+					"hd": "hd",
+					"id": "id",
+					"link": "link",
+					"locale": "locale",
+					"name": "name",
+					"picture": "picture",
+					"verified_email": "verified_email"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"security",
+					"userinfo"
+				]
+			}
+		}
+	]
+}

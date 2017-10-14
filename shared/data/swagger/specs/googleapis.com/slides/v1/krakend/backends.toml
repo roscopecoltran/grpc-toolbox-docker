@@ -1,0 +1,112 @@
+[[backends]]
+  group = "google-slides-v1"
+  url_pattern = "/v1/presentations"
+  method = "POST"
+  host = ["https://slides.googleapis.com"]
+  whitelist = ["layouts", "locale", "masters", "presentationId", "revisionId", "slides", "title"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "An API for creating and editing Google Slides presentations."
+    version = "v1"
+    slug = "google-slides-v1-v1-presentations"
+    schemes = ["https"]
+    hosts = ["https://slides.googleapis.com"]
+    topics = ["presentations"]
+    [backends.extra_config.mapping]
+      layouts = "layouts"
+      locale = "locale"
+      masters = "masters"
+      presentationId = "presentationId"
+      revisionId = "revisionId"
+      slides = "slides"
+      title = "title"
+
+[[backends]]
+  group = "google-slides-v1"
+  url_pattern = "/v1/presentations/{presentationId}"
+  method = "GET"
+  host = ["https://slides.googleapis.com"]
+  url_keys = ["presentationId"]
+  whitelist = ["layouts", "locale", "masters", "presentationId", "revisionId", "slides", "title"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "An API for creating and editing Google Slides presentations."
+    version = "v1"
+    slug = "google-slides-v1-v1-presentations-presentationid"
+    schemes = ["https"]
+    hosts = ["https://slides.googleapis.com"]
+    topics = ["presentations"]
+    [backends.extra_config.mapping]
+      layouts = "layouts"
+      locale = "locale"
+      masters = "masters"
+      presentationId = "presentationId"
+      revisionId = "revisionId"
+      slides = "slides"
+      title = "title"
+
+[[backends]]
+  group = "google-slides-v1"
+  url_pattern = "/v1/presentations/{presentationId}/pages/{pageObjectId}"
+  method = "GET"
+  host = ["https://slides.googleapis.com"]
+  url_keys = ["pageObjectId", "presentationId"]
+  whitelist = ["objectId", "pageElements", "pageType", "revisionId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "An API for creating and editing Google Slides presentations."
+    version = "v1"
+    slug = "google-slides-v1-v1-presentations-presentationid-pages-pageobjectid"
+    schemes = ["https"]
+    hosts = ["https://slides.googleapis.com"]
+    topics = ["presentations"]
+    [backends.extra_config.mapping]
+      objectId = "objectId"
+      pageElements = "pageElements"
+      pageType = "pageType"
+      revisionId = "revisionId"
+
+[[backends]]
+  group = "google-slides-v1"
+  url_pattern = "/v1/presentations/{presentationId}/pages/{pageObjectId}/thumbnail"
+  method = "GET"
+  host = ["https://slides.googleapis.com"]
+  url_keys = ["pageObjectId", "presentationId"]
+  query_string_params = ["thumbnailProperties.mimeType", "thumbnailProperties.thumbnailSize"]
+  whitelist = ["contentUrl", "height", "width"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "An API for creating and editing Google Slides presentations."
+    version = "v1"
+    slug = "google-slides-v1-v1-presentations-presentationid-pages-pageobjectid-thumbnail"
+    schemes = ["https"]
+    hosts = ["https://slides.googleapis.com"]
+    topics = ["presentations"]
+    [backends.extra_config.mapping]
+      contentUrl = "contentUrl"
+      height = "height"
+      width = "width"
+
+[[backends]]
+  group = "google-slides-v1"
+  url_pattern = "/v1/presentations/{presentationId}:batchUpdate"
+  method = "POST"
+  host = ["https://slides.googleapis.com"]
+  url_keys = ["presentationId"]
+  whitelist = ["presentationId", "replies"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "An API for creating and editing Google Slides presentations."
+    version = "v1"
+    slug = "google-slides-v1-v1-presentations-presentationid-batchupdate"
+    schemes = ["https"]
+    hosts = ["https://slides.googleapis.com"]
+    topics = ["presentations"]
+    [backends.extra_config.mapping]
+      presentationId = "presentationId"
+      replies = "replies"

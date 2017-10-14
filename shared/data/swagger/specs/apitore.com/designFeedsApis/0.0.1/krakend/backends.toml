@@ -1,0 +1,26 @@
+[[backends]]
+  group = "design-feeds-apis-0-0-1"
+  url_pattern = "/api/32/feeds/design"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.apitore.com"]
+  whitelist = ["endTime", "entries", "lastUpdatedAt", "log", "num", "page", "processTime", "startTime"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "apitore.com"
+    description = "Various design feeds.<BR />[Endpoint] https://api.apitore.com/api/32"
+    version = "0.0.1"
+    slug = "design-feeds-apis-0-0-1-api-32-feeds-design"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.apitore.com"]
+    [backends.extra_config.mapping]
+      endTime = "endTime"
+      entries = "entries"
+      lastUpdatedAt = "lastUpdatedAt"
+      log = "log"
+      num = "num"
+      page = "page"
+      processTime = "processTime"
+      startTime = "startTime"

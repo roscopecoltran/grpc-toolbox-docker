@@ -1,0 +1,174 @@
+{
+	"backends": [
+		{
+			"group": "google-cloud-speech-v1beta1",
+			"url_pattern": "/v1beta1/operations",
+			"method": "GET",
+			"host": [
+				"https://speech.googleapis.com"
+			],
+			"query_string_params": [
+				"filter",
+				"name",
+				"pageSize",
+				"pageToken"
+			],
+			"whitelist": [
+				"nextPageToken",
+				"operations"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Converts audio to text by applying powerful neural network models.",
+				"version": "v1beta1",
+				"slug": "google-cloud-speech-v1beta1-v1beta1-operations",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"nextPageToken": "nextPageToken",
+					"operations": "operations"
+				},
+				"hosts": [
+					"https://speech.googleapis.com"
+				],
+				"topics": [
+					"operations"
+				]
+			}
+		},
+		{
+			"group": "google-cloud-speech-v1beta1",
+			"url_pattern": "/v1beta1/operations/{name}",
+			"method": "GET",
+			"host": [
+				"https://speech.googleapis.com"
+			],
+			"url_keys": [
+				"name"
+			],
+			"whitelist": [
+				"done",
+				"metadata",
+				"name",
+				"response"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Converts audio to text by applying powerful neural network models.",
+				"version": "v1beta1",
+				"slug": "google-cloud-speech-v1beta1-v1beta1-operations-name",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"done": "done",
+					"metadata": "metadata",
+					"name": "name",
+					"response": "response"
+				},
+				"hosts": [
+					"https://speech.googleapis.com"
+				],
+				"topics": [
+					"operations"
+				]
+			}
+		},
+		{
+			"group": "google-cloud-speech-v1beta1",
+			"url_pattern": "/v1beta1/operations/{name}:cancel",
+			"method": "POST",
+			"host": [
+				"https://speech.googleapis.com"
+			],
+			"url_keys": [
+				"name"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Converts audio to text by applying powerful neural network models.",
+				"version": "v1beta1",
+				"slug": "google-cloud-speech-v1beta1-v1beta1-operations-name-cancel",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://speech.googleapis.com"
+				],
+				"topics": [
+					"operations"
+				]
+			}
+		},
+		{
+			"group": "google-cloud-speech-v1beta1",
+			"url_pattern": "/v1beta1/speech:asyncrecognize",
+			"method": "POST",
+			"host": [
+				"https://speech.googleapis.com"
+			],
+			"whitelist": [
+				"done",
+				"metadata",
+				"name",
+				"response"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Converts audio to text by applying powerful neural network models.",
+				"version": "v1beta1",
+				"slug": "google-cloud-speech-v1beta1-v1beta1-speech-asyncrecognize",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"done": "done",
+					"metadata": "metadata",
+					"name": "name",
+					"response": "response"
+				},
+				"hosts": [
+					"https://speech.googleapis.com"
+				],
+				"topics": [
+					"speech"
+				]
+			}
+		},
+		{
+			"group": "google-cloud-speech-v1beta1",
+			"url_pattern": "/v1beta1/speech:syncrecognize",
+			"method": "POST",
+			"host": [
+				"https://speech.googleapis.com"
+			],
+			"whitelist": [
+				"results"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Converts audio to text by applying powerful neural network models.",
+				"version": "v1beta1",
+				"slug": "google-cloud-speech-v1beta1-v1beta1-speech-syncrecognize",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"results": "results"
+				},
+				"hosts": [
+					"https://speech.googleapis.com"
+				],
+				"topics": [
+					"speech"
+				]
+			}
+		}
+	]
+}

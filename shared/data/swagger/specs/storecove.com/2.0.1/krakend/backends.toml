@@ -1,0 +1,165 @@
+[[backends]]
+  group = "storecove-2-0-1"
+  url_pattern = "/api/v2/invoice_submissions"
+  method = "POST"
+  encoding = "json"
+  host = ["https://api.storecove.com"]
+  whitelist = ["guid"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "storecove.com"
+    description = "Storecove API"
+    version = "2.0.1"
+    slug = "storecove-2-0-1-api-v2-invoice-submissions"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.storecove.com"]
+    topics = ["financial"]
+    [backends.extra_config.mapping]
+      guid = "guid"
+
+[[backends]]
+  group = "storecove-2-0-1"
+  url_pattern = "/api/v2/invoice_submissions/preflight"
+  method = "POST"
+  encoding = "json"
+  host = ["https://api.storecove.com"]
+  whitelist = ["code"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "storecove.com"
+    description = "Storecove API"
+    version = "2.0.1"
+    slug = "storecove-2-0-1-api-v2-invoice-submissions-preflight"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.storecove.com"]
+    topics = ["financial"]
+    [backends.extra_config.mapping]
+      code = "code"
+
+[[backends]]
+  group = "storecove-2-0-1"
+  url_pattern = "/api/v2/shop_account_requests"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.storecove.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "storecove.com"
+    description = "Storecove API"
+    version = "2.0.1"
+    slug = "storecove-2-0-1-api-v2-shop-account-requests"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.storecove.com"]
+    topics = ["financial"]
+
+[[backends]]
+  group = "storecove-2-0-1"
+  url_pattern = "/api/v2/shop_account_requests/{id}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.storecove.com"]
+  whitelist = ["external_user_id", "id", "request_name", "request_url", "username"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "storecove.com"
+    description = "Storecove API"
+    version = "2.0.1"
+    slug = "storecove-2-0-1-api-v2-shop-account-requests-id"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.storecove.com"]
+    topics = ["financial"]
+    [backends.extra_config.mapping]
+      external_user_id = "external_user_id"
+      id = "id"
+      request_name = "request_name"
+      request_url = "request_url"
+      username = "username"
+
+[[backends]]
+  group = "storecove-2-0-1"
+  url_pattern = "/api/v2/shop_accounts"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.storecove.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "storecove.com"
+    description = "Storecove API"
+    version = "2.0.1"
+    slug = "storecove-2-0-1-api-v2-shop-accounts"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.storecove.com"]
+    topics = ["financial"]
+
+[[backends]]
+  group = "storecove-2-0-1"
+  url_pattern = "/api/v2/shop_accounts/auth_failures"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.storecove.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "storecove.com"
+    description = "Storecove API"
+    version = "2.0.1"
+    slug = "storecove-2-0-1-api-v2-shop-accounts-auth-failures"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.storecove.com"]
+    topics = ["financial"]
+
+[[backends]]
+  group = "storecove-2-0-1"
+  url_pattern = "/api/v2/shop_accounts/{id}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.storecove.com"]
+  whitelist = ["email", "external_user_id", "from_date", "id", "sign_in_error_confirmed", "sign_in_error_confirmed_at", "username"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "storecove.com"
+    description = "Storecove API"
+    version = "2.0.1"
+    slug = "storecove-2-0-1-api-v2-shop-accounts-id"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.storecove.com"]
+    topics = ["financial"]
+    [backends.extra_config.mapping]
+      email = "email"
+      external_user_id = "external_user_id"
+      from_date = "from_date"
+      id = "id"
+      sign_in_error_confirmed = "sign_in_error_confirmed"
+      sign_in_error_confirmed_at = "sign_in_error_confirmed_at"
+      username = "username"
+
+[[backends]]
+  group = "storecove-2-0-1"
+  url_pattern = "/api/v2/shops"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.storecove.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "storecove.com"
+    description = "Storecove API"
+    version = "2.0.1"
+    slug = "storecove-2-0-1-api-v2-shops"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.storecove.com"]
+    topics = ["financial"]

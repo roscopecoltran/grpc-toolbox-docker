@@ -1,0 +1,149 @@
+[[backends]]
+  group = "slack-1-0-0"
+  url_pattern = "/api/auth"
+  method = "TEST"
+  host = ["https://slack.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "slack.com"
+    description = "A messaging app for teams"
+    version = "1.0.0"
+    slug = "slack-1-0-0-api-auth"
+    schemes = ["https"]
+    hosts = ["https://slack.com"]
+    topics = ["collaboration", "messaging"]
+
+[[backends]]
+  group = "slack-1-0-0"
+  url_pattern = "/api/channels"
+  method = "HISTORY"
+  host = ["https://slack.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "slack.com"
+    description = "A messaging app for teams"
+    version = "1.0.0"
+    slug = "slack-1-0-0-api-channels"
+    schemes = ["https"]
+    hosts = ["https://slack.com"]
+    topics = ["collaboration", "messaging"]
+
+[[backends]]
+  group = "slack-1-0-0"
+  url_pattern = "/api/chat"
+  method = "DELETE"
+  host = ["https://slack.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "slack.com"
+    description = "A messaging app for teams"
+    version = "1.0.0"
+    slug = "slack-1-0-0-api-chat"
+    schemes = ["https"]
+    hosts = ["https://slack.com"]
+    topics = ["collaboration", "messaging"]
+
+[[backends]]
+  group = "slack-1-0-0"
+  url_pattern = "/api/emoji"
+  method = "LIST"
+  host = ["https://slack.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "slack.com"
+    description = "A messaging app for teams"
+    version = "1.0.0"
+    slug = "slack-1-0-0-api-emoji"
+    schemes = ["https"]
+    hosts = ["https://slack.com"]
+    topics = ["collaboration", "messaging"]
+
+[[backends]]
+  group = "slack-1-0-0"
+  url_pattern = "/api/files"
+  method = "INFO"
+  host = ["https://slack.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "slack.com"
+    description = "A messaging app for teams"
+    version = "1.0.0"
+    slug = "slack-1-0-0-api-files"
+    schemes = ["https"]
+    hosts = ["https://slack.com"]
+    topics = ["collaboration", "messaging"]
+
+[[backends]]
+  group = "slack-1-0-0"
+  url_pattern = "/api/groups"
+  method = "HISTORY"
+  host = ["https://slack.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "slack.com"
+    description = "A messaging app for teams"
+    version = "1.0.0"
+    slug = "slack-1-0-0-api-groups"
+    schemes = ["https"]
+    hosts = ["https://slack.com"]
+    topics = ["collaboration", "messaging"]
+
+[[backends]]
+  group = "slack-1-0-0"
+  url_pattern = "/api/im"
+  method = "HISTORY"
+  host = ["https://slack.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "slack.com"
+    description = "A messaging app for teams"
+    version = "1.0.0"
+    slug = "slack-1-0-0-api-im"
+    schemes = ["https"]
+    hosts = ["https://slack.com"]
+    topics = ["collaboration", "messaging"]
+
+[[backends]]
+  group = "slack-1-0-0"
+  url_pattern = "/api/search"
+  method = "ALL"
+  host = ["https://slack.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "slack.com"
+    description = "A messaging app for teams"
+    version = "1.0.0"
+    slug = "slack-1-0-0-api-search"
+    schemes = ["https"]
+    hosts = ["https://slack.com"]
+    topics = ["collaboration", "messaging"]
+
+[[backends]]
+  group = "slack-1-0-0"
+  url_pattern = "/api/stars"
+  method = "LIST"
+  host = ["https://slack.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "slack.com"
+    description = "A messaging app for teams"
+    version = "1.0.0"
+    slug = "slack-1-0-0-api-stars"
+    schemes = ["https"]
+    hosts = ["https://slack.com"]
+    topics = ["collaboration", "messaging"]
+
+[[backends]]
+  group = "slack-1-0-0"
+  url_pattern = "/api/users"
+  method = "LIST"
+  host = ["https://slack.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "slack.com"
+    description = "A messaging app for teams"
+    version = "1.0.0"
+    slug = "slack-1-0-0-api-users"
+    schemes = ["https"]
+    hosts = ["https://slack.com"]
+    topics = ["collaboration", "messaging"]

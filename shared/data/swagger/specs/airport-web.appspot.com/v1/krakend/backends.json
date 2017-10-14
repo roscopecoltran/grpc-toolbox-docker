@@ -1,0 +1,47 @@
+{
+	"backends": [
+		{
+			"group": "airportsapi-v1",
+			"url_pattern": "/_ah/api/airportsapi/v1/airports/{icao_code}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://airport-web.appspot.com"
+			],
+			"whitelist": [
+				"ICAO",
+				"last_update",
+				"name",
+				"url"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "airport-web.appspot.com",
+				"description": "Get name and website-URL for airports by ICAO code. Covered airports are mostly in Germany.",
+				"version": "v1",
+				"slug": "airportsapi-v1-ah-api-airportsapi-v1-airports-icao-code",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"ICAO": "ICAO",
+					"last_update": "last_update",
+					"name": "name",
+					"url": "url"
+				},
+				"hosts": [
+					"https://airport-web.appspot.com"
+				],
+				"topics": [
+					"transport"
+				]
+			}
+		}
+	]
+}

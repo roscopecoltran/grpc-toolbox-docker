@@ -1,0 +1,250 @@
+backends:
+- group: aws-cloudhsm-v2-2017-04-28
+  url_pattern: /#CreateHsm
+  method: POST
+  encoding: json
+  host:
+  - http://cloudhsmv2.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: For more information about AWS CloudHSM, see <a href="http://aws.amazon.com/cloudhsm/">AWS
+      CloudHSM</a> and the <a href="http://docs.aws.amazon.com/cloudhsm/latest/userguide/">AWS
+      CloudHSM User Guide</a>.
+    version: 2017-04-28
+    slug: aws-cloudhsm-v2-2017-04-28-createhsm
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://cloudhsmv2.amazonaws.com
+    topics:
+    - cloud
+- group: aws-cloudhsm-v2-2017-04-28
+  url_pattern: /#DeleteCluster
+  method: POST
+  encoding: json
+  host:
+  - http://cloudhsmv2.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: For more information about AWS CloudHSM, see <a href="http://aws.amazon.com/cloudhsm/">AWS
+      CloudHSM</a> and the <a href="http://docs.aws.amazon.com/cloudhsm/latest/userguide/">AWS
+      CloudHSM User Guide</a>.
+    version: 2017-04-28
+    slug: aws-cloudhsm-v2-2017-04-28-deletecluster
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://cloudhsmv2.amazonaws.com
+    topics:
+    - cloud
+- group: aws-cloudhsm-v2-2017-04-28
+  url_pattern: /#DeleteHsm
+  method: POST
+  encoding: json
+  host:
+  - http://cloudhsmv2.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: For more information about AWS CloudHSM, see <a href="http://aws.amazon.com/cloudhsm/">AWS
+      CloudHSM</a> and the <a href="http://docs.aws.amazon.com/cloudhsm/latest/userguide/">AWS
+      CloudHSM User Guide</a>.
+    version: 2017-04-28
+    slug: aws-cloudhsm-v2-2017-04-28-deletehsm
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://cloudhsmv2.amazonaws.com
+    topics:
+    - cloud
+- group: aws-cloudhsm-v2-2017-04-28
+  url_pattern: /#DescribeBackups
+  method: POST
+  encoding: json
+  host:
+  - http://cloudhsmv2.amazonaws.com
+  query_string_params:
+  - MaxResults
+  - NextToken
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: For more information about AWS CloudHSM, see <a href="http://aws.amazon.com/cloudhsm/">AWS
+      CloudHSM</a> and the <a href="http://docs.aws.amazon.com/cloudhsm/latest/userguide/">AWS
+      CloudHSM User Guide</a>.
+    version: 2017-04-28
+    slug: aws-cloudhsm-v2-2017-04-28-describebackups
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://cloudhsmv2.amazonaws.com
+    topics:
+    - cloud
+- group: aws-cloudhsm-v2-2017-04-28
+  url_pattern: /#DescribeClusters
+  method: POST
+  encoding: json
+  host:
+  - http://cloudhsmv2.amazonaws.com
+  query_string_params:
+  - MaxResults
+  - NextToken
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: For more information about AWS CloudHSM, see <a href="http://aws.amazon.com/cloudhsm/">AWS
+      CloudHSM</a> and the <a href="http://docs.aws.amazon.com/cloudhsm/latest/userguide/">AWS
+      CloudHSM User Guide</a>.
+    version: 2017-04-28
+    slug: aws-cloudhsm-v2-2017-04-28-describeclusters
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://cloudhsmv2.amazonaws.com
+    topics:
+    - cloud
+- group: aws-cloudhsm-v2-2017-04-28
+  url_pattern: /#InitializeCluster
+  method: POST
+  encoding: json
+  host:
+  - http://cloudhsmv2.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: For more information about AWS CloudHSM, see <a href="http://aws.amazon.com/cloudhsm/">AWS
+      CloudHSM</a> and the <a href="http://docs.aws.amazon.com/cloudhsm/latest/userguide/">AWS
+      CloudHSM User Guide</a>.
+    version: 2017-04-28
+    slug: aws-cloudhsm-v2-2017-04-28-initializecluster
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://cloudhsmv2.amazonaws.com
+    topics:
+    - cloud
+- group: aws-cloudhsm-v2-2017-04-28
+  url_pattern: /#ListTags
+  method: POST
+  encoding: json
+  host:
+  - http://cloudhsmv2.amazonaws.com
+  query_string_params:
+  - MaxResults
+  - NextToken
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: For more information about AWS CloudHSM, see <a href="http://aws.amazon.com/cloudhsm/">AWS
+      CloudHSM</a> and the <a href="http://docs.aws.amazon.com/cloudhsm/latest/userguide/">AWS
+      CloudHSM User Guide</a>.
+    version: 2017-04-28
+    slug: aws-cloudhsm-v2-2017-04-28-listtags
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://cloudhsmv2.amazonaws.com
+    topics:
+    - cloud
+- group: aws-cloudhsm-v2-2017-04-28
+  url_pattern: /#TagResource
+  method: POST
+  encoding: json
+  host:
+  - http://cloudhsmv2.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: For more information about AWS CloudHSM, see <a href="http://aws.amazon.com/cloudhsm/">AWS
+      CloudHSM</a> and the <a href="http://docs.aws.amazon.com/cloudhsm/latest/userguide/">AWS
+      CloudHSM User Guide</a>.
+    version: 2017-04-28
+    slug: aws-cloudhsm-v2-2017-04-28-tagresource
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://cloudhsmv2.amazonaws.com
+    topics:
+    - cloud
+- group: aws-cloudhsm-v2-2017-04-28
+  url_pattern: /#UntagResource
+  method: POST
+  encoding: json
+  host:
+  - http://cloudhsmv2.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: For more information about AWS CloudHSM, see <a href="http://aws.amazon.com/cloudhsm/">AWS
+      CloudHSM</a> and the <a href="http://docs.aws.amazon.com/cloudhsm/latest/userguide/">AWS
+      CloudHSM User Guide</a>.
+    version: 2017-04-28
+    slug: aws-cloudhsm-v2-2017-04-28-untagresource
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://cloudhsmv2.amazonaws.com
+    topics:
+    - cloud
+- group: aws-cloudhsm-v2-2017-04-28
+  url_pattern: /
+  method: POST
+  encoding: json
+  host:
+  - http://cloudhsmv2.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: For more information about AWS CloudHSM, see <a href="http://aws.amazon.com/cloudhsm/">AWS
+      CloudHSM</a> and the <a href="http://docs.aws.amazon.com/cloudhsm/latest/userguide/">AWS
+      CloudHSM User Guide</a>.
+    version: 2017-04-28
+    slug: aws-cloudhsm-v2-2017-04-28
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://cloudhsmv2.amazonaws.com
+    topics:
+    - cloud

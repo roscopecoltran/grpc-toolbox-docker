@@ -1,0 +1,55 @@
+{
+	"backends": [
+		{
+			"group": "tweet-summarization-apis-0-0-1",
+			"url_pattern": "/api/27/twitter-summarize/get",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://api.apitore.com"
+			],
+			"whitelist": [
+				"endTime",
+				"log",
+				"numofSummarize",
+				"numofTweets",
+				"processTime",
+				"query",
+				"startTime",
+				"tweets"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "apitore.com",
+				"description": "Tweet summarization.\u003cBR /\u003e[Endpoint] https://api.apitore.com/api/27",
+				"version": "0.0.1",
+				"slug": "tweet-summarization-apis-0-0-1-api-27-twitter-summarize-get",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"endTime": "endTime",
+					"log": "log",
+					"numofSummarize": "numofSummarize",
+					"numofTweets": "numofTweets",
+					"processTime": "processTime",
+					"query": "query",
+					"startTime": "startTime",
+					"tweets": "tweets"
+				},
+				"hosts": [
+					"https://api.apitore.com"
+				],
+				"topics": [
+					"text"
+				]
+			}
+		}
+	]
+}

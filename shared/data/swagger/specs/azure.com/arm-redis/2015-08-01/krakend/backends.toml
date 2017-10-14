@@ -1,0 +1,35 @@
+[[backends]]
+  group = "redismanagementclient-2015-08-01"
+  url_pattern = "/subscriptions/{subscriptionId}/providers/Microsoft"
+  method = "CACHE/REDIS/"
+  encoding = "json"
+  host = ["https://management.azure.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "azure.com"
+    description = "REST API for Azure Redis Cache Service."
+    version = "2015-08-01"
+    slug = "redismanagementclient-2015-08-01-subscriptions-subscriptionid-providers-microsoft"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://management.azure.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "redismanagementclient-2015-08-01"
+  url_pattern = "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft"
+  method = "CACHE/REDIS/"
+  encoding = "json"
+  host = ["https://management.azure.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "azure.com"
+    description = "REST API for Azure Redis Cache Service."
+    version = "2015-08-01"
+    slug = "redismanagementclient-2015-08-01-subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://management.azure.com"]
+    topics = ["cloud"]

@@ -1,0 +1,66 @@
+{
+	"backends": [
+		{
+			"group": "containerserviceclient-2016-09-30",
+			"url_pattern": "/subscriptions/{subscriptionId}/providers/Microsoft",
+			"method": "CONTAINERSERVICE/CONTAINERSERVICES",
+			"encoding": "json",
+			"host": [
+				"https://management.azure.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "azure.com",
+				"description": "The Container Service Client.",
+				"version": "2016-09-30",
+				"slug": "containerserviceclient-2016-09-30-subscriptions-subscriptionid-providers-microsoft",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://management.azure.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "containerserviceclient-2016-09-30",
+			"url_pattern": "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft",
+			"method": "CONTAINERSERVICE/CONTAINERSERVICES",
+			"encoding": "json",
+			"host": [
+				"https://management.azure.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "azure.com",
+				"description": "The Container Service Client.",
+				"version": "2016-09-30",
+				"slug": "containerserviceclient-2016-09-30-subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://management.azure.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		}
+	]
+}

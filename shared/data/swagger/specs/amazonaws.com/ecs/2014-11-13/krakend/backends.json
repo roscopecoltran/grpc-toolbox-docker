@@ -1,0 +1,989 @@
+{
+	"backends": [
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/#CreateService",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13-createservice",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/#DeleteAttributes",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13-deleteattributes",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/#DeleteCluster",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13-deletecluster",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/#DeleteService",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13-deleteservice",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/#DeregisterContainerInstance",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13-deregistercontainerinstance",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/#DeregisterTaskDefinition",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13-deregistertaskdefinition",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/#DescribeClusters",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13-describeclusters",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/#DescribeContainerInstances",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13-describecontainerinstances",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/#DescribeServices",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13-describeservices",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/#DescribeTaskDefinition",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13-describetaskdefinition",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/#DescribeTasks",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13-describetasks",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/#DiscoverPollEndpoint",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13-discoverpollendpoint",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/#ListAttributes",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13-listattributes",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/#ListClusters",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"query_string_params": [
+				"maxResults",
+				"nextToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13-listclusters",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/#ListContainerInstances",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"query_string_params": [
+				"maxResults",
+				"nextToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13-listcontainerinstances",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/#ListServices",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"query_string_params": [
+				"maxResults",
+				"nextToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13-listservices",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/#ListTaskDefinitionFamilies",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"query_string_params": [
+				"maxResults",
+				"nextToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13-listtaskdefinitionfamilies",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/#ListTaskDefinitions",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"query_string_params": [
+				"maxResults",
+				"nextToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13-listtaskdefinitions",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/#ListTasks",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"query_string_params": [
+				"maxResults",
+				"nextToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13-listtasks",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/#PutAttributes",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13-putattributes",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/#RegisterContainerInstance",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13-registercontainerinstance",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/#RegisterTaskDefinition",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13-registertaskdefinition",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/#RunTask",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13-runtask",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/#StartTask",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13-starttask",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/#StopTask",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13-stoptask",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/#SubmitContainerStateChange",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13-submitcontainerstatechange",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/#SubmitTaskStateChange",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13-submittaskstatechange",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/#UpdateContainerAgent",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13-updatecontaineragent",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/#UpdateContainerInstancesState",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13-updatecontainerinstancesstate",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/#UpdateService",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13-updateservice",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-ec2-container-service-2014-11-13",
+			"url_pattern": "/",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://ecs.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eAmazon EC2 Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of EC2 instances. Amazon ECS lets you launch and stop container-enabled applications with simple API calls, allows you to get the state of your cluster from a centralized service, and gives you access to many familiar Amazon EC2 features like security groups, Amazon EBS volumes, and IAM roles.\u003c/p\u003e \u003cp\u003eYou can use Amazon ECS to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements. Amazon EC2 Container Service eliminates the need for you to operate your own cluster management and configuration management systems or worry about scaling your management infrastructure.\u003c/p\u003e",
+				"version": "2014-11-13",
+				"slug": "amazon-ec2-container-service-2014-11-13",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://ecs.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		}
+	]
+}

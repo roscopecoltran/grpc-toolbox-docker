@@ -1,0 +1,628 @@
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/conversations"
+  method = "GET"
+  host = ["https://circuitsandbox.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-conversations"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/conversations/community"
+  method = "GET"
+  host = ["https://circuitsandbox.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-conversations-community"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/conversations/community/{convId}/join"
+  method = "POST"
+  host = ["https://circuitsandbox.net"]
+  whitelist = ["avatar", "avatarLarge", "convId", "creationTime", "creatorId", "creatorTenantId", "description", "isGuestAccessDisabled", "isModerated", "modificationTime", "participants", "topic"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-conversations-community-convid-join"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+    [backends.extra_config.mapping]
+      avatar = "avatar"
+      avatarLarge = "avatarLarge"
+      convId = "convId"
+      creationTime = "creationTime"
+      creatorId = "creatorId"
+      creatorTenantId = "creatorTenantId"
+      description = "description"
+      isGuestAccessDisabled = "isGuestAccessDisabled"
+      isModerated = "isModerated"
+      modificationTime = "modificationTime"
+      participants = "participants"
+      topic = "topic"
+
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/conversations/community/{convId}/participants"
+  method = "POST"
+  host = ["https://circuitsandbox.net"]
+  whitelist = ["avatar", "avatarLarge", "convId", "creationTime", "creatorId", "creatorTenantId", "description", "isGuestAccessDisabled", "isModerated", "modificationTime", "participants", "topic"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-conversations-community-convid-participants"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+    [backends.extra_config.mapping]
+      avatar = "avatar"
+      avatarLarge = "avatarLarge"
+      convId = "convId"
+      creationTime = "creationTime"
+      creatorId = "creatorId"
+      creatorTenantId = "creatorTenantId"
+      description = "description"
+      isGuestAccessDisabled = "isGuestAccessDisabled"
+      isModerated = "isModerated"
+      modificationTime = "modificationTime"
+      participants = "participants"
+      topic = "topic"
+
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/conversations/direct"
+  method = "POST"
+  host = ["https://circuitsandbox.net"]
+  whitelist = ["avatar", "avatarLarge", "convId", "creationTime", "creatorId", "creatorTenantId", "description", "isGuestAccessDisabled", "isModerated", "modificationTime", "participants", "topic"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-conversations-direct"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+    [backends.extra_config.mapping]
+      avatar = "avatar"
+      avatarLarge = "avatarLarge"
+      convId = "convId"
+      creationTime = "creationTime"
+      creatorId = "creatorId"
+      creatorTenantId = "creatorTenantId"
+      description = "description"
+      isGuestAccessDisabled = "isGuestAccessDisabled"
+      isModerated = "isModerated"
+      modificationTime = "modificationTime"
+      participants = "participants"
+      topic = "topic"
+
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/conversations/favorite"
+  method = "GET"
+  host = ["https://circuitsandbox.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-conversations-favorite"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/conversations/group"
+  method = "POST"
+  host = ["https://circuitsandbox.net"]
+  whitelist = ["avatar", "avatarLarge", "convId", "creationTime", "creatorId", "creatorTenantId", "description", "isGuestAccessDisabled", "isModerated", "modificationTime", "participants", "topic"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-conversations-group"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+    [backends.extra_config.mapping]
+      avatar = "avatar"
+      avatarLarge = "avatarLarge"
+      convId = "convId"
+      creationTime = "creationTime"
+      creatorId = "creatorId"
+      creatorTenantId = "creatorTenantId"
+      description = "description"
+      isGuestAccessDisabled = "isGuestAccessDisabled"
+      isModerated = "isModerated"
+      modificationTime = "modificationTime"
+      participants = "participants"
+      topic = "topic"
+
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/conversations/group/{convId}/participants"
+  method = "POST"
+  host = ["https://circuitsandbox.net"]
+  whitelist = ["avatar", "avatarLarge", "convId", "creationTime", "creatorId", "creatorTenantId", "description", "isGuestAccessDisabled", "isModerated", "modificationTime", "participants", "topic"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-conversations-group-convid-participants"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+    [backends.extra_config.mapping]
+      avatar = "avatar"
+      avatarLarge = "avatarLarge"
+      convId = "convId"
+      creationTime = "creationTime"
+      creatorId = "creatorId"
+      creatorTenantId = "creatorTenantId"
+      description = "description"
+      isGuestAccessDisabled = "isGuestAccessDisabled"
+      isModerated = "isModerated"
+      modificationTime = "modificationTime"
+      participants = "participants"
+      topic = "topic"
+
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/conversations/messages/flag"
+  method = "GET"
+  host = ["https://circuitsandbox.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-conversations-messages-flag"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/conversations/search"
+  method = "GET"
+  host = ["https://circuitsandbox.net"]
+  whitelist = ["matchingConversations"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-conversations-search"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+    [backends.extra_config.mapping]
+      matchingConversations = "matchingConversations"
+
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/conversations/{convId}"
+  method = "GET"
+  host = ["https://circuitsandbox.net"]
+  whitelist = ["avatar", "avatarLarge", "convId", "creationTime", "creatorId", "creatorTenantId", "description", "isGuestAccessDisabled", "isModerated", "modificationTime", "participants", "topic"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-conversations-convid"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+    [backends.extra_config.mapping]
+      avatar = "avatar"
+      avatarLarge = "avatarLarge"
+      convId = "convId"
+      creationTime = "creationTime"
+      creatorId = "creatorId"
+      creatorTenantId = "creatorTenantId"
+      description = "description"
+      isGuestAccessDisabled = "isGuestAccessDisabled"
+      isModerated = "isModerated"
+      modificationTime = "modificationTime"
+      participants = "participants"
+      topic = "topic"
+
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/conversations/{convId}/conversationdetails"
+  method = "GET"
+  host = ["https://circuitsandbox.net"]
+  whitelist = ["bridgeNumbers", "conversationCreatorId", "isModerationAllowed", "isRecordingAllowed", "link", "pin"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-conversations-convid-conversationdetails"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+    [backends.extra_config.mapping]
+      bridgeNumbers = "bridgeNumbers"
+      conversationCreatorId = "conversationCreatorId"
+      isModerationAllowed = "isModerationAllowed"
+      isRecordingAllowed = "isRecordingAllowed"
+      link = "link"
+      pin = "pin"
+
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/conversations/{convId}/favorite"
+  method = "POST"
+  host = ["https://circuitsandbox.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-conversations-convid-favorite"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/conversations/{convId}/items"
+  method = "GET"
+  host = ["https://circuitsandbox.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-conversations-convid-items"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/conversations/{convId}/label"
+  method = "POST"
+  host = ["https://circuitsandbox.net"]
+  whitelist = ["labelId", "value"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-conversations-convid-label"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+    [backends.extra_config.mapping]
+      labelId = "labelId"
+      value = "value"
+
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/conversations/{convId}/messages"
+  method = "POST"
+  host = ["https://circuitsandbox.net"]
+  whitelist = ["attachments", "convId", "creationTime", "creatorId", "includeInUnreadCount", "itemId", "modificationTime"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-conversations-convid-messages"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+    [backends.extra_config.mapping]
+      attachments = "attachments"
+      convId = "convId"
+      creationTime = "creationTime"
+      creatorId = "creatorId"
+      includeInUnreadCount = "includeInUnreadCount"
+      itemId = "itemId"
+      modificationTime = "modificationTime"
+
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/conversations/{convId}/messages/flag"
+  method = "GET"
+  host = ["https://circuitsandbox.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-conversations-convid-messages-flag"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/conversations/{convId}/messages/{itemId}"
+  method = "POST"
+  host = ["https://circuitsandbox.net"]
+  whitelist = ["attachments", "convId", "creationTime", "creatorId", "includeInUnreadCount", "itemId", "modificationTime"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-conversations-convid-messages-itemid"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+    [backends.extra_config.mapping]
+      attachments = "attachments"
+      convId = "convId"
+      creationTime = "creationTime"
+      creatorId = "creatorId"
+      includeInUnreadCount = "includeInUnreadCount"
+      itemId = "itemId"
+      modificationTime = "modificationTime"
+
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/conversations/{convId}/messages/{itemId}/flag"
+  method = "POST"
+  host = ["https://circuitsandbox.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-conversations-convid-messages-itemid-flag"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/conversations/{convId}/messages/{itemId}/like"
+  method = "POST"
+  host = ["https://circuitsandbox.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-conversations-convid-messages-itemid-like"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/oauth/clientId"
+  method = "GET"
+  host = ["https://circuitsandbox.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-oauth-clientid"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/oauth/token/{tokenId}"
+  method = "GET"
+  host = ["https://circuitsandbox.net"]
+  whitelist = ["accessToken", "clientId", "expirationTime", "scopes"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-oauth-token-tokenid"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+    [backends.extra_config.mapping]
+      accessToken = "accessToken"
+      clientId = "clientId"
+      expirationTime = "expirationTime"
+      scopes = "scopes"
+
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/users"
+  method = "GET"
+  host = ["https://circuitsandbox.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-users"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/users/labels"
+  method = "GET"
+  host = ["https://circuitsandbox.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-users-labels"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/users/presence"
+  method = "GET"
+  host = ["https://circuitsandbox.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-users-presence"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/users/profile"
+  method = "GET"
+  host = ["https://circuitsandbox.net"]
+  whitelist = ["company", "displayName", "emailAddress", "firstName", "jobTitle", "lastName", "locale", "userId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-users-profile"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+    [backends.extra_config.mapping]
+      company = "company"
+      displayName = "displayName"
+      emailAddress = "emailAddress"
+      firstName = "firstName"
+      jobTitle = "jobTitle"
+      lastName = "lastName"
+      locale = "locale"
+      userId = "userId"
+
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/users/{id}"
+  method = "GET"
+  host = ["https://circuitsandbox.net"]
+  whitelist = ["company", "displayName", "emailAddress", "firstName", "jobTitle", "lastName", "locale", "userId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-users-id"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+    [backends.extra_config.mapping]
+      company = "company"
+      displayName = "displayName"
+      emailAddress = "emailAddress"
+      firstName = "firstName"
+      jobTitle = "jobTitle"
+      lastName = "lastName"
+      locale = "locale"
+      userId = "userId"
+
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/users/{id}/presence"
+  method = "GET"
+  host = ["https://circuitsandbox.net"]
+  whitelist = ["dndUntil", "isOptedOut", "latitude", "locationText", "longitude", "mobile", "poor", "state", "statusMessage", "timeZoneOffset", "userId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-users-id-presence"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+    [backends.extra_config.mapping]
+      dndUntil = "dndUntil"
+      isOptedOut = "isOptedOut"
+      latitude = "latitude"
+      locationText = "locationText"
+      longitude = "longitude"
+      mobile = "mobile"
+      poor = "poor"
+      state = "state"
+      statusMessage = "statusMessage"
+      timeZoneOffset = "timeZoneOffset"
+      userId = "userId"
+
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/webhooks"
+  method = "GET"
+  host = ["https://circuitsandbox.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-webhooks"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/webhooks/presence"
+  method = "POST"
+  host = ["https://circuitsandbox.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-webhooks-presence"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+
+[[backends]]
+  group = "rest-api-version-2-2-9-33"
+  url_pattern = "/rest/v2/webhooks/{id}"
+  method = "GET"
+  host = ["https://circuitsandbox.net"]
+  whitelist = ["creationTime", "filter", "id", "subscriptionIds", "url", "userId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "circuitsandbox.net"
+    description = "Circuit REST API to interact with the Circuit system.\n\n[Learn more about the Circuit Development Community](https://www.circuit.com/web/developers/home)"
+    version = "2.9.33"
+    slug = "rest-api-version-2-2-9-33-rest-v2-webhooks-id"
+    schemes = ["https"]
+    hosts = ["https://circuitsandbox.net"]
+    topics = ["messaging"]
+    [backends.extra_config.mapping]
+      creationTime = "creationTime"
+      filter = "filter"
+      id = "id"
+      subscriptionIds = "subscriptionIds"
+      url = "url"
+      userId = "userId"

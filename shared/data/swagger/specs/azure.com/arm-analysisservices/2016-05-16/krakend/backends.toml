@@ -1,0 +1,35 @@
+[[backends]]
+  group = "azureanalysisservices-2016-05-16"
+  url_pattern = "/subscriptions/{subscriptionId}/providers/Microsoft"
+  method = "ANALYSISSERVICES/SERVERS"
+  encoding = "json"
+  host = ["https://management.azure.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "azure.com"
+    description = "The Azure Analysis Services Web API provides a RESTful set of web services that enables users to create, retrieve, update, and delete Analysis Services servers"
+    version = "2016-05-16"
+    slug = "azureanalysisservices-2016-05-16-subscriptions-subscriptionid-providers-microsoft"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://management.azure.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "azureanalysisservices-2016-05-16"
+  url_pattern = "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft"
+  method = "ANALYSISSERVICES/SERVERS"
+  encoding = "json"
+  host = ["https://management.azure.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "azure.com"
+    description = "The Azure Analysis Services Web API provides a RESTful set of web services that enables users to create, retrieve, update, and delete Analysis Services servers"
+    version = "2016-05-16"
+    slug = "azureanalysisservices-2016-05-16-subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://management.azure.com"]
+    topics = ["cloud"]

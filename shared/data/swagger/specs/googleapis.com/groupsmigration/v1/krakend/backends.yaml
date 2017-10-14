@@ -1,0 +1,24 @@
+backends:
+- group: groups-migration-v1
+  url_pattern: /groups/v1/groups/{groupId}/archive
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - kind
+  - responseCode
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Groups Migration Api.
+    version: v1
+    slug: groups-migration-v1-groups-v1-groups-groupid-archive
+    schemes:
+    - https
+    consumes:
+    - rfc822
+    mapping:
+      kind: kind
+      responseCode: responseCode
+    hosts:
+    - https://www.googleapis.com

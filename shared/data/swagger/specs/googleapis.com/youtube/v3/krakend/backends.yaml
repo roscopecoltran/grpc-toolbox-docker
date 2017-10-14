@@ -1,0 +1,1073 @@
+backends:
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/activities
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - eventId
+  - items
+  - kind
+  - nextPageToken
+  - prevPageToken
+  - visitorId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-activities
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      eventId: eventId
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+      prevPageToken: prevPageToken
+      visitorId: visitorId
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/captions
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - eventId
+  - items
+  - kind
+  - visitorId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-captions
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      eventId: eventId
+      items: items
+      kind: kind
+      visitorId: visitorId
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/captions/{id}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-captions-id
+    schemes:
+    - https
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/channelBanners/insert
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - kind
+  - url
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-channelbanners-insert
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      kind: kind
+      url: url
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/channelSections
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - eventId
+  - items
+  - kind
+  - visitorId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-channelsections
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      eventId: eventId
+      items: items
+      kind: kind
+      visitorId: visitorId
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/channels
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - eventId
+  - items
+  - kind
+  - nextPageToken
+  - prevPageToken
+  - visitorId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-channels
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      eventId: eventId
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+      prevPageToken: prevPageToken
+      visitorId: visitorId
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/commentThreads
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - eventId
+  - items
+  - kind
+  - nextPageToken
+  - visitorId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-commentthreads
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      eventId: eventId
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+      visitorId: visitorId
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/comments
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - eventId
+  - items
+  - kind
+  - nextPageToken
+  - visitorId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-comments
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      eventId: eventId
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+      visitorId: visitorId
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/comments/markAsSpam
+  method: POST
+  host:
+  - https://www.googleapis.com
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-comments-markasspam
+    schemes:
+    - https
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/comments/setModerationStatus
+  method: POST
+  host:
+  - https://www.googleapis.com
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-comments-setmoderationstatus
+    schemes:
+    - https
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/fanFundingEvents
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - eventId
+  - items
+  - kind
+  - nextPageToken
+  - visitorId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-fanfundingevents
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      eventId: eventId
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+      visitorId: visitorId
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/guideCategories
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - eventId
+  - items
+  - kind
+  - nextPageToken
+  - prevPageToken
+  - visitorId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-guidecategories
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      eventId: eventId
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+      prevPageToken: prevPageToken
+      visitorId: visitorId
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/i18nLanguages
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - eventId
+  - items
+  - kind
+  - visitorId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-i18nlanguages
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      eventId: eventId
+      items: items
+      kind: kind
+      visitorId: visitorId
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/i18nRegions
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - eventId
+  - items
+  - kind
+  - visitorId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-i18nregions
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      eventId: eventId
+      items: items
+      kind: kind
+      visitorId: visitorId
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/liveBroadcasts
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - eventId
+  - items
+  - kind
+  - nextPageToken
+  - prevPageToken
+  - visitorId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-livebroadcasts
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      eventId: eventId
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+      prevPageToken: prevPageToken
+      visitorId: visitorId
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/liveBroadcasts/bind
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - id
+  - kind
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-livebroadcasts-bind
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      id: id
+      kind: kind
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/liveBroadcasts/control
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - id
+  - kind
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-livebroadcasts-control
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      id: id
+      kind: kind
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/liveBroadcasts/transition
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - id
+  - kind
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-livebroadcasts-transition
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      id: id
+      kind: kind
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/liveChat/bans
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - id
+  - kind
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-livechat-bans
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      id: id
+      kind: kind
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/liveChat/messages
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - eventId
+  - items
+  - kind
+  - nextPageToken
+  - offlineAt
+  - pollingIntervalMillis
+  - visitorId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-livechat-messages
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      eventId: eventId
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+      offlineAt: offlineAt
+      pollingIntervalMillis: pollingIntervalMillis
+      visitorId: visitorId
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/liveChat/moderators
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - eventId
+  - items
+  - kind
+  - nextPageToken
+  - prevPageToken
+  - visitorId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-livechat-moderators
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      eventId: eventId
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+      prevPageToken: prevPageToken
+      visitorId: visitorId
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/liveStreams
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - eventId
+  - items
+  - kind
+  - nextPageToken
+  - prevPageToken
+  - visitorId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-livestreams
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      eventId: eventId
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+      prevPageToken: prevPageToken
+      visitorId: visitorId
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/playlistItems
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - eventId
+  - items
+  - kind
+  - nextPageToken
+  - prevPageToken
+  - visitorId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-playlistitems
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      eventId: eventId
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+      prevPageToken: prevPageToken
+      visitorId: visitorId
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/playlists
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - eventId
+  - items
+  - kind
+  - nextPageToken
+  - prevPageToken
+  - visitorId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-playlists
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      eventId: eventId
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+      prevPageToken: prevPageToken
+      visitorId: visitorId
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/search
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - eventId
+  - items
+  - kind
+  - nextPageToken
+  - prevPageToken
+  - regionCode
+  - visitorId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-search
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      eventId: eventId
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+      prevPageToken: prevPageToken
+      regionCode: regionCode
+      visitorId: visitorId
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/sponsors
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - eventId
+  - items
+  - kind
+  - nextPageToken
+  - visitorId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-sponsors
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      eventId: eventId
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+      visitorId: visitorId
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/subscriptions
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - eventId
+  - items
+  - kind
+  - nextPageToken
+  - prevPageToken
+  - visitorId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-subscriptions
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      eventId: eventId
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+      prevPageToken: prevPageToken
+      visitorId: visitorId
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/superChatEvents
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - eventId
+  - items
+  - kind
+  - nextPageToken
+  - visitorId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-superchatevents
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      eventId: eventId
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+      visitorId: visitorId
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/thumbnails/set
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - eventId
+  - items
+  - kind
+  - visitorId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-thumbnails-set
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      eventId: eventId
+      items: items
+      kind: kind
+      visitorId: visitorId
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/videoAbuseReportReasons
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - eventId
+  - items
+  - kind
+  - visitorId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-videoabusereportreasons
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      eventId: eventId
+      items: items
+      kind: kind
+      visitorId: visitorId
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/videoCategories
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - eventId
+  - items
+  - kind
+  - nextPageToken
+  - prevPageToken
+  - visitorId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-videocategories
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      eventId: eventId
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+      prevPageToken: prevPageToken
+      visitorId: visitorId
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/videos
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - eventId
+  - items
+  - kind
+  - nextPageToken
+  - prevPageToken
+  - visitorId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-videos
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      eventId: eventId
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+      prevPageToken: prevPageToken
+      visitorId: visitorId
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/videos/getRating
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - eventId
+  - items
+  - kind
+  - visitorId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-videos-getrating
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      eventId: eventId
+      items: items
+      kind: kind
+      visitorId: visitorId
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/videos/rate
+  method: POST
+  host:
+  - https://www.googleapis.com
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-videos-rate
+    schemes:
+    - https
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/videos/reportAbuse
+  method: POST
+  host:
+  - https://www.googleapis.com
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-videos-reportabuse
+    schemes:
+    - https
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/watermarks/set
+  method: POST
+  host:
+  - https://www.googleapis.com
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-watermarks-set
+    schemes:
+    - https
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media
+- group: youtube-data-v3
+  url_pattern: /youtube/v3/watermarks/unset
+  method: POST
+  host:
+  - https://www.googleapis.com
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Supports core YouTube features, such as uploading videos, creating
+      and managing playlists, searching for content, and much more.
+    version: v3
+    slug: youtube-data-v3-youtube-v3-watermarks-unset
+    schemes:
+    - https
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - media

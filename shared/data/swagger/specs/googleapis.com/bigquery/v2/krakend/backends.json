@@ -1,0 +1,582 @@
+{
+	"backends": [
+		{
+			"group": "bigquery-v2",
+			"url_pattern": "/bigquery/v2/projects",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"etag",
+				"kind",
+				"nextPageToken",
+				"projects",
+				"projects.friendlyName",
+				"projects.id",
+				"projects.kind",
+				"projects.numericId",
+				"totalItems"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "A data platform for customers to create, manage, share and query data.",
+				"version": "v2",
+				"slug": "bigquery-v2-bigquery-v2-projects",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"etag": "etag",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken",
+					"projects": "projects",
+					"projects.friendlyName": "projects.friendlyName",
+					"projects.id": "projects.id",
+					"projects.kind": "projects.kind",
+					"projects.numericId": "projects.numericId",
+					"totalItems": "totalItems"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"search"
+				]
+			}
+		},
+		{
+			"group": "bigquery-v2",
+			"url_pattern": "/bigquery/v2/projects/{projectId}/datasets",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"datasets",
+				"datasets.friendlyName",
+				"datasets.id",
+				"datasets.kind",
+				"datasets.labels",
+				"datasets.labels.additionalProperties",
+				"etag",
+				"kind",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "A data platform for customers to create, manage, share and query data.",
+				"version": "v2",
+				"slug": "bigquery-v2-bigquery-v2-projects-projectid-datasets",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"datasets": "datasets",
+					"datasets.friendlyName": "datasets.friendlyName",
+					"datasets.id": "datasets.id",
+					"datasets.kind": "datasets.kind",
+					"datasets.labels": "datasets.labels",
+					"datasets.labels.additionalProperties": "datasets.labels.additionalProperties",
+					"etag": "etag",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"search"
+				]
+			}
+		},
+		{
+			"group": "bigquery-v2",
+			"url_pattern": "/bigquery/v2/projects/{projectId}/datasets/{datasetId}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"access",
+				"access.domain",
+				"access.groupByEmail",
+				"access.role",
+				"access.specialGroup",
+				"access.userByEmail",
+				"creationTime",
+				"defaultTableExpirationMs",
+				"description",
+				"etag",
+				"friendlyName",
+				"id",
+				"kind",
+				"labels",
+				"labels.additionalProperties",
+				"lastModifiedTime",
+				"location",
+				"selfLink"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "A data platform for customers to create, manage, share and query data.",
+				"version": "v2",
+				"slug": "bigquery-v2-bigquery-v2-projects-projectid-datasets-datasetid",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"access": "access",
+					"access.domain": "access.domain",
+					"access.groupByEmail": "access.groupByEmail",
+					"access.role": "access.role",
+					"access.specialGroup": "access.specialGroup",
+					"access.userByEmail": "access.userByEmail",
+					"creationTime": "creationTime",
+					"defaultTableExpirationMs": "defaultTableExpirationMs",
+					"description": "description",
+					"etag": "etag",
+					"friendlyName": "friendlyName",
+					"id": "id",
+					"kind": "kind",
+					"labels": "labels",
+					"labels.additionalProperties": "labels.additionalProperties",
+					"lastModifiedTime": "lastModifiedTime",
+					"location": "location",
+					"selfLink": "selfLink"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"search"
+				]
+			}
+		},
+		{
+			"group": "bigquery-v2",
+			"url_pattern": "/bigquery/v2/projects/{projectId}/datasets/{datasetId}/tables",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"etag",
+				"kind",
+				"nextPageToken",
+				"tables",
+				"tables.friendlyName",
+				"tables.id",
+				"tables.kind",
+				"tables.labels",
+				"tables.labels.additionalProperties",
+				"tables.view",
+				"tables.view.useLegacySql",
+				"totalItems"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "A data platform for customers to create, manage, share and query data.",
+				"version": "v2",
+				"slug": "bigquery-v2-bigquery-v2-projects-projectid-datasets-datasetid-tables",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"etag": "etag",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken",
+					"tables": "tables",
+					"tables.friendlyName": "tables.friendlyName",
+					"tables.id": "tables.id",
+					"tables.kind": "tables.kind",
+					"tables.labels": "tables.labels",
+					"tables.labels.additionalProperties": "tables.labels.additionalProperties",
+					"tables.view": "tables.view",
+					"tables.view.useLegacySql": "tables.view.useLegacySql",
+					"totalItems": "totalItems"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"search"
+				]
+			}
+		},
+		{
+			"group": "bigquery-v2",
+			"url_pattern": "/bigquery/v2/projects/{projectId}/datasets/{datasetId}/tables/{tableId}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"creationTime",
+				"description",
+				"etag",
+				"expirationTime",
+				"friendlyName",
+				"id",
+				"kind",
+				"labels",
+				"labels.additionalProperties",
+				"lastModifiedTime",
+				"location",
+				"numBytes",
+				"numLongTermBytes",
+				"numRows",
+				"selfLink"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "A data platform for customers to create, manage, share and query data.",
+				"version": "v2",
+				"slug": "bigquery-v2-bigquery-v2-projects-projectid-datasets-datasetid-tables-tableid",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"creationTime": "creationTime",
+					"description": "description",
+					"etag": "etag",
+					"expirationTime": "expirationTime",
+					"friendlyName": "friendlyName",
+					"id": "id",
+					"kind": "kind",
+					"labels": "labels",
+					"labels.additionalProperties": "labels.additionalProperties",
+					"lastModifiedTime": "lastModifiedTime",
+					"location": "location",
+					"numBytes": "numBytes",
+					"numLongTermBytes": "numLongTermBytes",
+					"numRows": "numRows",
+					"selfLink": "selfLink"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"search"
+				]
+			}
+		},
+		{
+			"group": "bigquery-v2",
+			"url_pattern": "/bigquery/v2/projects/{projectId}/datasets/{datasetId}/tables/{tableId}/data",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"etag",
+				"kind",
+				"pageToken",
+				"rows",
+				"totalRows"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "A data platform for customers to create, manage, share and query data.",
+				"version": "v2",
+				"slug": "bigquery-v2-bigquery-v2-projects-projectid-datasets-datasetid-tables-tableid-data",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"etag": "etag",
+					"kind": "kind",
+					"pageToken": "pageToken",
+					"rows": "rows",
+					"totalRows": "totalRows"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"search"
+				]
+			}
+		},
+		{
+			"group": "bigquery-v2",
+			"url_pattern": "/bigquery/v2/projects/{projectId}/datasets/{datasetId}/tables/{tableId}/insertAll",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"insertErrors",
+				"insertErrors.errors",
+				"insertErrors.index",
+				"kind"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "A data platform for customers to create, manage, share and query data.",
+				"version": "v2",
+				"slug": "bigquery-v2-bigquery-v2-projects-projectid-datasets-datasetid-tables-tableid-insertall",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"insertErrors": "insertErrors",
+					"insertErrors.errors": "insertErrors.errors",
+					"insertErrors.index": "insertErrors.index",
+					"kind": "kind"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"search"
+				]
+			}
+		},
+		{
+			"group": "bigquery-v2",
+			"url_pattern": "/bigquery/v2/projects/{projectId}/jobs",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"etag",
+				"jobs",
+				"jobs.id",
+				"jobs.kind",
+				"jobs.state",
+				"jobs.user_email",
+				"kind",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "A data platform for customers to create, manage, share and query data.",
+				"version": "v2",
+				"slug": "bigquery-v2-bigquery-v2-projects-projectid-jobs",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"etag": "etag",
+					"jobs": "jobs",
+					"jobs.id": "jobs.id",
+					"jobs.kind": "jobs.kind",
+					"jobs.state": "jobs.state",
+					"jobs.user_email": "jobs.user_email",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"search"
+				]
+			}
+		},
+		{
+			"group": "bigquery-v2",
+			"url_pattern": "/bigquery/v2/projects/{projectId}/jobs/{jobId}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"etag",
+				"id",
+				"kind",
+				"selfLink",
+				"user_email"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "A data platform for customers to create, manage, share and query data.",
+				"version": "v2",
+				"slug": "bigquery-v2-bigquery-v2-projects-projectid-jobs-jobid",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"etag": "etag",
+					"id": "id",
+					"kind": "kind",
+					"selfLink": "selfLink",
+					"user_email": "user_email"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"search"
+				]
+			}
+		},
+		{
+			"group": "bigquery-v2",
+			"url_pattern": "/bigquery/v2/projects/{projectId}/jobs/{jobId}/cancel",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"kind"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "A data platform for customers to create, manage, share and query data.",
+				"version": "v2",
+				"slug": "bigquery-v2-bigquery-v2-projects-projectid-jobs-jobid-cancel",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"kind": "kind"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"search"
+				]
+			}
+		},
+		{
+			"group": "bigquery-v2",
+			"url_pattern": "/bigquery/v2/projects/{projectId}/queries",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"cacheHit",
+				"errors",
+				"jobComplete",
+				"kind",
+				"numDmlAffectedRows",
+				"pageToken",
+				"rows",
+				"totalBytesProcessed",
+				"totalRows"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "A data platform for customers to create, manage, share and query data.",
+				"version": "v2",
+				"slug": "bigquery-v2-bigquery-v2-projects-projectid-queries",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"cacheHit": "cacheHit",
+					"errors": "errors",
+					"jobComplete": "jobComplete",
+					"kind": "kind",
+					"numDmlAffectedRows": "numDmlAffectedRows",
+					"pageToken": "pageToken",
+					"rows": "rows",
+					"totalBytesProcessed": "totalBytesProcessed",
+					"totalRows": "totalRows"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"search"
+				]
+			}
+		},
+		{
+			"group": "bigquery-v2",
+			"url_pattern": "/bigquery/v2/projects/{projectId}/queries/{jobId}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"cacheHit",
+				"errors",
+				"etag",
+				"jobComplete",
+				"kind",
+				"numDmlAffectedRows",
+				"pageToken",
+				"rows",
+				"totalBytesProcessed",
+				"totalRows"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "A data platform for customers to create, manage, share and query data.",
+				"version": "v2",
+				"slug": "bigquery-v2-bigquery-v2-projects-projectid-queries-jobid",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"cacheHit": "cacheHit",
+					"errors": "errors",
+					"etag": "etag",
+					"jobComplete": "jobComplete",
+					"kind": "kind",
+					"numDmlAffectedRows": "numDmlAffectedRows",
+					"pageToken": "pageToken",
+					"rows": "rows",
+					"totalBytesProcessed": "totalBytesProcessed",
+					"totalRows": "totalRows"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"search"
+				]
+			}
+		},
+		{
+			"group": "bigquery-v2",
+			"url_pattern": "/bigquery/v2/projects/{projectId}/serviceAccount",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"email",
+				"kind"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "A data platform for customers to create, manage, share and query data.",
+				"version": "v2",
+				"slug": "bigquery-v2-bigquery-v2-projects-projectid-serviceaccount",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"email": "email",
+					"kind": "kind"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"search"
+				]
+			}
+		}
+	]
+}

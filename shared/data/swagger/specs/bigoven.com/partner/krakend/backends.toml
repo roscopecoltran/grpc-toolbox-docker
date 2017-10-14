@@ -1,0 +1,679 @@
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/collection/{id}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  url_keys = ["id"]
+  query_string_params = ["pg", "rpp", "sessionForLogging", "test"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-collection-id"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["collection"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/collection/{id}/meta"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  url_keys = ["id"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-collection-id-meta"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["collection"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/collections"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  query_string_params = ["test"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-collections"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["collection"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/glossary/byterm/{term}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  url_keys = ["term"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-glossary-byterm-term"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["glossary"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/glossary/{id}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  url_keys = ["id"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-glossary-id"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["glossary"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/grocerylist"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-grocerylist"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["grocerylist"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/grocerylist/department"
+  method = "POST"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-grocerylist-department"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["grocerylist"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/grocerylist/item"
+  method = "POST"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-grocerylist-item"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["grocerylist"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/grocerylist/recipe"
+  method = "POST"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-grocerylist-recipe"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["grocerylist"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/grocerylist/sync"
+  method = "POST"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-grocerylist-sync"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["grocerylist"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/image/avatar"
+  method = "POST"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-image-avatar"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["images"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/me"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-me"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["me"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/me/preferences/options"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-me-preferences-options"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["me"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/me/skinny"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-me-skinny"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["me"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/recipe"
+  method = "POST"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-recipe"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["recipe"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/recipe/autocomplete"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  query_string_params = ["limit", "query"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-recipe-autocomplete"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["recipe"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/recipe/categories"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-recipe-categories"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["recipe"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/recipe/review/{reviewId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  url_keys = ["reviewId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-recipe-review-reviewid"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["review"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/recipe/review/{reviewId}/replies"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  url_keys = ["reviewId"]
+  query_string_params = ["pg", "rpp"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-recipe-review-reviewid-replies"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["review"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/recipe/scan"
+  method = "POST"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  query_string_params = ["devicetype", "lat", "lng", "test"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-recipe-scan"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["recipe"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/recipe/{id}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  url_keys = ["id"]
+  query_string_params = ["prefetch"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-recipe-id"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["recipe"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/recipe/{id}/zap"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  url_keys = ["id"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-recipe-id-zap"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["recipe"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/recipe/{recipeId}/feedback"
+  method = "POST"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  url_keys = ["recipeId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-recipe-recipeid-feedback"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["recipe"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/recipe/{recipeId}/image"
+  method = "POST"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  url_keys = ["recipeId"]
+  query_string_params = ["caption", "lat", "lng"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-recipe-recipeid-image"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["images"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/recipe/{recipeId}/images"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  url_keys = ["recipeId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-recipe-recipeid-images"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["images"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/recipe/{recipeId}/note"
+  method = "POST"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  url_keys = ["recipeId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-recipe-recipeid-note"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["note"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/recipe/{recipeId}/note/{noteId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  url_keys = ["noteId", "recipeId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-recipe-recipeid-note-noteid"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["note"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/recipe/{recipeId}/notes"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  url_keys = ["recipeId"]
+  query_string_params = ["pg", "rpp"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-recipe-recipeid-notes"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["note"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/recipe/{recipeId}/photos"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  url_keys = ["recipeId"]
+  query_string_params = ["pg", "rpp"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-recipe-recipeid-photos"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["images"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/recipe/{recipeId}/related"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  url_keys = ["recipeId"]
+  query_string_params = ["pg", "rpp"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-recipe-recipeid-related"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["recipe"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/recipe/{recipeId}/review"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  url_keys = ["recipeId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-recipe-recipeid-review"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["review"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/recipe/{recipeId}/review/{reviewId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  url_keys = ["recipeId", "reviewId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-recipe-recipeid-review-reviewid"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["review"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/recipe/{recipeId}/reviews"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  url_keys = ["recipeId"]
+  query_string_params = ["pg", "rpp"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-recipe-recipeid-reviews"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["review"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/recipe/{recipeId}/scans"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  url_keys = ["recipeId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-recipe-recipeid-scans"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["images"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/recipes"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  query_string_params = ["any_kw", "boostmine", "champion", "chs", "coll", "cps", "cuisine", "db", "dyf", "exclude_cat", "exclude_ing", "exclude_primarycat", "filter", "folder", "glf", "include_cat", "include_ing", "include_primarycat", "maxIngredients", "minIngredients", "ntf", "pg", "photos", "rmf", "rpp", "servingsMin", "sff", "slf", "synonyms", "title_kw", "tnf", "token", "totalMins", "userId", "username", "userset", "vgn", "vtn", "wmf"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-recipes"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["recipe"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/recipes/random"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-recipes-random"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["recipe"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/recipes/raves"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  query_string_params = ["pg", "rpp"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-recipes-raves"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["recipe"]
+
+[[backends]]
+  group = "bigoven-partner"
+  url_pattern = "/recipes/recentviews"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api2.bigoven.com"]
+  query_string_params = ["pg", "rpp"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bigoven.com"
+    description = "#Documentation\r\n\r\nThis is the documentation for the partner endpoint of the BigOven Recipe and Grocery List API.\r\n\r\nThe update brings with it Swagger-based documentation. [Swagger](http://swagger.io) is an emerging standard for describing REST-based APIs, and with this Swagger-compliant endpoint (above), you can make ready-to-go interface libraries for your code via [swagger-codegen](https://github.com/swagger-api/swagger-codegen). For instance, it's easy to generate libraries for Node.js, Java, Ruby, ASP.NET MVC, jQuery, php and more!\r\n\r\nYou can also try out the endpoint calls with your own api_key right here on this page. Be sure to enter your api_key above to use the \"Try it out!\" buttons on this page.\r\n\r\n##Start Here\r\n\r\nDevelopers new to the BigOven API should start with this version, not with the legacy API. We'll be making improvements to this API over time, and doing only bug fixes on the v1 API.\r\n\r\n\r\n\r\nTo pretend you're a BigOven user (for instance, to get your recently viewed recipes or your grocery list), you need to pass in Basic Authentication information in the header, just as with the v1 API. We do now require that you make all calls via https. You need to pass your api_key in with every call, though this can now be done on the header (send a request header \"X-BigOven-API-Key\" set to your api_key value, e.g., Request[\"X-BigOven-API-Key\"]=\"your-key-here\".)\r\n\r\n##Migration Notes\r\n\r\nFor existing partners, we encourage you to [migrate](http://api2.bigoven.com), and while at this writing we have no hard-and-fast termination date for the v1 API, we strongly prefer that you migrate by January 1, 2017. While the changes aren't overly complex, there are several breaking changes, including refactoring of recipe search and results and removal of support for XML. This is not a simply plug-and-play replacement to the v1 API. With respect to an exclusive focus on JSON, the world has spoken, and it prefers JSON for REST-based API's. We've taken numerous steps to refactor the API to make it more REST-compliant. Note that this v2 API will be the preferred API from this point onward, so we encourage developers to migrate to this new format. We have put together some [migration notes](/web/documentation/migration-to-v2) that we encourage you to read carefully.\r\n\r\n##Photos\r\n\r\nSee our [photos documentation](http://api2.bigoven.com/web/documentation/recipe-images). \r\n\r\nFor more information on usage of this API, including features, pricing, rate limits, terms and conditions, please visit the [BigOven API website](http://api2.bigoven.com)."
+    version = "partner"
+    slug = "bigoven-partner-recipes-recentviews"
+    schemes = ["https"]
+    produces = ["json", "json", "xml", "xml"]
+    hosts = ["https://api2.bigoven.com"]
+    topics = ["recipe"]

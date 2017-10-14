@@ -1,0 +1,100 @@
+{
+	"backends": [
+		{
+			"group": "nsidc-web-service-documentation-index-1-0-0",
+			"url_pattern": "/api/dataset/2/Facets",
+			"method": "GET",
+			"host": [
+				"http://nsidc.org"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "nsidc.org",
+				"description": "This API allows programmers to build National Snow and Ice Data Center data and metadata services into their applications.",
+				"version": "1.0.0",
+				"slug": "nsidc-web-service-documentation-index-1-0-0-api-dataset-2-facets",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://nsidc.org"
+				],
+				"topics": [
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "nsidc-web-service-documentation-index-1-0-0",
+			"url_pattern": "/api/dataset/2/OpenSearch",
+			"method": "GET",
+			"host": [
+				"http://nsidc.org"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "nsidc.org",
+				"description": "This API allows programmers to build National Snow and Ice Data Center data and metadata services into their applications.",
+				"version": "1.0.0",
+				"slug": "nsidc-web-service-documentation-index-1-0-0-api-dataset-2-opensearch",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://nsidc.org"
+				],
+				"topics": [
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "nsidc-web-service-documentation-index-1-0-0",
+			"url_pattern": "/api/dataset/2/OpenSearchDescription",
+			"method": "GET",
+			"host": [
+				"http://nsidc.org"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "nsidc.org",
+				"description": "This API allows programmers to build National Snow and Ice Data Center data and metadata services into their applications.",
+				"version": "1.0.0",
+				"slug": "nsidc-web-service-documentation-index-1-0-0-api-dataset-2-opensearchdescription",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://nsidc.org"
+				],
+				"topics": [
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "nsidc-web-service-documentation-index-1-0-0",
+			"url_pattern": "/api/dataset/2/suggest",
+			"method": "GET",
+			"host": [
+				"http://nsidc.org"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "nsidc.org",
+				"description": "This API allows programmers to build National Snow and Ice Data Center data and metadata services into their applications.",
+				"version": "1.0.0",
+				"slug": "nsidc-web-service-documentation-index-1-0-0-api-dataset-2-suggest",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://nsidc.org"
+				],
+				"topics": [
+					"open-data"
+				]
+			}
+		}
+	]
+}

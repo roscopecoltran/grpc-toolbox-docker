@@ -1,0 +1,117 @@
+[[backends]]
+  group = "google-safe-browsing-v4"
+  url_pattern = "/v4/encodedFullHashes/{encodedRequest}"
+  method = "GET"
+  host = ["https://safebrowsing.googleapis.com"]
+  url_keys = ["encodedRequest"]
+  query_string_params = ["clientId", "clientVersion"]
+  whitelist = ["matches", "minimumWaitDuration", "negativeCacheDuration"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Enables client applications to check web resources (most commonly URLs) against Google-generated lists of unsafe web resources."
+    version = "v4"
+    slug = "google-safe-browsing-v4-v4-encodedfullhashes-encodedrequest"
+    schemes = ["https"]
+    hosts = ["https://safebrowsing.googleapis.com"]
+    topics = ["encodedfullhashes", "security"]
+    [backends.extra_config.mapping]
+      matches = "matches"
+      minimumWaitDuration = "minimumWaitDuration"
+      negativeCacheDuration = "negativeCacheDuration"
+
+[[backends]]
+  group = "google-safe-browsing-v4"
+  url_pattern = "/v4/encodedUpdates/{encodedRequest}"
+  method = "GET"
+  host = ["https://safebrowsing.googleapis.com"]
+  url_keys = ["encodedRequest"]
+  query_string_params = ["clientId", "clientVersion"]
+  whitelist = ["listUpdateResponses", "minimumWaitDuration"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Enables client applications to check web resources (most commonly URLs) against Google-generated lists of unsafe web resources."
+    version = "v4"
+    slug = "google-safe-browsing-v4-v4-encodedupdates-encodedrequest"
+    schemes = ["https"]
+    hosts = ["https://safebrowsing.googleapis.com"]
+    topics = ["encodedupdates", "security"]
+    [backends.extra_config.mapping]
+      listUpdateResponses = "listUpdateResponses"
+      minimumWaitDuration = "minimumWaitDuration"
+
+[[backends]]
+  group = "google-safe-browsing-v4"
+  url_pattern = "/v4/fullHashes:find"
+  method = "POST"
+  host = ["https://safebrowsing.googleapis.com"]
+  whitelist = ["matches", "minimumWaitDuration", "negativeCacheDuration"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Enables client applications to check web resources (most commonly URLs) against Google-generated lists of unsafe web resources."
+    version = "v4"
+    slug = "google-safe-browsing-v4-v4-fullhashes-find"
+    schemes = ["https"]
+    hosts = ["https://safebrowsing.googleapis.com"]
+    topics = ["fullhashes", "security"]
+    [backends.extra_config.mapping]
+      matches = "matches"
+      minimumWaitDuration = "minimumWaitDuration"
+      negativeCacheDuration = "negativeCacheDuration"
+
+[[backends]]
+  group = "google-safe-browsing-v4"
+  url_pattern = "/v4/threatListUpdates:fetch"
+  method = "POST"
+  host = ["https://safebrowsing.googleapis.com"]
+  whitelist = ["listUpdateResponses", "minimumWaitDuration"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Enables client applications to check web resources (most commonly URLs) against Google-generated lists of unsafe web resources."
+    version = "v4"
+    slug = "google-safe-browsing-v4-v4-threatlistupdates-fetch"
+    schemes = ["https"]
+    hosts = ["https://safebrowsing.googleapis.com"]
+    topics = ["security", "threatlistupdates"]
+    [backends.extra_config.mapping]
+      listUpdateResponses = "listUpdateResponses"
+      minimumWaitDuration = "minimumWaitDuration"
+
+[[backends]]
+  group = "google-safe-browsing-v4"
+  url_pattern = "/v4/threatLists"
+  method = "GET"
+  host = ["https://safebrowsing.googleapis.com"]
+  whitelist = ["threatLists"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Enables client applications to check web resources (most commonly URLs) against Google-generated lists of unsafe web resources."
+    version = "v4"
+    slug = "google-safe-browsing-v4-v4-threatlists"
+    schemes = ["https"]
+    hosts = ["https://safebrowsing.googleapis.com"]
+    topics = ["security", "threatlists"]
+    [backends.extra_config.mapping]
+      threatLists = "threatLists"
+
+[[backends]]
+  group = "google-safe-browsing-v4"
+  url_pattern = "/v4/threatMatches:find"
+  method = "POST"
+  host = ["https://safebrowsing.googleapis.com"]
+  whitelist = ["matches"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Enables client applications to check web resources (most commonly URLs) against Google-generated lists of unsafe web resources."
+    version = "v4"
+    slug = "google-safe-browsing-v4-v4-threatmatches-find"
+    schemes = ["https"]
+    hosts = ["https://safebrowsing.googleapis.com"]
+    topics = ["security", "threatmatches"]
+    [backends.extra_config.mapping]
+      matches = "matches"

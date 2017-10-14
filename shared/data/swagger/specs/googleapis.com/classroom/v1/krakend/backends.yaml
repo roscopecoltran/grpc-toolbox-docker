@@ -1,0 +1,951 @@
+backends:
+- group: google-classroom-v1
+  url_pattern: /v1/courses
+  method: GET
+  host:
+  - https://classroom.googleapis.com
+  query_string_params:
+  - courseStates
+  - pageSize
+  - pageToken
+  - studentId
+  - teacherId
+  whitelist:
+  - courses
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages classes, rosters, and invitations in Google Classroom.
+    version: v1
+    slug: google-classroom-v1-v1-courses
+    schemes:
+    - https
+    mapping:
+      courses: courses
+      nextPageToken: nextPageToken
+    hosts:
+    - https://classroom.googleapis.com
+    topics:
+    - courses
+    - education
+- group: google-classroom-v1
+  url_pattern: /v1/courses/{courseId}/aliases
+  method: GET
+  host:
+  - https://classroom.googleapis.com
+  url_keys:
+  - courseId
+  query_string_params:
+  - pageSize
+  - pageToken
+  whitelist:
+  - aliases
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages classes, rosters, and invitations in Google Classroom.
+    version: v1
+    slug: google-classroom-v1-v1-courses-courseid-aliases
+    schemes:
+    - https
+    mapping:
+      aliases: aliases
+      nextPageToken: nextPageToken
+    hosts:
+    - https://classroom.googleapis.com
+    topics:
+    - courses
+    - education
+- group: google-classroom-v1
+  url_pattern: /v1/courses/{courseId}/announcements
+  method: GET
+  host:
+  - https://classroom.googleapis.com
+  url_keys:
+  - courseId
+  query_string_params:
+  - announcementStates
+  - orderBy
+  - pageSize
+  - pageToken
+  whitelist:
+  - announcements
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages classes, rosters, and invitations in Google Classroom.
+    version: v1
+    slug: google-classroom-v1-v1-courses-courseid-announcements
+    schemes:
+    - https
+    mapping:
+      announcements: announcements
+      nextPageToken: nextPageToken
+    hosts:
+    - https://classroom.googleapis.com
+    topics:
+    - courses
+    - education
+- group: google-classroom-v1
+  url_pattern: /v1/courses/{courseId}/announcements/{id}
+  method: GET
+  host:
+  - https://classroom.googleapis.com
+  url_keys:
+  - courseId
+  - id
+  whitelist:
+  - alternateLink
+  - assigneeMode
+  - courseId
+  - creationTime
+  - creatorUserId
+  - id
+  - materials
+  - scheduledTime
+  - state
+  - text
+  - updateTime
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages classes, rosters, and invitations in Google Classroom.
+    version: v1
+    slug: google-classroom-v1-v1-courses-courseid-announcements-id
+    schemes:
+    - https
+    mapping:
+      alternateLink: alternateLink
+      assigneeMode: assigneeMode
+      courseId: courseId
+      creationTime: creationTime
+      creatorUserId: creatorUserId
+      id: id
+      materials: materials
+      scheduledTime: scheduledTime
+      state: state
+      text: text
+      updateTime: updateTime
+    hosts:
+    - https://classroom.googleapis.com
+    topics:
+    - courses
+    - education
+- group: google-classroom-v1
+  url_pattern: /v1/courses/{courseId}/announcements/{id}:modifyAssignees
+  method: POST
+  host:
+  - https://classroom.googleapis.com
+  url_keys:
+  - courseId
+  - id
+  whitelist:
+  - alternateLink
+  - assigneeMode
+  - courseId
+  - creationTime
+  - creatorUserId
+  - id
+  - materials
+  - scheduledTime
+  - state
+  - text
+  - updateTime
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages classes, rosters, and invitations in Google Classroom.
+    version: v1
+    slug: google-classroom-v1-v1-courses-courseid-announcements-id-modifyassignees
+    schemes:
+    - https
+    mapping:
+      alternateLink: alternateLink
+      assigneeMode: assigneeMode
+      courseId: courseId
+      creationTime: creationTime
+      creatorUserId: creatorUserId
+      id: id
+      materials: materials
+      scheduledTime: scheduledTime
+      state: state
+      text: text
+      updateTime: updateTime
+    hosts:
+    - https://classroom.googleapis.com
+    topics:
+    - courses
+    - education
+- group: google-classroom-v1
+  url_pattern: /v1/courses/{courseId}/courseWork
+  method: GET
+  host:
+  - https://classroom.googleapis.com
+  url_keys:
+  - courseId
+  query_string_params:
+  - courseWorkStates
+  - orderBy
+  - pageSize
+  - pageToken
+  whitelist:
+  - courseWork
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages classes, rosters, and invitations in Google Classroom.
+    version: v1
+    slug: google-classroom-v1-v1-courses-courseid-coursework
+    schemes:
+    - https
+    mapping:
+      courseWork: courseWork
+      nextPageToken: nextPageToken
+    hosts:
+    - https://classroom.googleapis.com
+    topics:
+    - courses
+    - education
+- group: google-classroom-v1
+  url_pattern: /v1/courses/{courseId}/courseWork/{courseWorkId}/studentSubmissions
+  method: GET
+  host:
+  - https://classroom.googleapis.com
+  url_keys:
+  - courseId
+  - courseWorkId
+  query_string_params:
+  - late
+  - pageSize
+  - pageToken
+  - states
+  - userId
+  whitelist:
+  - nextPageToken
+  - studentSubmissions
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages classes, rosters, and invitations in Google Classroom.
+    version: v1
+    slug: google-classroom-v1-v1-courses-courseid-coursework-courseworkid-studentsubmissions
+    schemes:
+    - https
+    mapping:
+      nextPageToken: nextPageToken
+      studentSubmissions: studentSubmissions
+    hosts:
+    - https://classroom.googleapis.com
+    topics:
+    - courses
+    - education
+- group: google-classroom-v1
+  url_pattern: /v1/courses/{courseId}/courseWork/{courseWorkId}/studentSubmissions/{id}
+  method: GET
+  host:
+  - https://classroom.googleapis.com
+  url_keys:
+  - courseId
+  - courseWorkId
+  - id
+  whitelist:
+  - alternateLink
+  - assignedGrade
+  - associatedWithDeveloper
+  - courseId
+  - courseWorkId
+  - courseWorkType
+  - creationTime
+  - draftGrade
+  - id
+  - late
+  - state
+  - submissionHistory
+  - updateTime
+  - userId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages classes, rosters, and invitations in Google Classroom.
+    version: v1
+    slug: google-classroom-v1-v1-courses-courseid-coursework-courseworkid-studentsubmissions-id
+    schemes:
+    - https
+    mapping:
+      alternateLink: alternateLink
+      assignedGrade: assignedGrade
+      associatedWithDeveloper: associatedWithDeveloper
+      courseId: courseId
+      courseWorkId: courseWorkId
+      courseWorkType: courseWorkType
+      creationTime: creationTime
+      draftGrade: draftGrade
+      id: id
+      late: late
+      state: state
+      submissionHistory: submissionHistory
+      updateTime: updateTime
+      userId: userId
+    hosts:
+    - https://classroom.googleapis.com
+    topics:
+    - courses
+    - education
+- group: google-classroom-v1
+  url_pattern: /v1/courses/{courseId}/courseWork/{courseWorkId}/studentSubmissions/{id}:modifyAttachments
+  method: POST
+  host:
+  - https://classroom.googleapis.com
+  url_keys:
+  - courseId
+  - courseWorkId
+  - id
+  whitelist:
+  - alternateLink
+  - assignedGrade
+  - associatedWithDeveloper
+  - courseId
+  - courseWorkId
+  - courseWorkType
+  - creationTime
+  - draftGrade
+  - id
+  - late
+  - state
+  - submissionHistory
+  - updateTime
+  - userId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages classes, rosters, and invitations in Google Classroom.
+    version: v1
+    slug: google-classroom-v1-v1-courses-courseid-coursework-courseworkid-studentsubmissions-id-modifyattachments
+    schemes:
+    - https
+    mapping:
+      alternateLink: alternateLink
+      assignedGrade: assignedGrade
+      associatedWithDeveloper: associatedWithDeveloper
+      courseId: courseId
+      courseWorkId: courseWorkId
+      courseWorkType: courseWorkType
+      creationTime: creationTime
+      draftGrade: draftGrade
+      id: id
+      late: late
+      state: state
+      submissionHistory: submissionHistory
+      updateTime: updateTime
+      userId: userId
+    hosts:
+    - https://classroom.googleapis.com
+    topics:
+    - courses
+    - education
+- group: google-classroom-v1
+  url_pattern: /v1/courses/{courseId}/courseWork/{courseWorkId}/studentSubmissions/{id}:reclaim
+  method: POST
+  host:
+  - https://classroom.googleapis.com
+  url_keys:
+  - courseId
+  - courseWorkId
+  - id
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages classes, rosters, and invitations in Google Classroom.
+    version: v1
+    slug: google-classroom-v1-v1-courses-courseid-coursework-courseworkid-studentsubmissions-id-reclaim
+    schemes:
+    - https
+    hosts:
+    - https://classroom.googleapis.com
+    topics:
+    - courses
+    - education
+- group: google-classroom-v1
+  url_pattern: /v1/courses/{courseId}/courseWork/{courseWorkId}/studentSubmissions/{id}:return
+  method: POST
+  host:
+  - https://classroom.googleapis.com
+  url_keys:
+  - courseId
+  - courseWorkId
+  - id
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages classes, rosters, and invitations in Google Classroom.
+    version: v1
+    slug: google-classroom-v1-v1-courses-courseid-coursework-courseworkid-studentsubmissions-id-return
+    schemes:
+    - https
+    hosts:
+    - https://classroom.googleapis.com
+    topics:
+    - courses
+    - education
+- group: google-classroom-v1
+  url_pattern: /v1/courses/{courseId}/courseWork/{courseWorkId}/studentSubmissions/{id}:turnIn
+  method: POST
+  host:
+  - https://classroom.googleapis.com
+  url_keys:
+  - courseId
+  - courseWorkId
+  - id
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages classes, rosters, and invitations in Google Classroom.
+    version: v1
+    slug: google-classroom-v1-v1-courses-courseid-coursework-courseworkid-studentsubmissions-id-turnin
+    schemes:
+    - https
+    hosts:
+    - https://classroom.googleapis.com
+    topics:
+    - courses
+    - education
+- group: google-classroom-v1
+  url_pattern: /v1/courses/{courseId}/courseWork/{id}
+  method: GET
+  host:
+  - https://classroom.googleapis.com
+  url_keys:
+  - courseId
+  - id
+  whitelist:
+  - alternateLink
+  - assigneeMode
+  - associatedWithDeveloper
+  - courseId
+  - creationTime
+  - creatorUserId
+  - description
+  - id
+  - materials
+  - maxPoints
+  - scheduledTime
+  - state
+  - submissionModificationMode
+  - title
+  - updateTime
+  - workType
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages classes, rosters, and invitations in Google Classroom.
+    version: v1
+    slug: google-classroom-v1-v1-courses-courseid-coursework-id
+    schemes:
+    - https
+    mapping:
+      alternateLink: alternateLink
+      assigneeMode: assigneeMode
+      associatedWithDeveloper: associatedWithDeveloper
+      courseId: courseId
+      creationTime: creationTime
+      creatorUserId: creatorUserId
+      description: description
+      id: id
+      materials: materials
+      maxPoints: maxPoints
+      scheduledTime: scheduledTime
+      state: state
+      submissionModificationMode: submissionModificationMode
+      title: title
+      updateTime: updateTime
+      workType: workType
+    hosts:
+    - https://classroom.googleapis.com
+    topics:
+    - courses
+    - education
+- group: google-classroom-v1
+  url_pattern: /v1/courses/{courseId}/courseWork/{id}:modifyAssignees
+  method: POST
+  host:
+  - https://classroom.googleapis.com
+  url_keys:
+  - courseId
+  - id
+  whitelist:
+  - alternateLink
+  - assigneeMode
+  - associatedWithDeveloper
+  - courseId
+  - creationTime
+  - creatorUserId
+  - description
+  - id
+  - materials
+  - maxPoints
+  - scheduledTime
+  - state
+  - submissionModificationMode
+  - title
+  - updateTime
+  - workType
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages classes, rosters, and invitations in Google Classroom.
+    version: v1
+    slug: google-classroom-v1-v1-courses-courseid-coursework-id-modifyassignees
+    schemes:
+    - https
+    mapping:
+      alternateLink: alternateLink
+      assigneeMode: assigneeMode
+      associatedWithDeveloper: associatedWithDeveloper
+      courseId: courseId
+      creationTime: creationTime
+      creatorUserId: creatorUserId
+      description: description
+      id: id
+      materials: materials
+      maxPoints: maxPoints
+      scheduledTime: scheduledTime
+      state: state
+      submissionModificationMode: submissionModificationMode
+      title: title
+      updateTime: updateTime
+      workType: workType
+    hosts:
+    - https://classroom.googleapis.com
+    topics:
+    - courses
+    - education
+- group: google-classroom-v1
+  url_pattern: /v1/courses/{courseId}/students
+  method: GET
+  host:
+  - https://classroom.googleapis.com
+  url_keys:
+  - courseId
+  query_string_params:
+  - pageSize
+  - pageToken
+  whitelist:
+  - nextPageToken
+  - students
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages classes, rosters, and invitations in Google Classroom.
+    version: v1
+    slug: google-classroom-v1-v1-courses-courseid-students
+    schemes:
+    - https
+    mapping:
+      nextPageToken: nextPageToken
+      students: students
+    hosts:
+    - https://classroom.googleapis.com
+    topics:
+    - courses
+    - education
+- group: google-classroom-v1
+  url_pattern: /v1/courses/{courseId}/students/{userId}
+  method: GET
+  host:
+  - https://classroom.googleapis.com
+  url_keys:
+  - courseId
+  - userId
+  whitelist:
+  - courseId
+  - userId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages classes, rosters, and invitations in Google Classroom.
+    version: v1
+    slug: google-classroom-v1-v1-courses-courseid-students-userid
+    schemes:
+    - https
+    mapping:
+      courseId: courseId
+      userId: userId
+    hosts:
+    - https://classroom.googleapis.com
+    topics:
+    - courses
+    - education
+- group: google-classroom-v1
+  url_pattern: /v1/courses/{courseId}/teachers
+  method: GET
+  host:
+  - https://classroom.googleapis.com
+  url_keys:
+  - courseId
+  query_string_params:
+  - pageSize
+  - pageToken
+  whitelist:
+  - nextPageToken
+  - teachers
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages classes, rosters, and invitations in Google Classroom.
+    version: v1
+    slug: google-classroom-v1-v1-courses-courseid-teachers
+    schemes:
+    - https
+    mapping:
+      nextPageToken: nextPageToken
+      teachers: teachers
+    hosts:
+    - https://classroom.googleapis.com
+    topics:
+    - courses
+    - education
+- group: google-classroom-v1
+  url_pattern: /v1/courses/{courseId}/teachers/{userId}
+  method: GET
+  host:
+  - https://classroom.googleapis.com
+  url_keys:
+  - courseId
+  - userId
+  whitelist:
+  - courseId
+  - userId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages classes, rosters, and invitations in Google Classroom.
+    version: v1
+    slug: google-classroom-v1-v1-courses-courseid-teachers-userid
+    schemes:
+    - https
+    mapping:
+      courseId: courseId
+      userId: userId
+    hosts:
+    - https://classroom.googleapis.com
+    topics:
+    - courses
+    - education
+- group: google-classroom-v1
+  url_pattern: /v1/courses/{id}
+  method: GET
+  host:
+  - https://classroom.googleapis.com
+  url_keys:
+  - id
+  whitelist:
+  - alternateLink
+  - calendarId
+  - courseGroupEmail
+  - courseMaterialSets
+  - courseState
+  - creationTime
+  - description
+  - descriptionHeading
+  - enrollmentCode
+  - guardiansEnabled
+  - id
+  - name
+  - ownerId
+  - room
+  - section
+  - teacherGroupEmail
+  - updateTime
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages classes, rosters, and invitations in Google Classroom.
+    version: v1
+    slug: google-classroom-v1-v1-courses-id
+    schemes:
+    - https
+    mapping:
+      alternateLink: alternateLink
+      calendarId: calendarId
+      courseGroupEmail: courseGroupEmail
+      courseMaterialSets: courseMaterialSets
+      courseState: courseState
+      creationTime: creationTime
+      description: description
+      descriptionHeading: descriptionHeading
+      enrollmentCode: enrollmentCode
+      guardiansEnabled: guardiansEnabled
+      id: id
+      name: name
+      ownerId: ownerId
+      room: room
+      section: section
+      teacherGroupEmail: teacherGroupEmail
+      updateTime: updateTime
+    hosts:
+    - https://classroom.googleapis.com
+    topics:
+    - courses
+    - education
+- group: google-classroom-v1
+  url_pattern: /v1/invitations
+  method: GET
+  host:
+  - https://classroom.googleapis.com
+  query_string_params:
+  - courseId
+  - pageSize
+  - pageToken
+  - userId
+  whitelist:
+  - invitations
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages classes, rosters, and invitations in Google Classroom.
+    version: v1
+    slug: google-classroom-v1-v1-invitations
+    schemes:
+    - https
+    mapping:
+      invitations: invitations
+      nextPageToken: nextPageToken
+    hosts:
+    - https://classroom.googleapis.com
+    topics:
+    - education
+    - invitations
+- group: google-classroom-v1
+  url_pattern: /v1/invitations/{id}
+  method: GET
+  host:
+  - https://classroom.googleapis.com
+  url_keys:
+  - id
+  whitelist:
+  - courseId
+  - id
+  - role
+  - userId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages classes, rosters, and invitations in Google Classroom.
+    version: v1
+    slug: google-classroom-v1-v1-invitations-id
+    schemes:
+    - https
+    mapping:
+      courseId: courseId
+      id: id
+      role: role
+      userId: userId
+    hosts:
+    - https://classroom.googleapis.com
+    topics:
+    - education
+    - invitations
+- group: google-classroom-v1
+  url_pattern: /v1/invitations/{id}:accept
+  method: POST
+  host:
+  - https://classroom.googleapis.com
+  url_keys:
+  - id
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages classes, rosters, and invitations in Google Classroom.
+    version: v1
+    slug: google-classroom-v1-v1-invitations-id-accept
+    schemes:
+    - https
+    hosts:
+    - https://classroom.googleapis.com
+    topics:
+    - education
+    - invitations
+- group: google-classroom-v1
+  url_pattern: /v1/registrations
+  method: POST
+  host:
+  - https://classroom.googleapis.com
+  whitelist:
+  - expiryTime
+  - registrationId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages classes, rosters, and invitations in Google Classroom.
+    version: v1
+    slug: google-classroom-v1-v1-registrations
+    schemes:
+    - https
+    mapping:
+      expiryTime: expiryTime
+      registrationId: registrationId
+    hosts:
+    - https://classroom.googleapis.com
+    topics:
+    - education
+    - registrations
+- group: google-classroom-v1
+  url_pattern: /v1/userProfiles/{studentId}/guardianInvitations
+  method: GET
+  host:
+  - https://classroom.googleapis.com
+  url_keys:
+  - studentId
+  query_string_params:
+  - invitedEmailAddress
+  - pageSize
+  - pageToken
+  - states
+  whitelist:
+  - guardianInvitations
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages classes, rosters, and invitations in Google Classroom.
+    version: v1
+    slug: google-classroom-v1-v1-userprofiles-studentid-guardianinvitations
+    schemes:
+    - https
+    mapping:
+      guardianInvitations: guardianInvitations
+      nextPageToken: nextPageToken
+    hosts:
+    - https://classroom.googleapis.com
+    topics:
+    - education
+    - userprofiles
+- group: google-classroom-v1
+  url_pattern: /v1/userProfiles/{studentId}/guardianInvitations/{invitationId}
+  method: GET
+  host:
+  - https://classroom.googleapis.com
+  url_keys:
+  - invitationId
+  - studentId
+  whitelist:
+  - creationTime
+  - invitationId
+  - invitedEmailAddress
+  - state
+  - studentId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages classes, rosters, and invitations in Google Classroom.
+    version: v1
+    slug: google-classroom-v1-v1-userprofiles-studentid-guardianinvitations-invitationid
+    schemes:
+    - https
+    mapping:
+      creationTime: creationTime
+      invitationId: invitationId
+      invitedEmailAddress: invitedEmailAddress
+      state: state
+      studentId: studentId
+    hosts:
+    - https://classroom.googleapis.com
+    topics:
+    - education
+    - userprofiles
+- group: google-classroom-v1
+  url_pattern: /v1/userProfiles/{studentId}/guardians
+  method: GET
+  host:
+  - https://classroom.googleapis.com
+  url_keys:
+  - studentId
+  query_string_params:
+  - invitedEmailAddress
+  - pageSize
+  - pageToken
+  whitelist:
+  - guardians
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages classes, rosters, and invitations in Google Classroom.
+    version: v1
+    slug: google-classroom-v1-v1-userprofiles-studentid-guardians
+    schemes:
+    - https
+    mapping:
+      guardians: guardians
+      nextPageToken: nextPageToken
+    hosts:
+    - https://classroom.googleapis.com
+    topics:
+    - education
+    - userprofiles
+- group: google-classroom-v1
+  url_pattern: /v1/userProfiles/{studentId}/guardians/{guardianId}
+  method: GET
+  host:
+  - https://classroom.googleapis.com
+  url_keys:
+  - guardianId
+  - studentId
+  whitelist:
+  - guardianId
+  - invitedEmailAddress
+  - studentId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages classes, rosters, and invitations in Google Classroom.
+    version: v1
+    slug: google-classroom-v1-v1-userprofiles-studentid-guardians-guardianid
+    schemes:
+    - https
+    mapping:
+      guardianId: guardianId
+      invitedEmailAddress: invitedEmailAddress
+      studentId: studentId
+    hosts:
+    - https://classroom.googleapis.com
+    topics:
+    - education
+    - userprofiles
+- group: google-classroom-v1
+  url_pattern: /v1/userProfiles/{userId}
+  method: GET
+  host:
+  - https://classroom.googleapis.com
+  url_keys:
+  - userId
+  whitelist:
+  - emailAddress
+  - id
+  - permissions
+  - photoUrl
+  - verifiedTeacher
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages classes, rosters, and invitations in Google Classroom.
+    version: v1
+    slug: google-classroom-v1-v1-userprofiles-userid
+    schemes:
+    - https
+    mapping:
+      emailAddress: emailAddress
+      id: id
+      permissions: permissions
+      photoUrl: photoUrl
+      verifiedTeacher: verifiedTeacher
+    hosts:
+    - https://classroom.googleapis.com
+    topics:
+    - education
+    - userprofiles

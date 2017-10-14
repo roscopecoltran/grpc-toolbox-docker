@@ -1,0 +1,1046 @@
+{
+	"backends": [
+		{
+			"group": "google-dataflow-v1b3",
+			"url_pattern": "/v1b3/projects/{projectId}/WorkerMessages",
+			"method": "POST",
+			"host": [
+				"https://dataflow.googleapis.com"
+			],
+			"url_keys": [
+				"projectId"
+			],
+			"whitelist": [
+				"workerMessageResponses"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Google Cloud Dataflow projects on Google Cloud Platform.",
+				"version": "v1b3",
+				"slug": "google-dataflow-v1b3-v1b3-projects-projectid-workermessages",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"workerMessageResponses": "workerMessageResponses"
+				},
+				"hosts": [
+					"https://dataflow.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		},
+		{
+			"group": "google-dataflow-v1b3",
+			"url_pattern": "/v1b3/projects/{projectId}/jobs",
+			"method": "GET",
+			"host": [
+				"https://dataflow.googleapis.com"
+			],
+			"url_keys": [
+				"projectId"
+			],
+			"query_string_params": [
+				"filter",
+				"location",
+				"pageSize",
+				"pageToken",
+				"view"
+			],
+			"whitelist": [
+				"failedLocation",
+				"jobs",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Google Cloud Dataflow projects on Google Cloud Platform.",
+				"version": "v1b3",
+				"slug": "google-dataflow-v1b3-v1b3-projects-projectid-jobs",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"failedLocation": "failedLocation",
+					"jobs": "jobs",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://dataflow.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		},
+		{
+			"group": "google-dataflow-v1b3",
+			"url_pattern": "/v1b3/projects/{projectId}/jobs/{jobId}",
+			"method": "GET",
+			"host": [
+				"https://dataflow.googleapis.com"
+			],
+			"url_keys": [
+				"jobId",
+				"projectId"
+			],
+			"query_string_params": [
+				"location",
+				"view"
+			],
+			"whitelist": [
+				"clientRequestId",
+				"createTime",
+				"currentState",
+				"currentStateTime",
+				"id",
+				"labels",
+				"labels.additionalProperties",
+				"location",
+				"name",
+				"projectId",
+				"replaceJobId",
+				"replacedByJobId",
+				"requestedState",
+				"stageStates",
+				"steps",
+				"tempFiles",
+				"transformNameMapping",
+				"transformNameMapping.additionalProperties"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Google Cloud Dataflow projects on Google Cloud Platform.",
+				"version": "v1b3",
+				"slug": "google-dataflow-v1b3-v1b3-projects-projectid-jobs-jobid",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"clientRequestId": "clientRequestId",
+					"createTime": "createTime",
+					"currentState": "currentState",
+					"currentStateTime": "currentStateTime",
+					"id": "id",
+					"labels": "labels",
+					"labels.additionalProperties": "labels.additionalProperties",
+					"location": "location",
+					"name": "name",
+					"projectId": "projectId",
+					"replaceJobId": "replaceJobId",
+					"replacedByJobId": "replacedByJobId",
+					"requestedState": "requestedState",
+					"stageStates": "stageStates",
+					"steps": "steps",
+					"tempFiles": "tempFiles",
+					"transformNameMapping": "transformNameMapping",
+					"transformNameMapping.additionalProperties": "transformNameMapping.additionalProperties"
+				},
+				"hosts": [
+					"https://dataflow.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		},
+		{
+			"group": "google-dataflow-v1b3",
+			"url_pattern": "/v1b3/projects/{projectId}/jobs/{jobId}/debug/getConfig",
+			"method": "POST",
+			"host": [
+				"https://dataflow.googleapis.com"
+			],
+			"url_keys": [
+				"jobId",
+				"projectId"
+			],
+			"whitelist": [
+				"config"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Google Cloud Dataflow projects on Google Cloud Platform.",
+				"version": "v1b3",
+				"slug": "google-dataflow-v1b3-v1b3-projects-projectid-jobs-jobid-debug-getconfig",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"config": "config"
+				},
+				"hosts": [
+					"https://dataflow.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		},
+		{
+			"group": "google-dataflow-v1b3",
+			"url_pattern": "/v1b3/projects/{projectId}/jobs/{jobId}/debug/sendCapture",
+			"method": "POST",
+			"host": [
+				"https://dataflow.googleapis.com"
+			],
+			"url_keys": [
+				"jobId",
+				"projectId"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Google Cloud Dataflow projects on Google Cloud Platform.",
+				"version": "v1b3",
+				"slug": "google-dataflow-v1b3-v1b3-projects-projectid-jobs-jobid-debug-sendcapture",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://dataflow.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		},
+		{
+			"group": "google-dataflow-v1b3",
+			"url_pattern": "/v1b3/projects/{projectId}/jobs/{jobId}/messages",
+			"method": "GET",
+			"host": [
+				"https://dataflow.googleapis.com"
+			],
+			"url_keys": [
+				"jobId",
+				"projectId"
+			],
+			"query_string_params": [
+				"endTime",
+				"location",
+				"minimumImportance",
+				"pageSize",
+				"pageToken",
+				"startTime"
+			],
+			"whitelist": [
+				"autoscalingEvents",
+				"jobMessages",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Google Cloud Dataflow projects on Google Cloud Platform.",
+				"version": "v1b3",
+				"slug": "google-dataflow-v1b3-v1b3-projects-projectid-jobs-jobid-messages",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"autoscalingEvents": "autoscalingEvents",
+					"jobMessages": "jobMessages",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://dataflow.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		},
+		{
+			"group": "google-dataflow-v1b3",
+			"url_pattern": "/v1b3/projects/{projectId}/jobs/{jobId}/metrics",
+			"method": "GET",
+			"host": [
+				"https://dataflow.googleapis.com"
+			],
+			"url_keys": [
+				"jobId",
+				"projectId"
+			],
+			"query_string_params": [
+				"location",
+				"startTime"
+			],
+			"whitelist": [
+				"metricTime",
+				"metrics"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Google Cloud Dataflow projects on Google Cloud Platform.",
+				"version": "v1b3",
+				"slug": "google-dataflow-v1b3-v1b3-projects-projectid-jobs-jobid-metrics",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"metricTime": "metricTime",
+					"metrics": "metrics"
+				},
+				"hosts": [
+					"https://dataflow.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		},
+		{
+			"group": "google-dataflow-v1b3",
+			"url_pattern": "/v1b3/projects/{projectId}/jobs/{jobId}/workItems:lease",
+			"method": "POST",
+			"host": [
+				"https://dataflow.googleapis.com"
+			],
+			"url_keys": [
+				"jobId",
+				"projectId"
+			],
+			"whitelist": [
+				"workItems"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Google Cloud Dataflow projects on Google Cloud Platform.",
+				"version": "v1b3",
+				"slug": "google-dataflow-v1b3-v1b3-projects-projectid-jobs-jobid-workitems-lease",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"workItems": "workItems"
+				},
+				"hosts": [
+					"https://dataflow.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		},
+		{
+			"group": "google-dataflow-v1b3",
+			"url_pattern": "/v1b3/projects/{projectId}/jobs/{jobId}/workItems:reportStatus",
+			"method": "POST",
+			"host": [
+				"https://dataflow.googleapis.com"
+			],
+			"url_keys": [
+				"jobId",
+				"projectId"
+			],
+			"whitelist": [
+				"workItemServiceStates"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Google Cloud Dataflow projects on Google Cloud Platform.",
+				"version": "v1b3",
+				"slug": "google-dataflow-v1b3-v1b3-projects-projectid-jobs-jobid-workitems-reportstatus",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"workItemServiceStates": "workItemServiceStates"
+				},
+				"hosts": [
+					"https://dataflow.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		},
+		{
+			"group": "google-dataflow-v1b3",
+			"url_pattern": "/v1b3/projects/{projectId}/jobs:aggregated",
+			"method": "GET",
+			"host": [
+				"https://dataflow.googleapis.com"
+			],
+			"url_keys": [
+				"projectId"
+			],
+			"query_string_params": [
+				"filter",
+				"location",
+				"pageSize",
+				"pageToken",
+				"view"
+			],
+			"whitelist": [
+				"failedLocation",
+				"jobs",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Google Cloud Dataflow projects on Google Cloud Platform.",
+				"version": "v1b3",
+				"slug": "google-dataflow-v1b3-v1b3-projects-projectid-jobs-aggregated",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"failedLocation": "failedLocation",
+					"jobs": "jobs",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://dataflow.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		},
+		{
+			"group": "google-dataflow-v1b3",
+			"url_pattern": "/v1b3/projects/{projectId}/locations/{location}/WorkerMessages",
+			"method": "POST",
+			"host": [
+				"https://dataflow.googleapis.com"
+			],
+			"url_keys": [
+				"location",
+				"projectId"
+			],
+			"whitelist": [
+				"workerMessageResponses"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Google Cloud Dataflow projects on Google Cloud Platform.",
+				"version": "v1b3",
+				"slug": "google-dataflow-v1b3-v1b3-projects-projectid-locations-location-workermessages",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"workerMessageResponses": "workerMessageResponses"
+				},
+				"hosts": [
+					"https://dataflow.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		},
+		{
+			"group": "google-dataflow-v1b3",
+			"url_pattern": "/v1b3/projects/{projectId}/locations/{location}/jobs",
+			"method": "GET",
+			"host": [
+				"https://dataflow.googleapis.com"
+			],
+			"url_keys": [
+				"location",
+				"projectId"
+			],
+			"query_string_params": [
+				"filter",
+				"pageSize",
+				"pageToken",
+				"view"
+			],
+			"whitelist": [
+				"failedLocation",
+				"jobs",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Google Cloud Dataflow projects on Google Cloud Platform.",
+				"version": "v1b3",
+				"slug": "google-dataflow-v1b3-v1b3-projects-projectid-locations-location-jobs",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"failedLocation": "failedLocation",
+					"jobs": "jobs",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://dataflow.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		},
+		{
+			"group": "google-dataflow-v1b3",
+			"url_pattern": "/v1b3/projects/{projectId}/locations/{location}/jobs/{jobId}",
+			"method": "GET",
+			"host": [
+				"https://dataflow.googleapis.com"
+			],
+			"url_keys": [
+				"jobId",
+				"location",
+				"projectId"
+			],
+			"query_string_params": [
+				"view"
+			],
+			"whitelist": [
+				"clientRequestId",
+				"createTime",
+				"currentState",
+				"currentStateTime",
+				"id",
+				"labels",
+				"labels.additionalProperties",
+				"location",
+				"name",
+				"projectId",
+				"replaceJobId",
+				"replacedByJobId",
+				"requestedState",
+				"stageStates",
+				"steps",
+				"tempFiles",
+				"transformNameMapping",
+				"transformNameMapping.additionalProperties"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Google Cloud Dataflow projects on Google Cloud Platform.",
+				"version": "v1b3",
+				"slug": "google-dataflow-v1b3-v1b3-projects-projectid-locations-location-jobs-jobid",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"clientRequestId": "clientRequestId",
+					"createTime": "createTime",
+					"currentState": "currentState",
+					"currentStateTime": "currentStateTime",
+					"id": "id",
+					"labels": "labels",
+					"labels.additionalProperties": "labels.additionalProperties",
+					"location": "location",
+					"name": "name",
+					"projectId": "projectId",
+					"replaceJobId": "replaceJobId",
+					"replacedByJobId": "replacedByJobId",
+					"requestedState": "requestedState",
+					"stageStates": "stageStates",
+					"steps": "steps",
+					"tempFiles": "tempFiles",
+					"transformNameMapping": "transformNameMapping",
+					"transformNameMapping.additionalProperties": "transformNameMapping.additionalProperties"
+				},
+				"hosts": [
+					"https://dataflow.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		},
+		{
+			"group": "google-dataflow-v1b3",
+			"url_pattern": "/v1b3/projects/{projectId}/locations/{location}/jobs/{jobId}/debug/getConfig",
+			"method": "POST",
+			"host": [
+				"https://dataflow.googleapis.com"
+			],
+			"url_keys": [
+				"jobId",
+				"location",
+				"projectId"
+			],
+			"whitelist": [
+				"config"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Google Cloud Dataflow projects on Google Cloud Platform.",
+				"version": "v1b3",
+				"slug": "google-dataflow-v1b3-v1b3-projects-projectid-locations-location-jobs-jobid-debug-getconfig",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"config": "config"
+				},
+				"hosts": [
+					"https://dataflow.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		},
+		{
+			"group": "google-dataflow-v1b3",
+			"url_pattern": "/v1b3/projects/{projectId}/locations/{location}/jobs/{jobId}/debug/sendCapture",
+			"method": "POST",
+			"host": [
+				"https://dataflow.googleapis.com"
+			],
+			"url_keys": [
+				"jobId",
+				"location",
+				"projectId"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Google Cloud Dataflow projects on Google Cloud Platform.",
+				"version": "v1b3",
+				"slug": "google-dataflow-v1b3-v1b3-projects-projectid-locations-location-jobs-jobid-debug-sendcapture",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://dataflow.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		},
+		{
+			"group": "google-dataflow-v1b3",
+			"url_pattern": "/v1b3/projects/{projectId}/locations/{location}/jobs/{jobId}/messages",
+			"method": "GET",
+			"host": [
+				"https://dataflow.googleapis.com"
+			],
+			"url_keys": [
+				"jobId",
+				"location",
+				"projectId"
+			],
+			"query_string_params": [
+				"endTime",
+				"minimumImportance",
+				"pageSize",
+				"pageToken",
+				"startTime"
+			],
+			"whitelist": [
+				"autoscalingEvents",
+				"jobMessages",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Google Cloud Dataflow projects on Google Cloud Platform.",
+				"version": "v1b3",
+				"slug": "google-dataflow-v1b3-v1b3-projects-projectid-locations-location-jobs-jobid-messages",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"autoscalingEvents": "autoscalingEvents",
+					"jobMessages": "jobMessages",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://dataflow.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		},
+		{
+			"group": "google-dataflow-v1b3",
+			"url_pattern": "/v1b3/projects/{projectId}/locations/{location}/jobs/{jobId}/metrics",
+			"method": "GET",
+			"host": [
+				"https://dataflow.googleapis.com"
+			],
+			"url_keys": [
+				"jobId",
+				"location",
+				"projectId"
+			],
+			"query_string_params": [
+				"startTime"
+			],
+			"whitelist": [
+				"metricTime",
+				"metrics"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Google Cloud Dataflow projects on Google Cloud Platform.",
+				"version": "v1b3",
+				"slug": "google-dataflow-v1b3-v1b3-projects-projectid-locations-location-jobs-jobid-metrics",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"metricTime": "metricTime",
+					"metrics": "metrics"
+				},
+				"hosts": [
+					"https://dataflow.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		},
+		{
+			"group": "google-dataflow-v1b3",
+			"url_pattern": "/v1b3/projects/{projectId}/locations/{location}/jobs/{jobId}/workItems:lease",
+			"method": "POST",
+			"host": [
+				"https://dataflow.googleapis.com"
+			],
+			"url_keys": [
+				"jobId",
+				"location",
+				"projectId"
+			],
+			"whitelist": [
+				"workItems"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Google Cloud Dataflow projects on Google Cloud Platform.",
+				"version": "v1b3",
+				"slug": "google-dataflow-v1b3-v1b3-projects-projectid-locations-location-jobs-jobid-workitems-lease",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"workItems": "workItems"
+				},
+				"hosts": [
+					"https://dataflow.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		},
+		{
+			"group": "google-dataflow-v1b3",
+			"url_pattern": "/v1b3/projects/{projectId}/locations/{location}/jobs/{jobId}/workItems:reportStatus",
+			"method": "POST",
+			"host": [
+				"https://dataflow.googleapis.com"
+			],
+			"url_keys": [
+				"jobId",
+				"location",
+				"projectId"
+			],
+			"whitelist": [
+				"workItemServiceStates"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Google Cloud Dataflow projects on Google Cloud Platform.",
+				"version": "v1b3",
+				"slug": "google-dataflow-v1b3-v1b3-projects-projectid-locations-location-jobs-jobid-workitems-reportstatus",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"workItemServiceStates": "workItemServiceStates"
+				},
+				"hosts": [
+					"https://dataflow.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		},
+		{
+			"group": "google-dataflow-v1b3",
+			"url_pattern": "/v1b3/projects/{projectId}/locations/{location}/templates",
+			"method": "POST",
+			"host": [
+				"https://dataflow.googleapis.com"
+			],
+			"url_keys": [
+				"location",
+				"projectId"
+			],
+			"whitelist": [
+				"clientRequestId",
+				"createTime",
+				"currentState",
+				"currentStateTime",
+				"id",
+				"labels",
+				"labels.additionalProperties",
+				"location",
+				"name",
+				"projectId",
+				"replaceJobId",
+				"replacedByJobId",
+				"requestedState",
+				"stageStates",
+				"steps",
+				"tempFiles",
+				"transformNameMapping",
+				"transformNameMapping.additionalProperties"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Google Cloud Dataflow projects on Google Cloud Platform.",
+				"version": "v1b3",
+				"slug": "google-dataflow-v1b3-v1b3-projects-projectid-locations-location-templates",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"clientRequestId": "clientRequestId",
+					"createTime": "createTime",
+					"currentState": "currentState",
+					"currentStateTime": "currentStateTime",
+					"id": "id",
+					"labels": "labels",
+					"labels.additionalProperties": "labels.additionalProperties",
+					"location": "location",
+					"name": "name",
+					"projectId": "projectId",
+					"replaceJobId": "replaceJobId",
+					"replacedByJobId": "replacedByJobId",
+					"requestedState": "requestedState",
+					"stageStates": "stageStates",
+					"steps": "steps",
+					"tempFiles": "tempFiles",
+					"transformNameMapping": "transformNameMapping",
+					"transformNameMapping.additionalProperties": "transformNameMapping.additionalProperties"
+				},
+				"hosts": [
+					"https://dataflow.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		},
+		{
+			"group": "google-dataflow-v1b3",
+			"url_pattern": "/v1b3/projects/{projectId}/locations/{location}/templates:get",
+			"method": "GET",
+			"host": [
+				"https://dataflow.googleapis.com"
+			],
+			"url_keys": [
+				"location",
+				"projectId"
+			],
+			"query_string_params": [
+				"gcsPath",
+				"view"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Google Cloud Dataflow projects on Google Cloud Platform.",
+				"version": "v1b3",
+				"slug": "google-dataflow-v1b3-v1b3-projects-projectid-locations-location-templates-get",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://dataflow.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		},
+		{
+			"group": "google-dataflow-v1b3",
+			"url_pattern": "/v1b3/projects/{projectId}/locations/{location}/templates:launch",
+			"method": "POST",
+			"host": [
+				"https://dataflow.googleapis.com"
+			],
+			"url_keys": [
+				"location",
+				"projectId"
+			],
+			"query_string_params": [
+				"gcsPath",
+				"validateOnly"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Google Cloud Dataflow projects on Google Cloud Platform.",
+				"version": "v1b3",
+				"slug": "google-dataflow-v1b3-v1b3-projects-projectid-locations-location-templates-launch",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://dataflow.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		},
+		{
+			"group": "google-dataflow-v1b3",
+			"url_pattern": "/v1b3/projects/{projectId}/templates",
+			"method": "POST",
+			"host": [
+				"https://dataflow.googleapis.com"
+			],
+			"url_keys": [
+				"projectId"
+			],
+			"whitelist": [
+				"clientRequestId",
+				"createTime",
+				"currentState",
+				"currentStateTime",
+				"id",
+				"labels",
+				"labels.additionalProperties",
+				"location",
+				"name",
+				"projectId",
+				"replaceJobId",
+				"replacedByJobId",
+				"requestedState",
+				"stageStates",
+				"steps",
+				"tempFiles",
+				"transformNameMapping",
+				"transformNameMapping.additionalProperties"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Google Cloud Dataflow projects on Google Cloud Platform.",
+				"version": "v1b3",
+				"slug": "google-dataflow-v1b3-v1b3-projects-projectid-templates",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"clientRequestId": "clientRequestId",
+					"createTime": "createTime",
+					"currentState": "currentState",
+					"currentStateTime": "currentStateTime",
+					"id": "id",
+					"labels": "labels",
+					"labels.additionalProperties": "labels.additionalProperties",
+					"location": "location",
+					"name": "name",
+					"projectId": "projectId",
+					"replaceJobId": "replaceJobId",
+					"replacedByJobId": "replacedByJobId",
+					"requestedState": "requestedState",
+					"stageStates": "stageStates",
+					"steps": "steps",
+					"tempFiles": "tempFiles",
+					"transformNameMapping": "transformNameMapping",
+					"transformNameMapping.additionalProperties": "transformNameMapping.additionalProperties"
+				},
+				"hosts": [
+					"https://dataflow.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		},
+		{
+			"group": "google-dataflow-v1b3",
+			"url_pattern": "/v1b3/projects/{projectId}/templates:get",
+			"method": "GET",
+			"host": [
+				"https://dataflow.googleapis.com"
+			],
+			"url_keys": [
+				"projectId"
+			],
+			"query_string_params": [
+				"gcsPath",
+				"location",
+				"view"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Google Cloud Dataflow projects on Google Cloud Platform.",
+				"version": "v1b3",
+				"slug": "google-dataflow-v1b3-v1b3-projects-projectid-templates-get",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://dataflow.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		},
+		{
+			"group": "google-dataflow-v1b3",
+			"url_pattern": "/v1b3/projects/{projectId}/templates:launch",
+			"method": "POST",
+			"host": [
+				"https://dataflow.googleapis.com"
+			],
+			"url_keys": [
+				"projectId"
+			],
+			"query_string_params": [
+				"gcsPath",
+				"location",
+				"validateOnly"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Manages Google Cloud Dataflow projects on Google Cloud Platform.",
+				"version": "v1b3",
+				"slug": "google-dataflow-v1b3-v1b3-projects-projectid-templates-launch",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://dataflow.googleapis.com"
+				],
+				"topics": [
+					"projects"
+				]
+			}
+		}
+	]
+}

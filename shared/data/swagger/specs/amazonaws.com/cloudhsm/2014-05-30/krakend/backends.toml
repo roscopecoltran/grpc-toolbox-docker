@@ -1,0 +1,359 @@
+[[backends]]
+  group = "amazon-cloudhsm-2014-05-30"
+  url_pattern = "/#CreateHapg"
+  method = "POST"
+  encoding = "json"
+  host = ["http://cloudhsm.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS CloudHSM Service</fullname> <p>This is the reference for AWS CloudHSM Classic. For more information, see <a href=\"http://aws.amazon.com/cloudhsm/faqs-classic/\">AWS CloudHSM Classic FAQs</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/classic/userguide/\">AWS CloudHSM Classic User Guide</a>.</p> <p>For more information about AWS CloudHSM, see <a href=\"http://aws.amazon.com/cloudhsm/\">AWS CloudHSM</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/latest/userguide/\">AWS CloudHSM User Guide</a>.</p>"
+    version = "2014-05-30"
+    slug = "amazon-cloudhsm-2014-05-30-createhapg"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://cloudhsm.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-cloudhsm-2014-05-30"
+  url_pattern = "/#CreateHsm"
+  method = "POST"
+  encoding = "json"
+  host = ["http://cloudhsm.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS CloudHSM Service</fullname> <p>This is the reference for AWS CloudHSM Classic. For more information, see <a href=\"http://aws.amazon.com/cloudhsm/faqs-classic/\">AWS CloudHSM Classic FAQs</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/classic/userguide/\">AWS CloudHSM Classic User Guide</a>.</p> <p>For more information about AWS CloudHSM, see <a href=\"http://aws.amazon.com/cloudhsm/\">AWS CloudHSM</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/latest/userguide/\">AWS CloudHSM User Guide</a>.</p>"
+    version = "2014-05-30"
+    slug = "amazon-cloudhsm-2014-05-30-createhsm"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://cloudhsm.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-cloudhsm-2014-05-30"
+  url_pattern = "/#CreateLunaClient"
+  method = "POST"
+  encoding = "json"
+  host = ["http://cloudhsm.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS CloudHSM Service</fullname> <p>This is the reference for AWS CloudHSM Classic. For more information, see <a href=\"http://aws.amazon.com/cloudhsm/faqs-classic/\">AWS CloudHSM Classic FAQs</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/classic/userguide/\">AWS CloudHSM Classic User Guide</a>.</p> <p>For more information about AWS CloudHSM, see <a href=\"http://aws.amazon.com/cloudhsm/\">AWS CloudHSM</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/latest/userguide/\">AWS CloudHSM User Guide</a>.</p>"
+    version = "2014-05-30"
+    slug = "amazon-cloudhsm-2014-05-30-createlunaclient"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://cloudhsm.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-cloudhsm-2014-05-30"
+  url_pattern = "/#DeleteHapg"
+  method = "POST"
+  encoding = "json"
+  host = ["http://cloudhsm.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS CloudHSM Service</fullname> <p>This is the reference for AWS CloudHSM Classic. For more information, see <a href=\"http://aws.amazon.com/cloudhsm/faqs-classic/\">AWS CloudHSM Classic FAQs</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/classic/userguide/\">AWS CloudHSM Classic User Guide</a>.</p> <p>For more information about AWS CloudHSM, see <a href=\"http://aws.amazon.com/cloudhsm/\">AWS CloudHSM</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/latest/userguide/\">AWS CloudHSM User Guide</a>.</p>"
+    version = "2014-05-30"
+    slug = "amazon-cloudhsm-2014-05-30-deletehapg"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://cloudhsm.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-cloudhsm-2014-05-30"
+  url_pattern = "/#DeleteHsm"
+  method = "POST"
+  encoding = "json"
+  host = ["http://cloudhsm.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS CloudHSM Service</fullname> <p>This is the reference for AWS CloudHSM Classic. For more information, see <a href=\"http://aws.amazon.com/cloudhsm/faqs-classic/\">AWS CloudHSM Classic FAQs</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/classic/userguide/\">AWS CloudHSM Classic User Guide</a>.</p> <p>For more information about AWS CloudHSM, see <a href=\"http://aws.amazon.com/cloudhsm/\">AWS CloudHSM</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/latest/userguide/\">AWS CloudHSM User Guide</a>.</p>"
+    version = "2014-05-30"
+    slug = "amazon-cloudhsm-2014-05-30-deletehsm"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://cloudhsm.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-cloudhsm-2014-05-30"
+  url_pattern = "/#DeleteLunaClient"
+  method = "POST"
+  encoding = "json"
+  host = ["http://cloudhsm.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS CloudHSM Service</fullname> <p>This is the reference for AWS CloudHSM Classic. For more information, see <a href=\"http://aws.amazon.com/cloudhsm/faqs-classic/\">AWS CloudHSM Classic FAQs</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/classic/userguide/\">AWS CloudHSM Classic User Guide</a>.</p> <p>For more information about AWS CloudHSM, see <a href=\"http://aws.amazon.com/cloudhsm/\">AWS CloudHSM</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/latest/userguide/\">AWS CloudHSM User Guide</a>.</p>"
+    version = "2014-05-30"
+    slug = "amazon-cloudhsm-2014-05-30-deletelunaclient"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://cloudhsm.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-cloudhsm-2014-05-30"
+  url_pattern = "/#DescribeHapg"
+  method = "POST"
+  encoding = "json"
+  host = ["http://cloudhsm.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS CloudHSM Service</fullname> <p>This is the reference for AWS CloudHSM Classic. For more information, see <a href=\"http://aws.amazon.com/cloudhsm/faqs-classic/\">AWS CloudHSM Classic FAQs</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/classic/userguide/\">AWS CloudHSM Classic User Guide</a>.</p> <p>For more information about AWS CloudHSM, see <a href=\"http://aws.amazon.com/cloudhsm/\">AWS CloudHSM</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/latest/userguide/\">AWS CloudHSM User Guide</a>.</p>"
+    version = "2014-05-30"
+    slug = "amazon-cloudhsm-2014-05-30-describehapg"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://cloudhsm.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-cloudhsm-2014-05-30"
+  url_pattern = "/#DescribeHsm"
+  method = "POST"
+  encoding = "json"
+  host = ["http://cloudhsm.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS CloudHSM Service</fullname> <p>This is the reference for AWS CloudHSM Classic. For more information, see <a href=\"http://aws.amazon.com/cloudhsm/faqs-classic/\">AWS CloudHSM Classic FAQs</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/classic/userguide/\">AWS CloudHSM Classic User Guide</a>.</p> <p>For more information about AWS CloudHSM, see <a href=\"http://aws.amazon.com/cloudhsm/\">AWS CloudHSM</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/latest/userguide/\">AWS CloudHSM User Guide</a>.</p>"
+    version = "2014-05-30"
+    slug = "amazon-cloudhsm-2014-05-30-describehsm"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://cloudhsm.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-cloudhsm-2014-05-30"
+  url_pattern = "/#DescribeLunaClient"
+  method = "POST"
+  encoding = "json"
+  host = ["http://cloudhsm.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS CloudHSM Service</fullname> <p>This is the reference for AWS CloudHSM Classic. For more information, see <a href=\"http://aws.amazon.com/cloudhsm/faqs-classic/\">AWS CloudHSM Classic FAQs</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/classic/userguide/\">AWS CloudHSM Classic User Guide</a>.</p> <p>For more information about AWS CloudHSM, see <a href=\"http://aws.amazon.com/cloudhsm/\">AWS CloudHSM</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/latest/userguide/\">AWS CloudHSM User Guide</a>.</p>"
+    version = "2014-05-30"
+    slug = "amazon-cloudhsm-2014-05-30-describelunaclient"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://cloudhsm.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-cloudhsm-2014-05-30"
+  url_pattern = "/#GetConfig"
+  method = "POST"
+  encoding = "json"
+  host = ["http://cloudhsm.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS CloudHSM Service</fullname> <p>This is the reference for AWS CloudHSM Classic. For more information, see <a href=\"http://aws.amazon.com/cloudhsm/faqs-classic/\">AWS CloudHSM Classic FAQs</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/classic/userguide/\">AWS CloudHSM Classic User Guide</a>.</p> <p>For more information about AWS CloudHSM, see <a href=\"http://aws.amazon.com/cloudhsm/\">AWS CloudHSM</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/latest/userguide/\">AWS CloudHSM User Guide</a>.</p>"
+    version = "2014-05-30"
+    slug = "amazon-cloudhsm-2014-05-30-getconfig"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://cloudhsm.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-cloudhsm-2014-05-30"
+  url_pattern = "/#ListAvailableZones"
+  method = "POST"
+  encoding = "json"
+  host = ["http://cloudhsm.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS CloudHSM Service</fullname> <p>This is the reference for AWS CloudHSM Classic. For more information, see <a href=\"http://aws.amazon.com/cloudhsm/faqs-classic/\">AWS CloudHSM Classic FAQs</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/classic/userguide/\">AWS CloudHSM Classic User Guide</a>.</p> <p>For more information about AWS CloudHSM, see <a href=\"http://aws.amazon.com/cloudhsm/\">AWS CloudHSM</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/latest/userguide/\">AWS CloudHSM User Guide</a>.</p>"
+    version = "2014-05-30"
+    slug = "amazon-cloudhsm-2014-05-30-listavailablezones"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://cloudhsm.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-cloudhsm-2014-05-30"
+  url_pattern = "/#ListHapgs"
+  method = "POST"
+  encoding = "json"
+  host = ["http://cloudhsm.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS CloudHSM Service</fullname> <p>This is the reference for AWS CloudHSM Classic. For more information, see <a href=\"http://aws.amazon.com/cloudhsm/faqs-classic/\">AWS CloudHSM Classic FAQs</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/classic/userguide/\">AWS CloudHSM Classic User Guide</a>.</p> <p>For more information about AWS CloudHSM, see <a href=\"http://aws.amazon.com/cloudhsm/\">AWS CloudHSM</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/latest/userguide/\">AWS CloudHSM User Guide</a>.</p>"
+    version = "2014-05-30"
+    slug = "amazon-cloudhsm-2014-05-30-listhapgs"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://cloudhsm.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-cloudhsm-2014-05-30"
+  url_pattern = "/#ListHsms"
+  method = "POST"
+  encoding = "json"
+  host = ["http://cloudhsm.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS CloudHSM Service</fullname> <p>This is the reference for AWS CloudHSM Classic. For more information, see <a href=\"http://aws.amazon.com/cloudhsm/faqs-classic/\">AWS CloudHSM Classic FAQs</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/classic/userguide/\">AWS CloudHSM Classic User Guide</a>.</p> <p>For more information about AWS CloudHSM, see <a href=\"http://aws.amazon.com/cloudhsm/\">AWS CloudHSM</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/latest/userguide/\">AWS CloudHSM User Guide</a>.</p>"
+    version = "2014-05-30"
+    slug = "amazon-cloudhsm-2014-05-30-listhsms"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://cloudhsm.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-cloudhsm-2014-05-30"
+  url_pattern = "/#ListLunaClients"
+  method = "POST"
+  encoding = "json"
+  host = ["http://cloudhsm.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS CloudHSM Service</fullname> <p>This is the reference for AWS CloudHSM Classic. For more information, see <a href=\"http://aws.amazon.com/cloudhsm/faqs-classic/\">AWS CloudHSM Classic FAQs</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/classic/userguide/\">AWS CloudHSM Classic User Guide</a>.</p> <p>For more information about AWS CloudHSM, see <a href=\"http://aws.amazon.com/cloudhsm/\">AWS CloudHSM</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/latest/userguide/\">AWS CloudHSM User Guide</a>.</p>"
+    version = "2014-05-30"
+    slug = "amazon-cloudhsm-2014-05-30-listlunaclients"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://cloudhsm.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-cloudhsm-2014-05-30"
+  url_pattern = "/#ListTagsForResource"
+  method = "POST"
+  encoding = "json"
+  host = ["http://cloudhsm.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS CloudHSM Service</fullname> <p>This is the reference for AWS CloudHSM Classic. For more information, see <a href=\"http://aws.amazon.com/cloudhsm/faqs-classic/\">AWS CloudHSM Classic FAQs</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/classic/userguide/\">AWS CloudHSM Classic User Guide</a>.</p> <p>For more information about AWS CloudHSM, see <a href=\"http://aws.amazon.com/cloudhsm/\">AWS CloudHSM</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/latest/userguide/\">AWS CloudHSM User Guide</a>.</p>"
+    version = "2014-05-30"
+    slug = "amazon-cloudhsm-2014-05-30-listtagsforresource"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://cloudhsm.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-cloudhsm-2014-05-30"
+  url_pattern = "/#ModifyHapg"
+  method = "POST"
+  encoding = "json"
+  host = ["http://cloudhsm.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS CloudHSM Service</fullname> <p>This is the reference for AWS CloudHSM Classic. For more information, see <a href=\"http://aws.amazon.com/cloudhsm/faqs-classic/\">AWS CloudHSM Classic FAQs</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/classic/userguide/\">AWS CloudHSM Classic User Guide</a>.</p> <p>For more information about AWS CloudHSM, see <a href=\"http://aws.amazon.com/cloudhsm/\">AWS CloudHSM</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/latest/userguide/\">AWS CloudHSM User Guide</a>.</p>"
+    version = "2014-05-30"
+    slug = "amazon-cloudhsm-2014-05-30-modifyhapg"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://cloudhsm.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-cloudhsm-2014-05-30"
+  url_pattern = "/#ModifyHsm"
+  method = "POST"
+  encoding = "json"
+  host = ["http://cloudhsm.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS CloudHSM Service</fullname> <p>This is the reference for AWS CloudHSM Classic. For more information, see <a href=\"http://aws.amazon.com/cloudhsm/faqs-classic/\">AWS CloudHSM Classic FAQs</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/classic/userguide/\">AWS CloudHSM Classic User Guide</a>.</p> <p>For more information about AWS CloudHSM, see <a href=\"http://aws.amazon.com/cloudhsm/\">AWS CloudHSM</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/latest/userguide/\">AWS CloudHSM User Guide</a>.</p>"
+    version = "2014-05-30"
+    slug = "amazon-cloudhsm-2014-05-30-modifyhsm"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://cloudhsm.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-cloudhsm-2014-05-30"
+  url_pattern = "/#ModifyLunaClient"
+  method = "POST"
+  encoding = "json"
+  host = ["http://cloudhsm.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS CloudHSM Service</fullname> <p>This is the reference for AWS CloudHSM Classic. For more information, see <a href=\"http://aws.amazon.com/cloudhsm/faqs-classic/\">AWS CloudHSM Classic FAQs</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/classic/userguide/\">AWS CloudHSM Classic User Guide</a>.</p> <p>For more information about AWS CloudHSM, see <a href=\"http://aws.amazon.com/cloudhsm/\">AWS CloudHSM</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/latest/userguide/\">AWS CloudHSM User Guide</a>.</p>"
+    version = "2014-05-30"
+    slug = "amazon-cloudhsm-2014-05-30-modifylunaclient"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://cloudhsm.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-cloudhsm-2014-05-30"
+  url_pattern = "/#RemoveTagsFromResource"
+  method = "POST"
+  encoding = "json"
+  host = ["http://cloudhsm.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS CloudHSM Service</fullname> <p>This is the reference for AWS CloudHSM Classic. For more information, see <a href=\"http://aws.amazon.com/cloudhsm/faqs-classic/\">AWS CloudHSM Classic FAQs</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/classic/userguide/\">AWS CloudHSM Classic User Guide</a>.</p> <p>For more information about AWS CloudHSM, see <a href=\"http://aws.amazon.com/cloudhsm/\">AWS CloudHSM</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/latest/userguide/\">AWS CloudHSM User Guide</a>.</p>"
+    version = "2014-05-30"
+    slug = "amazon-cloudhsm-2014-05-30-removetagsfromresource"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://cloudhsm.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-cloudhsm-2014-05-30"
+  url_pattern = "/"
+  method = "POST"
+  encoding = "json"
+  host = ["http://cloudhsm.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS CloudHSM Service</fullname> <p>This is the reference for AWS CloudHSM Classic. For more information, see <a href=\"http://aws.amazon.com/cloudhsm/faqs-classic/\">AWS CloudHSM Classic FAQs</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/classic/userguide/\">AWS CloudHSM Classic User Guide</a>.</p> <p>For more information about AWS CloudHSM, see <a href=\"http://aws.amazon.com/cloudhsm/\">AWS CloudHSM</a> and the <a href=\"http://docs.aws.amazon.com/cloudhsm/latest/userguide/\">AWS CloudHSM User Guide</a>.</p>"
+    version = "2014-05-30"
+    slug = "amazon-cloudhsm-2014-05-30"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://cloudhsm.amazonaws.com"]
+    topics = ["cloud"]

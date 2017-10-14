@@ -1,0 +1,97 @@
+[[backends]]
+  group = "google-cloud-natural-language-v1"
+  url_pattern = "/v1/documents:analyzeEntities"
+  method = "POST"
+  host = ["https://language.googleapis.com"]
+  whitelist = ["entities", "language"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Provides natural language understanding technologies to developers. Examples include sentiment analysis, entity recognition, entity sentiment analysis, and text annotations."
+    version = "v1"
+    slug = "google-cloud-natural-language-v1-v1-documents-analyzeentities"
+    schemes = ["https"]
+    hosts = ["https://language.googleapis.com"]
+    topics = ["documents", "text"]
+    [backends.extra_config.mapping]
+      entities = "entities"
+      language = "language"
+
+[[backends]]
+  group = "google-cloud-natural-language-v1"
+  url_pattern = "/v1/documents:analyzeEntitySentiment"
+  method = "POST"
+  host = ["https://language.googleapis.com"]
+  whitelist = ["entities", "language"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Provides natural language understanding technologies to developers. Examples include sentiment analysis, entity recognition, entity sentiment analysis, and text annotations."
+    version = "v1"
+    slug = "google-cloud-natural-language-v1-v1-documents-analyzeentitysentiment"
+    schemes = ["https"]
+    hosts = ["https://language.googleapis.com"]
+    topics = ["documents", "text"]
+    [backends.extra_config.mapping]
+      entities = "entities"
+      language = "language"
+
+[[backends]]
+  group = "google-cloud-natural-language-v1"
+  url_pattern = "/v1/documents:analyzeSentiment"
+  method = "POST"
+  host = ["https://language.googleapis.com"]
+  whitelist = ["language", "sentences"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Provides natural language understanding technologies to developers. Examples include sentiment analysis, entity recognition, entity sentiment analysis, and text annotations."
+    version = "v1"
+    slug = "google-cloud-natural-language-v1-v1-documents-analyzesentiment"
+    schemes = ["https"]
+    hosts = ["https://language.googleapis.com"]
+    topics = ["documents", "text"]
+    [backends.extra_config.mapping]
+      language = "language"
+      sentences = "sentences"
+
+[[backends]]
+  group = "google-cloud-natural-language-v1"
+  url_pattern = "/v1/documents:analyzeSyntax"
+  method = "POST"
+  host = ["https://language.googleapis.com"]
+  whitelist = ["language", "sentences", "tokens"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Provides natural language understanding technologies to developers. Examples include sentiment analysis, entity recognition, entity sentiment analysis, and text annotations."
+    version = "v1"
+    slug = "google-cloud-natural-language-v1-v1-documents-analyzesyntax"
+    schemes = ["https"]
+    hosts = ["https://language.googleapis.com"]
+    topics = ["documents", "text"]
+    [backends.extra_config.mapping]
+      language = "language"
+      sentences = "sentences"
+      tokens = "tokens"
+
+[[backends]]
+  group = "google-cloud-natural-language-v1"
+  url_pattern = "/v1/documents:annotateText"
+  method = "POST"
+  host = ["https://language.googleapis.com"]
+  whitelist = ["entities", "language", "sentences", "tokens"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Provides natural language understanding technologies to developers. Examples include sentiment analysis, entity recognition, entity sentiment analysis, and text annotations."
+    version = "v1"
+    slug = "google-cloud-natural-language-v1-v1-documents-annotatetext"
+    schemes = ["https"]
+    hosts = ["https://language.googleapis.com"]
+    topics = ["documents", "text"]
+    [backends.extra_config.mapping]
+      entities = "entities"
+      language = "language"
+      sentences = "sentences"
+      tokens = "tokens"

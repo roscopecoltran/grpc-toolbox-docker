@@ -1,0 +1,237 @@
+[[backends]]
+  group = "amazon-dynamodb-2011-12-05"
+  url_pattern = "/#BatchWriteItem"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dynamodb.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<p>Amazon DynamoDB is a fast, highly scalable, highly available, cost-effective non-relational database service.</p> <p>Amazon DynamoDB removes traditional scalability limitations on data storage while maintaining low latency and predictable performance.</p>"
+    version = "2011-12-05"
+    slug = "amazon-dynamodb-2011-12-05-batchwriteitem"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dynamodb.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-dynamodb-2011-12-05"
+  url_pattern = "/#CreateTable"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dynamodb.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<p>Amazon DynamoDB is a fast, highly scalable, highly available, cost-effective non-relational database service.</p> <p>Amazon DynamoDB removes traditional scalability limitations on data storage while maintaining low latency and predictable performance.</p>"
+    version = "2011-12-05"
+    slug = "amazon-dynamodb-2011-12-05-createtable"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dynamodb.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-dynamodb-2011-12-05"
+  url_pattern = "/#DeleteItem"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dynamodb.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<p>Amazon DynamoDB is a fast, highly scalable, highly available, cost-effective non-relational database service.</p> <p>Amazon DynamoDB removes traditional scalability limitations on data storage while maintaining low latency and predictable performance.</p>"
+    version = "2011-12-05"
+    slug = "amazon-dynamodb-2011-12-05-deleteitem"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dynamodb.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-dynamodb-2011-12-05"
+  url_pattern = "/#DeleteTable"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dynamodb.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<p>Amazon DynamoDB is a fast, highly scalable, highly available, cost-effective non-relational database service.</p> <p>Amazon DynamoDB removes traditional scalability limitations on data storage while maintaining low latency and predictable performance.</p>"
+    version = "2011-12-05"
+    slug = "amazon-dynamodb-2011-12-05-deletetable"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dynamodb.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-dynamodb-2011-12-05"
+  url_pattern = "/#DescribeTable"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dynamodb.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<p>Amazon DynamoDB is a fast, highly scalable, highly available, cost-effective non-relational database service.</p> <p>Amazon DynamoDB removes traditional scalability limitations on data storage while maintaining low latency and predictable performance.</p>"
+    version = "2011-12-05"
+    slug = "amazon-dynamodb-2011-12-05-describetable"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dynamodb.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-dynamodb-2011-12-05"
+  url_pattern = "/#GetItem"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dynamodb.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<p>Amazon DynamoDB is a fast, highly scalable, highly available, cost-effective non-relational database service.</p> <p>Amazon DynamoDB removes traditional scalability limitations on data storage while maintaining low latency and predictable performance.</p>"
+    version = "2011-12-05"
+    slug = "amazon-dynamodb-2011-12-05-getitem"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dynamodb.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-dynamodb-2011-12-05"
+  url_pattern = "/#ListTables"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dynamodb.amazonaws.com"]
+  query_string_params = ["ExclusiveStartTableName", "Limit"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<p>Amazon DynamoDB is a fast, highly scalable, highly available, cost-effective non-relational database service.</p> <p>Amazon DynamoDB removes traditional scalability limitations on data storage while maintaining low latency and predictable performance.</p>"
+    version = "2011-12-05"
+    slug = "amazon-dynamodb-2011-12-05-listtables"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dynamodb.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-dynamodb-2011-12-05"
+  url_pattern = "/#PutItem"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dynamodb.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<p>Amazon DynamoDB is a fast, highly scalable, highly available, cost-effective non-relational database service.</p> <p>Amazon DynamoDB removes traditional scalability limitations on data storage while maintaining low latency and predictable performance.</p>"
+    version = "2011-12-05"
+    slug = "amazon-dynamodb-2011-12-05-putitem"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dynamodb.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-dynamodb-2011-12-05"
+  url_pattern = "/#Query"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dynamodb.amazonaws.com"]
+  query_string_params = ["ExclusiveStartKey", "Limit"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<p>Amazon DynamoDB is a fast, highly scalable, highly available, cost-effective non-relational database service.</p> <p>Amazon DynamoDB removes traditional scalability limitations on data storage while maintaining low latency and predictable performance.</p>"
+    version = "2011-12-05"
+    slug = "amazon-dynamodb-2011-12-05-query"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dynamodb.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-dynamodb-2011-12-05"
+  url_pattern = "/#Scan"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dynamodb.amazonaws.com"]
+  query_string_params = ["ExclusiveStartKey", "Limit"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<p>Amazon DynamoDB is a fast, highly scalable, highly available, cost-effective non-relational database service.</p> <p>Amazon DynamoDB removes traditional scalability limitations on data storage while maintaining low latency and predictable performance.</p>"
+    version = "2011-12-05"
+    slug = "amazon-dynamodb-2011-12-05-scan"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dynamodb.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-dynamodb-2011-12-05"
+  url_pattern = "/#UpdateItem"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dynamodb.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<p>Amazon DynamoDB is a fast, highly scalable, highly available, cost-effective non-relational database service.</p> <p>Amazon DynamoDB removes traditional scalability limitations on data storage while maintaining low latency and predictable performance.</p>"
+    version = "2011-12-05"
+    slug = "amazon-dynamodb-2011-12-05-updateitem"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dynamodb.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-dynamodb-2011-12-05"
+  url_pattern = "/#UpdateTable"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dynamodb.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<p>Amazon DynamoDB is a fast, highly scalable, highly available, cost-effective non-relational database service.</p> <p>Amazon DynamoDB removes traditional scalability limitations on data storage while maintaining low latency and predictable performance.</p>"
+    version = "2011-12-05"
+    slug = "amazon-dynamodb-2011-12-05-updatetable"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dynamodb.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-dynamodb-2011-12-05"
+  url_pattern = "/"
+  method = "POST"
+  encoding = "json"
+  host = ["http://dynamodb.amazonaws.com"]
+  query_string_params = ["RequestItems"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<p>Amazon DynamoDB is a fast, highly scalable, highly available, cost-effective non-relational database service.</p> <p>Amazon DynamoDB removes traditional scalability limitations on data storage while maintaining low latency and predictable performance.</p>"
+    version = "2011-12-05"
+    slug = "amazon-dynamodb-2011-12-05"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://dynamodb.amazonaws.com"]
+    topics = ["cloud"]

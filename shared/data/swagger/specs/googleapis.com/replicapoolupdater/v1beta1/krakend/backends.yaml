@@ -1,0 +1,580 @@
+backends:
+- group: google-compute-engine-instance-group-updater-v1beta1
+  url_pattern: /replicapoolupdater/v1beta1/projects/{project}/zones/{zone}/operations
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - id
+  - items
+  - kind
+  - nextPageToken
+  - selfLink
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: '[Deprecated. Please use compute.instanceGroupManagers.update method.
+      replicapoolupdater API will be disabled after December 30th, 2016] Updates groups
+      of Compute Engine instances.'
+    version: v1beta1
+    slug: google-compute-engine-instance-group-updater-v1beta1-replicapoolupdater-v1beta1-projects-project-zones-zone-operations
+    schemes:
+    - https
+    mapping:
+      id: id
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+      selfLink: selfLink
+    hosts:
+    - https://www.googleapis.com
+- group: google-compute-engine-instance-group-updater-v1beta1
+  url_pattern: /replicapoolupdater/v1beta1/projects/{project}/zones/{zone}/operations/{operation}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - clientOperationId
+  - creationTimestamp
+  - endTime
+  - error
+  - error.errors
+  - error.errors.items
+  - error.errors.items.code
+  - error.errors.items.location
+  - error.errors.items.message
+  - httpErrorMessage
+  - httpErrorStatusCode
+  - id
+  - insertTime
+  - kind
+  - name
+  - operationType
+  - progress
+  - region
+  - selfLink
+  - startTime
+  - status
+  - statusMessage
+  - targetId
+  - targetLink
+  - user
+  - warnings
+  - warnings.code
+  - warnings.data
+  - warnings.data.items
+  - warnings.data.items.key
+  - warnings.data.items.value
+  - warnings.message
+  - zone
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: '[Deprecated. Please use compute.instanceGroupManagers.update method.
+      replicapoolupdater API will be disabled after December 30th, 2016] Updates groups
+      of Compute Engine instances.'
+    version: v1beta1
+    slug: google-compute-engine-instance-group-updater-v1beta1-replicapoolupdater-v1beta1-projects-project-zones-zone-operations-operation
+    schemes:
+    - https
+    mapping:
+      clientOperationId: clientOperationId
+      creationTimestamp: creationTimestamp
+      endTime: endTime
+      error: error
+      error.errors: error.errors
+      error.errors.items: error.errors.items
+      error.errors.items.code: error.errors.items.code
+      error.errors.items.location: error.errors.items.location
+      error.errors.items.message: error.errors.items.message
+      httpErrorMessage: httpErrorMessage
+      httpErrorStatusCode: httpErrorStatusCode
+      id: id
+      insertTime: insertTime
+      kind: kind
+      name: name
+      operationType: operationType
+      progress: progress
+      region: region
+      selfLink: selfLink
+      startTime: startTime
+      status: status
+      statusMessage: statusMessage
+      targetId: targetId
+      targetLink: targetLink
+      user: user
+      warnings: warnings
+      warnings.code: warnings.code
+      warnings.data: warnings.data
+      warnings.data.items: warnings.data.items
+      warnings.data.items.key: warnings.data.items.key
+      warnings.data.items.value: warnings.data.items.value
+      warnings.message: warnings.message
+      zone: zone
+    hosts:
+    - https://www.googleapis.com
+- group: google-compute-engine-instance-group-updater-v1beta1
+  url_pattern: /replicapoolupdater/v1beta1/projects/{project}/zones/{zone}/rollingUpdates
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - items
+  - kind
+  - nextPageToken
+  - selfLink
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: '[Deprecated. Please use compute.instanceGroupManagers.update method.
+      replicapoolupdater API will be disabled after December 30th, 2016] Updates groups
+      of Compute Engine instances.'
+    version: v1beta1
+    slug: google-compute-engine-instance-group-updater-v1beta1-replicapoolupdater-v1beta1-projects-project-zones-zone-rollingupdates
+    schemes:
+    - https
+    mapping:
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+      selfLink: selfLink
+    hosts:
+    - https://www.googleapis.com
+- group: google-compute-engine-instance-group-updater-v1beta1
+  url_pattern: /replicapoolupdater/v1beta1/projects/{project}/zones/{zone}/rollingUpdates/{rollingUpdate}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - actionType
+  - creationTimestamp
+  - description
+  - error
+  - error.errors
+  - error.errors.items
+  - error.errors.items.code
+  - error.errors.items.location
+  - error.errors.items.message
+  - id
+  - instanceGroup
+  - instanceGroupManager
+  - instanceTemplate
+  - kind
+  - oldInstanceTemplate
+  - policy
+  - policy.autoPauseAfterInstances
+  - policy.instanceStartupTimeoutSec
+  - policy.maxNumConcurrentInstances
+  - policy.maxNumFailedInstances
+  - policy.minInstanceUpdateTimeSec
+  - progress
+  - selfLink
+  - status
+  - statusMessage
+  - user
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: '[Deprecated. Please use compute.instanceGroupManagers.update method.
+      replicapoolupdater API will be disabled after December 30th, 2016] Updates groups
+      of Compute Engine instances.'
+    version: v1beta1
+    slug: google-compute-engine-instance-group-updater-v1beta1-replicapoolupdater-v1beta1-projects-project-zones-zone-rollingupdates-rollingupdate
+    schemes:
+    - https
+    mapping:
+      actionType: actionType
+      creationTimestamp: creationTimestamp
+      description: description
+      error: error
+      error.errors: error.errors
+      error.errors.items: error.errors.items
+      error.errors.items.code: error.errors.items.code
+      error.errors.items.location: error.errors.items.location
+      error.errors.items.message: error.errors.items.message
+      id: id
+      instanceGroup: instanceGroup
+      instanceGroupManager: instanceGroupManager
+      instanceTemplate: instanceTemplate
+      kind: kind
+      oldInstanceTemplate: oldInstanceTemplate
+      policy: policy
+      policy.autoPauseAfterInstances: policy.autoPauseAfterInstances
+      policy.instanceStartupTimeoutSec: policy.instanceStartupTimeoutSec
+      policy.maxNumConcurrentInstances: policy.maxNumConcurrentInstances
+      policy.maxNumFailedInstances: policy.maxNumFailedInstances
+      policy.minInstanceUpdateTimeSec: policy.minInstanceUpdateTimeSec
+      progress: progress
+      selfLink: selfLink
+      status: status
+      statusMessage: statusMessage
+      user: user
+    hosts:
+    - https://www.googleapis.com
+- group: google-compute-engine-instance-group-updater-v1beta1
+  url_pattern: /replicapoolupdater/v1beta1/projects/{project}/zones/{zone}/rollingUpdates/{rollingUpdate}/cancel
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - clientOperationId
+  - creationTimestamp
+  - endTime
+  - error
+  - error.errors
+  - error.errors.items
+  - error.errors.items.code
+  - error.errors.items.location
+  - error.errors.items.message
+  - httpErrorMessage
+  - httpErrorStatusCode
+  - id
+  - insertTime
+  - kind
+  - name
+  - operationType
+  - progress
+  - region
+  - selfLink
+  - startTime
+  - status
+  - statusMessage
+  - targetId
+  - targetLink
+  - user
+  - warnings
+  - warnings.code
+  - warnings.data
+  - warnings.data.items
+  - warnings.data.items.key
+  - warnings.data.items.value
+  - warnings.message
+  - zone
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: '[Deprecated. Please use compute.instanceGroupManagers.update method.
+      replicapoolupdater API will be disabled after December 30th, 2016] Updates groups
+      of Compute Engine instances.'
+    version: v1beta1
+    slug: google-compute-engine-instance-group-updater-v1beta1-replicapoolupdater-v1beta1-projects-project-zones-zone-rollingupdates-rollingupdate-cancel
+    schemes:
+    - https
+    mapping:
+      clientOperationId: clientOperationId
+      creationTimestamp: creationTimestamp
+      endTime: endTime
+      error: error
+      error.errors: error.errors
+      error.errors.items: error.errors.items
+      error.errors.items.code: error.errors.items.code
+      error.errors.items.location: error.errors.items.location
+      error.errors.items.message: error.errors.items.message
+      httpErrorMessage: httpErrorMessage
+      httpErrorStatusCode: httpErrorStatusCode
+      id: id
+      insertTime: insertTime
+      kind: kind
+      name: name
+      operationType: operationType
+      progress: progress
+      region: region
+      selfLink: selfLink
+      startTime: startTime
+      status: status
+      statusMessage: statusMessage
+      targetId: targetId
+      targetLink: targetLink
+      user: user
+      warnings: warnings
+      warnings.code: warnings.code
+      warnings.data: warnings.data
+      warnings.data.items: warnings.data.items
+      warnings.data.items.key: warnings.data.items.key
+      warnings.data.items.value: warnings.data.items.value
+      warnings.message: warnings.message
+      zone: zone
+    hosts:
+    - https://www.googleapis.com
+- group: google-compute-engine-instance-group-updater-v1beta1
+  url_pattern: /replicapoolupdater/v1beta1/projects/{project}/zones/{zone}/rollingUpdates/{rollingUpdate}/instanceUpdates
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - items
+  - kind
+  - nextPageToken
+  - selfLink
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: '[Deprecated. Please use compute.instanceGroupManagers.update method.
+      replicapoolupdater API will be disabled after December 30th, 2016] Updates groups
+      of Compute Engine instances.'
+    version: v1beta1
+    slug: google-compute-engine-instance-group-updater-v1beta1-replicapoolupdater-v1beta1-projects-project-zones-zone-rollingupdates-rollingupdate-instanceupdates
+    schemes:
+    - https
+    mapping:
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+      selfLink: selfLink
+    hosts:
+    - https://www.googleapis.com
+- group: google-compute-engine-instance-group-updater-v1beta1
+  url_pattern: /replicapoolupdater/v1beta1/projects/{project}/zones/{zone}/rollingUpdates/{rollingUpdate}/pause
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - clientOperationId
+  - creationTimestamp
+  - endTime
+  - error
+  - error.errors
+  - error.errors.items
+  - error.errors.items.code
+  - error.errors.items.location
+  - error.errors.items.message
+  - httpErrorMessage
+  - httpErrorStatusCode
+  - id
+  - insertTime
+  - kind
+  - name
+  - operationType
+  - progress
+  - region
+  - selfLink
+  - startTime
+  - status
+  - statusMessage
+  - targetId
+  - targetLink
+  - user
+  - warnings
+  - warnings.code
+  - warnings.data
+  - warnings.data.items
+  - warnings.data.items.key
+  - warnings.data.items.value
+  - warnings.message
+  - zone
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: '[Deprecated. Please use compute.instanceGroupManagers.update method.
+      replicapoolupdater API will be disabled after December 30th, 2016] Updates groups
+      of Compute Engine instances.'
+    version: v1beta1
+    slug: google-compute-engine-instance-group-updater-v1beta1-replicapoolupdater-v1beta1-projects-project-zones-zone-rollingupdates-rollingupdate-pause
+    schemes:
+    - https
+    mapping:
+      clientOperationId: clientOperationId
+      creationTimestamp: creationTimestamp
+      endTime: endTime
+      error: error
+      error.errors: error.errors
+      error.errors.items: error.errors.items
+      error.errors.items.code: error.errors.items.code
+      error.errors.items.location: error.errors.items.location
+      error.errors.items.message: error.errors.items.message
+      httpErrorMessage: httpErrorMessage
+      httpErrorStatusCode: httpErrorStatusCode
+      id: id
+      insertTime: insertTime
+      kind: kind
+      name: name
+      operationType: operationType
+      progress: progress
+      region: region
+      selfLink: selfLink
+      startTime: startTime
+      status: status
+      statusMessage: statusMessage
+      targetId: targetId
+      targetLink: targetLink
+      user: user
+      warnings: warnings
+      warnings.code: warnings.code
+      warnings.data: warnings.data
+      warnings.data.items: warnings.data.items
+      warnings.data.items.key: warnings.data.items.key
+      warnings.data.items.value: warnings.data.items.value
+      warnings.message: warnings.message
+      zone: zone
+    hosts:
+    - https://www.googleapis.com
+- group: google-compute-engine-instance-group-updater-v1beta1
+  url_pattern: /replicapoolupdater/v1beta1/projects/{project}/zones/{zone}/rollingUpdates/{rollingUpdate}/resume
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - clientOperationId
+  - creationTimestamp
+  - endTime
+  - error
+  - error.errors
+  - error.errors.items
+  - error.errors.items.code
+  - error.errors.items.location
+  - error.errors.items.message
+  - httpErrorMessage
+  - httpErrorStatusCode
+  - id
+  - insertTime
+  - kind
+  - name
+  - operationType
+  - progress
+  - region
+  - selfLink
+  - startTime
+  - status
+  - statusMessage
+  - targetId
+  - targetLink
+  - user
+  - warnings
+  - warnings.code
+  - warnings.data
+  - warnings.data.items
+  - warnings.data.items.key
+  - warnings.data.items.value
+  - warnings.message
+  - zone
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: '[Deprecated. Please use compute.instanceGroupManagers.update method.
+      replicapoolupdater API will be disabled after December 30th, 2016] Updates groups
+      of Compute Engine instances.'
+    version: v1beta1
+    slug: google-compute-engine-instance-group-updater-v1beta1-replicapoolupdater-v1beta1-projects-project-zones-zone-rollingupdates-rollingupdate-resume
+    schemes:
+    - https
+    mapping:
+      clientOperationId: clientOperationId
+      creationTimestamp: creationTimestamp
+      endTime: endTime
+      error: error
+      error.errors: error.errors
+      error.errors.items: error.errors.items
+      error.errors.items.code: error.errors.items.code
+      error.errors.items.location: error.errors.items.location
+      error.errors.items.message: error.errors.items.message
+      httpErrorMessage: httpErrorMessage
+      httpErrorStatusCode: httpErrorStatusCode
+      id: id
+      insertTime: insertTime
+      kind: kind
+      name: name
+      operationType: operationType
+      progress: progress
+      region: region
+      selfLink: selfLink
+      startTime: startTime
+      status: status
+      statusMessage: statusMessage
+      targetId: targetId
+      targetLink: targetLink
+      user: user
+      warnings: warnings
+      warnings.code: warnings.code
+      warnings.data: warnings.data
+      warnings.data.items: warnings.data.items
+      warnings.data.items.key: warnings.data.items.key
+      warnings.data.items.value: warnings.data.items.value
+      warnings.message: warnings.message
+      zone: zone
+    hosts:
+    - https://www.googleapis.com
+- group: google-compute-engine-instance-group-updater-v1beta1
+  url_pattern: /replicapoolupdater/v1beta1/projects/{project}/zones/{zone}/rollingUpdates/{rollingUpdate}/rollback
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - clientOperationId
+  - creationTimestamp
+  - endTime
+  - error
+  - error.errors
+  - error.errors.items
+  - error.errors.items.code
+  - error.errors.items.location
+  - error.errors.items.message
+  - httpErrorMessage
+  - httpErrorStatusCode
+  - id
+  - insertTime
+  - kind
+  - name
+  - operationType
+  - progress
+  - region
+  - selfLink
+  - startTime
+  - status
+  - statusMessage
+  - targetId
+  - targetLink
+  - user
+  - warnings
+  - warnings.code
+  - warnings.data
+  - warnings.data.items
+  - warnings.data.items.key
+  - warnings.data.items.value
+  - warnings.message
+  - zone
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: '[Deprecated. Please use compute.instanceGroupManagers.update method.
+      replicapoolupdater API will be disabled after December 30th, 2016] Updates groups
+      of Compute Engine instances.'
+    version: v1beta1
+    slug: google-compute-engine-instance-group-updater-v1beta1-replicapoolupdater-v1beta1-projects-project-zones-zone-rollingupdates-rollingupdate-rollback
+    schemes:
+    - https
+    mapping:
+      clientOperationId: clientOperationId
+      creationTimestamp: creationTimestamp
+      endTime: endTime
+      error: error
+      error.errors: error.errors
+      error.errors.items: error.errors.items
+      error.errors.items.code: error.errors.items.code
+      error.errors.items.location: error.errors.items.location
+      error.errors.items.message: error.errors.items.message
+      httpErrorMessage: httpErrorMessage
+      httpErrorStatusCode: httpErrorStatusCode
+      id: id
+      insertTime: insertTime
+      kind: kind
+      name: name
+      operationType: operationType
+      progress: progress
+      region: region
+      selfLink: selfLink
+      startTime: startTime
+      status: status
+      statusMessage: statusMessage
+      targetId: targetId
+      targetLink: targetLink
+      user: user
+      warnings: warnings
+      warnings.code: warnings.code
+      warnings.data: warnings.data
+      warnings.data.items: warnings.data.items
+      warnings.data.items.key: warnings.data.items.key
+      warnings.data.items.value: warnings.data.items.value
+      warnings.message: warnings.message
+      zone: zone
+    hosts:
+    - https://www.googleapis.com

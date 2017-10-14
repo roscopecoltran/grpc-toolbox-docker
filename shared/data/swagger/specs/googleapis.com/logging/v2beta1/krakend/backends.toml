@@ -1,0 +1,167 @@
+[[backends]]
+  group = "stackdriver-logging-v2beta1"
+  url_pattern = "/v2beta1/entries:list"
+  method = "POST"
+  host = ["https://logging.googleapis.com"]
+  whitelist = ["entries", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Writes log entries and manages your Stackdriver Logging configuration."
+    version = "v2beta1"
+    slug = "stackdriver-logging-v2beta1-v2beta1-entries-list"
+    schemes = ["https"]
+    hosts = ["https://logging.googleapis.com"]
+    topics = ["entries"]
+    [backends.extra_config.mapping]
+      entries = "entries"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "stackdriver-logging-v2beta1"
+  url_pattern = "/v2beta1/entries:write"
+  method = "POST"
+  host = ["https://logging.googleapis.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Writes log entries and manages your Stackdriver Logging configuration."
+    version = "v2beta1"
+    slug = "stackdriver-logging-v2beta1-v2beta1-entries-write"
+    schemes = ["https"]
+    hosts = ["https://logging.googleapis.com"]
+    topics = ["entries"]
+
+[[backends]]
+  group = "stackdriver-logging-v2beta1"
+  url_pattern = "/v2beta1/monitoredResourceDescriptors"
+  method = "GET"
+  host = ["https://logging.googleapis.com"]
+  query_string_params = ["pageSize", "pageToken"]
+  whitelist = ["nextPageToken", "resourceDescriptors"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Writes log entries and manages your Stackdriver Logging configuration."
+    version = "v2beta1"
+    slug = "stackdriver-logging-v2beta1-v2beta1-monitoredresourcedescriptors"
+    schemes = ["https"]
+    hosts = ["https://logging.googleapis.com"]
+    topics = ["monitoredresourcedescriptors"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      resourceDescriptors = "resourceDescriptors"
+
+[[backends]]
+  group = "stackdriver-logging-v2beta1"
+  url_pattern = "/v2beta1/{metricName}"
+  method = "GET"
+  host = ["https://logging.googleapis.com"]
+  url_keys = ["metricName"]
+  whitelist = ["description", "filter", "labelExtractors", "labelExtractors.additionalProperties", "name", "valueExtractor", "version"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Writes log entries and manages your Stackdriver Logging configuration."
+    version = "v2beta1"
+    slug = "stackdriver-logging-v2beta1-v2beta1-metricname"
+    schemes = ["https"]
+    hosts = ["https://logging.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      additionalProperties = "additionalProperties"
+      description = "description"
+      filter = "filter"
+      labelExtractors = "labelExtractors"
+      name = "name"
+      valueExtractor = "valueExtractor"
+      version = "version"
+
+[[backends]]
+  group = "stackdriver-logging-v2beta1"
+  url_pattern = "/v2beta1/{parent}/logs"
+  method = "GET"
+  host = ["https://logging.googleapis.com"]
+  url_keys = ["parent"]
+  query_string_params = ["pageSize", "pageToken"]
+  whitelist = ["logNames", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Writes log entries and manages your Stackdriver Logging configuration."
+    version = "v2beta1"
+    slug = "stackdriver-logging-v2beta1-v2beta1-parent-logs"
+    schemes = ["https"]
+    hosts = ["https://logging.googleapis.com"]
+    topics = ["organizations"]
+    [backends.extra_config.mapping]
+      logNames = "logNames"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "stackdriver-logging-v2beta1"
+  url_pattern = "/v2beta1/{parent}/metrics"
+  method = "GET"
+  host = ["https://logging.googleapis.com"]
+  url_keys = ["parent"]
+  query_string_params = ["pageSize", "pageToken"]
+  whitelist = ["metrics", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Writes log entries and manages your Stackdriver Logging configuration."
+    version = "v2beta1"
+    slug = "stackdriver-logging-v2beta1-v2beta1-parent-metrics"
+    schemes = ["https"]
+    hosts = ["https://logging.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      metrics = "metrics"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "stackdriver-logging-v2beta1"
+  url_pattern = "/v2beta1/{parent}/sinks"
+  method = "GET"
+  host = ["https://logging.googleapis.com"]
+  url_keys = ["parent"]
+  query_string_params = ["pageSize", "pageToken"]
+  whitelist = ["nextPageToken", "sinks"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Writes log entries and manages your Stackdriver Logging configuration."
+    version = "v2beta1"
+    slug = "stackdriver-logging-v2beta1-v2beta1-parent-sinks"
+    schemes = ["https"]
+    hosts = ["https://logging.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      sinks = "sinks"
+
+[[backends]]
+  group = "stackdriver-logging-v2beta1"
+  url_pattern = "/v2beta1/{sinkName}"
+  method = "GET"
+  host = ["https://logging.googleapis.com"]
+  url_keys = ["sinkName"]
+  whitelist = ["destination", "endTime", "filter", "includeChildren", "name", "outputVersionFormat", "startTime", "writerIdentity"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Writes log entries and manages your Stackdriver Logging configuration."
+    version = "v2beta1"
+    slug = "stackdriver-logging-v2beta1-v2beta1-sinkname"
+    schemes = ["https"]
+    hosts = ["https://logging.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      destination = "destination"
+      endTime = "endTime"
+      filter = "filter"
+      includeChildren = "includeChildren"
+      name = "name"
+      outputVersionFormat = "outputVersionFormat"
+      startTime = "startTime"
+      writerIdentity = "writerIdentity"

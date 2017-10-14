@@ -1,0 +1,449 @@
+[[backends]]
+  group = "bbc-nitro-1-0-0"
+  url_pattern = "/nitro/api/"
+  method = "GET"
+  encoding = "json"
+  host = ["https://programmes.api.bbc.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.com"
+    description = "BBC Nitro is the BBC's application programming interface (API) for BBC Programmes Metadata."
+    version = "1.0.0"
+    slug = "bbc-nitro-1-0-0-nitro-api"
+    schemes = ["http", "https"]
+    consumes = ["json"]
+    produces = ["json", "xml"]
+    hosts = ["http://programmes.api.bbc.com", "https://programmes.api.bbc.com"]
+    topics = ["media", "open-data"]
+
+[[backends]]
+  group = "bbc-nitro-1-0-0"
+  url_pattern = "/nitro/api/availabilities"
+  method = "GET"
+  encoding = "json"
+  host = ["https://programmes.api.bbc.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.com"
+    description = "BBC Nitro is the BBC's application programming interface (API) for BBC Programmes Metadata."
+    version = "1.0.0"
+    slug = "bbc-nitro-1-0-0-nitro-api-availabilities"
+    schemes = ["http", "https"]
+    consumes = ["json"]
+    produces = ["json", "xml"]
+    hosts = ["http://programmes.api.bbc.com", "https://programmes.api.bbc.com"]
+    topics = ["media", "open-data"]
+
+[[backends]]
+  group = "bbc-nitro-1-0-0"
+  url_pattern = "/nitro/api/broadcasts"
+  method = "GET"
+  encoding = "json"
+  host = ["https://programmes.api.bbc.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.com"
+    description = "BBC Nitro is the BBC's application programming interface (API) for BBC Programmes Metadata."
+    version = "1.0.0"
+    slug = "bbc-nitro-1-0-0-nitro-api-broadcasts"
+    schemes = ["http", "https"]
+    consumes = ["json"]
+    produces = ["json", "xml"]
+    hosts = ["http://programmes.api.bbc.com", "https://programmes.api.bbc.com"]
+    topics = ["media", "open-data"]
+
+[[backends]]
+  group = "bbc-nitro-1-0-0"
+  url_pattern = "/nitro/api/groups"
+  method = "GET"
+  encoding = "json"
+  host = ["https://programmes.api.bbc.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.com"
+    description = "BBC Nitro is the BBC's application programming interface (API) for BBC Programmes Metadata."
+    version = "1.0.0"
+    slug = "bbc-nitro-1-0-0-nitro-api-groups"
+    schemes = ["http", "https"]
+    consumes = ["json"]
+    produces = ["json", "xml"]
+    hosts = ["http://programmes.api.bbc.com", "https://programmes.api.bbc.com"]
+    topics = ["media", "open-data"]
+
+[[backends]]
+  group = "bbc-nitro-1-0-0"
+  url_pattern = "/nitro/api/images"
+  method = "GET"
+  encoding = "json"
+  host = ["https://programmes.api.bbc.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.com"
+    description = "BBC Nitro is the BBC's application programming interface (API) for BBC Programmes Metadata."
+    version = "1.0.0"
+    slug = "bbc-nitro-1-0-0-nitro-api-images"
+    schemes = ["http", "https"]
+    consumes = ["json"]
+    produces = ["json", "xml"]
+    hosts = ["http://programmes.api.bbc.com", "https://programmes.api.bbc.com"]
+    topics = ["media", "open-data"]
+
+[[backends]]
+  group = "bbc-nitro-1-0-0"
+  url_pattern = "/nitro/api/items"
+  method = "GET"
+  encoding = "json"
+  host = ["https://programmes.api.bbc.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.com"
+    description = "BBC Nitro is the BBC's application programming interface (API) for BBC Programmes Metadata."
+    version = "1.0.0"
+    slug = "bbc-nitro-1-0-0-nitro-api-items"
+    schemes = ["http", "https"]
+    consumes = ["json"]
+    produces = ["json", "xml"]
+    hosts = ["http://programmes.api.bbc.com", "https://programmes.api.bbc.com"]
+    topics = ["media", "open-data"]
+
+[[backends]]
+  group = "bbc-nitro-1-0-0"
+  url_pattern = "/nitro/api/master_brands"
+  method = "GET"
+  encoding = "json"
+  host = ["https://programmes.api.bbc.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.com"
+    description = "BBC Nitro is the BBC's application programming interface (API) for BBC Programmes Metadata."
+    version = "1.0.0"
+    slug = "bbc-nitro-1-0-0-nitro-api-master-brands"
+    schemes = ["http", "https"]
+    consumes = ["json"]
+    produces = ["json", "xml"]
+    hosts = ["http://programmes.api.bbc.com", "https://programmes.api.bbc.com"]
+    topics = ["media", "open-data"]
+
+[[backends]]
+  group = "bbc-nitro-1-0-0"
+  url_pattern = "/nitro/api/people"
+  method = "GET"
+  encoding = "json"
+  host = ["https://programmes.api.bbc.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.com"
+    description = "BBC Nitro is the BBC's application programming interface (API) for BBC Programmes Metadata."
+    version = "1.0.0"
+    slug = "bbc-nitro-1-0-0-nitro-api-people"
+    schemes = ["http", "https"]
+    consumes = ["json"]
+    produces = ["json", "xml"]
+    hosts = ["http://programmes.api.bbc.com", "https://programmes.api.bbc.com"]
+    topics = ["media", "open-data"]
+
+[[backends]]
+  group = "bbc-nitro-1-0-0"
+  url_pattern = "/nitro/api/pips"
+  method = "GET"
+  encoding = "json"
+  host = ["https://programmes.api.bbc.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.com"
+    description = "BBC Nitro is the BBC's application programming interface (API) for BBC Programmes Metadata."
+    version = "1.0.0"
+    slug = "bbc-nitro-1-0-0-nitro-api-pips"
+    schemes = ["http", "https"]
+    consumes = ["json"]
+    produces = ["json", "xml"]
+    hosts = ["http://programmes.api.bbc.com", "https://programmes.api.bbc.com"]
+    topics = ["media", "open-data"]
+
+[[backends]]
+  group = "bbc-nitro-1-0-0"
+  url_pattern = "/nitro/api/programme_details"
+  method = "GET"
+  encoding = "json"
+  host = ["https://programmes.api.bbc.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.com"
+    description = "BBC Nitro is the BBC's application programming interface (API) for BBC Programmes Metadata."
+    version = "1.0.0"
+    slug = "bbc-nitro-1-0-0-nitro-api-programme-details"
+    schemes = ["http", "https"]
+    consumes = ["json"]
+    produces = ["json", "xml"]
+    hosts = ["http://programmes.api.bbc.com", "https://programmes.api.bbc.com"]
+    topics = ["media", "open-data"]
+
+[[backends]]
+  group = "bbc-nitro-1-0-0"
+  url_pattern = "/nitro/api/programmes"
+  method = "GET"
+  encoding = "json"
+  host = ["https://programmes.api.bbc.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.com"
+    description = "BBC Nitro is the BBC's application programming interface (API) for BBC Programmes Metadata."
+    version = "1.0.0"
+    slug = "bbc-nitro-1-0-0-nitro-api-programmes"
+    schemes = ["http", "https"]
+    consumes = ["json"]
+    produces = ["json", "xml"]
+    hosts = ["http://programmes.api.bbc.com", "https://programmes.api.bbc.com"]
+    topics = ["media", "open-data"]
+
+[[backends]]
+  group = "bbc-nitro-1-0-0"
+  url_pattern = "/nitro/api/promotions"
+  method = "GET"
+  encoding = "json"
+  host = ["https://programmes.api.bbc.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.com"
+    description = "BBC Nitro is the BBC's application programming interface (API) for BBC Programmes Metadata."
+    version = "1.0.0"
+    slug = "bbc-nitro-1-0-0-nitro-api-promotions"
+    schemes = ["http", "https"]
+    consumes = ["json"]
+    produces = ["json", "xml"]
+    hosts = ["http://programmes.api.bbc.com", "https://programmes.api.bbc.com"]
+    topics = ["media", "open-data"]
+
+[[backends]]
+  group = "bbc-nitro-1-0-0"
+  url_pattern = "/nitro/api/schedules"
+  method = "GET"
+  encoding = "json"
+  host = ["https://programmes.api.bbc.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.com"
+    description = "BBC Nitro is the BBC's application programming interface (API) for BBC Programmes Metadata."
+    version = "1.0.0"
+    slug = "bbc-nitro-1-0-0-nitro-api-schedules"
+    schemes = ["http", "https"]
+    consumes = ["json"]
+    produces = ["json", "xml"]
+    hosts = ["http://programmes.api.bbc.com", "https://programmes.api.bbc.com"]
+    topics = ["media", "open-data"]
+
+[[backends]]
+  group = "bbc-nitro-1-0-0"
+  url_pattern = "/nitro/api/schema"
+  method = "GET"
+  encoding = "json"
+  host = ["https://programmes.api.bbc.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.com"
+    description = "BBC Nitro is the BBC's application programming interface (API) for BBC Programmes Metadata."
+    version = "1.0.0"
+    slug = "bbc-nitro-1-0-0-nitro-api-schema"
+    schemes = ["http", "https"]
+    consumes = ["json"]
+    produces = ["json", "xml"]
+    hosts = ["http://programmes.api.bbc.com", "https://programmes.api.bbc.com"]
+    topics = ["media", "open-data"]
+
+[[backends]]
+  group = "bbc-nitro-1-0-0"
+  url_pattern = "/nitro/api/services"
+  method = "GET"
+  encoding = "json"
+  host = ["https://programmes.api.bbc.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.com"
+    description = "BBC Nitro is the BBC's application programming interface (API) for BBC Programmes Metadata."
+    version = "1.0.0"
+    slug = "bbc-nitro-1-0-0-nitro-api-services"
+    schemes = ["http", "https"]
+    consumes = ["json"]
+    produces = ["json", "xml"]
+    hosts = ["http://programmes.api.bbc.com", "https://programmes.api.bbc.com"]
+    topics = ["media", "open-data"]
+
+[[backends]]
+  group = "bbc-nitro-1-0-0"
+  url_pattern = "/nitro/api/v1/brands/{pid}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://programmes.api.bbc.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.com"
+    description = "BBC Nitro is the BBC's application programming interface (API) for BBC Programmes Metadata."
+    version = "1.0.0"
+    slug = "bbc-nitro-1-0-0-nitro-api-v1-brands-pid"
+    schemes = ["http", "https"]
+    consumes = ["json"]
+    produces = ["json", "xml"]
+    hosts = ["http://programmes.api.bbc.com", "https://programmes.api.bbc.com"]
+    topics = ["media", "open-data"]
+
+[[backends]]
+  group = "bbc-nitro-1-0-0"
+  url_pattern = "/nitro/api/v1/brands/{pid}/franchises/"
+  method = "GET"
+  encoding = "json"
+  host = ["https://programmes.api.bbc.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.com"
+    description = "BBC Nitro is the BBC's application programming interface (API) for BBC Programmes Metadata."
+    version = "1.0.0"
+    slug = "bbc-nitro-1-0-0-nitro-api-v1-brands-pid-franchises"
+    schemes = ["http", "https"]
+    consumes = ["json"]
+    produces = ["json", "xml"]
+    hosts = ["http://programmes.api.bbc.com", "https://programmes.api.bbc.com"]
+    topics = ["media", "open-data"]
+
+[[backends]]
+  group = "bbc-nitro-1-0-0"
+  url_pattern = "/nitro/api/v1/episodes/{pid}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://programmes.api.bbc.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.com"
+    description = "BBC Nitro is the BBC's application programming interface (API) for BBC Programmes Metadata."
+    version = "1.0.0"
+    slug = "bbc-nitro-1-0-0-nitro-api-v1-episodes-pid"
+    schemes = ["http", "https"]
+    consumes = ["json"]
+    produces = ["json", "xml"]
+    hosts = ["http://programmes.api.bbc.com", "https://programmes.api.bbc.com"]
+    topics = ["media", "open-data"]
+
+[[backends]]
+  group = "bbc-nitro-1-0-0"
+  url_pattern = "/nitro/api/v1/episodes/{pid}/ancestors/"
+  method = "GET"
+  encoding = "json"
+  host = ["https://programmes.api.bbc.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.com"
+    description = "BBC Nitro is the BBC's application programming interface (API) for BBC Programmes Metadata."
+    version = "1.0.0"
+    slug = "bbc-nitro-1-0-0-nitro-api-v1-episodes-pid-ancestors"
+    schemes = ["http", "https"]
+    consumes = ["json"]
+    produces = ["json", "xml"]
+    hosts = ["http://programmes.api.bbc.com", "https://programmes.api.bbc.com"]
+    topics = ["media", "open-data"]
+
+[[backends]]
+  group = "bbc-nitro-1-0-0"
+  url_pattern = "/nitro/api/v1/episodes/{pid}/formats/"
+  method = "GET"
+  encoding = "json"
+  host = ["https://programmes.api.bbc.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.com"
+    description = "BBC Nitro is the BBC's application programming interface (API) for BBC Programmes Metadata."
+    version = "1.0.0"
+    slug = "bbc-nitro-1-0-0-nitro-api-v1-episodes-pid-formats"
+    schemes = ["http", "https"]
+    consumes = ["json"]
+    produces = ["json", "xml"]
+    hosts = ["http://programmes.api.bbc.com", "https://programmes.api.bbc.com"]
+    topics = ["media", "open-data"]
+
+[[backends]]
+  group = "bbc-nitro-1-0-0"
+  url_pattern = "/nitro/api/v1/episodes/{pid}/genre_groups/"
+  method = "GET"
+  encoding = "json"
+  host = ["https://programmes.api.bbc.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.com"
+    description = "BBC Nitro is the BBC's application programming interface (API) for BBC Programmes Metadata."
+    version = "1.0.0"
+    slug = "bbc-nitro-1-0-0-nitro-api-v1-episodes-pid-genre-groups"
+    schemes = ["http", "https"]
+    consumes = ["json"]
+    produces = ["json", "xml"]
+    hosts = ["http://programmes.api.bbc.com", "https://programmes.api.bbc.com"]
+    topics = ["media", "open-data"]
+
+[[backends]]
+  group = "bbc-nitro-1-0-0"
+  url_pattern = "/nitro/api/v1/images/{pid}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://programmes.api.bbc.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.com"
+    description = "BBC Nitro is the BBC's application programming interface (API) for BBC Programmes Metadata."
+    version = "1.0.0"
+    slug = "bbc-nitro-1-0-0-nitro-api-v1-images-pid"
+    schemes = ["http", "https"]
+    consumes = ["json"]
+    produces = ["json", "xml"]
+    hosts = ["http://programmes.api.bbc.com", "https://programmes.api.bbc.com"]
+    topics = ["media", "open-data"]
+
+[[backends]]
+  group = "bbc-nitro-1-0-0"
+  url_pattern = "/nitro/api/v1/master_brands/{mbid}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://programmes.api.bbc.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.com"
+    description = "BBC Nitro is the BBC's application programming interface (API) for BBC Programmes Metadata."
+    version = "1.0.0"
+    slug = "bbc-nitro-1-0-0-nitro-api-v1-master-brands-mbid"
+    schemes = ["http", "https"]
+    consumes = ["json"]
+    produces = ["json", "xml"]
+    hosts = ["http://programmes.api.bbc.com", "https://programmes.api.bbc.com"]
+    topics = ["media", "open-data"]
+
+[[backends]]
+  group = "bbc-nitro-1-0-0"
+  url_pattern = "/nitro/api/v1/promotions/{pid}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://programmes.api.bbc.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.com"
+    description = "BBC Nitro is the BBC's application programming interface (API) for BBC Programmes Metadata."
+    version = "1.0.0"
+    slug = "bbc-nitro-1-0-0-nitro-api-v1-promotions-pid"
+    schemes = ["http", "https"]
+    consumes = ["json"]
+    produces = ["json", "xml"]
+    hosts = ["http://programmes.api.bbc.com", "https://programmes.api.bbc.com"]
+    topics = ["media", "open-data"]
+
+[[backends]]
+  group = "bbc-nitro-1-0-0"
+  url_pattern = "/nitro/api/versions"
+  method = "GET"
+  encoding = "json"
+  host = ["https://programmes.api.bbc.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.com"
+    description = "BBC Nitro is the BBC's application programming interface (API) for BBC Programmes Metadata."
+    version = "1.0.0"
+    slug = "bbc-nitro-1-0-0-nitro-api-versions"
+    schemes = ["http", "https"]
+    consumes = ["json"]
+    produces = ["json", "xml"]
+    hosts = ["http://programmes.api.bbc.com", "https://programmes.api.bbc.com"]
+    topics = ["media", "open-data"]

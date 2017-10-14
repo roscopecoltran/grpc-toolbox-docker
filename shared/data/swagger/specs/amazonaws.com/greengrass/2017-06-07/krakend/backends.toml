@@ -1,0 +1,467 @@
+[[backends]]
+  group = "aws-greengrass-2017-06-07"
+  url_pattern = "/greengrass/definition/cores"
+  method = "GET"
+  encoding = "json"
+  host = ["http://greengrass.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS Greengrass seamlessly extends AWS onto physical devices so they can act locally on the data they generate, while still using the cloud for management, analytics, and durable storage. AWS Greengrass ensures your devices can respond quickly to local events and operate with intermittent connectivity. AWS Greengrass minimizes the cost of transmitting data to the cloud by allowing you to author AWS Lambda functions that execute locally."
+    version = "2017-06-07"
+    slug = "aws-greengrass-2017-06-07-greengrass-definition-cores"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://greengrass.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-greengrass-2017-06-07"
+  url_pattern = "/greengrass/definition/cores/{CoreDefinitionId}/versions"
+  method = "GET"
+  encoding = "json"
+  host = ["http://greengrass.amazonaws.com"]
+  url_keys = ["CoreDefinitionId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS Greengrass seamlessly extends AWS onto physical devices so they can act locally on the data they generate, while still using the cloud for management, analytics, and durable storage. AWS Greengrass ensures your devices can respond quickly to local events and operate with intermittent connectivity. AWS Greengrass minimizes the cost of transmitting data to the cloud by allowing you to author AWS Lambda functions that execute locally."
+    version = "2017-06-07"
+    slug = "aws-greengrass-2017-06-07-greengrass-definition-cores-coredefinitionid-versions"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://greengrass.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-greengrass-2017-06-07"
+  url_pattern = "/greengrass/definition/cores/{CoreDefinitionId}/versions/{CoreDefinitionVersionId}"
+  method = "GET"
+  encoding = "json"
+  host = ["http://greengrass.amazonaws.com"]
+  url_keys = ["CoreDefinitionId", "CoreDefinitionVersionId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS Greengrass seamlessly extends AWS onto physical devices so they can act locally on the data they generate, while still using the cloud for management, analytics, and durable storage. AWS Greengrass ensures your devices can respond quickly to local events and operate with intermittent connectivity. AWS Greengrass minimizes the cost of transmitting data to the cloud by allowing you to author AWS Lambda functions that execute locally."
+    version = "2017-06-07"
+    slug = "aws-greengrass-2017-06-07-greengrass-definition-cores-coredefinitionid-versions-coredefinitionversionid"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://greengrass.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-greengrass-2017-06-07"
+  url_pattern = "/greengrass/definition/devices"
+  method = "GET"
+  encoding = "json"
+  host = ["http://greengrass.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS Greengrass seamlessly extends AWS onto physical devices so they can act locally on the data they generate, while still using the cloud for management, analytics, and durable storage. AWS Greengrass ensures your devices can respond quickly to local events and operate with intermittent connectivity. AWS Greengrass minimizes the cost of transmitting data to the cloud by allowing you to author AWS Lambda functions that execute locally."
+    version = "2017-06-07"
+    slug = "aws-greengrass-2017-06-07-greengrass-definition-devices"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://greengrass.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-greengrass-2017-06-07"
+  url_pattern = "/greengrass/definition/devices/{DeviceDefinitionId}/versions"
+  method = "GET"
+  encoding = "json"
+  host = ["http://greengrass.amazonaws.com"]
+  url_keys = ["DeviceDefinitionId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS Greengrass seamlessly extends AWS onto physical devices so they can act locally on the data they generate, while still using the cloud for management, analytics, and durable storage. AWS Greengrass ensures your devices can respond quickly to local events and operate with intermittent connectivity. AWS Greengrass minimizes the cost of transmitting data to the cloud by allowing you to author AWS Lambda functions that execute locally."
+    version = "2017-06-07"
+    slug = "aws-greengrass-2017-06-07-greengrass-definition-devices-devicedefinitionid-versions"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://greengrass.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-greengrass-2017-06-07"
+  url_pattern = "/greengrass/definition/devices/{DeviceDefinitionId}/versions/{DeviceDefinitionVersionId}"
+  method = "GET"
+  encoding = "json"
+  host = ["http://greengrass.amazonaws.com"]
+  url_keys = ["DeviceDefinitionId", "DeviceDefinitionVersionId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS Greengrass seamlessly extends AWS onto physical devices so they can act locally on the data they generate, while still using the cloud for management, analytics, and durable storage. AWS Greengrass ensures your devices can respond quickly to local events and operate with intermittent connectivity. AWS Greengrass minimizes the cost of transmitting data to the cloud by allowing you to author AWS Lambda functions that execute locally."
+    version = "2017-06-07"
+    slug = "aws-greengrass-2017-06-07-greengrass-definition-devices-devicedefinitionid-versions-devicedefinitionversionid"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://greengrass.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-greengrass-2017-06-07"
+  url_pattern = "/greengrass/definition/functions"
+  method = "GET"
+  encoding = "json"
+  host = ["http://greengrass.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS Greengrass seamlessly extends AWS onto physical devices so they can act locally on the data they generate, while still using the cloud for management, analytics, and durable storage. AWS Greengrass ensures your devices can respond quickly to local events and operate with intermittent connectivity. AWS Greengrass minimizes the cost of transmitting data to the cloud by allowing you to author AWS Lambda functions that execute locally."
+    version = "2017-06-07"
+    slug = "aws-greengrass-2017-06-07-greengrass-definition-functions"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://greengrass.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-greengrass-2017-06-07"
+  url_pattern = "/greengrass/definition/functions/{FunctionDefinitionId}/versions"
+  method = "GET"
+  encoding = "json"
+  host = ["http://greengrass.amazonaws.com"]
+  url_keys = ["FunctionDefinitionId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS Greengrass seamlessly extends AWS onto physical devices so they can act locally on the data they generate, while still using the cloud for management, analytics, and durable storage. AWS Greengrass ensures your devices can respond quickly to local events and operate with intermittent connectivity. AWS Greengrass minimizes the cost of transmitting data to the cloud by allowing you to author AWS Lambda functions that execute locally."
+    version = "2017-06-07"
+    slug = "aws-greengrass-2017-06-07-greengrass-definition-functions-functiondefinitionid-versions"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://greengrass.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-greengrass-2017-06-07"
+  url_pattern = "/greengrass/definition/functions/{FunctionDefinitionId}/versions/{FunctionDefinitionVersionId}"
+  method = "GET"
+  encoding = "json"
+  host = ["http://greengrass.amazonaws.com"]
+  url_keys = ["FunctionDefinitionId", "FunctionDefinitionVersionId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS Greengrass seamlessly extends AWS onto physical devices so they can act locally on the data they generate, while still using the cloud for management, analytics, and durable storage. AWS Greengrass ensures your devices can respond quickly to local events and operate with intermittent connectivity. AWS Greengrass minimizes the cost of transmitting data to the cloud by allowing you to author AWS Lambda functions that execute locally."
+    version = "2017-06-07"
+    slug = "aws-greengrass-2017-06-07-greengrass-definition-functions-functiondefinitionid-versions-functiondefinitionversionid"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://greengrass.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-greengrass-2017-06-07"
+  url_pattern = "/greengrass/definition/loggers"
+  method = "GET"
+  encoding = "json"
+  host = ["http://greengrass.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS Greengrass seamlessly extends AWS onto physical devices so they can act locally on the data they generate, while still using the cloud for management, analytics, and durable storage. AWS Greengrass ensures your devices can respond quickly to local events and operate with intermittent connectivity. AWS Greengrass minimizes the cost of transmitting data to the cloud by allowing you to author AWS Lambda functions that execute locally."
+    version = "2017-06-07"
+    slug = "aws-greengrass-2017-06-07-greengrass-definition-loggers"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://greengrass.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-greengrass-2017-06-07"
+  url_pattern = "/greengrass/definition/loggers/{LoggerDefinitionId}/versions"
+  method = "GET"
+  encoding = "json"
+  host = ["http://greengrass.amazonaws.com"]
+  url_keys = ["LoggerDefinitionId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS Greengrass seamlessly extends AWS onto physical devices so they can act locally on the data they generate, while still using the cloud for management, analytics, and durable storage. AWS Greengrass ensures your devices can respond quickly to local events and operate with intermittent connectivity. AWS Greengrass minimizes the cost of transmitting data to the cloud by allowing you to author AWS Lambda functions that execute locally."
+    version = "2017-06-07"
+    slug = "aws-greengrass-2017-06-07-greengrass-definition-loggers-loggerdefinitionid-versions"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://greengrass.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-greengrass-2017-06-07"
+  url_pattern = "/greengrass/definition/loggers/{LoggerDefinitionId}/versions/{LoggerDefinitionVersionId}"
+  method = "GET"
+  encoding = "json"
+  host = ["http://greengrass.amazonaws.com"]
+  url_keys = ["LoggerDefinitionId", "LoggerDefinitionVersionId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS Greengrass seamlessly extends AWS onto physical devices so they can act locally on the data they generate, while still using the cloud for management, analytics, and durable storage. AWS Greengrass ensures your devices can respond quickly to local events and operate with intermittent connectivity. AWS Greengrass minimizes the cost of transmitting data to the cloud by allowing you to author AWS Lambda functions that execute locally."
+    version = "2017-06-07"
+    slug = "aws-greengrass-2017-06-07-greengrass-definition-loggers-loggerdefinitionid-versions-loggerdefinitionversionid"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://greengrass.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-greengrass-2017-06-07"
+  url_pattern = "/greengrass/definition/subscriptions"
+  method = "GET"
+  encoding = "json"
+  host = ["http://greengrass.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS Greengrass seamlessly extends AWS onto physical devices so they can act locally on the data they generate, while still using the cloud for management, analytics, and durable storage. AWS Greengrass ensures your devices can respond quickly to local events and operate with intermittent connectivity. AWS Greengrass minimizes the cost of transmitting data to the cloud by allowing you to author AWS Lambda functions that execute locally."
+    version = "2017-06-07"
+    slug = "aws-greengrass-2017-06-07-greengrass-definition-subscriptions"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://greengrass.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-greengrass-2017-06-07"
+  url_pattern = "/greengrass/definition/subscriptions/{SubscriptionDefinitionId}/versions"
+  method = "GET"
+  encoding = "json"
+  host = ["http://greengrass.amazonaws.com"]
+  url_keys = ["SubscriptionDefinitionId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS Greengrass seamlessly extends AWS onto physical devices so they can act locally on the data they generate, while still using the cloud for management, analytics, and durable storage. AWS Greengrass ensures your devices can respond quickly to local events and operate with intermittent connectivity. AWS Greengrass minimizes the cost of transmitting data to the cloud by allowing you to author AWS Lambda functions that execute locally."
+    version = "2017-06-07"
+    slug = "aws-greengrass-2017-06-07-greengrass-definition-subscriptions-subscriptiondefinitionid-versions"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://greengrass.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-greengrass-2017-06-07"
+  url_pattern = "/greengrass/definition/subscriptions/{SubscriptionDefinitionId}/versions/{SubscriptionDefinitionVersionId}"
+  method = "GET"
+  encoding = "json"
+  host = ["http://greengrass.amazonaws.com"]
+  url_keys = ["SubscriptionDefinitionId", "SubscriptionDefinitionVersionId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS Greengrass seamlessly extends AWS onto physical devices so they can act locally on the data they generate, while still using the cloud for management, analytics, and durable storage. AWS Greengrass ensures your devices can respond quickly to local events and operate with intermittent connectivity. AWS Greengrass minimizes the cost of transmitting data to the cloud by allowing you to author AWS Lambda functions that execute locally."
+    version = "2017-06-07"
+    slug = "aws-greengrass-2017-06-07-greengrass-definition-subscriptions-subscriptiondefinitionid-versions-subscriptiondefinitionversionid"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://greengrass.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-greengrass-2017-06-07"
+  url_pattern = "/greengrass/groups"
+  method = "GET"
+  encoding = "json"
+  host = ["http://greengrass.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS Greengrass seamlessly extends AWS onto physical devices so they can act locally on the data they generate, while still using the cloud for management, analytics, and durable storage. AWS Greengrass ensures your devices can respond quickly to local events and operate with intermittent connectivity. AWS Greengrass minimizes the cost of transmitting data to the cloud by allowing you to author AWS Lambda functions that execute locally."
+    version = "2017-06-07"
+    slug = "aws-greengrass-2017-06-07-greengrass-groups"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://greengrass.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-greengrass-2017-06-07"
+  url_pattern = "/greengrass/groups/{GroupId}/certificateauthorities"
+  method = "GET"
+  encoding = "json"
+  host = ["http://greengrass.amazonaws.com"]
+  url_keys = ["GroupId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS Greengrass seamlessly extends AWS onto physical devices so they can act locally on the data they generate, while still using the cloud for management, analytics, and durable storage. AWS Greengrass ensures your devices can respond quickly to local events and operate with intermittent connectivity. AWS Greengrass minimizes the cost of transmitting data to the cloud by allowing you to author AWS Lambda functions that execute locally."
+    version = "2017-06-07"
+    slug = "aws-greengrass-2017-06-07-greengrass-groups-groupid-certificateauthorities"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://greengrass.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-greengrass-2017-06-07"
+  url_pattern = "/greengrass/groups/{GroupId}/certificateauthorities/{CertificateAuthorityId}"
+  method = "GET"
+  encoding = "json"
+  host = ["http://greengrass.amazonaws.com"]
+  url_keys = ["CertificateAuthorityId", "GroupId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS Greengrass seamlessly extends AWS onto physical devices so they can act locally on the data they generate, while still using the cloud for management, analytics, and durable storage. AWS Greengrass ensures your devices can respond quickly to local events and operate with intermittent connectivity. AWS Greengrass minimizes the cost of transmitting data to the cloud by allowing you to author AWS Lambda functions that execute locally."
+    version = "2017-06-07"
+    slug = "aws-greengrass-2017-06-07-greengrass-groups-groupid-certificateauthorities-certificateauthorityid"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://greengrass.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-greengrass-2017-06-07"
+  url_pattern = "/greengrass/groups/{GroupId}/deployments"
+  method = "GET"
+  encoding = "json"
+  host = ["http://greengrass.amazonaws.com"]
+  url_keys = ["GroupId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS Greengrass seamlessly extends AWS onto physical devices so they can act locally on the data they generate, while still using the cloud for management, analytics, and durable storage. AWS Greengrass ensures your devices can respond quickly to local events and operate with intermittent connectivity. AWS Greengrass minimizes the cost of transmitting data to the cloud by allowing you to author AWS Lambda functions that execute locally."
+    version = "2017-06-07"
+    slug = "aws-greengrass-2017-06-07-greengrass-groups-groupid-deployments"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://greengrass.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-greengrass-2017-06-07"
+  url_pattern = "/greengrass/groups/{GroupId}/deployments/$reset"
+  method = "POST"
+  encoding = "json"
+  host = ["http://greengrass.amazonaws.com"]
+  url_keys = ["GroupId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS Greengrass seamlessly extends AWS onto physical devices so they can act locally on the data they generate, while still using the cloud for management, analytics, and durable storage. AWS Greengrass ensures your devices can respond quickly to local events and operate with intermittent connectivity. AWS Greengrass minimizes the cost of transmitting data to the cloud by allowing you to author AWS Lambda functions that execute locally."
+    version = "2017-06-07"
+    slug = "aws-greengrass-2017-06-07-greengrass-groups-groupid-deployments-reset"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://greengrass.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-greengrass-2017-06-07"
+  url_pattern = "/greengrass/groups/{GroupId}/deployments/{DeploymentId}/status"
+  method = "GET"
+  encoding = "json"
+  host = ["http://greengrass.amazonaws.com"]
+  url_keys = ["DeploymentId", "GroupId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS Greengrass seamlessly extends AWS onto physical devices so they can act locally on the data they generate, while still using the cloud for management, analytics, and durable storage. AWS Greengrass ensures your devices can respond quickly to local events and operate with intermittent connectivity. AWS Greengrass minimizes the cost of transmitting data to the cloud by allowing you to author AWS Lambda functions that execute locally."
+    version = "2017-06-07"
+    slug = "aws-greengrass-2017-06-07-greengrass-groups-groupid-deployments-deploymentid-status"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://greengrass.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-greengrass-2017-06-07"
+  url_pattern = "/greengrass/groups/{GroupId}/role"
+  method = "GET"
+  encoding = "json"
+  host = ["http://greengrass.amazonaws.com"]
+  url_keys = ["GroupId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS Greengrass seamlessly extends AWS onto physical devices so they can act locally on the data they generate, while still using the cloud for management, analytics, and durable storage. AWS Greengrass ensures your devices can respond quickly to local events and operate with intermittent connectivity. AWS Greengrass minimizes the cost of transmitting data to the cloud by allowing you to author AWS Lambda functions that execute locally."
+    version = "2017-06-07"
+    slug = "aws-greengrass-2017-06-07-greengrass-groups-groupid-role"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://greengrass.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-greengrass-2017-06-07"
+  url_pattern = "/greengrass/groups/{GroupId}/versions"
+  method = "GET"
+  encoding = "json"
+  host = ["http://greengrass.amazonaws.com"]
+  url_keys = ["GroupId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS Greengrass seamlessly extends AWS onto physical devices so they can act locally on the data they generate, while still using the cloud for management, analytics, and durable storage. AWS Greengrass ensures your devices can respond quickly to local events and operate with intermittent connectivity. AWS Greengrass minimizes the cost of transmitting data to the cloud by allowing you to author AWS Lambda functions that execute locally."
+    version = "2017-06-07"
+    slug = "aws-greengrass-2017-06-07-greengrass-groups-groupid-versions"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://greengrass.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-greengrass-2017-06-07"
+  url_pattern = "/greengrass/groups/{GroupId}/versions/{GroupVersionId}"
+  method = "GET"
+  encoding = "json"
+  host = ["http://greengrass.amazonaws.com"]
+  url_keys = ["GroupId", "GroupVersionId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS Greengrass seamlessly extends AWS onto physical devices so they can act locally on the data they generate, while still using the cloud for management, analytics, and durable storage. AWS Greengrass ensures your devices can respond quickly to local events and operate with intermittent connectivity. AWS Greengrass minimizes the cost of transmitting data to the cloud by allowing you to author AWS Lambda functions that execute locally."
+    version = "2017-06-07"
+    slug = "aws-greengrass-2017-06-07-greengrass-groups-groupid-versions-groupversionid"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://greengrass.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-greengrass-2017-06-07"
+  url_pattern = "/greengrass/servicerole"
+  method = "GET"
+  encoding = "json"
+  host = ["http://greengrass.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS Greengrass seamlessly extends AWS onto physical devices so they can act locally on the data they generate, while still using the cloud for management, analytics, and durable storage. AWS Greengrass ensures your devices can respond quickly to local events and operate with intermittent connectivity. AWS Greengrass minimizes the cost of transmitting data to the cloud by allowing you to author AWS Lambda functions that execute locally."
+    version = "2017-06-07"
+    slug = "aws-greengrass-2017-06-07-greengrass-servicerole"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://greengrass.amazonaws.com"]
+    topics = ["cloud"]

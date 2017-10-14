@@ -1,0 +1,68 @@
+{
+	"backends": [
+		{
+			"group": "mediaservicesmanagementclient-2015-10-01",
+			"url_pattern": "/subscriptions/{subscriptionId}/providers/Microsoft",
+			"method": "MEDIA/CHECKNAMEAVAILABILITY",
+			"encoding": "json",
+			"host": [
+				"https://management.azure.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "azure.com",
+				"description": "Media Services resource management APIs.",
+				"version": "2015-10-01",
+				"slug": "mediaservicesmanagementclient-2015-10-01-subscriptions-subscriptionid-providers-microsoft",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://management.azure.com"
+				],
+				"topics": [
+					"cloud",
+					"media"
+				]
+			}
+		},
+		{
+			"group": "mediaservicesmanagementclient-2015-10-01",
+			"url_pattern": "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft",
+			"method": "MEDIA/MEDIASERVICES",
+			"encoding": "json",
+			"host": [
+				"https://management.azure.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "azure.com",
+				"description": "Media Services resource management APIs.",
+				"version": "2015-10-01",
+				"slug": "mediaservicesmanagementclient-2015-10-01-subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://management.azure.com"
+				],
+				"topics": [
+					"cloud",
+					"media"
+				]
+			}
+		}
+	]
+}

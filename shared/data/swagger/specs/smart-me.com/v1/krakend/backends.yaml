@@ -1,0 +1,731 @@
+backends:
+- group: smart-me-v1
+  url_pattern: /api/Actions
+  method: POST
+  host:
+  - https://smart-me.com:443
+  concurrent_calls: 1
+  extra_config:
+    provider: smart-me.com
+    description: With the smart-me REST API you get Access to all your devices in
+      the smart-me Cloud and you can add your own devices. So it's a easy way to add
+      the smart-me Cloud support to your Hardware or Software Product.
+    version: v1
+    slug: smart-me-v1-api-actions
+    schemes:
+    - https
+    hosts:
+    - https://smart-me.com:443
+    topics:
+    - actions
+    - iot
+- group: smart-me-v1
+  url_pattern: /api/Actions/{id}
+  method: GET
+  host:
+  - https://smart-me.com:443
+  url_keys:
+  - id
+  concurrent_calls: 1
+  extra_config:
+    provider: smart-me.com
+    description: With the smart-me REST API you get Access to all your devices in
+      the smart-me Cloud and you can add your own devices. So it's a easy way to add
+      the smart-me Cloud support to your Hardware or Software Product.
+    version: v1
+    slug: smart-me-v1-api-actions-id
+    schemes:
+    - https
+    hosts:
+    - https://smart-me.com:443
+    topics:
+    - actions
+    - iot
+- group: smart-me-v1
+  url_pattern: /api/CustomDevice
+  method: GET
+  host:
+  - https://smart-me.com:443
+  concurrent_calls: 1
+  extra_config:
+    provider: smart-me.com
+    description: With the smart-me REST API you get Access to all your devices in
+      the smart-me Cloud and you can add your own devices. So it's a easy way to add
+      the smart-me Cloud support to your Hardware or Software Product.
+    version: v1
+    slug: smart-me-v1-api-customdevice
+    schemes:
+    - https
+    hosts:
+    - https://smart-me.com:443
+    topics:
+    - customdevice
+    - iot
+- group: smart-me-v1
+  url_pattern: /api/CustomDevice/{id}
+  method: GET
+  host:
+  - https://smart-me.com:443
+  url_keys:
+  - id
+  whitelist:
+  - Id
+  - Name
+  - Serial
+  - ValueDate
+  - Values
+  concurrent_calls: 1
+  extra_config:
+    provider: smart-me.com
+    description: With the smart-me REST API you get Access to all your devices in
+      the smart-me Cloud and you can add your own devices. So it's a easy way to add
+      the smart-me Cloud support to your Hardware or Software Product.
+    version: v1
+    slug: smart-me-v1-api-customdevice-id
+    schemes:
+    - https
+    mapping:
+      Id: Id
+      Name: Name
+      Serial: Serial
+      ValueDate: ValueDate
+      Values: Values
+    hosts:
+    - https://smart-me.com:443
+    topics:
+    - customdevice
+    - iot
+- group: smart-me-v1
+  url_pattern: /api/DeviceBySerial
+  method: GET
+  host:
+  - https://smart-me.com:443
+  query_string_params:
+  - serial
+  whitelist:
+  - ActivePower
+  - ActivePowerL1
+  - ActivePowerL2
+  - ActivePowerL3
+  - ActivePowerUnit
+  - ActiveTariff
+  - CounterReading
+  - CounterReadingT1
+  - CounterReadingT2
+  - CounterReadingT3
+  - CounterReadingT4
+  - CounterReadingUnit
+  - Current
+  - CurrentL1
+  - CurrentL2
+  - CurrentL3
+  - DeviceEnergyType
+  - DigitalInput1
+  - DigitalInput2
+  - DigitalOutput1
+  - DigitalOutput2
+  - FamilyType
+  - Id
+  - Name
+  - PowerFactor
+  - PowerFactorL1
+  - PowerFactorL2
+  - PowerFactorL3
+  - Serial
+  - SwitchOn
+  - SwitchPhaseL1On
+  - SwitchPhaseL2On
+  - SwitchPhaseL3On
+  - Temperature
+  - ValueDate
+  - Voltage
+  - VoltageL1
+  - VoltageL2
+  - VoltageL3
+  concurrent_calls: 1
+  extra_config:
+    provider: smart-me.com
+    description: With the smart-me REST API you get Access to all your devices in
+      the smart-me Cloud and you can add your own devices. So it's a easy way to add
+      the smart-me Cloud support to your Hardware or Software Product.
+    version: v1
+    slug: smart-me-v1-api-devicebyserial
+    schemes:
+    - https
+    mapping:
+      ActivePower: ActivePower
+      ActivePowerL1: ActivePowerL1
+      ActivePowerL2: ActivePowerL2
+      ActivePowerL3: ActivePowerL3
+      ActivePowerUnit: ActivePowerUnit
+      ActiveTariff: ActiveTariff
+      CounterReading: CounterReading
+      CounterReadingT1: CounterReadingT1
+      CounterReadingT2: CounterReadingT2
+      CounterReadingT3: CounterReadingT3
+      CounterReadingT4: CounterReadingT4
+      CounterReadingUnit: CounterReadingUnit
+      Current: Current
+      CurrentL1: CurrentL1
+      CurrentL2: CurrentL2
+      CurrentL3: CurrentL3
+      DeviceEnergyType: DeviceEnergyType
+      DigitalInput1: DigitalInput1
+      DigitalInput2: DigitalInput2
+      DigitalOutput1: DigitalOutput1
+      DigitalOutput2: DigitalOutput2
+      FamilyType: FamilyType
+      Id: Id
+      Name: Name
+      PowerFactor: PowerFactor
+      PowerFactorL1: PowerFactorL1
+      PowerFactorL2: PowerFactorL2
+      PowerFactorL3: PowerFactorL3
+      Serial: Serial
+      SwitchOn: SwitchOn
+      SwitchPhaseL1On: SwitchPhaseL1On
+      SwitchPhaseL2On: SwitchPhaseL2On
+      SwitchPhaseL3On: SwitchPhaseL3On
+      Temperature: Temperature
+      ValueDate: ValueDate
+      Voltage: Voltage
+      VoltageL1: VoltageL1
+      VoltageL2: VoltageL2
+      VoltageL3: VoltageL3
+    hosts:
+    - https://smart-me.com:443
+    topics:
+    - devicebyserial
+    - iot
+- group: smart-me-v1
+  url_pattern: /api/Devices
+  method: GET
+  host:
+  - https://smart-me.com:443
+  concurrent_calls: 1
+  extra_config:
+    provider: smart-me.com
+    description: With the smart-me REST API you get Access to all your devices in
+      the smart-me Cloud and you can add your own devices. So it's a easy way to add
+      the smart-me Cloud support to your Hardware or Software Product.
+    version: v1
+    slug: smart-me-v1-api-devices
+    schemes:
+    - https
+    hosts:
+    - https://smart-me.com:443
+    topics:
+    - devices
+    - iot
+- group: smart-me-v1
+  url_pattern: /api/Devices/{id}
+  method: GET
+  host:
+  - https://smart-me.com:443
+  url_keys:
+  - id
+  whitelist:
+  - ActivePower
+  - ActivePowerL1
+  - ActivePowerL2
+  - ActivePowerL3
+  - ActivePowerUnit
+  - ActiveTariff
+  - CounterReading
+  - CounterReadingT1
+  - CounterReadingT2
+  - CounterReadingT3
+  - CounterReadingT4
+  - CounterReadingUnit
+  - Current
+  - CurrentL1
+  - CurrentL2
+  - CurrentL3
+  - DeviceEnergyType
+  - DigitalInput1
+  - DigitalInput2
+  - DigitalOutput1
+  - DigitalOutput2
+  - FamilyType
+  - Id
+  - Name
+  - PowerFactor
+  - PowerFactorL1
+  - PowerFactorL2
+  - PowerFactorL3
+  - Serial
+  - SwitchOn
+  - SwitchPhaseL1On
+  - SwitchPhaseL2On
+  - SwitchPhaseL3On
+  - Temperature
+  - ValueDate
+  - Voltage
+  - VoltageL1
+  - VoltageL2
+  - VoltageL3
+  concurrent_calls: 1
+  extra_config:
+    provider: smart-me.com
+    description: With the smart-me REST API you get Access to all your devices in
+      the smart-me Cloud and you can add your own devices. So it's a easy way to add
+      the smart-me Cloud support to your Hardware or Software Product.
+    version: v1
+    slug: smart-me-v1-api-devices-id
+    schemes:
+    - https
+    mapping:
+      ActivePower: ActivePower
+      ActivePowerL1: ActivePowerL1
+      ActivePowerL2: ActivePowerL2
+      ActivePowerL3: ActivePowerL3
+      ActivePowerUnit: ActivePowerUnit
+      ActiveTariff: ActiveTariff
+      CounterReading: CounterReading
+      CounterReadingT1: CounterReadingT1
+      CounterReadingT2: CounterReadingT2
+      CounterReadingT3: CounterReadingT3
+      CounterReadingT4: CounterReadingT4
+      CounterReadingUnit: CounterReadingUnit
+      Current: Current
+      CurrentL1: CurrentL1
+      CurrentL2: CurrentL2
+      CurrentL3: CurrentL3
+      DeviceEnergyType: DeviceEnergyType
+      DigitalInput1: DigitalInput1
+      DigitalInput2: DigitalInput2
+      DigitalOutput1: DigitalOutput1
+      DigitalOutput2: DigitalOutput2
+      FamilyType: FamilyType
+      Id: Id
+      Name: Name
+      PowerFactor: PowerFactor
+      PowerFactorL1: PowerFactorL1
+      PowerFactorL2: PowerFactorL2
+      PowerFactorL3: PowerFactorL3
+      Serial: Serial
+      SwitchOn: SwitchOn
+      SwitchPhaseL1On: SwitchPhaseL1On
+      SwitchPhaseL2On: SwitchPhaseL2On
+      SwitchPhaseL3On: SwitchPhaseL3On
+      Temperature: Temperature
+      ValueDate: ValueDate
+      Voltage: Voltage
+      VoltageL1: VoltageL1
+      VoltageL2: VoltageL2
+      VoltageL3: VoltageL3
+    hosts:
+    - https://smart-me.com:443
+    topics:
+    - devices
+    - iot
+- group: smart-me-v1
+  url_pattern: /api/DevicesByEnergy
+  method: GET
+  host:
+  - https://smart-me.com:443
+  query_string_params:
+  - meterEnergyType
+  concurrent_calls: 1
+  extra_config:
+    provider: smart-me.com
+    description: With the smart-me REST API you get Access to all your devices in
+      the smart-me Cloud and you can add your own devices. So it's a easy way to add
+      the smart-me Cloud support to your Hardware or Software Product.
+    version: v1
+    slug: smart-me-v1-api-devicesbyenergy
+    schemes:
+    - https
+    hosts:
+    - https://smart-me.com:443
+    topics:
+    - devicesbyenergy
+    - iot
+- group: smart-me-v1
+  url_pattern: /api/DevicesBySubType
+  method: GET
+  host:
+  - https://smart-me.com:443
+  query_string_params:
+  - meterSubType
+  concurrent_calls: 1
+  extra_config:
+    provider: smart-me.com
+    description: With the smart-me REST API you get Access to all your devices in
+      the smart-me Cloud and you can add your own devices. So it's a easy way to add
+      the smart-me Cloud support to your Hardware or Software Product.
+    version: v1
+    slug: smart-me-v1-api-devicesbysubtype
+    schemes:
+    - https
+    hosts:
+    - https://smart-me.com:443
+    topics:
+    - devicesbysubtype
+    - iot
+- group: smart-me-v1
+  url_pattern: /api/MBus
+  method: POST
+  host:
+  - https://smart-me.com:443
+  concurrent_calls: 1
+  extra_config:
+    provider: smart-me.com
+    description: With the smart-me REST API you get Access to all your devices in
+      the smart-me Cloud and you can add your own devices. So it's a easy way to add
+      the smart-me Cloud support to your Hardware or Software Product.
+    version: v1
+    slug: smart-me-v1-api-mbus
+    schemes:
+    - https
+    hosts:
+    - https://smart-me.com:443
+    topics:
+    - iot
+    - mbus
+- group: smart-me-v1
+  url_pattern: /api/MeterFolderInformation
+  method: POST
+  host:
+  - https://smart-me.com:443
+  concurrent_calls: 1
+  extra_config:
+    provider: smart-me.com
+    description: With the smart-me REST API you get Access to all your devices in
+      the smart-me Cloud and you can add your own devices. So it's a easy way to add
+      the smart-me Cloud support to your Hardware or Software Product.
+    version: v1
+    slug: smart-me-v1-api-meterfolderinformation
+    schemes:
+    - https
+    hosts:
+    - https://smart-me.com:443
+    topics:
+    - iot
+    - meterfolderinformation
+- group: smart-me-v1
+  url_pattern: /api/MeterFolderInformation/{id}
+  method: GET
+  host:
+  - https://smart-me.com:443
+  url_keys:
+  - id
+  whitelist:
+  - FirmwareVersion
+  - HardwareVersion
+  - InputInformations
+  - IsFolder
+  - Name
+  - OutputInformations
+  concurrent_calls: 1
+  extra_config:
+    provider: smart-me.com
+    description: With the smart-me REST API you get Access to all your devices in
+      the smart-me Cloud and you can add your own devices. So it's a easy way to add
+      the smart-me Cloud support to your Hardware or Software Product.
+    version: v1
+    slug: smart-me-v1-api-meterfolderinformation-id
+    schemes:
+    - https
+    mapping:
+      FirmwareVersion: FirmwareVersion
+      HardwareVersion: HardwareVersion
+      InputInformations: InputInformations
+      IsFolder: IsFolder
+      Name: Name
+      OutputInformations: OutputInformations
+    hosts:
+    - https://smart-me.com:443
+    topics:
+    - iot
+    - meterfolderinformation
+- group: smart-me-v1
+  url_pattern: /api/MeterValues/{id}
+  method: GET
+  host:
+  - https://smart-me.com:443
+  url_keys:
+  - id
+  query_string_params:
+  - date
+  whitelist:
+  - CounterReading
+  - CounterReadingExport
+  - CounterReadingExportT1
+  - CounterReadingExportT2
+  - CounterReadingExportT3
+  - CounterReadingExportT4
+  - CounterReadingImport
+  - CounterReadingImportT1
+  - CounterReadingImportT2
+  - CounterReadingImportT3
+  - CounterReadingImportT4
+  - CounterReadingT1
+  - CounterReadingT2
+  - CounterReadingT3
+  - CounterReadingT4
+  - CounterReadingUnit
+  - Date
+  - Id
+  - Serial
+  concurrent_calls: 1
+  extra_config:
+    provider: smart-me.com
+    description: With the smart-me REST API you get Access to all your devices in
+      the smart-me Cloud and you can add your own devices. So it's a easy way to add
+      the smart-me Cloud support to your Hardware or Software Product.
+    version: v1
+    slug: smart-me-v1-api-metervalues-id
+    schemes:
+    - https
+    mapping:
+      CounterReading: CounterReading
+      CounterReadingExport: CounterReadingExport
+      CounterReadingExportT1: CounterReadingExportT1
+      CounterReadingExportT2: CounterReadingExportT2
+      CounterReadingExportT3: CounterReadingExportT3
+      CounterReadingExportT4: CounterReadingExportT4
+      CounterReadingImport: CounterReadingImport
+      CounterReadingImportT1: CounterReadingImportT1
+      CounterReadingImportT2: CounterReadingImportT2
+      CounterReadingImportT3: CounterReadingImportT3
+      CounterReadingImportT4: CounterReadingImportT4
+      CounterReadingT1: CounterReadingT1
+      CounterReadingT2: CounterReadingT2
+      CounterReadingT3: CounterReadingT3
+      CounterReadingT4: CounterReadingT4
+      CounterReadingUnit: CounterReadingUnit
+      Date: Date
+      Id: Id
+      Serial: Serial
+    hosts:
+    - https://smart-me.com:443
+    topics:
+    - iot
+    - metervalues
+- group: smart-me-v1
+  url_pattern: /api/SignUp
+  method: POST
+  host:
+  - https://smart-me.com:443
+  whitelist:
+  - ChildUsers
+  - Email
+  - Id
+  - IsAdmin
+  - Username
+  concurrent_calls: 1
+  extra_config:
+    provider: smart-me.com
+    description: With the smart-me REST API you get Access to all your devices in
+      the smart-me Cloud and you can add your own devices. So it's a easy way to add
+      the smart-me Cloud support to your Hardware or Software Product.
+    version: v1
+    slug: smart-me-v1-api-signup
+    schemes:
+    - https
+    mapping:
+      ChildUsers: ChildUsers
+      Email: Email
+      Id: Id
+      IsAdmin: IsAdmin
+      Username: Username
+    hosts:
+    - https://smart-me.com:443
+    topics:
+    - iot
+    - signup
+- group: smart-me-v1
+  url_pattern: /api/User
+  method: GET
+  host:
+  - https://smart-me.com:443
+  whitelist:
+  - ChildUsers
+  - Email
+  - Id
+  - IsAdmin
+  - Username
+  concurrent_calls: 1
+  extra_config:
+    provider: smart-me.com
+    description: With the smart-me REST API you get Access to all your devices in
+      the smart-me Cloud and you can add your own devices. So it's a easy way to add
+      the smart-me Cloud support to your Hardware or Software Product.
+    version: v1
+    slug: smart-me-v1-api-user
+    schemes:
+    - https
+    mapping:
+      ChildUsers: ChildUsers
+      Email: Email
+      Id: Id
+      IsAdmin: IsAdmin
+      Username: Username
+    hosts:
+    - https://smart-me.com:443
+    topics:
+    - iot
+    - user
+- group: smart-me-v1
+  url_pattern: /api/VirtualBillingMeterActive
+  method: GET
+  host:
+  - https://smart-me.com:443
+  concurrent_calls: 1
+  extra_config:
+    provider: smart-me.com
+    description: With the smart-me REST API you get Access to all your devices in
+      the smart-me Cloud and you can add your own devices. So it's a easy way to add
+      the smart-me Cloud support to your Hardware or Software Product.
+    version: v1
+    slug: smart-me-v1-api-virtualbillingmeteractive
+    schemes:
+    - https
+    hosts:
+    - https://smart-me.com:443
+    topics:
+    - iot
+    - virtualbillingmeteractive
+- group: smart-me-v1
+  url_pattern: /api/VirtualBillingMeterDeactivate
+  method: POST
+  host:
+  - https://smart-me.com:443
+  concurrent_calls: 1
+  extra_config:
+    provider: smart-me.com
+    description: With the smart-me REST API you get Access to all your devices in
+      the smart-me Cloud and you can add your own devices. So it's a easy way to add
+      the smart-me Cloud support to your Hardware or Software Product.
+    version: v1
+    slug: smart-me-v1-api-virtualbillingmeterdeactivate
+    schemes:
+    - https
+    hosts:
+    - https://smart-me.com:443
+    topics:
+    - iot
+    - virtualbillingmeterdeactivate
+- group: smart-me-v1
+  url_pattern: /api/VirtualBillingMeters
+  method: GET
+  host:
+  - https://smart-me.com:443
+  concurrent_calls: 1
+  extra_config:
+    provider: smart-me.com
+    description: With the smart-me REST API you get Access to all your devices in
+      the smart-me Cloud and you can add your own devices. So it's a easy way to add
+      the smart-me Cloud support to your Hardware or Software Product.
+    version: v1
+    slug: smart-me-v1-api-virtualbillingmeters
+    schemes:
+    - https
+    hosts:
+    - https://smart-me.com:443
+    topics:
+    - iot
+    - virtualbillingmeters
+- group: smart-me-v1
+  url_pattern: /api/VirtualMeterCalculateFormula
+  method: GET
+  host:
+  - https://smart-me.com:443
+  query_string_params:
+  - formula
+  whitelist:
+  - ActivePower
+  - ActivePowerL1
+  - ActivePowerL2
+  - ActivePowerL3
+  - ActivePowerUnit
+  - ActiveTariff
+  - CounterReading
+  - CounterReadingT1
+  - CounterReadingT2
+  - CounterReadingT3
+  - CounterReadingT4
+  - CounterReadingUnit
+  - Current
+  - CurrentL1
+  - CurrentL2
+  - CurrentL3
+  - DeviceEnergyType
+  - DigitalInput1
+  - DigitalInput2
+  - DigitalOutput1
+  - DigitalOutput2
+  - FamilyType
+  - Id
+  - Name
+  - PowerFactor
+  - PowerFactorL1
+  - PowerFactorL2
+  - PowerFactorL3
+  - Serial
+  - SwitchOn
+  - SwitchPhaseL1On
+  - SwitchPhaseL2On
+  - SwitchPhaseL3On
+  - Temperature
+  - ValueDate
+  - Voltage
+  - VoltageL1
+  - VoltageL2
+  - VoltageL3
+  concurrent_calls: 1
+  extra_config:
+    provider: smart-me.com
+    description: With the smart-me REST API you get Access to all your devices in
+      the smart-me Cloud and you can add your own devices. So it's a easy way to add
+      the smart-me Cloud support to your Hardware or Software Product.
+    version: v1
+    slug: smart-me-v1-api-virtualmetercalculateformula
+    schemes:
+    - https
+    mapping:
+      ActivePower: ActivePower
+      ActivePowerL1: ActivePowerL1
+      ActivePowerL2: ActivePowerL2
+      ActivePowerL3: ActivePowerL3
+      ActivePowerUnit: ActivePowerUnit
+      ActiveTariff: ActiveTariff
+      CounterReading: CounterReading
+      CounterReadingT1: CounterReadingT1
+      CounterReadingT2: CounterReadingT2
+      CounterReadingT3: CounterReadingT3
+      CounterReadingT4: CounterReadingT4
+      CounterReadingUnit: CounterReadingUnit
+      Current: Current
+      CurrentL1: CurrentL1
+      CurrentL2: CurrentL2
+      CurrentL3: CurrentL3
+      DeviceEnergyType: DeviceEnergyType
+      DigitalInput1: DigitalInput1
+      DigitalInput2: DigitalInput2
+      DigitalOutput1: DigitalOutput1
+      DigitalOutput2: DigitalOutput2
+      FamilyType: FamilyType
+      Id: Id
+      Name: Name
+      PowerFactor: PowerFactor
+      PowerFactorL1: PowerFactorL1
+      PowerFactorL2: PowerFactorL2
+      PowerFactorL3: PowerFactorL3
+      Serial: Serial
+      SwitchOn: SwitchOn
+      SwitchPhaseL1On: SwitchPhaseL1On
+      SwitchPhaseL2On: SwitchPhaseL2On
+      SwitchPhaseL3On: SwitchPhaseL3On
+      Temperature: Temperature
+      ValueDate: ValueDate
+      Voltage: Voltage
+      VoltageL1: VoltageL1
+      VoltageL2: VoltageL2
+      VoltageL3: VoltageL3
+    hosts:
+    - https://smart-me.com:443
+    topics:
+    - iot
+    - virtualmetercalculateformula

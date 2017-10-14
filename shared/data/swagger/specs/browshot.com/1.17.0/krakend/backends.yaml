@@ -1,0 +1,459 @@
+backends:
+- group: browshot-1-17-0
+  url_pattern: /api/v1/account/info
+  method: GET
+  encoding: json
+  host:
+  - https://api.browshot.com
+  whitelist:
+  - balance
+  - browsers
+  - free_screenshots_left
+  - hosting_browshot
+  - instances
+  - private_instances
+  - screenshots
+  concurrent_calls: 1
+  extra_config:
+    provider: browshot.com
+    description: Take screenshots of any website in real time
+    version: 1.17.0
+    slug: browshot-1-17-0-api-v1-account-info
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      balance: balance
+      browsers: browsers
+      free_screenshots_left: free_screenshots_left
+      hosting_browshot: hosting_browshot
+      instances: instances
+      private_instances: private_instances
+      screenshots: screenshots
+    hosts:
+    - https://api.browshot.com
+    topics:
+    - tools
+- group: browshot-1-17-0
+  url_pattern: /api/v1/batch/ceate
+  method: POST
+  encoding: json
+  host:
+  - https://api.browshot.com
+  concurrent_calls: 1
+  extra_config:
+    provider: browshot.com
+    description: Take screenshots of any website in real time
+    version: 1.17.0
+    slug: browshot-1-17-0-api-v1-batch-ceate
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.browshot.com
+    topics:
+    - tools
+- group: browshot-1-17-0
+  url_pattern: /api/v1/batch/info
+  method: GET
+  encoding: json
+  host:
+  - https://api.browshot.com
+  whitelist:
+  - count
+  - failed
+  - finished
+  - id
+  - processed
+  - started
+  - status
+  - urls
+  concurrent_calls: 1
+  extra_config:
+    provider: browshot.com
+    description: Take screenshots of any website in real time
+    version: 1.17.0
+    slug: browshot-1-17-0-api-v1-batch-info
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      count: count
+      failed: failed
+      finished: finished
+      id: id
+      processed: processed
+      started: started
+      status: status
+      urls: urls
+    hosts:
+    - https://api.browshot.com
+    topics:
+    - tools
+- group: browshot-1-17-0
+  url_pattern: /api/v1/browser/info
+  method: GET
+  encoding: json
+  host:
+  - https://api.browshot.com
+  whitelist:
+  - flash
+  - id
+  - javascript
+  - mobile
+  - name
+  concurrent_calls: 1
+  extra_config:
+    provider: browshot.com
+    description: Take screenshots of any website in real time
+    version: 1.17.0
+    slug: browshot-1-17-0-api-v1-browser-info
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      flash: flash
+      id: id
+      javascript: javascript
+      mobile: mobile
+      name: name
+    hosts:
+    - https://api.browshot.com
+    topics:
+    - tools
+- group: browshot-1-17-0
+  url_pattern: /api/v1/browser/list
+  method: GET
+  encoding: json
+  host:
+  - https://api.browshot.com
+  whitelist:
+  - default
+  concurrent_calls: 1
+  extra_config:
+    provider: browshot.com
+    description: Take screenshots of any website in real time
+    version: 1.17.0
+    slug: browshot-1-17-0-api-v1-browser-list
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      default: default
+    hosts:
+    - https://api.browshot.com
+    topics:
+    - tools
+- group: browshot-1-17-0
+  url_pattern: /api/v1/instance/info
+  method: GET
+  encoding: json
+  host:
+  - https://api.browshot.com
+  whitelist:
+  - country
+  - height
+  - id
+  - load
+  - screenshot_cost
+  - width
+  concurrent_calls: 1
+  extra_config:
+    provider: browshot.com
+    description: Take screenshots of any website in real time
+    version: 1.17.0
+    slug: browshot-1-17-0-api-v1-instance-info
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      country: country
+      height: height
+      id: id
+      load: load
+      screenshot_cost: screenshot_cost
+      width: width
+    hosts:
+    - https://api.browshot.com
+    topics:
+    - tools
+- group: browshot-1-17-0
+  url_pattern: /api/v1/instance/list
+  method: GET
+  encoding: json
+  host:
+  - https://api.browshot.com
+  whitelist:
+  - free
+  - private
+  - shared
+  concurrent_calls: 1
+  extra_config:
+    provider: browshot.com
+    description: Take screenshots of any website in real time
+    version: 1.17.0
+    slug: browshot-1-17-0-api-v1-instance-list
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      free: free
+      private: private
+      shared: shared
+    hosts:
+    - https://api.browshot.com
+    topics:
+    - tools
+- group: browshot-1-17-0
+  url_pattern: /api/v1/screenshot/create
+  method: GET
+  encoding: json
+  host:
+  - https://api.browshot.com
+  whitelist:
+  - cookie
+  - cost
+  - delay
+  - details
+  - error
+  - final_url
+  - flash_delay
+  - height
+  - id
+  - instance_id
+  - post_data
+  - priority
+  - referer
+  - scale
+  - script
+  - shared_url
+  - size
+  - status
+  - url
+  - width
+  concurrent_calls: 1
+  extra_config:
+    provider: browshot.com
+    description: Take screenshots of any website in real time
+    version: 1.17.0
+    slug: browshot-1-17-0-api-v1-screenshot-create
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      cookie: cookie
+      cost: cost
+      delay: delay
+      details: details
+      error: error
+      final_url: final_url
+      flash_delay: flash_delay
+      height: height
+      id: id
+      instance_id: instance_id
+      post_data: post_data
+      priority: priority
+      referer: referer
+      scale: scale
+      script: script
+      shared_url: shared_url
+      size: size
+      status: status
+      url: url
+      width: width
+    hosts:
+    - https://api.browshot.com
+    topics:
+    - tools
+- group: browshot-1-17-0
+  url_pattern: /api/v1/screenshot/delete
+  method: GET
+  encoding: json
+  host:
+  - https://api.browshot.com
+  concurrent_calls: 1
+  extra_config:
+    provider: browshot.com
+    description: Take screenshots of any website in real time
+    version: 1.17.0
+    slug: browshot-1-17-0-api-v1-screenshot-delete
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.browshot.com
+    topics:
+    - tools
+- group: browshot-1-17-0
+  url_pattern: /api/v1/screenshot/host
+  method: GET
+  encoding: json
+  host:
+  - https://api.browshot.com
+  concurrent_calls: 1
+  extra_config:
+    provider: browshot.com
+    description: Take screenshots of any website in real time
+    version: 1.17.0
+    slug: browshot-1-17-0-api-v1-screenshot-host
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.browshot.com
+    topics:
+    - tools
+- group: browshot-1-17-0
+  url_pattern: /api/v1/screenshot/html
+  method: GET
+  encoding: json
+  host:
+  - https://api.browshot.com
+  concurrent_calls: 1
+  extra_config:
+    provider: browshot.com
+    description: Take screenshots of any website in real time
+    version: 1.17.0
+    slug: browshot-1-17-0-api-v1-screenshot-html
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.browshot.com
+    topics:
+    - tools
+- group: browshot-1-17-0
+  url_pattern: /api/v1/screenshot/info
+  method: GET
+  encoding: json
+  host:
+  - https://api.browshot.com
+  concurrent_calls: 1
+  extra_config:
+    provider: browshot.com
+    description: Take screenshots of any website in real time
+    version: 1.17.0
+    slug: browshot-1-17-0-api-v1-screenshot-info
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.browshot.com
+    topics:
+    - tools
+- group: browshot-1-17-0
+  url_pattern: /api/v1/screenshot/list
+  method: GET
+  encoding: json
+  host:
+  - https://api.browshot.com
+  concurrent_calls: 1
+  extra_config:
+    provider: browshot.com
+    description: Take screenshots of any website in real time
+    version: 1.17.0
+    slug: browshot-1-17-0-api-v1-screenshot-list
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.browshot.com
+    topics:
+    - tools
+- group: browshot-1-17-0
+  url_pattern: /api/v1/screenshot/multiple
+  method: GET
+  encoding: json
+  host:
+  - https://api.browshot.com
+  whitelist:
+  - default
+  concurrent_calls: 1
+  extra_config:
+    provider: browshot.com
+    description: Take screenshots of any website in real time
+    version: 1.17.0
+    slug: browshot-1-17-0-api-v1-screenshot-multiple
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      default: default
+    hosts:
+    - https://api.browshot.com
+    topics:
+    - tools
+- group: browshot-1-17-0
+  url_pattern: /api/v1/screenshot/search
+  method: GET
+  encoding: json
+  host:
+  - https://api.browshot.com
+  concurrent_calls: 1
+  extra_config:
+    provider: browshot.com
+    description: Take screenshots of any website in real time
+    version: 1.17.0
+    slug: browshot-1-17-0-api-v1-screenshot-search
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.browshot.com
+    topics:
+    - tools
+- group: browshot-1-17-0
+  url_pattern: /api/v1/screenshot/share
+  method: GET
+  encoding: json
+  host:
+  - https://api.browshot.com
+  concurrent_calls: 1
+  extra_config:
+    provider: browshot.com
+    description: Take screenshots of any website in real time
+    version: 1.17.0
+    slug: browshot-1-17-0-api-v1-screenshot-share
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.browshot.com
+    topics:
+    - tools
+- group: browshot-1-17-0
+  url_pattern: /api/v1/screenshot/thumbnail
+  method: GET
+  encoding: json
+  host:
+  - https://api.browshot.com
+  concurrent_calls: 1
+  extra_config:
+    provider: browshot.com
+    description: Take screenshots of any website in real time
+    version: 1.17.0
+    slug: browshot-1-17-0-api-v1-screenshot-thumbnail
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.browshot.com
+    topics:
+    - tools

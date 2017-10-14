@@ -1,0 +1,193 @@
+backends:
+- group: search-console-v3
+  url_pattern: /webmasters/v3/sites
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - siteEntry
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: View Google Search Console data for your verified sites.
+    version: v3
+    slug: search-console-v3-webmasters-v3-sites
+    schemes:
+    - https
+    mapping:
+      siteEntry: siteEntry
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - search
+- group: search-console-v3
+  url_pattern: /webmasters/v3/sites/{siteUrl}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - permissionLevel
+  - siteUrl
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: View Google Search Console data for your verified sites.
+    version: v3
+    slug: search-console-v3-webmasters-v3-sites-siteurl
+    schemes:
+    - https
+    mapping:
+      permissionLevel: permissionLevel
+      siteUrl: siteUrl
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - search
+- group: search-console-v3
+  url_pattern: /webmasters/v3/sites/{siteUrl}/searchAnalytics/query
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - responseAggregationType
+  - rows
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: View Google Search Console data for your verified sites.
+    version: v3
+    slug: search-console-v3-webmasters-v3-sites-siteurl-searchanalytics-query
+    schemes:
+    - https
+    mapping:
+      responseAggregationType: responseAggregationType
+      rows: rows
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - search
+- group: search-console-v3
+  url_pattern: /webmasters/v3/sites/{siteUrl}/sitemaps
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - sitemap
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: View Google Search Console data for your verified sites.
+    version: v3
+    slug: search-console-v3-webmasters-v3-sites-siteurl-sitemaps
+    schemes:
+    - https
+    mapping:
+      sitemap: sitemap
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - search
+- group: search-console-v3
+  url_pattern: /webmasters/v3/sites/{siteUrl}/sitemaps/{feedpath}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - contents
+  - errors
+  - isPending
+  - isSitemapsIndex
+  - lastDownloaded
+  - lastSubmitted
+  - path
+  - warnings
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: View Google Search Console data for your verified sites.
+    version: v3
+    slug: search-console-v3-webmasters-v3-sites-siteurl-sitemaps-feedpath
+    schemes:
+    - https
+    mapping:
+      contents: contents
+      errors: errors
+      isPending: isPending
+      isSitemapsIndex: isSitemapsIndex
+      lastDownloaded: lastDownloaded
+      lastSubmitted: lastSubmitted
+      path: path
+      warnings: warnings
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - search
+- group: search-console-v3
+  url_pattern: /webmasters/v3/sites/{siteUrl}/urlCrawlErrorsCounts/query
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - countPerTypes
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: View Google Search Console data for your verified sites.
+    version: v3
+    slug: search-console-v3-webmasters-v3-sites-siteurl-urlcrawlerrorscounts-query
+    schemes:
+    - https
+    mapping:
+      countPerTypes: countPerTypes
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - search
+- group: search-console-v3
+  url_pattern: /webmasters/v3/sites/{siteUrl}/urlCrawlErrorsSamples
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - urlCrawlErrorSample
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: View Google Search Console data for your verified sites.
+    version: v3
+    slug: search-console-v3-webmasters-v3-sites-siteurl-urlcrawlerrorssamples
+    schemes:
+    - https
+    mapping:
+      urlCrawlErrorSample: urlCrawlErrorSample
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - search
+- group: search-console-v3
+  url_pattern: /webmasters/v3/sites/{siteUrl}/urlCrawlErrorsSamples/{url}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - first_detected
+  - last_crawled
+  - pageUrl
+  - responseCode
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: View Google Search Console data for your verified sites.
+    version: v3
+    slug: search-console-v3-webmasters-v3-sites-siteurl-urlcrawlerrorssamples-url
+    schemes:
+    - https
+    mapping:
+      first_detected: first_detected
+      last_crawled: last_crawled
+      pageUrl: pageUrl
+      responseCode: responseCode
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - search

@@ -1,0 +1,179 @@
+[[backends]]
+  group = "giphy-1-0"
+  url_pattern = "/v1/gifs"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.giphy.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "giphy.com"
+    description = "Giphy API"
+    version = "1.0"
+    slug = "giphy-1-0-v1-gifs"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.giphy.com"]
+    topics = ["media"]
+
+[[backends]]
+  group = "giphy-1-0"
+  url_pattern = "/v1/gifs/random"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.giphy.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "giphy.com"
+    description = "Giphy API"
+    version = "1.0"
+    slug = "giphy-1-0-v1-gifs-random"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.giphy.com"]
+    topics = ["media"]
+
+[[backends]]
+  group = "giphy-1-0"
+  url_pattern = "/v1/gifs/search"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.giphy.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "giphy.com"
+    description = "Giphy API"
+    version = "1.0"
+    slug = "giphy-1-0-v1-gifs-search"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.giphy.com"]
+    topics = ["media"]
+
+[[backends]]
+  group = "giphy-1-0"
+  url_pattern = "/v1/gifs/translate"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.giphy.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "giphy.com"
+    description = "Giphy API"
+    version = "1.0"
+    slug = "giphy-1-0-v1-gifs-translate"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.giphy.com"]
+    topics = ["media"]
+
+[[backends]]
+  group = "giphy-1-0"
+  url_pattern = "/v1/gifs/trending"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.giphy.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "giphy.com"
+    description = "Giphy API"
+    version = "1.0"
+    slug = "giphy-1-0-v1-gifs-trending"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.giphy.com"]
+    topics = ["media"]
+
+[[backends]]
+  group = "giphy-1-0"
+  url_pattern = "/v1/gifs/{gifId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.giphy.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "giphy.com"
+    description = "Giphy API"
+    version = "1.0"
+    slug = "giphy-1-0-v1-gifs-gifid"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.giphy.com"]
+    topics = ["media"]
+
+[[backends]]
+  group = "giphy-1-0"
+  url_pattern = "/v1/stickers/random"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.giphy.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "giphy.com"
+    description = "Giphy API"
+    version = "1.0"
+    slug = "giphy-1-0-v1-stickers-random"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.giphy.com"]
+    topics = ["media"]
+
+[[backends]]
+  group = "giphy-1-0"
+  url_pattern = "/v1/stickers/search"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.giphy.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "giphy.com"
+    description = "Giphy API"
+    version = "1.0"
+    slug = "giphy-1-0-v1-stickers-search"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.giphy.com"]
+    topics = ["media"]
+
+[[backends]]
+  group = "giphy-1-0"
+  url_pattern = "/v1/stickers/translate"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.giphy.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "giphy.com"
+    description = "Giphy API"
+    version = "1.0"
+    slug = "giphy-1-0-v1-stickers-translate"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.giphy.com"]
+    topics = ["media"]
+
+[[backends]]
+  group = "giphy-1-0"
+  url_pattern = "/v1/stickers/trending"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.giphy.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "giphy.com"
+    description = "Giphy API"
+    version = "1.0"
+    slug = "giphy-1-0-v1-stickers-trending"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.giphy.com"]
+    topics = ["media"]

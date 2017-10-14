@@ -1,0 +1,142 @@
+[[backends]]
+  group = "street-view-publish-v1"
+  url_pattern = "/v1/photo"
+  method = "POST"
+  host = ["https://streetviewpublish.googleapis.com"]
+  whitelist = ["captureTime", "connections", "downloadUrl", "places", "shareLink", "thumbnailUrl", "viewCount"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Publishes 360 photos to Google Maps, along with position, orientation, and connectivity metadata. Apps can offer an interface for positioning, connecting, and uploading user-generated Street View images.\n"
+    version = "v1"
+    slug = "street-view-publish-v1-v1-photo"
+    schemes = ["https"]
+    hosts = ["https://streetviewpublish.googleapis.com"]
+    topics = ["photo"]
+    [backends.extra_config.mapping]
+      captureTime = "captureTime"
+      connections = "connections"
+      downloadUrl = "downloadUrl"
+      places = "places"
+      shareLink = "shareLink"
+      thumbnailUrl = "thumbnailUrl"
+      viewCount = "viewCount"
+
+[[backends]]
+  group = "street-view-publish-v1"
+  url_pattern = "/v1/photo/{photoId}"
+  method = "GET"
+  host = ["https://streetviewpublish.googleapis.com"]
+  url_keys = ["photoId"]
+  query_string_params = ["view"]
+  whitelist = ["captureTime", "connections", "downloadUrl", "places", "shareLink", "thumbnailUrl", "viewCount"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Publishes 360 photos to Google Maps, along with position, orientation, and connectivity metadata. Apps can offer an interface for positioning, connecting, and uploading user-generated Street View images.\n"
+    version = "v1"
+    slug = "street-view-publish-v1-v1-photo-photoid"
+    schemes = ["https"]
+    hosts = ["https://streetviewpublish.googleapis.com"]
+    topics = ["photo"]
+    [backends.extra_config.mapping]
+      captureTime = "captureTime"
+      connections = "connections"
+      downloadUrl = "downloadUrl"
+      places = "places"
+      shareLink = "shareLink"
+      thumbnailUrl = "thumbnailUrl"
+      viewCount = "viewCount"
+
+[[backends]]
+  group = "street-view-publish-v1"
+  url_pattern = "/v1/photo:startUpload"
+  method = "POST"
+  host = ["https://streetviewpublish.googleapis.com"]
+  whitelist = ["uploadUrl"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Publishes 360 photos to Google Maps, along with position, orientation, and connectivity metadata. Apps can offer an interface for positioning, connecting, and uploading user-generated Street View images.\n"
+    version = "v1"
+    slug = "street-view-publish-v1-v1-photo-startupload"
+    schemes = ["https"]
+    hosts = ["https://streetviewpublish.googleapis.com"]
+    topics = ["photo"]
+    [backends.extra_config.mapping]
+      uploadUrl = "uploadUrl"
+
+[[backends]]
+  group = "street-view-publish-v1"
+  url_pattern = "/v1/photos"
+  method = "GET"
+  host = ["https://streetviewpublish.googleapis.com"]
+  query_string_params = ["filter", "pageSize", "pageToken", "view"]
+  whitelist = ["nextPageToken", "photos"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Publishes 360 photos to Google Maps, along with position, orientation, and connectivity metadata. Apps can offer an interface for positioning, connecting, and uploading user-generated Street View images.\n"
+    version = "v1"
+    slug = "street-view-publish-v1-v1-photos"
+    schemes = ["https"]
+    hosts = ["https://streetviewpublish.googleapis.com"]
+    topics = ["photos"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      photos = "photos"
+
+[[backends]]
+  group = "street-view-publish-v1"
+  url_pattern = "/v1/photos:batchDelete"
+  method = "POST"
+  host = ["https://streetviewpublish.googleapis.com"]
+  whitelist = ["status"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Publishes 360 photos to Google Maps, along with position, orientation, and connectivity metadata. Apps can offer an interface for positioning, connecting, and uploading user-generated Street View images.\n"
+    version = "v1"
+    slug = "street-view-publish-v1-v1-photos-batchdelete"
+    schemes = ["https"]
+    hosts = ["https://streetviewpublish.googleapis.com"]
+    topics = ["photos"]
+    [backends.extra_config.mapping]
+      status = "status"
+
+[[backends]]
+  group = "street-view-publish-v1"
+  url_pattern = "/v1/photos:batchGet"
+  method = "GET"
+  host = ["https://streetviewpublish.googleapis.com"]
+  query_string_params = ["photoIds", "view"]
+  whitelist = ["results"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Publishes 360 photos to Google Maps, along with position, orientation, and connectivity metadata. Apps can offer an interface for positioning, connecting, and uploading user-generated Street View images.\n"
+    version = "v1"
+    slug = "street-view-publish-v1-v1-photos-batchget"
+    schemes = ["https"]
+    hosts = ["https://streetviewpublish.googleapis.com"]
+    topics = ["photos"]
+    [backends.extra_config.mapping]
+      results = "results"
+
+[[backends]]
+  group = "street-view-publish-v1"
+  url_pattern = "/v1/photos:batchUpdate"
+  method = "POST"
+  host = ["https://streetviewpublish.googleapis.com"]
+  whitelist = ["results"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Publishes 360 photos to Google Maps, along with position, orientation, and connectivity metadata. Apps can offer an interface for positioning, connecting, and uploading user-generated Street View images.\n"
+    version = "v1"
+    slug = "street-view-publish-v1-v1-photos-batchupdate"
+    schemes = ["https"]
+    hosts = ["https://streetviewpublish.googleapis.com"]
+    topics = ["photos"]
+    [backends.extra_config.mapping]
+      results = "results"

@@ -1,0 +1,1647 @@
+backends:
+- group: figshare-2-0-0
+  url_pattern: /v2/account
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  whitelist:
+  - active
+  - created_date
+  - email
+  - first_name
+  - id
+  - institution_id
+  - institution_user_id
+  - last_name
+  - maximum_file_size
+  - modified_date
+  - pending_quota_request
+  - quota
+  - used_quota
+  - used_quota_private
+  - used_quota_public
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      active: active
+      created_date: created_date
+      email: email
+      first_name: first_name
+      id: id
+      institution_id: institution_id
+      institution_user_id: institution_user_id
+      last_name: last_name
+      maximum_file_size: maximum_file_size
+      modified_date: modified_date
+      pending_quota_request: pending_quota_request
+      quota: quota
+      used_quota: used_quota
+      used_quota_private: used_quota_private
+      used_quota_public: used_quota_public
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/articles
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-articles
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/articles/search
+  method: POST
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-articles-search
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/articles/{article_id}
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-articles-article-id
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/articles/{article_id}/authors
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-articles-article-id-authors
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/articles/{article_id}/categories
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-articles-article-id-categories
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/articles/{article_id}/confidentiality
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  whitelist:
+  - is_confidential
+  - reason
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-articles-article-id-confidentiality
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      is_confidential: is_confidential
+      reason: reason
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/articles/{article_id}/embargo
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  whitelist:
+  - embargo_reason
+  - is_embargoed
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-articles-article-id-embargo
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      embargo_reason: embargo_reason
+      is_embargoed: is_embargoed
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/articles/{article_id}/files
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-articles-article-id-files
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/articles/{article_id}/files/{file_id}
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  whitelist:
+  - computed_md5
+  - preview_state
+  - supplied_md5
+  - upload_token
+  - upload_url
+  - viewer_type
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-articles-article-id-files-file-id
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      computed_md5: computed_md5
+      preview_state: preview_state
+      supplied_md5: supplied_md5
+      upload_token: upload_token
+      upload_url: upload_url
+      viewer_type: viewer_type
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/articles/{article_id}/private_links
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-articles-article-id-private-links
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/articles/{article_id}/publish
+  method: POST
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-articles-article-id-publish
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/articles/{article_id}/reserve_doi
+  method: POST
+  encoding: json
+  host:
+  - https://api.figshare.com
+  whitelist:
+  - doi
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-articles-article-id-reserve-doi
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      doi: doi
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/authors/search
+  method: POST
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-authors-search
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/authors/{author_id}
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  whitelist:
+  - first_name
+  - group_id
+  - institution_id
+  - is_public
+  - job_title
+  - last_name
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-authors-author-id
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      first_name: first_name
+      group_id: group_id
+      institution_id: institution_id
+      is_public: is_public
+      job_title: job_title
+      last_name: last_name
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/categories
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-categories
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/collections
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-collections
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/collections/search
+  method: POST
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-collections-search
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/collections/{collection_id}
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  whitelist:
+  - articles_count
+  - authors
+  - categories
+  - citation
+  - created_date
+  - custom_fields
+  - description
+  - group_id
+  - institution_id
+  - modified_date
+  - public
+  - references
+  - resource_doi
+  - resource_id
+  - resource_link
+  - resource_title
+  - resource_version
+  - tags
+  - version
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-collections-collection-id
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      articles_count: articles_count
+      authors: authors
+      categories: categories
+      citation: citation
+      created_date: created_date
+      custom_fields: custom_fields
+      description: description
+      group_id: group_id
+      institution_id: institution_id
+      modified_date: modified_date
+      public: public
+      references: references
+      resource_doi: resource_doi
+      resource_id: resource_id
+      resource_link: resource_link
+      resource_title: resource_title
+      resource_version: resource_version
+      tags: tags
+      version: version
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/collections/{collection_id}/articles
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-collections-collection-id-articles
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/collections/{collection_id}/authors
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-collections-collection-id-authors
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/collections/{collection_id}/categories
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-collections-collection-id-categories
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/collections/{collection_id}/private_links
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-collections-collection-id-private-links
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/collections/{collection_id}/publish
+  method: POST
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-collections-collection-id-publish
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/collections/{collection_id}/reserve_doi
+  method: POST
+  encoding: json
+  host:
+  - https://api.figshare.com
+  whitelist:
+  - doi
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-collections-collection-id-reserve-doi
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      doi: doi
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/institution
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  whitelist:
+  - id
+  - name
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-institution
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      id: id
+      name: name
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/institution/articles
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-institution-articles
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/institution/groups
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-institution-groups
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/licenses
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-licenses
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/projects
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-projects
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/projects/search
+  method: POST
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-projects-search
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/projects/{project_id}
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  whitelist:
+  - collaborators
+  - created_date
+  - description
+  - funding
+  - group_id
+  - modified_date
+  - quota
+  - used_quota
+  - used_quota_private
+  - used_quota_public
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-projects-project-id
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      collaborators: collaborators
+      created_date: created_date
+      description: description
+      funding: funding
+      group_id: group_id
+      modified_date: modified_date
+      quota: quota
+      used_quota: used_quota
+      used_quota_private: used_quota_private
+      used_quota_public: used_quota_public
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/projects/{project_id}/articles
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-projects-project-id-articles
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/projects/{project_id}/articles/{article_id}
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  whitelist:
+  - categories
+  - citation
+  - confidential_reason
+  - created_date
+  - description
+  - embargo_reason
+  - funding
+  - has_linked_file
+  - is_active
+  - is_confidential
+  - is_embargoed
+  - is_metadata_record
+  - is_public
+  - metadata_reason
+  - references
+  - size
+  - status
+  - tags
+  - version
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-projects-project-id-articles-article-id
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      categories: categories
+      citation: citation
+      confidential_reason: confidential_reason
+      created_date: created_date
+      description: description
+      embargo_reason: embargo_reason
+      funding: funding
+      has_linked_file: has_linked_file
+      is_active: is_active
+      is_confidential: is_confidential
+      is_embargoed: is_embargoed
+      is_metadata_record: is_metadata_record
+      is_public: is_public
+      metadata_reason: metadata_reason
+      references: references
+      size: size
+      status: status
+      tags: tags
+      version: version
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/projects/{project_id}/articles/{article_id}/files
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-projects-project-id-articles-article-id-files
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/projects/{project_id}/articles/{article_id}/files/{file_id}
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  whitelist:
+  - computed_md5
+  - preview_state
+  - supplied_md5
+  - upload_token
+  - upload_url
+  - viewer_type
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-projects-project-id-articles-article-id-files-file-id
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      computed_md5: computed_md5
+      preview_state: preview_state
+      supplied_md5: supplied_md5
+      upload_token: upload_token
+      upload_url: upload_url
+      viewer_type: viewer_type
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/projects/{project_id}/collaborators
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-projects-project-id-collaborators
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/projects/{project_id}/leave
+  method: POST
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-projects-project-id-leave
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/projects/{project_id}/notes
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-projects-project-id-notes
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/projects/{project_id}/notes/{note_id}
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  whitelist:
+  - text
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-projects-project-id-notes-note-id
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      text: text
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/account/projects/{project_id}/publish
+  method: POST
+  encoding: json
+  host:
+  - https://api.figshare.com
+  whitelist:
+  - message
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-account-projects-project-id-publish
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      message: message
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/articles
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-articles
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/articles/search
+  method: POST
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-articles-search
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/articles/{article_id}
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  whitelist:
+  - authors
+  - custom_fields
+  - figshare_url
+  - files
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-articles-article-id
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      authors: authors
+      custom_fields: custom_fields
+      figshare_url: figshare_url
+      files: files
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/articles/{article_id}/files
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-articles-article-id-files
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/articles/{article_id}/files/{file_id}
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  whitelist:
+  - download_url
+  - id
+  - is_link_only
+  - name
+  - size
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-articles-article-id-files-file-id
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      download_url: download_url
+      id: id
+      is_link_only: is_link_only
+      name: name
+      size: size
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/articles/{article_id}/versions
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-articles-article-id-versions
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/articles/{article_id}/versions/{v_number}
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  whitelist:
+  - authors
+  - custom_fields
+  - figshare_url
+  - files
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-articles-article-id-versions-v-number
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      authors: authors
+      custom_fields: custom_fields
+      figshare_url: figshare_url
+      files: files
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/articles/{article_id}/versions/{v_number}/confidentiality
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  whitelist:
+  - is_confidential
+  - reason
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-articles-article-id-versions-v-number-confidentiality
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      is_confidential: is_confidential
+      reason: reason
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/articles/{article_id}/versions/{v_number}/embargo
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  whitelist:
+  - embargo_reason
+  - is_embargoed
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-articles-article-id-versions-v-number-embargo
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      embargo_reason: embargo_reason
+      is_embargoed: is_embargoed
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/categories
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-categories
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/collections
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-collections
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/collections/search
+  method: POST
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-collections-search
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/collections/{collection_id}
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  whitelist:
+  - articles_count
+  - authors
+  - categories
+  - citation
+  - created_date
+  - custom_fields
+  - description
+  - group_id
+  - institution_id
+  - modified_date
+  - public
+  - references
+  - resource_doi
+  - resource_id
+  - resource_link
+  - resource_title
+  - resource_version
+  - tags
+  - version
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-collections-collection-id
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      articles_count: articles_count
+      authors: authors
+      categories: categories
+      citation: citation
+      created_date: created_date
+      custom_fields: custom_fields
+      description: description
+      group_id: group_id
+      institution_id: institution_id
+      modified_date: modified_date
+      public: public
+      references: references
+      resource_doi: resource_doi
+      resource_id: resource_id
+      resource_link: resource_link
+      resource_title: resource_title
+      resource_version: resource_version
+      tags: tags
+      version: version
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/collections/{collection_id}/articles
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-collections-collection-id-articles
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/collections/{collection_id}/versions
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-collections-collection-id-versions
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/collections/{collection_id}/versions/{version_id}
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  whitelist:
+  - articles_count
+  - authors
+  - categories
+  - citation
+  - created_date
+  - custom_fields
+  - description
+  - group_id
+  - institution_id
+  - modified_date
+  - public
+  - references
+  - resource_doi
+  - resource_id
+  - resource_link
+  - resource_title
+  - resource_version
+  - tags
+  - version
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-collections-collection-id-versions-version-id
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      articles_count: articles_count
+      authors: authors
+      categories: categories
+      citation: citation
+      created_date: created_date
+      custom_fields: custom_fields
+      description: description
+      group_id: group_id
+      institution_id: institution_id
+      modified_date: modified_date
+      public: public
+      references: references
+      resource_doi: resource_doi
+      resource_id: resource_id
+      resource_link: resource_link
+      resource_title: resource_title
+      resource_version: resource_version
+      tags: tags
+      version: version
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/file/download/{file_id}
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-file-download-file-id
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/institution/hrfeed/upload
+  method: POST
+  encoding: json
+  host:
+  - https://api.figshare.com
+  whitelist:
+  - message
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-institution-hrfeed-upload
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      message: message
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/institutions/{institution_string_id}/articles/filter-by
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-institutions-institution-string-id-articles-filter-by
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/licenses
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-licenses
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/projects
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-projects
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/projects/search
+  method: POST
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-projects-search
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/projects/{project_id}
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  whitelist:
+  - collaborators
+  - description
+  - funding
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-projects-project-id
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      collaborators: collaborators
+      description: description
+      funding: funding
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data
+- group: figshare-2-0-0
+  url_pattern: /v2/projects/{project_id}/articles
+  method: GET
+  encoding: json
+  host:
+  - https://api.figshare.com
+  concurrent_calls: 1
+  extra_config:
+    provider: figshare.com
+    description: Figshare apiv2. Using Swagger 2.0
+    version: 2.0.0
+    slug: figshare-2-0-0-v2-projects-project-id-articles
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://api.figshare.com
+    topics:
+    - open-data

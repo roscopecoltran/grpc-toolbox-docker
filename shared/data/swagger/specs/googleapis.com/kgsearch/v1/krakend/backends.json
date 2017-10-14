@@ -1,0 +1,43 @@
+{
+	"backends": [
+		{
+			"group": "knowledge-graph-search-v1",
+			"url_pattern": "/v1/entities:search",
+			"method": "GET",
+			"host": [
+				"https://kgsearch.googleapis.com"
+			],
+			"query_string_params": [
+				"ids",
+				"indent",
+				"languages",
+				"limit",
+				"prefix",
+				"query",
+				"types"
+			],
+			"whitelist": [
+				"itemListElement"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Searches the Google Knowledge Graph for entities.",
+				"version": "v1",
+				"slug": "knowledge-graph-search-v1-v1-entities-search",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"itemListElement": "itemListElement"
+				},
+				"hosts": [
+					"https://kgsearch.googleapis.com"
+				],
+				"topics": [
+					"entities"
+				]
+			}
+		}
+	]
+}

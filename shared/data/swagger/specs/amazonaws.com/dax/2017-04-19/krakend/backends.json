@@ -1,0 +1,655 @@
+{
+	"backends": [
+		{
+			"group": "amazon-dynamodb-accelerator-dax-2017-04-19",
+			"url_pattern": "/#CreateParameterGroup",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://dax.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "DAX is a managed caching service engineered for Amazon DynamoDB. DAX dramatically speeds up database reads by caching frequently-accessed data from DynamoDB, so applications can access that data with sub-millisecond latency. You can create a DAX cluster easily, using the AWS Management Console. With a few simple modifications to your code, your application can begin taking advantage of the DAX cluster and realize significant improvements in read performance.",
+				"version": "2017-04-19",
+				"slug": "amazon-dynamodb-accelerator-dax-2017-04-19-createparametergroup",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://dax.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-dynamodb-accelerator-dax-2017-04-19",
+			"url_pattern": "/#CreateSubnetGroup",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://dax.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "DAX is a managed caching service engineered for Amazon DynamoDB. DAX dramatically speeds up database reads by caching frequently-accessed data from DynamoDB, so applications can access that data with sub-millisecond latency. You can create a DAX cluster easily, using the AWS Management Console. With a few simple modifications to your code, your application can begin taking advantage of the DAX cluster and realize significant improvements in read performance.",
+				"version": "2017-04-19",
+				"slug": "amazon-dynamodb-accelerator-dax-2017-04-19-createsubnetgroup",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://dax.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-dynamodb-accelerator-dax-2017-04-19",
+			"url_pattern": "/#DecreaseReplicationFactor",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://dax.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "DAX is a managed caching service engineered for Amazon DynamoDB. DAX dramatically speeds up database reads by caching frequently-accessed data from DynamoDB, so applications can access that data with sub-millisecond latency. You can create a DAX cluster easily, using the AWS Management Console. With a few simple modifications to your code, your application can begin taking advantage of the DAX cluster and realize significant improvements in read performance.",
+				"version": "2017-04-19",
+				"slug": "amazon-dynamodb-accelerator-dax-2017-04-19-decreasereplicationfactor",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://dax.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-dynamodb-accelerator-dax-2017-04-19",
+			"url_pattern": "/#DeleteCluster",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://dax.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "DAX is a managed caching service engineered for Amazon DynamoDB. DAX dramatically speeds up database reads by caching frequently-accessed data from DynamoDB, so applications can access that data with sub-millisecond latency. You can create a DAX cluster easily, using the AWS Management Console. With a few simple modifications to your code, your application can begin taking advantage of the DAX cluster and realize significant improvements in read performance.",
+				"version": "2017-04-19",
+				"slug": "amazon-dynamodb-accelerator-dax-2017-04-19-deletecluster",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://dax.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-dynamodb-accelerator-dax-2017-04-19",
+			"url_pattern": "/#DeleteParameterGroup",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://dax.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "DAX is a managed caching service engineered for Amazon DynamoDB. DAX dramatically speeds up database reads by caching frequently-accessed data from DynamoDB, so applications can access that data with sub-millisecond latency. You can create a DAX cluster easily, using the AWS Management Console. With a few simple modifications to your code, your application can begin taking advantage of the DAX cluster and realize significant improvements in read performance.",
+				"version": "2017-04-19",
+				"slug": "amazon-dynamodb-accelerator-dax-2017-04-19-deleteparametergroup",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://dax.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-dynamodb-accelerator-dax-2017-04-19",
+			"url_pattern": "/#DeleteSubnetGroup",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://dax.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "DAX is a managed caching service engineered for Amazon DynamoDB. DAX dramatically speeds up database reads by caching frequently-accessed data from DynamoDB, so applications can access that data with sub-millisecond latency. You can create a DAX cluster easily, using the AWS Management Console. With a few simple modifications to your code, your application can begin taking advantage of the DAX cluster and realize significant improvements in read performance.",
+				"version": "2017-04-19",
+				"slug": "amazon-dynamodb-accelerator-dax-2017-04-19-deletesubnetgroup",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://dax.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-dynamodb-accelerator-dax-2017-04-19",
+			"url_pattern": "/#DescribeClusters",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://dax.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "DAX is a managed caching service engineered for Amazon DynamoDB. DAX dramatically speeds up database reads by caching frequently-accessed data from DynamoDB, so applications can access that data with sub-millisecond latency. You can create a DAX cluster easily, using the AWS Management Console. With a few simple modifications to your code, your application can begin taking advantage of the DAX cluster and realize significant improvements in read performance.",
+				"version": "2017-04-19",
+				"slug": "amazon-dynamodb-accelerator-dax-2017-04-19-describeclusters",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://dax.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-dynamodb-accelerator-dax-2017-04-19",
+			"url_pattern": "/#DescribeDefaultParameters",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://dax.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "DAX is a managed caching service engineered for Amazon DynamoDB. DAX dramatically speeds up database reads by caching frequently-accessed data from DynamoDB, so applications can access that data with sub-millisecond latency. You can create a DAX cluster easily, using the AWS Management Console. With a few simple modifications to your code, your application can begin taking advantage of the DAX cluster and realize significant improvements in read performance.",
+				"version": "2017-04-19",
+				"slug": "amazon-dynamodb-accelerator-dax-2017-04-19-describedefaultparameters",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://dax.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-dynamodb-accelerator-dax-2017-04-19",
+			"url_pattern": "/#DescribeEvents",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://dax.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "DAX is a managed caching service engineered for Amazon DynamoDB. DAX dramatically speeds up database reads by caching frequently-accessed data from DynamoDB, so applications can access that data with sub-millisecond latency. You can create a DAX cluster easily, using the AWS Management Console. With a few simple modifications to your code, your application can begin taking advantage of the DAX cluster and realize significant improvements in read performance.",
+				"version": "2017-04-19",
+				"slug": "amazon-dynamodb-accelerator-dax-2017-04-19-describeevents",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://dax.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-dynamodb-accelerator-dax-2017-04-19",
+			"url_pattern": "/#DescribeParameterGroups",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://dax.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "DAX is a managed caching service engineered for Amazon DynamoDB. DAX dramatically speeds up database reads by caching frequently-accessed data from DynamoDB, so applications can access that data with sub-millisecond latency. You can create a DAX cluster easily, using the AWS Management Console. With a few simple modifications to your code, your application can begin taking advantage of the DAX cluster and realize significant improvements in read performance.",
+				"version": "2017-04-19",
+				"slug": "amazon-dynamodb-accelerator-dax-2017-04-19-describeparametergroups",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://dax.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-dynamodb-accelerator-dax-2017-04-19",
+			"url_pattern": "/#DescribeParameters",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://dax.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "DAX is a managed caching service engineered for Amazon DynamoDB. DAX dramatically speeds up database reads by caching frequently-accessed data from DynamoDB, so applications can access that data with sub-millisecond latency. You can create a DAX cluster easily, using the AWS Management Console. With a few simple modifications to your code, your application can begin taking advantage of the DAX cluster and realize significant improvements in read performance.",
+				"version": "2017-04-19",
+				"slug": "amazon-dynamodb-accelerator-dax-2017-04-19-describeparameters",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://dax.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-dynamodb-accelerator-dax-2017-04-19",
+			"url_pattern": "/#DescribeSubnetGroups",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://dax.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "DAX is a managed caching service engineered for Amazon DynamoDB. DAX dramatically speeds up database reads by caching frequently-accessed data from DynamoDB, so applications can access that data with sub-millisecond latency. You can create a DAX cluster easily, using the AWS Management Console. With a few simple modifications to your code, your application can begin taking advantage of the DAX cluster and realize significant improvements in read performance.",
+				"version": "2017-04-19",
+				"slug": "amazon-dynamodb-accelerator-dax-2017-04-19-describesubnetgroups",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://dax.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-dynamodb-accelerator-dax-2017-04-19",
+			"url_pattern": "/#IncreaseReplicationFactor",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://dax.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "DAX is a managed caching service engineered for Amazon DynamoDB. DAX dramatically speeds up database reads by caching frequently-accessed data from DynamoDB, so applications can access that data with sub-millisecond latency. You can create a DAX cluster easily, using the AWS Management Console. With a few simple modifications to your code, your application can begin taking advantage of the DAX cluster and realize significant improvements in read performance.",
+				"version": "2017-04-19",
+				"slug": "amazon-dynamodb-accelerator-dax-2017-04-19-increasereplicationfactor",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://dax.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-dynamodb-accelerator-dax-2017-04-19",
+			"url_pattern": "/#ListTags",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://dax.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "DAX is a managed caching service engineered for Amazon DynamoDB. DAX dramatically speeds up database reads by caching frequently-accessed data from DynamoDB, so applications can access that data with sub-millisecond latency. You can create a DAX cluster easily, using the AWS Management Console. With a few simple modifications to your code, your application can begin taking advantage of the DAX cluster and realize significant improvements in read performance.",
+				"version": "2017-04-19",
+				"slug": "amazon-dynamodb-accelerator-dax-2017-04-19-listtags",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://dax.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-dynamodb-accelerator-dax-2017-04-19",
+			"url_pattern": "/#RebootNode",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://dax.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "DAX is a managed caching service engineered for Amazon DynamoDB. DAX dramatically speeds up database reads by caching frequently-accessed data from DynamoDB, so applications can access that data with sub-millisecond latency. You can create a DAX cluster easily, using the AWS Management Console. With a few simple modifications to your code, your application can begin taking advantage of the DAX cluster and realize significant improvements in read performance.",
+				"version": "2017-04-19",
+				"slug": "amazon-dynamodb-accelerator-dax-2017-04-19-rebootnode",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://dax.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-dynamodb-accelerator-dax-2017-04-19",
+			"url_pattern": "/#TagResource",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://dax.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "DAX is a managed caching service engineered for Amazon DynamoDB. DAX dramatically speeds up database reads by caching frequently-accessed data from DynamoDB, so applications can access that data with sub-millisecond latency. You can create a DAX cluster easily, using the AWS Management Console. With a few simple modifications to your code, your application can begin taking advantage of the DAX cluster and realize significant improvements in read performance.",
+				"version": "2017-04-19",
+				"slug": "amazon-dynamodb-accelerator-dax-2017-04-19-tagresource",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://dax.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-dynamodb-accelerator-dax-2017-04-19",
+			"url_pattern": "/#UntagResource",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://dax.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "DAX is a managed caching service engineered for Amazon DynamoDB. DAX dramatically speeds up database reads by caching frequently-accessed data from DynamoDB, so applications can access that data with sub-millisecond latency. You can create a DAX cluster easily, using the AWS Management Console. With a few simple modifications to your code, your application can begin taking advantage of the DAX cluster and realize significant improvements in read performance.",
+				"version": "2017-04-19",
+				"slug": "amazon-dynamodb-accelerator-dax-2017-04-19-untagresource",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://dax.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-dynamodb-accelerator-dax-2017-04-19",
+			"url_pattern": "/#UpdateCluster",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://dax.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "DAX is a managed caching service engineered for Amazon DynamoDB. DAX dramatically speeds up database reads by caching frequently-accessed data from DynamoDB, so applications can access that data with sub-millisecond latency. You can create a DAX cluster easily, using the AWS Management Console. With a few simple modifications to your code, your application can begin taking advantage of the DAX cluster and realize significant improvements in read performance.",
+				"version": "2017-04-19",
+				"slug": "amazon-dynamodb-accelerator-dax-2017-04-19-updatecluster",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://dax.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-dynamodb-accelerator-dax-2017-04-19",
+			"url_pattern": "/#UpdateParameterGroup",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://dax.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "DAX is a managed caching service engineered for Amazon DynamoDB. DAX dramatically speeds up database reads by caching frequently-accessed data from DynamoDB, so applications can access that data with sub-millisecond latency. You can create a DAX cluster easily, using the AWS Management Console. With a few simple modifications to your code, your application can begin taking advantage of the DAX cluster and realize significant improvements in read performance.",
+				"version": "2017-04-19",
+				"slug": "amazon-dynamodb-accelerator-dax-2017-04-19-updateparametergroup",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://dax.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-dynamodb-accelerator-dax-2017-04-19",
+			"url_pattern": "/#UpdateSubnetGroup",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://dax.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "DAX is a managed caching service engineered for Amazon DynamoDB. DAX dramatically speeds up database reads by caching frequently-accessed data from DynamoDB, so applications can access that data with sub-millisecond latency. You can create a DAX cluster easily, using the AWS Management Console. With a few simple modifications to your code, your application can begin taking advantage of the DAX cluster and realize significant improvements in read performance.",
+				"version": "2017-04-19",
+				"slug": "amazon-dynamodb-accelerator-dax-2017-04-19-updatesubnetgroup",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://dax.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-dynamodb-accelerator-dax-2017-04-19",
+			"url_pattern": "/",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://dax.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "DAX is a managed caching service engineered for Amazon DynamoDB. DAX dramatically speeds up database reads by caching frequently-accessed data from DynamoDB, so applications can access that data with sub-millisecond latency. You can create a DAX cluster easily, using the AWS Management Console. With a few simple modifications to your code, your application can begin taking advantage of the DAX cluster and realize significant improvements in read performance.",
+				"version": "2017-04-19",
+				"slug": "amazon-dynamodb-accelerator-dax-2017-04-19",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://dax.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		}
+	]
+}

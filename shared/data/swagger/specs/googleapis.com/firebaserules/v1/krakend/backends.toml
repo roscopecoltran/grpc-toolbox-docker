@@ -1,0 +1,107 @@
+[[backends]]
+  group = "firebase-rules-v1"
+  url_pattern = "/v1/{name}"
+  method = "GET"
+  host = ["https://firebaserules.googleapis.com"]
+  url_keys = ["name"]
+  whitelist = ["createTime", "name", "rulesetName", "updateTime"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Creates and manages rules that determine when a Firebase Rules-enabled service should permit a request.\n"
+    version = "v1"
+    slug = "firebase-rules-v1-v1-name"
+    schemes = ["https"]
+    hosts = ["https://firebaserules.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      createTime = "createTime"
+      name = "name"
+      rulesetName = "rulesetName"
+      updateTime = "updateTime"
+
+[[backends]]
+  group = "firebase-rules-v1"
+  url_pattern = "/v1/{name}/releases"
+  method = "GET"
+  host = ["https://firebaserules.googleapis.com"]
+  url_keys = ["name"]
+  query_string_params = ["filter", "pageSize", "pageToken"]
+  whitelist = ["nextPageToken", "releases"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Creates and manages rules that determine when a Firebase Rules-enabled service should permit a request.\n"
+    version = "v1"
+    slug = "firebase-rules-v1-v1-name-releases"
+    schemes = ["https"]
+    hosts = ["https://firebaserules.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      releases = "releases"
+
+[[backends]]
+  group = "firebase-rules-v1"
+  url_pattern = "/v1/{name}/rulesets"
+  method = "GET"
+  host = ["https://firebaserules.googleapis.com"]
+  url_keys = ["name"]
+  query_string_params = ["filter", "pageSize", "pageToken"]
+  whitelist = ["nextPageToken", "rulesets"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Creates and manages rules that determine when a Firebase Rules-enabled service should permit a request.\n"
+    version = "v1"
+    slug = "firebase-rules-v1-v1-name-rulesets"
+    schemes = ["https"]
+    hosts = ["https://firebaserules.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      rulesets = "rulesets"
+
+[[backends]]
+  group = "firebase-rules-v1"
+  url_pattern = "/v1/{name}:getExecutable"
+  method = "GET"
+  host = ["https://firebaserules.googleapis.com"]
+  url_keys = ["name"]
+  query_string_params = ["executableVersion"]
+  whitelist = ["executable", "executableVersion", "language", "rulesetName", "updateTime"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Creates and manages rules that determine when a Firebase Rules-enabled service should permit a request.\n"
+    version = "v1"
+    slug = "firebase-rules-v1-v1-name-getexecutable"
+    schemes = ["https"]
+    hosts = ["https://firebaserules.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      executable = "executable"
+      executableVersion = "executableVersion"
+      language = "language"
+      rulesetName = "rulesetName"
+      updateTime = "updateTime"
+
+[[backends]]
+  group = "firebase-rules-v1"
+  url_pattern = "/v1/{name}:test"
+  method = "POST"
+  host = ["https://firebaserules.googleapis.com"]
+  url_keys = ["name"]
+  whitelist = ["issues", "testResults"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Creates and manages rules that determine when a Firebase Rules-enabled service should permit a request.\n"
+    version = "v1"
+    slug = "firebase-rules-v1-v1-name-test"
+    schemes = ["https"]
+    hosts = ["https://firebaserules.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      issues = "issues"
+      testResults = "testResults"

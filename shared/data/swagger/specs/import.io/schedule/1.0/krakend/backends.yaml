@@ -1,0 +1,83 @@
+backends:
+- group: import-io-1-0
+  url_pattern: /extractor
+  method: GET
+  encoding: json
+  host:
+  - https://schedule.import.io
+  whitelist:
+  - extractorId
+  - interval
+  - intervalData
+  - intervalData.minutes
+  - intervalData.time
+  - nextRunAt
+  - ownerId
+  - startTimestamp
+  concurrent_calls: 1
+  extra_config:
+    provider: import.io
+    version: "1.0"
+    slug: import-io-1-0-extractor
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json;charset=UTF-8
+    mapping:
+      extractorId: extractorId
+      interval: interval
+      intervalData: intervalData
+      intervalData.minutes: intervalData.minutes
+      intervalData.time: intervalData.time
+      nextRunAt: nextRunAt
+      ownerId: ownerId
+      startTimestamp: startTimestamp
+    hosts:
+    - https://schedule.import.io
+    topics:
+    - schedule-import-io
+    - tools
+- group: import-io-1-0
+  url_pattern: /extractor/{extractorId}/
+  method: GET
+  encoding: json
+  host:
+  - https://schedule.import.io
+  url_keys:
+  - extractorId
+  whitelist:
+  - extractorId
+  - interval
+  - intervalData
+  - intervalData.minutes
+  - intervalData.time
+  - nextRunAt
+  - ownerId
+  - startTimestamp
+  concurrent_calls: 1
+  extra_config:
+    provider: import.io
+    version: "1.0"
+    slug: import-io-1-0-extractor-extractorid
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json;charset=UTF-8
+    mapping:
+      extractorId: extractorId
+      interval: interval
+      intervalData: intervalData
+      intervalData.minutes: intervalData.minutes
+      intervalData.time: intervalData.time
+      nextRunAt: nextRunAt
+      ownerId: ownerId
+      startTimestamp: startTimestamp
+    hosts:
+    - https://schedule.import.io
+    topics:
+    - schedule-import-io
+    - tools

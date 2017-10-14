@@ -1,0 +1,598 @@
+{
+	"backends": [
+		{
+			"group": "google-play-game-services-management-v1management",
+			"url_pattern": "/games/v1management/achievements/reset",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"kind",
+				"results"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Management API for Google Play Game Services.",
+				"version": "v1management",
+				"slug": "google-play-game-services-management-v1management-games-v1management-achievements-reset",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"kind": "kind",
+					"results": "results"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-management-v1management",
+			"url_pattern": "/games/v1management/achievements/resetAllForAllPlayers",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Management API for Google Play Game Services.",
+				"version": "v1management",
+				"slug": "google-play-game-services-management-v1management-games-v1management-achievements-resetallforallplayers",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-management-v1management",
+			"url_pattern": "/games/v1management/achievements/resetMultipleForAllPlayers",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Management API for Google Play Game Services.",
+				"version": "v1management",
+				"slug": "google-play-game-services-management-v1management-games-v1management-achievements-resetmultipleforallplayers",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-management-v1management",
+			"url_pattern": "/games/v1management/achievements/{achievementId}/reset",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"currentState",
+				"definitionId",
+				"kind",
+				"updateOccurred"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Management API for Google Play Game Services.",
+				"version": "v1management",
+				"slug": "google-play-game-services-management-v1management-games-v1management-achievements-achievementid-reset",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"currentState": "currentState",
+					"definitionId": "definitionId",
+					"kind": "kind",
+					"updateOccurred": "updateOccurred"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-management-v1management",
+			"url_pattern": "/games/v1management/achievements/{achievementId}/resetForAllPlayers",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Management API for Google Play Game Services.",
+				"version": "v1management",
+				"slug": "google-play-game-services-management-v1management-games-v1management-achievements-achievementid-resetforallplayers",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-management-v1management",
+			"url_pattern": "/games/v1management/applications/{applicationId}/players/hidden",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"items",
+				"kind",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Management API for Google Play Game Services.",
+				"version": "v1management",
+				"slug": "google-play-game-services-management-v1management-games-v1management-applications-applicationid-players-hidden",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-management-v1management",
+			"url_pattern": "/games/v1management/applications/{applicationId}/players/hidden/{playerId}",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Management API for Google Play Game Services.",
+				"version": "v1management",
+				"slug": "google-play-game-services-management-v1management-games-v1management-applications-applicationid-players-hidden-playerid",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-management-v1management",
+			"url_pattern": "/games/v1management/events/reset",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Management API for Google Play Game Services.",
+				"version": "v1management",
+				"slug": "google-play-game-services-management-v1management-games-v1management-events-reset",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-management-v1management",
+			"url_pattern": "/games/v1management/events/resetAllForAllPlayers",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Management API for Google Play Game Services.",
+				"version": "v1management",
+				"slug": "google-play-game-services-management-v1management-games-v1management-events-resetallforallplayers",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-management-v1management",
+			"url_pattern": "/games/v1management/events/resetMultipleForAllPlayers",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Management API for Google Play Game Services.",
+				"version": "v1management",
+				"slug": "google-play-game-services-management-v1management-games-v1management-events-resetmultipleforallplayers",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-management-v1management",
+			"url_pattern": "/games/v1management/events/{eventId}/reset",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Management API for Google Play Game Services.",
+				"version": "v1management",
+				"slug": "google-play-game-services-management-v1management-games-v1management-events-eventid-reset",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-management-v1management",
+			"url_pattern": "/games/v1management/events/{eventId}/resetForAllPlayers",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Management API for Google Play Game Services.",
+				"version": "v1management",
+				"slug": "google-play-game-services-management-v1management-games-v1management-events-eventid-resetforallplayers",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-management-v1management",
+			"url_pattern": "/games/v1management/leaderboards/{leaderboardId}/scores/reset",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"definitionId",
+				"kind",
+				"resetScoreTimeSpans"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Management API for Google Play Game Services.",
+				"version": "v1management",
+				"slug": "google-play-game-services-management-v1management-games-v1management-leaderboards-leaderboardid-scores-reset",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"definitionId": "definitionId",
+					"kind": "kind",
+					"resetScoreTimeSpans": "resetScoreTimeSpans"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-management-v1management",
+			"url_pattern": "/games/v1management/leaderboards/{leaderboardId}/scores/resetForAllPlayers",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Management API for Google Play Game Services.",
+				"version": "v1management",
+				"slug": "google-play-game-services-management-v1management-games-v1management-leaderboards-leaderboardid-scores-resetforallplayers",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-management-v1management",
+			"url_pattern": "/games/v1management/quests/reset",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Management API for Google Play Game Services.",
+				"version": "v1management",
+				"slug": "google-play-game-services-management-v1management-games-v1management-quests-reset",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-management-v1management",
+			"url_pattern": "/games/v1management/quests/resetAllForAllPlayers",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Management API for Google Play Game Services.",
+				"version": "v1management",
+				"slug": "google-play-game-services-management-v1management-games-v1management-quests-resetallforallplayers",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-management-v1management",
+			"url_pattern": "/games/v1management/quests/resetMultipleForAllPlayers",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Management API for Google Play Game Services.",
+				"version": "v1management",
+				"slug": "google-play-game-services-management-v1management-games-v1management-quests-resetmultipleforallplayers",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-management-v1management",
+			"url_pattern": "/games/v1management/quests/{questId}/reset",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Management API for Google Play Game Services.",
+				"version": "v1management",
+				"slug": "google-play-game-services-management-v1management-games-v1management-quests-questid-reset",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-management-v1management",
+			"url_pattern": "/games/v1management/quests/{questId}/resetForAllPlayers",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Management API for Google Play Game Services.",
+				"version": "v1management",
+				"slug": "google-play-game-services-management-v1management-games-v1management-quests-questid-resetforallplayers",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-management-v1management",
+			"url_pattern": "/games/v1management/rooms/reset",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Management API for Google Play Game Services.",
+				"version": "v1management",
+				"slug": "google-play-game-services-management-v1management-games-v1management-rooms-reset",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-management-v1management",
+			"url_pattern": "/games/v1management/rooms/resetForAllPlayers",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Management API for Google Play Game Services.",
+				"version": "v1management",
+				"slug": "google-play-game-services-management-v1management-games-v1management-rooms-resetforallplayers",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-management-v1management",
+			"url_pattern": "/games/v1management/scores/reset",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"kind",
+				"results"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Management API for Google Play Game Services.",
+				"version": "v1management",
+				"slug": "google-play-game-services-management-v1management-games-v1management-scores-reset",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"kind": "kind",
+					"results": "results"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-management-v1management",
+			"url_pattern": "/games/v1management/scores/resetAllForAllPlayers",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Management API for Google Play Game Services.",
+				"version": "v1management",
+				"slug": "google-play-game-services-management-v1management-games-v1management-scores-resetallforallplayers",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-management-v1management",
+			"url_pattern": "/games/v1management/scores/resetMultipleForAllPlayers",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Management API for Google Play Game Services.",
+				"version": "v1management",
+				"slug": "google-play-game-services-management-v1management-games-v1management-scores-resetmultipleforallplayers",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-management-v1management",
+			"url_pattern": "/games/v1management/turnbasedmatches/reset",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Management API for Google Play Game Services.",
+				"version": "v1management",
+				"slug": "google-play-game-services-management-v1management-games-v1management-turnbasedmatches-reset",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-management-v1management",
+			"url_pattern": "/games/v1management/turnbasedmatches/resetForAllPlayers",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Management API for Google Play Game Services.",
+				"version": "v1management",
+				"slug": "google-play-game-services-management-v1management-games-v1management-turnbasedmatches-resetforallplayers",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		}
+	]
+}

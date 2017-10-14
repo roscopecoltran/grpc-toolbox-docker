@@ -1,0 +1,337 @@
+backends:
+- group: seldon-1-0-0
+  url_pattern: /actions
+  method: POST
+  encoding: json
+  host:
+  - https://recsvm.rummblelabs.com
+  query_string_params:
+  - oauth_token
+  concurrent_calls: 1
+  extra_config:
+    provider: rummblelabs.com
+    description: Seldon is an Open Predictive Platform that currently allows item
+      recommendations and general predictive models to be deployed based on structured
+      historical data.
+    version: 1.0.0
+    slug: seldon-1-0-0-actions
+    schemes:
+    - http
+    - https
+    produces:
+    - json
+    hosts:
+    - http://recsvm.rummblelabs.com
+    - https://recsvm.rummblelabs.com
+    topics:
+    - machine-learning
+    - oauth-actions
+- group: seldon-1-0-0
+  url_pattern: /items
+  method: GET
+  encoding: json
+  host:
+  - https://recsvm.rummblelabs.com
+  query_string_params:
+  - dimension
+  - full
+  - limit
+  - name
+  - oauth_token
+  - type
+  concurrent_calls: 1
+  extra_config:
+    provider: rummblelabs.com
+    description: Seldon is an Open Predictive Platform that currently allows item
+      recommendations and general predictive models to be deployed based on structured
+      historical data.
+    version: 1.0.0
+    slug: seldon-1-0-0-items
+    schemes:
+    - http
+    - https
+    produces:
+    - json
+    hosts:
+    - http://recsvm.rummblelabs.com
+    - https://recsvm.rummblelabs.com
+    topics:
+    - machine-learning
+    - oauth-items
+- group: seldon-1-0-0
+  url_pattern: /items/type
+  method: GET
+  encoding: json
+  host:
+  - https://recsvm.rummblelabs.com
+  query_string_params:
+  - oauth_token
+  concurrent_calls: 1
+  extra_config:
+    provider: rummblelabs.com
+    description: Seldon is an Open Predictive Platform that currently allows item
+      recommendations and general predictive models to be deployed based on structured
+      historical data.
+    version: 1.0.0
+    slug: seldon-1-0-0-items-type
+    schemes:
+    - http
+    - https
+    produces:
+    - json
+    hosts:
+    - http://recsvm.rummblelabs.com
+    - https://recsvm.rummblelabs.com
+    topics:
+    - machine-learning
+    - oauth-items
+- group: seldon-1-0-0
+  url_pattern: /items/{itemId}
+  method: GET
+  encoding: json
+  host:
+  - https://recsvm.rummblelabs.com
+  url_keys:
+  - itemId
+  query_string_params:
+  - full
+  - oauth_token
+  concurrent_calls: 1
+  extra_config:
+    provider: rummblelabs.com
+    description: Seldon is an Open Predictive Platform that currently allows item
+      recommendations and general predictive models to be deployed based on structured
+      historical data.
+    version: 1.0.0
+    slug: seldon-1-0-0-items-itemid
+    schemes:
+    - http
+    - https
+    produces:
+    - json
+    hosts:
+    - http://recsvm.rummblelabs.com
+    - https://recsvm.rummblelabs.com
+    topics:
+    - machine-learning
+    - oauth-items
+- group: seldon-1-0-0
+  url_pattern: /js/action/new
+  method: GET
+  encoding: json
+  host:
+  - https://recsvm.rummblelabs.com
+  query_string_params:
+  - consumer_key
+  - item
+  - jsonpCallback
+  - timestamp
+  - type
+  - user
+  concurrent_calls: 1
+  extra_config:
+    provider: rummblelabs.com
+    description: Seldon is an Open Predictive Platform that currently allows item
+      recommendations and general predictive models to be deployed based on structured
+      historical data.
+    version: 1.0.0
+    slug: seldon-1-0-0-js-action-new
+    schemes:
+    - http
+    - https
+    produces:
+    - json
+    hosts:
+    - http://recsvm.rummblelabs.com
+    - https://recsvm.rummblelabs.com
+    topics:
+    - js-actions
+    - machine-learning
+- group: seldon-1-0-0
+  url_pattern: /js/recommendations
+  method: GET
+  encoding: json
+  host:
+  - https://recsvm.rummblelabs.com
+  query_string_params:
+  - algorithms
+  - attributes
+  - consumer_key
+  - dimension
+  - item
+  - jsonpCallback
+  - limit
+  - user
+  concurrent_calls: 1
+  extra_config:
+    provider: rummblelabs.com
+    description: Seldon is an Open Predictive Platform that currently allows item
+      recommendations and general predictive models to be deployed based on structured
+      historical data.
+    version: 1.0.0
+    slug: seldon-1-0-0-js-recommendations
+    schemes:
+    - http
+    - https
+    produces:
+    - json
+    hosts:
+    - http://recsvm.rummblelabs.com
+    - https://recsvm.rummblelabs.com
+    topics:
+    - js-recommendations
+    - machine-learning
+- group: seldon-1-0-0
+  url_pattern: /token
+  method: GET
+  encoding: json
+  host:
+  - https://recsvm.rummblelabs.com
+  query_string_params:
+  - consumer_key
+  - consumer_secret
+  concurrent_calls: 1
+  extra_config:
+    provider: rummblelabs.com
+    description: Seldon is an Open Predictive Platform that currently allows item
+      recommendations and general predictive models to be deployed based on structured
+      historical data.
+    version: 1.0.0
+    slug: seldon-1-0-0-token
+    schemes:
+    - http
+    - https
+    produces:
+    - json
+    hosts:
+    - http://recsvm.rummblelabs.com
+    - https://recsvm.rummblelabs.com
+    topics:
+    - machine-learning
+    - token
+- group: seldon-1-0-0
+  url_pattern: /users
+  method: GET
+  encoding: json
+  host:
+  - https://recsvm.rummblelabs.com
+  query_string_params:
+  - full
+  - limit
+  - name
+  - oauth_token
+  concurrent_calls: 1
+  extra_config:
+    provider: rummblelabs.com
+    description: Seldon is an Open Predictive Platform that currently allows item
+      recommendations and general predictive models to be deployed based on structured
+      historical data.
+    version: 1.0.0
+    slug: seldon-1-0-0-users
+    schemes:
+    - http
+    - https
+    produces:
+    - json
+    hosts:
+    - http://recsvm.rummblelabs.com
+    - https://recsvm.rummblelabs.com
+    topics:
+    - machine-learning
+    - oauth-users
+- group: seldon-1-0-0
+  url_pattern: /users/{userId}
+  method: GET
+  encoding: json
+  host:
+  - https://recsvm.rummblelabs.com
+  url_keys:
+  - userId
+  query_string_params:
+  - full
+  - oauth_token
+  concurrent_calls: 1
+  extra_config:
+    provider: rummblelabs.com
+    description: Seldon is an Open Predictive Platform that currently allows item
+      recommendations and general predictive models to be deployed based on structured
+      historical data.
+    version: 1.0.0
+    slug: seldon-1-0-0-users-userid
+    schemes:
+    - http
+    - https
+    produces:
+    - json
+    hosts:
+    - http://recsvm.rummblelabs.com
+    - https://recsvm.rummblelabs.com
+    topics:
+    - machine-learning
+    - oauth-users
+- group: seldon-1-0-0
+  url_pattern: /users/{userId}/actions
+  method: GET
+  encoding: json
+  host:
+  - https://recsvm.rummblelabs.com
+  url_keys:
+  - userId
+  query_string_params:
+  - full
+  - limit
+  - oauth_token
+  concurrent_calls: 1
+  extra_config:
+    provider: rummblelabs.com
+    description: Seldon is an Open Predictive Platform that currently allows item
+      recommendations and general predictive models to be deployed based on structured
+      historical data.
+    version: 1.0.0
+    slug: seldon-1-0-0-users-userid-actions
+    schemes:
+    - http
+    - https
+    produces:
+    - json
+    hosts:
+    - http://recsvm.rummblelabs.com
+    - https://recsvm.rummblelabs.com
+    topics:
+    - machine-learning
+    - oauth-actions
+    - oauth-users
+- group: seldon-1-0-0
+  url_pattern: /users/{userId}/recommendations
+  method: GET
+  encoding: json
+  host:
+  - https://recsvm.rummblelabs.com
+  url_keys:
+  - userId
+  query_string_params:
+  - algorithms
+  - dimension
+  - full
+  - limit
+  - oauth_token
+  concurrent_calls: 1
+  extra_config:
+    provider: rummblelabs.com
+    description: Seldon is an Open Predictive Platform that currently allows item
+      recommendations and general predictive models to be deployed based on structured
+      historical data.
+    version: 1.0.0
+    slug: seldon-1-0-0-users-userid-recommendations
+    schemes:
+    - http
+    - https
+    produces:
+    - json
+    hosts:
+    - http://recsvm.rummblelabs.com
+    - https://recsvm.rummblelabs.com
+    topics:
+    - machine-learning
+    - oauth-recommendations
+    - oauth-users

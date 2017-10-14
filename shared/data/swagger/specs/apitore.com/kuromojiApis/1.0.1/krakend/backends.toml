@@ -1,0 +1,47 @@
+[[backends]]
+  group = "kuromoji-apis-1-0-1"
+  url_pattern = "/api/7/kuromoji-ipadic-neologd/tokenize"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.apitore.com"]
+  whitelist = ["endTime", "log", "processTime", "startTime", "tokens"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "apitore.com"
+    description = "Kuromoji: japanese morphological analyzer.<BR />[Endpoint] https://api.apitore.com/api/7"
+    version = "1.0.1"
+    slug = "kuromoji-apis-1-0-1-api-7-kuromoji-ipadic-neologd-tokenize"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.apitore.com"]
+    [backends.extra_config.mapping]
+      endTime = "endTime"
+      log = "log"
+      processTime = "processTime"
+      startTime = "startTime"
+      tokens = "tokens"
+
+[[backends]]
+  group = "kuromoji-apis-1-0-1"
+  url_pattern = "/api/7/kuromoji-ipadic/tokenize"
+  method = "GET"
+  encoding = "json"
+  host = ["https://api.apitore.com"]
+  whitelist = ["endTime", "log", "processTime", "startTime", "tokens"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "apitore.com"
+    description = "Kuromoji: japanese morphological analyzer.<BR />[Endpoint] https://api.apitore.com/api/7"
+    version = "1.0.1"
+    slug = "kuromoji-apis-1-0-1-api-7-kuromoji-ipadic-tokenize"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://api.apitore.com"]
+    [backends.extra_config.mapping]
+      endTime = "endTime"
+      log = "log"
+      processTime = "processTime"
+      startTime = "startTime"
+      tokens = "tokens"

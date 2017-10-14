@@ -1,0 +1,36 @@
+{
+	"backends": [
+		{
+			"group": "google-cloud-vision-v1",
+			"url_pattern": "/v1/images:annotate",
+			"method": "POST",
+			"host": [
+				"https://vision.googleapis.com"
+			],
+			"whitelist": [
+				"responses"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Integrates Google Vision features, including image labeling, face, logo, and landmark detection, optical character recognition (OCR), and detection of explicit content, into applications.",
+				"version": "v1",
+				"slug": "google-cloud-vision-v1-v1-images-annotate",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"responses": "responses"
+				},
+				"hosts": [
+					"https://vision.googleapis.com"
+				],
+				"topics": [
+					"analytics",
+					"images",
+					"machine-learning"
+				]
+			}
+		}
+	]
+}

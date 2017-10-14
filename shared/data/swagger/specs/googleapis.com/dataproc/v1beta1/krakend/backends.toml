@@ -1,0 +1,206 @@
+[[backends]]
+  group = "google-cloud-dataproc-v1beta1"
+  url_pattern = "/v1beta1/projects/{projectId}/clusters"
+  method = "GET"
+  host = ["https://dataproc.googleapis.com"]
+  url_keys = ["projectId"]
+  query_string_params = ["filter", "pageSize", "pageToken"]
+  whitelist = ["clusters", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages Hadoop-based clusters and jobs on Google Cloud Platform."
+    version = "v1beta1"
+    slug = "google-cloud-dataproc-v1beta1-v1beta1-projects-projectid-clusters"
+    schemes = ["https"]
+    hosts = ["https://dataproc.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      clusters = "clusters"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "google-cloud-dataproc-v1beta1"
+  url_pattern = "/v1beta1/projects/{projectId}/clusters/{clusterName}"
+  method = "GET"
+  host = ["https://dataproc.googleapis.com"]
+  url_keys = ["clusterName", "projectId"]
+  whitelist = ["clusterName", "clusterUuid", "labels", "labels.additionalProperties", "projectId", "statusHistory"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages Hadoop-based clusters and jobs on Google Cloud Platform."
+    version = "v1beta1"
+    slug = "google-cloud-dataproc-v1beta1-v1beta1-projects-projectid-clusters-clustername"
+    schemes = ["https"]
+    hosts = ["https://dataproc.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      additionalProperties = "additionalProperties"
+      clusterName = "clusterName"
+      clusterUuid = "clusterUuid"
+      labels = "labels"
+      projectId = "projectId"
+      statusHistory = "statusHistory"
+
+[[backends]]
+  group = "google-cloud-dataproc-v1beta1"
+  url_pattern = "/v1beta1/projects/{projectId}/clusters/{clusterName}:diagnose"
+  method = "POST"
+  host = ["https://dataproc.googleapis.com"]
+  url_keys = ["clusterName", "projectId"]
+  whitelist = ["done", "metadata", "name", "response"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages Hadoop-based clusters and jobs on Google Cloud Platform."
+    version = "v1beta1"
+    slug = "google-cloud-dataproc-v1beta1-v1beta1-projects-projectid-clusters-clustername-diagnose"
+    schemes = ["https"]
+    hosts = ["https://dataproc.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      done = "done"
+      metadata = "metadata"
+      name = "name"
+      response = "response"
+
+[[backends]]
+  group = "google-cloud-dataproc-v1beta1"
+  url_pattern = "/v1beta1/projects/{projectId}/jobs"
+  method = "GET"
+  host = ["https://dataproc.googleapis.com"]
+  url_keys = ["projectId"]
+  query_string_params = ["clusterName", "filter", "jobStateMatcher", "pageSize", "pageToken"]
+  whitelist = ["jobs", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages Hadoop-based clusters and jobs on Google Cloud Platform."
+    version = "v1beta1"
+    slug = "google-cloud-dataproc-v1beta1-v1beta1-projects-projectid-jobs"
+    schemes = ["https"]
+    hosts = ["https://dataproc.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      jobs = "jobs"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "google-cloud-dataproc-v1beta1"
+  url_pattern = "/v1beta1/projects/{projectId}/jobs/{jobId}"
+  method = "GET"
+  host = ["https://dataproc.googleapis.com"]
+  url_keys = ["jobId", "projectId"]
+  whitelist = ["driverControlFilesUri", "driverInputResourceUri", "driverOutputResourceUri", "interactive", "labels", "labels.additionalProperties", "statusHistory", "submittedBy", "yarnApplications"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages Hadoop-based clusters and jobs on Google Cloud Platform."
+    version = "v1beta1"
+    slug = "google-cloud-dataproc-v1beta1-v1beta1-projects-projectid-jobs-jobid"
+    schemes = ["https"]
+    hosts = ["https://dataproc.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      additionalProperties = "additionalProperties"
+      driverControlFilesUri = "driverControlFilesUri"
+      driverInputResourceUri = "driverInputResourceUri"
+      driverOutputResourceUri = "driverOutputResourceUri"
+      interactive = "interactive"
+      labels = "labels"
+      statusHistory = "statusHistory"
+      submittedBy = "submittedBy"
+      yarnApplications = "yarnApplications"
+
+[[backends]]
+  group = "google-cloud-dataproc-v1beta1"
+  url_pattern = "/v1beta1/projects/{projectId}/jobs/{jobId}:cancel"
+  method = "POST"
+  host = ["https://dataproc.googleapis.com"]
+  url_keys = ["jobId", "projectId"]
+  whitelist = ["driverControlFilesUri", "driverInputResourceUri", "driverOutputResourceUri", "interactive", "labels", "labels.additionalProperties", "statusHistory", "submittedBy", "yarnApplications"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages Hadoop-based clusters and jobs on Google Cloud Platform."
+    version = "v1beta1"
+    slug = "google-cloud-dataproc-v1beta1-v1beta1-projects-projectid-jobs-jobid-cancel"
+    schemes = ["https"]
+    hosts = ["https://dataproc.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      additionalProperties = "additionalProperties"
+      driverControlFilesUri = "driverControlFilesUri"
+      driverInputResourceUri = "driverInputResourceUri"
+      driverOutputResourceUri = "driverOutputResourceUri"
+      interactive = "interactive"
+      labels = "labels"
+      statusHistory = "statusHistory"
+      submittedBy = "submittedBy"
+      yarnApplications = "yarnApplications"
+
+[[backends]]
+  group = "google-cloud-dataproc-v1beta1"
+  url_pattern = "/v1beta1/projects/{projectId}/jobs:submit"
+  method = "POST"
+  host = ["https://dataproc.googleapis.com"]
+  url_keys = ["projectId"]
+  whitelist = ["driverControlFilesUri", "driverInputResourceUri", "driverOutputResourceUri", "interactive", "labels", "labels.additionalProperties", "statusHistory", "submittedBy", "yarnApplications"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages Hadoop-based clusters and jobs on Google Cloud Platform."
+    version = "v1beta1"
+    slug = "google-cloud-dataproc-v1beta1-v1beta1-projects-projectid-jobs-submit"
+    schemes = ["https"]
+    hosts = ["https://dataproc.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      additionalProperties = "additionalProperties"
+      driverControlFilesUri = "driverControlFilesUri"
+      driverInputResourceUri = "driverInputResourceUri"
+      driverOutputResourceUri = "driverOutputResourceUri"
+      interactive = "interactive"
+      labels = "labels"
+      statusHistory = "statusHistory"
+      submittedBy = "submittedBy"
+      yarnApplications = "yarnApplications"
+
+[[backends]]
+  group = "google-cloud-dataproc-v1beta1"
+  url_pattern = "/v1beta1/{name}"
+  method = "GET"
+  host = ["https://dataproc.googleapis.com"]
+  url_keys = ["name"]
+  whitelist = ["done", "metadata", "name", "response"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages Hadoop-based clusters and jobs on Google Cloud Platform."
+    version = "v1beta1"
+    slug = "google-cloud-dataproc-v1beta1-v1beta1-name"
+    schemes = ["https"]
+    hosts = ["https://dataproc.googleapis.com"]
+    topics = ["operations"]
+    [backends.extra_config.mapping]
+      done = "done"
+      metadata = "metadata"
+      name = "name"
+      response = "response"
+
+[[backends]]
+  group = "google-cloud-dataproc-v1beta1"
+  url_pattern = "/v1beta1/{name}:cancel"
+  method = "POST"
+  host = ["https://dataproc.googleapis.com"]
+  url_keys = ["name"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages Hadoop-based clusters and jobs on Google Cloud Platform."
+    version = "v1beta1"
+    slug = "google-cloud-dataproc-v1beta1-v1beta1-name-cancel"
+    schemes = ["https"]
+    hosts = ["https://dataproc.googleapis.com"]
+    topics = ["operations"]

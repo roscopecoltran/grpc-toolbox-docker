@@ -1,0 +1,160 @@
+{
+	"backends": [
+		{
+			"group": "incidents-1-0",
+			"url_pattern": "/Incidents.svc/BusIncidents",
+			"method": "GET",
+			"host": [
+				"https://api.wmata.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "wmata.com",
+				"description": "Rail, bus, and elevator disruptions/outages.",
+				"version": "1.0",
+				"slug": "incidents-1-0-incidents-svc-busincidents",
+				"schemes": [
+					"http",
+					"https"
+				],
+				"hosts": [
+					"http://api.wmata.com",
+					"https://api.wmata.com"
+				],
+				"topics": [
+					"transport"
+				]
+			}
+		},
+		{
+			"group": "incidents-1-0",
+			"url_pattern": "/Incidents.svc/ElevatorIncidents",
+			"method": "GET",
+			"host": [
+				"https://api.wmata.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "wmata.com",
+				"description": "Rail, bus, and elevator disruptions/outages.",
+				"version": "1.0",
+				"slug": "incidents-1-0-incidents-svc-elevatorincidents",
+				"schemes": [
+					"http",
+					"https"
+				],
+				"hosts": [
+					"http://api.wmata.com",
+					"https://api.wmata.com"
+				],
+				"topics": [
+					"transport"
+				]
+			}
+		},
+		{
+			"group": "incidents-1-0",
+			"url_pattern": "/Incidents.svc/Incidents",
+			"method": "GET",
+			"host": [
+				"https://api.wmata.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "wmata.com",
+				"description": "Rail, bus, and elevator disruptions/outages.",
+				"version": "1.0",
+				"slug": "incidents-1-0-incidents-svc-incidents",
+				"schemes": [
+					"http",
+					"https"
+				],
+				"hosts": [
+					"http://api.wmata.com",
+					"https://api.wmata.com"
+				],
+				"topics": [
+					"transport"
+				]
+			}
+		},
+		{
+			"group": "incidents-1-0",
+			"url_pattern": "/Incidents.svc/json/BusIncidents",
+			"method": "GET",
+			"host": [
+				"https://api.wmata.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "wmata.com",
+				"description": "Rail, bus, and elevator disruptions/outages.",
+				"version": "1.0",
+				"slug": "incidents-1-0-incidents-svc-json-busincidents",
+				"schemes": [
+					"http",
+					"https"
+				],
+				"hosts": [
+					"http://api.wmata.com",
+					"https://api.wmata.com"
+				],
+				"topics": [
+					"transport"
+				]
+			}
+		},
+		{
+			"group": "incidents-1-0",
+			"url_pattern": "/Incidents.svc/json/ElevatorIncidents",
+			"method": "GET",
+			"host": [
+				"https://api.wmata.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "wmata.com",
+				"description": "Rail, bus, and elevator disruptions/outages.",
+				"version": "1.0",
+				"slug": "incidents-1-0-incidents-svc-json-elevatorincidents",
+				"schemes": [
+					"http",
+					"https"
+				],
+				"hosts": [
+					"http://api.wmata.com",
+					"https://api.wmata.com"
+				],
+				"topics": [
+					"transport"
+				]
+			}
+		},
+		{
+			"group": "incidents-1-0",
+			"url_pattern": "/Incidents.svc/json/Incidents",
+			"method": "GET",
+			"host": [
+				"https://api.wmata.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "wmata.com",
+				"description": "Rail, bus, and elevator disruptions/outages.",
+				"version": "1.0",
+				"slug": "incidents-1-0-incidents-svc-json-incidents",
+				"schemes": [
+					"http",
+					"https"
+				],
+				"hosts": [
+					"http://api.wmata.com",
+					"https://api.wmata.com"
+				],
+				"topics": [
+					"transport"
+				]
+			}
+		}
+	]
+}

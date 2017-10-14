@@ -1,0 +1,341 @@
+backends:
+- group: google-cloud-pub-sub-v1beta2
+  url_pattern: /v1beta2/{project}/subscriptions
+  method: GET
+  host:
+  - https://pubsub.googleapis.com
+  url_keys:
+  - project
+  query_string_params:
+  - pageSize
+  - pageToken
+  whitelist:
+  - nextPageToken
+  - subscriptions
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: |
+      Provides reliable, many-to-many, asynchronous messaging between applications.
+    version: v1beta2
+    slug: google-cloud-pub-sub-v1beta2-v1beta2-project-subscriptions
+    schemes:
+    - https
+    mapping:
+      nextPageToken: nextPageToken
+      subscriptions: subscriptions
+    hosts:
+    - https://pubsub.googleapis.com
+    topics:
+    - messaging
+    - projects
+- group: google-cloud-pub-sub-v1beta2
+  url_pattern: /v1beta2/{project}/topics
+  method: GET
+  host:
+  - https://pubsub.googleapis.com
+  url_keys:
+  - project
+  query_string_params:
+  - pageSize
+  - pageToken
+  whitelist:
+  - nextPageToken
+  - topics
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: |
+      Provides reliable, many-to-many, asynchronous messaging between applications.
+    version: v1beta2
+    slug: google-cloud-pub-sub-v1beta2-v1beta2-project-topics
+    schemes:
+    - https
+    mapping:
+      nextPageToken: nextPageToken
+      topics: topics
+    hosts:
+    - https://pubsub.googleapis.com
+    topics:
+    - messaging
+    - projects
+- group: google-cloud-pub-sub-v1beta2
+  url_pattern: /v1beta2/{resource}:getIamPolicy
+  method: GET
+  host:
+  - https://pubsub.googleapis.com
+  url_keys:
+  - resource
+  whitelist:
+  - bindings
+  - etag
+  - version
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: |
+      Provides reliable, many-to-many, asynchronous messaging between applications.
+    version: v1beta2
+    slug: google-cloud-pub-sub-v1beta2-v1beta2-resource-getiampolicy
+    schemes:
+    - https
+    mapping:
+      bindings: bindings
+      etag: etag
+      version: version
+    hosts:
+    - https://pubsub.googleapis.com
+    topics:
+    - messaging
+    - projects
+- group: google-cloud-pub-sub-v1beta2
+  url_pattern: /v1beta2/{resource}:setIamPolicy
+  method: POST
+  host:
+  - https://pubsub.googleapis.com
+  url_keys:
+  - resource
+  whitelist:
+  - bindings
+  - etag
+  - version
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: |
+      Provides reliable, many-to-many, asynchronous messaging between applications.
+    version: v1beta2
+    slug: google-cloud-pub-sub-v1beta2-v1beta2-resource-setiampolicy
+    schemes:
+    - https
+    mapping:
+      bindings: bindings
+      etag: etag
+      version: version
+    hosts:
+    - https://pubsub.googleapis.com
+    topics:
+    - messaging
+    - projects
+- group: google-cloud-pub-sub-v1beta2
+  url_pattern: /v1beta2/{resource}:testIamPermissions
+  method: POST
+  host:
+  - https://pubsub.googleapis.com
+  url_keys:
+  - resource
+  whitelist:
+  - permissions
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: |
+      Provides reliable, many-to-many, asynchronous messaging between applications.
+    version: v1beta2
+    slug: google-cloud-pub-sub-v1beta2-v1beta2-resource-testiampermissions
+    schemes:
+    - https
+    mapping:
+      permissions: permissions
+    hosts:
+    - https://pubsub.googleapis.com
+    topics:
+    - messaging
+    - projects
+- group: google-cloud-pub-sub-v1beta2
+  url_pattern: /v1beta2/{subscription}
+  method: GET
+  host:
+  - https://pubsub.googleapis.com
+  url_keys:
+  - subscription
+  whitelist:
+  - ackDeadlineSeconds
+  - name
+  - topic
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: |
+      Provides reliable, many-to-many, asynchronous messaging between applications.
+    version: v1beta2
+    slug: google-cloud-pub-sub-v1beta2-v1beta2-subscription
+    schemes:
+    - https
+    mapping:
+      ackDeadlineSeconds: ackDeadlineSeconds
+      name: name
+      topic: topic
+    hosts:
+    - https://pubsub.googleapis.com
+    topics:
+    - messaging
+    - projects
+- group: google-cloud-pub-sub-v1beta2
+  url_pattern: /v1beta2/{subscription}:acknowledge
+  method: POST
+  host:
+  - https://pubsub.googleapis.com
+  url_keys:
+  - subscription
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: |
+      Provides reliable, many-to-many, asynchronous messaging between applications.
+    version: v1beta2
+    slug: google-cloud-pub-sub-v1beta2-v1beta2-subscription-acknowledge
+    schemes:
+    - https
+    hosts:
+    - https://pubsub.googleapis.com
+    topics:
+    - messaging
+    - projects
+- group: google-cloud-pub-sub-v1beta2
+  url_pattern: /v1beta2/{subscription}:modifyAckDeadline
+  method: POST
+  host:
+  - https://pubsub.googleapis.com
+  url_keys:
+  - subscription
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: |
+      Provides reliable, many-to-many, asynchronous messaging between applications.
+    version: v1beta2
+    slug: google-cloud-pub-sub-v1beta2-v1beta2-subscription-modifyackdeadline
+    schemes:
+    - https
+    hosts:
+    - https://pubsub.googleapis.com
+    topics:
+    - messaging
+    - projects
+- group: google-cloud-pub-sub-v1beta2
+  url_pattern: /v1beta2/{subscription}:modifyPushConfig
+  method: POST
+  host:
+  - https://pubsub.googleapis.com
+  url_keys:
+  - subscription
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: |
+      Provides reliable, many-to-many, asynchronous messaging between applications.
+    version: v1beta2
+    slug: google-cloud-pub-sub-v1beta2-v1beta2-subscription-modifypushconfig
+    schemes:
+    - https
+    hosts:
+    - https://pubsub.googleapis.com
+    topics:
+    - messaging
+    - projects
+- group: google-cloud-pub-sub-v1beta2
+  url_pattern: /v1beta2/{subscription}:pull
+  method: POST
+  host:
+  - https://pubsub.googleapis.com
+  url_keys:
+  - subscription
+  whitelist:
+  - receivedMessages
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: |
+      Provides reliable, many-to-many, asynchronous messaging between applications.
+    version: v1beta2
+    slug: google-cloud-pub-sub-v1beta2-v1beta2-subscription-pull
+    schemes:
+    - https
+    mapping:
+      receivedMessages: receivedMessages
+    hosts:
+    - https://pubsub.googleapis.com
+    topics:
+    - messaging
+    - projects
+- group: google-cloud-pub-sub-v1beta2
+  url_pattern: /v1beta2/{topic}
+  method: GET
+  host:
+  - https://pubsub.googleapis.com
+  url_keys:
+  - topic
+  whitelist:
+  - name
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: |
+      Provides reliable, many-to-many, asynchronous messaging between applications.
+    version: v1beta2
+    slug: google-cloud-pub-sub-v1beta2-v1beta2-topic
+    schemes:
+    - https
+    mapping:
+      name: name
+    hosts:
+    - https://pubsub.googleapis.com
+    topics:
+    - messaging
+    - projects
+- group: google-cloud-pub-sub-v1beta2
+  url_pattern: /v1beta2/{topic}/subscriptions
+  method: GET
+  host:
+  - https://pubsub.googleapis.com
+  url_keys:
+  - topic
+  query_string_params:
+  - pageSize
+  - pageToken
+  whitelist:
+  - nextPageToken
+  - subscriptions
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: |
+      Provides reliable, many-to-many, asynchronous messaging between applications.
+    version: v1beta2
+    slug: google-cloud-pub-sub-v1beta2-v1beta2-topic-subscriptions
+    schemes:
+    - https
+    mapping:
+      nextPageToken: nextPageToken
+      subscriptions: subscriptions
+    hosts:
+    - https://pubsub.googleapis.com
+    topics:
+    - messaging
+    - projects
+- group: google-cloud-pub-sub-v1beta2
+  url_pattern: /v1beta2/{topic}:publish
+  method: POST
+  host:
+  - https://pubsub.googleapis.com
+  url_keys:
+  - topic
+  whitelist:
+  - messageIds
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: |
+      Provides reliable, many-to-many, asynchronous messaging between applications.
+    version: v1beta2
+    slug: google-cloud-pub-sub-v1beta2-v1beta2-topic-publish
+    schemes:
+    - https
+    mapping:
+      messageIds: messageIds
+    hosts:
+    - https://pubsub.googleapis.com
+    topics:
+    - messaging
+    - projects

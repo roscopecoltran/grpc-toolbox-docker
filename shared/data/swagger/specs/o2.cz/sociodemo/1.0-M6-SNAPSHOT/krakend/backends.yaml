@@ -1,0 +1,97 @@
+backends:
+- group: socio-demo-1-0-m6-snapshot
+  url_pattern: /sociodemo/sandbox/api/age/{location}
+  method: GET
+  encoding: json
+  host:
+  - https://developer.o2.cz
+  whitelist:
+  - count
+  concurrent_calls: 1
+  extra_config:
+    provider: o2.cz
+    description: Socio-demo API can be used to obtain time-aggregated data representing
+      groups of people on the given location in the Czech Republic. Having a location,
+      the API can return count of people belonging to age group or gender aggregated
+      by hours. The socio-demo data is based on presence of mobile stations in O2
+      mobile network.
+    version: 1.0-M6-SNAPSHOT
+    slug: socio-demo-1-0-m6-snapshot-sociodemo-sandbox-api-age-location
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      count: count
+    hosts:
+    - https://developer.o2.cz
+    topics:
+    - telecom
+- group: socio-demo-1-0-m6-snapshot
+  url_pattern: /sociodemo/sandbox/api/gender/{location}
+  method: GET
+  encoding: json
+  host:
+  - https://developer.o2.cz
+  whitelist:
+  - count
+  concurrent_calls: 1
+  extra_config:
+    provider: o2.cz
+    description: Socio-demo API can be used to obtain time-aggregated data representing
+      groups of people on the given location in the Czech Republic. Having a location,
+      the API can return count of people belonging to age group or gender aggregated
+      by hours. The socio-demo data is based on presence of mobile stations in O2
+      mobile network.
+    version: 1.0-M6-SNAPSHOT
+    slug: socio-demo-1-0-m6-snapshot-sociodemo-sandbox-api-gender-location
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      count: count
+    hosts:
+    - https://developer.o2.cz
+    topics:
+    - telecom
+- group: socio-demo-1-0-m6-snapshot
+  url_pattern: /sociodemo/sandbox/api/info
+  method: GET
+  encoding: json
+  host:
+  - https://developer.o2.cz
+  whitelist:
+  - appName
+  - appVendor
+  - appVersion
+  - backendAppName
+  - backendAppVendor
+  - backendAppVersion
+  - backendDataFrom
+  concurrent_calls: 1
+  extra_config:
+    provider: o2.cz
+    description: Socio-demo API can be used to obtain time-aggregated data representing
+      groups of people on the given location in the Czech Republic. Having a location,
+      the API can return count of people belonging to age group or gender aggregated
+      by hours. The socio-demo data is based on presence of mobile stations in O2
+      mobile network.
+    version: 1.0-M6-SNAPSHOT
+    slug: socio-demo-1-0-m6-snapshot-sociodemo-sandbox-api-info
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      appName: appName
+      appVendor: appVendor
+      appVersion: appVersion
+      backendAppName: backendAppName
+      backendAppVendor: backendAppVendor
+      backendAppVersion: backendAppVersion
+      backendDataFrom: backendDataFrom
+    hosts:
+    - https://developer.o2.cz
+    topics:
+    - telecom

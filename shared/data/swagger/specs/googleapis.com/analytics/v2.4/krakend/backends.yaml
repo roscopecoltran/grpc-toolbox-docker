@@ -1,0 +1,103 @@
+backends:
+- group: google-analytics-v2-4
+  url_pattern: /analytics/v2.4/data
+  method: GET
+  host:
+  - https://www.googleapis.com
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Views and manages your Google Analytics data.
+    version: v2.4
+    slug: google-analytics-v2-4-analytics-v2-4-data
+    schemes:
+    - https
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - analytics
+- group: google-analytics-v2-4
+  url_pattern: /analytics/v2.4/management/accounts
+  method: GET
+  host:
+  - https://www.googleapis.com
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Views and manages your Google Analytics data.
+    version: v2.4
+    slug: google-analytics-v2-4-analytics-v2-4-management-accounts
+    schemes:
+    - https
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - analytics
+- group: google-analytics-v2-4
+  url_pattern: /analytics/v2.4/management/accounts/{accountId}/webproperties
+  method: GET
+  host:
+  - https://www.googleapis.com
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Views and manages your Google Analytics data.
+    version: v2.4
+    slug: google-analytics-v2-4-analytics-v2-4-management-accounts-accountid-webproperties
+    schemes:
+    - https
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - analytics
+- group: google-analytics-v2-4
+  url_pattern: /analytics/v2.4/management/accounts/{accountId}/webproperties/{webPropertyId}/profiles
+  method: GET
+  host:
+  - https://www.googleapis.com
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Views and manages your Google Analytics data.
+    version: v2.4
+    slug: google-analytics-v2-4-analytics-v2-4-management-accounts-accountid-webproperties-webpropertyid-profiles
+    schemes:
+    - https
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - analytics
+- group: google-analytics-v2-4
+  url_pattern: /analytics/v2.4/management/accounts/{accountId}/webproperties/{webPropertyId}/profiles/{profileId}/goals
+  method: GET
+  host:
+  - https://www.googleapis.com
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Views and manages your Google Analytics data.
+    version: v2.4
+    slug: google-analytics-v2-4-analytics-v2-4-management-accounts-accountid-webproperties-webpropertyid-profiles-profileid-goals
+    schemes:
+    - https
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - analytics
+- group: google-analytics-v2-4
+  url_pattern: /analytics/v2.4/management/segments
+  method: GET
+  host:
+  - https://www.googleapis.com
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Views and manages your Google Analytics data.
+    version: v2.4
+    slug: google-analytics-v2-4-analytics-v2-4-management-segments
+    schemes:
+    - https
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - analytics

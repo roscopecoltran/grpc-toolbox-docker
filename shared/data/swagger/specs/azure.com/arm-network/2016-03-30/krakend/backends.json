@@ -1,0 +1,103 @@
+{
+	"backends": [
+		{
+			"group": "networkmanagementclient-2016-03-30",
+			"url_pattern": "/subscriptions/{subscriptionId}/providers/Microsoft",
+			"method": "NETWORK/APPLICATIONGATEWAYS",
+			"encoding": "json",
+			"host": [
+				"https://management.azure.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "azure.com",
+				"description": "The Microsoft Azure Network management API provides a RESTful set of web services that interact with Microsoft Azure Networks service to manage your network resrources. The API has entities that capture the relationship between an end user and the Microsoft Azure Networks service.",
+				"version": "2016-03-30",
+				"slug": "networkmanagementclient-2016-03-30-subscriptions-subscriptionid-providers-microsoft",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json",
+					"json"
+				],
+				"produces": [
+					"json",
+					"json"
+				],
+				"hosts": [
+					"https://management.azure.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "networkmanagementclient-2016-03-30",
+			"url_pattern": "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft",
+			"method": "NETWORK/APPLICATIONGATEWAYS",
+			"encoding": "json",
+			"host": [
+				"https://management.azure.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "azure.com",
+				"description": "The Microsoft Azure Network management API provides a RESTful set of web services that interact with Microsoft Azure Networks service to manage your network resrources. The API has entities that capture the relationship between an end user and the Microsoft Azure Networks service.",
+				"version": "2016-03-30",
+				"slug": "networkmanagementclient-2016-03-30-subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json",
+					"json"
+				],
+				"produces": [
+					"json",
+					"json"
+				],
+				"hosts": [
+					"https://management.azure.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "networkmanagementclient-2016-03-30",
+			"url_pattern": "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/microsoft",
+			"method": "COMPUTE/VIRTUALMACHINESCALESETS/{VIRTUALMACHINESCALESETNAME}/NETWORKINTERFACES",
+			"encoding": "json",
+			"host": [
+				"https://management.azure.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "azure.com",
+				"description": "The Microsoft Azure Network management API provides a RESTful set of web services that interact with Microsoft Azure Networks service to manage your network resrources. The API has entities that capture the relationship between an end user and the Microsoft Azure Networks service.",
+				"version": "2016-03-30",
+				"slug": "networkmanagementclient-2016-03-30-subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json",
+					"json"
+				],
+				"produces": [
+					"json",
+					"json"
+				],
+				"hosts": [
+					"https://management.azure.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		}
+	]
+}

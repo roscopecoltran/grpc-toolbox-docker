@@ -1,0 +1,496 @@
+{
+	"backends": [
+		{
+			"group": "runscope-1-0-0",
+			"url_pattern": "/account",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://api.runscope.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "runscope.com",
+				"description": "Manage Runscope programmatically.",
+				"version": "1.0.0",
+				"slug": "runscope-1-0-0-account",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://api.runscope.com"
+				],
+				"topics": [
+					"account",
+					"developer-tools"
+				]
+			}
+		},
+		{
+			"group": "runscope-1-0-0",
+			"url_pattern": "/buckets",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://api.runscope.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "runscope.com",
+				"description": "Manage Runscope programmatically.",
+				"version": "1.0.0",
+				"slug": "runscope-1-0-0-buckets",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://api.runscope.com"
+				],
+				"topics": [
+					"buckets",
+					"developer-tools"
+				]
+			}
+		},
+		{
+			"group": "runscope-1-0-0",
+			"url_pattern": "/buckets/{bucketKey}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://api.runscope.com"
+			],
+			"whitelist": [
+				"auth_token",
+				"collections_url",
+				"default",
+				"key",
+				"messages_url",
+				"name",
+				"tests_url",
+				"trigger_url",
+				"verify_ssl"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "runscope.com",
+				"description": "Manage Runscope programmatically.",
+				"version": "1.0.0",
+				"slug": "runscope-1-0-0-buckets-bucketkey",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"auth_token": "auth_token",
+					"collections_url": "collections_url",
+					"default": "default",
+					"key": "key",
+					"messages_url": "messages_url",
+					"name": "name",
+					"tests_url": "tests_url",
+					"trigger_url": "trigger_url",
+					"verify_ssl": "verify_ssl"
+				},
+				"hosts": [
+					"https://api.runscope.com"
+				],
+				"topics": [
+					"buckets",
+					"developer-tools"
+				]
+			}
+		},
+		{
+			"group": "runscope-1-0-0",
+			"url_pattern": "/buckets/{bucketKey}/environments",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://api.runscope.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "runscope.com",
+				"description": "Manage Runscope programmatically.",
+				"version": "1.0.0",
+				"slug": "runscope-1-0-0-buckets-bucketkey-environments",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://api.runscope.com"
+				],
+				"topics": [
+					"developer-tools",
+					"shared-environments"
+				]
+			}
+		},
+		{
+			"group": "runscope-1-0-0",
+			"url_pattern": "/buckets/{bucketKey}/errors",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://api.runscope.com"
+			],
+			"query_string_params": [
+				"before",
+				"count",
+				"since"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "runscope.com",
+				"description": "Manage Runscope programmatically.",
+				"version": "1.0.0",
+				"slug": "runscope-1-0-0-buckets-bucketkey-errors",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://api.runscope.com"
+				],
+				"topics": [
+					"developer-tools",
+					"messages"
+				]
+			}
+		},
+		{
+			"group": "runscope-1-0-0",
+			"url_pattern": "/buckets/{bucketKey}/messages",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://api.runscope.com"
+			],
+			"query_string_params": [
+				"before",
+				"count",
+				"since"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "runscope.com",
+				"description": "Manage Runscope programmatically.",
+				"version": "1.0.0",
+				"slug": "runscope-1-0-0-buckets-bucketkey-messages",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://api.runscope.com"
+				],
+				"topics": [
+					"developer-tools",
+					"messages"
+				]
+			}
+		},
+		{
+			"group": "runscope-1-0-0",
+			"url_pattern": "/buckets/{bucketKey}/messages/{messageId}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://api.runscope.com"
+			],
+			"url_keys": [
+				"messageId"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "runscope.com",
+				"description": "Manage Runscope programmatically.",
+				"version": "1.0.0",
+				"slug": "runscope-1-0-0-buckets-bucketkey-messages-messageid",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://api.runscope.com"
+				],
+				"topics": [
+					"developer-tools",
+					"messages"
+				]
+			}
+		},
+		{
+			"group": "runscope-1-0-0",
+			"url_pattern": "/buckets/{bucketKey}/tests",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://api.runscope.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "runscope.com",
+				"description": "Manage Runscope programmatically.",
+				"version": "1.0.0",
+				"slug": "runscope-1-0-0-buckets-bucketkey-tests",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://api.runscope.com"
+				],
+				"topics": [
+					"developer-tools",
+					"tests"
+				]
+			}
+		},
+		{
+			"group": "runscope-1-0-0",
+			"url_pattern": "/buckets/{bucketKey}/tests/{testId}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://api.runscope.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "runscope.com",
+				"description": "Manage Runscope programmatically.",
+				"version": "1.0.0",
+				"slug": "runscope-1-0-0-buckets-bucketkey-tests-testid",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://api.runscope.com"
+				],
+				"topics": [
+					"developer-tools",
+					"tests"
+				]
+			}
+		},
+		{
+			"group": "runscope-1-0-0",
+			"url_pattern": "/buckets/{bucketKey}/tests/{testId}/environments",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://api.runscope.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "runscope.com",
+				"description": "Manage Runscope programmatically.",
+				"version": "1.0.0",
+				"slug": "runscope-1-0-0-buckets-bucketkey-tests-testid-environments",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://api.runscope.com"
+				],
+				"topics": [
+					"developer-tools",
+					"test-environments"
+				]
+			}
+		},
+		{
+			"group": "runscope-1-0-0",
+			"url_pattern": "/buckets/{bucketKey}/tests/{testId}/metrics",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://api.runscope.com"
+			],
+			"whitelist": [
+				"changes_from_last_period",
+				"environment_uuid",
+				"region",
+				"response_times",
+				"response_times.avg_response_time_ms",
+				"response_times.success_ratio",
+				"response_times.timestamp",
+				"this_time_period",
+				"timeframe"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "runscope.com",
+				"description": "Manage Runscope programmatically.",
+				"version": "1.0.0",
+				"slug": "runscope-1-0-0-buckets-bucketkey-tests-testid-metrics",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"changes_from_last_period": "changes_from_last_period",
+					"environment_uuid": "environment_uuid",
+					"region": "region",
+					"response_times": "response_times",
+					"response_times.avg_response_time_ms": "response_times.avg_response_time_ms",
+					"response_times.success_ratio": "response_times.success_ratio",
+					"response_times.timestamp": "response_times.timestamp",
+					"this_time_period": "this_time_period",
+					"timeframe": "timeframe"
+				},
+				"hosts": [
+					"https://api.runscope.com"
+				],
+				"topics": [
+					"developer-tools",
+					"tests"
+				]
+			}
+		},
+		{
+			"group": "runscope-1-0-0",
+			"url_pattern": "/buckets/{bucketKey}/tests/{testId}/steps",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://api.runscope.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "runscope.com",
+				"description": "Manage Runscope programmatically.",
+				"version": "1.0.0",
+				"slug": "runscope-1-0-0-buckets-bucketkey-tests-testid-steps",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://api.runscope.com"
+				],
+				"topics": [
+					"developer-tools",
+					"test-steps"
+				]
+			}
+		},
+		{
+			"group": "runscope-1-0-0",
+			"url_pattern": "/teams/{teamId}/agents",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://api.runscope.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "runscope.com",
+				"description": "Manage Runscope programmatically.",
+				"version": "1.0.0",
+				"slug": "runscope-1-0-0-teams-teamid-agents",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://api.runscope.com"
+				],
+				"topics": [
+					"account",
+					"developer-tools"
+				]
+			}
+		},
+		{
+			"group": "runscope-1-0-0",
+			"url_pattern": "/teams/{teamId}/integrations",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://api.runscope.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "runscope.com",
+				"description": "Manage Runscope programmatically.",
+				"version": "1.0.0",
+				"slug": "runscope-1-0-0-teams-teamid-integrations",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://api.runscope.com"
+				],
+				"topics": [
+					"account",
+					"developer-tools"
+				]
+			}
+		},
+		{
+			"group": "runscope-1-0-0",
+			"url_pattern": "/teams/{teamId}/people",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://api.runscope.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "runscope.com",
+				"description": "Manage Runscope programmatically.",
+				"version": "1.0.0",
+				"slug": "runscope-1-0-0-teams-teamid-people",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://api.runscope.com"
+				],
+				"topics": [
+					"account",
+					"developer-tools"
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,1090 @@
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/account"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-account"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["account", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/account/domainwhitelist"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  query_string_params = ["limit", "offset"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-account-domainwhitelist"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["account", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/account/guests"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  query_string_params = ["limit", "offset", "sortBy", "sortDirection", "textSearch"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-account-guests"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["account", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/account/guests/count"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  query_string_params = ["textSearch"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-account-guests-count"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["account", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/account/guests/{guestId}"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["guestId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-account-guests-guestid"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["account", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/account/guests/{guestId}/permissions"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["guestId"]
+  query_string_params = ["entityId", "entityType", "limit", "offset", "type"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-account-guests-guestid-permissions"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["account", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/account/guests/{guestId}/permissions/count"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["guestId"]
+  query_string_params = ["entityId", "entityType", "type"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-account-guests-guestid-permissions-count"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["account", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/account/guests/{guestId}/{type}/permissions/patch"
+  method = "POST"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["guestId", "type"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-account-guests-guestid-type-permissions-patch"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["account", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/account/ipblacklist"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  query_string_params = ["limit", "offset"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-account-ipblacklist"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["account", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/account/plan"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-account-plan"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["account", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/aggregated"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  query_string_params = ["fromDay", "hourly", "onlyFavorites", "timeFrame", "toDay"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-aggregated"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["aggregated", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/aggregated/list"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  query_string_params = ["fromDay", "groupBy", "timeFrame", "toDay"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-aggregated-list"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["aggregated", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/aggregated/summary/conversions"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  query_string_params = ["fromDay", "limit", "offset", "sortBy", "sortDirection", "status", "textSearch", "timeFrame", "toDay"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-aggregated-summary-conversions"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["aggregated", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/aggregated/summary/datapoints"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  query_string_params = ["favourite", "fromDay", "groupId", "limit", "offset", "sortBy", "sortDirection", "status", "tag", "textSearch", "timeFrame", "toDay", "type"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-aggregated-summary-datapoints"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["aggregated", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/aggregated/summary/groups"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  query_string_params = ["favourite", "fromDay", "limit", "offset", "sortBy", "sortDirection", "status", "tag", "textSearch", "timeFrame", "toDay"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-aggregated-summary-groups"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["aggregated", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/clickstream"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  query_string_params = ["conversion", "datapoint", "filter", "group", "pageSize"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-clickstream"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["clickstream", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/conversions"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  query_string_params = ["createdAfter", "createdBefore", "limit", "offset", "status", "textSearch"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-conversions"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["conversions", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/conversions/aggregated/list"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  query_string_params = ["fromDay", "groupBy", "status", "timeFrame", "toDay"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-conversions-aggregated-list"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["conversions", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/conversions/count"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  query_string_params = ["createdAfter", "createdBefore", "status", "textSearch"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-conversions-count"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["conversions", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/conversions/{conversionId}"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["conversionId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-conversions-conversionid"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["conversions", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/conversions/{conversionId}/aggregated"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["conversionId"]
+  query_string_params = ["favourite", "fromDay", "hourly", "tag", "timeFrame", "toDay"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-conversions-conversionid-aggregated"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["conversions", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/conversions/{conversionId}/aggregated/list"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["conversionId"]
+  query_string_params = ["fromDay", "groupBy", "timeFrame", "toDay"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-conversions-conversionid-aggregated-list"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["conversions", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/conversions/{conversionId}/datapoints"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["conversionId"]
+  query_string_params = ["createdAfter", "createdBefore", "limit", "offset", "status", "tags", "textSearch", "type"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-conversions-conversionid-datapoints"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["conversions", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/conversions/{conversionId}/datapoints/count"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["conversionId"]
+  query_string_params = ["createdAfter", "createdBefore", "status", "tags", "textSearch", "type"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-conversions-conversionid-datapoints-count"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["conversions", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/conversions/{conversionId}/hits"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["conversionId"]
+  query_string_params = ["filter", "fromDay", "limit", "offset", "timeframe", "toDay"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-conversions-conversionid-hits"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["conversions", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/conversions/{conversionId}/reports"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["conversionId"]
+  query_string_params = ["fromDay", "hittype", "timeframe", "toDay", "type"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-conversions-conversionid-reports"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["conversions", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/datapoints"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  query_string_params = ["createdAfter", "createdBefore", "limit", "offset", "onlyFavorites", "sortBy", "sortDirection", "status", "tags", "textSearch", "type"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-datapoints"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["datapoints", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/datapoints/aggregated"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  query_string_params = ["favourite", "fromDay", "hourly", "status", "tag", "timeFrame", "toDay", "type"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-datapoints-aggregated"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["datapoints", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/datapoints/aggregated/list"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  query_string_params = ["favourite", "fromDay", "groupBy", "status", "tag", "timeFrame", "toDay", "type"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-datapoints-aggregated-list"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["datapoints", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/datapoints/batch"
+  method = "POST"
+  host = ["https://apiv2.clickmeter.com:80"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-datapoints-batch"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["datapoints", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/datapoints/count"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  query_string_params = ["createdAfter", "createdBefore", "onlyFavorites", "status", "tags", "textSearch", "type"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-datapoints-count"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["datapoints", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/datapoints/{id}"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["id"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-datapoints-id"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["datapoints", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/datapoints/{id}/aggregated"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["id"]
+  query_string_params = ["fromDay", "hourly", "timeFrame", "toDay"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-datapoints-id-aggregated"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["datapoints", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/datapoints/{id}/aggregated/list"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["id"]
+  query_string_params = ["fromDay", "groupBy", "timeFrame", "toDay"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-datapoints-id-aggregated-list"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["datapoints", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/datapoints/{id}/hits"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["id"]
+  query_string_params = ["filter", "fromDay", "limit", "offset", "timeframe", "toDay"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-datapoints-id-hits"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["datapoints", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/datapoints/{id}/reports"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["id"]
+  query_string_params = ["fromDay", "timeframe", "toDay", "type"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-datapoints-id-reports"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["datapoints", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/domains"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  query_string_params = ["limit", "name", "offset", "type"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-domains"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["domains", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/domains/count"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  query_string_params = ["name", "type"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-domains-count"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["domains", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/domains/{id}"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["id"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-domains-id"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["domains", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/groups"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  query_string_params = ["createdAfter", "createdBefore", "limit", "offset", "status", "tags", "textSearch", "write"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-groups"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["groups", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/groups/aggregated"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  query_string_params = ["favourite", "fromDay", "hourly", "status", "tag", "timeFrame", "toDay"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-groups-aggregated"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["groups", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/groups/aggregated/list"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  query_string_params = ["favourite", "fromDay", "groupBy", "status", "tag", "timeFrame", "toDay"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-groups-aggregated-list"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["groups", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/groups/count"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  query_string_params = ["createdAfter", "createdBefore", "status", "tags", "textSearch", "write"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-groups-count"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["groups", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/groups/{id}"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["id"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-groups-id"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["groups", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/groups/{id}/aggregated"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["id"]
+  query_string_params = ["fromDay", "hourly", "timeFrame", "toDay"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-groups-id-aggregated"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["groups", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/groups/{id}/aggregated/list"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["id"]
+  query_string_params = ["fromDay", "groupBy", "timeFrame", "toDay"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-groups-id-aggregated-list"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["groups", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/groups/{id}/aggregated/summary"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["id"]
+  query_string_params = ["favourite", "fromDay", "limit", "offset", "sortBy", "sortDirection", "status", "tag", "textSearch", "timeFrame", "toDay", "type"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-groups-id-aggregated-summary"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["groups", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/groups/{id}/datapoints"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["id"]
+  query_string_params = ["createdAfter", "createdBefore", "limit", "offset", "onlyFavorites", "sortBy", "sortDirection", "status", "tags", "textSearch", "type"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-groups-id-datapoints"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["groups", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/groups/{id}/datapoints/count"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["id"]
+  query_string_params = ["createdAfter", "createdBefore", "onlyFavorites", "status", "tags", "textSearch", "type"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-groups-id-datapoints-count"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["groups", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/groups/{id}/hits"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["id"]
+  query_string_params = ["filter", "fromDay", "limit", "offset", "timeframe", "toDay"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-groups-id-hits"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["groups", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/groups/{id}/reports"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["id"]
+  query_string_params = ["fromDay", "hittype", "timeframe", "toDay", "type"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-groups-id-reports"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["groups", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/hits"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  query_string_params = ["filter", "fromDay", "limit", "offset", "timeframe", "toDay"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-hits"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["hits", "marketing"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/me"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-me"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["marketing", "me"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/me/plan"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-me-plan"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["marketing", "me"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/reports"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  query_string_params = ["conversion", "datapoint", "fromDay", "group", "hittype", "timeframe", "toDay", "type"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-reports"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["marketing", "reports"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/retargeting"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  query_string_params = ["limit", "offset"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-retargeting"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["marketing", "retargeting"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/retargeting/count"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-retargeting-count"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["marketing", "retargeting"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/retargeting/{id}"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["id"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-retargeting-id"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["marketing", "retargeting"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/retargeting/{id}/datapoints"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["id"]
+  query_string_params = ["createdAfter", "createdBefore", "limit", "offset", "onlyFavorites", "sortBy", "sortDirection", "status", "tags", "textSearch"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-retargeting-id-datapoints"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["marketing", "retargeting"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/retargeting/{id}/datapoints/count"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["id"]
+  query_string_params = ["createdAfter", "createdBefore", "onlyFavorites", "status", "tags", "textSearch"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-retargeting-id-datapoints-count"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["marketing", "retargeting"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/tags"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  query_string_params = ["datapoints", "groups", "limit", "name", "offset", "type"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-tags"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["marketing", "tags"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/tags/count"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  query_string_params = ["datapoints", "groups", "name", "type"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-tags-count"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["marketing", "tags"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/tags/{tagId}"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["tagId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-tags-tagid"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["marketing", "tags"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/tags/{tagId}/datapoints"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["tagId"]
+  query_string_params = ["createdAfter", "createdBefore", "limit", "offset", "status", "textSearch", "type"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-tags-tagid-datapoints"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["marketing", "tags"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/tags/{tagId}/datapoints/count"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["tagId"]
+  query_string_params = ["createdAfter", "createdBefore", "status", "textSearch", "type"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-tags-tagid-datapoints-count"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["marketing", "tags"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/tags/{tagId}/groups"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["tagId"]
+  query_string_params = ["createdAfter", "createdBefore", "limit", "offset", "status", "textSearch"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-tags-tagid-groups"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["marketing", "tags"]
+
+[[backends]]
+  group = "clickmeter-v2"
+  url_pattern = "/tags/{tagId}/groups/count"
+  method = "GET"
+  host = ["https://apiv2.clickmeter.com:80"]
+  url_keys = ["tagId"]
+  query_string_params = ["createdAfter", "createdBefore", "status", "textSearch"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "clickmeter.com"
+    description = "Api dashboard for ClickMeter API"
+    version = "v2"
+    slug = "clickmeter-v2-tags-tagid-groups-count"
+    schemes = ["http", "https"]
+    hosts = ["http://apiv2.clickmeter.com:80", "https://apiv2.clickmeter.com:80"]
+    topics = ["marketing", "tags"]

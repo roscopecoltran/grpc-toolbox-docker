@@ -1,0 +1,35 @@
+backends:
+- group: kmeans-clustering-by-word2vec-0-0-1
+  url_pattern: /api/48/kmeans-wordvector/cluster
+  method: POST
+  encoding: json
+  host:
+  - https://api.apitore.com
+  whitelist:
+  - clusters
+  - endTime
+  - log
+  - num
+  - processTime
+  - startTime
+  concurrent_calls: 1
+  extra_config:
+    provider: apitore.com
+    description: Kmeans clustering by word2vec.<BR />[Endpoint] https://api.apitore.com/api/48
+    version: 0.0.1
+    slug: kmeans-clustering-by-word2vec-0-0-1-api-48-kmeans-wordvector-cluster
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      clusters: clusters
+      endTime: endTime
+      log: log
+      num: num
+      processTime: processTime
+      startTime: startTime
+    hosts:
+    - https://api.apitore.com

@@ -1,0 +1,690 @@
+{
+	"backends": [
+		{
+			"group": "google-v1",
+			"url_pattern": "/plus/v1/activities",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"etag",
+				"id",
+				"items",
+				"kind",
+				"nextLink",
+				"nextPageToken",
+				"selfLink",
+				"title",
+				"updated"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Builds on top of the Google+ platform.",
+				"version": "v1",
+				"slug": "google-v1-plus-v1-activities",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"etag": "etag",
+					"id": "id",
+					"items": "items",
+					"kind": "kind",
+					"nextLink": "nextLink",
+					"nextPageToken": "nextPageToken",
+					"selfLink": "selfLink",
+					"title": "title",
+					"updated": "updated"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"social"
+				]
+			}
+		},
+		{
+			"group": "google-v1",
+			"url_pattern": "/plus/v1/activities/{activityId}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"actor",
+				"actor.clientSpecificActorInfo",
+				"actor.clientSpecificActorInfo.youtubeActorInfo",
+				"actor.clientSpecificActorInfo.youtubeActorInfo.channelId",
+				"actor.displayName",
+				"actor.id",
+				"actor.image",
+				"actor.image.url",
+				"actor.name",
+				"actor.name.familyName",
+				"actor.name.givenName",
+				"actor.url",
+				"actor.verification",
+				"actor.verification.adHocVerified",
+				"address",
+				"annotation",
+				"crosspostSource",
+				"etag",
+				"geocode",
+				"id",
+				"kind",
+				"object",
+				"object.actor",
+				"object.actor.clientSpecificActorInfo",
+				"object.actor.clientSpecificActorInfo.youtubeActorInfo",
+				"object.actor.clientSpecificActorInfo.youtubeActorInfo.channelId",
+				"object.actor.displayName",
+				"object.actor.id",
+				"object.actor.image",
+				"object.actor.image.url",
+				"object.actor.url",
+				"object.actor.verification",
+				"object.actor.verification.adHocVerified",
+				"object.attachments",
+				"object.attachments.items",
+				"object.attachments.items.content",
+				"object.attachments.items.displayName",
+				"object.attachments.items.embed",
+				"object.attachments.items.embed.url",
+				"object.attachments.items.fullImage",
+				"object.attachments.items.fullImage.height",
+				"object.attachments.items.fullImage.url",
+				"object.attachments.items.fullImage.width",
+				"object.attachments.items.id",
+				"object.attachments.items.image",
+				"object.attachments.items.image.height",
+				"object.attachments.items.image.url",
+				"object.attachments.items.image.width",
+				"object.attachments.items.objectType",
+				"object.attachments.items.thumbnails",
+				"object.attachments.items.thumbnails.items",
+				"object.attachments.items.thumbnails.items.description",
+				"object.attachments.items.thumbnails.items.image",
+				"object.attachments.items.thumbnails.items.image.height",
+				"object.attachments.items.thumbnails.items.image.url",
+				"object.attachments.items.thumbnails.items.image.width",
+				"object.attachments.items.thumbnails.items.url",
+				"object.attachments.items.url",
+				"object.content",
+				"object.id",
+				"object.objectType",
+				"object.originalContent",
+				"object.plusoners",
+				"object.plusoners.selfLink",
+				"object.plusoners.totalItems",
+				"object.replies",
+				"object.replies.selfLink",
+				"object.replies.totalItems",
+				"object.resharers",
+				"object.resharers.selfLink",
+				"object.resharers.totalItems",
+				"object.url",
+				"placeId",
+				"placeName",
+				"provider",
+				"provider.title",
+				"published",
+				"radius",
+				"title",
+				"updated",
+				"url",
+				"verb"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Builds on top of the Google+ platform.",
+				"version": "v1",
+				"slug": "google-v1-plus-v1-activities-activityid",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"actor": "actor",
+					"actor.clientSpecificActorInfo": "actor.clientSpecificActorInfo",
+					"actor.clientSpecificActorInfo.youtubeActorInfo": "actor.clientSpecificActorInfo.youtubeActorInfo",
+					"actor.clientSpecificActorInfo.youtubeActorInfo.channelId": "actor.clientSpecificActorInfo.youtubeActorInfo.channelId",
+					"actor.displayName": "actor.displayName",
+					"actor.id": "actor.id",
+					"actor.image": "actor.image",
+					"actor.image.url": "actor.image.url",
+					"actor.name": "actor.name",
+					"actor.name.familyName": "actor.name.familyName",
+					"actor.name.givenName": "actor.name.givenName",
+					"actor.url": "actor.url",
+					"actor.verification": "actor.verification",
+					"actor.verification.adHocVerified": "actor.verification.adHocVerified",
+					"address": "address",
+					"annotation": "annotation",
+					"crosspostSource": "crosspostSource",
+					"etag": "etag",
+					"geocode": "geocode",
+					"id": "id",
+					"kind": "kind",
+					"object": "object",
+					"object.actor": "object.actor",
+					"object.actor.clientSpecificActorInfo": "object.actor.clientSpecificActorInfo",
+					"object.actor.clientSpecificActorInfo.youtubeActorInfo": "object.actor.clientSpecificActorInfo.youtubeActorInfo",
+					"object.actor.clientSpecificActorInfo.youtubeActorInfo.channelId": "object.actor.clientSpecificActorInfo.youtubeActorInfo.channelId",
+					"object.actor.displayName": "object.actor.displayName",
+					"object.actor.id": "object.actor.id",
+					"object.actor.image": "object.actor.image",
+					"object.actor.image.url": "object.actor.image.url",
+					"object.actor.url": "object.actor.url",
+					"object.actor.verification": "object.actor.verification",
+					"object.actor.verification.adHocVerified": "object.actor.verification.adHocVerified",
+					"object.attachments": "object.attachments",
+					"object.attachments.items": "object.attachments.items",
+					"object.attachments.items.content": "object.attachments.items.content",
+					"object.attachments.items.displayName": "object.attachments.items.displayName",
+					"object.attachments.items.embed": "object.attachments.items.embed",
+					"object.attachments.items.embed.url": "object.attachments.items.embed.url",
+					"object.attachments.items.fullImage": "object.attachments.items.fullImage",
+					"object.attachments.items.fullImage.height": "object.attachments.items.fullImage.height",
+					"object.attachments.items.fullImage.url": "object.attachments.items.fullImage.url",
+					"object.attachments.items.fullImage.width": "object.attachments.items.fullImage.width",
+					"object.attachments.items.id": "object.attachments.items.id",
+					"object.attachments.items.image": "object.attachments.items.image",
+					"object.attachments.items.image.height": "object.attachments.items.image.height",
+					"object.attachments.items.image.url": "object.attachments.items.image.url",
+					"object.attachments.items.image.width": "object.attachments.items.image.width",
+					"object.attachments.items.objectType": "object.attachments.items.objectType",
+					"object.attachments.items.thumbnails": "object.attachments.items.thumbnails",
+					"object.attachments.items.thumbnails.items": "object.attachments.items.thumbnails.items",
+					"object.attachments.items.thumbnails.items.description": "object.attachments.items.thumbnails.items.description",
+					"object.attachments.items.thumbnails.items.image": "object.attachments.items.thumbnails.items.image",
+					"object.attachments.items.thumbnails.items.image.height": "object.attachments.items.thumbnails.items.image.height",
+					"object.attachments.items.thumbnails.items.image.url": "object.attachments.items.thumbnails.items.image.url",
+					"object.attachments.items.thumbnails.items.image.width": "object.attachments.items.thumbnails.items.image.width",
+					"object.attachments.items.thumbnails.items.url": "object.attachments.items.thumbnails.items.url",
+					"object.attachments.items.url": "object.attachments.items.url",
+					"object.content": "object.content",
+					"object.id": "object.id",
+					"object.objectType": "object.objectType",
+					"object.originalContent": "object.originalContent",
+					"object.plusoners": "object.plusoners",
+					"object.plusoners.selfLink": "object.plusoners.selfLink",
+					"object.plusoners.totalItems": "object.plusoners.totalItems",
+					"object.replies": "object.replies",
+					"object.replies.selfLink": "object.replies.selfLink",
+					"object.replies.totalItems": "object.replies.totalItems",
+					"object.resharers": "object.resharers",
+					"object.resharers.selfLink": "object.resharers.selfLink",
+					"object.resharers.totalItems": "object.resharers.totalItems",
+					"object.url": "object.url",
+					"placeId": "placeId",
+					"placeName": "placeName",
+					"provider": "provider",
+					"provider.title": "provider.title",
+					"published": "published",
+					"radius": "radius",
+					"title": "title",
+					"updated": "updated",
+					"url": "url",
+					"verb": "verb"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"social"
+				]
+			}
+		},
+		{
+			"group": "google-v1",
+			"url_pattern": "/plus/v1/activities/{activityId}/comments",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"etag",
+				"id",
+				"items",
+				"kind",
+				"nextLink",
+				"nextPageToken",
+				"title",
+				"updated"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Builds on top of the Google+ platform.",
+				"version": "v1",
+				"slug": "google-v1-plus-v1-activities-activityid-comments",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"etag": "etag",
+					"id": "id",
+					"items": "items",
+					"kind": "kind",
+					"nextLink": "nextLink",
+					"nextPageToken": "nextPageToken",
+					"title": "title",
+					"updated": "updated"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"social"
+				]
+			}
+		},
+		{
+			"group": "google-v1",
+			"url_pattern": "/plus/v1/activities/{activityId}/people/{collection}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"etag",
+				"items",
+				"kind",
+				"nextPageToken",
+				"selfLink",
+				"title",
+				"totalItems"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Builds on top of the Google+ platform.",
+				"version": "v1",
+				"slug": "google-v1-plus-v1-activities-activityid-people-collection",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"etag": "etag",
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken",
+					"selfLink": "selfLink",
+					"title": "title",
+					"totalItems": "totalItems"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"social"
+				]
+			}
+		},
+		{
+			"group": "google-v1",
+			"url_pattern": "/plus/v1/comments/{commentId}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"actor",
+				"actor.clientSpecificActorInfo",
+				"actor.clientSpecificActorInfo.youtubeActorInfo",
+				"actor.clientSpecificActorInfo.youtubeActorInfo.channelId",
+				"actor.displayName",
+				"actor.id",
+				"actor.image",
+				"actor.image.url",
+				"actor.url",
+				"actor.verification",
+				"actor.verification.adHocVerified",
+				"etag",
+				"id",
+				"inReplyTo",
+				"inReplyTo.id",
+				"inReplyTo.url",
+				"kind",
+				"object",
+				"object.content",
+				"object.objectType",
+				"object.originalContent",
+				"plusoners",
+				"plusoners.totalItems",
+				"published",
+				"selfLink",
+				"updated",
+				"verb"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Builds on top of the Google+ platform.",
+				"version": "v1",
+				"slug": "google-v1-plus-v1-comments-commentid",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"actor": "actor",
+					"actor.clientSpecificActorInfo": "actor.clientSpecificActorInfo",
+					"actor.clientSpecificActorInfo.youtubeActorInfo": "actor.clientSpecificActorInfo.youtubeActorInfo",
+					"actor.clientSpecificActorInfo.youtubeActorInfo.channelId": "actor.clientSpecificActorInfo.youtubeActorInfo.channelId",
+					"actor.displayName": "actor.displayName",
+					"actor.id": "actor.id",
+					"actor.image": "actor.image",
+					"actor.image.url": "actor.image.url",
+					"actor.url": "actor.url",
+					"actor.verification": "actor.verification",
+					"actor.verification.adHocVerified": "actor.verification.adHocVerified",
+					"etag": "etag",
+					"id": "id",
+					"inReplyTo": "inReplyTo",
+					"inReplyTo.id": "inReplyTo.id",
+					"inReplyTo.url": "inReplyTo.url",
+					"kind": "kind",
+					"object": "object",
+					"object.content": "object.content",
+					"object.objectType": "object.objectType",
+					"object.originalContent": "object.originalContent",
+					"plusoners": "plusoners",
+					"plusoners.totalItems": "plusoners.totalItems",
+					"published": "published",
+					"selfLink": "selfLink",
+					"updated": "updated",
+					"verb": "verb"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"social"
+				]
+			}
+		},
+		{
+			"group": "google-v1",
+			"url_pattern": "/plus/v1/people",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"etag",
+				"items",
+				"kind",
+				"nextPageToken",
+				"selfLink",
+				"title",
+				"totalItems"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Builds on top of the Google+ platform.",
+				"version": "v1",
+				"slug": "google-v1-plus-v1-people",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"etag": "etag",
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken",
+					"selfLink": "selfLink",
+					"title": "title",
+					"totalItems": "totalItems"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"social"
+				]
+			}
+		},
+		{
+			"group": "google-v1",
+			"url_pattern": "/plus/v1/people/{userId}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"aboutMe",
+				"ageRange",
+				"ageRange.max",
+				"ageRange.min",
+				"birthday",
+				"braggingRights",
+				"circledByCount",
+				"cover",
+				"cover.coverInfo",
+				"cover.coverInfo.leftImageOffset",
+				"cover.coverInfo.topImageOffset",
+				"cover.coverPhoto",
+				"cover.coverPhoto.height",
+				"cover.coverPhoto.url",
+				"cover.coverPhoto.width",
+				"cover.layout",
+				"currentLocation",
+				"displayName",
+				"domain",
+				"emails",
+				"emails.value",
+				"etag",
+				"gender",
+				"id",
+				"image",
+				"image.isDefault",
+				"image.url",
+				"isPlusUser",
+				"kind",
+				"language",
+				"name",
+				"name.familyName",
+				"name.formatted",
+				"name.givenName",
+				"name.honorificPrefix",
+				"name.honorificSuffix",
+				"name.middleName",
+				"nickname",
+				"objectType",
+				"occupation",
+				"organizations",
+				"organizations.department",
+				"organizations.description",
+				"organizations.endDate",
+				"organizations.location",
+				"organizations.name",
+				"organizations.primary",
+				"organizations.startDate",
+				"organizations.title",
+				"placesLived",
+				"placesLived.primary",
+				"placesLived.value",
+				"plusOneCount",
+				"relationshipStatus",
+				"skills",
+				"tagline",
+				"url",
+				"urls",
+				"urls.label",
+				"urls.value",
+				"verified"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Builds on top of the Google+ platform.",
+				"version": "v1",
+				"slug": "google-v1-plus-v1-people-userid",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"aboutMe": "aboutMe",
+					"ageRange": "ageRange",
+					"ageRange.max": "ageRange.max",
+					"ageRange.min": "ageRange.min",
+					"birthday": "birthday",
+					"braggingRights": "braggingRights",
+					"circledByCount": "circledByCount",
+					"cover": "cover",
+					"cover.coverInfo": "cover.coverInfo",
+					"cover.coverInfo.leftImageOffset": "cover.coverInfo.leftImageOffset",
+					"cover.coverInfo.topImageOffset": "cover.coverInfo.topImageOffset",
+					"cover.coverPhoto": "cover.coverPhoto",
+					"cover.coverPhoto.height": "cover.coverPhoto.height",
+					"cover.coverPhoto.url": "cover.coverPhoto.url",
+					"cover.coverPhoto.width": "cover.coverPhoto.width",
+					"cover.layout": "cover.layout",
+					"currentLocation": "currentLocation",
+					"displayName": "displayName",
+					"domain": "domain",
+					"emails": "emails",
+					"emails.value": "emails.value",
+					"etag": "etag",
+					"gender": "gender",
+					"id": "id",
+					"image": "image",
+					"image.isDefault": "image.isDefault",
+					"image.url": "image.url",
+					"isPlusUser": "isPlusUser",
+					"kind": "kind",
+					"language": "language",
+					"name": "name",
+					"name.familyName": "name.familyName",
+					"name.formatted": "name.formatted",
+					"name.givenName": "name.givenName",
+					"name.honorificPrefix": "name.honorificPrefix",
+					"name.honorificSuffix": "name.honorificSuffix",
+					"name.middleName": "name.middleName",
+					"nickname": "nickname",
+					"objectType": "objectType",
+					"occupation": "occupation",
+					"organizations": "organizations",
+					"organizations.department": "organizations.department",
+					"organizations.description": "organizations.description",
+					"organizations.endDate": "organizations.endDate",
+					"organizations.location": "organizations.location",
+					"organizations.name": "organizations.name",
+					"organizations.primary": "organizations.primary",
+					"organizations.startDate": "organizations.startDate",
+					"organizations.title": "organizations.title",
+					"placesLived": "placesLived",
+					"placesLived.primary": "placesLived.primary",
+					"placesLived.value": "placesLived.value",
+					"plusOneCount": "plusOneCount",
+					"relationshipStatus": "relationshipStatus",
+					"skills": "skills",
+					"tagline": "tagline",
+					"url": "url",
+					"urls": "urls",
+					"urls.label": "urls.label",
+					"urls.value": "urls.value",
+					"verified": "verified"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"social"
+				]
+			}
+		},
+		{
+			"group": "google-v1",
+			"url_pattern": "/plus/v1/people/{userId}/activities/{collection}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"etag",
+				"id",
+				"items",
+				"kind",
+				"nextLink",
+				"nextPageToken",
+				"selfLink",
+				"title",
+				"updated"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Builds on top of the Google+ platform.",
+				"version": "v1",
+				"slug": "google-v1-plus-v1-people-userid-activities-collection",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"etag": "etag",
+					"id": "id",
+					"items": "items",
+					"kind": "kind",
+					"nextLink": "nextLink",
+					"nextPageToken": "nextPageToken",
+					"selfLink": "selfLink",
+					"title": "title",
+					"updated": "updated"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"social"
+				]
+			}
+		},
+		{
+			"group": "google-v1",
+			"url_pattern": "/plus/v1/people/{userId}/people/{collection}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"etag",
+				"items",
+				"kind",
+				"nextPageToken",
+				"selfLink",
+				"title",
+				"totalItems"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Builds on top of the Google+ platform.",
+				"version": "v1",
+				"slug": "google-v1-plus-v1-people-userid-people-collection",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"etag": "etag",
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken",
+					"selfLink": "selfLink",
+					"title": "title",
+					"totalItems": "totalItems"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"social"
+				]
+			}
+		}
+	]
+}

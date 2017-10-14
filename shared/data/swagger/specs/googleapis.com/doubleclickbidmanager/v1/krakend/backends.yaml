@@ -1,0 +1,156 @@
+backends:
+- group: doubleclick-bid-manager-v1
+  url_pattern: /doubleclickbidmanager/v1/lineitems/downloadlineitems
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - lineItems
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: API for viewing and managing your reports in DoubleClick Bid Manager.
+    version: v1
+    slug: doubleclick-bid-manager-v1-doubleclickbidmanager-v1-lineitems-downloadlineitems
+    schemes:
+    - https
+    mapping:
+      lineItems: lineItems
+    hosts:
+    - https://www.googleapis.com
+- group: doubleclick-bid-manager-v1
+  url_pattern: /doubleclickbidmanager/v1/lineitems/uploadlineitems
+  method: POST
+  host:
+  - https://www.googleapis.com
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: API for viewing and managing your reports in DoubleClick Bid Manager.
+    version: v1
+    slug: doubleclick-bid-manager-v1-doubleclickbidmanager-v1-lineitems-uploadlineitems
+    schemes:
+    - https
+    hosts:
+    - https://www.googleapis.com
+- group: doubleclick-bid-manager-v1
+  url_pattern: /doubleclickbidmanager/v1/queries
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - kind
+  - queries
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: API for viewing and managing your reports in DoubleClick Bid Manager.
+    version: v1
+    slug: doubleclick-bid-manager-v1-doubleclickbidmanager-v1-queries
+    schemes:
+    - https
+    mapping:
+      kind: kind
+      queries: queries
+    hosts:
+    - https://www.googleapis.com
+- group: doubleclick-bid-manager-v1
+  url_pattern: /doubleclickbidmanager/v1/queries/{queryId}/reports
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - kind
+  - reports
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: API for viewing and managing your reports in DoubleClick Bid Manager.
+    version: v1
+    slug: doubleclick-bid-manager-v1-doubleclickbidmanager-v1-queries-queryid-reports
+    schemes:
+    - https
+    mapping:
+      kind: kind
+      reports: reports
+    hosts:
+    - https://www.googleapis.com
+- group: doubleclick-bid-manager-v1
+  url_pattern: /doubleclickbidmanager/v1/query
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - kind
+  - queryId
+  - reportDataEndTimeMs
+  - reportDataStartTimeMs
+  - timezoneCode
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: API for viewing and managing your reports in DoubleClick Bid Manager.
+    version: v1
+    slug: doubleclick-bid-manager-v1-doubleclickbidmanager-v1-query
+    schemes:
+    - https
+    mapping:
+      kind: kind
+      queryId: queryId
+      reportDataEndTimeMs: reportDataEndTimeMs
+      reportDataStartTimeMs: reportDataStartTimeMs
+      timezoneCode: timezoneCode
+    hosts:
+    - https://www.googleapis.com
+- group: doubleclick-bid-manager-v1
+  url_pattern: /doubleclickbidmanager/v1/query/{queryId}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - kind
+  - queryId
+  - reportDataEndTimeMs
+  - reportDataStartTimeMs
+  - timezoneCode
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: API for viewing and managing your reports in DoubleClick Bid Manager.
+    version: v1
+    slug: doubleclick-bid-manager-v1-doubleclickbidmanager-v1-query-queryid
+    schemes:
+    - https
+    mapping:
+      kind: kind
+      queryId: queryId
+      reportDataEndTimeMs: reportDataEndTimeMs
+      reportDataStartTimeMs: reportDataStartTimeMs
+      timezoneCode: timezoneCode
+    hosts:
+    - https://www.googleapis.com
+- group: doubleclick-bid-manager-v1
+  url_pattern: /doubleclickbidmanager/v1/sdf/download
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - adGroups
+  - ads
+  - insertionOrders
+  - lineItems
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: API for viewing and managing your reports in DoubleClick Bid Manager.
+    version: v1
+    slug: doubleclick-bid-manager-v1-doubleclickbidmanager-v1-sdf-download
+    schemes:
+    - https
+    mapping:
+      adGroups: adGroups
+      ads: ads
+      insertionOrders: insertionOrders
+      lineItems: lineItems
+    hosts:
+    - https://www.googleapis.com

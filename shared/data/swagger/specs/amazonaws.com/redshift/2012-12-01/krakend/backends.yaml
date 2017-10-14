@@ -1,0 +1,2251 @@
+backends:
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#AuthorizeSnapshotAccess
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-authorizesnapshotaccess
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#CopyClusterSnapshot
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-copyclustersnapshot
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#CreateCluster
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-createcluster
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#CreateClusterParameterGroup
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-createclusterparametergroup
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#CreateClusterSecurityGroup
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-createclustersecuritygroup
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#CreateClusterSnapshot
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-createclustersnapshot
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#CreateClusterSubnetGroup
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-createclustersubnetgroup
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#CreateEventSubscription
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-createeventsubscription
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#CreateHsmClientCertificate
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-createhsmclientcertificate
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#CreateHsmConfiguration
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-createhsmconfiguration
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#CreateSnapshotCopyGrant
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-createsnapshotcopygrant
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#CreateTags
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-createtags
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DeleteCluster
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-deletecluster
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DeleteClusterParameterGroup
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-deleteclusterparametergroup
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DeleteClusterSecurityGroup
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-deleteclustersecuritygroup
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DeleteClusterSnapshot
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-deleteclustersnapshot
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DeleteClusterSubnetGroup
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-deleteclustersubnetgroup
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DeleteEventSubscription
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-deleteeventsubscription
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DeleteHsmClientCertificate
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-deletehsmclientcertificate
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DeleteHsmConfiguration
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-deletehsmconfiguration
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DeleteSnapshotCopyGrant
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-deletesnapshotcopygrant
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DeleteTags
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-deletetags
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DescribeClusterParameterGroups
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxRecords
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-describeclusterparametergroups
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DescribeClusterParameters
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxRecords
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-describeclusterparameters
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DescribeClusterSecurityGroups
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxRecords
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-describeclustersecuritygroups
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DescribeClusterSnapshots
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxRecords
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-describeclustersnapshots
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DescribeClusterSubnetGroups
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxRecords
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-describeclustersubnetgroups
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DescribeClusterVersions
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxRecords
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-describeclusterversions
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DescribeClusters
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxRecords
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-describeclusters
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DescribeDefaultClusterParameters
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxRecords
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-describedefaultclusterparameters
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DescribeEventCategories
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-describeeventcategories
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DescribeEventSubscriptions
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxRecords
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-describeeventsubscriptions
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DescribeEvents
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxRecords
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-describeevents
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DescribeHsmClientCertificates
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxRecords
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-describehsmclientcertificates
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DescribeHsmConfigurations
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxRecords
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-describehsmconfigurations
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DescribeLoggingStatus
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-describeloggingstatus
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DescribeOrderableClusterOptions
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxRecords
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-describeorderableclusteroptions
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DescribeReservedNodeOfferings
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxRecords
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-describereservednodeofferings
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DescribeReservedNodes
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  query_string_params:
+  - Marker
+  - MaxRecords
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-describereservednodes
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DescribeResize
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-describeresize
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DescribeSnapshotCopyGrants
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-describesnapshotcopygrants
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DescribeTableRestoreStatus
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-describetablerestorestatus
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DescribeTags
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-describetags
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DisableLogging
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-disablelogging
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#DisableSnapshotCopy
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-disablesnapshotcopy
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#EnableLogging
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-enablelogging
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#EnableSnapshotCopy
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-enablesnapshotcopy
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#GetClusterCredentials
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-getclustercredentials
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#ModifyCluster
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-modifycluster
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#ModifyClusterIamRoles
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-modifyclusteriamroles
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#ModifyClusterParameterGroup
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-modifyclusterparametergroup
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#ModifyClusterSubnetGroup
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-modifyclustersubnetgroup
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#ModifyEventSubscription
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-modifyeventsubscription
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#ModifySnapshotCopyRetentionPeriod
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-modifysnapshotcopyretentionperiod
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#PurchaseReservedNodeOffering
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-purchasereservednodeoffering
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#RebootCluster
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-rebootcluster
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#ResetClusterParameterGroup
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-resetclusterparametergroup
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#RestoreFromClusterSnapshot
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-restorefromclustersnapshot
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#RestoreTableFromClusterSnapshot
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-restoretablefromclustersnapshot
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#RevokeClusterSecurityGroupIngress
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-revokeclustersecuritygroupingress
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#RevokeSnapshotAccess
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-revokesnapshotaccess
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /#RotateEncryptionKey
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01-rotateencryptionkey
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-redshift-2012-12-01
+  url_pattern: /
+  method: POST
+  host:
+  - http://redshift.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This
+      is an interface reference for Amazon Redshift. It contains documentation for
+      one of the programming or command line interfaces you can use to manage Amazon
+      Redshift clusters. Note that Amazon Redshift is asynchronous, which means that
+      some interfaces may require techniques, such as polling or asynchronous callback
+      handlers, to determine when a command has been applied. In this reference, the
+      parameter descriptions indicate whether a change is applied immediately, on
+      the next instance reboot, or during the next maintenance window. For a summary
+      of the Amazon Redshift cluster management interfaces, go to <a href="http://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
+      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift manages
+      all the work of setting up, operating, and scaling a data warehouse: provisioning
+      capacity, monitoring and backing up the cluster, and applying patches and upgrades
+      to the Amazon Redshift engine. You can focus on using your data to acquire new
+      insights for your business and customers.</p> <p>If you are a first-time user
+      of Amazon Redshift, we recommend that you begin by reading the <a href="http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
+      Redshift Getting Started Guide</a>.</p> <p>If you are a database developer,
+      the <a href="http://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
+      Redshift Database Developer Guide</a> explains how to design, build, query,
+      and maintain the databases that make up your data warehouse. </p>'
+    version: 2012-12-01
+    slug: amazon-redshift-2012-12-01
+    schemes:
+    - http
+    hosts:
+    - http://redshift.amazonaws.com
+    topics:
+    - cloud

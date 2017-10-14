@@ -1,0 +1,217 @@
+backends:
+- group: doubleclick-search-v2
+  url_pattern: /doubleclicksearch/v2/agency/{agencyId}/advertiser/{advertiserId}/engine/{engineAccountId}/conversion
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - conversion
+  - kind
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Reports and modifies your advertising data in DoubleClick Search
+      (for example, campaigns, ad groups, keywords, and conversions).
+    version: v2
+    slug: doubleclick-search-v2-doubleclicksearch-v2-agency-agencyid-advertiser-advertiserid-engine-engineaccountid-conversion
+    schemes:
+    - https
+    mapping:
+      conversion: conversion
+      kind: kind
+    hosts:
+    - https://www.googleapis.com
+- group: doubleclick-search-v2
+  url_pattern: /doubleclicksearch/v2/agency/{agencyId}/advertiser/{advertiserId}/savedcolumns
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - items
+  - kind
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Reports and modifies your advertising data in DoubleClick Search
+      (for example, campaigns, ad groups, keywords, and conversions).
+    version: v2
+    slug: doubleclick-search-v2-doubleclicksearch-v2-agency-agencyid-advertiser-advertiserid-savedcolumns
+    schemes:
+    - https
+    mapping:
+      items: items
+      kind: kind
+    hosts:
+    - https://www.googleapis.com
+- group: doubleclick-search-v2
+  url_pattern: /doubleclicksearch/v2/conversion
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - conversion
+  - kind
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Reports and modifies your advertising data in DoubleClick Search
+      (for example, campaigns, ad groups, keywords, and conversions).
+    version: v2
+    slug: doubleclick-search-v2-doubleclicksearch-v2-conversion
+    schemes:
+    - https
+    mapping:
+      conversion: conversion
+      kind: kind
+    hosts:
+    - https://www.googleapis.com
+- group: doubleclick-search-v2
+  url_pattern: /doubleclicksearch/v2/conversion/updateAvailability
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - availabilities
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Reports and modifies your advertising data in DoubleClick Search
+      (for example, campaigns, ad groups, keywords, and conversions).
+    version: v2
+    slug: doubleclick-search-v2-doubleclicksearch-v2-conversion-updateavailability
+    schemes:
+    - https
+    mapping:
+      availabilities: availabilities
+    hosts:
+    - https://www.googleapis.com
+- group: doubleclick-search-v2
+  url_pattern: /doubleclicksearch/v2/reports
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - files
+  - files.byteCount
+  - files.url
+  - id
+  - isReportReady
+  - kind
+  - rowCount
+  - rows
+  - statisticsCurrencyCode
+  - statisticsTimeZone
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Reports and modifies your advertising data in DoubleClick Search
+      (for example, campaigns, ad groups, keywords, and conversions).
+    version: v2
+    slug: doubleclick-search-v2-doubleclicksearch-v2-reports
+    schemes:
+    - https
+    mapping:
+      files: files
+      files.byteCount: files.byteCount
+      files.url: files.url
+      id: id
+      isReportReady: isReportReady
+      kind: kind
+      rowCount: rowCount
+      rows: rows
+      statisticsCurrencyCode: statisticsCurrencyCode
+      statisticsTimeZone: statisticsTimeZone
+    hosts:
+    - https://www.googleapis.com
+- group: doubleclick-search-v2
+  url_pattern: /doubleclicksearch/v2/reports/generate
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - files
+  - files.byteCount
+  - files.url
+  - id
+  - isReportReady
+  - kind
+  - rowCount
+  - rows
+  - statisticsCurrencyCode
+  - statisticsTimeZone
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Reports and modifies your advertising data in DoubleClick Search
+      (for example, campaigns, ad groups, keywords, and conversions).
+    version: v2
+    slug: doubleclick-search-v2-doubleclicksearch-v2-reports-generate
+    schemes:
+    - https
+    mapping:
+      files: files
+      files.byteCount: files.byteCount
+      files.url: files.url
+      id: id
+      isReportReady: isReportReady
+      kind: kind
+      rowCount: rowCount
+      rows: rows
+      statisticsCurrencyCode: statisticsCurrencyCode
+      statisticsTimeZone: statisticsTimeZone
+    hosts:
+    - https://www.googleapis.com
+- group: doubleclick-search-v2
+  url_pattern: /doubleclicksearch/v2/reports/{reportId}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - files
+  - files.byteCount
+  - files.url
+  - id
+  - isReportReady
+  - kind
+  - rowCount
+  - rows
+  - statisticsCurrencyCode
+  - statisticsTimeZone
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Reports and modifies your advertising data in DoubleClick Search
+      (for example, campaigns, ad groups, keywords, and conversions).
+    version: v2
+    slug: doubleclick-search-v2-doubleclicksearch-v2-reports-reportid
+    schemes:
+    - https
+    mapping:
+      files: files
+      files.byteCount: files.byteCount
+      files.url: files.url
+      id: id
+      isReportReady: isReportReady
+      kind: kind
+      rowCount: rowCount
+      rows: rows
+      statisticsCurrencyCode: statisticsCurrencyCode
+      statisticsTimeZone: statisticsTimeZone
+    hosts:
+    - https://www.googleapis.com
+- group: doubleclick-search-v2
+  url_pattern: /doubleclicksearch/v2/reports/{reportId}/files/{reportFragment}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Reports and modifies your advertising data in DoubleClick Search
+      (for example, campaigns, ad groups, keywords, and conversions).
+    version: v2
+    slug: doubleclick-search-v2-doubleclicksearch-v2-reports-reportid-files-reportfragment
+    schemes:
+    - https
+    hosts:
+    - https://www.googleapis.com

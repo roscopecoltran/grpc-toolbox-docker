@@ -1,0 +1,770 @@
+backends:
+- group: brandlovers-marketplace-api-v1-1-0-0
+  url_pattern: /marketplace/v1/order/{orderId}
+  method: GET
+  encoding: json
+  host:
+  - https://api.brandlovers.com
+  whitelist:
+  - approvedAt
+  - createdAt
+  - items
+  - orderId
+  - orderMarketplaceId
+  - shipments
+  - status
+  - totalAmount
+  - totalDiscountAmount
+  - totalItemsAmount
+  - totalShippingAmount
+  - updatedAt
+  concurrent_calls: 1
+  extra_config:
+    provider: brandlovers.com
+    description: 'Allows sellers to: 1) Load products definitions to the BrandLovers
+      marktplace. 2) Receive and update orders status. 3) Receive and update shipping
+      information. 4) Receive and update customer tickets. All requests consume and
+      return application/json content. All request must be authenticated and use HTTPS.'
+    version: 1.0.0
+    slug: brandlovers-marketplace-api-v1-1-0-0-marketplace-v1-order-orderid
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      approvedAt: approvedAt
+      createdAt: createdAt
+      items: items
+      orderId: orderId
+      orderMarketplaceId: orderMarketplaceId
+      shipments: shipments
+      status: status
+      totalAmount: totalAmount
+      totalDiscountAmount: totalDiscountAmount
+      totalItemsAmount: totalItemsAmount
+      totalShippingAmount: totalShippingAmount
+      updatedAt: updatedAt
+    hosts:
+    - https://api.brandlovers.com
+    topics:
+    - ecommerce
+- group: brandlovers-marketplace-api-v1-1-0-0
+  url_pattern: /marketplace/v1/order/{orderId}/shipment/cancel
+  method: POST
+  encoding: json
+  host:
+  - https://api.brandlovers.com
+  concurrent_calls: 1
+  extra_config:
+    provider: brandlovers.com
+    description: 'Allows sellers to: 1) Load products definitions to the BrandLovers
+      marktplace. 2) Receive and update orders status. 3) Receive and update shipping
+      information. 4) Receive and update customer tickets. All requests consume and
+      return application/json content. All request must be authenticated and use HTTPS.'
+    version: 1.0.0
+    slug: brandlovers-marketplace-api-v1-1-0-0-marketplace-v1-order-orderid-shipment-cancel
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.brandlovers.com
+    topics:
+    - ecommerce
+- group: brandlovers-marketplace-api-v1-1-0-0
+  url_pattern: /marketplace/v1/order/{orderId}/shipment/delivered
+  method: POST
+  encoding: json
+  host:
+  - https://api.brandlovers.com
+  concurrent_calls: 1
+  extra_config:
+    provider: brandlovers.com
+    description: 'Allows sellers to: 1) Load products definitions to the BrandLovers
+      marktplace. 2) Receive and update orders status. 3) Receive and update shipping
+      information. 4) Receive and update customer tickets. All requests consume and
+      return application/json content. All request must be authenticated and use HTTPS.'
+    version: 1.0.0
+    slug: brandlovers-marketplace-api-v1-1-0-0-marketplace-v1-order-orderid-shipment-delivered
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.brandlovers.com
+    topics:
+    - ecommerce
+- group: brandlovers-marketplace-api-v1-1-0-0
+  url_pattern: /marketplace/v1/order/{orderId}/shipment/exchange
+  method: POST
+  encoding: json
+  host:
+  - https://api.brandlovers.com
+  concurrent_calls: 1
+  extra_config:
+    provider: brandlovers.com
+    description: 'Allows sellers to: 1) Load products definitions to the BrandLovers
+      marktplace. 2) Receive and update orders status. 3) Receive and update shipping
+      information. 4) Receive and update customer tickets. All requests consume and
+      return application/json content. All request must be authenticated and use HTTPS.'
+    version: 1.0.0
+    slug: brandlovers-marketplace-api-v1-1-0-0-marketplace-v1-order-orderid-shipment-exchange
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.brandlovers.com
+    topics:
+    - ecommerce
+- group: brandlovers-marketplace-api-v1-1-0-0
+  url_pattern: /marketplace/v1/order/{orderId}/shipment/return
+  method: POST
+  encoding: json
+  host:
+  - https://api.brandlovers.com
+  concurrent_calls: 1
+  extra_config:
+    provider: brandlovers.com
+    description: 'Allows sellers to: 1) Load products definitions to the BrandLovers
+      marktplace. 2) Receive and update orders status. 3) Receive and update shipping
+      information. 4) Receive and update customer tickets. All requests consume and
+      return application/json content. All request must be authenticated and use HTTPS.'
+    version: 1.0.0
+    slug: brandlovers-marketplace-api-v1-1-0-0-marketplace-v1-order-orderid-shipment-return
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.brandlovers.com
+    topics:
+    - ecommerce
+- group: brandlovers-marketplace-api-v1-1-0-0
+  url_pattern: /marketplace/v1/order/{orderId}/shipment/sent
+  method: POST
+  encoding: json
+  host:
+  - https://api.brandlovers.com
+  concurrent_calls: 1
+  extra_config:
+    provider: brandlovers.com
+    description: 'Allows sellers to: 1) Load products definitions to the BrandLovers
+      marktplace. 2) Receive and update orders status. 3) Receive and update shipping
+      information. 4) Receive and update customer tickets. All requests consume and
+      return application/json content. All request must be authenticated and use HTTPS.'
+    version: 1.0.0
+    slug: brandlovers-marketplace-api-v1-1-0-0-marketplace-v1-order-orderid-shipment-sent
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.brandlovers.com
+    topics:
+    - ecommerce
+- group: brandlovers-marketplace-api-v1-1-0-0
+  url_pattern: /marketplace/v1/orders
+  method: GET
+  encoding: json
+  host:
+  - https://api.brandlovers.com
+  whitelist:
+  - metadata
+  - orders
+  concurrent_calls: 1
+  extra_config:
+    provider: brandlovers.com
+    description: 'Allows sellers to: 1) Load products definitions to the BrandLovers
+      marktplace. 2) Receive and update orders status. 3) Receive and update shipping
+      information. 4) Receive and update customer tickets. All requests consume and
+      return application/json content. All request must be authenticated and use HTTPS.'
+    version: 1.0.0
+    slug: brandlovers-marketplace-api-v1-1-0-0-marketplace-v1-orders
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      orders: orders
+    hosts:
+    - https://api.brandlovers.com
+    topics:
+    - ecommerce
+- group: brandlovers-marketplace-api-v1-1-0-0
+  url_pattern: /marketplace/v1/orders/shipments/delivered
+  method: GET
+  encoding: json
+  host:
+  - https://api.brandlovers.com
+  whitelist:
+  - metadata
+  - shipments
+  concurrent_calls: 1
+  extra_config:
+    provider: brandlovers.com
+    description: 'Allows sellers to: 1) Load products definitions to the BrandLovers
+      marktplace. 2) Receive and update orders status. 3) Receive and update shipping
+      information. 4) Receive and update customer tickets. All requests consume and
+      return application/json content. All request must be authenticated and use HTTPS.'
+    version: 1.0.0
+    slug: brandlovers-marketplace-api-v1-1-0-0-marketplace-v1-orders-shipments-delivered
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      shipments: shipments
+    hosts:
+    - https://api.brandlovers.com
+    topics:
+    - ecommerce
+- group: brandlovers-marketplace-api-v1-1-0-0
+  url_pattern: /marketplace/v1/orders/shipments/shipped
+  method: GET
+  encoding: json
+  host:
+  - https://api.brandlovers.com
+  whitelist:
+  - metadata
+  - shipments
+  concurrent_calls: 1
+  extra_config:
+    provider: brandlovers.com
+    description: 'Allows sellers to: 1) Load products definitions to the BrandLovers
+      marktplace. 2) Receive and update orders status. 3) Receive and update shipping
+      information. 4) Receive and update customer tickets. All requests consume and
+      return application/json content. All request must be authenticated and use HTTPS.'
+    version: 1.0.0
+    slug: brandlovers-marketplace-api-v1-1-0-0-marketplace-v1-orders-shipments-shipped
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      shipments: shipments
+    hosts:
+    - https://api.brandlovers.com
+    topics:
+    - ecommerce
+- group: brandlovers-marketplace-api-v1-1-0-0
+  url_pattern: /marketplace/v1/orders/status/approved
+  method: GET
+  encoding: json
+  host:
+  - https://api.brandlovers.com
+  whitelist:
+  - metadata
+  - orders
+  concurrent_calls: 1
+  extra_config:
+    provider: brandlovers.com
+    description: 'Allows sellers to: 1) Load products definitions to the BrandLovers
+      marktplace. 2) Receive and update orders status. 3) Receive and update shipping
+      information. 4) Receive and update customer tickets. All requests consume and
+      return application/json content. All request must be authenticated and use HTTPS.'
+    version: 1.0.0
+    slug: brandlovers-marketplace-api-v1-1-0-0-marketplace-v1-orders-status-approved
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      orders: orders
+    hosts:
+    - https://api.brandlovers.com
+    topics:
+    - ecommerce
+- group: brandlovers-marketplace-api-v1-1-0-0
+  url_pattern: /marketplace/v1/orders/status/canceled
+  method: GET
+  encoding: json
+  host:
+  - https://api.brandlovers.com
+  whitelist:
+  - metadata
+  - orders
+  concurrent_calls: 1
+  extra_config:
+    provider: brandlovers.com
+    description: 'Allows sellers to: 1) Load products definitions to the BrandLovers
+      marktplace. 2) Receive and update orders status. 3) Receive and update shipping
+      information. 4) Receive and update customer tickets. All requests consume and
+      return application/json content. All request must be authenticated and use HTTPS.'
+    version: 1.0.0
+    slug: brandlovers-marketplace-api-v1-1-0-0-marketplace-v1-orders-status-canceled
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      orders: orders
+    hosts:
+    - https://api.brandlovers.com
+    topics:
+    - ecommerce
+- group: brandlovers-marketplace-api-v1-1-0-0
+  url_pattern: /marketplace/v1/orders/status/delivered
+  method: GET
+  encoding: json
+  host:
+  - https://api.brandlovers.com
+  whitelist:
+  - metadata
+  - orders
+  concurrent_calls: 1
+  extra_config:
+    provider: brandlovers.com
+    description: 'Allows sellers to: 1) Load products definitions to the BrandLovers
+      marktplace. 2) Receive and update orders status. 3) Receive and update shipping
+      information. 4) Receive and update customer tickets. All requests consume and
+      return application/json content. All request must be authenticated and use HTTPS.'
+    version: 1.0.0
+    slug: brandlovers-marketplace-api-v1-1-0-0-marketplace-v1-orders-status-delivered
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      orders: orders
+    hosts:
+    - https://api.brandlovers.com
+    topics:
+    - ecommerce
+- group: brandlovers-marketplace-api-v1-1-0-0
+  url_pattern: /marketplace/v1/orders/status/new
+  method: GET
+  encoding: json
+  host:
+  - https://api.brandlovers.com
+  whitelist:
+  - metadata
+  - orders
+  concurrent_calls: 1
+  extra_config:
+    provider: brandlovers.com
+    description: 'Allows sellers to: 1) Load products definitions to the BrandLovers
+      marktplace. 2) Receive and update orders status. 3) Receive and update shipping
+      information. 4) Receive and update customer tickets. All requests consume and
+      return application/json content. All request must be authenticated and use HTTPS.'
+    version: 1.0.0
+    slug: brandlovers-marketplace-api-v1-1-0-0-marketplace-v1-orders-status-new
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      orders: orders
+    hosts:
+    - https://api.brandlovers.com
+    topics:
+    - ecommerce
+- group: brandlovers-marketplace-api-v1-1-0-0
+  url_pattern: /marketplace/v1/orders/status/partiallyDelivered
+  method: GET
+  encoding: json
+  host:
+  - https://api.brandlovers.com
+  whitelist:
+  - metadata
+  - orders
+  concurrent_calls: 1
+  extra_config:
+    provider: brandlovers.com
+    description: 'Allows sellers to: 1) Load products definitions to the BrandLovers
+      marktplace. 2) Receive and update orders status. 3) Receive and update shipping
+      information. 4) Receive and update customer tickets. All requests consume and
+      return application/json content. All request must be authenticated and use HTTPS.'
+    version: 1.0.0
+    slug: brandlovers-marketplace-api-v1-1-0-0-marketplace-v1-orders-status-partiallydelivered
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      orders: orders
+    hosts:
+    - https://api.brandlovers.com
+    topics:
+    - ecommerce
+- group: brandlovers-marketplace-api-v1-1-0-0
+  url_pattern: /marketplace/v1/orders/status/partiallySent
+  method: GET
+  encoding: json
+  host:
+  - https://api.brandlovers.com
+  whitelist:
+  - metadata
+  - orders
+  concurrent_calls: 1
+  extra_config:
+    provider: brandlovers.com
+    description: 'Allows sellers to: 1) Load products definitions to the BrandLovers
+      marktplace. 2) Receive and update orders status. 3) Receive and update shipping
+      information. 4) Receive and update customer tickets. All requests consume and
+      return application/json content. All request must be authenticated and use HTTPS.'
+    version: 1.0.0
+    slug: brandlovers-marketplace-api-v1-1-0-0-marketplace-v1-orders-status-partiallysent
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      orders: orders
+    hosts:
+    - https://api.brandlovers.com
+    topics:
+    - ecommerce
+- group: brandlovers-marketplace-api-v1-1-0-0
+  url_pattern: /marketplace/v1/orders/status/sent
+  method: GET
+  encoding: json
+  host:
+  - https://api.brandlovers.com
+  whitelist:
+  - metadata
+  - orders
+  concurrent_calls: 1
+  extra_config:
+    provider: brandlovers.com
+    description: 'Allows sellers to: 1) Load products definitions to the BrandLovers
+      marktplace. 2) Receive and update orders status. 3) Receive and update shipping
+      information. 4) Receive and update customer tickets. All requests consume and
+      return application/json content. All request must be authenticated and use HTTPS.'
+    version: 1.0.0
+    slug: brandlovers-marketplace-api-v1-1-0-0-marketplace-v1-orders-status-sent
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      orders: orders
+    hosts:
+    - https://api.brandlovers.com
+    topics:
+    - ecommerce
+- group: brandlovers-marketplace-api-v1-1-0-0
+  url_pattern: /marketplace/v1/product
+  method: POST
+  encoding: json
+  host:
+  - https://api.brandlovers.com
+  concurrent_calls: 1
+  extra_config:
+    provider: brandlovers.com
+    description: 'Allows sellers to: 1) Load products definitions to the BrandLovers
+      marktplace. 2) Receive and update orders status. 3) Receive and update shipping
+      information. 4) Receive and update customer tickets. All requests consume and
+      return application/json content. All request must be authenticated and use HTTPS.'
+    version: 1.0.0
+    slug: brandlovers-marketplace-api-v1-1-0-0-marketplace-v1-product
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.brandlovers.com
+    topics:
+    - ecommerce
+- group: brandlovers-marketplace-api-v1-1-0-0
+  url_pattern: /marketplace/v1/product/{skuSellerId}
+  method: GET
+  encoding: json
+  host:
+  - https://api.brandlovers.com
+  whitelist:
+  - attributes
+  - brand
+  - categories
+  - description
+  - errors
+  - gtin
+  - images
+  - productGroupId
+  - skuSellerId
+  - status
+  - stock
+  - title
+  - videos
+  concurrent_calls: 1
+  extra_config:
+    provider: brandlovers.com
+    description: 'Allows sellers to: 1) Load products definitions to the BrandLovers
+      marktplace. 2) Receive and update orders status. 3) Receive and update shipping
+      information. 4) Receive and update customer tickets. All requests consume and
+      return application/json content. All request must be authenticated and use HTTPS.'
+    version: 1.0.0
+    slug: brandlovers-marketplace-api-v1-1-0-0-marketplace-v1-product-skusellerid
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      attributes: attributes
+      brand: brand
+      categories: categories
+      description: description
+      errors: errors
+      gtin: gtin
+      images: images
+      productGroupId: productGroupId
+      skuSellerId: skuSellerId
+      status: status
+      stock: stock
+      title: title
+      videos: videos
+    hosts:
+    - https://api.brandlovers.com
+    topics:
+    - ecommerce
+- group: brandlovers-marketplace-api-v1-1-0-0
+  url_pattern: /marketplace/v1/products
+  method: GET
+  encoding: json
+  host:
+  - https://api.brandlovers.com
+  whitelist:
+  - metadata
+  - skus
+  concurrent_calls: 1
+  extra_config:
+    provider: brandlovers.com
+    description: 'Allows sellers to: 1) Load products definitions to the BrandLovers
+      marktplace. 2) Receive and update orders status. 3) Receive and update shipping
+      information. 4) Receive and update customer tickets. All requests consume and
+      return application/json content. All request must be authenticated and use HTTPS.'
+    version: 1.0.0
+    slug: brandlovers-marketplace-api-v1-1-0-0-marketplace-v1-products
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      skus: skus
+    hosts:
+    - https://api.brandlovers.com
+    topics:
+    - ecommerce
+- group: brandlovers-marketplace-api-v1-1-0-0
+  url_pattern: /marketplace/v1/products/status
+  method: GET
+  encoding: json
+  host:
+  - https://api.brandlovers.com
+  whitelist:
+  - metadata
+  - skus
+  concurrent_calls: 1
+  extra_config:
+    provider: brandlovers.com
+    description: 'Allows sellers to: 1) Load products definitions to the BrandLovers
+      marktplace. 2) Receive and update orders status. 3) Receive and update shipping
+      information. 4) Receive and update customer tickets. All requests consume and
+      return application/json content. All request must be authenticated and use HTTPS.'
+    version: 1.0.0
+    slug: brandlovers-marketplace-api-v1-1-0-0-marketplace-v1-products-status
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      skus: skus
+    hosts:
+    - https://api.brandlovers.com
+    topics:
+    - ecommerce
+- group: brandlovers-marketplace-api-v1-1-0-0
+  url_pattern: /marketplace/v1/products/status/selling
+  method: GET
+  encoding: json
+  host:
+  - https://api.brandlovers.com
+  whitelist:
+  - metadata
+  - sellerItems
+  concurrent_calls: 1
+  extra_config:
+    provider: brandlovers.com
+    description: 'Allows sellers to: 1) Load products definitions to the BrandLovers
+      marktplace. 2) Receive and update orders status. 3) Receive and update shipping
+      information. 4) Receive and update customer tickets. All requests consume and
+      return application/json content. All request must be authenticated and use HTTPS.'
+    version: 1.0.0
+    slug: brandlovers-marketplace-api-v1-1-0-0-marketplace-v1-products-status-selling
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      sellerItems: sellerItems
+    hosts:
+    - https://api.brandlovers.com
+    topics:
+    - ecommerce
+- group: brandlovers-marketplace-api-v1-1-0-0
+  url_pattern: /marketplace/v1/ticket
+  method: POST
+  encoding: json
+  host:
+  - https://api.brandlovers.com
+  concurrent_calls: 1
+  extra_config:
+    provider: brandlovers.com
+    description: 'Allows sellers to: 1) Load products definitions to the BrandLovers
+      marktplace. 2) Receive and update orders status. 3) Receive and update shipping
+      information. 4) Receive and update customer tickets. All requests consume and
+      return application/json content. All request must be authenticated and use HTTPS.'
+    version: 1.0.0
+    slug: brandlovers-marketplace-api-v1-1-0-0-marketplace-v1-ticket
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.brandlovers.com
+    topics:
+    - ecommerce
+- group: brandlovers-marketplace-api-v1-1-0-0
+  url_pattern: /marketplace/v1/ticket/{ticketId}/message
+  method: POST
+  encoding: json
+  host:
+  - https://api.brandlovers.com
+  concurrent_calls: 1
+  extra_config:
+    provider: brandlovers.com
+    description: 'Allows sellers to: 1) Load products definitions to the BrandLovers
+      marktplace. 2) Receive and update orders status. 3) Receive and update shipping
+      information. 4) Receive and update customer tickets. All requests consume and
+      return application/json content. All request must be authenticated and use HTTPS.'
+    version: 1.0.0
+    slug: brandlovers-marketplace-api-v1-1-0-0-marketplace-v1-ticket-ticketid-message
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.brandlovers.com
+    topics:
+    - ecommerce
+- group: brandlovers-marketplace-api-v1-1-0-0
+  url_pattern: /marketplace/v1/ticket/{ticketId}/messages
+  method: GET
+  encoding: json
+  host:
+  - https://api.brandlovers.com
+  whitelist:
+  - messages
+  - metadata
+  concurrent_calls: 1
+  extra_config:
+    provider: brandlovers.com
+    description: 'Allows sellers to: 1) Load products definitions to the BrandLovers
+      marktplace. 2) Receive and update orders status. 3) Receive and update shipping
+      information. 4) Receive and update customer tickets. All requests consume and
+      return application/json content. All request must be authenticated and use HTTPS.'
+    version: 1.0.0
+    slug: brandlovers-marketplace-api-v1-1-0-0-marketplace-v1-ticket-ticketid-messages
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      messages: messages
+      metadata: metadata
+    hosts:
+    - https://api.brandlovers.com
+    topics:
+    - ecommerce
+- group: brandlovers-marketplace-api-v1-1-0-0
+  url_pattern: /marketplace/v1/tickets
+  method: GET
+  encoding: json
+  host:
+  - https://api.brandlovers.com
+  whitelist:
+  - metadata
+  - tickets
+  concurrent_calls: 1
+  extra_config:
+    provider: brandlovers.com
+    description: 'Allows sellers to: 1) Load products definitions to the BrandLovers
+      marktplace. 2) Receive and update orders status. 3) Receive and update shipping
+      information. 4) Receive and update customer tickets. All requests consume and
+      return application/json content. All request must be authenticated and use HTTPS.'
+    version: 1.0.0
+    slug: brandlovers-marketplace-api-v1-1-0-0-marketplace-v1-tickets
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      metadata: metadata
+      tickets: tickets
+    hosts:
+    - https://api.brandlovers.com
+    topics:
+    - ecommerce

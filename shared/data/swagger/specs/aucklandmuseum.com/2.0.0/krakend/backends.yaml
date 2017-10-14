@@ -1,0 +1,92 @@
+backends:
+- group: auckland-museum-2-0-0
+  url_pattern: /id/media/{path}
+  method: GET
+  host:
+  - http://api.aucklandmuseum.com
+  url_keys:
+  - path
+  query_string_params:
+  - rendering
+  concurrent_calls: 1
+  extra_config:
+    provider: aucklandmuseum.com
+    description: |
+      This is technical documentation for the Auckland Museum API
+    version: 2.0.0
+    slug: auckland-museum-2-0-0-id-media-path
+    schemes:
+    - http
+    hosts:
+    - http://api.aucklandmuseum.com
+    topics:
+    - media
+    - open-data
+- group: auckland-museum-2-0-0
+  url_pattern: /id/{identifier}
+  method: GET
+  host:
+  - http://api.aucklandmuseum.com
+  url_keys:
+  - identifier
+  concurrent_calls: 1
+  extra_config:
+    provider: aucklandmuseum.com
+    description: |
+      This is technical documentation for the Auckland Museum API
+    version: 2.0.0
+    slug: auckland-museum-2-0-0-id-identifier
+    schemes:
+    - http
+    hosts:
+    - http://api.aucklandmuseum.com
+    topics:
+    - open-data
+    - subject
+- group: auckland-museum-2-0-0
+  url_pattern: /search/{index}/{operation}
+  method: GET
+  host:
+  - http://api.aucklandmuseum.com
+  url_keys:
+  - index
+  - operation
+  query_string_params:
+  - q
+  concurrent_calls: 1
+  extra_config:
+    provider: aucklandmuseum.com
+    description: |
+      This is technical documentation for the Auckland Museum API
+    version: 2.0.0
+    slug: auckland-museum-2-0-0-search-index-operation
+    schemes:
+    - http
+    hosts:
+    - http://api.aucklandmuseum.com
+    topics:
+    - open-data
+    - search
+- group: auckland-museum-2-0-0
+  url_pattern: /sparql
+  method: GET
+  host:
+  - http://api.aucklandmuseum.com
+  query_string_params:
+  - callback
+  - infer
+  - query
+  concurrent_calls: 1
+  extra_config:
+    provider: aucklandmuseum.com
+    description: |
+      This is technical documentation for the Auckland Museum API
+    version: 2.0.0
+    slug: auckland-museum-2-0-0-sparql
+    schemes:
+    - http
+    hosts:
+    - http://api.aucklandmuseum.com
+    topics:
+    - open-data
+    - sparql

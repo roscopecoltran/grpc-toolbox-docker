@@ -1,0 +1,730 @@
+{
+	"backends": [
+		{
+			"group": "cenit-io-rest-api-specification-v1",
+			"url_pattern": "/api/v1/setup/connection",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://cenit.io"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "cenit.io",
+				"description": "Cenit IO is an Open Platform for Data and Business Integration (iPaaS)\n",
+				"version": "v1",
+				"slug": "cenit-io-rest-api-specification-v1-api-v1-setup-connection",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json",
+					"xml"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://cenit.io"
+				]
+			}
+		},
+		{
+			"group": "cenit-io-rest-api-specification-v1",
+			"url_pattern": "/api/v1/setup/connection/{id}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://cenit.io"
+			],
+			"whitelist": [
+				"headers",
+				"headers.key",
+				"headers.value",
+				"id",
+				"key",
+				"name",
+				"parameters",
+				"parameters.key",
+				"parameters.value",
+				"token",
+				"url"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "cenit.io",
+				"description": "Cenit IO is an Open Platform for Data and Business Integration (iPaaS)\n",
+				"version": "v1",
+				"slug": "cenit-io-rest-api-specification-v1-api-v1-setup-connection-id",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json",
+					"xml"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"headers": "headers",
+					"headers.key": "headers.key",
+					"headers.value": "headers.value",
+					"id": "id",
+					"key": "key",
+					"name": "name",
+					"parameters": "parameters",
+					"parameters.key": "parameters.key",
+					"parameters.value": "parameters.value",
+					"token": "token",
+					"url": "url"
+				},
+				"hosts": [
+					"https://cenit.io"
+				]
+			}
+		},
+		{
+			"group": "cenit-io-rest-api-specification-v1",
+			"url_pattern": "/api/v1/setup/connection_role",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://cenit.io"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "cenit.io",
+				"description": "Cenit IO is an Open Platform for Data and Business Integration (iPaaS)\n",
+				"version": "v1",
+				"slug": "cenit-io-rest-api-specification-v1-api-v1-setup-connection-role",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json",
+					"xml"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://cenit.io"
+				]
+			}
+		},
+		{
+			"group": "cenit-io-rest-api-specification-v1",
+			"url_pattern": "/api/v1/setup/connection_role/{id}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://cenit.io"
+			],
+			"whitelist": [
+				"connection",
+				"id",
+				"name",
+				"webhook"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "cenit.io",
+				"description": "Cenit IO is an Open Platform for Data and Business Integration (iPaaS)\n",
+				"version": "v1",
+				"slug": "cenit-io-rest-api-specification-v1-api-v1-setup-connection-role-id",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json",
+					"xml"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"connection": "connection",
+					"id": "id",
+					"name": "name",
+					"webhook": "webhook"
+				},
+				"hosts": [
+					"https://cenit.io"
+				]
+			}
+		},
+		{
+			"group": "cenit-io-rest-api-specification-v1",
+			"url_pattern": "/api/v1/setup/data_type/",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://cenit.io"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "cenit.io",
+				"description": "Cenit IO is an Open Platform for Data and Business Integration (iPaaS)\n",
+				"version": "v1",
+				"slug": "cenit-io-rest-api-specification-v1-api-v1-setup-data-type",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json",
+					"xml"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://cenit.io"
+				]
+			}
+		},
+		{
+			"group": "cenit-io-rest-api-specification-v1",
+			"url_pattern": "/api/v1/setup/data_type/{id}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://cenit.io"
+			],
+			"whitelist": [
+				"id",
+				"model_schema",
+				"name",
+				"show_navigation_link",
+				"slug",
+				"title"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "cenit.io",
+				"description": "Cenit IO is an Open Platform for Data and Business Integration (iPaaS)\n",
+				"version": "v1",
+				"slug": "cenit-io-rest-api-specification-v1-api-v1-setup-data-type-id",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json",
+					"xml"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"id": "id",
+					"model_schema": "model_schema",
+					"name": "name",
+					"show_navigation_link": "show_navigation_link",
+					"slug": "slug",
+					"title": "title"
+				},
+				"hosts": [
+					"https://cenit.io"
+				]
+			}
+		},
+		{
+			"group": "cenit-io-rest-api-specification-v1",
+			"url_pattern": "/api/v1/setup/flow/",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://cenit.io"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "cenit.io",
+				"description": "Cenit IO is an Open Platform for Data and Business Integration (iPaaS)\n",
+				"version": "v1",
+				"slug": "cenit-io-rest-api-specification-v1-api-v1-setup-flow",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json",
+					"xml"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://cenit.io"
+				]
+			}
+		},
+		{
+			"group": "cenit-io-rest-api-specification-v1",
+			"url_pattern": "/api/v1/setup/flow/{id}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://cenit.io"
+			],
+			"whitelist": [
+				"active",
+				"event",
+				"id",
+				"name",
+				"notify_request",
+				"notify_response"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "cenit.io",
+				"description": "Cenit IO is an Open Platform for Data and Business Integration (iPaaS)\n",
+				"version": "v1",
+				"slug": "cenit-io-rest-api-specification-v1-api-v1-setup-flow-id",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json",
+					"xml"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"active": "active",
+					"event": "event",
+					"id": "id",
+					"name": "name",
+					"notify_request": "notify_request",
+					"notify_response": "notify_response"
+				},
+				"hosts": [
+					"https://cenit.io"
+				]
+			}
+		},
+		{
+			"group": "cenit-io-rest-api-specification-v1",
+			"url_pattern": "/api/v1/setup/namespace/",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://cenit.io"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "cenit.io",
+				"description": "Cenit IO is an Open Platform for Data and Business Integration (iPaaS)\n",
+				"version": "v1",
+				"slug": "cenit-io-rest-api-specification-v1-api-v1-setup-namespace",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json",
+					"xml"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://cenit.io"
+				]
+			}
+		},
+		{
+			"group": "cenit-io-rest-api-specification-v1",
+			"url_pattern": "/api/v1/setup/namespace/{id}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://cenit.io"
+			],
+			"whitelist": [
+				"id",
+				"name",
+				"slug"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "cenit.io",
+				"description": "Cenit IO is an Open Platform for Data and Business Integration (iPaaS)\n",
+				"version": "v1",
+				"slug": "cenit-io-rest-api-specification-v1-api-v1-setup-namespace-id",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json",
+					"xml"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"id": "id",
+					"name": "name",
+					"slug": "slug"
+				},
+				"hosts": [
+					"https://cenit.io"
+				]
+			}
+		},
+		{
+			"group": "cenit-io-rest-api-specification-v1",
+			"url_pattern": "/api/v1/setup/observer/",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://cenit.io"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "cenit.io",
+				"description": "Cenit IO is an Open Platform for Data and Business Integration (iPaaS)\n",
+				"version": "v1",
+				"slug": "cenit-io-rest-api-specification-v1-api-v1-setup-observer",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json",
+					"xml"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://cenit.io"
+				]
+			}
+		},
+		{
+			"group": "cenit-io-rest-api-specification-v1",
+			"url_pattern": "/api/v1/setup/observer/{id}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://cenit.io"
+			],
+			"whitelist": [
+				"id",
+				"name",
+				"triggers"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "cenit.io",
+				"description": "Cenit IO is an Open Platform for Data and Business Integration (iPaaS)\n",
+				"version": "v1",
+				"slug": "cenit-io-rest-api-specification-v1-api-v1-setup-observer-id",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json",
+					"xml"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"id": "id",
+					"name": "name",
+					"triggers": "triggers"
+				},
+				"hosts": [
+					"https://cenit.io"
+				]
+			}
+		},
+		{
+			"group": "cenit-io-rest-api-specification-v1",
+			"url_pattern": "/api/v1/setup/scheduler/",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://cenit.io"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "cenit.io",
+				"description": "Cenit IO is an Open Platform for Data and Business Integration (iPaaS)\n",
+				"version": "v1",
+				"slug": "cenit-io-rest-api-specification-v1-api-v1-setup-scheduler",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json",
+					"xml"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://cenit.io"
+				]
+			}
+		},
+		{
+			"group": "cenit-io-rest-api-specification-v1",
+			"url_pattern": "/api/v1/setup/scheduler/{id}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://cenit.io"
+			],
+			"whitelist": [
+				"activated",
+				"expression",
+				"id",
+				"name"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "cenit.io",
+				"description": "Cenit IO is an Open Platform for Data and Business Integration (iPaaS)\n",
+				"version": "v1",
+				"slug": "cenit-io-rest-api-specification-v1-api-v1-setup-scheduler-id",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json",
+					"xml"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"activated": "activated",
+					"expression": "expression",
+					"id": "id",
+					"name": "name"
+				},
+				"hosts": [
+					"https://cenit.io"
+				]
+			}
+		},
+		{
+			"group": "cenit-io-rest-api-specification-v1",
+			"url_pattern": "/api/v1/setup/schema/",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://cenit.io"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "cenit.io",
+				"description": "Cenit IO is an Open Platform for Data and Business Integration (iPaaS)\n",
+				"version": "v1",
+				"slug": "cenit-io-rest-api-specification-v1-api-v1-setup-schema",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json",
+					"xml"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://cenit.io"
+				]
+			}
+		},
+		{
+			"group": "cenit-io-rest-api-specification-v1",
+			"url_pattern": "/api/v1/setup/schema/{id}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://cenit.io"
+			],
+			"whitelist": [
+				"id",
+				"schema",
+				"uri"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "cenit.io",
+				"description": "Cenit IO is an Open Platform for Data and Business Integration (iPaaS)\n",
+				"version": "v1",
+				"slug": "cenit-io-rest-api-specification-v1-api-v1-setup-schema-id",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json",
+					"xml"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"id": "id",
+					"schema": "schema",
+					"uri": "uri"
+				},
+				"hosts": [
+					"https://cenit.io"
+				]
+			}
+		},
+		{
+			"group": "cenit-io-rest-api-specification-v1",
+			"url_pattern": "/api/v1/setup/translator/",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://cenit.io"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "cenit.io",
+				"description": "Cenit IO is an Open Platform for Data and Business Integration (iPaaS)\n",
+				"version": "v1",
+				"slug": "cenit-io-rest-api-specification-v1-api-v1-setup-translator",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json",
+					"xml"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://cenit.io"
+				]
+			}
+		},
+		{
+			"group": "cenit-io-rest-api-specification-v1",
+			"url_pattern": "/api/v1/setup/translator/{id}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://cenit.io"
+			],
+			"whitelist": [
+				"id",
+				"name",
+				"style",
+				"transformation"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "cenit.io",
+				"description": "Cenit IO is an Open Platform for Data and Business Integration (iPaaS)\n",
+				"version": "v1",
+				"slug": "cenit-io-rest-api-specification-v1-api-v1-setup-translator-id",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json",
+					"xml"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"id": "id",
+					"name": "name",
+					"style": "style",
+					"transformation": "transformation"
+				},
+				"hosts": [
+					"https://cenit.io"
+				]
+			}
+		},
+		{
+			"group": "cenit-io-rest-api-specification-v1",
+			"url_pattern": "/api/v1/setup/webhook/",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://cenit.io"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "cenit.io",
+				"description": "Cenit IO is an Open Platform for Data and Business Integration (iPaaS)\n",
+				"version": "v1",
+				"slug": "cenit-io-rest-api-specification-v1-api-v1-setup-webhook",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json",
+					"xml"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://cenit.io"
+				]
+			}
+		},
+		{
+			"group": "cenit-io-rest-api-specification-v1",
+			"url_pattern": "/api/v1/setup/webhook/{id}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://cenit.io"
+			],
+			"whitelist": [
+				"headers",
+				"headers.key",
+				"headers.value",
+				"id",
+				"name",
+				"parameters",
+				"parameters.key",
+				"parameters.value",
+				"path"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "cenit.io",
+				"description": "Cenit IO is an Open Platform for Data and Business Integration (iPaaS)\n",
+				"version": "v1",
+				"slug": "cenit-io-rest-api-specification-v1-api-v1-setup-webhook-id",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json",
+					"xml"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"headers": "headers",
+					"headers.key": "headers.key",
+					"headers.value": "headers.value",
+					"id": "id",
+					"name": "name",
+					"parameters": "parameters",
+					"parameters.key": "parameters.key",
+					"parameters.value": "parameters.value",
+					"path": "path"
+				},
+				"hosts": [
+					"https://cenit.io"
+				]
+			}
+		}
+	]
+}

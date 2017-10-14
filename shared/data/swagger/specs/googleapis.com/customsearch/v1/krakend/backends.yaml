@@ -1,0 +1,50 @@
+backends:
+- group: customsearch-v1
+  url_pattern: /customsearch/v1
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - items
+  - kind
+  - promotions
+  - queries
+  - queries.additionalProperties
+  - searchInformation
+  - searchInformation.formattedSearchTime
+  - searchInformation.formattedTotalResults
+  - searchInformation.searchTime
+  - searchInformation.totalResults
+  - spelling
+  - spelling.correctedQuery
+  - spelling.htmlCorrectedQuery
+  - url
+  - url.template
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Searches over a website or collection of websites
+    version: v1
+    slug: customsearch-v1-customsearch-v1
+    schemes:
+    - https
+    mapping:
+      items: items
+      kind: kind
+      promotions: promotions
+      queries: queries
+      queries.additionalProperties: queries.additionalProperties
+      searchInformation: searchInformation
+      searchInformation.formattedSearchTime: searchInformation.formattedSearchTime
+      searchInformation.formattedTotalResults: searchInformation.formattedTotalResults
+      searchInformation.searchTime: searchInformation.searchTime
+      searchInformation.totalResults: searchInformation.totalResults
+      spelling: spelling
+      spelling.correctedQuery: spelling.correctedQuery
+      spelling.htmlCorrectedQuery: spelling.htmlCorrectedQuery
+      url: url
+      url.template: url.template
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - search

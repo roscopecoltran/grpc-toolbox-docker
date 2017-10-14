@@ -1,0 +1,243 @@
+backends:
+- group: authorizationmanagementclient-2015-07-01
+  url_pattern: /providers/Microsoft
+  method: AUTHORIZATION/PROVIDEROPERATIONS
+  encoding: json
+  host:
+  - https://management.azure.com
+  concurrent_calls: 1
+  extra_config:
+    provider: azure.com
+    description: Role based access control provides you a way to apply granular level
+      policy administration down to individual resources or resource groups. These
+      operations enable you to manage role definitions and role assignments. A role
+      definition describes the set of actions that can be performed on resources.
+      A role assignment grants access to Azure Active Directory users.
+    version: 2015-07-01
+    slug: authorizationmanagementclient-2015-07-01-providers-microsoft
+    schemes:
+    - https
+    consumes:
+    - json
+    - json
+    produces:
+    - json
+    - json
+    hosts:
+    - https://management.azure.com
+    topics:
+    - cloud
+- group: authorizationmanagementclient-2015-07-01
+  url_pattern: /subscriptions/{subscriptionId}/providers/Microsoft
+  method: AUTHORIZATION/CLASSICADMINISTRATORS
+  encoding: json
+  host:
+  - https://management.azure.com
+  concurrent_calls: 1
+  extra_config:
+    provider: azure.com
+    description: Role based access control provides you a way to apply granular level
+      policy administration down to individual resources or resource groups. These
+      operations enable you to manage role definitions and role assignments. A role
+      definition describes the set of actions that can be performed on resources.
+      A role assignment grants access to Azure Active Directory users.
+    version: 2015-07-01
+    slug: authorizationmanagementclient-2015-07-01-subscriptions-subscriptionid-providers-microsoft
+    schemes:
+    - https
+    consumes:
+    - json
+    - json
+    produces:
+    - json
+    - json
+    hosts:
+    - https://management.azure.com
+    topics:
+    - cloud
+- group: authorizationmanagementclient-2015-07-01
+  url_pattern: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft
+  method: AUTHORIZATION/ROLEASSIGNMENTS
+  encoding: json
+  host:
+  - https://management.azure.com
+  concurrent_calls: 1
+  extra_config:
+    provider: azure.com
+    description: Role based access control provides you a way to apply granular level
+      policy administration down to individual resources or resource groups. These
+      operations enable you to manage role definitions and role assignments. A role
+      definition describes the set of actions that can be performed on resources.
+      A role assignment grants access to Azure Active Directory users.
+    version: 2015-07-01
+    slug: authorizationmanagementclient-2015-07-01-subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft
+    schemes:
+    - https
+    consumes:
+    - json
+    - json
+    produces:
+    - json
+    - json
+    hosts:
+    - https://management.azure.com
+    topics:
+    - cloud
+- group: authorizationmanagementclient-2015-07-01
+  url_pattern: /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft
+  method: AUTHORIZATION/PERMISSIONS
+  encoding: json
+  host:
+  - https://management.azure.com
+  concurrent_calls: 1
+  extra_config:
+    provider: azure.com
+    description: Role based access control provides you a way to apply granular level
+      policy administration down to individual resources or resource groups. These
+      operations enable you to manage role definitions and role assignments. A role
+      definition describes the set of actions that can be performed on resources.
+      A role assignment grants access to Azure Active Directory users.
+    version: 2015-07-01
+    slug: authorizationmanagementclient-2015-07-01-subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft
+    schemes:
+    - https
+    consumes:
+    - json
+    - json
+    produces:
+    - json
+    - json
+    hosts:
+    - https://management.azure.com
+    topics:
+    - cloud
+- group: authorizationmanagementclient-2015-07-01
+  url_pattern: /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{parentResourcePath}/{resourceType}/{resourceName}/providers/Microsoft
+  method: AUTHORIZATION/PERMISSIONS
+  encoding: json
+  host:
+  - https://management.azure.com
+  concurrent_calls: 1
+  extra_config:
+    provider: azure.com
+    description: Role based access control provides you a way to apply granular level
+      policy administration down to individual resources or resource groups. These
+      operations enable you to manage role definitions and role assignments. A role
+      definition describes the set of actions that can be performed on resources.
+      A role assignment grants access to Azure Active Directory users.
+    version: 2015-07-01
+    slug: authorizationmanagementclient-2015-07-01-subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-resourceprovidernamespace-parentresourcepath-resourcetype-resourcename-providers-microsoft
+    schemes:
+    - https
+    consumes:
+    - json
+    - json
+    produces:
+    - json
+    - json
+    hosts:
+    - https://management.azure.com
+    topics:
+    - cloud
+- group: authorizationmanagementclient-2015-07-01
+  url_pattern: /{roleAssignmentId}
+  method: GET
+  encoding: json
+  host:
+  - https://management.azure.com
+  url_keys:
+  - roleAssignmentId
+  whitelist:
+  - id
+  - name
+  concurrent_calls: 1
+  extra_config:
+    provider: azure.com
+    description: Role based access control provides you a way to apply granular level
+      policy administration down to individual resources or resource groups. These
+      operations enable you to manage role definitions and role assignments. A role
+      definition describes the set of actions that can be performed on resources.
+      A role assignment grants access to Azure Active Directory users.
+    version: 2015-07-01
+    slug: authorizationmanagementclient-2015-07-01-roleassignmentid
+    schemes:
+    - https
+    consumes:
+    - json
+    - json
+    produces:
+    - json
+    - json
+    mapping:
+      id: id
+      name: name
+    hosts:
+    - https://management.azure.com
+    topics:
+    - cloud
+    - roleassignments
+- group: authorizationmanagementclient-2015-07-01
+  url_pattern: /{roleDefinitionId}
+  method: GET
+  encoding: json
+  host:
+  - https://management.azure.com
+  url_keys:
+  - roleDefinitionId
+  whitelist:
+  - id
+  - name
+  concurrent_calls: 1
+  extra_config:
+    provider: azure.com
+    description: Role based access control provides you a way to apply granular level
+      policy administration down to individual resources or resource groups. These
+      operations enable you to manage role definitions and role assignments. A role
+      definition describes the set of actions that can be performed on resources.
+      A role assignment grants access to Azure Active Directory users.
+    version: 2015-07-01
+    slug: authorizationmanagementclient-2015-07-01-roledefinitionid
+    schemes:
+    - https
+    consumes:
+    - json
+    - json
+    produces:
+    - json
+    - json
+    mapping:
+      id: id
+      name: name
+    hosts:
+    - https://management.azure.com
+    topics:
+    - cloud
+    - roledefinitions
+- group: authorizationmanagementclient-2015-07-01
+  url_pattern: /{scope}/providers/Microsoft
+  method: AUTHORIZATION/ROLEASSIGNMENTS
+  encoding: json
+  host:
+  - https://management.azure.com
+  concurrent_calls: 1
+  extra_config:
+    provider: azure.com
+    description: Role based access control provides you a way to apply granular level
+      policy administration down to individual resources or resource groups. These
+      operations enable you to manage role definitions and role assignments. A role
+      definition describes the set of actions that can be performed on resources.
+      A role assignment grants access to Azure Active Directory users.
+    version: 2015-07-01
+    slug: authorizationmanagementclient-2015-07-01-scope-providers-microsoft
+    schemes:
+    - https
+    consumes:
+    - json
+    - json
+    produces:
+    - json
+    - json
+    hosts:
+    - https://management.azure.com
+    topics:
+    - cloud

@@ -1,0 +1,379 @@
+[[backends]]
+  group = "amazon-kinesis-2013-12-02"
+  url_pattern = "/#CreateStream"
+  method = "POST"
+  encoding = "json"
+  host = ["http://kinesis.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Kinesis Streams Service API Reference</fullname> <p>Amazon Kinesis Streams is a managed service that scales elastically for real time processing of streaming big data.</p>"
+    version = "2013-12-02"
+    slug = "amazon-kinesis-2013-12-02-createstream"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://kinesis.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-kinesis-2013-12-02"
+  url_pattern = "/#DecreaseStreamRetentionPeriod"
+  method = "POST"
+  encoding = "json"
+  host = ["http://kinesis.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Kinesis Streams Service API Reference</fullname> <p>Amazon Kinesis Streams is a managed service that scales elastically for real time processing of streaming big data.</p>"
+    version = "2013-12-02"
+    slug = "amazon-kinesis-2013-12-02-decreasestreamretentionperiod"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://kinesis.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-kinesis-2013-12-02"
+  url_pattern = "/#DeleteStream"
+  method = "POST"
+  encoding = "json"
+  host = ["http://kinesis.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Kinesis Streams Service API Reference</fullname> <p>Amazon Kinesis Streams is a managed service that scales elastically for real time processing of streaming big data.</p>"
+    version = "2013-12-02"
+    slug = "amazon-kinesis-2013-12-02-deletestream"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://kinesis.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-kinesis-2013-12-02"
+  url_pattern = "/#DescribeLimits"
+  method = "POST"
+  encoding = "json"
+  host = ["http://kinesis.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Kinesis Streams Service API Reference</fullname> <p>Amazon Kinesis Streams is a managed service that scales elastically for real time processing of streaming big data.</p>"
+    version = "2013-12-02"
+    slug = "amazon-kinesis-2013-12-02-describelimits"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://kinesis.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-kinesis-2013-12-02"
+  url_pattern = "/#DescribeStream"
+  method = "POST"
+  encoding = "json"
+  host = ["http://kinesis.amazonaws.com"]
+  query_string_params = ["ExclusiveStartShardId", "Limit"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Kinesis Streams Service API Reference</fullname> <p>Amazon Kinesis Streams is a managed service that scales elastically for real time processing of streaming big data.</p>"
+    version = "2013-12-02"
+    slug = "amazon-kinesis-2013-12-02-describestream"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://kinesis.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-kinesis-2013-12-02"
+  url_pattern = "/#DisableEnhancedMonitoring"
+  method = "POST"
+  encoding = "json"
+  host = ["http://kinesis.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Kinesis Streams Service API Reference</fullname> <p>Amazon Kinesis Streams is a managed service that scales elastically for real time processing of streaming big data.</p>"
+    version = "2013-12-02"
+    slug = "amazon-kinesis-2013-12-02-disableenhancedmonitoring"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://kinesis.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-kinesis-2013-12-02"
+  url_pattern = "/#EnableEnhancedMonitoring"
+  method = "POST"
+  encoding = "json"
+  host = ["http://kinesis.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Kinesis Streams Service API Reference</fullname> <p>Amazon Kinesis Streams is a managed service that scales elastically for real time processing of streaming big data.</p>"
+    version = "2013-12-02"
+    slug = "amazon-kinesis-2013-12-02-enableenhancedmonitoring"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://kinesis.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-kinesis-2013-12-02"
+  url_pattern = "/#GetRecords"
+  method = "POST"
+  encoding = "json"
+  host = ["http://kinesis.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Kinesis Streams Service API Reference</fullname> <p>Amazon Kinesis Streams is a managed service that scales elastically for real time processing of streaming big data.</p>"
+    version = "2013-12-02"
+    slug = "amazon-kinesis-2013-12-02-getrecords"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://kinesis.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-kinesis-2013-12-02"
+  url_pattern = "/#GetShardIterator"
+  method = "POST"
+  encoding = "json"
+  host = ["http://kinesis.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Kinesis Streams Service API Reference</fullname> <p>Amazon Kinesis Streams is a managed service that scales elastically for real time processing of streaming big data.</p>"
+    version = "2013-12-02"
+    slug = "amazon-kinesis-2013-12-02-getsharditerator"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://kinesis.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-kinesis-2013-12-02"
+  url_pattern = "/#IncreaseStreamRetentionPeriod"
+  method = "POST"
+  encoding = "json"
+  host = ["http://kinesis.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Kinesis Streams Service API Reference</fullname> <p>Amazon Kinesis Streams is a managed service that scales elastically for real time processing of streaming big data.</p>"
+    version = "2013-12-02"
+    slug = "amazon-kinesis-2013-12-02-increasestreamretentionperiod"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://kinesis.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-kinesis-2013-12-02"
+  url_pattern = "/#ListStreams"
+  method = "POST"
+  encoding = "json"
+  host = ["http://kinesis.amazonaws.com"]
+  query_string_params = ["ExclusiveStartStreamName", "Limit"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Kinesis Streams Service API Reference</fullname> <p>Amazon Kinesis Streams is a managed service that scales elastically for real time processing of streaming big data.</p>"
+    version = "2013-12-02"
+    slug = "amazon-kinesis-2013-12-02-liststreams"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://kinesis.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-kinesis-2013-12-02"
+  url_pattern = "/#ListTagsForStream"
+  method = "POST"
+  encoding = "json"
+  host = ["http://kinesis.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Kinesis Streams Service API Reference</fullname> <p>Amazon Kinesis Streams is a managed service that scales elastically for real time processing of streaming big data.</p>"
+    version = "2013-12-02"
+    slug = "amazon-kinesis-2013-12-02-listtagsforstream"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://kinesis.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-kinesis-2013-12-02"
+  url_pattern = "/#MergeShards"
+  method = "POST"
+  encoding = "json"
+  host = ["http://kinesis.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Kinesis Streams Service API Reference</fullname> <p>Amazon Kinesis Streams is a managed service that scales elastically for real time processing of streaming big data.</p>"
+    version = "2013-12-02"
+    slug = "amazon-kinesis-2013-12-02-mergeshards"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://kinesis.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-kinesis-2013-12-02"
+  url_pattern = "/#PutRecord"
+  method = "POST"
+  encoding = "json"
+  host = ["http://kinesis.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Kinesis Streams Service API Reference</fullname> <p>Amazon Kinesis Streams is a managed service that scales elastically for real time processing of streaming big data.</p>"
+    version = "2013-12-02"
+    slug = "amazon-kinesis-2013-12-02-putrecord"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://kinesis.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-kinesis-2013-12-02"
+  url_pattern = "/#PutRecords"
+  method = "POST"
+  encoding = "json"
+  host = ["http://kinesis.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Kinesis Streams Service API Reference</fullname> <p>Amazon Kinesis Streams is a managed service that scales elastically for real time processing of streaming big data.</p>"
+    version = "2013-12-02"
+    slug = "amazon-kinesis-2013-12-02-putrecords"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://kinesis.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-kinesis-2013-12-02"
+  url_pattern = "/#RemoveTagsFromStream"
+  method = "POST"
+  encoding = "json"
+  host = ["http://kinesis.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Kinesis Streams Service API Reference</fullname> <p>Amazon Kinesis Streams is a managed service that scales elastically for real time processing of streaming big data.</p>"
+    version = "2013-12-02"
+    slug = "amazon-kinesis-2013-12-02-removetagsfromstream"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://kinesis.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-kinesis-2013-12-02"
+  url_pattern = "/#SplitShard"
+  method = "POST"
+  encoding = "json"
+  host = ["http://kinesis.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Kinesis Streams Service API Reference</fullname> <p>Amazon Kinesis Streams is a managed service that scales elastically for real time processing of streaming big data.</p>"
+    version = "2013-12-02"
+    slug = "amazon-kinesis-2013-12-02-splitshard"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://kinesis.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-kinesis-2013-12-02"
+  url_pattern = "/#StartStreamEncryption"
+  method = "POST"
+  encoding = "json"
+  host = ["http://kinesis.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Kinesis Streams Service API Reference</fullname> <p>Amazon Kinesis Streams is a managed service that scales elastically for real time processing of streaming big data.</p>"
+    version = "2013-12-02"
+    slug = "amazon-kinesis-2013-12-02-startstreamencryption"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://kinesis.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-kinesis-2013-12-02"
+  url_pattern = "/#StopStreamEncryption"
+  method = "POST"
+  encoding = "json"
+  host = ["http://kinesis.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Kinesis Streams Service API Reference</fullname> <p>Amazon Kinesis Streams is a managed service that scales elastically for real time processing of streaming big data.</p>"
+    version = "2013-12-02"
+    slug = "amazon-kinesis-2013-12-02-stopstreamencryption"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://kinesis.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-kinesis-2013-12-02"
+  url_pattern = "/#UpdateShardCount"
+  method = "POST"
+  encoding = "json"
+  host = ["http://kinesis.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Kinesis Streams Service API Reference</fullname> <p>Amazon Kinesis Streams is a managed service that scales elastically for real time processing of streaming big data.</p>"
+    version = "2013-12-02"
+    slug = "amazon-kinesis-2013-12-02-updateshardcount"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://kinesis.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-kinesis-2013-12-02"
+  url_pattern = "/"
+  method = "POST"
+  encoding = "json"
+  host = ["http://kinesis.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Kinesis Streams Service API Reference</fullname> <p>Amazon Kinesis Streams is a managed service that scales elastically for real time processing of streaming big data.</p>"
+    version = "2013-12-02"
+    slug = "amazon-kinesis-2013-12-02"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://kinesis.amazonaws.com"]
+    topics = ["cloud"]

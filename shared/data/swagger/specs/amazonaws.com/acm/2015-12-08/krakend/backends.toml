@@ -1,0 +1,180 @@
+[[backends]]
+  group = "aws-certificate-manager-2015-12-08"
+  url_pattern = "/#DeleteCertificate"
+  method = "POST"
+  encoding = "json"
+  host = ["http://acm.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Certificate Manager</fullname> <p>Welcome to the AWS Certificate Manager (ACM) API documentation.</p> <p>You can use ACM to manage SSL/TLS certificates for your AWS-based websites and applications. For general information about using ACM, see the <a href=\"http://docs.aws.amazon.com/acm/latest/userguide/\"> <i>AWS Certificate Manager User Guide</i> </a>.</p>"
+    version = "2015-12-08"
+    slug = "aws-certificate-manager-2015-12-08-deletecertificate"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://acm.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-certificate-manager-2015-12-08"
+  url_pattern = "/#DescribeCertificate"
+  method = "POST"
+  encoding = "json"
+  host = ["http://acm.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Certificate Manager</fullname> <p>Welcome to the AWS Certificate Manager (ACM) API documentation.</p> <p>You can use ACM to manage SSL/TLS certificates for your AWS-based websites and applications. For general information about using ACM, see the <a href=\"http://docs.aws.amazon.com/acm/latest/userguide/\"> <i>AWS Certificate Manager User Guide</i> </a>.</p>"
+    version = "2015-12-08"
+    slug = "aws-certificate-manager-2015-12-08-describecertificate"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://acm.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-certificate-manager-2015-12-08"
+  url_pattern = "/#GetCertificate"
+  method = "POST"
+  encoding = "json"
+  host = ["http://acm.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Certificate Manager</fullname> <p>Welcome to the AWS Certificate Manager (ACM) API documentation.</p> <p>You can use ACM to manage SSL/TLS certificates for your AWS-based websites and applications. For general information about using ACM, see the <a href=\"http://docs.aws.amazon.com/acm/latest/userguide/\"> <i>AWS Certificate Manager User Guide</i> </a>.</p>"
+    version = "2015-12-08"
+    slug = "aws-certificate-manager-2015-12-08-getcertificate"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://acm.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-certificate-manager-2015-12-08"
+  url_pattern = "/#ImportCertificate"
+  method = "POST"
+  encoding = "json"
+  host = ["http://acm.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Certificate Manager</fullname> <p>Welcome to the AWS Certificate Manager (ACM) API documentation.</p> <p>You can use ACM to manage SSL/TLS certificates for your AWS-based websites and applications. For general information about using ACM, see the <a href=\"http://docs.aws.amazon.com/acm/latest/userguide/\"> <i>AWS Certificate Manager User Guide</i> </a>.</p>"
+    version = "2015-12-08"
+    slug = "aws-certificate-manager-2015-12-08-importcertificate"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://acm.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-certificate-manager-2015-12-08"
+  url_pattern = "/#ListCertificates"
+  method = "POST"
+  encoding = "json"
+  host = ["http://acm.amazonaws.com"]
+  query_string_params = ["MaxItems", "NextToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Certificate Manager</fullname> <p>Welcome to the AWS Certificate Manager (ACM) API documentation.</p> <p>You can use ACM to manage SSL/TLS certificates for your AWS-based websites and applications. For general information about using ACM, see the <a href=\"http://docs.aws.amazon.com/acm/latest/userguide/\"> <i>AWS Certificate Manager User Guide</i> </a>.</p>"
+    version = "2015-12-08"
+    slug = "aws-certificate-manager-2015-12-08-listcertificates"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://acm.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-certificate-manager-2015-12-08"
+  url_pattern = "/#ListTagsForCertificate"
+  method = "POST"
+  encoding = "json"
+  host = ["http://acm.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Certificate Manager</fullname> <p>Welcome to the AWS Certificate Manager (ACM) API documentation.</p> <p>You can use ACM to manage SSL/TLS certificates for your AWS-based websites and applications. For general information about using ACM, see the <a href=\"http://docs.aws.amazon.com/acm/latest/userguide/\"> <i>AWS Certificate Manager User Guide</i> </a>.</p>"
+    version = "2015-12-08"
+    slug = "aws-certificate-manager-2015-12-08-listtagsforcertificate"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://acm.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-certificate-manager-2015-12-08"
+  url_pattern = "/#RemoveTagsFromCertificate"
+  method = "POST"
+  encoding = "json"
+  host = ["http://acm.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Certificate Manager</fullname> <p>Welcome to the AWS Certificate Manager (ACM) API documentation.</p> <p>You can use ACM to manage SSL/TLS certificates for your AWS-based websites and applications. For general information about using ACM, see the <a href=\"http://docs.aws.amazon.com/acm/latest/userguide/\"> <i>AWS Certificate Manager User Guide</i> </a>.</p>"
+    version = "2015-12-08"
+    slug = "aws-certificate-manager-2015-12-08-removetagsfromcertificate"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://acm.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-certificate-manager-2015-12-08"
+  url_pattern = "/#RequestCertificate"
+  method = "POST"
+  encoding = "json"
+  host = ["http://acm.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Certificate Manager</fullname> <p>Welcome to the AWS Certificate Manager (ACM) API documentation.</p> <p>You can use ACM to manage SSL/TLS certificates for your AWS-based websites and applications. For general information about using ACM, see the <a href=\"http://docs.aws.amazon.com/acm/latest/userguide/\"> <i>AWS Certificate Manager User Guide</i> </a>.</p>"
+    version = "2015-12-08"
+    slug = "aws-certificate-manager-2015-12-08-requestcertificate"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://acm.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-certificate-manager-2015-12-08"
+  url_pattern = "/#ResendValidationEmail"
+  method = "POST"
+  encoding = "json"
+  host = ["http://acm.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Certificate Manager</fullname> <p>Welcome to the AWS Certificate Manager (ACM) API documentation.</p> <p>You can use ACM to manage SSL/TLS certificates for your AWS-based websites and applications. For general information about using ACM, see the <a href=\"http://docs.aws.amazon.com/acm/latest/userguide/\"> <i>AWS Certificate Manager User Guide</i> </a>.</p>"
+    version = "2015-12-08"
+    slug = "aws-certificate-manager-2015-12-08-resendvalidationemail"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://acm.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-certificate-manager-2015-12-08"
+  url_pattern = "/"
+  method = "POST"
+  encoding = "json"
+  host = ["http://acm.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>AWS Certificate Manager</fullname> <p>Welcome to the AWS Certificate Manager (ACM) API documentation.</p> <p>You can use ACM to manage SSL/TLS certificates for your AWS-based websites and applications. For general information about using ACM, see the <a href=\"http://docs.aws.amazon.com/acm/latest/userguide/\"> <i>AWS Certificate Manager User Guide</i> </a>.</p>"
+    version = "2015-12-08"
+    slug = "aws-certificate-manager-2015-12-08"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://acm.amazonaws.com"]
+    topics = ["cloud"]

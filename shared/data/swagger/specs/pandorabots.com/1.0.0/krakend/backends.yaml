@@ -1,0 +1,168 @@
+backends:
+- group: pandorabots-aiaas-1-0-0
+  url_pattern: /atalk/{app_id}/{botname}
+  method: POST
+  host:
+  - https://aiaas.pandorabots.com
+  url_keys:
+  - app_id
+  - botname
+  query_string_params:
+  - client_name
+  - input
+  - recent
+  - sessionid
+  concurrent_calls: 1
+  extra_config:
+    provider: pandorabots.com
+    description: AIaaS provides API access to our bot hosting platform and SDKs, allowing
+      developers to easily integrate conversational interfaces into applications.
+    version: 1.0.0
+    slug: pandorabots-aiaas-1-0-0-atalk-app-id-botname
+    schemes:
+    - https
+    hosts:
+    - https://aiaas.pandorabots.com
+    topics:
+    - pandorabots-api-swagger-1-3
+- group: pandorabots-aiaas-1-0-0
+  url_pattern: /bot/{app_id}
+  method: GET
+  host:
+  - https://aiaas.pandorabots.com
+  url_keys:
+  - app_id
+  concurrent_calls: 1
+  extra_config:
+    provider: pandorabots.com
+    description: AIaaS provides API access to our bot hosting platform and SDKs, allowing
+      developers to easily integrate conversational interfaces into applications.
+    version: 1.0.0
+    slug: pandorabots-aiaas-1-0-0-bot-app-id
+    schemes:
+    - https
+    hosts:
+    - https://aiaas.pandorabots.com
+    topics:
+    - pandorabots-api-swagger-1-3
+- group: pandorabots-aiaas-1-0-0
+  url_pattern: /bot/{app_id}/{botname}
+  method: GET
+  host:
+  - https://aiaas.pandorabots.com
+  url_keys:
+  - app_id
+  - botname
+  query_string_params:
+  - return
+  concurrent_calls: 1
+  extra_config:
+    provider: pandorabots.com
+    description: AIaaS provides API access to our bot hosting platform and SDKs, allowing
+      developers to easily integrate conversational interfaces into applications.
+    version: 1.0.0
+    slug: pandorabots-aiaas-1-0-0-bot-app-id-botname
+    schemes:
+    - https
+    hosts:
+    - https://aiaas.pandorabots.com
+    topics:
+    - pandorabots-api-swagger-1-3
+- group: pandorabots-aiaas-1-0-0
+  url_pattern: /bot/{app_id}/{botname}/verify
+  method: GET
+  host:
+  - https://aiaas.pandorabots.com
+  url_keys:
+  - app_id
+  - botname
+  concurrent_calls: 1
+  extra_config:
+    provider: pandorabots.com
+    description: AIaaS provides API access to our bot hosting platform and SDKs, allowing
+      developers to easily integrate conversational interfaces into applications.
+    version: 1.0.0
+    slug: pandorabots-aiaas-1-0-0-bot-app-id-botname-verify
+    schemes:
+    - https
+    hosts:
+    - https://aiaas.pandorabots.com
+    topics:
+    - pandorabots-api-swagger-1-3
+- group: pandorabots-aiaas-1-0-0
+  url_pattern: /bot/{app_id}/{botname}/{file-kind}
+  method: GET
+  host:
+  - https://aiaas.pandorabots.com
+  url_keys:
+  - app_id
+  - botname
+  - file-kind
+  concurrent_calls: 1
+  extra_config:
+    provider: pandorabots.com
+    description: AIaaS provides API access to our bot hosting platform and SDKs, allowing
+      developers to easily integrate conversational interfaces into applications.
+    version: 1.0.0
+    slug: pandorabots-aiaas-1-0-0-bot-app-id-botname-file-kind
+    schemes:
+    - https
+    hosts:
+    - https://aiaas.pandorabots.com
+    topics:
+    - pandorabots-api-swagger-1-3
+- group: pandorabots-aiaas-1-0-0
+  url_pattern: /bot/{app_id}/{botname}/{file-kind}/{filename}
+  method: GET
+  host:
+  - https://aiaas.pandorabots.com
+  url_keys:
+  - app_id
+  - botname
+  - file-kind
+  - filename
+  concurrent_calls: 1
+  extra_config:
+    provider: pandorabots.com
+    description: AIaaS provides API access to our bot hosting platform and SDKs, allowing
+      developers to easily integrate conversational interfaces into applications.
+    version: 1.0.0
+    slug: pandorabots-aiaas-1-0-0-bot-app-id-botname-file-kind-filename
+    schemes:
+    - https
+    hosts:
+    - https://aiaas.pandorabots.com
+    topics:
+    - pandorabots-api-swagger-1-3
+- group: pandorabots-aiaas-1-0-0
+  url_pattern: /talk/{app_id}/{botname}
+  method: POST
+  host:
+  - https://aiaas.pandorabots.com
+  url_keys:
+  - app_id
+  - botname
+  query_string_params:
+  - client_name
+  - extra
+  - input
+  - recent
+  - reload
+  - reset
+  - sessionid
+  - that
+  - topic
+  - trace
+  concurrent_calls: 1
+  extra_config:
+    provider: pandorabots.com
+    description: AIaaS provides API access to our bot hosting platform and SDKs, allowing
+      developers to easily integrate conversational interfaces into applications.
+    version: 1.0.0
+    slug: pandorabots-aiaas-1-0-0-talk-app-id-botname
+    schemes:
+    - https
+    hosts:
+    - https://aiaas.pandorabots.com
+    topics:
+    - pandorabots-api-swagger-1-3

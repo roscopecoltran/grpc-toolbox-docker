@@ -1,0 +1,35 @@
+[[backends]]
+  group = "servermanagement-2016-07-01-preview"
+  url_pattern = "/subscriptions/{subscriptionId}/providers/Microsoft"
+  method = "SERVERMANAGEMENT/GATEWAYS"
+  encoding = "json"
+  host = ["https://management.azure.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "azure.com"
+    description = "REST API for Azure Server Management Service."
+    version = "2016-07-01-preview"
+    slug = "servermanagement-2016-07-01-preview-subscriptions-subscriptionid-providers-microsoft"
+    schemes = ["https"]
+    consumes = ["json", "json"]
+    produces = ["json", "json"]
+    hosts = ["https://management.azure.com"]
+    topics = ["developer-tools"]
+
+[[backends]]
+  group = "servermanagement-2016-07-01-preview"
+  url_pattern = "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft"
+  method = "SERVERMANAGEMENT/GATEWAYS"
+  encoding = "json"
+  host = ["https://management.azure.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "azure.com"
+    description = "REST API for Azure Server Management Service."
+    version = "2016-07-01-preview"
+    slug = "servermanagement-2016-07-01-preview-subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft"
+    schemes = ["https"]
+    consumes = ["json", "json"]
+    produces = ["json", "json"]
+    hosts = ["https://management.azure.com"]
+    topics = ["developer-tools"]

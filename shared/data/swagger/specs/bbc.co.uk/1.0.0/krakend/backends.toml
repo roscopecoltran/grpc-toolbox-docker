@@ -1,0 +1,1236 @@
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/broadcasts"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  query_string_params = ["date", "limit", "offset", "service_id", "sort"]
+  header = ["X-API-Key"]
+  whitelist = ["$schema", "limit", "offset", "results", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-broadcasts"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["broadcasts", "media"]
+    [backends.extra_config.mapping]
+      "$schema" = "$schema"
+      limit = "limit"
+      offset = "offset"
+      results = "results"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/broadcasts/latest"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  query_string_params = ["limit", "next", "offset", "on_air", "previous", "service_id", "sort"]
+  header = ["X-API-Key"]
+  whitelist = ["$schema", "limit", "offset", "results", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-broadcasts-latest"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["broadcasts", "media"]
+    [backends.extra_config.mapping]
+      "$schema" = "$schema"
+      limit = "limit"
+      offset = "offset"
+      results = "results"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/broadcasts/{pid}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  url_keys = ["pid"]
+  header = ["X-API-Key"]
+  whitelist = ["$schema", "limit", "offset", "results", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-broadcasts-pid"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["broadcasts", "media"]
+    [backends.extra_config.mapping]
+      "$schema" = "$schema"
+      limit = "limit"
+      offset = "offset"
+      results = "results"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/categories"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  query_string_params = ["kind"]
+  header = ["X-API-Key"]
+  whitelist = ["$schema", "limit", "offset", "results", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-categories"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["categories", "media"]
+    [backends.extra_config.mapping]
+      "$schema" = "$schema"
+      limit = "limit"
+      offset = "offset"
+      results = "results"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/categories/{id}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  url_keys = ["id"]
+  header = ["X-API-Key"]
+  whitelist = ["$schema", "limit", "offset", "results", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-categories-id"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["categories", "media"]
+    [backends.extra_config.mapping]
+      "$schema" = "$schema"
+      limit = "limit"
+      offset = "offset"
+      results = "results"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/collections/{pid}/members"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  url_keys = ["pid"]
+  query_string_params = ["limit", "offset"]
+  header = ["X-API-Key"]
+  whitelist = ["$schema", "limit", "offset", "results", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-collections-pid-members"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["collections", "media"]
+    [backends.extra_config.mapping]
+      "$schema" = "$schema"
+      limit = "limit"
+      offset = "offset"
+      results = "results"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/experience/homepage"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  header = ["X-API-Key"]
+  whitelist = ["$schema", "data"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-experience-homepage"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["experience", "media"]
+    [backends.extra_config.mapping]
+      "$schema" = "$schema"
+      data = "data"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/music/popular/artists"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  query_string_params = ["decomposed", "limit", "offset", "since", "until"]
+  header = ["X-API-Key"]
+  whitelist = ["limit", "method", "offset", "repliedAt", "results", "schema", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-music-popular-artists"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "music"]
+    [backends.extra_config.mapping]
+      limit = "limit"
+      method = "method"
+      offset = "offset"
+      repliedAt = "repliedAt"
+      results = "results"
+      schema = "schema"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/music/popular/artists/{id}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  url_keys = ["id"]
+  query_string_params = ["decomposed", "since", "until"]
+  header = ["X-API-Key"]
+  whitelist = ["limit", "method", "offset", "repliedAt", "results", "schema", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-music-popular-artists-id"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "music"]
+    [backends.extra_config.mapping]
+      limit = "limit"
+      method = "method"
+      offset = "offset"
+      repliedAt = "repliedAt"
+      results = "results"
+      schema = "schema"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/music/popular/playlists"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  query_string_params = ["decomposed", "limit", "offset", "since", "until"]
+  header = ["X-API-Key"]
+  whitelist = ["limit", "method", "offset", "repliedAt", "results", "schema", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-music-popular-playlists"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "music"]
+    [backends.extra_config.mapping]
+      limit = "limit"
+      method = "method"
+      offset = "offset"
+      repliedAt = "repliedAt"
+      results = "results"
+      schema = "schema"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/music/popular/playlists/{id}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  url_keys = ["id"]
+  query_string_params = ["decomposed", "since", "until"]
+  header = ["X-API-Key"]
+  whitelist = ["limit", "method", "offset", "repliedAt", "results", "schema", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-music-popular-playlists-id"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "music"]
+    [backends.extra_config.mapping]
+      limit = "limit"
+      method = "method"
+      offset = "offset"
+      repliedAt = "repliedAt"
+      results = "results"
+      schema = "schema"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/music/popular/tracks"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  query_string_params = ["artist", "decomposed", "limit", "network", "offset", "programme", "since", "until"]
+  header = ["X-API-Key"]
+  whitelist = ["limit", "method", "offset", "repliedAt", "results", "schema", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-music-popular-tracks"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "music"]
+    [backends.extra_config.mapping]
+      limit = "limit"
+      method = "method"
+      offset = "offset"
+      repliedAt = "repliedAt"
+      results = "results"
+      schema = "schema"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/music/popular/tracks/{id}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  url_keys = ["id"]
+  query_string_params = ["artist", "decomposed", "network", "programme", "since", "until"]
+  header = ["X-API-Key"]
+  whitelist = ["limit", "method", "offset", "repliedAt", "results", "schema", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-music-popular-tracks-id"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "music"]
+    [backends.extra_config.mapping]
+      limit = "limit"
+      method = "method"
+      offset = "offset"
+      repliedAt = "repliedAt"
+      results = "results"
+      schema = "schema"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/my/categories/follows"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  query_string_params = ["limit", "offset"]
+  header = ["Authorization", "X-API-Key"]
+  whitelist = ["$schema", "limit", "offset", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-my-categories-follows"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "personalised-categories"]
+    [backends.extra_config.mapping]
+      "$schema" = "$schema"
+      limit = "limit"
+      offset = "offset"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/my/music/export"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  query_string_params = ["limit", "offset"]
+  header = ["Authorization", "X-API-Key", "X-Authentication-Provider"]
+  whitelist = ["created_at", "id", "job_id", "status", "vendor"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-my-music-export"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "music-export"]
+    [backends.extra_config.mapping]
+      created_at = "created_at"
+      id = "id"
+      job_id = "job_id"
+      status = "status"
+      vendor = "vendor"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/my/music/exports/jobs"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  query_string_params = ["over16", "vendor"]
+  header = ["Authorization", "X-API-Key", "X-Authentication-Provider"]
+  whitelist = ["created_at", "id", "job_id", "status", "vendor"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-my-music-exports-jobs"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "music-export"]
+    [backends.extra_config.mapping]
+      created_at = "created_at"
+      id = "id"
+      job_id = "job_id"
+      status = "status"
+      vendor = "vendor"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/my/music/exports/tracks"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  query_string_params = ["limit", "offset", "over16", "status", "vendor"]
+  header = ["Authorization", "X-API-Key", "X-Authentication-Provider"]
+  whitelist = ["created_at", "id", "job_id", "status", "vendor"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-my-music-exports-tracks"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "music-export"]
+    [backends.extra_config.mapping]
+      created_at = "created_at"
+      id = "id"
+      job_id = "job_id"
+      status = "status"
+      vendor = "vendor"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/my/music/favourites"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  query_string_params = ["action", "limit", "music-data", "offset"]
+  header = ["Authorization", "X-API-Key", "X-Authentication-Provider"]
+  whitelist = ["limit", "method", "offset", "replied_at", "results", "schema", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-my-music-favourites"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "music"]
+    [backends.extra_config.mapping]
+      limit = "limit"
+      method = "method"
+      offset = "offset"
+      replied_at = "replied_at"
+      results = "results"
+      schema = "schema"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/my/music/favourites/{type}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  url_keys = ["type"]
+  query_string_params = ["action", "limit", "offset"]
+  header = ["Authorization", "X-API-Key", "X-Authentication-Provider"]
+  whitelist = ["limit", "method", "offset", "replied_at", "results", "schema", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-my-music-favourites-type"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "music"]
+    [backends.extra_config.mapping]
+      limit = "limit"
+      method = "method"
+      offset = "offset"
+      replied_at = "replied_at"
+      results = "results"
+      schema = "schema"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/my/music/favourites/{type}/{id}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  url_keys = ["id", "type"]
+  header = ["Authorization", "X-API-Key", "X-Authentication-Provider"]
+  whitelist = ["limit", "method", "offset", "replied_at", "results", "schema", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-my-music-favourites-type-id"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "music"]
+    [backends.extra_config.mapping]
+      limit = "limit"
+      method = "method"
+      offset = "offset"
+      replied_at = "replied_at"
+      results = "results"
+      schema = "schema"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/my/music/follows"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  query_string_params = ["action", "limit", "music-data", "music_context", "music_within_uk", "offset"]
+  header = ["Authorization", "X-API-Key", "X-Authentication-Provider"]
+  whitelist = ["limit", "method", "offset", "replied_at", "results", "schema", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-my-music-follows"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "music"]
+    [backends.extra_config.mapping]
+      limit = "limit"
+      method = "method"
+      offset = "offset"
+      replied_at = "replied_at"
+      results = "results"
+      schema = "schema"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/my/music/follows/{type}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  url_keys = ["type"]
+  query_string_params = ["action", "limit", "music-data", "music_context", "music_within_uk", "offset"]
+  header = ["Authorization", "X-API-Key", "X-Authentication-Provider"]
+  whitelist = ["limit", "method", "offset", "replied_at", "results", "schema", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-my-music-follows-type"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "music"]
+    [backends.extra_config.mapping]
+      limit = "limit"
+      method = "method"
+      offset = "offset"
+      replied_at = "replied_at"
+      results = "results"
+      schema = "schema"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/my/music/follows/{type}/{id}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  url_keys = ["id", "type"]
+  query_string_params = ["music-data", "music_context", "music_within_uk"]
+  header = ["Authorization", "X-API-Key", "X-Authentication-Provider"]
+  whitelist = ["limit", "method", "offset", "replied_at", "results", "schema", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-my-music-follows-type-id"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "music"]
+    [backends.extra_config.mapping]
+      limit = "limit"
+      method = "method"
+      offset = "offset"
+      replied_at = "replied_at"
+      results = "results"
+      schema = "schema"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/my/music/preferences/export"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  header = ["Authorization", "X-API-Key", "X-Authentication-Provider"]
+  whitelist = ["method", "replied_at", "results", "schema", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-my-music-preferences-export"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "music-export"]
+    [backends.extra_config.mapping]
+      method = "method"
+      replied_at = "replied_at"
+      results = "results"
+      schema = "schema"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/my/music/preferences/export/{vendor}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  url_keys = ["vendor"]
+  header = ["Authorization", "X-API-Key", "X-Authentication-Provider"]
+  whitelist = ["method", "replied_at", "results", "schema", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-my-music-preferences-export-vendor"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "music-export"]
+    [backends.extra_config.mapping]
+      method = "method"
+      replied_at = "replied_at"
+      results = "results"
+      schema = "schema"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/my/networks/follows"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  query_string_params = ["limit", "offset"]
+  header = ["Authorization", "X-API-Key"]
+  whitelist = ["$schema", "limit", "offset", "results", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-my-networks-follows"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "personalised-networks"]
+    [backends.extra_config.mapping]
+      "$schema" = "$schema"
+      limit = "limit"
+      offset = "offset"
+      results = "results"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/my/plays"
+  method = "POST"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  header = ["Authorization", "X-API-Key"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-my-plays"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "personalised-plays"]
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/my/playspace/containers/suggested"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  query_string_params = ["previous_container", "previous_pid"]
+  header = ["Authorization", "X-API-Key"]
+  whitelist = ["id", "members", "title"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-my-playspace-containers-suggested"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "playspace"]
+    [backends.extra_config.mapping]
+      id = "id"
+      members = "members"
+      title = "title"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/my/playspace/containers/{id}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  url_keys = ["id"]
+  header = ["Authorization", "X-API-Key"]
+  whitelist = ["id", "members", "title"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-my-playspace-containers-id"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "playspace"]
+    [backends.extra_config.mapping]
+      id = "id"
+      members = "members"
+      title = "title"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/my/programmes/recommendations"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  query_string_params = ["limit", "offset", "rights"]
+  header = ["Authorization", "X-API-Key"]
+  whitelist = ["$schema", "limit", "offset", "results", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-my-programmes-recommendations"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "programmes"]
+    [backends.extra_config.mapping]
+      "$schema" = "$schema"
+      limit = "limit"
+      offset = "offset"
+      results = "results"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/my/radio/favourites"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  query_string_params = ["limit", "offset", "show_all_activity", "sort"]
+  header = ["Authorization", "X-API-Key", "X-Authentication-Provider"]
+  whitelist = ["$schema", "limit", "method", "offset", "replied_at", "results", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-my-radio-favourites"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "radio"]
+    [backends.extra_config.mapping]
+      "$schema" = "$schema"
+      limit = "limit"
+      method = "method"
+      offset = "offset"
+      replied_at = "replied_at"
+      results = "results"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/my/radio/favourites/{type}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  url_keys = ["type"]
+  query_string_params = ["limit", "offset", "show_all_activity", "sort"]
+  header = ["Authorization", "X-API-Key", "X-Authentication-Provider"]
+  whitelist = ["$schema", "limit", "method", "offset", "replied_at", "results", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-my-radio-favourites-type"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "radio"]
+    [backends.extra_config.mapping]
+      "$schema" = "$schema"
+      limit = "limit"
+      method = "method"
+      offset = "offset"
+      replied_at = "replied_at"
+      results = "results"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/my/radio/favourites/{type}/{pid}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  url_keys = ["pid", "type"]
+  query_string_params = ["show_all_activity"]
+  header = ["Authorization", "X-API-Key", "X-Authentication-Provider"]
+  whitelist = ["$schema", "limit", "method", "offset", "replied_at", "results", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-my-radio-favourites-type-pid"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "radio"]
+    [backends.extra_config.mapping]
+      "$schema" = "$schema"
+      limit = "limit"
+      method = "method"
+      offset = "offset"
+      replied_at = "replied_at"
+      results = "results"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/my/radio/follows"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  query_string_params = ["limit", "offset", "show_all_activity", "sort"]
+  header = ["Authorization", "X-API-Key", "X-Authentication-Provider"]
+  whitelist = ["$schema", "limit", "method", "offset", "replied_at", "results", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-my-radio-follows"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "radio"]
+    [backends.extra_config.mapping]
+      "$schema" = "$schema"
+      limit = "limit"
+      method = "method"
+      offset = "offset"
+      replied_at = "replied_at"
+      results = "results"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/my/radio/follows/{type}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  url_keys = ["type"]
+  query_string_params = ["limit", "offset", "show_all_activity", "sort"]
+  header = ["Authorization", "X-API-Key", "X-Authentication-Provider"]
+  whitelist = ["$schema", "limit", "method", "offset", "replied_at", "results", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-my-radio-follows-type"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "radio"]
+    [backends.extra_config.mapping]
+      "$schema" = "$schema"
+      limit = "limit"
+      method = "method"
+      offset = "offset"
+      replied_at = "replied_at"
+      results = "results"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/my/radio/follows/{type}/{pid}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  url_keys = ["pid", "type"]
+  header = ["Authorization", "X-API-Key", "X-Authentication-Provider"]
+  whitelist = ["$schema", "limit", "method", "offset", "replied_at", "results", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-my-radio-follows-type-pid"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "radio"]
+    [backends.extra_config.mapping]
+      "$schema" = "$schema"
+      limit = "limit"
+      method = "method"
+      offset = "offset"
+      replied_at = "replied_at"
+      results = "results"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/my/radio/plays"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  query_string_params = ["limit", "offset", "show_all_activity", "sort"]
+  header = ["Authorization", "X-API-Key", "X-Authentication-Provider"]
+  whitelist = ["$schema", "limit", "method", "offset", "replied_at", "results", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-my-radio-plays"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "radio"]
+    [backends.extra_config.mapping]
+      "$schema" = "$schema"
+      limit = "limit"
+      method = "method"
+      offset = "offset"
+      replied_at = "replied_at"
+      results = "results"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/podcasts"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  query_string_params = ["category", "coverage", "limit", "network", "network_url_key", "offset", "q", "sort"]
+  header = ["X-API-Key"]
+  whitelist = ["$schema", "limit", "offset", "results", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-podcasts"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "podcasts"]
+    [backends.extra_config.mapping]
+      "$schema" = "$schema"
+      limit = "limit"
+      offset = "offset"
+      results = "results"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/podcasts/featured"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  header = ["X-API-Key"]
+  whitelist = ["$schema", "limit", "offset", "results", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-podcasts-featured"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "podcasts"]
+    [backends.extra_config.mapping]
+      "$schema" = "$schema"
+      limit = "limit"
+      offset = "offset"
+      results = "results"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/podcasts/{pid}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  url_keys = ["pid"]
+  query_string_params = ["limit", "offset"]
+  header = ["X-API-Key"]
+  whitelist = ["$schema", "limit", "offset", "results", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-podcasts-pid"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "podcasts"]
+    [backends.extra_config.mapping]
+      "$schema" = "$schema"
+      limit = "limit"
+      offset = "offset"
+      results = "results"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/podcasts/{pid}/episodes"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  url_keys = ["pid"]
+  query_string_params = ["limit", "offset"]
+  header = ["X-API-Key"]
+  whitelist = ["$schema", "limit", "offset", "results", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-podcasts-pid-episodes"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "podcasts"]
+    [backends.extra_config.mapping]
+      "$schema" = "$schema"
+      limit = "limit"
+      offset = "offset"
+      results = "results"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/radio/networks"
+  method = "JSON"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-radio-networks"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media"]
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/radio/popular"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  query_string_params = ["category", "container", "distinct", "format", "group", "media_set", "media_type", "network", "network_url_key", "q", "type"]
+  header = ["X-API-Key"]
+  whitelist = ["$schema", "limit", "offset", "results", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-radio-popular"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "programmes"]
+    [backends.extra_config.mapping]
+      "$schema" = "$schema"
+      limit = "limit"
+      offset = "offset"
+      results = "results"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/radio/programmes"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  query_string_params = ["category", "container", "kind", "network", "network_url_key", "sort", "type"]
+  header = ["X-API-Key"]
+  whitelist = ["$schema", "limit", "offset", "results", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-radio-programmes"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "programmes"]
+    [backends.extra_config.mapping]
+      "$schema" = "$schema"
+      limit = "limit"
+      offset = "offset"
+      results = "results"
+      total = "total"
+
+[[backends]]
+  group = "radio-and-music-services-1-0-0"
+  url_pattern = "/radio/programmes/{pid}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://rms.api.bbc.co.uk"]
+  url_keys = ["pid"]
+  header = ["X-API-Key"]
+  whitelist = ["$schema", "limit", "offset", "results", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "bbc.co.uk"
+    description = "We encapsulate Radio & Music business logic for iPlayer Radio and BBC Music products on all platforms. We add value by reliably providing the right blend of metadata needed by clients."
+    version = "1.0.0"
+    slug = "radio-and-music-services-1-0-0-radio-programmes-pid"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://rms.api.bbc.co.uk"]
+    topics = ["media", "programmes"]
+    [backends.extra_config.mapping]
+      "$schema" = "$schema"
+      limit = "limit"
+      offset = "offset"
+      results = "results"
+      total = "total"

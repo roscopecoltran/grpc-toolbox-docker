@@ -1,0 +1,298 @@
+[[backends]]
+  group = "fusion-tables-v1"
+  url_pattern = "/fusiontables/v1/query"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["columns", "kind", "rows"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for working with Fusion Tables data."
+    version = "v1"
+    slug = "fusion-tables-v1-fusiontables-v1-query"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      columns = "columns"
+      kind = "kind"
+      rows = "rows"
+
+[[backends]]
+  group = "fusion-tables-v1"
+  url_pattern = "/fusiontables/v1/tables"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for working with Fusion Tables data."
+    version = "v1"
+    slug = "fusion-tables-v1-fusiontables-v1-tables"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "fusion-tables-v1"
+  url_pattern = "/fusiontables/v1/tables/import"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["attribution", "attributionLink", "baseTableIds", "columns", "description", "isExportable", "kind", "name", "sql", "tableId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for working with Fusion Tables data."
+    version = "v1"
+    slug = "fusion-tables-v1-fusiontables-v1-tables-import"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      attribution = "attribution"
+      attributionLink = "attributionLink"
+      baseTableIds = "baseTableIds"
+      columns = "columns"
+      description = "description"
+      isExportable = "isExportable"
+      kind = "kind"
+      name = "name"
+      sql = "sql"
+      tableId = "tableId"
+
+[[backends]]
+  group = "fusion-tables-v1"
+  url_pattern = "/fusiontables/v1/tables/{tableId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["attribution", "attributionLink", "baseTableIds", "columns", "description", "isExportable", "kind", "name", "sql", "tableId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for working with Fusion Tables data."
+    version = "v1"
+    slug = "fusion-tables-v1-fusiontables-v1-tables-tableid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      attribution = "attribution"
+      attributionLink = "attributionLink"
+      baseTableIds = "baseTableIds"
+      columns = "columns"
+      description = "description"
+      isExportable = "isExportable"
+      kind = "kind"
+      name = "name"
+      sql = "sql"
+      tableId = "tableId"
+
+[[backends]]
+  group = "fusion-tables-v1"
+  url_pattern = "/fusiontables/v1/tables/{tableId}/columns"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["items", "kind", "nextPageToken", "totalItems"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for working with Fusion Tables data."
+    version = "v1"
+    slug = "fusion-tables-v1-fusiontables-v1-tables-tableid-columns"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+      totalItems = "totalItems"
+
+[[backends]]
+  group = "fusion-tables-v1"
+  url_pattern = "/fusiontables/v1/tables/{tableId}/columns/{columnId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["baseColumn", "baseColumn.columnId", "baseColumn.tableIndex", "columnId", "description", "graph_predicate", "kind", "name"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for working with Fusion Tables data."
+    version = "v1"
+    slug = "fusion-tables-v1-fusiontables-v1-tables-tableid-columns-columnid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      baseColumn = "baseColumn"
+      columnId = "columnId"
+      description = "description"
+      graph_predicate = "graph_predicate"
+      kind = "kind"
+      name = "name"
+      tableIndex = "tableIndex"
+
+[[backends]]
+  group = "fusion-tables-v1"
+  url_pattern = "/fusiontables/v1/tables/{tableId}/copy"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["attribution", "attributionLink", "baseTableIds", "columns", "description", "isExportable", "kind", "name", "sql", "tableId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for working with Fusion Tables data."
+    version = "v1"
+    slug = "fusion-tables-v1-fusiontables-v1-tables-tableid-copy"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      attribution = "attribution"
+      attributionLink = "attributionLink"
+      baseTableIds = "baseTableIds"
+      columns = "columns"
+      description = "description"
+      isExportable = "isExportable"
+      kind = "kind"
+      name = "name"
+      sql = "sql"
+      tableId = "tableId"
+
+[[backends]]
+  group = "fusion-tables-v1"
+  url_pattern = "/fusiontables/v1/tables/{tableId}/import"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "numRowsReceived"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for working with Fusion Tables data."
+    version = "v1"
+    slug = "fusion-tables-v1-fusiontables-v1-tables-tableid-import"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      numRowsReceived = "numRowsReceived"
+
+[[backends]]
+  group = "fusion-tables-v1"
+  url_pattern = "/fusiontables/v1/tables/{tableId}/styles"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["items", "kind", "nextPageToken", "totalItems"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for working with Fusion Tables data."
+    version = "v1"
+    slug = "fusion-tables-v1-fusiontables-v1-tables-tableid-styles"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+      totalItems = "totalItems"
+
+[[backends]]
+  group = "fusion-tables-v1"
+  url_pattern = "/fusiontables/v1/tables/{tableId}/styles/{styleId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "name", "styleId", "tableId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for working with Fusion Tables data."
+    version = "v1"
+    slug = "fusion-tables-v1-fusiontables-v1-tables-tableid-styles-styleid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      name = "name"
+      styleId = "styleId"
+      tableId = "tableId"
+
+[[backends]]
+  group = "fusion-tables-v1"
+  url_pattern = "/fusiontables/v1/tables/{tableId}/tasks"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["items", "kind", "nextPageToken", "totalItems"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for working with Fusion Tables data."
+    version = "v1"
+    slug = "fusion-tables-v1-fusiontables-v1-tables-tableid-tasks"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+      totalItems = "totalItems"
+
+[[backends]]
+  group = "fusion-tables-v1"
+  url_pattern = "/fusiontables/v1/tables/{tableId}/tasks/{taskId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "progress", "started", "taskId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for working with Fusion Tables data."
+    version = "v1"
+    slug = "fusion-tables-v1-fusiontables-v1-tables-tableid-tasks-taskid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      progress = "progress"
+      started = "started"
+      taskId = "taskId"
+
+[[backends]]
+  group = "fusion-tables-v1"
+  url_pattern = "/fusiontables/v1/tables/{tableId}/templates"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["items", "kind", "nextPageToken", "totalItems"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for working with Fusion Tables data."
+    version = "v1"
+    slug = "fusion-tables-v1-fusiontables-v1-tables-tableid-templates"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+      totalItems = "totalItems"
+
+[[backends]]
+  group = "fusion-tables-v1"
+  url_pattern = "/fusiontables/v1/tables/{tableId}/templates/{templateId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["automaticColumnNames", "body", "kind", "name", "tableId", "templateId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for working with Fusion Tables data."
+    version = "v1"
+    slug = "fusion-tables-v1-fusiontables-v1-tables-tableid-templates-templateid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      automaticColumnNames = "automaticColumnNames"
+      body = "body"
+      kind = "kind"
+      name = "name"
+      tableId = "tableId"
+      templateId = "templateId"

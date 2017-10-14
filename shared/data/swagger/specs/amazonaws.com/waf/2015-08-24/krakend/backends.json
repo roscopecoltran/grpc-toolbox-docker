@@ -1,0 +1,1368 @@
+{
+	"backends": [
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#CreateIPSet",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-createipset",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#CreateRateBasedRule",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-createratebasedrule",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#CreateRule",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-createrule",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#CreateSizeConstraintSet",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-createsizeconstraintset",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#CreateSqlInjectionMatchSet",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-createsqlinjectionmatchset",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#CreateWebACL",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-createwebacl",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#CreateXssMatchSet",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-createxssmatchset",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#DeleteByteMatchSet",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-deletebytematchset",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#DeleteIPSet",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-deleteipset",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#DeleteRateBasedRule",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-deleteratebasedrule",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#DeleteRule",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-deleterule",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#DeleteSizeConstraintSet",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-deletesizeconstraintset",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#DeleteSqlInjectionMatchSet",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-deletesqlinjectionmatchset",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#DeleteWebACL",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-deletewebacl",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#DeleteXssMatchSet",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-deletexssmatchset",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#GetByteMatchSet",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-getbytematchset",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#GetChangeToken",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-getchangetoken",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#GetChangeTokenStatus",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-getchangetokenstatus",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#GetIPSet",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-getipset",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#GetRateBasedRule",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-getratebasedrule",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#GetRateBasedRuleManagedKeys",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-getratebasedrulemanagedkeys",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#GetRule",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-getrule",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#GetSampledRequests",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-getsampledrequests",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#GetSizeConstraintSet",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-getsizeconstraintset",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#GetSqlInjectionMatchSet",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-getsqlinjectionmatchset",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#GetWebACL",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-getwebacl",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#GetXssMatchSet",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-getxssmatchset",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#ListByteMatchSets",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-listbytematchsets",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#ListIPSets",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-listipsets",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#ListRateBasedRules",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-listratebasedrules",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#ListRules",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-listrules",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#ListSizeConstraintSets",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-listsizeconstraintsets",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#ListSqlInjectionMatchSets",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-listsqlinjectionmatchsets",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#ListWebACLs",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-listwebacls",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#ListXssMatchSets",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-listxssmatchsets",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#UpdateByteMatchSet",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-updatebytematchset",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#UpdateIPSet",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-updateipset",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#UpdateRateBasedRule",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-updateratebasedrule",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#UpdateRule",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-updaterule",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#UpdateSizeConstraintSet",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-updatesizeconstraintset",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#UpdateSqlInjectionMatchSet",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-updatesqlinjectionmatchset",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#UpdateWebACL",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-updatewebacl",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/#UpdateXssMatchSet",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24-updatexssmatchset",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "aws-waf-2015-08-24",
+			"url_pattern": "/",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://waf.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "This is the \u003ci\u003eAWS WAF API Reference\u003c/i\u003e for using AWS WAF with Amazon CloudFront. The AWS WAF actions and data types listed in the reference are available for protecting Amazon CloudFront distributions. You can use these actions and data types via the endpoint \u003ci\u003ewaf.amazonaws.com\u003c/i\u003e. This guide is for developers who need detailed information about the AWS WAF API actions, data types, and errors. For detailed information about AWS WAF features and an overview of how to use the AWS WAF API, see the \u003ca href=\"http://docs.aws.amazon.com/waf/latest/developerguide/\"\u003eAWS WAF Developer Guide\u003c/a\u003e.",
+				"version": "2015-08-24",
+				"slug": "aws-waf-2015-08-24",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://waf.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		}
+	]
+}

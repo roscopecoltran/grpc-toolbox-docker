@@ -1,0 +1,841 @@
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["enterprise", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      enterprise = "enterprise"
+      kind = "kind"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/acknowledgeNotificationSet"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-acknowledgenotificationset"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/completeSignup"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["administrator", "id", "kind", "name", "primaryDomain"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-completesignup"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      administrator = "administrator"
+      id = "id"
+      kind = "kind"
+      name = "name"
+      primaryDomain = "primaryDomain"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/enroll"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["administrator", "id", "kind", "name", "primaryDomain"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enroll"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      administrator = "administrator"
+      id = "id"
+      kind = "kind"
+      name = "name"
+      primaryDomain = "primaryDomain"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/pullNotificationSet"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "notification", "notificationSetId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-pullnotificationset"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      notification = "notification"
+      notificationSetId = "notificationSetId"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/signupUrl"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["completionToken", "kind", "url"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-signupurl"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      completionToken = "completionToken"
+      kind = "kind"
+      url = "url"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["administrator", "id", "kind", "name", "primaryDomain"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      administrator = "administrator"
+      id = "id"
+      kind = "kind"
+      name = "name"
+      primaryDomain = "primaryDomain"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/androidDevicePolicyConfig"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "state"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-androiddevicepolicyconfig"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      state = "state"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/createWebToken"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "token"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-createwebtoken"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      token = "token"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/groupLicenses"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["groupLicense", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-grouplicenses"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      groupLicense = "groupLicense"
+      kind = "kind"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/groupLicenses/{groupLicenseId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["acquisitionKind", "approval", "kind", "numProvisioned", "numPurchased", "permissions", "productId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-grouplicenses-grouplicenseid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      acquisitionKind = "acquisitionKind"
+      approval = "approval"
+      kind = "kind"
+      numProvisioned = "numProvisioned"
+      numPurchased = "numPurchased"
+      permissions = "permissions"
+      productId = "productId"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/groupLicenses/{groupLicenseId}/users"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "user"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-grouplicenses-grouplicenseid-users"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      user = "user"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/products"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "product"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-products"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      product = "product"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/products/{productId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["appVersion", "authorName", "availableTracks", "detailsUrl", "distributionChannel", "iconUrl", "kind", "productId", "productPricing", "requiresContainerApp", "smallIconUrl", "title", "workDetailsUrl"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-products-productid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      appVersion = "appVersion"
+      authorName = "authorName"
+      availableTracks = "availableTracks"
+      detailsUrl = "detailsUrl"
+      distributionChannel = "distributionChannel"
+      iconUrl = "iconUrl"
+      kind = "kind"
+      productId = "productId"
+      productPricing = "productPricing"
+      requiresContainerApp = "requiresContainerApp"
+      smallIconUrl = "smallIconUrl"
+      title = "title"
+      workDetailsUrl = "workDetailsUrl"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/products/{productId}/appRestrictionsSchema"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "restrictions"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-products-productid-apprestrictionsschema"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      restrictions = "restrictions"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/products/{productId}/approve"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-products-productid-approve"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/products/{productId}/generateApprovalUrl"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["url"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-products-productid-generateapprovalurl"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      url = "url"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/products/{productId}/permissions"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "permission", "productId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-products-productid-permissions"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      permission = "permission"
+      productId = "productId"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/products/{productId}/unapprove"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-products-productid-unapprove"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/sendTestPushNotification"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["messageId", "topicName"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-sendtestpushnotification"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      messageId = "messageId"
+      topicName = "topicName"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/serviceAccount"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "name"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-serviceaccount"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      name = "name"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/serviceAccountKeys"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["serviceAccountKey"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-serviceaccountkeys"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      serviceAccountKey = "serviceAccountKey"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/storeLayout"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["homepageId", "kind", "storeLayoutType"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-storelayout"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      homepageId = "homepageId"
+      kind = "kind"
+      storeLayoutType = "storeLayoutType"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/storeLayout/pages"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "page"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-storelayout-pages"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      page = "page"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/storeLayout/pages/{pageId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["id", "kind", "link", "name"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-storelayout-pages-pageid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      id = "id"
+      kind = "kind"
+      link = "link"
+      name = "name"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/storeLayout/pages/{pageId}/clusters"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["cluster", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-storelayout-pages-pageid-clusters"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      cluster = "cluster"
+      kind = "kind"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/storeLayout/pages/{pageId}/clusters/{clusterId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["id", "kind", "name", "orderInPage", "productId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-storelayout-pages-pageid-clusters-clusterid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      id = "id"
+      kind = "kind"
+      name = "name"
+      orderInPage = "orderInPage"
+      productId = "productId"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/unenroll"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-unenroll"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/users"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "user"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-users"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      user = "user"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/users/{userId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["accountIdentifier", "accountType", "displayName", "id", "kind", "managementType", "primaryEmail"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-users-userid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      accountIdentifier = "accountIdentifier"
+      accountType = "accountType"
+      displayName = "displayName"
+      id = "id"
+      kind = "kind"
+      managementType = "managementType"
+      primaryEmail = "primaryEmail"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/users/{userId}/authenticationToken"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "token"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-users-userid-authenticationtoken"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      token = "token"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/users/{userId}/availableProductSet"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "productId", "productSetBehavior", "productVisibility"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-users-userid-availableproductset"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      productId = "productId"
+      productSetBehavior = "productSetBehavior"
+      productVisibility = "productVisibility"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/users/{userId}/devices"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["device", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-users-userid-devices"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      device = "device"
+      kind = "kind"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/users/{userId}/devices/{deviceId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["androidId", "kind", "managementType"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-users-userid-devices-deviceid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      androidId = "androidId"
+      kind = "kind"
+      managementType = "managementType"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/users/{userId}/devices/{deviceId}/installs"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["install", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-users-userid-devices-deviceid-installs"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      install = "install"
+      kind = "kind"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/users/{userId}/devices/{deviceId}/installs/{installId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["installState", "kind", "productId", "versionCode"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-users-userid-devices-deviceid-installs-installid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      installState = "installState"
+      kind = "kind"
+      productId = "productId"
+      versionCode = "versionCode"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/users/{userId}/devices/{deviceId}/managedConfigurationsForDevice"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "managedConfigurationForDevice"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-users-userid-devices-deviceid-managedconfigurationsfordevice"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      managedConfigurationForDevice = "managedConfigurationForDevice"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/users/{userId}/devices/{deviceId}/managedConfigurationsForDevice/{managedConfigurationForDeviceId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "managedProperty", "productId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-users-userid-devices-deviceid-managedconfigurationsfordevice-managedconfigurationfordeviceid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      managedProperty = "managedProperty"
+      productId = "productId"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/users/{userId}/devices/{deviceId}/state"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["accountState", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-users-userid-devices-deviceid-state"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      accountState = "accountState"
+      kind = "kind"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/users/{userId}/entitlements"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["entitlement", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-users-userid-entitlements"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      entitlement = "entitlement"
+      kind = "kind"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/users/{userId}/entitlements/{entitlementId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "productId", "reason"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-users-userid-entitlements-entitlementid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      productId = "productId"
+      reason = "reason"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/users/{userId}/managedConfigurationsForUser"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "managedConfigurationForUser"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-users-userid-managedconfigurationsforuser"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      managedConfigurationForUser = "managedConfigurationForUser"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/users/{userId}/managedConfigurationsForUser/{managedConfigurationForUserId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "managedProperty", "productId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-users-userid-managedconfigurationsforuser-managedconfigurationforuserid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      managedProperty = "managedProperty"
+      productId = "productId"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/enterprises/{enterpriseId}/users/{userId}/token"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "token", "userId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-enterprises-enterpriseid-users-userid-token"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      token = "token"
+      userId = "userId"
+
+[[backends]]
+  group = "google-play-emm-v1"
+  url_pattern = "/androidenterprise/v1/permissions/{permissionId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["description", "kind", "name", "permissionId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Manages the deployment of apps to Android for Work users."
+    version = "v1"
+    slug = "google-play-emm-v1-androidenterprise-v1-permissions-permissionid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      description = "description"
+      kind = "kind"
+      name = "name"
+      permissionId = "permissionId"

@@ -1,0 +1,323 @@
+[[backends]]
+  group = "bigquery-v2"
+  url_pattern = "/bigquery/v2/projects"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "kind", "nextPageToken", "projects", "projects.friendlyName", "projects.id", "projects.kind", "projects.numericId", "totalItems"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "A data platform for customers to create, manage, share and query data."
+    version = "v2"
+    slug = "bigquery-v2-bigquery-v2-projects"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["search"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      friendlyName = "friendlyName"
+      id = "id"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+      numericId = "numericId"
+      projects = "projects"
+      totalItems = "totalItems"
+
+[[backends]]
+  group = "bigquery-v2"
+  url_pattern = "/bigquery/v2/projects/{projectId}/datasets"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["datasets", "datasets.friendlyName", "datasets.id", "datasets.kind", "datasets.labels", "datasets.labels.additionalProperties", "etag", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "A data platform for customers to create, manage, share and query data."
+    version = "v2"
+    slug = "bigquery-v2-bigquery-v2-projects-projectid-datasets"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["search"]
+    [backends.extra_config.mapping]
+      additionalProperties = "additionalProperties"
+      datasets = "datasets"
+      etag = "etag"
+      friendlyName = "friendlyName"
+      id = "id"
+      kind = "kind"
+      labels = "labels"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "bigquery-v2"
+  url_pattern = "/bigquery/v2/projects/{projectId}/datasets/{datasetId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["access", "access.domain", "access.groupByEmail", "access.role", "access.specialGroup", "access.userByEmail", "creationTime", "defaultTableExpirationMs", "description", "etag", "friendlyName", "id", "kind", "labels", "labels.additionalProperties", "lastModifiedTime", "location", "selfLink"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "A data platform for customers to create, manage, share and query data."
+    version = "v2"
+    slug = "bigquery-v2-bigquery-v2-projects-projectid-datasets-datasetid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["search"]
+    [backends.extra_config.mapping]
+      access = "access"
+      additionalProperties = "additionalProperties"
+      creationTime = "creationTime"
+      defaultTableExpirationMs = "defaultTableExpirationMs"
+      description = "description"
+      domain = "domain"
+      etag = "etag"
+      friendlyName = "friendlyName"
+      groupByEmail = "groupByEmail"
+      id = "id"
+      kind = "kind"
+      labels = "labels"
+      lastModifiedTime = "lastModifiedTime"
+      location = "location"
+      role = "role"
+      selfLink = "selfLink"
+      specialGroup = "specialGroup"
+      userByEmail = "userByEmail"
+
+[[backends]]
+  group = "bigquery-v2"
+  url_pattern = "/bigquery/v2/projects/{projectId}/datasets/{datasetId}/tables"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "kind", "nextPageToken", "tables", "tables.friendlyName", "tables.id", "tables.kind", "tables.labels", "tables.labels.additionalProperties", "tables.view", "tables.view.useLegacySql", "totalItems"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "A data platform for customers to create, manage, share and query data."
+    version = "v2"
+    slug = "bigquery-v2-bigquery-v2-projects-projectid-datasets-datasetid-tables"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["search"]
+    [backends.extra_config.mapping]
+      additionalProperties = "additionalProperties"
+      etag = "etag"
+      friendlyName = "friendlyName"
+      id = "id"
+      kind = "kind"
+      labels = "labels"
+      nextPageToken = "nextPageToken"
+      tables = "tables"
+      totalItems = "totalItems"
+      useLegacySql = "useLegacySql"
+      view = "view"
+
+[[backends]]
+  group = "bigquery-v2"
+  url_pattern = "/bigquery/v2/projects/{projectId}/datasets/{datasetId}/tables/{tableId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["creationTime", "description", "etag", "expirationTime", "friendlyName", "id", "kind", "labels", "labels.additionalProperties", "lastModifiedTime", "location", "numBytes", "numLongTermBytes", "numRows", "selfLink"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "A data platform for customers to create, manage, share and query data."
+    version = "v2"
+    slug = "bigquery-v2-bigquery-v2-projects-projectid-datasets-datasetid-tables-tableid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["search"]
+    [backends.extra_config.mapping]
+      additionalProperties = "additionalProperties"
+      creationTime = "creationTime"
+      description = "description"
+      etag = "etag"
+      expirationTime = "expirationTime"
+      friendlyName = "friendlyName"
+      id = "id"
+      kind = "kind"
+      labels = "labels"
+      lastModifiedTime = "lastModifiedTime"
+      location = "location"
+      numBytes = "numBytes"
+      numLongTermBytes = "numLongTermBytes"
+      numRows = "numRows"
+      selfLink = "selfLink"
+
+[[backends]]
+  group = "bigquery-v2"
+  url_pattern = "/bigquery/v2/projects/{projectId}/datasets/{datasetId}/tables/{tableId}/data"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "kind", "pageToken", "rows", "totalRows"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "A data platform for customers to create, manage, share and query data."
+    version = "v2"
+    slug = "bigquery-v2-bigquery-v2-projects-projectid-datasets-datasetid-tables-tableid-data"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["search"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      kind = "kind"
+      pageToken = "pageToken"
+      rows = "rows"
+      totalRows = "totalRows"
+
+[[backends]]
+  group = "bigquery-v2"
+  url_pattern = "/bigquery/v2/projects/{projectId}/datasets/{datasetId}/tables/{tableId}/insertAll"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["insertErrors", "insertErrors.errors", "insertErrors.index", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "A data platform for customers to create, manage, share and query data."
+    version = "v2"
+    slug = "bigquery-v2-bigquery-v2-projects-projectid-datasets-datasetid-tables-tableid-insertall"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["search"]
+    [backends.extra_config.mapping]
+      errors = "errors"
+      index = "index"
+      insertErrors = "insertErrors"
+      kind = "kind"
+
+[[backends]]
+  group = "bigquery-v2"
+  url_pattern = "/bigquery/v2/projects/{projectId}/jobs"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "jobs", "jobs.id", "jobs.kind", "jobs.state", "jobs.user_email", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "A data platform for customers to create, manage, share and query data."
+    version = "v2"
+    slug = "bigquery-v2-bigquery-v2-projects-projectid-jobs"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["search"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      id = "id"
+      jobs = "jobs"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+      state = "state"
+      user_email = "user_email"
+
+[[backends]]
+  group = "bigquery-v2"
+  url_pattern = "/bigquery/v2/projects/{projectId}/jobs/{jobId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "id", "kind", "selfLink", "user_email"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "A data platform for customers to create, manage, share and query data."
+    version = "v2"
+    slug = "bigquery-v2-bigquery-v2-projects-projectid-jobs-jobid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["search"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      id = "id"
+      kind = "kind"
+      selfLink = "selfLink"
+      user_email = "user_email"
+
+[[backends]]
+  group = "bigquery-v2"
+  url_pattern = "/bigquery/v2/projects/{projectId}/jobs/{jobId}/cancel"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "A data platform for customers to create, manage, share and query data."
+    version = "v2"
+    slug = "bigquery-v2-bigquery-v2-projects-projectid-jobs-jobid-cancel"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["search"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+
+[[backends]]
+  group = "bigquery-v2"
+  url_pattern = "/bigquery/v2/projects/{projectId}/queries"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["cacheHit", "errors", "jobComplete", "kind", "numDmlAffectedRows", "pageToken", "rows", "totalBytesProcessed", "totalRows"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "A data platform for customers to create, manage, share and query data."
+    version = "v2"
+    slug = "bigquery-v2-bigquery-v2-projects-projectid-queries"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["search"]
+    [backends.extra_config.mapping]
+      cacheHit = "cacheHit"
+      errors = "errors"
+      jobComplete = "jobComplete"
+      kind = "kind"
+      numDmlAffectedRows = "numDmlAffectedRows"
+      pageToken = "pageToken"
+      rows = "rows"
+      totalBytesProcessed = "totalBytesProcessed"
+      totalRows = "totalRows"
+
+[[backends]]
+  group = "bigquery-v2"
+  url_pattern = "/bigquery/v2/projects/{projectId}/queries/{jobId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["cacheHit", "errors", "etag", "jobComplete", "kind", "numDmlAffectedRows", "pageToken", "rows", "totalBytesProcessed", "totalRows"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "A data platform for customers to create, manage, share and query data."
+    version = "v2"
+    slug = "bigquery-v2-bigquery-v2-projects-projectid-queries-jobid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["search"]
+    [backends.extra_config.mapping]
+      cacheHit = "cacheHit"
+      errors = "errors"
+      etag = "etag"
+      jobComplete = "jobComplete"
+      kind = "kind"
+      numDmlAffectedRows = "numDmlAffectedRows"
+      pageToken = "pageToken"
+      rows = "rows"
+      totalBytesProcessed = "totalBytesProcessed"
+      totalRows = "totalRows"
+
+[[backends]]
+  group = "bigquery-v2"
+  url_pattern = "/bigquery/v2/projects/{projectId}/serviceAccount"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["email", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "A data platform for customers to create, manage, share and query data."
+    version = "v2"
+    slug = "bigquery-v2-bigquery-v2-projects-projectid-serviceaccount"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["search"]
+    [backends.extra_config.mapping]
+      email = "email"
+      kind = "kind"

@@ -1,0 +1,178 @@
+[[backends]]
+  group = "bigquery-data-transfer-v1"
+  url_pattern = "/v1/{name}"
+  method = "GET"
+  host = ["https://bigquerydatatransfer.googleapis.com"]
+  url_keys = ["name"]
+  whitelist = ["authorizationType", "clientId", "dataRefreshType", "dataSourceId", "defaultDataRefreshWindowDays", "defaultSchedule", "description", "displayName", "helpUrl", "manualRunsDisabled", "minimumScheduleInterval", "name", "parameters", "scopes", "supportsCustomSchedule", "supportsMultipleTransfers", "transferType", "updateDeadlineSeconds"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Transfers data from partner SaaS applications to Google BigQuery on a scheduled, managed basis."
+    version = "v1"
+    slug = "bigquery-data-transfer-v1-v1-name"
+    schemes = ["https"]
+    hosts = ["https://bigquerydatatransfer.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      authorizationType = "authorizationType"
+      clientId = "clientId"
+      dataRefreshType = "dataRefreshType"
+      dataSourceId = "dataSourceId"
+      defaultDataRefreshWindowDays = "defaultDataRefreshWindowDays"
+      defaultSchedule = "defaultSchedule"
+      description = "description"
+      displayName = "displayName"
+      helpUrl = "helpUrl"
+      manualRunsDisabled = "manualRunsDisabled"
+      minimumScheduleInterval = "minimumScheduleInterval"
+      name = "name"
+      parameters = "parameters"
+      scopes = "scopes"
+      supportsCustomSchedule = "supportsCustomSchedule"
+      supportsMultipleTransfers = "supportsMultipleTransfers"
+      transferType = "transferType"
+      updateDeadlineSeconds = "updateDeadlineSeconds"
+
+[[backends]]
+  group = "bigquery-data-transfer-v1"
+  url_pattern = "/v1/{name}/locations"
+  method = "GET"
+  host = ["https://bigquerydatatransfer.googleapis.com"]
+  url_keys = ["name"]
+  query_string_params = ["filter", "pageSize", "pageToken"]
+  whitelist = ["locations", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Transfers data from partner SaaS applications to Google BigQuery on a scheduled, managed basis."
+    version = "v1"
+    slug = "bigquery-data-transfer-v1-v1-name-locations"
+    schemes = ["https"]
+    hosts = ["https://bigquerydatatransfer.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      locations = "locations"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "bigquery-data-transfer-v1"
+  url_pattern = "/v1/{name}:checkValidCreds"
+  method = "POST"
+  host = ["https://bigquerydatatransfer.googleapis.com"]
+  url_keys = ["name"]
+  whitelist = ["hasValidCreds"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Transfers data from partner SaaS applications to Google BigQuery on a scheduled, managed basis."
+    version = "v1"
+    slug = "bigquery-data-transfer-v1-v1-name-checkvalidcreds"
+    schemes = ["https"]
+    hosts = ["https://bigquerydatatransfer.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      hasValidCreds = "hasValidCreds"
+
+[[backends]]
+  group = "bigquery-data-transfer-v1"
+  url_pattern = "/v1/{parent}/dataSources"
+  method = "GET"
+  host = ["https://bigquerydatatransfer.googleapis.com"]
+  url_keys = ["parent"]
+  query_string_params = ["pageSize", "pageToken"]
+  whitelist = ["dataSources", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Transfers data from partner SaaS applications to Google BigQuery on a scheduled, managed basis."
+    version = "v1"
+    slug = "bigquery-data-transfer-v1-v1-parent-datasources"
+    schemes = ["https"]
+    hosts = ["https://bigquerydatatransfer.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      dataSources = "dataSources"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "bigquery-data-transfer-v1"
+  url_pattern = "/v1/{parent}/runs"
+  method = "GET"
+  host = ["https://bigquerydatatransfer.googleapis.com"]
+  url_keys = ["parent"]
+  query_string_params = ["pageSize", "pageToken", "runAttempt", "states"]
+  whitelist = ["nextPageToken", "transferRuns"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Transfers data from partner SaaS applications to Google BigQuery on a scheduled, managed basis."
+    version = "v1"
+    slug = "bigquery-data-transfer-v1-v1-parent-runs"
+    schemes = ["https"]
+    hosts = ["https://bigquerydatatransfer.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      transferRuns = "transferRuns"
+
+[[backends]]
+  group = "bigquery-data-transfer-v1"
+  url_pattern = "/v1/{parent}/transferConfigs"
+  method = "GET"
+  host = ["https://bigquerydatatransfer.googleapis.com"]
+  url_keys = ["parent"]
+  query_string_params = ["dataSourceIds", "pageSize", "pageToken"]
+  whitelist = ["nextPageToken", "transferConfigs"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Transfers data from partner SaaS applications to Google BigQuery on a scheduled, managed basis."
+    version = "v1"
+    slug = "bigquery-data-transfer-v1-v1-parent-transferconfigs"
+    schemes = ["https"]
+    hosts = ["https://bigquerydatatransfer.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      transferConfigs = "transferConfigs"
+
+[[backends]]
+  group = "bigquery-data-transfer-v1"
+  url_pattern = "/v1/{parent}/transferLogs"
+  method = "GET"
+  host = ["https://bigquerydatatransfer.googleapis.com"]
+  url_keys = ["parent"]
+  query_string_params = ["messageTypes", "pageSize", "pageToken"]
+  whitelist = ["nextPageToken", "transferMessages"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Transfers data from partner SaaS applications to Google BigQuery on a scheduled, managed basis."
+    version = "v1"
+    slug = "bigquery-data-transfer-v1-v1-parent-transferlogs"
+    schemes = ["https"]
+    hosts = ["https://bigquerydatatransfer.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      transferMessages = "transferMessages"
+
+[[backends]]
+  group = "bigquery-data-transfer-v1"
+  url_pattern = "/v1/{parent}:scheduleRuns"
+  method = "POST"
+  host = ["https://bigquerydatatransfer.googleapis.com"]
+  url_keys = ["parent"]
+  whitelist = ["runs"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Transfers data from partner SaaS applications to Google BigQuery on a scheduled, managed basis."
+    version = "v1"
+    slug = "bigquery-data-transfer-v1-v1-parent-scheduleruns"
+    schemes = ["https"]
+    hosts = ["https://bigquerydatatransfer.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      runs = "runs"

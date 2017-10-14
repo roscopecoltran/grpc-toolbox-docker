@@ -1,0 +1,295 @@
+[[backends]]
+  group = "patientview-1-0"
+  url_pattern = "/auth/login"
+  method = "POST"
+  encoding = "json"
+  host = ["https://www.patientview.org"]
+  whitelist = ["auditActions", "checkSecretWord", "created", "expiration", "externalStandards", "groupFeatures", "groupMessagingEnabled", "mustSetSecretWord", "patientFeatures", "patientMessagingFeatureTypes", "patientRoles", "routes", "secretWord", "secretWordChoices", "secretWordIndexes", "secretWordToken", "securityRoles", "shouldEnterCondition", "staffFeatures", "staffRoles", "token", "userFeatures", "userGroups"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "patientview.org"
+    description = "The recommended REST API endpoints to be used when integrating with PatientView"
+    version = "1.0"
+    slug = "patientview-1-0-auth-login"
+    schemes = ["https"]
+    consumes = ["json"]
+    hosts = ["https://www.patientview.org"]
+    topics = ["auth-controller"]
+    [backends.extra_config.mapping]
+      auditActions = "auditActions"
+      checkSecretWord = "checkSecretWord"
+      created = "created"
+      expiration = "expiration"
+      externalStandards = "externalStandards"
+      groupFeatures = "groupFeatures"
+      groupMessagingEnabled = "groupMessagingEnabled"
+      mustSetSecretWord = "mustSetSecretWord"
+      patientFeatures = "patientFeatures"
+      patientMessagingFeatureTypes = "patientMessagingFeatureTypes"
+      patientRoles = "patientRoles"
+      routes = "routes"
+      secretWord = "secretWord"
+      secretWordChoices = "secretWordChoices"
+      secretWordIndexes = "secretWordIndexes"
+      secretWordToken = "secretWordToken"
+      securityRoles = "securityRoles"
+      shouldEnterCondition = "shouldEnterCondition"
+      staffFeatures = "staffFeatures"
+      staffRoles = "staffRoles"
+      token = "token"
+      userFeatures = "userFeatures"
+      userGroups = "userGroups"
+
+[[backends]]
+  group = "patientview-1-0"
+  url_pattern = "/auth/{token}/basicuserinformation"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.patientview.org"]
+  url_keys = ["token"]
+  whitelist = ["canSwitchUser", "changePassword", "contactNumber", "created", "currentLogin", "currentLoginIpAddress", "dateOfBirth", "deleted", "dummy", "email", "emailVerified", "forename", "groupRoles", "hideSecretWordNotification", "id", "identifiers", "lastLogin", "lastLoginIpAddress", "latestDataReceivedDate", "locked", "picture", "roleDescription", "secretWordIsSet", "surname", "userFeatures", "username"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "patientview.org"
+    description = "The recommended REST API endpoints to be used when integrating with PatientView"
+    version = "1.0"
+    slug = "patientview-1-0-auth-token-basicuserinformation"
+    schemes = ["https"]
+    consumes = ["json"]
+    hosts = ["https://www.patientview.org"]
+    topics = ["auth-controller"]
+    [backends.extra_config.mapping]
+      canSwitchUser = "canSwitchUser"
+      changePassword = "changePassword"
+      contactNumber = "contactNumber"
+      created = "created"
+      currentLogin = "currentLogin"
+      currentLoginIpAddress = "currentLoginIpAddress"
+      dateOfBirth = "dateOfBirth"
+      deleted = "deleted"
+      dummy = "dummy"
+      email = "email"
+      emailVerified = "emailVerified"
+      forename = "forename"
+      groupRoles = "groupRoles"
+      hideSecretWordNotification = "hideSecretWordNotification"
+      id = "id"
+      identifiers = "identifiers"
+      lastLogin = "lastLogin"
+      lastLoginIpAddress = "lastLoginIpAddress"
+      latestDataReceivedDate = "latestDataReceivedDate"
+      locked = "locked"
+      picture = "picture"
+      roleDescription = "roleDescription"
+      secretWordIsSet = "secretWordIsSet"
+      surname = "surname"
+      userFeatures = "userFeatures"
+      username = "username"
+
+[[backends]]
+  group = "patientview-1-0"
+  url_pattern = "/patient/{userId}/basic"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.patientview.org"]
+  url_keys = ["userId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "patientview.org"
+    description = "The recommended REST API endpoints to be used when integrating with PatientView"
+    version = "1.0"
+    slug = "patientview-1-0-patient-userid-basic"
+    schemes = ["https"]
+    consumes = ["json"]
+    hosts = ["https://www.patientview.org"]
+    topics = ["patient-controller"]
+
+[[backends]]
+  group = "patientview-1-0"
+  url_pattern = "/patientmanagement/diagnoses"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.patientview.org"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "patientview.org"
+    description = "The recommended REST API endpoints to be used when integrating with PatientView"
+    version = "1.0"
+    slug = "patientview-1-0-patientmanagement-diagnoses"
+    schemes = ["https"]
+    consumes = ["json"]
+    hosts = ["https://www.patientview.org"]
+    topics = ["patient-management-controller"]
+
+[[backends]]
+  group = "patientview-1-0"
+  url_pattern = "/patientmanagement/lookuptypes"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.patientview.org"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "patientview.org"
+    description = "The recommended REST API endpoints to be used when integrating with PatientView"
+    version = "1.0"
+    slug = "patientview-1-0-patientmanagement-lookuptypes"
+    schemes = ["https"]
+    consumes = ["json"]
+    hosts = ["https://www.patientview.org"]
+    topics = ["patient-management-controller"]
+
+[[backends]]
+  group = "patientview-1-0"
+  url_pattern = "/patientmanagement/validate"
+  method = "POST"
+  encoding = "json"
+  host = ["https://www.patientview.org"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "patientview.org"
+    description = "The recommended REST API endpoints to be used when integrating with PatientView"
+    version = "1.0"
+    slug = "patientview-1-0-patientmanagement-validate"
+    schemes = ["https"]
+    consumes = ["json"]
+    hosts = ["https://www.patientview.org"]
+    topics = ["patient-management-controller"]
+
+[[backends]]
+  group = "patientview-1-0"
+  url_pattern = "/patientmanagement/{userId}/group/{groupId}/identifier/{identifierId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.patientview.org"]
+  url_keys = ["groupId", "identifierId", "userId"]
+  whitelist = ["encounters", "groupCode", "identifier", "observations", "practitioners"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "patientview.org"
+    description = "The recommended REST API endpoints to be used when integrating with PatientView"
+    version = "1.0"
+    slug = "patientview-1-0-patientmanagement-userid-group-groupid-identifier-identifierid"
+    schemes = ["https"]
+    consumes = ["json"]
+    hosts = ["https://www.patientview.org"]
+    topics = ["patient-management-controller"]
+    [backends.extra_config.mapping]
+      encounters = "encounters"
+      groupCode = "groupCode"
+      identifier = "identifier"
+      observations = "observations"
+      practitioners = "practitioners"
+
+[[backends]]
+  group = "patientview-1-0"
+  url_pattern = "/patientmanagement/{userId}/group/{groupId}/identifier/{identifierId}/surgeries"
+  method = "POST"
+  encoding = "json"
+  host = ["https://www.patientview.org"]
+  url_keys = ["groupId", "identifierId", "userId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "patientview.org"
+    description = "The recommended REST API endpoints to be used when integrating with PatientView"
+    version = "1.0"
+    slug = "patientview-1-0-patientmanagement-userid-group-groupid-identifier-identifierid-surgeries"
+    schemes = ["https"]
+    consumes = ["json"]
+    hosts = ["https://www.patientview.org"]
+    topics = ["patient-management-controller"]
+
+[[backends]]
+  group = "patientview-1-0"
+  url_pattern = "/user/{userId}/availableobservationheadings"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.patientview.org"]
+  url_keys = ["userId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "patientview.org"
+    description = "The recommended REST API endpoints to be used when integrating with PatientView"
+    version = "1.0"
+    slug = "patientview-1-0-user-userid-availableobservationheadings"
+    schemes = ["https"]
+    consumes = ["json"]
+    hosts = ["https://www.patientview.org"]
+    topics = ["observation-heading-controller"]
+
+[[backends]]
+  group = "patientview-1-0"
+  url_pattern = "/user/{userId}/observations"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.patientview.org"]
+  url_keys = ["userId"]
+  query_string_params = ["code", "limit", "offset", "orderDirection"]
+  whitelist = ["data", "totalElements", "totalPages"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "patientview.org"
+    description = "The recommended REST API endpoints to be used when integrating with PatientView"
+    version = "1.0"
+    slug = "patientview-1-0-user-userid-observations"
+    schemes = ["https"]
+    consumes = ["json"]
+    hosts = ["https://www.patientview.org"]
+    topics = ["observation-controller"]
+    [backends.extra_config.mapping]
+      data = "data"
+      totalElements = "totalElements"
+      totalPages = "totalPages"
+
+[[backends]]
+  group = "patientview-1-0"
+  url_pattern = "/user/{userId}/observations/{code}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.patientview.org"]
+  url_keys = ["code", "userId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "patientview.org"
+    description = "The recommended REST API endpoints to be used when integrating with PatientView"
+    version = "1.0"
+    slug = "patientview-1-0-user-userid-observations-code"
+    schemes = ["https"]
+    consumes = ["json"]
+    hosts = ["https://www.patientview.org"]
+    topics = ["observation-controller"]
+
+[[backends]]
+  group = "patientview-1-0"
+  url_pattern = "/user/{userId}/observations/{code}/patiententered"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.patientview.org"]
+  url_keys = ["code", "userId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "patientview.org"
+    description = "The recommended REST API endpoints to be used when integrating with PatientView"
+    version = "1.0"
+    slug = "patientview-1-0-user-userid-observations-code-patiententered"
+    schemes = ["https"]
+    consumes = ["json"]
+    hosts = ["https://www.patientview.org"]
+    topics = ["observation-controller"]
+
+[[backends]]
+  group = "patientview-1-0"
+  url_pattern = "/user/{userId}/patiententeredobservationheadings"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.patientview.org"]
+  url_keys = ["userId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "patientview.org"
+    description = "The recommended REST API endpoints to be used when integrating with PatientView"
+    version = "1.0"
+    slug = "patientview-1-0-user-userid-patiententeredobservationheadings"
+    schemes = ["https"]
+    consumes = ["json"]
+    hosts = ["https://www.patientview.org"]
+    topics = ["observation-heading-controller"]

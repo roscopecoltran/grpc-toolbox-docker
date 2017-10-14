@@ -1,0 +1,638 @@
+backends:
+- group: hetras-booking-api-version-0-v0
+  url_pattern: /api/booking/v0/addons
+  method: GET
+  encoding: json
+  host:
+  - https://api.hetras-certification.net
+  query_string_params:
+  - adults
+  - arrivalDate
+  - channelCode
+  - departureDate
+  - expand
+  - hotelId
+  - ratePlanCode
+  - roomType
+  - rooms
+  header:
+  - App-Id
+  - App-Key
+  whitelist:
+  - addon_services
+  - adults
+  - arrival_date
+  - departure_date
+  - hotel_id
+  - hotel_name
+  - rooms
+  concurrent_calls: 1
+  extra_config:
+    provider: hetras-certification.net
+    version: v0
+    slug: hetras-booking-api-version-0-v0-api-booking-v0-addons
+    schemes:
+    - https
+    produces:
+    - json
+    - json
+    mapping:
+      addon_services: addon_services
+      adults: adults
+      arrival_date: arrival_date
+      departure_date: departure_date
+      hotel_id: hotel_id
+      hotel_name: hotel_name
+      rooms: rooms
+    hosts:
+    - https://api.hetras-certification.net
+    topics:
+    - addons
+- group: hetras-booking-api-version-0-v0
+  url_pattern: /api/booking/v0/availability
+  method: GET
+  encoding: json
+  host:
+  - https://api.hetras-certification.net
+  query_string_params:
+  - expand
+  - from
+  - hotelId
+  - inlinecount
+  - skip
+  - to
+  - top
+  header:
+  - App-Id
+  - App-Key
+  whitelist:
+  - _count
+  - _links
+  - daily_availabilities
+  concurrent_calls: 1
+  extra_config:
+    provider: hetras-certification.net
+    version: v0
+    slug: hetras-booking-api-version-0-v0-api-booking-v0-availability
+    schemes:
+    - https
+    produces:
+    - json
+    - json
+    mapping:
+      _count: _count
+      _links: _links
+      daily_availabilities: daily_availabilities
+    hosts:
+    - https://api.hetras-certification.net
+    topics:
+    - availability
+- group: hetras-booking-api-version-0-v0
+  url_pattern: /api/booking/v0/blocks
+  method: GET
+  encoding: json
+  host:
+  - https://api.hetras-certification.net
+  query_string_params:
+  - from
+  - groupCode
+  - hotelId
+  - inlinecount
+  - ratePlanCodes
+  - skip
+  - status
+  - to
+  - top
+  header:
+  - App-Id
+  - App-Key
+  whitelist:
+  - _count
+  - _links
+  - blocks
+  concurrent_calls: 1
+  extra_config:
+    provider: hetras-certification.net
+    version: v0
+    slug: hetras-booking-api-version-0-v0-api-booking-v0-blocks
+    schemes:
+    - https
+    produces:
+    - json
+    - json
+    mapping:
+      _count: _count
+      _links: _links
+      blocks: blocks
+    hosts:
+    - https://api.hetras-certification.net
+    topics:
+    - blocks
+- group: hetras-booking-api-version-0-v0
+  url_pattern: /api/booking/v0/blocks/$count
+  method: GET
+  encoding: json
+  host:
+  - https://api.hetras-certification.net
+  query_string_params:
+  - from
+  - groupCode
+  - hotelId
+  - ratePlanCodes
+  - status
+  - to
+  header:
+  - App-Id
+  - App-Key
+  whitelist:
+  - _count
+  concurrent_calls: 1
+  extra_config:
+    provider: hetras-certification.net
+    version: v0
+    slug: hetras-booking-api-version-0-v0-api-booking-v0-blocks-count
+    schemes:
+    - https
+    produces:
+    - json
+    - json
+    mapping:
+      _count: _count
+    hosts:
+    - https://api.hetras-certification.net
+    topics:
+    - blocks
+- group: hetras-booking-api-version-0-v0
+  url_pattern: /api/booking/v0/blocks/{blockCode}
+  method: GET
+  encoding: json
+  host:
+  - https://api.hetras-certification.net
+  url_keys:
+  - blockCode
+  header:
+  - App-Id
+  - App-Key
+  whitelist:
+  - _links
+  - average_daily_rate
+  - code
+  - count
+  - created
+  - first_arrival
+  - last_departure
+  - name
+  - picked
+  - rate_plans
+  - room_type_counts
+  - status
+  - updated
+  concurrent_calls: 1
+  extra_config:
+    provider: hetras-certification.net
+    version: v0
+    slug: hetras-booking-api-version-0-v0-api-booking-v0-blocks-blockcode
+    schemes:
+    - https
+    produces:
+    - json
+    - json
+    mapping:
+      _links: _links
+      average_daily_rate: average_daily_rate
+      code: code
+      count: count
+      created: created
+      first_arrival: first_arrival
+      last_departure: last_departure
+      name: name
+      picked: picked
+      rate_plans: rate_plans
+      room_type_counts: room_type_counts
+      status: status
+      updated: updated
+    hosts:
+    - https://api.hetras-certification.net
+    topics:
+    - blocks
+- group: hetras-booking-api-version-0-v0
+  url_pattern: /api/booking/v0/bookings
+  method: GET
+  encoding: json
+  host:
+  - https://api.hetras-certification.net
+  query_string_params:
+  - blockCode
+  - cancellationId
+  - channelCodes
+  - companyEmail
+  - companyId
+  - companyName
+  - customerEmail
+  - customerId
+  - customerName
+  - dateFilter
+  - externalId
+  - from
+  - hotelId
+  - inlinecount
+  - labels
+  - marketCodes
+  - ratePlanCodes
+  - reservationNumber
+  - reservationStatuses
+  - roomNumber
+  - roomTypes
+  - skip
+  - subChannelCodes
+  - to
+  - top
+  header:
+  - App-Id
+  - App-Key
+  whitelist:
+  - _count
+  - _links
+  - bookings
+  concurrent_calls: 1
+  extra_config:
+    provider: hetras-certification.net
+    version: v0
+    slug: hetras-booking-api-version-0-v0-api-booking-v0-bookings
+    schemes:
+    - https
+    produces:
+    - json
+    - json
+    mapping:
+      _count: _count
+      _links: _links
+      bookings: bookings
+    hosts:
+    - https://api.hetras-certification.net
+    topics:
+    - bookings
+- group: hetras-booking-api-version-0-v0
+  url_pattern: /api/booking/v0/bookings/$count
+  method: GET
+  encoding: json
+  host:
+  - https://api.hetras-certification.net
+  query_string_params:
+  - blockCode
+  - cancellationId
+  - channelCodes
+  - companyEmail
+  - companyId
+  - companyName
+  - customerEmail
+  - customerId
+  - customerName
+  - dateFilter
+  - externalId
+  - from
+  - hotelId
+  - labels
+  - marketCodes
+  - ratePlanCodes
+  - reservationNumber
+  - reservationStatuses
+  - roomNumber
+  - roomTypes
+  - subChannelCodes
+  - to
+  header:
+  - App-Id
+  - App-Key
+  whitelist:
+  - _count
+  concurrent_calls: 1
+  extra_config:
+    provider: hetras-certification.net
+    version: v0
+    slug: hetras-booking-api-version-0-v0-api-booking-v0-bookings-count
+    schemes:
+    - https
+    produces:
+    - json
+    - json
+    mapping:
+      _count: _count
+    hosts:
+    - https://api.hetras-certification.net
+    topics:
+    - bookings
+- group: hetras-booking-api-version-0-v0
+  url_pattern: /api/booking/v0/bookings/{confirmationId}
+  method: GET
+  encoding: json
+  host:
+  - https://api.hetras-certification.net
+  url_keys:
+  - confirmationId
+  query_string_params:
+  - expand
+  header:
+  - App-Id
+  - App-Key
+  whitelist:
+  - reservations
+  concurrent_calls: 1
+  extra_config:
+    provider: hetras-certification.net
+    version: v0
+    slug: hetras-booking-api-version-0-v0-api-booking-v0-bookings-confirmationid
+    schemes:
+    - https
+    produces:
+    - json
+    - json
+    mapping:
+      reservations: reservations
+    hosts:
+    - https://api.hetras-certification.net
+    topics:
+    - bookings
+- group: hetras-booking-api-version-0-v0
+  url_pattern: /api/booking/v0/bookings/{confirmationId}/reservations/{reservationNumber}
+  method: GET
+  encoding: json
+  host:
+  - https://api.hetras-certification.net
+  url_keys:
+  - confirmationId
+  - reservationNumber
+  query_string_params:
+  - expand
+  header:
+  - App-Id
+  - App-Key
+  whitelist:
+  - _warnings
+  - addon_services
+  - adults
+  - arrival_date
+  - balance
+  - cancellation_id
+  - cancellation_policies
+  - channel_code
+  - checkin_time
+  - checkout_time
+  - comment
+  - confirmation_id
+  - created
+  - currency
+  - departure_date
+  - external_id
+  - general_policies
+  - guests
+  - hotel_id
+  - labels
+  - market_code
+  - payment_method
+  - reservation_number
+  - reservation_status
+  - room_rates
+  - rooms
+  - services
+  - subchannel_code
+  - updated
+  concurrent_calls: 1
+  extra_config:
+    provider: hetras-certification.net
+    version: v0
+    slug: hetras-booking-api-version-0-v0-api-booking-v0-bookings-confirmationid-reservations-reservationnumber
+    schemes:
+    - https
+    produces:
+    - json
+    - json
+    mapping:
+      _warnings: _warnings
+      addon_services: addon_services
+      adults: adults
+      arrival_date: arrival_date
+      balance: balance
+      cancellation_id: cancellation_id
+      cancellation_policies: cancellation_policies
+      channel_code: channel_code
+      checkin_time: checkin_time
+      checkout_time: checkout_time
+      comment: comment
+      confirmation_id: confirmation_id
+      created: created
+      currency: currency
+      departure_date: departure_date
+      external_id: external_id
+      general_policies: general_policies
+      guests: guests
+      hotel_id: hotel_id
+      labels: labels
+      market_code: market_code
+      payment_method: payment_method
+      reservation_number: reservation_number
+      reservation_status: reservation_status
+      room_rates: room_rates
+      rooms: rooms
+      services: services
+      subchannel_code: subchannel_code
+      updated: updated
+    hosts:
+    - https://api.hetras-certification.net
+    topics:
+    - bookings
+- group: hetras-booking-api-version-0-v0
+  url_pattern: /api/booking/v0/bookings/{confirmationId}/reservations/{reservationNumber}/assign_room
+  method: POST
+  encoding: json
+  host:
+  - https://api.hetras-certification.net
+  url_keys:
+  - confirmationId
+  - reservationNumber
+  header:
+  - App-Id
+  - App-Key
+  whitelist:
+  - _warnings
+  - room_number
+  concurrent_calls: 1
+  extra_config:
+    provider: hetras-certification.net
+    version: v0
+    slug: hetras-booking-api-version-0-v0-api-booking-v0-bookings-confirmationid-reservations-reservationnumber-assign-room
+    schemes:
+    - https
+    produces:
+    - json
+    - json
+    mapping:
+      _warnings: _warnings
+      room_number: room_number
+    hosts:
+    - https://api.hetras-certification.net
+    topics:
+    - bookings
+- group: hetras-booking-api-version-0-v0
+  url_pattern: /api/booking/v0/bookings/{confirmationId}/reservations/{reservationNumber}/cancel
+  method: POST
+  encoding: json
+  host:
+  - https://api.hetras-certification.net
+  url_keys:
+  - confirmationId
+  - reservationNumber
+  header:
+  - App-Id
+  - App-Key
+  whitelist:
+  - _warnings
+  - balance
+  - cancellation_fee
+  - cancellation_id
+  concurrent_calls: 1
+  extra_config:
+    provider: hetras-certification.net
+    version: v0
+    slug: hetras-booking-api-version-0-v0-api-booking-v0-bookings-confirmationid-reservations-reservationnumber-cancel
+    schemes:
+    - https
+    produces:
+    - json
+    - json
+    mapping:
+      _warnings: _warnings
+      balance: balance
+      cancellation_fee: cancellation_fee
+      cancellation_id: cancellation_id
+    hosts:
+    - https://api.hetras-certification.net
+    topics:
+    - bookings
+- group: hetras-booking-api-version-0-v0
+  url_pattern: /api/booking/v0/bookings/{confirmationId}/reservations/{reservationNumber}/check_in
+  method: POST
+  encoding: json
+  host:
+  - https://api.hetras-certification.net
+  url_keys:
+  - confirmationId
+  - reservationNumber
+  header:
+  - App-Id
+  - App-Key
+  whitelist:
+  - _warnings
+  concurrent_calls: 1
+  extra_config:
+    provider: hetras-certification.net
+    version: v0
+    slug: hetras-booking-api-version-0-v0-api-booking-v0-bookings-confirmationid-reservations-reservationnumber-check-in
+    schemes:
+    - https
+    produces:
+    - json
+    - json
+    mapping:
+      _warnings: _warnings
+    hosts:
+    - https://api.hetras-certification.net
+    topics:
+    - bookings
+- group: hetras-booking-api-version-0-v0
+  url_pattern: /api/booking/v0/daily_rates
+  method: GET
+  encoding: json
+  host:
+  - https://api.hetras-certification.net
+  query_string_params:
+  - channelCode
+  - expand
+  - from
+  - hotelId
+  - inlinecount
+  - ratePlanCodes
+  - skip
+  - to
+  - top
+  header:
+  - App-Id
+  - App-Key
+  whitelist:
+  - _count
+  - _links
+  - daily_rates
+  - rateplans
+  - room_types
+  concurrent_calls: 1
+  extra_config:
+    provider: hetras-certification.net
+    version: v0
+    slug: hetras-booking-api-version-0-v0-api-booking-v0-daily-rates
+    schemes:
+    - https
+    produces:
+    - json
+    - json
+    mapping:
+      _count: _count
+      _links: _links
+      daily_rates: daily_rates
+      rateplans: rateplans
+      room_types: room_types
+    hosts:
+    - https://api.hetras-certification.net
+    topics:
+    - dailyrates
+- group: hetras-booking-api-version-0-v0
+  url_pattern: /api/booking/v0/rates
+  method: GET
+  encoding: json
+  host:
+  - https://api.hetras-certification.net
+  query_string_params:
+  - adults
+  - arrivalDate
+  - channelCode
+  - departureDate
+  - expand
+  - groupCode
+  - hotelId
+  - ratePlanCode
+  - roomType
+  - rooms
+  header:
+  - App-Id
+  - App-Key
+  whitelist:
+  - arrival_date
+  - departure_date
+  - hotel_id
+  - hotel_name
+  - rate_plans
+  - room_offers
+  - rooms
+  - services
+  concurrent_calls: 1
+  extra_config:
+    provider: hetras-certification.net
+    version: v0
+    slug: hetras-booking-api-version-0-v0-api-booking-v0-rates
+    schemes:
+    - https
+    produces:
+    - json
+    - json
+    mapping:
+      arrival_date: arrival_date
+      departure_date: departure_date
+      hotel_id: hotel_id
+      hotel_name: hotel_name
+      rate_plans: rate_plans
+      room_offers: room_offers
+      rooms: rooms
+      services: services
+    hosts:
+    - https://api.hetras-certification.net
+    topics:
+    - rates

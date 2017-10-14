@@ -1,0 +1,409 @@
+backends:
+- group: gototraining-1-0-0
+  url_pattern: /G2T/rest/accounts/{accountKey}/organizers
+  method: GET
+  encoding: json
+  host:
+  - https://api.getgo.com
+  concurrent_calls: 1
+  extra_config:
+    provider: getgo.com
+    description: The GoToTraining API enables developers to use the stable and robust
+      GoToTraining functionality as the basis for online trainings in a proprietary
+      learning management system. The GoToTraining APIs provide the ability to access
+      the scheduling, registration, management, and reporting functions of GoToTraining
+      from external applications. With the ability to tightly integrate GoToTraining
+      into your learning infrastructure, you can offer your learners a seamless user
+      experience and provide them with a market leading virtual classroom environment.
+    version: 1.0.0
+    slug: gototraining-1-0-0-g2t-rest-accounts-accountkey-organizers
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.getgo.com
+- group: gototraining-1-0-0
+  url_pattern: /G2T/rest/organizers/{organizerKey}/trainings
+  method: GET
+  encoding: json
+  host:
+  - https://api.getgo.com
+  concurrent_calls: 1
+  extra_config:
+    provider: getgo.com
+    description: The GoToTraining API enables developers to use the stable and robust
+      GoToTraining functionality as the basis for online trainings in a proprietary
+      learning management system. The GoToTraining APIs provide the ability to access
+      the scheduling, registration, management, and reporting functions of GoToTraining
+      from external applications. With the ability to tightly integrate GoToTraining
+      into your learning infrastructure, you can offer your learners a seamless user
+      experience and provide them with a market leading virtual classroom environment.
+    version: 1.0.0
+    slug: gototraining-1-0-0-g2t-rest-organizers-organizerkey-trainings
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.getgo.com
+- group: gototraining-1-0-0
+  url_pattern: /G2T/rest/organizers/{organizerKey}/trainings/{trainingKey}
+  method: GET
+  encoding: json
+  host:
+  - https://api.getgo.com
+  whitelist:
+  - description
+  - name
+  - organizers
+  - timeZone
+  - times
+  - trainingId
+  - trainingKey
+  concurrent_calls: 1
+  extra_config:
+    provider: getgo.com
+    description: The GoToTraining API enables developers to use the stable and robust
+      GoToTraining functionality as the basis for online trainings in a proprietary
+      learning management system. The GoToTraining APIs provide the ability to access
+      the scheduling, registration, management, and reporting functions of GoToTraining
+      from external applications. With the ability to tightly integrate GoToTraining
+      into your learning infrastructure, you can offer your learners a seamless user
+      experience and provide them with a market leading virtual classroom environment.
+    version: 1.0.0
+    slug: gototraining-1-0-0-g2t-rest-organizers-organizerkey-trainings-trainingkey
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      description: description
+      name: name
+      organizers: organizers
+      timeZone: timeZone
+      times: times
+      trainingId: trainingId
+      trainingKey: trainingKey
+    hosts:
+    - https://api.getgo.com
+- group: gototraining-1-0-0
+  url_pattern: /G2T/rest/organizers/{organizerKey}/trainings/{trainingKey}/manageUrl
+  method: GET
+  encoding: json
+  host:
+  - https://api.getgo.com
+  concurrent_calls: 1
+  extra_config:
+    provider: getgo.com
+    description: The GoToTraining API enables developers to use the stable and robust
+      GoToTraining functionality as the basis for online trainings in a proprietary
+      learning management system. The GoToTraining APIs provide the ability to access
+      the scheduling, registration, management, and reporting functions of GoToTraining
+      from external applications. With the ability to tightly integrate GoToTraining
+      into your learning infrastructure, you can offer your learners a seamless user
+      experience and provide them with a market leading virtual classroom environment.
+    version: 1.0.0
+    slug: gototraining-1-0-0-g2t-rest-organizers-organizerkey-trainings-trainingkey-manageurl
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.getgo.com
+- group: gototraining-1-0-0
+  url_pattern: /G2T/rest/organizers/{organizerKey}/trainings/{trainingKey}/organizers
+  method: GET
+  encoding: json
+  host:
+  - https://api.getgo.com
+  concurrent_calls: 1
+  extra_config:
+    provider: getgo.com
+    description: The GoToTraining API enables developers to use the stable and robust
+      GoToTraining functionality as the basis for online trainings in a proprietary
+      learning management system. The GoToTraining APIs provide the ability to access
+      the scheduling, registration, management, and reporting functions of GoToTraining
+      from external applications. With the ability to tightly integrate GoToTraining
+      into your learning infrastructure, you can offer your learners a seamless user
+      experience and provide them with a market leading virtual classroom environment.
+    version: 1.0.0
+    slug: gototraining-1-0-0-g2t-rest-organizers-organizerkey-trainings-trainingkey-organizers
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.getgo.com
+- group: gototraining-1-0-0
+  url_pattern: /G2T/rest/organizers/{organizerKey}/trainings/{trainingKey}/registrants
+  method: GET
+  encoding: json
+  host:
+  - https://api.getgo.com
+  concurrent_calls: 1
+  extra_config:
+    provider: getgo.com
+    description: The GoToTraining API enables developers to use the stable and robust
+      GoToTraining functionality as the basis for online trainings in a proprietary
+      learning management system. The GoToTraining APIs provide the ability to access
+      the scheduling, registration, management, and reporting functions of GoToTraining
+      from external applications. With the ability to tightly integrate GoToTraining
+      into your learning infrastructure, you can offer your learners a seamless user
+      experience and provide them with a market leading virtual classroom environment.
+    version: 1.0.0
+    slug: gototraining-1-0-0-g2t-rest-organizers-organizerkey-trainings-trainingkey-registrants
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.getgo.com
+- group: gototraining-1-0-0
+  url_pattern: /G2T/rest/organizers/{organizerKey}/trainings/{trainingKey}/registrants/{registrantKey}
+  method: GET
+  encoding: json
+  host:
+  - https://api.getgo.com
+  whitelist:
+  - confirmationUrl
+  - email
+  - givenName
+  - joinUrl
+  - registrantKey
+  - registrationDate
+  - status
+  - surname
+  concurrent_calls: 1
+  extra_config:
+    provider: getgo.com
+    description: The GoToTraining API enables developers to use the stable and robust
+      GoToTraining functionality as the basis for online trainings in a proprietary
+      learning management system. The GoToTraining APIs provide the ability to access
+      the scheduling, registration, management, and reporting functions of GoToTraining
+      from external applications. With the ability to tightly integrate GoToTraining
+      into your learning infrastructure, you can offer your learners a seamless user
+      experience and provide them with a market leading virtual classroom environment.
+    version: 1.0.0
+    slug: gototraining-1-0-0-g2t-rest-organizers-organizerkey-trainings-trainingkey-registrants-registrantkey
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      confirmationUrl: confirmationUrl
+      email: email
+      givenName: givenName
+      joinUrl: joinUrl
+      registrantKey: registrantKey
+      registrationDate: registrationDate
+      status: status
+      surname: surname
+    hosts:
+    - https://api.getgo.com
+- group: gototraining-1-0-0
+  url_pattern: /G2T/rest/organizers/{organizerKey}/trainings/{trainingKey}/startUrl
+  method: GET
+  encoding: json
+  host:
+  - https://api.getgo.com
+  concurrent_calls: 1
+  extra_config:
+    provider: getgo.com
+    description: The GoToTraining API enables developers to use the stable and robust
+      GoToTraining functionality as the basis for online trainings in a proprietary
+      learning management system. The GoToTraining APIs provide the ability to access
+      the scheduling, registration, management, and reporting functions of GoToTraining
+      from external applications. With the ability to tightly integrate GoToTraining
+      into your learning infrastructure, you can offer your learners a seamless user
+      experience and provide them with a market leading virtual classroom environment.
+    version: 1.0.0
+    slug: gototraining-1-0-0-g2t-rest-organizers-organizerkey-trainings-trainingkey-starturl
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.getgo.com
+- group: gototraining-1-0-0
+  url_pattern: /G2T/rest/reports/organizers/{organizerKey}/sessions
+  method: POST
+  encoding: json
+  host:
+  - https://api.getgo.com
+  concurrent_calls: 1
+  extra_config:
+    provider: getgo.com
+    description: The GoToTraining API enables developers to use the stable and robust
+      GoToTraining functionality as the basis for online trainings in a proprietary
+      learning management system. The GoToTraining APIs provide the ability to access
+      the scheduling, registration, management, and reporting functions of GoToTraining
+      from external applications. With the ability to tightly integrate GoToTraining
+      into your learning infrastructure, you can offer your learners a seamless user
+      experience and provide them with a market leading virtual classroom environment.
+    version: 1.0.0
+    slug: gototraining-1-0-0-g2t-rest-reports-organizers-organizerkey-sessions
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.getgo.com
+- group: gototraining-1-0-0
+  url_pattern: /G2T/rest/reports/organizers/{organizerKey}/sessions/{sessionKey}/attendees
+  method: GET
+  encoding: json
+  host:
+  - https://api.getgo.com
+  concurrent_calls: 1
+  extra_config:
+    provider: getgo.com
+    description: The GoToTraining API enables developers to use the stable and robust
+      GoToTraining functionality as the basis for online trainings in a proprietary
+      learning management system. The GoToTraining APIs provide the ability to access
+      the scheduling, registration, management, and reporting functions of GoToTraining
+      from external applications. With the ability to tightly integrate GoToTraining
+      into your learning infrastructure, you can offer your learners a seamless user
+      experience and provide them with a market leading virtual classroom environment.
+    version: 1.0.0
+    slug: gototraining-1-0-0-g2t-rest-reports-organizers-organizerkey-sessions-sessionkey-attendees
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.getgo.com
+- group: gototraining-1-0-0
+  url_pattern: /G2T/rest/reports/organizers/{organizerKey}/trainings/{trainingKey}
+  method: GET
+  encoding: json
+  host:
+  - https://api.getgo.com
+  concurrent_calls: 1
+  extra_config:
+    provider: getgo.com
+    description: The GoToTraining API enables developers to use the stable and robust
+      GoToTraining functionality as the basis for online trainings in a proprietary
+      learning management system. The GoToTraining APIs provide the ability to access
+      the scheduling, registration, management, and reporting functions of GoToTraining
+      from external applications. With the ability to tightly integrate GoToTraining
+      into your learning infrastructure, you can offer your learners a seamless user
+      experience and provide them with a market leading virtual classroom environment.
+    version: 1.0.0
+    slug: gototraining-1-0-0-g2t-rest-reports-organizers-organizerkey-trainings-trainingkey
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.getgo.com
+- group: gototraining-1-0-0
+  url_pattern: /G2T/rest/trainings/{trainingKey}/recordings
+  method: GET
+  encoding: json
+  host:
+  - https://api.getgo.com
+  whitelist:
+  - recordingList
+  - trainingKey
+  concurrent_calls: 1
+  extra_config:
+    provider: getgo.com
+    description: The GoToTraining API enables developers to use the stable and robust
+      GoToTraining functionality as the basis for online trainings in a proprietary
+      learning management system. The GoToTraining APIs provide the ability to access
+      the scheduling, registration, management, and reporting functions of GoToTraining
+      from external applications. With the ability to tightly integrate GoToTraining
+      into your learning infrastructure, you can offer your learners a seamless user
+      experience and provide them with a market leading virtual classroom environment.
+    version: 1.0.0
+    slug: gototraining-1-0-0-g2t-rest-trainings-trainingkey-recordings
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      recordingList: recordingList
+      trainingKey: trainingKey
+    hosts:
+    - https://api.getgo.com
+- group: gototraining-1-0-0
+  url_pattern: /G2T/rest/trainings/{trainingKey}/recordings/{recordingId}
+  method: GET
+  encoding: json
+  host:
+  - https://api.getgo.com
+  concurrent_calls: 1
+  extra_config:
+    provider: getgo.com
+    description: The GoToTraining API enables developers to use the stable and robust
+      GoToTraining functionality as the basis for online trainings in a proprietary
+      learning management system. The GoToTraining APIs provide the ability to access
+      the scheduling, registration, management, and reporting functions of GoToTraining
+      from external applications. With the ability to tightly integrate GoToTraining
+      into your learning infrastructure, you can offer your learners a seamless user
+      experience and provide them with a market leading virtual classroom environment.
+    version: 1.0.0
+    slug: gototraining-1-0-0-g2t-rest-trainings-trainingkey-recordings-recordingid
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.getgo.com
+- group: gototraining-1-0-0
+  url_pattern: /G2T/rest/trainings/{trainingKey}/start
+  method: GET
+  encoding: json
+  host:
+  - https://api.getgo.com
+  whitelist:
+  - hostURL
+  concurrent_calls: 1
+  extra_config:
+    provider: getgo.com
+    description: The GoToTraining API enables developers to use the stable and robust
+      GoToTraining functionality as the basis for online trainings in a proprietary
+      learning management system. The GoToTraining APIs provide the ability to access
+      the scheduling, registration, management, and reporting functions of GoToTraining
+      from external applications. With the ability to tightly integrate GoToTraining
+      into your learning infrastructure, you can offer your learners a seamless user
+      experience and provide them with a market leading virtual classroom environment.
+    version: 1.0.0
+    slug: gototraining-1-0-0-g2t-rest-trainings-trainingkey-start
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      hostURL: hostURL
+    hosts:
+    - https://api.getgo.com

@@ -1,0 +1,2577 @@
+{
+	"backends": [
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#AdminAddUserToGroup",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-adminaddusertogroup",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#AdminConfirmSignUp",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-adminconfirmsignup",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#AdminCreateUser",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-admincreateuser",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#AdminDeleteUser",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-admindeleteuser",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#AdminDeleteUserAttributes",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-admindeleteuserattributes",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#AdminDisableProviderForUser",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-admindisableproviderforuser",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#AdminDisableUser",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-admindisableuser",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#AdminEnableUser",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-adminenableuser",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#AdminForgetDevice",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-adminforgetdevice",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#AdminGetDevice",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-admingetdevice",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#AdminGetUser",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-admingetuser",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#AdminInitiateAuth",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-admininitiateauth",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#AdminLinkProviderForUser",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-adminlinkproviderforuser",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#AdminListDevices",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-adminlistdevices",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#AdminListGroupsForUser",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-adminlistgroupsforuser",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#AdminRemoveUserFromGroup",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-adminremoveuserfromgroup",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#AdminResetUserPassword",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-adminresetuserpassword",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#AdminRespondToAuthChallenge",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-adminrespondtoauthchallenge",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#AdminSetUserSettings",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-adminsetusersettings",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#AdminUpdateDeviceStatus",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-adminupdatedevicestatus",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#AdminUpdateUserAttributes",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-adminupdateuserattributes",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#AdminUserGlobalSignOut",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-adminuserglobalsignout",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#ChangePassword",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-changepassword",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#ConfirmDevice",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-confirmdevice",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#ConfirmForgotPassword",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-confirmforgotpassword",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#ConfirmSignUp",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-confirmsignup",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#CreateGroup",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-creategroup",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#CreateIdentityProvider",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-createidentityprovider",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#CreateResourceServer",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-createresourceserver",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#CreateUserImportJob",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-createuserimportjob",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#CreateUserPool",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-createuserpool",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#CreateUserPoolClient",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-createuserpoolclient",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#CreateUserPoolDomain",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-createuserpooldomain",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#DeleteGroup",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-deletegroup",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#DeleteIdentityProvider",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-deleteidentityprovider",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#DeleteResourceServer",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-deleteresourceserver",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#DeleteUser",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-deleteuser",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#DeleteUserAttributes",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-deleteuserattributes",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#DeleteUserPool",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-deleteuserpool",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#DeleteUserPoolClient",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-deleteuserpoolclient",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#DeleteUserPoolDomain",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-deleteuserpooldomain",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#DescribeIdentityProvider",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-describeidentityprovider",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#DescribeResourceServer",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-describeresourceserver",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#DescribeUserImportJob",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-describeuserimportjob",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#DescribeUserPool",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-describeuserpool",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#DescribeUserPoolClient",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-describeuserpoolclient",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#DescribeUserPoolDomain",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-describeuserpooldomain",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#ForgetDevice",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-forgetdevice",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#ForgotPassword",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-forgotpassword",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#GetCSVHeader",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-getcsvheader",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#GetDevice",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-getdevice",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#GetGroup",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-getgroup",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#GetIdentityProviderByIdentifier",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-getidentityproviderbyidentifier",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#GetUICustomization",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-getuicustomization",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#GetUser",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-getuser",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#GetUserAttributeVerificationCode",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-getuserattributeverificationcode",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#GlobalSignOut",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-globalsignout",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#InitiateAuth",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-initiateauth",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#ListDevices",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-listdevices",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#ListGroups",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-listgroups",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#ListIdentityProviders",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-listidentityproviders",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#ListResourceServers",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-listresourceservers",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#ListUserImportJobs",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-listuserimportjobs",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#ListUserPoolClients",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-listuserpoolclients",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#ListUserPools",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-listuserpools",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#ListUsers",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-listusers",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#ListUsersInGroup",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-listusersingroup",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#ResendConfirmationCode",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-resendconfirmationcode",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#RespondToAuthChallenge",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-respondtoauthchallenge",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#SetUICustomization",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-setuicustomization",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#SetUserSettings",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-setusersettings",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#SignUp",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-signup",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#StartUserImportJob",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-startuserimportjob",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#StopUserImportJob",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-stopuserimportjob",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#UpdateDeviceStatus",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-updatedevicestatus",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#UpdateGroup",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-updategroup",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#UpdateIdentityProvider",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-updateidentityprovider",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#UpdateResourceServer",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-updateresourceserver",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#UpdateUserAttributes",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-updateuserattributes",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#UpdateUserPool",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-updateuserpool",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#UpdateUserPoolClient",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-updateuserpoolclient",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/#VerifyUserAttribute",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18-verifyuserattribute",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-cognito-identity-provider-2016-04-18",
+			"url_pattern": "/",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://cognito-idp.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cp\u003eUsing the Amazon Cognito User Pools API, you can create a user pool to manage directories and users. You can authenticate a user to obtain tokens related to user identity and access policies.\u003c/p\u003e \u003cp\u003eThis API reference provides information about user pools in Amazon Cognito User Pools.\u003c/p\u003e \u003cp\u003eFor more information, see the Amazon Cognito Documentation.\u003c/p\u003e",
+				"version": "2016-04-18",
+				"slug": "amazon-cognito-identity-provider-2016-04-18",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://cognito-idp.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,1045 @@
+backends:
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /#CountOpenWorkflowExecutions
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25-countopenworkflowexecutions
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /#CountPendingActivityTasks
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25-countpendingactivitytasks
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /#CountPendingDecisionTasks
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25-countpendingdecisiontasks
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /#DeprecateActivityType
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25-deprecateactivitytype
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /#DeprecateDomain
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25-deprecatedomain
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /#DeprecateWorkflowType
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25-deprecateworkflowtype
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /#DescribeActivityType
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25-describeactivitytype
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /#DescribeDomain
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25-describedomain
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /#DescribeWorkflowExecution
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25-describeworkflowexecution
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /#DescribeWorkflowType
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25-describeworkflowtype
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /#GetWorkflowExecutionHistory
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  query_string_params:
+  - maximumPageSize
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25-getworkflowexecutionhistory
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /#ListActivityTypes
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  query_string_params:
+  - maximumPageSize
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25-listactivitytypes
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /#ListClosedWorkflowExecutions
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  query_string_params:
+  - maximumPageSize
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25-listclosedworkflowexecutions
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /#ListDomains
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  query_string_params:
+  - maximumPageSize
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25-listdomains
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /#ListOpenWorkflowExecutions
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  query_string_params:
+  - maximumPageSize
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25-listopenworkflowexecutions
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /#ListWorkflowTypes
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  query_string_params:
+  - maximumPageSize
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25-listworkflowtypes
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /#PollForActivityTask
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25-pollforactivitytask
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /#PollForDecisionTask
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  query_string_params:
+  - maximumPageSize
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25-pollfordecisiontask
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /#RecordActivityTaskHeartbeat
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25-recordactivitytaskheartbeat
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /#RegisterActivityType
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25-registeractivitytype
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /#RegisterDomain
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25-registerdomain
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /#RegisterWorkflowType
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25-registerworkflowtype
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /#RequestCancelWorkflowExecution
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25-requestcancelworkflowexecution
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /#RespondActivityTaskCanceled
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25-respondactivitytaskcanceled
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /#RespondActivityTaskCompleted
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25-respondactivitytaskcompleted
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /#RespondActivityTaskFailed
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25-respondactivitytaskfailed
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /#RespondDecisionTaskCompleted
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25-responddecisiontaskcompleted
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /#SignalWorkflowExecution
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25-signalworkflowexecution
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /#StartWorkflowExecution
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25-startworkflowexecution
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /#TerminateWorkflowExecution
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25-terminateworkflowexecution
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-workflow-service-2012-01-25
+  url_pattern: /
+  method: POST
+  encoding: json
+  host:
+  - http://swf.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon
+      Simple Workflow Service (Amazon SWF) makes it easy to build applications that
+      use Amazon's cloud to coordinate work across distributed components. In Amazon
+      SWF, a <i>task</i> represents a logical unit of work that is performed by a
+      component of your workflow. Coordinating tasks in a workflow involves managing
+      intertask dependencies, scheduling, and concurrency in accordance with the logical
+      flow of the application.</p> <p>Amazon SWF gives you full control over implementing
+      tasks and coordinating them without worrying about underlying complexities such
+      as tracking their progress and maintaining their state.</p> <p>This documentation
+      serves as reference only. For a broader overview of the Amazon SWF programming
+      model, see the <i> <a href="http://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
+      SWF Developer Guide</a> </i>.</p>
+    version: 2012-01-25
+    slug: amazon-simple-workflow-service-2012-01-25
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://swf.amazonaws.com
+    topics:
+    - cloud

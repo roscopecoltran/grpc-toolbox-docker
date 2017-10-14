@@ -1,0 +1,98 @@
+[[backends]]
+  group = "the-consumer-financial-protection-bureau-1-0"
+  url_pattern = "/data"
+  method = "GET"
+  host = ["https://api.consumerfinance.gov:443"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "consumerfinance.gov"
+    description = "Learn more about home mortgage data, download the data yourself, or build new tools using our API."
+    version = "1.0"
+    slug = "the-consumer-financial-protection-bureau-1-0-data"
+    schemes = ["https"]
+    hosts = ["https://api.consumerfinance.gov:443"]
+    topics = ["data", "financial"]
+
+[[backends]]
+  group = "the-consumer-financial-protection-bureau-1-0"
+  url_pattern = "/data/hmda"
+  method = "GET"
+  host = ["https://api.consumerfinance.gov:443"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "consumerfinance.gov"
+    description = "Learn more about home mortgage data, download the data yourself, or build new tools using our API."
+    version = "1.0"
+    slug = "the-consumer-financial-protection-bureau-1-0-data-hmda"
+    schemes = ["https"]
+    hosts = ["https://api.consumerfinance.gov:443"]
+    topics = ["financial", "hmda"]
+
+[[backends]]
+  group = "the-consumer-financial-protection-bureau-1-0"
+  url_pattern = "/data/hmda/concept/{concept}"
+  method = "GET"
+  host = ["https://api.consumerfinance.gov:443"]
+  url_keys = ["concept"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "consumerfinance.gov"
+    description = "Learn more about home mortgage data, download the data yourself, or build new tools using our API."
+    version = "1.0"
+    slug = "the-consumer-financial-protection-bureau-1-0-data-hmda-concept-concept"
+    schemes = ["https"]
+    hosts = ["https://api.consumerfinance.gov:443"]
+    topics = ["financial", "hmda"]
+
+[[backends]]
+  group = "the-consumer-financial-protection-bureau-1-0"
+  url_pattern = "/data/hmda/slice/{slice}"
+  method = "GET"
+  host = ["https://api.consumerfinance.gov:443"]
+  url_keys = ["slice"]
+  query_string_params = ["$callback", "$group", "$limit", "$offset", "$orderBy", "$select", "$where"]
+  whitelist = ["size", "total"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "consumerfinance.gov"
+    description = "Learn more about home mortgage data, download the data yourself, or build new tools using our API."
+    version = "1.0"
+    slug = "the-consumer-financial-protection-bureau-1-0-data-hmda-slice-slice"
+    schemes = ["https"]
+    hosts = ["https://api.consumerfinance.gov:443"]
+    topics = ["financial", "hmda"]
+    [backends.extra_config.mapping]
+      size = "size"
+      total = "total"
+
+[[backends]]
+  group = "the-consumer-financial-protection-bureau-1-0"
+  url_pattern = "/data/hmda/slice/{slice}/metadata"
+  method = "GET"
+  host = ["https://api.consumerfinance.gov:443"]
+  url_keys = ["slice"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "consumerfinance.gov"
+    description = "Learn more about home mortgage data, download the data yourself, or build new tools using our API."
+    version = "1.0"
+    slug = "the-consumer-financial-protection-bureau-1-0-data-hmda-slice-slice-metadata"
+    schemes = ["https"]
+    hosts = ["https://api.consumerfinance.gov:443"]
+    topics = ["financial", "hmda"]
+
+[[backends]]
+  group = "the-consumer-financial-protection-bureau-1-0"
+  url_pattern = "/data/{dataset}"
+  method = "GET"
+  host = ["https://api.consumerfinance.gov:443"]
+  url_keys = ["dataset"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "consumerfinance.gov"
+    description = "Learn more about home mortgage data, download the data yourself, or build new tools using our API."
+    version = "1.0"
+    slug = "the-consumer-financial-protection-bureau-1-0-data-dataset"
+    schemes = ["https"]
+    hosts = ["https://api.consumerfinance.gov:443"]
+    topics = ["data", "financial"]

@@ -1,0 +1,429 @@
+backends:
+- group: amazon-cloudwatch-2010-08-01
+  url_pattern: /#DeleteDashboards
+  method: POST
+  host:
+  - http://monitoring.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <p>Amazon CloudWatch monitors your Amazon Web Services (AWS) resources
+      and the applications you run on AWS in real time. You can use CloudWatch to
+      collect and track metrics, which are the variables you want to measure for your
+      resources and applications.</p> <p>CloudWatch alarms send notifications or automatically
+      change the resources you are monitoring based on rules that you define. For
+      example, you can monitor the CPU usage and disk reads and writes of your Amazon
+      EC2 instances. Then, use this data to determine whether you should launch additional
+      instances to handle increased load. You can also use this data to stop under-used
+      instances to save money.</p> <p>In addition to monitoring the built-in metrics
+      that come with AWS, you can monitor your own custom metrics. With CloudWatch,
+      you gain system-wide visibility into resource utilization, application performance,
+      and operational health.</p>
+    version: 2010-08-01
+    slug: amazon-cloudwatch-2010-08-01-deletedashboards
+    schemes:
+    - http
+    hosts:
+    - http://monitoring.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudwatch-2010-08-01
+  url_pattern: /#DescribeAlarmHistory
+  method: POST
+  host:
+  - http://monitoring.amazonaws.com
+  query_string_params:
+  - MaxRecords
+  - NextToken
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <p>Amazon CloudWatch monitors your Amazon Web Services (AWS) resources
+      and the applications you run on AWS in real time. You can use CloudWatch to
+      collect and track metrics, which are the variables you want to measure for your
+      resources and applications.</p> <p>CloudWatch alarms send notifications or automatically
+      change the resources you are monitoring based on rules that you define. For
+      example, you can monitor the CPU usage and disk reads and writes of your Amazon
+      EC2 instances. Then, use this data to determine whether you should launch additional
+      instances to handle increased load. You can also use this data to stop under-used
+      instances to save money.</p> <p>In addition to monitoring the built-in metrics
+      that come with AWS, you can monitor your own custom metrics. With CloudWatch,
+      you gain system-wide visibility into resource utilization, application performance,
+      and operational health.</p>
+    version: 2010-08-01
+    slug: amazon-cloudwatch-2010-08-01-describealarmhistory
+    schemes:
+    - http
+    hosts:
+    - http://monitoring.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudwatch-2010-08-01
+  url_pattern: /#DescribeAlarms
+  method: POST
+  host:
+  - http://monitoring.amazonaws.com
+  query_string_params:
+  - MaxRecords
+  - NextToken
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <p>Amazon CloudWatch monitors your Amazon Web Services (AWS) resources
+      and the applications you run on AWS in real time. You can use CloudWatch to
+      collect and track metrics, which are the variables you want to measure for your
+      resources and applications.</p> <p>CloudWatch alarms send notifications or automatically
+      change the resources you are monitoring based on rules that you define. For
+      example, you can monitor the CPU usage and disk reads and writes of your Amazon
+      EC2 instances. Then, use this data to determine whether you should launch additional
+      instances to handle increased load. You can also use this data to stop under-used
+      instances to save money.</p> <p>In addition to monitoring the built-in metrics
+      that come with AWS, you can monitor your own custom metrics. With CloudWatch,
+      you gain system-wide visibility into resource utilization, application performance,
+      and operational health.</p>
+    version: 2010-08-01
+    slug: amazon-cloudwatch-2010-08-01-describealarms
+    schemes:
+    - http
+    hosts:
+    - http://monitoring.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudwatch-2010-08-01
+  url_pattern: /#DescribeAlarmsForMetric
+  method: POST
+  host:
+  - http://monitoring.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <p>Amazon CloudWatch monitors your Amazon Web Services (AWS) resources
+      and the applications you run on AWS in real time. You can use CloudWatch to
+      collect and track metrics, which are the variables you want to measure for your
+      resources and applications.</p> <p>CloudWatch alarms send notifications or automatically
+      change the resources you are monitoring based on rules that you define. For
+      example, you can monitor the CPU usage and disk reads and writes of your Amazon
+      EC2 instances. Then, use this data to determine whether you should launch additional
+      instances to handle increased load. You can also use this data to stop under-used
+      instances to save money.</p> <p>In addition to monitoring the built-in metrics
+      that come with AWS, you can monitor your own custom metrics. With CloudWatch,
+      you gain system-wide visibility into resource utilization, application performance,
+      and operational health.</p>
+    version: 2010-08-01
+    slug: amazon-cloudwatch-2010-08-01-describealarmsformetric
+    schemes:
+    - http
+    hosts:
+    - http://monitoring.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudwatch-2010-08-01
+  url_pattern: /#DisableAlarmActions
+  method: POST
+  host:
+  - http://monitoring.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <p>Amazon CloudWatch monitors your Amazon Web Services (AWS) resources
+      and the applications you run on AWS in real time. You can use CloudWatch to
+      collect and track metrics, which are the variables you want to measure for your
+      resources and applications.</p> <p>CloudWatch alarms send notifications or automatically
+      change the resources you are monitoring based on rules that you define. For
+      example, you can monitor the CPU usage and disk reads and writes of your Amazon
+      EC2 instances. Then, use this data to determine whether you should launch additional
+      instances to handle increased load. You can also use this data to stop under-used
+      instances to save money.</p> <p>In addition to monitoring the built-in metrics
+      that come with AWS, you can monitor your own custom metrics. With CloudWatch,
+      you gain system-wide visibility into resource utilization, application performance,
+      and operational health.</p>
+    version: 2010-08-01
+    slug: amazon-cloudwatch-2010-08-01-disablealarmactions
+    schemes:
+    - http
+    hosts:
+    - http://monitoring.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudwatch-2010-08-01
+  url_pattern: /#EnableAlarmActions
+  method: POST
+  host:
+  - http://monitoring.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <p>Amazon CloudWatch monitors your Amazon Web Services (AWS) resources
+      and the applications you run on AWS in real time. You can use CloudWatch to
+      collect and track metrics, which are the variables you want to measure for your
+      resources and applications.</p> <p>CloudWatch alarms send notifications or automatically
+      change the resources you are monitoring based on rules that you define. For
+      example, you can monitor the CPU usage and disk reads and writes of your Amazon
+      EC2 instances. Then, use this data to determine whether you should launch additional
+      instances to handle increased load. You can also use this data to stop under-used
+      instances to save money.</p> <p>In addition to monitoring the built-in metrics
+      that come with AWS, you can monitor your own custom metrics. With CloudWatch,
+      you gain system-wide visibility into resource utilization, application performance,
+      and operational health.</p>
+    version: 2010-08-01
+    slug: amazon-cloudwatch-2010-08-01-enablealarmactions
+    schemes:
+    - http
+    hosts:
+    - http://monitoring.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudwatch-2010-08-01
+  url_pattern: /#GetDashboard
+  method: POST
+  host:
+  - http://monitoring.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <p>Amazon CloudWatch monitors your Amazon Web Services (AWS) resources
+      and the applications you run on AWS in real time. You can use CloudWatch to
+      collect and track metrics, which are the variables you want to measure for your
+      resources and applications.</p> <p>CloudWatch alarms send notifications or automatically
+      change the resources you are monitoring based on rules that you define. For
+      example, you can monitor the CPU usage and disk reads and writes of your Amazon
+      EC2 instances. Then, use this data to determine whether you should launch additional
+      instances to handle increased load. You can also use this data to stop under-used
+      instances to save money.</p> <p>In addition to monitoring the built-in metrics
+      that come with AWS, you can monitor your own custom metrics. With CloudWatch,
+      you gain system-wide visibility into resource utilization, application performance,
+      and operational health.</p>
+    version: 2010-08-01
+    slug: amazon-cloudwatch-2010-08-01-getdashboard
+    schemes:
+    - http
+    hosts:
+    - http://monitoring.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudwatch-2010-08-01
+  url_pattern: /#GetMetricStatistics
+  method: POST
+  host:
+  - http://monitoring.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <p>Amazon CloudWatch monitors your Amazon Web Services (AWS) resources
+      and the applications you run on AWS in real time. You can use CloudWatch to
+      collect and track metrics, which are the variables you want to measure for your
+      resources and applications.</p> <p>CloudWatch alarms send notifications or automatically
+      change the resources you are monitoring based on rules that you define. For
+      example, you can monitor the CPU usage and disk reads and writes of your Amazon
+      EC2 instances. Then, use this data to determine whether you should launch additional
+      instances to handle increased load. You can also use this data to stop under-used
+      instances to save money.</p> <p>In addition to monitoring the built-in metrics
+      that come with AWS, you can monitor your own custom metrics. With CloudWatch,
+      you gain system-wide visibility into resource utilization, application performance,
+      and operational health.</p>
+    version: 2010-08-01
+    slug: amazon-cloudwatch-2010-08-01-getmetricstatistics
+    schemes:
+    - http
+    hosts:
+    - http://monitoring.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudwatch-2010-08-01
+  url_pattern: /#ListDashboards
+  method: POST
+  host:
+  - http://monitoring.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <p>Amazon CloudWatch monitors your Amazon Web Services (AWS) resources
+      and the applications you run on AWS in real time. You can use CloudWatch to
+      collect and track metrics, which are the variables you want to measure for your
+      resources and applications.</p> <p>CloudWatch alarms send notifications or automatically
+      change the resources you are monitoring based on rules that you define. For
+      example, you can monitor the CPU usage and disk reads and writes of your Amazon
+      EC2 instances. Then, use this data to determine whether you should launch additional
+      instances to handle increased load. You can also use this data to stop under-used
+      instances to save money.</p> <p>In addition to monitoring the built-in metrics
+      that come with AWS, you can monitor your own custom metrics. With CloudWatch,
+      you gain system-wide visibility into resource utilization, application performance,
+      and operational health.</p>
+    version: 2010-08-01
+    slug: amazon-cloudwatch-2010-08-01-listdashboards
+    schemes:
+    - http
+    hosts:
+    - http://monitoring.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudwatch-2010-08-01
+  url_pattern: /#ListMetrics
+  method: POST
+  host:
+  - http://monitoring.amazonaws.com
+  query_string_params:
+  - NextToken
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <p>Amazon CloudWatch monitors your Amazon Web Services (AWS) resources
+      and the applications you run on AWS in real time. You can use CloudWatch to
+      collect and track metrics, which are the variables you want to measure for your
+      resources and applications.</p> <p>CloudWatch alarms send notifications or automatically
+      change the resources you are monitoring based on rules that you define. For
+      example, you can monitor the CPU usage and disk reads and writes of your Amazon
+      EC2 instances. Then, use this data to determine whether you should launch additional
+      instances to handle increased load. You can also use this data to stop under-used
+      instances to save money.</p> <p>In addition to monitoring the built-in metrics
+      that come with AWS, you can monitor your own custom metrics. With CloudWatch,
+      you gain system-wide visibility into resource utilization, application performance,
+      and operational health.</p>
+    version: 2010-08-01
+    slug: amazon-cloudwatch-2010-08-01-listmetrics
+    schemes:
+    - http
+    hosts:
+    - http://monitoring.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudwatch-2010-08-01
+  url_pattern: /#PutDashboard
+  method: POST
+  host:
+  - http://monitoring.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <p>Amazon CloudWatch monitors your Amazon Web Services (AWS) resources
+      and the applications you run on AWS in real time. You can use CloudWatch to
+      collect and track metrics, which are the variables you want to measure for your
+      resources and applications.</p> <p>CloudWatch alarms send notifications or automatically
+      change the resources you are monitoring based on rules that you define. For
+      example, you can monitor the CPU usage and disk reads and writes of your Amazon
+      EC2 instances. Then, use this data to determine whether you should launch additional
+      instances to handle increased load. You can also use this data to stop under-used
+      instances to save money.</p> <p>In addition to monitoring the built-in metrics
+      that come with AWS, you can monitor your own custom metrics. With CloudWatch,
+      you gain system-wide visibility into resource utilization, application performance,
+      and operational health.</p>
+    version: 2010-08-01
+    slug: amazon-cloudwatch-2010-08-01-putdashboard
+    schemes:
+    - http
+    hosts:
+    - http://monitoring.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudwatch-2010-08-01
+  url_pattern: /#PutMetricAlarm
+  method: POST
+  host:
+  - http://monitoring.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <p>Amazon CloudWatch monitors your Amazon Web Services (AWS) resources
+      and the applications you run on AWS in real time. You can use CloudWatch to
+      collect and track metrics, which are the variables you want to measure for your
+      resources and applications.</p> <p>CloudWatch alarms send notifications or automatically
+      change the resources you are monitoring based on rules that you define. For
+      example, you can monitor the CPU usage and disk reads and writes of your Amazon
+      EC2 instances. Then, use this data to determine whether you should launch additional
+      instances to handle increased load. You can also use this data to stop under-used
+      instances to save money.</p> <p>In addition to monitoring the built-in metrics
+      that come with AWS, you can monitor your own custom metrics. With CloudWatch,
+      you gain system-wide visibility into resource utilization, application performance,
+      and operational health.</p>
+    version: 2010-08-01
+    slug: amazon-cloudwatch-2010-08-01-putmetricalarm
+    schemes:
+    - http
+    hosts:
+    - http://monitoring.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudwatch-2010-08-01
+  url_pattern: /#PutMetricData
+  method: POST
+  host:
+  - http://monitoring.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <p>Amazon CloudWatch monitors your Amazon Web Services (AWS) resources
+      and the applications you run on AWS in real time. You can use CloudWatch to
+      collect and track metrics, which are the variables you want to measure for your
+      resources and applications.</p> <p>CloudWatch alarms send notifications or automatically
+      change the resources you are monitoring based on rules that you define. For
+      example, you can monitor the CPU usage and disk reads and writes of your Amazon
+      EC2 instances. Then, use this data to determine whether you should launch additional
+      instances to handle increased load. You can also use this data to stop under-used
+      instances to save money.</p> <p>In addition to monitoring the built-in metrics
+      that come with AWS, you can monitor your own custom metrics. With CloudWatch,
+      you gain system-wide visibility into resource utilization, application performance,
+      and operational health.</p>
+    version: 2010-08-01
+    slug: amazon-cloudwatch-2010-08-01-putmetricdata
+    schemes:
+    - http
+    hosts:
+    - http://monitoring.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudwatch-2010-08-01
+  url_pattern: /#SetAlarmState
+  method: POST
+  host:
+  - http://monitoring.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <p>Amazon CloudWatch monitors your Amazon Web Services (AWS) resources
+      and the applications you run on AWS in real time. You can use CloudWatch to
+      collect and track metrics, which are the variables you want to measure for your
+      resources and applications.</p> <p>CloudWatch alarms send notifications or automatically
+      change the resources you are monitoring based on rules that you define. For
+      example, you can monitor the CPU usage and disk reads and writes of your Amazon
+      EC2 instances. Then, use this data to determine whether you should launch additional
+      instances to handle increased load. You can also use this data to stop under-used
+      instances to save money.</p> <p>In addition to monitoring the built-in metrics
+      that come with AWS, you can monitor your own custom metrics. With CloudWatch,
+      you gain system-wide visibility into resource utilization, application performance,
+      and operational health.</p>
+    version: 2010-08-01
+    slug: amazon-cloudwatch-2010-08-01-setalarmstate
+    schemes:
+    - http
+    hosts:
+    - http://monitoring.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudwatch-2010-08-01
+  url_pattern: /
+  method: POST
+  host:
+  - http://monitoring.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: <p>Amazon CloudWatch monitors your Amazon Web Services (AWS) resources
+      and the applications you run on AWS in real time. You can use CloudWatch to
+      collect and track metrics, which are the variables you want to measure for your
+      resources and applications.</p> <p>CloudWatch alarms send notifications or automatically
+      change the resources you are monitoring based on rules that you define. For
+      example, you can monitor the CPU usage and disk reads and writes of your Amazon
+      EC2 instances. Then, use this data to determine whether you should launch additional
+      instances to handle increased load. You can also use this data to stop under-used
+      instances to save money.</p> <p>In addition to monitoring the built-in metrics
+      that come with AWS, you can monitor your own custom metrics. With CloudWatch,
+      you gain system-wide visibility into resource utilization, application performance,
+      and operational health.</p>
+    version: 2010-08-01
+    slug: amazon-cloudwatch-2010-08-01
+    schemes:
+    - http
+    hosts:
+    - http://monitoring.amazonaws.com
+    topics:
+    - cloud

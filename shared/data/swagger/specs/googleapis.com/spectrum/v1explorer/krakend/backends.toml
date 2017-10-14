@@ -1,0 +1,118 @@
+[[backends]]
+  group = "google-spectrum-database-v1explorer"
+  url_pattern = "/spectrum/v1explorer/paws/getSpectrum"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "maxContiguousBwHz", "maxTotalBwHz", "needsSpectrumReport", "spectrumSchedules", "timestamp", "version"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for spectrum-management functions."
+    version = "v1explorer"
+    slug = "google-spectrum-database-v1explorer-spectrum-v1explorer-paws-getspectrum"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      maxContiguousBwHz = "maxContiguousBwHz"
+      maxTotalBwHz = "maxTotalBwHz"
+      needsSpectrumReport = "needsSpectrumReport"
+      spectrumSchedules = "spectrumSchedules"
+      timestamp = "timestamp"
+      version = "version"
+
+[[backends]]
+  group = "google-spectrum-database-v1explorer"
+  url_pattern = "/spectrum/v1explorer/paws/getSpectrumBatch"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["geoSpectrumSchedules", "kind", "maxContiguousBwHz", "maxTotalBwHz", "needsSpectrumReport", "timestamp", "version"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for spectrum-management functions."
+    version = "v1explorer"
+    slug = "google-spectrum-database-v1explorer-spectrum-v1explorer-paws-getspectrumbatch"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      geoSpectrumSchedules = "geoSpectrumSchedules"
+      kind = "kind"
+      maxContiguousBwHz = "maxContiguousBwHz"
+      maxTotalBwHz = "maxTotalBwHz"
+      needsSpectrumReport = "needsSpectrumReport"
+      timestamp = "timestamp"
+      version = "version"
+
+[[backends]]
+  group = "google-spectrum-database-v1explorer"
+  url_pattern = "/spectrum/v1explorer/paws/init"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "version"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for spectrum-management functions."
+    version = "v1explorer"
+    slug = "google-spectrum-database-v1explorer-spectrum-v1explorer-paws-init"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      version = "version"
+
+[[backends]]
+  group = "google-spectrum-database-v1explorer"
+  url_pattern = "/spectrum/v1explorer/paws/notifySpectrumUse"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "version"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for spectrum-management functions."
+    version = "v1explorer"
+    slug = "google-spectrum-database-v1explorer-spectrum-v1explorer-paws-notifyspectrumuse"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      version = "version"
+
+[[backends]]
+  group = "google-spectrum-database-v1explorer"
+  url_pattern = "/spectrum/v1explorer/paws/register"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "version"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for spectrum-management functions."
+    version = "v1explorer"
+    slug = "google-spectrum-database-v1explorer-spectrum-v1explorer-paws-register"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      version = "version"
+
+[[backends]]
+  group = "google-spectrum-database-v1explorer"
+  url_pattern = "/spectrum/v1explorer/paws/verifyDevice"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["deviceValidities", "kind", "version"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "API for spectrum-management functions."
+    version = "v1explorer"
+    slug = "google-spectrum-database-v1explorer-spectrum-v1explorer-paws-verifydevice"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      deviceValidities = "deviceValidities"
+      kind = "kind"
+      version = "version"

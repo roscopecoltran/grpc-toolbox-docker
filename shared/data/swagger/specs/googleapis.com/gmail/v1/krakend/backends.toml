@@ -1,0 +1,777 @@
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/drafts"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["drafts", "nextPageToken", "resultSizeEstimate"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-drafts"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      drafts = "drafts"
+      nextPageToken = "nextPageToken"
+      resultSizeEstimate = "resultSizeEstimate"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/drafts/send"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["historyId", "id", "internalDate", "labelIds", "raw", "sizeEstimate", "snippet", "threadId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-drafts-send"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      historyId = "historyId"
+      id = "id"
+      internalDate = "internalDate"
+      labelIds = "labelIds"
+      raw = "raw"
+      sizeEstimate = "sizeEstimate"
+      snippet = "snippet"
+      threadId = "threadId"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/drafts/{id}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["id"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-drafts-id"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      id = "id"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/history"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["history", "historyId", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-history"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      history = "history"
+      historyId = "historyId"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/labels"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["labels"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-labels"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      labels = "labels"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/labels/{id}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["id", "labelListVisibility", "messageListVisibility", "messagesTotal", "messagesUnread", "name", "threadsTotal", "threadsUnread"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-labels-id"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      id = "id"
+      labelListVisibility = "labelListVisibility"
+      messageListVisibility = "messageListVisibility"
+      messagesTotal = "messagesTotal"
+      messagesUnread = "messagesUnread"
+      name = "name"
+      threadsTotal = "threadsTotal"
+      threadsUnread = "threadsUnread"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/messages"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["messages", "nextPageToken", "resultSizeEstimate"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-messages"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      messages = "messages"
+      nextPageToken = "nextPageToken"
+      resultSizeEstimate = "resultSizeEstimate"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/messages/batchDelete"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-messages-batchdelete"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/messages/batchModify"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-messages-batchmodify"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/messages/import"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["historyId", "id", "internalDate", "labelIds", "raw", "sizeEstimate", "snippet", "threadId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-messages-import"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      historyId = "historyId"
+      id = "id"
+      internalDate = "internalDate"
+      labelIds = "labelIds"
+      raw = "raw"
+      sizeEstimate = "sizeEstimate"
+      snippet = "snippet"
+      threadId = "threadId"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/messages/send"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["historyId", "id", "internalDate", "labelIds", "raw", "sizeEstimate", "snippet", "threadId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-messages-send"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      historyId = "historyId"
+      id = "id"
+      internalDate = "internalDate"
+      labelIds = "labelIds"
+      raw = "raw"
+      sizeEstimate = "sizeEstimate"
+      snippet = "snippet"
+      threadId = "threadId"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/messages/{id}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["historyId", "id", "internalDate", "labelIds", "raw", "sizeEstimate", "snippet", "threadId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-messages-id"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      historyId = "historyId"
+      id = "id"
+      internalDate = "internalDate"
+      labelIds = "labelIds"
+      raw = "raw"
+      sizeEstimate = "sizeEstimate"
+      snippet = "snippet"
+      threadId = "threadId"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/messages/{id}/modify"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["historyId", "id", "internalDate", "labelIds", "raw", "sizeEstimate", "snippet", "threadId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-messages-id-modify"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      historyId = "historyId"
+      id = "id"
+      internalDate = "internalDate"
+      labelIds = "labelIds"
+      raw = "raw"
+      sizeEstimate = "sizeEstimate"
+      snippet = "snippet"
+      threadId = "threadId"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/messages/{id}/trash"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["historyId", "id", "internalDate", "labelIds", "raw", "sizeEstimate", "snippet", "threadId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-messages-id-trash"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      historyId = "historyId"
+      id = "id"
+      internalDate = "internalDate"
+      labelIds = "labelIds"
+      raw = "raw"
+      sizeEstimate = "sizeEstimate"
+      snippet = "snippet"
+      threadId = "threadId"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/messages/{id}/untrash"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["historyId", "id", "internalDate", "labelIds", "raw", "sizeEstimate", "snippet", "threadId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-messages-id-untrash"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      historyId = "historyId"
+      id = "id"
+      internalDate = "internalDate"
+      labelIds = "labelIds"
+      raw = "raw"
+      sizeEstimate = "sizeEstimate"
+      snippet = "snippet"
+      threadId = "threadId"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/messages/{messageId}/attachments/{id}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["attachmentId", "data", "size"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-messages-messageid-attachments-id"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      attachmentId = "attachmentId"
+      data = "data"
+      size = "size"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/profile"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["emailAddress", "historyId", "messagesTotal", "threadsTotal"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-profile"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      emailAddress = "emailAddress"
+      historyId = "historyId"
+      messagesTotal = "messagesTotal"
+      threadsTotal = "threadsTotal"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/settings/autoForwarding"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["disposition", "emailAddress", "enabled"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-settings-autoforwarding"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      disposition = "disposition"
+      emailAddress = "emailAddress"
+      enabled = "enabled"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/settings/filters"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["filter"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-settings-filters"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      filter = "filter"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/settings/filters/{id}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["id"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-settings-filters-id"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      id = "id"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/settings/forwardingAddresses"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["forwardingAddresses"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-settings-forwardingaddresses"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      forwardingAddresses = "forwardingAddresses"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/settings/forwardingAddresses/{forwardingEmail}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["forwardingEmail", "verificationStatus"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-settings-forwardingaddresses-forwardingemail"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      forwardingEmail = "forwardingEmail"
+      verificationStatus = "verificationStatus"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/settings/imap"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["autoExpunge", "enabled", "expungeBehavior", "maxFolderSize"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-settings-imap"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      autoExpunge = "autoExpunge"
+      enabled = "enabled"
+      expungeBehavior = "expungeBehavior"
+      maxFolderSize = "maxFolderSize"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/settings/pop"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["accessWindow", "disposition"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-settings-pop"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      accessWindow = "accessWindow"
+      disposition = "disposition"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/settings/sendAs"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["sendAs"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-settings-sendas"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      sendAs = "sendAs"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/settings/sendAs/{sendAsEmail}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["displayName", "isDefault", "isPrimary", "replyToAddress", "sendAsEmail", "signature", "treatAsAlias", "verificationStatus"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-settings-sendas-sendasemail"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      displayName = "displayName"
+      isDefault = "isDefault"
+      isPrimary = "isPrimary"
+      replyToAddress = "replyToAddress"
+      sendAsEmail = "sendAsEmail"
+      signature = "signature"
+      treatAsAlias = "treatAsAlias"
+      verificationStatus = "verificationStatus"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/settings/sendAs/{sendAsEmail}/smimeInfo"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["smimeInfo"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-settings-sendas-sendasemail-smimeinfo"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      smimeInfo = "smimeInfo"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/settings/sendAs/{sendAsEmail}/smimeInfo/{id}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["encryptedKeyPassword", "expiration", "id", "isDefault", "issuerCn", "pem", "pkcs12"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-settings-sendas-sendasemail-smimeinfo-id"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      encryptedKeyPassword = "encryptedKeyPassword"
+      expiration = "expiration"
+      id = "id"
+      isDefault = "isDefault"
+      issuerCn = "issuerCn"
+      pem = "pem"
+      pkcs12 = "pkcs12"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/settings/sendAs/{sendAsEmail}/smimeInfo/{id}/setDefault"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-settings-sendas-sendasemail-smimeinfo-id-setdefault"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/settings/sendAs/{sendAsEmail}/verify"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-settings-sendas-sendasemail-verify"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/settings/vacation"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["enableAutoReply", "endTime", "responseBodyHtml", "responseBodyPlainText", "responseSubject", "restrictToContacts", "restrictToDomain", "startTime"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-settings-vacation"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      enableAutoReply = "enableAutoReply"
+      endTime = "endTime"
+      responseBodyHtml = "responseBodyHtml"
+      responseBodyPlainText = "responseBodyPlainText"
+      responseSubject = "responseSubject"
+      restrictToContacts = "restrictToContacts"
+      restrictToDomain = "restrictToDomain"
+      startTime = "startTime"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/stop"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-stop"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/threads"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["nextPageToken", "resultSizeEstimate", "threads"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-threads"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      resultSizeEstimate = "resultSizeEstimate"
+      threads = "threads"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/threads/{id}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["historyId", "id", "messages", "snippet"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-threads-id"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      historyId = "historyId"
+      id = "id"
+      messages = "messages"
+      snippet = "snippet"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/threads/{id}/modify"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["historyId", "id", "messages", "snippet"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-threads-id-modify"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      historyId = "historyId"
+      id = "id"
+      messages = "messages"
+      snippet = "snippet"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/threads/{id}/trash"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["historyId", "id", "messages", "snippet"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-threads-id-trash"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      historyId = "historyId"
+      id = "id"
+      messages = "messages"
+      snippet = "snippet"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/threads/{id}/untrash"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["historyId", "id", "messages", "snippet"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-threads-id-untrash"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      historyId = "historyId"
+      id = "id"
+      messages = "messages"
+      snippet = "snippet"
+
+[[backends]]
+  group = "gmail-v1"
+  url_pattern = "/gmail/v1/users/{userId}/watch"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["expiration", "historyId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Access Gmail mailboxes including sending user email."
+    version = "v1"
+    slug = "gmail-v1-gmail-v1-users-userid-watch"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["email"]
+    [backends.extra_config.mapping]
+      expiration = "expiration"
+      historyId = "historyId"

@@ -1,0 +1,50 @@
+[[backends]]
+  group = "scrape-website-email-api-0-1"
+  url_pattern = "/v1/ping"
+  method = "JSON"
+  encoding = "json"
+  host = ["http://scrapewebsite.email"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "scrapewebsite.email"
+    description = "ScrapeWebsiteEmail is a service that exposes an api to fetch e-mails from a website."
+    version = "0.1"
+    slug = "scrape-website-email-api-0-1-v1-ping"
+    schemes = ["http"]
+    produces = ["json"]
+    hosts = ["http://scrapewebsite.email"]
+    topics = ["email", "tools"]
+
+[[backends]]
+  group = "scrape-website-email-api-0-1"
+  url_pattern = "/v1/scrape_emails"
+  method = "JSON"
+  encoding = "json"
+  host = ["http://scrapewebsite.email"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "scrapewebsite.email"
+    description = "ScrapeWebsiteEmail is a service that exposes an api to fetch e-mails from a website."
+    version = "0.1"
+    slug = "scrape-website-email-api-0-1-v1-scrape-emails"
+    schemes = ["http"]
+    produces = ["json"]
+    hosts = ["http://scrapewebsite.email"]
+    topics = ["email", "tools"]
+
+[[backends]]
+  group = "scrape-website-email-api-0-1"
+  url_pattern = "/v1/scrape_store_links"
+  method = "JSON"
+  encoding = "json"
+  host = ["http://scrapewebsite.email"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "scrapewebsite.email"
+    description = "ScrapeWebsiteEmail is a service that exposes an api to fetch e-mails from a website."
+    version = "0.1"
+    slug = "scrape-website-email-api-0-1-v1-scrape-store-links"
+    schemes = ["http"]
+    produces = ["json"]
+    hosts = ["http://scrapewebsite.email"]
+    topics = ["email", "tools"]

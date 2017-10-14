@@ -1,0 +1,148 @@
+backends:
+- group: dropx-1-0-0
+  url_pattern: /api/v1/products/
+  method: GET
+  encoding: json
+  host:
+  - http://dropx.io
+  concurrent_calls: 1
+  extra_config:
+    provider: dropx.io
+    description: dropX.io API provides programmatic access to the e-commerce intelligence
+      data.
+    version: 1.0.0
+    slug: dropx-1-0-0-api-v1-products
+    schemes:
+    - http
+    produces:
+    - json
+    hosts:
+    - http://dropx.io
+    topics:
+    - ecommerce
+- group: dropx-1-0-0
+  url_pattern: /api/v1/products/link-search-v2
+  method: GET
+  encoding: json
+  host:
+  - http://dropx.io
+  concurrent_calls: 1
+  extra_config:
+    provider: dropx.io
+    description: dropX.io API provides programmatic access to the e-commerce intelligence
+      data.
+    version: 1.0.0
+    slug: dropx-1-0-0-api-v1-products-link-search-v2
+    schemes:
+    - http
+    produces:
+    - json
+    hosts:
+    - http://dropx.io
+    topics:
+    - ecommerce
+- group: dropx-1-0-0
+  url_pattern: /api/v1/products/link-search
+  method: GET
+  encoding: json
+  host:
+  - http://dropx.io
+  concurrent_calls: 1
+  extra_config:
+    provider: dropx.io
+    description: dropX.io API provides programmatic access to the e-commerce intelligence
+      data.
+    version: 1.0.0
+    slug: dropx-1-0-0-api-v1-products-link-search
+    schemes:
+    - http
+    produces:
+    - json
+    hosts:
+    - http://dropx.io
+    topics:
+    - ecommerce
+- group: dropx-1-0-0
+  url_pattern: /api/v1/products/search-v2
+  method: GET
+  encoding: json
+  host:
+  - http://dropx.io
+  concurrent_calls: 1
+  extra_config:
+    provider: dropx.io
+    description: dropX.io API provides programmatic access to the e-commerce intelligence
+      data.
+    version: 1.0.0
+    slug: dropx-1-0-0-api-v1-products-search-v2
+    schemes:
+    - http
+    produces:
+    - json
+    hosts:
+    - http://dropx.io
+    topics:
+    - ecommerce
+- group: dropx-1-0-0
+  url_pattern: /api/v1/products/search
+  method: GET
+  encoding: json
+  host:
+  - http://dropx.io
+  concurrent_calls: 1
+  extra_config:
+    provider: dropx.io
+    description: dropX.io API provides programmatic access to the e-commerce intelligence
+      data.
+    version: 1.0.0
+    slug: dropx-1-0-0-api-v1-products-search
+    schemes:
+    - http
+    produces:
+    - json
+    hosts:
+    - http://dropx.io
+    topics:
+    - ecommerce
+- group: dropx-1-0-0
+  url_pattern: /api/v1/products/title-search
+  method: GET
+  encoding: json
+  host:
+  - http://dropx.io
+  concurrent_calls: 1
+  extra_config:
+    provider: dropx.io
+    description: dropX.io API provides programmatic access to the e-commerce intelligence
+      data.
+    version: 1.0.0
+    slug: dropx-1-0-0-api-v1-products-title-search
+    schemes:
+    - http
+    produces:
+    - json
+    hosts:
+    - http://dropx.io
+    topics:
+    - ecommerce
+- group: dropx-1-0-0
+  url_pattern: /api/v1/users/usage
+  method: GET
+  encoding: json
+  host:
+  - http://dropx.io
+  concurrent_calls: 1
+  extra_config:
+    provider: dropx.io
+    description: dropX.io API provides programmatic access to the e-commerce intelligence
+      data.
+    version: 1.0.0
+    slug: dropx-1-0-0-api-v1-users-usage
+    schemes:
+    - http
+    produces:
+    - json
+    hosts:
+    - http://dropx.io
+    topics:
+    - ecommerce

@@ -1,0 +1,94 @@
+{
+	"backends": [
+		{
+			"group": "google-cloud-translation-v2",
+			"url_pattern": "/language/translate/v2",
+			"method": "GET",
+			"host": [
+				"https://translation.googleapis.com"
+			],
+			"whitelist": [
+				"translations"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Google Cloud Translation API lets websites and programs integrate with\n    Google Translate programmatically.",
+				"version": "v2",
+				"slug": "google-cloud-translation-v2-language-translate-v2",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"translations": "translations"
+				},
+				"hosts": [
+					"https://translation.googleapis.com"
+				],
+				"topics": [
+					"text"
+				]
+			}
+		},
+		{
+			"group": "google-cloud-translation-v2",
+			"url_pattern": "/language/translate/v2/detect",
+			"method": "GET",
+			"host": [
+				"https://translation.googleapis.com"
+			],
+			"whitelist": [
+				"detections"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Google Cloud Translation API lets websites and programs integrate with\n    Google Translate programmatically.",
+				"version": "v2",
+				"slug": "google-cloud-translation-v2-language-translate-v2-detect",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"detections": "detections"
+				},
+				"hosts": [
+					"https://translation.googleapis.com"
+				],
+				"topics": [
+					"text"
+				]
+			}
+		},
+		{
+			"group": "google-cloud-translation-v2",
+			"url_pattern": "/language/translate/v2/languages",
+			"method": "GET",
+			"host": [
+				"https://translation.googleapis.com"
+			],
+			"whitelist": [
+				"languages"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The Google Cloud Translation API lets websites and programs integrate with\n    Google Translate programmatically.",
+				"version": "v2",
+				"slug": "google-cloud-translation-v2-language-translate-v2-languages",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"languages": "languages"
+				},
+				"hosts": [
+					"https://translation.googleapis.com"
+				],
+				"topics": [
+					"text"
+				]
+			}
+		}
+	]
+}

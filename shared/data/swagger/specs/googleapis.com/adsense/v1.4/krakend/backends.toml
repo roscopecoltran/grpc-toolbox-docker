@@ -1,0 +1,774 @@
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/accounts"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-accounts"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/accounts/{accountId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["creation_time", "id", "kind", "name", "premium", "subAccounts", "timezone"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-accounts-accountid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      creation_time = "creation_time"
+      id = "id"
+      kind = "kind"
+      name = "name"
+      premium = "premium"
+      subAccounts = "subAccounts"
+      timezone = "timezone"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/accounts/{accountId}/adclients"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-accounts-accountid-adclients"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/accounts/{accountId}/adclients/{adClientId}/adunits"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-accounts-accountid-adclients-adclientid-adunits"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/accounts/{accountId}/adclients/{adClientId}/adunits/{adUnitId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["code", "contentAdsSettings", "contentAdsSettings.backupOption", "contentAdsSettings.backupOption.color", "contentAdsSettings.backupOption.url", "contentAdsSettings.size", "feedAdsSettings", "feedAdsSettings.adPosition", "feedAdsSettings.frequency", "feedAdsSettings.minimumWordCount", "id", "kind", "mobileContentAdsSettings", "mobileContentAdsSettings.markupLanguage", "mobileContentAdsSettings.scriptingLanguage", "mobileContentAdsSettings.size", "name", "savedStyleId", "status"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-accounts-accountid-adclients-adclientid-adunits-adunitid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      adPosition = "adPosition"
+      backupOption = "backupOption"
+      code = "code"
+      color = "color"
+      contentAdsSettings = "contentAdsSettings"
+      feedAdsSettings = "feedAdsSettings"
+      frequency = "frequency"
+      id = "id"
+      kind = "kind"
+      markupLanguage = "markupLanguage"
+      minimumWordCount = "minimumWordCount"
+      mobileContentAdsSettings = "mobileContentAdsSettings"
+      name = "name"
+      savedStyleId = "savedStyleId"
+      scriptingLanguage = "scriptingLanguage"
+      size = "size"
+      status = "status"
+      url = "url"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/accounts/{accountId}/adclients/{adClientId}/adunits/{adUnitId}/adcode"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["adCode", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-accounts-accountid-adclients-adclientid-adunits-adunitid-adcode"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      adCode = "adCode"
+      kind = "kind"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/accounts/{accountId}/adclients/{adClientId}/adunits/{adUnitId}/customchannels"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-accounts-accountid-adclients-adclientid-adunits-adunitid-customchannels"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/accounts/{accountId}/adclients/{adClientId}/customchannels"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-accounts-accountid-adclients-adclientid-customchannels"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/accounts/{accountId}/adclients/{adClientId}/customchannels/{customChannelId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["code", "id", "kind", "name", "targetingInfo", "targetingInfo.adsAppearOn", "targetingInfo.description", "targetingInfo.location", "targetingInfo.siteLanguage"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-accounts-accountid-adclients-adclientid-customchannels-customchannelid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      adsAppearOn = "adsAppearOn"
+      code = "code"
+      description = "description"
+      id = "id"
+      kind = "kind"
+      location = "location"
+      name = "name"
+      siteLanguage = "siteLanguage"
+      targetingInfo = "targetingInfo"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/accounts/{accountId}/adclients/{adClientId}/customchannels/{customChannelId}/adunits"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-accounts-accountid-adclients-adclientid-customchannels-customchannelid-adunits"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/accounts/{accountId}/adclients/{adClientId}/urlchannels"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-accounts-accountid-adclients-adclientid-urlchannels"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/accounts/{accountId}/alerts"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["items", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-accounts-accountid-alerts"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      items = "items"
+      kind = "kind"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/accounts/{accountId}/payments"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["items", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-accounts-accountid-payments"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      items = "items"
+      kind = "kind"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/accounts/{accountId}/reports"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["averages", "endDate", "headers", "headers.currency", "headers.name", "kind", "rows", "rows.items", "startDate", "totalMatchedRows", "totals", "warnings"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-accounts-accountid-reports"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      averages = "averages"
+      currency = "currency"
+      endDate = "endDate"
+      headers = "headers"
+      items = "items"
+      kind = "kind"
+      name = "name"
+      rows = "rows"
+      startDate = "startDate"
+      totalMatchedRows = "totalMatchedRows"
+      totals = "totals"
+      warnings = "warnings"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/accounts/{accountId}/reports/saved"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-accounts-accountid-reports-saved"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/accounts/{accountId}/reports/{savedReportId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["averages", "endDate", "headers", "headers.currency", "headers.name", "kind", "rows", "rows.items", "startDate", "totalMatchedRows", "totals", "warnings"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-accounts-accountid-reports-savedreportid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      averages = "averages"
+      currency = "currency"
+      endDate = "endDate"
+      headers = "headers"
+      items = "items"
+      kind = "kind"
+      name = "name"
+      rows = "rows"
+      startDate = "startDate"
+      totalMatchedRows = "totalMatchedRows"
+      totals = "totals"
+      warnings = "warnings"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/accounts/{accountId}/savedadstyles"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-accounts-accountid-savedadstyles"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/accounts/{accountId}/savedadstyles/{savedAdStyleId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["id", "kind", "name"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-accounts-accountid-savedadstyles-savedadstyleid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      id = "id"
+      kind = "kind"
+      name = "name"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/adclients"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-adclients"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/adclients/{adClientId}/adunits"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-adclients-adclientid-adunits"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/adclients/{adClientId}/adunits/{adUnitId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["code", "contentAdsSettings", "contentAdsSettings.backupOption", "contentAdsSettings.backupOption.color", "contentAdsSettings.backupOption.url", "contentAdsSettings.size", "feedAdsSettings", "feedAdsSettings.adPosition", "feedAdsSettings.frequency", "feedAdsSettings.minimumWordCount", "id", "kind", "mobileContentAdsSettings", "mobileContentAdsSettings.markupLanguage", "mobileContentAdsSettings.scriptingLanguage", "mobileContentAdsSettings.size", "name", "savedStyleId", "status"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-adclients-adclientid-adunits-adunitid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      adPosition = "adPosition"
+      backupOption = "backupOption"
+      code = "code"
+      color = "color"
+      contentAdsSettings = "contentAdsSettings"
+      feedAdsSettings = "feedAdsSettings"
+      frequency = "frequency"
+      id = "id"
+      kind = "kind"
+      markupLanguage = "markupLanguage"
+      minimumWordCount = "minimumWordCount"
+      mobileContentAdsSettings = "mobileContentAdsSettings"
+      name = "name"
+      savedStyleId = "savedStyleId"
+      scriptingLanguage = "scriptingLanguage"
+      size = "size"
+      status = "status"
+      url = "url"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/adclients/{adClientId}/adunits/{adUnitId}/adcode"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["adCode", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-adclients-adclientid-adunits-adunitid-adcode"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      adCode = "adCode"
+      kind = "kind"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/adclients/{adClientId}/adunits/{adUnitId}/customchannels"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-adclients-adclientid-adunits-adunitid-customchannels"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/adclients/{adClientId}/customchannels"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-adclients-adclientid-customchannels"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/adclients/{adClientId}/customchannels/{customChannelId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["code", "id", "kind", "name", "targetingInfo", "targetingInfo.adsAppearOn", "targetingInfo.description", "targetingInfo.location", "targetingInfo.siteLanguage"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-adclients-adclientid-customchannels-customchannelid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      adsAppearOn = "adsAppearOn"
+      code = "code"
+      description = "description"
+      id = "id"
+      kind = "kind"
+      location = "location"
+      name = "name"
+      siteLanguage = "siteLanguage"
+      targetingInfo = "targetingInfo"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/adclients/{adClientId}/customchannels/{customChannelId}/adunits"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-adclients-adclientid-customchannels-customchannelid-adunits"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/adclients/{adClientId}/urlchannels"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-adclients-adclientid-urlchannels"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/alerts"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["items", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-alerts"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      items = "items"
+      kind = "kind"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/metadata/dimensions"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["items", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-metadata-dimensions"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      items = "items"
+      kind = "kind"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/metadata/metrics"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["items", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-metadata-metrics"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      items = "items"
+      kind = "kind"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/payments"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["items", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-payments"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      items = "items"
+      kind = "kind"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/reports"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["averages", "endDate", "headers", "headers.currency", "headers.name", "kind", "rows", "rows.items", "startDate", "totalMatchedRows", "totals", "warnings"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-reports"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      averages = "averages"
+      currency = "currency"
+      endDate = "endDate"
+      headers = "headers"
+      items = "items"
+      kind = "kind"
+      name = "name"
+      rows = "rows"
+      startDate = "startDate"
+      totalMatchedRows = "totalMatchedRows"
+      totals = "totals"
+      warnings = "warnings"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/reports/saved"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-reports-saved"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/reports/{savedReportId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["averages", "endDate", "headers", "headers.currency", "headers.name", "kind", "rows", "rows.items", "startDate", "totalMatchedRows", "totals", "warnings"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-reports-savedreportid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      averages = "averages"
+      currency = "currency"
+      endDate = "endDate"
+      headers = "headers"
+      items = "items"
+      kind = "kind"
+      name = "name"
+      rows = "rows"
+      startDate = "startDate"
+      totalMatchedRows = "totalMatchedRows"
+      totals = "totals"
+      warnings = "warnings"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/savedadstyles"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-savedadstyles"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "adsense-management-v1-4"
+  url_pattern = "/adsense/v1.4/savedadstyles/{savedAdStyleId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["id", "kind", "name"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses AdSense publishers' inventory and generates performance reports."
+    version = "v1.4"
+    slug = "adsense-management-v1-4-adsense-v1-4-savedadstyles-savedadstyleid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      id = "id"
+      kind = "kind"
+      name = "name"

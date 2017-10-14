@@ -1,0 +1,2471 @@
+backends:
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/build
+  method: POST
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-build
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/containers/create
+  method: POST
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-containers-create
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/containers/floating-ips
+  method: GET
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-containers-floating-ips
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/containers/floating-ips/request
+  method: POST
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-containers-floating-ips-request
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/containers/floating-ips/{ip}/release
+  method: POST
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-containers-floating-ips-ip-release
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/containers/groups
+  method: GET
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-containers-groups
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/containers/groups/{name_or_id}
+  method: GET
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  whitelist:
+  - Anti-affinity
+  - Autorecovery
+  - AvailabilityZone
+  - Cmd
+  - Creation_time
+  - Env
+  - Id
+  - Image
+  - ImageName
+  - Memory
+  - Name
+  - NumberInstances
+  - NumberInstances.CurrentSize
+  - NumberInstances.Desired
+  - NumberInstances.Max
+  - NumberInstances.Min
+  - Port
+  - Route_Status
+  - Route_Status.in_progress
+  - Route_Status.message
+  - Route_Status.successful
+  - Routes
+  - Status
+  - UpdatedTime
+  - Volumes
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-containers-groups-name-or-id
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      Anti-affinity: Anti-affinity
+      Autorecovery: Autorecovery
+      AvailabilityZone: AvailabilityZone
+      Cmd: Cmd
+      Creation_time: Creation_time
+      Env: Env
+      Id: Id
+      Image: Image
+      ImageName: ImageName
+      Memory: Memory
+      Name: Name
+      NumberInstances: NumberInstances
+      NumberInstances.CurrentSize: NumberInstances.CurrentSize
+      NumberInstances.Desired: NumberInstances.Desired
+      NumberInstances.Max: NumberInstances.Max
+      NumberInstances.Min: NumberInstances.Min
+      Port: Port
+      Route_Status: Route_Status
+      Route_Status.in_progress: Route_Status.in_progress
+      Route_Status.message: Route_Status.message
+      Route_Status.successful: Route_Status.successful
+      Routes: Routes
+      Status: Status
+      UpdatedTime: UpdatedTime
+      Volumes: Volumes
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/containers/groups/{name_or_id}/maproute
+  method: POST
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-containers-groups-name-or-id-maproute
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/containers/groups/{name_or_id}/unmaproute
+  method: POST
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-containers-groups-name-or-id-unmaproute
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/containers/json
+  method: GET
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-containers-json
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/containers/messages
+  method: GET
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-containers-messages
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/containers/quota
+  method: GET
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  whitelist:
+  - account_type
+  - country_code
+  - org_quota
+  - org_quota.floating_ips_max
+  - org_quota.floating_ips_space_default
+  - org_quota.floating_ips_usage
+  - org_quota.ram_max
+  - org_quota.ram_space_default
+  - org_quota.ram_usage
+  - org_quota.subnet_usage
+  - org_quota.subnets_default
+  - org_quota.subnets_max
+  - space_quota
+  - space_quota.floating_ips_max
+  - space_quota.ram_max
+  - space_quota.subnets_max
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-containers-quota
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      account_type: account_type
+      country_code: country_code
+      org_quota: org_quota
+      org_quota.floating_ips_max: org_quota.floating_ips_max
+      org_quota.floating_ips_space_default: org_quota.floating_ips_space_default
+      org_quota.floating_ips_usage: org_quota.floating_ips_usage
+      org_quota.ram_max: org_quota.ram_max
+      org_quota.ram_space_default: org_quota.ram_space_default
+      org_quota.ram_usage: org_quota.ram_usage
+      org_quota.subnet_usage: org_quota.subnet_usage
+      org_quota.subnets_default: org_quota.subnets_default
+      org_quota.subnets_max: org_quota.subnets_max
+      space_quota: space_quota
+      space_quota.floating_ips_max: space_quota.floating_ips_max
+      space_quota.ram_max: space_quota.ram_max
+      space_quota.subnets_max: space_quota.subnets_max
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/containers/usage
+  method: GET
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  whitelist:
+  - AvailableSizes
+  - Environment
+  - Limits
+  - Limits.containers
+  - Limits.floating_ips
+  - Limits.memory_MB
+  - Limits.vcpu
+  - Usage
+  - Usage.containers
+  - Usage.floating_ips
+  - Usage.floating_ips_bound
+  - Usage.images
+  - Usage.memory_MB
+  - Usage.running
+  - Usage.vcpu
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-containers-usage
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      AvailableSizes: AvailableSizes
+      Environment: Environment
+      Limits: Limits
+      Limits.containers: Limits.containers
+      Limits.floating_ips: Limits.floating_ips
+      Limits.memory_MB: Limits.memory_MB
+      Limits.vcpu: Limits.vcpu
+      Usage: Usage
+      Usage.containers: Usage.containers
+      Usage.floating_ips: Usage.floating_ips
+      Usage.floating_ips_bound: Usage.floating_ips_bound
+      Usage.images: Usage.images
+      Usage.memory_MB: Usage.memory_MB
+      Usage.running: Usage.running
+      Usage.vcpu: Usage.vcpu
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/containers/version
+  method: GET
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  whitelist:
+  - ApiVersion
+  - Arch
+  - BuildDetail
+  - BuildDetail.api
+  - BuildDetail.automount
+  - BuildDetail.grupdater
+  - BuildDetail.harmony
+  - BuildDetail.health-monitor
+  - BuildDetail.hijack
+  - BuildDetail.ldap
+  - BuildDetail.logmet
+  - BuildDetail.lumberjack
+  - BuildDetail.redis-cluster
+  - BuildDetail.sgwatcher
+  - BuildDetail.volmgr
+  - BuildID
+  - BuildNumber
+  - BuildTime
+  - GitCommit
+  - GoVersion
+  - KernelVersion
+  - Os
+  - Version
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-containers-version
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      ApiVersion: ApiVersion
+      Arch: Arch
+      BuildDetail: BuildDetail
+      BuildDetail.api: BuildDetail.api
+      BuildDetail.automount: BuildDetail.automount
+      BuildDetail.grupdater: BuildDetail.grupdater
+      BuildDetail.harmony: BuildDetail.harmony
+      BuildDetail.health-monitor: BuildDetail.health-monitor
+      BuildDetail.hijack: BuildDetail.hijack
+      BuildDetail.ldap: BuildDetail.ldap
+      BuildDetail.logmet: BuildDetail.logmet
+      BuildDetail.lumberjack: BuildDetail.lumberjack
+      BuildDetail.redis-cluster: BuildDetail.redis-cluster
+      BuildDetail.sgwatcher: BuildDetail.sgwatcher
+      BuildDetail.volmgr: BuildDetail.volmgr
+      BuildID: BuildID
+      BuildNumber: BuildNumber
+      BuildTime: BuildTime
+      GitCommit: GitCommit
+      GoVersion: GoVersion
+      KernelVersion: KernelVersion
+      Os: Os
+      Version: Version
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/containers/{id}/status
+  method: GET
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-containers-id-status
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/containers/{name_or_id}/floating-ips/{ip}/bind
+  method: POST
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-containers-name-or-id-floating-ips-ip-bind
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/containers/{name_or_id}/floating-ips/{ip}/unbind
+  method: POST
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-containers-name-or-id-floating-ips-ip-unbind
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/containers/{name_or_id}/json
+  method: GET
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  whitelist:
+  - BluemixApp
+  - BluemixServices
+  - ContainerState
+  - Created
+  - HostId
+  - Human_Id
+  - Id
+  - Image
+  - Mounts
+  - Name
+  - Path
+  - ResolveConfPath
+  - VolumesRW
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-containers-name-or-id-json
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      BluemixApp: BluemixApp
+      BluemixServices: BluemixServices
+      ContainerState: ContainerState
+      Created: Created
+      HostId: HostId
+      Human_Id: Human_Id
+      Id: Id
+      Image: Image
+      Mounts: Mounts
+      Name: Name
+      Path: Path
+      ResolveConfPath: ResolveConfPath
+      VolumesRW: VolumesRW
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/containers/{name_or_id}/pause
+  method: POST
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-containers-name-or-id-pause
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/containers/{name_or_id}/rename
+  method: POST
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-containers-name-or-id-rename
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/containers/{name_or_id}/restart
+  method: POST
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-containers-name-or-id-restart
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/containers/{name_or_id}/start
+  method: POST
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-containers-name-or-id-start
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/containers/{name_or_id}/stop
+  method: POST
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-containers-name-or-id-stop
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/containers/{name_or_id}/unpause
+  method: POST
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-containers-name-or-id-unpause
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/images/json
+  method: GET
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  whitelist:
+  - Created
+  - Id
+  - Image
+  - RepoTags
+  - Size
+  - VirtualSize
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-images-json
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      Created: Created
+      Id: Id
+      Image: Image
+      RepoTags: RepoTags
+      Size: Size
+      VirtualSize: VirtualSize
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/images/{name_or_id}/json
+  method: GET
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  whitelist:
+  - Architecture
+  - Config
+  - Config.ArgsEscaped
+  - Config.AttachStderr
+  - Config.AttachStdin
+  - Config.AttachStdout
+  - Config.Cmd
+  - Config.Cmd.items
+  - Config.Domainmame
+  - Config.Entrypoint
+  - Config.Env
+  - Config.Env.items
+  - Config.ExposedPorts
+  - Config.ExposedPorts.items
+  - Config.Hostname
+  - Config.Image
+  - Config.Labels
+  - Config.Labels.items
+  - Config.OnBuild
+  - Config.OnBuild.items
+  - Config.OpenStdin
+  - Config.StdinOnce
+  - Config.Tty
+  - Config.User
+  - Config.Volumes
+  - Config.WorkingDir
+  - Container
+  - Created
+  - DockerVersion
+  - Id
+  - Os
+  - Parent
+  - Size
+  - Tag
+  - Throwaway
+  - VirtualSize
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-images-name-or-id-json
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      Architecture: Architecture
+      Config: Config
+      Config.ArgsEscaped: Config.ArgsEscaped
+      Config.AttachStderr: Config.AttachStderr
+      Config.AttachStdin: Config.AttachStdin
+      Config.AttachStdout: Config.AttachStdout
+      Config.Cmd: Config.Cmd
+      Config.Cmd.items: Config.Cmd.items
+      Config.Domainmame: Config.Domainmame
+      Config.Entrypoint: Config.Entrypoint
+      Config.Env: Config.Env
+      Config.Env.items: Config.Env.items
+      Config.ExposedPorts: Config.ExposedPorts
+      Config.ExposedPorts.items: Config.ExposedPorts.items
+      Config.Hostname: Config.Hostname
+      Config.Image: Config.Image
+      Config.Labels: Config.Labels
+      Config.Labels.items: Config.Labels.items
+      Config.OnBuild: Config.OnBuild
+      Config.OnBuild.items: Config.OnBuild.items
+      Config.OpenStdin: Config.OpenStdin
+      Config.StdinOnce: Config.StdinOnce
+      Config.Tty: Config.Tty
+      Config.User: Config.User
+      Config.Volumes: Config.Volumes
+      Config.WorkingDir: Config.WorkingDir
+      Container: Container
+      Created: Created
+      DockerVersion: DockerVersion
+      Id: Id
+      Os: Os
+      Parent: Parent
+      Size: Size
+      Tag: Tag
+      Throwaway: Throwaway
+      VirtualSize: VirtualSize
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/registry/namespaces
+  method: GET
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  whitelist:
+  - namespace
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-registry-namespaces
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      namespace: namespace
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/registry/namespaces/{namespace}
+  method: GET
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  whitelist:
+  - namespace
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-registry-namespaces-namespace
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      namespace: namespace
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/tlskey
+  method: GET
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  whitelist:
+  - ca_cert
+  - server_cert
+  - user_cert
+  - user_key
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-tlskey
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      ca_cert: ca_cert
+      server_cert: server_cert
+      user_cert: user_cert
+      user_key: user_key
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/volumes/create
+  method: POST
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-volumes-create
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/volumes/fs/create
+  method: POST
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-volumes-fs-create
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/volumes/fs/flavors/json
+  method: GET
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-volumes-fs-flavors-json
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/volumes/fs/json
+  method: GET
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-volumes-fs-json
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/volumes/fs/{name}/json
+  method: GET
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-volumes-fs-name-json
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/volumes/json
+  method: GET
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-volumes-json
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/volumes/{name}
+  method: POST
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  whitelist:
+  - fsID
+  - hostPath
+  - otherSpaceVisibility
+  - spaceGuid
+  - volName
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-volumes-name
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      fsID: fsID
+      hostPath: hostPath
+      otherSpaceVisibility: otherSpaceVisibility
+      spaceGuid: spaceGuid
+      volName: volName
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools
+- group: ibm-containers-3-0-0
+  url_pattern: /v3/volumes/{name}/json
+  method: GET
+  encoding: json
+  host:
+  - https://containers-api.ng.bluemix.net
+  whitelist:
+  - fsID
+  - hostPath
+  - otherSpaceVisibility
+  - spaceGuid
+  - volName
+  concurrent_calls: 1
+  extra_config:
+    provider: bluemix.net
+    description: "Containers are virtual software objects that include all the elements
+      that an app needs to run. A container has the benefits of resource isolation
+      and allocation but is more portable and efficient than, for example, a virtual
+      machine.\n\n This documentation describes the IBM Containers API, which is based
+      on the Docker Remote API. The API provides endpoints that you can use to create
+      and manage your single containers and container groups in Bluemix. Endpoints
+      are summarized under the following tags: \n\n- **Authentication**: Retrieve
+      and refresh your TLS certificates. \n- **Private Docker images registry**: Create
+      your own private Docker images registry in Bluemix by setting a namespace for
+      your organization. \n- **Images**: View, build, and push your images to your
+      private Bluemix registry so you can use them with IBM Containers. You can also
+      scan your container images with the Vulnerability Advisor against standard policies
+      set by the organization manager and a database of known Ubuntu issues. \n- **Single
+      Containers**: Create and manage single containers in Bluemix. Use a single container
+      to implement short-lived processes or to run simple tests as you develop an
+      app or service. To make your single container available from the internet, review
+      the `Public IP addresses` endpoints. \n- **Container Groups**: Create and manage
+      your container groups in Bluemix. A container group consists of multiple single
+      containers that are all created from the same container image and as a consequence
+      are configured in the same way. Container groups offer further options at no
+      cost to make your app highly available. These options include in-built load
+      balancing, auto-recovery of unhealthy container instances, and auto-scaling
+      of container instances based on CPU and memory usage. Map a public route to
+      your container group to make your app accessible from the internet.  \n- **Public
+      IP addresses**: Use these endpoints to request public IP addresses for your
+      space. You can bind this IP address to your container to make your container
+      accessible from the internet. \n- **File shares**: Create, list and delete file
+      shares in a space. A file share is a NFS storage system that hosts Docker volumes.
+      \ \n- **Volumes**: Create and manage container volumes in your space to persist
+      the data of your containers.  \n\n\n Each API request requires an HTTP header
+      that includes the 'X-Auth-Token’ and 'X-Auth-Project-Id’ parameter. \n\n- **X-Auth-Token**:
+      The JSON web token (JWT) that you receive when logging into the Bluemix platform.
+      It allows you to use the IBM Containers REST API, access services, and resources.
+      Run `cf oauth-token` to retrieve your access token information.\n- **X-Auth-Project-Id**:
+      The unique ID of your organization space where you want to create or work with
+      your containers. Run `cf space <space_name> --guid`, where `<space_name>` is
+      the name of your space, to retrieve your space ID.\n\n\n For further information
+      about how containers work in the IBM Containers service, review the documentation
+      under https://new-console.ng.bluemix.net/docs/containers/container_index.html. "
+    version: 3.0.0
+    slug: ibm-containers-3-0-0-v3-volumes-name-json
+    schemes:
+    - https
+    produces:
+    - json
+    mapping:
+      fsID: fsID
+      hostPath: hostPath
+      otherSpaceVisibility: otherSpaceVisibility
+      spaceGuid: spaceGuid
+      volName: volName
+    hosts:
+    - https://containers-api.ng.bluemix.net
+    topics:
+    - developer-tools

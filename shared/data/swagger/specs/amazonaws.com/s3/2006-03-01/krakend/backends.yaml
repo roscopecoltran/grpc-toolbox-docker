@@ -1,0 +1,805 @@
+backends:
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /#ListBuckets
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-listbuckets
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}#ListObjects
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  query_string_params:
+  - Marker
+  - MaxKeys
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-listobjects
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}/{Key}#GetObject
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  - Key
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-key-getobject
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}/{Key}#ListParts
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  - Key
+  query_string_params:
+  - MaxParts
+  - PartNumberMarker
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-key-listparts
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}/{Key}?acl#GetObjectAcl
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  - Key
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-key-acl-getobjectacl
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}/{Key}?restore#RestoreObject
+  method: POST
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  - Key
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-key-restore-restoreobject
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}/{Key}?tagging#GetObjectTagging
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  - Key
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-key-tagging-getobjecttagging
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}/{Key}?torrent#GetObjectTorrent
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  - Key
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-key-torrent-getobjecttorrent
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}/{Key}?uploads
+  method: POST
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  - Key
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-key-uploads
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}?accelerate
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-accelerate
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}?acl
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-acl
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}?analytics#ListBucketAnalyticsConfigurations
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-analytics-listbucketanalyticsconfigurations
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}?analytics
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-analytics
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}?cors
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-cors
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}?delete
+  method: POST
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-delete
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}?inventory#ListBucketInventoryConfigurations
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-inventory-listbucketinventoryconfigurations
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}?inventory
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-inventory
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}?lifecycle#GetBucketLifecycleConfiguration
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-lifecycle-getbucketlifecycleconfiguration
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}?lifecycle
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-lifecycle
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}?list-type=2#ListObjectsV2
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  query_string_params:
+  - ContinuationToken
+  - MaxKeys
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-list-type-2-listobjectsv2
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}?location#GetBucketLocation
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-location-getbucketlocation
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}?logging#GetBucketLogging
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-logging-getbucketlogging
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}?metrics#GetBucketMetricsConfiguration
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-metrics-getbucketmetricsconfiguration
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}?metrics#ListBucketMetricsConfigurations
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-metrics-listbucketmetricsconfigurations
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}?notification#GetBucketNotification
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-notification-getbucketnotification
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}?notification#GetBucketNotificationConfiguration
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-notification-getbucketnotificationconfiguration
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}?policy#GetBucketPolicy
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-policy-getbucketpolicy
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}?replication#GetBucketReplication
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-replication-getbucketreplication
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}?requestPayment#GetBucketRequestPayment
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-requestpayment-getbucketrequestpayment
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}?tagging#GetBucketTagging
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-tagging-getbuckettagging
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}?uploads#ListMultipartUploads
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  query_string_params:
+  - KeyMarker
+  - MaxUploads
+  - UploadIdMarker
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-uploads-listmultipartuploads
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}?versioning#GetBucketVersioning
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-versioning-getbucketversioning
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}?versions#ListObjectVersions
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  query_string_params:
+  - KeyMarker
+  - MaxKeys
+  - VersionIdMarker
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-versions-listobjectversions
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-simple-storage-service-2006-03-01
+  url_pattern: /{Bucket}?website#GetBucketWebsite
+  method: GET
+  encoding: xml
+  host:
+  - http://s3.amazonaws.com
+  url_keys:
+  - Bucket
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    version: 2006-03-01
+    slug: amazon-simple-storage-service-2006-03-01-bucket-website-getbucketwebsite
+    schemes:
+    - http
+    consumes:
+    - xml
+    produces:
+    - xml
+    hosts:
+    - http://s3.amazonaws.com
+    topics:
+    - cloud

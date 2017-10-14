@@ -1,0 +1,40 @@
+backends:
+- group: synonym-apis-1-0-1
+  url_pattern: /api/9/word2vec-neologd-jawiki/distance
+  method: GET
+  encoding: json
+  host:
+  - https://api.apitore.com
+  whitelist:
+  - distances
+  - endTime
+  - input
+  - log
+  - num
+  - processTime
+  - startTime
+  concurrent_calls: 1
+  extra_config:
+    provider: apitore.com
+    description: Return synonymous words. (equal to "word2vec distance")<BR />[Endpoint]
+      https://api.apitore.com/api/9
+    version: 1.0.1
+    slug: synonym-apis-1-0-1-api-9-word2vec-neologd-jawiki-distance
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      distances: distances
+      endTime: endTime
+      input: input
+      log: log
+      num: num
+      processTime: processTime
+      startTime: startTime
+    hosts:
+    - https://api.apitore.com
+    topics:
+    - text

@@ -1,0 +1,587 @@
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/inappproducts/batch"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["entrys", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-inappproducts-batch"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]
+    [backends.extra_config.mapping]
+      entrys = "entrys"
+      kind = "kind"
+
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/{packageName}/edits"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["expiryTimeSeconds", "id"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-packagename-edits"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]
+    [backends.extra_config.mapping]
+      expiryTimeSeconds = "expiryTimeSeconds"
+      id = "id"
+
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/{packageName}/edits/{editId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["expiryTimeSeconds", "id"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-packagename-edits-editid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]
+    [backends.extra_config.mapping]
+      expiryTimeSeconds = "expiryTimeSeconds"
+      id = "id"
+
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["apks", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-packagename-edits-editid-apks"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]
+    [backends.extra_config.mapping]
+      apks = "apks"
+      kind = "kind"
+
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/externallyHosted"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-packagename-edits-editid-apks-externallyhosted"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]
+
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/{apkVersionCode}/deobfuscationFiles/{deobfuscationFileType}"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-packagename-edits-editid-apks-apkversioncode-deobfuscationfiles-deobfuscationfiletype"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]
+
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/{apkVersionCode}/expansionFiles/{expansionFileType}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["fileSize", "referencesVersion"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-packagename-edits-editid-apks-apkversioncode-expansionfiles-expansionfiletype"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]
+    [backends.extra_config.mapping]
+      fileSize = "fileSize"
+      referencesVersion = "referencesVersion"
+
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/{apkVersionCode}/listings"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "listings"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-packagename-edits-editid-apks-apkversioncode-listings"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      listings = "listings"
+
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/{packageName}/edits/{editId}/apks/{apkVersionCode}/listings/{language}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["language", "recentChanges"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-packagename-edits-editid-apks-apkversioncode-listings-language"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]
+    [backends.extra_config.mapping]
+      language = "language"
+      recentChanges = "recentChanges"
+
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/{packageName}/edits/{editId}/details"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["contactEmail", "contactPhone", "contactWebsite", "defaultLanguage"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-packagename-edits-editid-details"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]
+    [backends.extra_config.mapping]
+      contactEmail = "contactEmail"
+      contactPhone = "contactPhone"
+      contactWebsite = "contactWebsite"
+      defaultLanguage = "defaultLanguage"
+
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/{packageName}/edits/{editId}/listings"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "listings"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-packagename-edits-editid-listings"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      listings = "listings"
+
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/{packageName}/edits/{editId}/listings/{language}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["fullDescription", "language", "shortDescription", "title", "video"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-packagename-edits-editid-listings-language"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]
+    [backends.extra_config.mapping]
+      fullDescription = "fullDescription"
+      language = "language"
+      shortDescription = "shortDescription"
+      title = "title"
+      video = "video"
+
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/{packageName}/edits/{editId}/listings/{language}/{imageType}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["images"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-packagename-edits-editid-listings-language-imagetype"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]
+    [backends.extra_config.mapping]
+      images = "images"
+
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/{packageName}/edits/{editId}/testers/{track}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["googleGroups", "googlePlusCommunities"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-packagename-edits-editid-testers-track"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]
+    [backends.extra_config.mapping]
+      googleGroups = "googleGroups"
+      googlePlusCommunities = "googlePlusCommunities"
+
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/{packageName}/edits/{editId}/tracks"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "tracks"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-packagename-edits-editid-tracks"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      tracks = "tracks"
+
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/{packageName}/edits/{editId}/tracks/{track}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["track", "userFraction", "versionCodes"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-packagename-edits-editid-tracks-track"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]
+    [backends.extra_config.mapping]
+      track = "track"
+      userFraction = "userFraction"
+      versionCodes = "versionCodes"
+
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/{packageName}/edits/{editId}:commit"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["expiryTimeSeconds", "id"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-packagename-edits-editid-commit"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]
+    [backends.extra_config.mapping]
+      expiryTimeSeconds = "expiryTimeSeconds"
+      id = "id"
+
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/{packageName}/edits/{editId}:validate"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["expiryTimeSeconds", "id"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-packagename-edits-editid-validate"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]
+    [backends.extra_config.mapping]
+      expiryTimeSeconds = "expiryTimeSeconds"
+      id = "id"
+
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/{packageName}/entitlements"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["resources"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-packagename-entitlements"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]
+    [backends.extra_config.mapping]
+      resources = "resources"
+
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/{packageName}/inappproducts"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["inappproduct", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-packagename-inappproducts"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]
+    [backends.extra_config.mapping]
+      inappproduct = "inappproduct"
+      kind = "kind"
+
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/{packageName}/inappproducts/{sku}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["defaultLanguage", "listings", "packageName", "prices", "purchaseType", "sku", "status", "subscriptionPeriod", "trialPeriod"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-packagename-inappproducts-sku"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]
+    [backends.extra_config.mapping]
+      defaultLanguage = "defaultLanguage"
+      listings = "listings"
+      packageName = "packageName"
+      prices = "prices"
+      purchaseType = "purchaseType"
+      sku = "sku"
+      status = "status"
+      subscriptionPeriod = "subscriptionPeriod"
+      trialPeriod = "trialPeriod"
+
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/{packageName}/purchases/products/{productId}/tokens/{token}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["consumptionState", "developerPayload", "kind", "orderId", "purchaseState", "purchaseTimeMillis"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-packagename-purchases-products-productid-tokens-token"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]
+    [backends.extra_config.mapping]
+      consumptionState = "consumptionState"
+      developerPayload = "developerPayload"
+      kind = "kind"
+      orderId = "orderId"
+      purchaseState = "purchaseState"
+      purchaseTimeMillis = "purchaseTimeMillis"
+
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/{packageName}/purchases/subscriptions/{subscriptionId}/tokens/{token}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["autoRenewing", "cancelReason", "countryCode", "developerPayload", "expiryTimeMillis", "kind", "orderId", "paymentState", "priceAmountMicros", "priceCurrencyCode", "startTimeMillis", "userCancellationTimeMillis"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-packagename-purchases-subscriptions-subscriptionid-tokens-token"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]
+    [backends.extra_config.mapping]
+      autoRenewing = "autoRenewing"
+      cancelReason = "cancelReason"
+      countryCode = "countryCode"
+      developerPayload = "developerPayload"
+      expiryTimeMillis = "expiryTimeMillis"
+      kind = "kind"
+      orderId = "orderId"
+      paymentState = "paymentState"
+      priceAmountMicros = "priceAmountMicros"
+      priceCurrencyCode = "priceCurrencyCode"
+      startTimeMillis = "startTimeMillis"
+      userCancellationTimeMillis = "userCancellationTimeMillis"
+
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/{packageName}/purchases/subscriptions/{subscriptionId}/tokens/{token}:cancel"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-packagename-purchases-subscriptions-subscriptionid-tokens-token-cancel"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]
+
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/{packageName}/purchases/subscriptions/{subscriptionId}/tokens/{token}:defer"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["newExpiryTimeMillis"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-packagename-purchases-subscriptions-subscriptionid-tokens-token-defer"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]
+    [backends.extra_config.mapping]
+      newExpiryTimeMillis = "newExpiryTimeMillis"
+
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/{packageName}/purchases/subscriptions/{subscriptionId}/tokens/{token}:refund"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-packagename-purchases-subscriptions-subscriptionid-tokens-token-refund"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]
+
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/{packageName}/purchases/subscriptions/{subscriptionId}/tokens/{token}:revoke"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-packagename-purchases-subscriptions-subscriptionid-tokens-token-revoke"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]
+
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/{packageName}/purchases/voidedpurchases"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["voidedPurchases"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-packagename-purchases-voidedpurchases"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]
+    [backends.extra_config.mapping]
+      voidedPurchases = "voidedPurchases"
+
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/{packageName}/reviews"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["reviews"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-packagename-reviews"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]
+    [backends.extra_config.mapping]
+      reviews = "reviews"
+
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/{packageName}/reviews/{reviewId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["authorName", "comments", "reviewId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-packagename-reviews-reviewid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]
+    [backends.extra_config.mapping]
+      authorName = "authorName"
+      comments = "comments"
+      reviewId = "reviewId"
+
+[[backends]]
+  group = "google-play-developer-v2"
+  url_pattern = "/androidpublisher/v2/applications/{packageName}/reviews/{reviewId}:reply"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Lets Android application developers access their Google Play accounts."
+    version = "v2"
+    slug = "google-play-developer-v2-androidpublisher-v2-applications-packagename-reviews-reviewid-reply"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["developer-tools"]

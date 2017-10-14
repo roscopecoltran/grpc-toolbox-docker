@@ -1,0 +1,24 @@
+backends:
+- group: amazon-mobile-analytics-2014-06-05
+  url_pattern: /2014-06-05/events
+  method: POST
+  encoding: json
+  host:
+  - http://mobileanalytics.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: Amazon Mobile Analytics is a service for collecting, visualizing,
+      and understanding app usage data at scale.
+    version: 2014-06-05
+    slug: amazon-mobile-analytics-2014-06-05-2014-06-05-events
+    schemes:
+    - http
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - http://mobileanalytics.amazonaws.com
+    topics:
+    - cloud

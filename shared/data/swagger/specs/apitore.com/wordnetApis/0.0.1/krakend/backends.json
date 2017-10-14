@@ -1,0 +1,370 @@
+{
+	"backends": [
+		{
+			"group": "wordnet-apis-0-0-1",
+			"url_pattern": "/api/46/wordnet/sense/bysynset",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://api.apitore.com"
+			],
+			"whitelist": [
+				"endTime",
+				"entries",
+				"log",
+				"processTime",
+				"startTime"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "apitore.com",
+				"description": "You can access ALL WordNet DB.\u003cBR /\u003e[Endpoint] https://api.apitore.com/api/46",
+				"version": "0.0.1",
+				"slug": "wordnet-apis-0-0-1-api-46-wordnet-sense-bysynset",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"endTime": "endTime",
+					"entries": "entries",
+					"log": "log",
+					"processTime": "processTime",
+					"startTime": "startTime"
+				},
+				"hosts": [
+					"https://api.apitore.com"
+				],
+				"topics": [
+					"text"
+				]
+			}
+		},
+		{
+			"group": "wordnet-apis-0-0-1",
+			"url_pattern": "/api/46/wordnet/sense/bywordid",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://api.apitore.com"
+			],
+			"whitelist": [
+				"endTime",
+				"entries",
+				"log",
+				"processTime",
+				"startTime"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "apitore.com",
+				"description": "You can access ALL WordNet DB.\u003cBR /\u003e[Endpoint] https://api.apitore.com/api/46",
+				"version": "0.0.1",
+				"slug": "wordnet-apis-0-0-1-api-46-wordnet-sense-bywordid",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"endTime": "endTime",
+					"entries": "entries",
+					"log": "log",
+					"processTime": "processTime",
+					"startTime": "startTime"
+				},
+				"hosts": [
+					"https://api.apitore.com"
+				],
+				"topics": [
+					"text"
+				]
+			}
+		},
+		{
+			"group": "wordnet-apis-0-0-1",
+			"url_pattern": "/api/46/wordnet/synlink/bysynset",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://api.apitore.com"
+			],
+			"whitelist": [
+				"endTime",
+				"entries",
+				"log",
+				"processTime",
+				"startTime"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "apitore.com",
+				"description": "You can access ALL WordNet DB.\u003cBR /\u003e[Endpoint] https://api.apitore.com/api/46",
+				"version": "0.0.1",
+				"slug": "wordnet-apis-0-0-1-api-46-wordnet-synlink-bysynset",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"endTime": "endTime",
+					"entries": "entries",
+					"log": "log",
+					"processTime": "processTime",
+					"startTime": "startTime"
+				},
+				"hosts": [
+					"https://api.apitore.com"
+				],
+				"topics": [
+					"text"
+				]
+			}
+		},
+		{
+			"group": "wordnet-apis-0-0-1",
+			"url_pattern": "/api/46/wordnet/synset/byname",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://api.apitore.com"
+			],
+			"whitelist": [
+				"endTime",
+				"entries",
+				"log",
+				"processTime",
+				"startTime"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "apitore.com",
+				"description": "You can access ALL WordNet DB.\u003cBR /\u003e[Endpoint] https://api.apitore.com/api/46",
+				"version": "0.0.1",
+				"slug": "wordnet-apis-0-0-1-api-46-wordnet-synset-byname",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"endTime": "endTime",
+					"entries": "entries",
+					"log": "log",
+					"processTime": "processTime",
+					"startTime": "startTime"
+				},
+				"hosts": [
+					"https://api.apitore.com"
+				],
+				"topics": [
+					"text"
+				]
+			}
+		},
+		{
+			"group": "wordnet-apis-0-0-1",
+			"url_pattern": "/api/46/wordnet/synset/bysynset",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://api.apitore.com"
+			],
+			"whitelist": [
+				"endTime",
+				"entries",
+				"log",
+				"processTime",
+				"startTime"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "apitore.com",
+				"description": "You can access ALL WordNet DB.\u003cBR /\u003e[Endpoint] https://api.apitore.com/api/46",
+				"version": "0.0.1",
+				"slug": "wordnet-apis-0-0-1-api-46-wordnet-synset-bysynset",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"endTime": "endTime",
+					"entries": "entries",
+					"log": "log",
+					"processTime": "processTime",
+					"startTime": "startTime"
+				},
+				"hosts": [
+					"https://api.apitore.com"
+				],
+				"topics": [
+					"text"
+				]
+			}
+		},
+		{
+			"group": "wordnet-apis-0-0-1",
+			"url_pattern": "/api/46/wordnet/synsetdef/bysynset",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://api.apitore.com"
+			],
+			"whitelist": [
+				"def",
+				"endTime",
+				"lang",
+				"log",
+				"processTime",
+				"sid",
+				"startTime",
+				"synset"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "apitore.com",
+				"description": "You can access ALL WordNet DB.\u003cBR /\u003e[Endpoint] https://api.apitore.com/api/46",
+				"version": "0.0.1",
+				"slug": "wordnet-apis-0-0-1-api-46-wordnet-synsetdef-bysynset",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"def": "def",
+					"endTime": "endTime",
+					"lang": "lang",
+					"log": "log",
+					"processTime": "processTime",
+					"sid": "sid",
+					"startTime": "startTime",
+					"synset": "synset"
+				},
+				"hosts": [
+					"https://api.apitore.com"
+				],
+				"topics": [
+					"text"
+				]
+			}
+		},
+		{
+			"group": "wordnet-apis-0-0-1",
+			"url_pattern": "/api/46/wordnet/word/bylemma",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://api.apitore.com"
+			],
+			"whitelist": [
+				"endTime",
+				"entries",
+				"log",
+				"processTime",
+				"startTime"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "apitore.com",
+				"description": "You can access ALL WordNet DB.\u003cBR /\u003e[Endpoint] https://api.apitore.com/api/46",
+				"version": "0.0.1",
+				"slug": "wordnet-apis-0-0-1-api-46-wordnet-word-bylemma",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"endTime": "endTime",
+					"entries": "entries",
+					"log": "log",
+					"processTime": "processTime",
+					"startTime": "startTime"
+				},
+				"hosts": [
+					"https://api.apitore.com"
+				],
+				"topics": [
+					"text"
+				]
+			}
+		},
+		{
+			"group": "wordnet-apis-0-0-1",
+			"url_pattern": "/api/46/wordnet/word/bywordid",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://api.apitore.com"
+			],
+			"whitelist": [
+				"endTime",
+				"entries",
+				"log",
+				"processTime",
+				"startTime"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "apitore.com",
+				"description": "You can access ALL WordNet DB.\u003cBR /\u003e[Endpoint] https://api.apitore.com/api/46",
+				"version": "0.0.1",
+				"slug": "wordnet-apis-0-0-1-api-46-wordnet-word-bywordid",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"endTime": "endTime",
+					"entries": "entries",
+					"log": "log",
+					"processTime": "processTime",
+					"startTime": "startTime"
+				},
+				"hosts": [
+					"https://api.apitore.com"
+				],
+				"topics": [
+					"text"
+				]
+			}
+		}
+	]
+}

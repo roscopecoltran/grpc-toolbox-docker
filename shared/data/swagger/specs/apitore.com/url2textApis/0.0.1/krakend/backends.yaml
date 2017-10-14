@@ -1,0 +1,33 @@
+backends:
+- group: url2text-apis-0-0-1
+  url_pattern: /api/13/jsoup/url2text
+  method: GET
+  encoding: json
+  host:
+  - https://api.apitore.com
+  whitelist:
+  - endTime
+  - log
+  - processTime
+  - startTime
+  - text
+  concurrent_calls: 1
+  extra_config:
+    provider: apitore.com
+    description: Url to Text.<BR />[Endpoint] https://api.apitore.com/api/13
+    version: 0.0.1
+    slug: url2text-apis-0-0-1-api-13-jsoup-url2text
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      endTime: endTime
+      log: log
+      processTime: processTime
+      startTime: startTime
+      text: text
+    hosts:
+    - https://api.apitore.com

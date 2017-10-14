@@ -1,0 +1,17 @@
+[[backends]]
+  group = "g-suite-activity-v1"
+  url_pattern = "/appsactivity/v1/activities"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["activities", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Provides a historical view of activity."
+    version = "v1"
+    slug = "g-suite-activity-v1-appsactivity-v1-activities"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      activities = "activities"
+      nextPageToken = "nextPageToken"

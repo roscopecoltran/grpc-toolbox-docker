@@ -1,0 +1,58 @@
+backends:
+- group: passwordutility-web-v1
+  url_pattern: /api/password/generate
+  method: POST
+  encoding: json
+  host:
+  - http://passwordutility.net:80
+  query_string_params:
+  - digits
+  - length
+  - specialCharacters
+  - upperCase
+  concurrent_calls: 1
+  extra_config:
+    provider: passwordutility.net
+    description: Validate and generate passwords using open source tools
+    version: v1
+    slug: passwordutility-web-v1-api-password-generate
+    schemes:
+    - http
+    produces:
+    - json
+    - json
+    - xml
+    - xml
+    hosts:
+    - http://passwordutility.net:80
+    topics:
+    - password
+    - security
+    - tools
+- group: passwordutility-web-v1
+  url_pattern: /api/password/validate
+  method: POST
+  encoding: json
+  host:
+  - http://passwordutility.net:80
+  query_string_params:
+  - password
+  concurrent_calls: 1
+  extra_config:
+    provider: passwordutility.net
+    description: Validate and generate passwords using open source tools
+    version: v1
+    slug: passwordutility-web-v1-api-password-validate
+    schemes:
+    - http
+    produces:
+    - json
+    - json
+    - xml
+    - xml
+    hosts:
+    - http://passwordutility.net:80
+    topics:
+    - password
+    - security
+    - tools

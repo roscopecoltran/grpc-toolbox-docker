@@ -1,0 +1,218 @@
+{
+	"backends": [
+		{
+			"group": "synq-video-1-9-1",
+			"url_pattern": "/v1/video/create",
+			"method": "POST",
+			"host": [
+				"https://api.synq.fm"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "synq.fm",
+				"description": "* [Sign up for a developer API key!](https://www.synq.fm/register)\n* [SYNQ API Guide](/)",
+				"version": "1.9.1",
+				"slug": "synq-video-1-9-1-v1-video-create",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"form-data",
+					"x-www-form-urlencoded"
+				],
+				"hosts": [
+					"https://api.synq.fm"
+				],
+				"topics": [
+					"media"
+				]
+			}
+		},
+		{
+			"group": "synq-video-1-9-1",
+			"url_pattern": "/v1/video/details",
+			"method": "POST",
+			"host": [
+				"https://api.synq.fm"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "synq.fm",
+				"description": "* [Sign up for a developer API key!](https://www.synq.fm/register)\n* [SYNQ API Guide](/)",
+				"version": "1.9.1",
+				"slug": "synq-video-1-9-1-v1-video-details",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"form-data",
+					"x-www-form-urlencoded"
+				],
+				"hosts": [
+					"https://api.synq.fm"
+				],
+				"topics": [
+					"media"
+				]
+			}
+		},
+		{
+			"group": "synq-video-1-9-1",
+			"url_pattern": "/v1/video/query",
+			"method": "POST",
+			"host": [
+				"https://api.synq.fm"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "synq.fm",
+				"description": "* [Sign up for a developer API key!](https://www.synq.fm/register)\n* [SYNQ API Guide](/)",
+				"version": "1.9.1",
+				"slug": "synq-video-1-9-1-v1-video-query",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"form-data",
+					"x-www-form-urlencoded"
+				],
+				"hosts": [
+					"https://api.synq.fm"
+				],
+				"topics": [
+					"media"
+				]
+			}
+		},
+		{
+			"group": "synq-video-1-9-1",
+			"url_pattern": "/v1/video/stream",
+			"method": "POST",
+			"host": [
+				"https://api.synq.fm"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "synq.fm",
+				"description": "* [Sign up for a developer API key!](https://www.synq.fm/register)\n* [SYNQ API Guide](/)",
+				"version": "1.9.1",
+				"slug": "synq-video-1-9-1-v1-video-stream",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"form-data",
+					"x-www-form-urlencoded"
+				],
+				"hosts": [
+					"https://api.synq.fm"
+				],
+				"topics": [
+					"media"
+				]
+			}
+		},
+		{
+			"group": "synq-video-1-9-1",
+			"url_pattern": "/v1/video/update",
+			"method": "POST",
+			"host": [
+				"https://api.synq.fm"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "synq.fm",
+				"description": "* [Sign up for a developer API key!](https://www.synq.fm/register)\n* [SYNQ API Guide](/)",
+				"version": "1.9.1",
+				"slug": "synq-video-1-9-1-v1-video-update",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"form-data",
+					"x-www-form-urlencoded"
+				],
+				"hosts": [
+					"https://api.synq.fm"
+				],
+				"topics": [
+					"media"
+				]
+			}
+		},
+		{
+			"group": "synq-video-1-9-1",
+			"url_pattern": "/v1/video/upload",
+			"method": "POST",
+			"host": [
+				"https://api.synq.fm"
+			],
+			"whitelist": [
+				"AWSAccessKeyId",
+				"Content-Type",
+				"Policy",
+				"Signature",
+				"acl",
+				"action",
+				"key"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "synq.fm",
+				"description": "* [Sign up for a developer API key!](https://www.synq.fm/register)\n* [SYNQ API Guide](/)",
+				"version": "1.9.1",
+				"slug": "synq-video-1-9-1-v1-video-upload",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"form-data",
+					"x-www-form-urlencoded"
+				],
+				"mapping": {
+					"AWSAccessKeyId": "AWSAccessKeyId",
+					"Content-Type": "Content-Type",
+					"Policy": "Policy",
+					"Signature": "Signature",
+					"acl": "acl",
+					"action": "action",
+					"key": "key"
+				},
+				"hosts": [
+					"https://api.synq.fm"
+				],
+				"topics": [
+					"media"
+				]
+			}
+		},
+		{
+			"group": "synq-video-1-9-1",
+			"url_pattern": "/v1/video/uploader",
+			"method": "POST",
+			"host": [
+				"https://api.synq.fm"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "synq.fm",
+				"description": "* [Sign up for a developer API key!](https://www.synq.fm/register)\n* [SYNQ API Guide](/)",
+				"version": "1.9.1",
+				"slug": "synq-video-1-9-1-v1-video-uploader",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"form-data",
+					"x-www-form-urlencoded"
+				],
+				"hosts": [
+					"https://api.synq.fm"
+				],
+				"topics": [
+					"media"
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,59 @@
+{
+	"backends": [
+		{
+			"group": "spectrocoin-merchant-1-0-0",
+			"url_pattern": "/api/merchant/1/api/createOrder",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://spectrocoin.com"
+			],
+			"whitelist": [
+				"depositAddress",
+				"orderId",
+				"orderRequestId",
+				"payAmount",
+				"payCurrency",
+				"receiveAmount",
+				"receiveCurrency",
+				"redirectUrl",
+				"validUntil"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "spectrocoin.com",
+				"description": "This is an API designed for merchants who are using SpectroCoin services and wishes to integrate them locally.",
+				"version": "1.0.0",
+				"slug": "spectrocoin-merchant-1-0-0-api-merchant-1-api-createorder",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"x-www-form-urlencoded"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"depositAddress": "depositAddress",
+					"orderId": "orderId",
+					"orderRequestId": "orderRequestId",
+					"payAmount": "payAmount",
+					"payCurrency": "payCurrency",
+					"receiveAmount": "receiveAmount",
+					"receiveCurrency": "receiveCurrency",
+					"redirectUrl": "redirectUrl",
+					"validUntil": "validUntil"
+				},
+				"hosts": [
+					"https://spectrocoin.com"
+				],
+				"topics": [
+					"ecommerce",
+					"financial",
+					"payment"
+				]
+			}
+		}
+	]
+}

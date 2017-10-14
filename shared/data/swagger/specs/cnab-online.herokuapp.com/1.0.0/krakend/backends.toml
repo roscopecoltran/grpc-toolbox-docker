@@ -1,0 +1,67 @@
+[[backends]]
+  group = "cnab-online-1-0-0"
+  url_pattern = "/v1/file"
+  method = "POST"
+  encoding = "json"
+  host = ["https://cnab-online.herokuapp.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "cnab-online.herokuapp.com"
+    description = "Processe arquivos de retorno CNAB"
+    version = "1.0.0"
+    slug = "cnab-online-1-0-0-v1-file"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://cnab-online.herokuapp.com"]
+    topics = ["financial"]
+
+[[backends]]
+  group = "cnab-online-1-0-0"
+  url_pattern = "/v1/file/{fileId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://cnab-online.herokuapp.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "cnab-online.herokuapp.com"
+    description = "Processe arquivos de retorno CNAB"
+    version = "1.0.0"
+    slug = "cnab-online-1-0-0-v1-file-fileid"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://cnab-online.herokuapp.com"]
+    topics = ["financial"]
+
+[[backends]]
+  group = "cnab-online-1-0-0"
+  url_pattern = "/v1/file/{fileId}/lines"
+  method = "GET"
+  encoding = "json"
+  host = ["https://cnab-online.herokuapp.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "cnab-online.herokuapp.com"
+    description = "Processe arquivos de retorno CNAB"
+    version = "1.0.0"
+    slug = "cnab-online-1-0-0-v1-file-fileid-lines"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://cnab-online.herokuapp.com"]
+    topics = ["financial"]
+
+[[backends]]
+  group = "cnab-online-1-0-0"
+  url_pattern = "/v1/file/{fileId}/occurrences"
+  method = "GET"
+  encoding = "json"
+  host = ["https://cnab-online.herokuapp.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "cnab-online.herokuapp.com"
+    description = "Processe arquivos de retorno CNAB"
+    version = "1.0.0"
+    slug = "cnab-online-1-0-0-v1-file-fileid-occurrences"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://cnab-online.herokuapp.com"]
+    topics = ["financial"]

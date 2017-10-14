@@ -1,0 +1,501 @@
+{
+	"backends": [
+		{
+			"group": "open-skills-1-0",
+			"url_pattern": "/v1/jobs",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.dataatwork.org"
+			],
+			"whitelist": [
+				"links"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "dataatwork.org",
+				"description": "A complete and standard data store for canonical and emerging skills, knowledge, abilities, tools, technolgies, and how they relate to jobs.",
+				"version": "1.0",
+				"slug": "open-skills-1-0-v1-jobs",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"links": "links"
+				},
+				"hosts": [
+					"http://api.dataatwork.org"
+				],
+				"topics": [
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "open-skills-1-0",
+			"url_pattern": "/v1/jobs/autocomplete",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.dataatwork.org"
+			],
+			"whitelist": [
+				"links"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "dataatwork.org",
+				"description": "A complete and standard data store for canonical and emerging skills, knowledge, abilities, tools, technolgies, and how they relate to jobs.",
+				"version": "1.0",
+				"slug": "open-skills-1-0-v1-jobs-autocomplete",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"links": "links"
+				},
+				"hosts": [
+					"http://api.dataatwork.org"
+				],
+				"topics": [
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "open-skills-1-0",
+			"url_pattern": "/v1/jobs/normalize",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.dataatwork.org"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "dataatwork.org",
+				"description": "A complete and standard data store for canonical and emerging skills, knowledge, abilities, tools, technolgies, and how they relate to jobs.",
+				"version": "1.0",
+				"slug": "open-skills-1-0-v1-jobs-normalize",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://api.dataatwork.org"
+				],
+				"topics": [
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "open-skills-1-0",
+			"url_pattern": "/v1/jobs/unusual_titles",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.dataatwork.org"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "dataatwork.org",
+				"description": "A complete and standard data store for canonical and emerging skills, knowledge, abilities, tools, technolgies, and how they relate to jobs.",
+				"version": "1.0",
+				"slug": "open-skills-1-0-v1-jobs-unusual-titles",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://api.dataatwork.org"
+				],
+				"topics": [
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "open-skills-1-0",
+			"url_pattern": "/v1/jobs/{id}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.dataatwork.org"
+			],
+			"whitelist": [
+				"normalized_job_title",
+				"parent_uuid",
+				"title",
+				"uuid"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "dataatwork.org",
+				"description": "A complete and standard data store for canonical and emerging skills, knowledge, abilities, tools, technolgies, and how they relate to jobs.",
+				"version": "1.0",
+				"slug": "open-skills-1-0-v1-jobs-id",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"normalized_job_title": "normalized_job_title",
+					"parent_uuid": "parent_uuid",
+					"title": "title",
+					"uuid": "uuid"
+				},
+				"hosts": [
+					"http://api.dataatwork.org"
+				],
+				"topics": [
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "open-skills-1-0",
+			"url_pattern": "/v1/jobs/{id}/related_jobs",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.dataatwork.org"
+			],
+			"whitelist": [
+				"related_job_titles",
+				"uuid"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "dataatwork.org",
+				"description": "A complete and standard data store for canonical and emerging skills, knowledge, abilities, tools, technolgies, and how they relate to jobs.",
+				"version": "1.0",
+				"slug": "open-skills-1-0-v1-jobs-id-related-jobs",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"related_job_titles": "related_job_titles",
+					"uuid": "uuid"
+				},
+				"hosts": [
+					"http://api.dataatwork.org"
+				],
+				"topics": [
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "open-skills-1-0",
+			"url_pattern": "/v1/jobs/{id}/related_skills",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.dataatwork.org"
+			],
+			"whitelist": [
+				"job_title",
+				"job_uuid",
+				"normalized_job_title",
+				"skills"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "dataatwork.org",
+				"description": "A complete and standard data store for canonical and emerging skills, knowledge, abilities, tools, technolgies, and how they relate to jobs.",
+				"version": "1.0",
+				"slug": "open-skills-1-0-v1-jobs-id-related-skills",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"job_title": "job_title",
+					"job_uuid": "job_uuid",
+					"normalized_job_title": "normalized_job_title",
+					"skills": "skills"
+				},
+				"hosts": [
+					"http://api.dataatwork.org"
+				],
+				"topics": [
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "open-skills-1-0",
+			"url_pattern": "/v1/skills",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.dataatwork.org"
+			],
+			"whitelist": [
+				"links"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "dataatwork.org",
+				"description": "A complete and standard data store for canonical and emerging skills, knowledge, abilities, tools, technolgies, and how they relate to jobs.",
+				"version": "1.0",
+				"slug": "open-skills-1-0-v1-skills",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"links": "links"
+				},
+				"hosts": [
+					"http://api.dataatwork.org"
+				],
+				"topics": [
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "open-skills-1-0",
+			"url_pattern": "/v1/skills/autocomplete",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.dataatwork.org"
+			],
+			"whitelist": [
+				"jobs",
+				"normalized_job_title",
+				"skill_name",
+				"skill_uuid"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "dataatwork.org",
+				"description": "A complete and standard data store for canonical and emerging skills, knowledge, abilities, tools, technolgies, and how they relate to jobs.",
+				"version": "1.0",
+				"slug": "open-skills-1-0-v1-skills-autocomplete",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"jobs": "jobs",
+					"normalized_job_title": "normalized_job_title",
+					"skill_name": "skill_name",
+					"skill_uuid": "skill_uuid"
+				},
+				"hosts": [
+					"http://api.dataatwork.org"
+				],
+				"topics": [
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "open-skills-1-0",
+			"url_pattern": "/v1/skills/normalize",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.dataatwork.org"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "dataatwork.org",
+				"description": "A complete and standard data store for canonical and emerging skills, knowledge, abilities, tools, technolgies, and how they relate to jobs.",
+				"version": "1.0",
+				"slug": "open-skills-1-0-v1-skills-normalize",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://api.dataatwork.org"
+				],
+				"topics": [
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "open-skills-1-0",
+			"url_pattern": "/v1/skills/{id}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.dataatwork.org"
+			],
+			"whitelist": [
+				"name",
+				"normalized_skill_name",
+				"onet_element_id",
+				"uuid"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "dataatwork.org",
+				"description": "A complete and standard data store for canonical and emerging skills, knowledge, abilities, tools, technolgies, and how they relate to jobs.",
+				"version": "1.0",
+				"slug": "open-skills-1-0-v1-skills-id",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"name": "name",
+					"normalized_skill_name": "normalized_skill_name",
+					"onet_element_id": "onet_element_id",
+					"uuid": "uuid"
+				},
+				"hosts": [
+					"http://api.dataatwork.org"
+				],
+				"topics": [
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "open-skills-1-0",
+			"url_pattern": "/v1/skills/{id}/related_jobs",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.dataatwork.org"
+			],
+			"whitelist": [
+				"jobs",
+				"normalized_job_title",
+				"skill_name",
+				"skill_uuid"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "dataatwork.org",
+				"description": "A complete and standard data store for canonical and emerging skills, knowledge, abilities, tools, technolgies, and how they relate to jobs.",
+				"version": "1.0",
+				"slug": "open-skills-1-0-v1-skills-id-related-jobs",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"jobs": "jobs",
+					"normalized_job_title": "normalized_job_title",
+					"skill_name": "skill_name",
+					"skill_uuid": "skill_uuid"
+				},
+				"hosts": [
+					"http://api.dataatwork.org"
+				],
+				"topics": [
+					"open-data"
+				]
+			}
+		},
+		{
+			"group": "open-skills-1-0",
+			"url_pattern": "/v1/skills/{id}/related_skills",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://api.dataatwork.org"
+			],
+			"whitelist": [
+				"related_skill_name",
+				"uuid"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "dataatwork.org",
+				"description": "A complete and standard data store for canonical and emerging skills, knowledge, abilities, tools, technolgies, and how they relate to jobs.",
+				"version": "1.0",
+				"slug": "open-skills-1-0-v1-skills-id-related-skills",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"related_skill_name": "related_skill_name",
+					"uuid": "uuid"
+				},
+				"hosts": [
+					"http://api.dataatwork.org"
+				],
+				"topics": [
+					"open-data"
+				]
+			}
+		}
+	]
+}

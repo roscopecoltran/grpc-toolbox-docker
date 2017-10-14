@@ -1,0 +1,33 @@
+[[backends]]
+  group = "apis-guru-2-0"
+  url_pattern = "/v2//list"
+  method = "JSON"
+  encoding = "json"
+  host = ["https://api.apis.guru"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "apis.guru"
+    description = "Wikipedia for Web APIs. Repository of API specs in OpenAPI(fka Swagger) 2.0 format.\n\n**Warning**: If you want to be notified about changes in advance please subscribe to our [Gitter channel](https://gitter.im/APIs-guru/api-models).\n\nClient sample: [[Demo]](https://apis.guru/simple-ui) [[Repo]](https://github.com/APIs-guru/simple-ui)\n"
+    version = "2.0"
+    slug = "apis-guru-2-0-v2-list"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://api.apis.guru"]
+    topics = ["developer-tools", "open-data"]
+
+[[backends]]
+  group = "apis-guru-2-0"
+  url_pattern = "/v2//metrics"
+  method = "JSON"
+  encoding = "json"
+  host = ["https://api.apis.guru"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "apis.guru"
+    description = "Wikipedia for Web APIs. Repository of API specs in OpenAPI(fka Swagger) 2.0 format.\n\n**Warning**: If you want to be notified about changes in advance please subscribe to our [Gitter channel](https://gitter.im/APIs-guru/api-models).\n\nClient sample: [[Demo]](https://apis.guru/simple-ui) [[Repo]](https://github.com/APIs-guru/simple-ui)\n"
+    version = "2.0"
+    slug = "apis-guru-2-0-v2-metrics"
+    schemes = ["https"]
+    produces = ["json"]
+    hosts = ["https://api.apis.guru"]
+    topics = ["developer-tools", "open-data"]

@@ -1,0 +1,50 @@
+[[backends]]
+  group = "movie-reviews-2-0-0"
+  url_pattern = "/svc/movies/v2/critics/{resource-type}"
+  method = "JSON"
+  encoding = "json"
+  host = ["https://api.nytimes.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "nytimes.com"
+    description = "With the Movie Reviews API, you can search New York Times movie reviews by keyword and get lists of NYT Critics' Picks."
+    version = "2.0.0"
+    slug = "movie-reviews-2-0-0-svc-movies-v2-critics-resource-type"
+    schemes = ["http", "https"]
+    produces = ["json"]
+    hosts = ["http://api.nytimes.com", "https://api.nytimes.com"]
+    topics = ["media", "open-data"]
+
+[[backends]]
+  group = "movie-reviews-2-0-0"
+  url_pattern = "/svc/movies/v2/reviews/search"
+  method = "JSON"
+  encoding = "json"
+  host = ["https://api.nytimes.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "nytimes.com"
+    description = "With the Movie Reviews API, you can search New York Times movie reviews by keyword and get lists of NYT Critics' Picks."
+    version = "2.0.0"
+    slug = "movie-reviews-2-0-0-svc-movies-v2-reviews-search"
+    schemes = ["http", "https"]
+    produces = ["json"]
+    hosts = ["http://api.nytimes.com", "https://api.nytimes.com"]
+    topics = ["media", "open-data"]
+
+[[backends]]
+  group = "movie-reviews-2-0-0"
+  url_pattern = "/svc/movies/v2/reviews/{resource-type}"
+  method = "JSON"
+  encoding = "json"
+  host = ["https://api.nytimes.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "nytimes.com"
+    description = "With the Movie Reviews API, you can search New York Times movie reviews by keyword and get lists of NYT Critics' Picks."
+    version = "2.0.0"
+    slug = "movie-reviews-2-0-0-svc-movies-v2-reviews-resource-type"
+    schemes = ["http", "https"]
+    produces = ["json"]
+    hosts = ["http://api.nytimes.com", "https://api.nytimes.com"]
+    topics = ["media", "open-data"]

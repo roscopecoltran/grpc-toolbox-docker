@@ -1,0 +1,2777 @@
+backends:
+- group: stackexchange-2-0
+  url_pattern: /2.0/access-tokens/{accessTokens}
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-access-tokens-accesstokens
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/access-tokens/{accessTokens}/invalidate
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-access-tokens-accesstokens-invalidate
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/answers
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-answers
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/answers/{ids}
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-answers-ids
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/answers/{ids}/comments
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-answers-ids-comments
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/apps/{accessTokens}/de-authenticate
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-apps-accesstokens-de-authenticate
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/badges
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-badges
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/badges/name
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-badges-name
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/badges/recipients
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-badges-recipients
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/badges/tags
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-badges-tags
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/badges/{ids}
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-badges-ids
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/badges/{ids}/recipients
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-badges-ids-recipients
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/comments
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-comments
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/comments/{ids}
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-comments-ids
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/comments/{id}/delete
+  method: POST
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-comments-id-delete
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/comments/{id}/edit
+  method: POST
+  host:
+  - https://api.stackexchange.com
+  whitelist:
+  - body
+  - body_markdown
+  - can_flag
+  - comment_id
+  - creation_date
+  - edited
+  - link
+  - owner
+  - owner.accept_rate
+  - owner.badge_counts
+  - owner.badge_counts.bronze
+  - owner.badge_counts.gold
+  - owner.badge_counts.silver
+  - owner.display_name
+  - owner.link
+  - owner.profile_image
+  - owner.reputation
+  - owner.user_id
+  - owner.user_type
+  - post_id
+  - post_type
+  - reply_to_user
+  - reply_to_user.accept_rate
+  - reply_to_user.badge_counts
+  - reply_to_user.badge_counts.bronze
+  - reply_to_user.badge_counts.gold
+  - reply_to_user.badge_counts.silver
+  - reply_to_user.display_name
+  - reply_to_user.link
+  - reply_to_user.profile_image
+  - reply_to_user.reputation
+  - reply_to_user.user_id
+  - reply_to_user.user_type
+  - score
+  - upvoted
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-comments-id-edit
+    schemes:
+    - https
+    mapping:
+      body: body
+      body_markdown: body_markdown
+      can_flag: can_flag
+      comment_id: comment_id
+      creation_date: creation_date
+      edited: edited
+      link: link
+      owner: owner
+      owner.accept_rate: owner.accept_rate
+      owner.badge_counts: owner.badge_counts
+      owner.badge_counts.bronze: owner.badge_counts.bronze
+      owner.badge_counts.gold: owner.badge_counts.gold
+      owner.badge_counts.silver: owner.badge_counts.silver
+      owner.display_name: owner.display_name
+      owner.link: owner.link
+      owner.profile_image: owner.profile_image
+      owner.reputation: owner.reputation
+      owner.user_id: owner.user_id
+      owner.user_type: owner.user_type
+      post_id: post_id
+      post_type: post_type
+      reply_to_user: reply_to_user
+      reply_to_user.accept_rate: reply_to_user.accept_rate
+      reply_to_user.badge_counts: reply_to_user.badge_counts
+      reply_to_user.badge_counts.bronze: reply_to_user.badge_counts.bronze
+      reply_to_user.badge_counts.gold: reply_to_user.badge_counts.gold
+      reply_to_user.badge_counts.silver: reply_to_user.badge_counts.silver
+      reply_to_user.display_name: reply_to_user.display_name
+      reply_to_user.link: reply_to_user.link
+      reply_to_user.profile_image: reply_to_user.profile_image
+      reply_to_user.reputation: reply_to_user.reputation
+      reply_to_user.user_id: reply_to_user.user_id
+      reply_to_user.user_type: reply_to_user.user_type
+      score: score
+      upvoted: upvoted
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/errors
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-errors
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/errors/{id}
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  whitelist:
+  - error_id
+  - error_message
+  - error_name
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-errors-id
+    schemes:
+    - https
+    mapping:
+      error_id: error_id
+      error_message: error_message
+      error_name: error_name
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/events
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-events
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/filters/create
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  whitelist:
+  - filter
+  - filter_type
+  - included_fields
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-filters-create
+    schemes:
+    - https
+    mapping:
+      filter: filter
+      filter_type: filter_type
+      included_fields: included_fields
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/filters/{filters}
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-filters-filters
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/inbox
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-inbox
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/inbox/unread
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-inbox-unread
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/info
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  whitelist:
+  - answers_per_minute
+  - api_revision
+  - badges_per_minute
+  - new_active_users
+  - questions_per_minute
+  - site
+  - site.aliases
+  - site.api_site_parameter
+  - site.audience
+  - site.closed_beta_date
+  - site.favicon_url
+  - site.high_resolution_icon_url
+  - site.icon_url
+  - site.launch_date
+  - site.logo_url
+  - site.markdown_extensions
+  - site.name
+  - site.open_beta_date
+  - site.related_sites
+  - site.site_state
+  - site.site_type
+  - site.site_url
+  - site.styling
+  - site.styling.link_color
+  - site.styling.tag_background_color
+  - site.styling.tag_foreground_color
+  - site.twitter_account
+  - total_accepted
+  - total_answers
+  - total_badges
+  - total_comments
+  - total_questions
+  - total_unanswered
+  - total_users
+  - total_votes
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-info
+    schemes:
+    - https
+    mapping:
+      answers_per_minute: answers_per_minute
+      api_revision: api_revision
+      badges_per_minute: badges_per_minute
+      new_active_users: new_active_users
+      questions_per_minute: questions_per_minute
+      site: site
+      site.aliases: site.aliases
+      site.api_site_parameter: site.api_site_parameter
+      site.audience: site.audience
+      site.closed_beta_date: site.closed_beta_date
+      site.favicon_url: site.favicon_url
+      site.high_resolution_icon_url: site.high_resolution_icon_url
+      site.icon_url: site.icon_url
+      site.launch_date: site.launch_date
+      site.logo_url: site.logo_url
+      site.markdown_extensions: site.markdown_extensions
+      site.name: site.name
+      site.open_beta_date: site.open_beta_date
+      site.related_sites: site.related_sites
+      site.site_state: site.site_state
+      site.site_type: site.site_type
+      site.site_url: site.site_url
+      site.styling: site.styling
+      site.styling.link_color: site.styling.link_color
+      site.styling.tag_background_color: site.styling.tag_background_color
+      site.styling.tag_foreground_color: site.styling.tag_foreground_color
+      site.twitter_account: site.twitter_account
+      total_accepted: total_accepted
+      total_answers: total_answers
+      total_badges: total_badges
+      total_comments: total_comments
+      total_questions: total_questions
+      total_unanswered: total_unanswered
+      total_users: total_users
+      total_votes: total_votes
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/me
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  whitelist:
+  - about_me
+  - accept_rate
+  - account_id
+  - age
+  - answer_count
+  - badge_counts
+  - badge_counts.bronze
+  - badge_counts.gold
+  - badge_counts.silver
+  - creation_date
+  - display_name
+  - down_vote_count
+  - is_employee
+  - last_access_date
+  - last_modified_date
+  - link
+  - location
+  - profile_image
+  - question_count
+  - reputation
+  - reputation_change_day
+  - reputation_change_month
+  - reputation_change_quarter
+  - reputation_change_week
+  - reputation_change_year
+  - timed_penalty_date
+  - up_vote_count
+  - user_id
+  - user_type
+  - view_count
+  - website_url
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-me
+    schemes:
+    - https
+    mapping:
+      about_me: about_me
+      accept_rate: accept_rate
+      account_id: account_id
+      age: age
+      answer_count: answer_count
+      badge_counts: badge_counts
+      badge_counts.bronze: badge_counts.bronze
+      badge_counts.gold: badge_counts.gold
+      badge_counts.silver: badge_counts.silver
+      creation_date: creation_date
+      display_name: display_name
+      down_vote_count: down_vote_count
+      is_employee: is_employee
+      last_access_date: last_access_date
+      last_modified_date: last_modified_date
+      link: link
+      location: location
+      profile_image: profile_image
+      question_count: question_count
+      reputation: reputation
+      reputation_change_day: reputation_change_day
+      reputation_change_month: reputation_change_month
+      reputation_change_quarter: reputation_change_quarter
+      reputation_change_week: reputation_change_week
+      reputation_change_year: reputation_change_year
+      timed_penalty_date: timed_penalty_date
+      up_vote_count: up_vote_count
+      user_id: user_id
+      user_type: user_type
+      view_count: view_count
+      website_url: website_url
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/me/answers
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-me-answers
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/me/associated
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-me-associated
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/me/badges
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-me-badges
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/me/comments
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-me-comments
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/me/comments/{toId}
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-me-comments-toid
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/me/favorites
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-me-favorites
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/me/inbox
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-me-inbox
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/me/inbox/unread
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-me-inbox-unread
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/me/mentioned
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-me-mentioned
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/me/merges
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-me-merges
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/me/notifications
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-me-notifications
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/me/notifications/unread
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-me-notifications-unread
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/me/privileges
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-me-privileges
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/me/questions
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-me-questions
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/me/questions/featured
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-me-questions-featured
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/me/questions/no-answers
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-me-questions-no-answers
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/me/questions/unaccepted
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-me-questions-unaccepted
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/me/questions/unanswered
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-me-questions-unanswered
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/me/reputation-history
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-me-reputation-history
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/me/reputation-history/full
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-me-reputation-history-full
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/me/reputation
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-me-reputation
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/me/suggested-edits
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-me-suggested-edits
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/me/tags
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-me-tags
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/me/tags/{tags}/top-answers
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-me-tags-tags-top-answers
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/me/tags/{tags}/top-questions
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-me-tags-tags-top-questions
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/me/timeline
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-me-timeline
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/me/top-answer-tags
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-me-top-answer-tags
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/me/top-question-tags
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-me-top-question-tags
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/me/write-permissions
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-me-write-permissions
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/notifications
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-notifications
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/notifications/unread
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-notifications-unread
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/posts
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-posts
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/posts/{ids}
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-posts-ids
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/posts/{ids}/comments
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-posts-ids-comments
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/posts/{ids}/revisions
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-posts-ids-revisions
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/posts/{ids}/suggested-edits
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-posts-ids-suggested-edits
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/posts/{id}/comments/add
+  method: POST
+  host:
+  - https://api.stackexchange.com
+  whitelist:
+  - body
+  - body_markdown
+  - can_flag
+  - comment_id
+  - creation_date
+  - edited
+  - link
+  - owner
+  - owner.accept_rate
+  - owner.badge_counts
+  - owner.badge_counts.bronze
+  - owner.badge_counts.gold
+  - owner.badge_counts.silver
+  - owner.display_name
+  - owner.link
+  - owner.profile_image
+  - owner.reputation
+  - owner.user_id
+  - owner.user_type
+  - post_id
+  - post_type
+  - reply_to_user
+  - reply_to_user.accept_rate
+  - reply_to_user.badge_counts
+  - reply_to_user.badge_counts.bronze
+  - reply_to_user.badge_counts.gold
+  - reply_to_user.badge_counts.silver
+  - reply_to_user.display_name
+  - reply_to_user.link
+  - reply_to_user.profile_image
+  - reply_to_user.reputation
+  - reply_to_user.user_id
+  - reply_to_user.user_type
+  - score
+  - upvoted
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-posts-id-comments-add
+    schemes:
+    - https
+    mapping:
+      body: body
+      body_markdown: body_markdown
+      can_flag: can_flag
+      comment_id: comment_id
+      creation_date: creation_date
+      edited: edited
+      link: link
+      owner: owner
+      owner.accept_rate: owner.accept_rate
+      owner.badge_counts: owner.badge_counts
+      owner.badge_counts.bronze: owner.badge_counts.bronze
+      owner.badge_counts.gold: owner.badge_counts.gold
+      owner.badge_counts.silver: owner.badge_counts.silver
+      owner.display_name: owner.display_name
+      owner.link: owner.link
+      owner.profile_image: owner.profile_image
+      owner.reputation: owner.reputation
+      owner.user_id: owner.user_id
+      owner.user_type: owner.user_type
+      post_id: post_id
+      post_type: post_type
+      reply_to_user: reply_to_user
+      reply_to_user.accept_rate: reply_to_user.accept_rate
+      reply_to_user.badge_counts: reply_to_user.badge_counts
+      reply_to_user.badge_counts.bronze: reply_to_user.badge_counts.bronze
+      reply_to_user.badge_counts.gold: reply_to_user.badge_counts.gold
+      reply_to_user.badge_counts.silver: reply_to_user.badge_counts.silver
+      reply_to_user.display_name: reply_to_user.display_name
+      reply_to_user.link: reply_to_user.link
+      reply_to_user.profile_image: reply_to_user.profile_image
+      reply_to_user.reputation: reply_to_user.reputation
+      reply_to_user.user_id: reply_to_user.user_id
+      reply_to_user.user_type: reply_to_user.user_type
+      score: score
+      upvoted: upvoted
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/privileges
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-privileges
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/questions
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-questions
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/questions/featured
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-questions-featured
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/questions/no-answers
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-questions-no-answers
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/questions/unanswered
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-questions-unanswered
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/questions/{ids}
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-questions-ids
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/questions/{ids}/answers
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-questions-ids-answers
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/questions/{ids}/comments
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-questions-ids-comments
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/questions/{ids}/linked
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-questions-ids-linked
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/questions/{ids}/related
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-questions-ids-related
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/questions/{ids}/timeline
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-questions-ids-timeline
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/revisions/{ids}
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-revisions-ids
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/search
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-search
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/search/advanced
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-search-advanced
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/similar
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-similar
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/sites
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-sites
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/suggested-edits
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-suggested-edits
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/suggested-edits/{ids}
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-suggested-edits-ids
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/tags
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-tags
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/tags/moderator-only
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-tags-moderator-only
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/tags/required
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-tags-required
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/tags/synonyms
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-tags-synonyms
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/tags/{tags}/faq
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-tags-tags-faq
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/tags/{tags}/info
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-tags-tags-info
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/tags/{tags}/related
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-tags-tags-related
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/tags/{tags}/synonyms
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-tags-tags-synonyms
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/tags/{tags}/wikis
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-tags-tags-wikis
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/tags/{tag}/top-answerers/{period}
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-tags-tag-top-answerers-period
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/tags/{tag}/top-askers/{period}
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-tags-tag-top-askers-period
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/moderators
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-moderators
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/moderators/elected
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-moderators-elected
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/{ids}
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-ids
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/{ids}/answers
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-ids-answers
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/{ids}/associated
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-ids-associated
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/{ids}/badges
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-ids-badges
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/{ids}/comments
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-ids-comments
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/{ids}/comments/{toid}
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-ids-comments-toid
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/{ids}/favorites
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-ids-favorites
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/{ids}/mentioned
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-ids-mentioned
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/{ids}/merges
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-ids-merges
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/{ids}/questions
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-ids-questions
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/{ids}/questions/featured
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-ids-questions-featured
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/{ids}/questions/no-answers
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-ids-questions-no-answers
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/{ids}/questions/unaccepted
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-ids-questions-unaccepted
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/{ids}/questions/unanswered
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-ids-questions-unanswered
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/{ids}/reputation-history
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-ids-reputation-history
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/{ids}/reputation
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-ids-reputation
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/{ids}/suggested-edits
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-ids-suggested-edits
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/{ids}/tags
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-ids-tags
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/{ids}/timeline
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-ids-timeline
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/{id}/inbox
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-id-inbox
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/{id}/inbox/unread
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-id-inbox-unread
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/{id}/notifications
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-id-notifications
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/{id}/notifications/unread
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-id-notifications-unread
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/{id}/privileges
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-id-privileges
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/{id}/reputation-history/full
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-id-reputation-history-full
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/{id}/tags/{tags}/top-answers
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-id-tags-tags-top-answers
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/{id}/tags/{tags}/top-questions
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-id-tags-tags-top-questions
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/{id}/top-answer-tags
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-id-top-answer-tags
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/{id}/top-question-tags
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-id-top-question-tags
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support
+- group: stackexchange-2-0
+  url_pattern: /2.0/users/{id}/write-permissions
+  method: GET
+  host:
+  - https://api.stackexchange.com
+  concurrent_calls: 1
+  extra_config:
+    provider: stackexchange.com
+    description: |
+      Stack Exchange is a network of 130+ Q&A communities including Stack Overflow.
+    version: "2.0"
+    slug: stackexchange-2-0-2-0-users-id-write-permissions
+    schemes:
+    - https
+    hosts:
+    - https://api.stackexchange.com
+    topics:
+    - collaboration
+    - developer-tools
+    - support

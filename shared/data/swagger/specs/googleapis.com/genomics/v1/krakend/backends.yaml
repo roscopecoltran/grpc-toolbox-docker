@@ -1,0 +1,1123 @@
+backends:
+- group: genomics-v1
+  url_pattern: /v1/annotations
+  method: POST
+  host:
+  - https://genomics.googleapis.com
+  whitelist:
+  - annotationSetId
+  - end
+  - id
+  - info
+  - info.additionalProperties
+  - name
+  - referenceId
+  - referenceName
+  - reverseStrand
+  - start
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-annotations
+    schemes:
+    - https
+    mapping:
+      annotationSetId: annotationSetId
+      end: end
+      id: id
+      info: info
+      info.additionalProperties: info.additionalProperties
+      name: name
+      referenceId: referenceId
+      referenceName: referenceName
+      reverseStrand: reverseStrand
+      start: start
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - annotations
+- group: genomics-v1
+  url_pattern: /v1/annotations/search
+  method: POST
+  host:
+  - https://genomics.googleapis.com
+  whitelist:
+  - annotations
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-annotations-search
+    schemes:
+    - https
+    mapping:
+      annotations: annotations
+      nextPageToken: nextPageToken
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - annotations
+- group: genomics-v1
+  url_pattern: /v1/annotations/{annotationId}
+  method: GET
+  host:
+  - https://genomics.googleapis.com
+  url_keys:
+  - annotationId
+  whitelist:
+  - annotationSetId
+  - end
+  - id
+  - info
+  - info.additionalProperties
+  - name
+  - referenceId
+  - referenceName
+  - reverseStrand
+  - start
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-annotations-annotationid
+    schemes:
+    - https
+    mapping:
+      annotationSetId: annotationSetId
+      end: end
+      id: id
+      info: info
+      info.additionalProperties: info.additionalProperties
+      name: name
+      referenceId: referenceId
+      referenceName: referenceName
+      reverseStrand: reverseStrand
+      start: start
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - annotations
+- group: genomics-v1
+  url_pattern: /v1/annotations:batchCreate
+  method: POST
+  host:
+  - https://genomics.googleapis.com
+  whitelist:
+  - entries
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-annotations-batchcreate
+    schemes:
+    - https
+    mapping:
+      entries: entries
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - annotations
+- group: genomics-v1
+  url_pattern: /v1/annotationsets
+  method: POST
+  host:
+  - https://genomics.googleapis.com
+  whitelist:
+  - datasetId
+  - id
+  - info
+  - info.additionalProperties
+  - name
+  - referenceSetId
+  - sourceUri
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-annotationsets
+    schemes:
+    - https
+    mapping:
+      datasetId: datasetId
+      id: id
+      info: info
+      info.additionalProperties: info.additionalProperties
+      name: name
+      referenceSetId: referenceSetId
+      sourceUri: sourceUri
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - annotationsets
+- group: genomics-v1
+  url_pattern: /v1/annotationsets/search
+  method: POST
+  host:
+  - https://genomics.googleapis.com
+  whitelist:
+  - annotationSets
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-annotationsets-search
+    schemes:
+    - https
+    mapping:
+      annotationSets: annotationSets
+      nextPageToken: nextPageToken
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - annotationsets
+- group: genomics-v1
+  url_pattern: /v1/annotationsets/{annotationSetId}
+  method: GET
+  host:
+  - https://genomics.googleapis.com
+  url_keys:
+  - annotationSetId
+  whitelist:
+  - datasetId
+  - id
+  - info
+  - info.additionalProperties
+  - name
+  - referenceSetId
+  - sourceUri
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-annotationsets-annotationsetid
+    schemes:
+    - https
+    mapping:
+      datasetId: datasetId
+      id: id
+      info: info
+      info.additionalProperties: info.additionalProperties
+      name: name
+      referenceSetId: referenceSetId
+      sourceUri: sourceUri
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - annotationsets
+- group: genomics-v1
+  url_pattern: /v1/callsets
+  method: POST
+  host:
+  - https://genomics.googleapis.com
+  whitelist:
+  - created
+  - id
+  - info
+  - info.additionalProperties
+  - name
+  - sampleId
+  - variantSetIds
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-callsets
+    schemes:
+    - https
+    mapping:
+      created: created
+      id: id
+      info: info
+      info.additionalProperties: info.additionalProperties
+      name: name
+      sampleId: sampleId
+      variantSetIds: variantSetIds
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - callsets
+- group: genomics-v1
+  url_pattern: /v1/callsets/search
+  method: POST
+  host:
+  - https://genomics.googleapis.com
+  whitelist:
+  - callSets
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-callsets-search
+    schemes:
+    - https
+    mapping:
+      callSets: callSets
+      nextPageToken: nextPageToken
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - callsets
+- group: genomics-v1
+  url_pattern: /v1/callsets/{callSetId}
+  method: GET
+  host:
+  - https://genomics.googleapis.com
+  url_keys:
+  - callSetId
+  whitelist:
+  - created
+  - id
+  - info
+  - info.additionalProperties
+  - name
+  - sampleId
+  - variantSetIds
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-callsets-callsetid
+    schemes:
+    - https
+    mapping:
+      created: created
+      id: id
+      info: info
+      info.additionalProperties: info.additionalProperties
+      name: name
+      sampleId: sampleId
+      variantSetIds: variantSetIds
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - callsets
+- group: genomics-v1
+  url_pattern: /v1/datasets
+  method: GET
+  host:
+  - https://genomics.googleapis.com
+  query_string_params:
+  - pageSize
+  - pageToken
+  - projectId
+  whitelist:
+  - datasets
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-datasets
+    schemes:
+    - https
+    mapping:
+      datasets: datasets
+      nextPageToken: nextPageToken
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - datasets
+- group: genomics-v1
+  url_pattern: /v1/datasets/{datasetId}
+  method: GET
+  host:
+  - https://genomics.googleapis.com
+  url_keys:
+  - datasetId
+  whitelist:
+  - createTime
+  - id
+  - name
+  - projectId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-datasets-datasetid
+    schemes:
+    - https
+    mapping:
+      createTime: createTime
+      id: id
+      name: name
+      projectId: projectId
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - datasets
+- group: genomics-v1
+  url_pattern: /v1/datasets/{datasetId}:undelete
+  method: POST
+  host:
+  - https://genomics.googleapis.com
+  url_keys:
+  - datasetId
+  whitelist:
+  - createTime
+  - id
+  - name
+  - projectId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-datasets-datasetid-undelete
+    schemes:
+    - https
+    mapping:
+      createTime: createTime
+      id: id
+      name: name
+      projectId: projectId
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - datasets
+- group: genomics-v1
+  url_pattern: /v1/readgroupsets/search
+  method: POST
+  host:
+  - https://genomics.googleapis.com
+  whitelist:
+  - nextPageToken
+  - readGroupSets
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-readgroupsets-search
+    schemes:
+    - https
+    mapping:
+      nextPageToken: nextPageToken
+      readGroupSets: readGroupSets
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - readgroupsets
+- group: genomics-v1
+  url_pattern: /v1/readgroupsets/{readGroupSetId}
+  method: GET
+  host:
+  - https://genomics.googleapis.com
+  url_keys:
+  - readGroupSetId
+  whitelist:
+  - datasetId
+  - filename
+  - id
+  - info
+  - info.additionalProperties
+  - name
+  - readGroups
+  - referenceSetId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-readgroupsets-readgroupsetid
+    schemes:
+    - https
+    mapping:
+      datasetId: datasetId
+      filename: filename
+      id: id
+      info: info
+      info.additionalProperties: info.additionalProperties
+      name: name
+      readGroups: readGroups
+      referenceSetId: referenceSetId
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - readgroupsets
+- group: genomics-v1
+  url_pattern: /v1/readgroupsets/{readGroupSetId}/coveragebuckets
+  method: GET
+  host:
+  - https://genomics.googleapis.com
+  url_keys:
+  - readGroupSetId
+  query_string_params:
+  - end
+  - pageSize
+  - pageToken
+  - referenceName
+  - start
+  - targetBucketWidth
+  whitelist:
+  - bucketWidth
+  - coverageBuckets
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-readgroupsets-readgroupsetid-coveragebuckets
+    schemes:
+    - https
+    mapping:
+      bucketWidth: bucketWidth
+      coverageBuckets: coverageBuckets
+      nextPageToken: nextPageToken
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - readgroupsets
+- group: genomics-v1
+  url_pattern: /v1/readgroupsets/{readGroupSetId}:export
+  method: POST
+  host:
+  - https://genomics.googleapis.com
+  url_keys:
+  - readGroupSetId
+  whitelist:
+  - done
+  - metadata
+  - name
+  - response
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-readgroupsets-readgroupsetid-export
+    schemes:
+    - https
+    mapping:
+      done: done
+      metadata: metadata
+      name: name
+      response: response
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - readgroupsets
+- group: genomics-v1
+  url_pattern: /v1/readgroupsets:import
+  method: POST
+  host:
+  - https://genomics.googleapis.com
+  whitelist:
+  - done
+  - metadata
+  - name
+  - response
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-readgroupsets-import
+    schemes:
+    - https
+    mapping:
+      done: done
+      metadata: metadata
+      name: name
+      response: response
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - readgroupsets
+- group: genomics-v1
+  url_pattern: /v1/reads/search
+  method: POST
+  host:
+  - https://genomics.googleapis.com
+  whitelist:
+  - alignments
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-reads-search
+    schemes:
+    - https
+    mapping:
+      alignments: alignments
+      nextPageToken: nextPageToken
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - reads
+- group: genomics-v1
+  url_pattern: /v1/references/search
+  method: POST
+  host:
+  - https://genomics.googleapis.com
+  whitelist:
+  - nextPageToken
+  - references
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-references-search
+    schemes:
+    - https
+    mapping:
+      nextPageToken: nextPageToken
+      references: references
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - references
+- group: genomics-v1
+  url_pattern: /v1/references/{referenceId}
+  method: GET
+  host:
+  - https://genomics.googleapis.com
+  url_keys:
+  - referenceId
+  whitelist:
+  - id
+  - length
+  - md5checksum
+  - name
+  - ncbiTaxonId
+  - sourceAccessions
+  - sourceUri
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-references-referenceid
+    schemes:
+    - https
+    mapping:
+      id: id
+      length: length
+      md5checksum: md5checksum
+      name: name
+      ncbiTaxonId: ncbiTaxonId
+      sourceAccessions: sourceAccessions
+      sourceUri: sourceUri
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - references
+- group: genomics-v1
+  url_pattern: /v1/references/{referenceId}/bases
+  method: GET
+  host:
+  - https://genomics.googleapis.com
+  url_keys:
+  - referenceId
+  query_string_params:
+  - end
+  - pageSize
+  - pageToken
+  - start
+  whitelist:
+  - nextPageToken
+  - offset
+  - sequence
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-references-referenceid-bases
+    schemes:
+    - https
+    mapping:
+      nextPageToken: nextPageToken
+      offset: offset
+      sequence: sequence
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - references
+- group: genomics-v1
+  url_pattern: /v1/referencesets/search
+  method: POST
+  host:
+  - https://genomics.googleapis.com
+  whitelist:
+  - nextPageToken
+  - referenceSets
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-referencesets-search
+    schemes:
+    - https
+    mapping:
+      nextPageToken: nextPageToken
+      referenceSets: referenceSets
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - referencesets
+- group: genomics-v1
+  url_pattern: /v1/referencesets/{referenceSetId}
+  method: GET
+  host:
+  - https://genomics.googleapis.com
+  url_keys:
+  - referenceSetId
+  whitelist:
+  - assemblyId
+  - description
+  - id
+  - md5checksum
+  - ncbiTaxonId
+  - referenceIds
+  - sourceAccessions
+  - sourceUri
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-referencesets-referencesetid
+    schemes:
+    - https
+    mapping:
+      assemblyId: assemblyId
+      description: description
+      id: id
+      md5checksum: md5checksum
+      ncbiTaxonId: ncbiTaxonId
+      referenceIds: referenceIds
+      sourceAccessions: sourceAccessions
+      sourceUri: sourceUri
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - referencesets
+- group: genomics-v1
+  url_pattern: /v1/variants
+  method: POST
+  host:
+  - https://genomics.googleapis.com
+  whitelist:
+  - alternateBases
+  - calls
+  - created
+  - end
+  - filter
+  - id
+  - info
+  - info.additionalProperties
+  - names
+  - quality
+  - referenceBases
+  - referenceName
+  - start
+  - variantSetId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-variants
+    schemes:
+    - https
+    mapping:
+      alternateBases: alternateBases
+      calls: calls
+      created: created
+      end: end
+      filter: filter
+      id: id
+      info: info
+      info.additionalProperties: info.additionalProperties
+      names: names
+      quality: quality
+      referenceBases: referenceBases
+      referenceName: referenceName
+      start: start
+      variantSetId: variantSetId
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - variants
+- group: genomics-v1
+  url_pattern: /v1/variants/search
+  method: POST
+  host:
+  - https://genomics.googleapis.com
+  whitelist:
+  - nextPageToken
+  - variants
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-variants-search
+    schemes:
+    - https
+    mapping:
+      nextPageToken: nextPageToken
+      variants: variants
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - variants
+- group: genomics-v1
+  url_pattern: /v1/variants/{variantId}
+  method: GET
+  host:
+  - https://genomics.googleapis.com
+  url_keys:
+  - variantId
+  whitelist:
+  - alternateBases
+  - calls
+  - created
+  - end
+  - filter
+  - id
+  - info
+  - info.additionalProperties
+  - names
+  - quality
+  - referenceBases
+  - referenceName
+  - start
+  - variantSetId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-variants-variantid
+    schemes:
+    - https
+    mapping:
+      alternateBases: alternateBases
+      calls: calls
+      created: created
+      end: end
+      filter: filter
+      id: id
+      info: info
+      info.additionalProperties: info.additionalProperties
+      names: names
+      quality: quality
+      referenceBases: referenceBases
+      referenceName: referenceName
+      start: start
+      variantSetId: variantSetId
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - variants
+- group: genomics-v1
+  url_pattern: /v1/variants:import
+  method: POST
+  host:
+  - https://genomics.googleapis.com
+  whitelist:
+  - done
+  - metadata
+  - name
+  - response
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-variants-import
+    schemes:
+    - https
+    mapping:
+      done: done
+      metadata: metadata
+      name: name
+      response: response
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - variants
+- group: genomics-v1
+  url_pattern: /v1/variants:merge
+  method: POST
+  host:
+  - https://genomics.googleapis.com
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-variants-merge
+    schemes:
+    - https
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - variants
+- group: genomics-v1
+  url_pattern: /v1/variantsets
+  method: POST
+  host:
+  - https://genomics.googleapis.com
+  whitelist:
+  - datasetId
+  - description
+  - id
+  - metadata
+  - name
+  - referenceBounds
+  - referenceSetId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-variantsets
+    schemes:
+    - https
+    mapping:
+      datasetId: datasetId
+      description: description
+      id: id
+      metadata: metadata
+      name: name
+      referenceBounds: referenceBounds
+      referenceSetId: referenceSetId
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - variantsets
+- group: genomics-v1
+  url_pattern: /v1/variantsets/search
+  method: POST
+  host:
+  - https://genomics.googleapis.com
+  whitelist:
+  - nextPageToken
+  - variantSets
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-variantsets-search
+    schemes:
+    - https
+    mapping:
+      nextPageToken: nextPageToken
+      variantSets: variantSets
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - variantsets
+- group: genomics-v1
+  url_pattern: /v1/variantsets/{variantSetId}
+  method: GET
+  host:
+  - https://genomics.googleapis.com
+  url_keys:
+  - variantSetId
+  whitelist:
+  - datasetId
+  - description
+  - id
+  - metadata
+  - name
+  - referenceBounds
+  - referenceSetId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-variantsets-variantsetid
+    schemes:
+    - https
+    mapping:
+      datasetId: datasetId
+      description: description
+      id: id
+      metadata: metadata
+      name: name
+      referenceBounds: referenceBounds
+      referenceSetId: referenceSetId
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - variantsets
+- group: genomics-v1
+  url_pattern: /v1/variantsets/{variantSetId}:export
+  method: POST
+  host:
+  - https://genomics.googleapis.com
+  url_keys:
+  - variantSetId
+  whitelist:
+  - done
+  - metadata
+  - name
+  - response
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-variantsets-variantsetid-export
+    schemes:
+    - https
+    mapping:
+      done: done
+      metadata: metadata
+      name: name
+      response: response
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - variantsets
+- group: genomics-v1
+  url_pattern: /v1/{name}
+  method: GET
+  host:
+  - https://genomics.googleapis.com
+  url_keys:
+  - name
+  query_string_params:
+  - filter
+  - pageSize
+  - pageToken
+  whitelist:
+  - nextPageToken
+  - operations
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-name
+    schemes:
+    - https
+    mapping:
+      nextPageToken: nextPageToken
+      operations: operations
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - operations
+- group: genomics-v1
+  url_pattern: /v1/{name}:cancel
+  method: POST
+  host:
+  - https://genomics.googleapis.com
+  url_keys:
+  - name
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-name-cancel
+    schemes:
+    - https
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - operations
+- group: genomics-v1
+  url_pattern: /v1/{resource}:getIamPolicy
+  method: POST
+  host:
+  - https://genomics.googleapis.com
+  url_keys:
+  - resource
+  whitelist:
+  - bindings
+  - etag
+  - version
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-resource-getiampolicy
+    schemes:
+    - https
+    mapping:
+      bindings: bindings
+      etag: etag
+      version: version
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - datasets
+- group: genomics-v1
+  url_pattern: /v1/{resource}:setIamPolicy
+  method: POST
+  host:
+  - https://genomics.googleapis.com
+  url_keys:
+  - resource
+  whitelist:
+  - bindings
+  - etag
+  - version
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-resource-setiampolicy
+    schemes:
+    - https
+    mapping:
+      bindings: bindings
+      etag: etag
+      version: version
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - datasets
+- group: genomics-v1
+  url_pattern: /v1/{resource}:testIamPermissions
+  method: POST
+  host:
+  - https://genomics.googleapis.com
+  url_keys:
+  - resource
+  whitelist:
+  - permissions
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Upload, process, query, and search Genomics data in the cloud.
+    version: v1
+    slug: genomics-v1-v1-resource-testiampermissions
+    schemes:
+    - https
+    mapping:
+      permissions: permissions
+    hosts:
+    - https://genomics.googleapis.com
+    topics:
+    - datasets

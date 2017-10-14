@@ -1,0 +1,36 @@
+[[backends]]
+  group = "google-cloud-runtime-configuration-v1"
+  url_pattern = "/v1/{name}"
+  method = "GET"
+  host = ["https://runtimeconfig.googleapis.com"]
+  url_keys = ["name"]
+  query_string_params = ["filter", "pageSize", "pageToken"]
+  whitelist = ["nextPageToken", "operations"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Runtime Configurator allows you to dynamically configure and expose variables through Google Cloud Platform. In addition, you can also set Watchers and Waiters that will watch for changes to your data and return based on certain conditions."
+    version = "v1"
+    slug = "google-cloud-runtime-configuration-v1-v1-name"
+    schemes = ["https"]
+    hosts = ["https://runtimeconfig.googleapis.com"]
+    topics = ["operations"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      operations = "operations"
+
+[[backends]]
+  group = "google-cloud-runtime-configuration-v1"
+  url_pattern = "/v1/{name}:cancel"
+  method = "POST"
+  host = ["https://runtimeconfig.googleapis.com"]
+  url_keys = ["name"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Runtime Configurator allows you to dynamically configure and expose variables through Google Cloud Platform. In addition, you can also set Watchers and Waiters that will watch for changes to your data and return based on certain conditions."
+    version = "v1"
+    slug = "google-cloud-runtime-configuration-v1-v1-name-cancel"
+    schemes = ["https"]
+    hosts = ["https://runtimeconfig.googleapis.com"]
+    topics = ["operations"]

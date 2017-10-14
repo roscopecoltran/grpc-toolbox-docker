@@ -1,0 +1,223 @@
+{
+	"backends": [
+		{
+			"group": "consumer-surveys-v2",
+			"url_pattern": "/consumersurveys/v2/mobileAppPanels",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"requestId",
+				"resources"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and conducts surveys, lists the surveys that an authenticated user owns, and retrieves survey results and information about specified surveys.",
+				"version": "v2",
+				"slug": "consumer-surveys-v2-consumersurveys-v2-mobileapppanels",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"requestId": "requestId",
+					"resources": "resources"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "consumer-surveys-v2",
+			"url_pattern": "/consumersurveys/v2/mobileAppPanels/{panelId}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"country",
+				"isPublicPanel",
+				"language",
+				"mobileAppPanelId",
+				"name",
+				"owners"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and conducts surveys, lists the surveys that an authenticated user owns, and retrieves survey results and information about specified surveys.",
+				"version": "v2",
+				"slug": "consumer-surveys-v2-consumersurveys-v2-mobileapppanels-panelid",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"country": "country",
+					"isPublicPanel": "isPublicPanel",
+					"language": "language",
+					"mobileAppPanelId": "mobileAppPanelId",
+					"name": "name",
+					"owners": "owners"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "consumer-surveys-v2",
+			"url_pattern": "/consumersurveys/v2/surveys",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"requestId",
+				"resources"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and conducts surveys, lists the surveys that an authenticated user owns, and retrieves survey results and information about specified surveys.",
+				"version": "v2",
+				"slug": "consumer-surveys-v2-consumersurveys-v2-surveys",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"requestId": "requestId",
+					"resources": "resources"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "consumer-surveys-v2",
+			"url_pattern": "/consumersurveys/v2/surveys/{resourceId}/start",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"requestId"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and conducts surveys, lists the surveys that an authenticated user owns, and retrieves survey results and information about specified surveys.",
+				"version": "v2",
+				"slug": "consumer-surveys-v2-consumersurveys-v2-surveys-resourceid-start",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"requestId": "requestId"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "consumer-surveys-v2",
+			"url_pattern": "/consumersurveys/v2/surveys/{resourceId}/stop",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"requestId"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and conducts surveys, lists the surveys that an authenticated user owns, and retrieves survey results and information about specified surveys.",
+				"version": "v2",
+				"slug": "consumer-surveys-v2-consumersurveys-v2-surveys-resourceid-stop",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"requestId": "requestId"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "consumer-surveys-v2",
+			"url_pattern": "/consumersurveys/v2/surveys/{surveyUrlId}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"customerData",
+				"description",
+				"owners",
+				"questions",
+				"state",
+				"surveyUrlId",
+				"title",
+				"wantedResponseCount"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and conducts surveys, lists the surveys that an authenticated user owns, and retrieves survey results and information about specified surveys.",
+				"version": "v2",
+				"slug": "consumer-surveys-v2-consumersurveys-v2-surveys-surveyurlid",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"customerData": "customerData",
+					"description": "description",
+					"owners": "owners",
+					"questions": "questions",
+					"state": "state",
+					"surveyUrlId": "surveyUrlId",
+					"title": "title",
+					"wantedResponseCount": "wantedResponseCount"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "consumer-surveys-v2",
+			"url_pattern": "/consumersurveys/v2/surveys/{surveyUrlId}/results",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"status",
+				"surveyUrlId"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Creates and conducts surveys, lists the surveys that an authenticated user owns, and retrieves survey results and information about specified surveys.",
+				"version": "v2",
+				"slug": "consumer-surveys-v2-consumersurveys-v2-surveys-surveyurlid-results",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"status": "status",
+					"surveyUrlId": "surveyUrlId"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		}
+	]
+}

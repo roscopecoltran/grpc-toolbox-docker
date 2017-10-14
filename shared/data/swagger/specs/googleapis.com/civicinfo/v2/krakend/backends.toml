@@ -1,0 +1,99 @@
+[[backends]]
+  group = "google-civic-information-v2"
+  url_pattern = "/civicinfo/v2/divisions"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "results"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Provides polling places, early vote locations, contest data, election officials, and government representatives for U.S. residential addresses."
+    version = "v2"
+    slug = "google-civic-information-v2-civicinfo-v2-divisions"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      results = "results"
+
+[[backends]]
+  group = "google-civic-information-v2"
+  url_pattern = "/civicinfo/v2/elections"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["elections", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Provides polling places, early vote locations, contest data, election officials, and government representatives for U.S. residential addresses."
+    version = "v2"
+    slug = "google-civic-information-v2-civicinfo-v2-elections"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      elections = "elections"
+      kind = "kind"
+
+[[backends]]
+  group = "google-civic-information-v2"
+  url_pattern = "/civicinfo/v2/representatives"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["divisions", "kind", "offices", "officials"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Provides polling places, early vote locations, contest data, election officials, and government representatives for U.S. residential addresses."
+    version = "v2"
+    slug = "google-civic-information-v2-civicinfo-v2-representatives"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      divisions = "divisions"
+      kind = "kind"
+      offices = "offices"
+      officials = "officials"
+
+[[backends]]
+  group = "google-civic-information-v2"
+  url_pattern = "/civicinfo/v2/representatives/{ocdId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["divisions", "offices", "officials"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Provides polling places, early vote locations, contest data, election officials, and government representatives for U.S. residential addresses."
+    version = "v2"
+    slug = "google-civic-information-v2-civicinfo-v2-representatives-ocdid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      divisions = "divisions"
+      offices = "offices"
+      officials = "officials"
+
+[[backends]]
+  group = "google-civic-information-v2"
+  url_pattern = "/civicinfo/v2/voterinfo"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["contests", "dropOffLocations", "earlyVoteSites", "kind", "mailOnly", "otherElections", "pollingLocations", "precinctId", "state"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Provides polling places, early vote locations, contest data, election officials, and government representatives for U.S. residential addresses."
+    version = "v2"
+    slug = "google-civic-information-v2-civicinfo-v2-voterinfo"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      contests = "contests"
+      dropOffLocations = "dropOffLocations"
+      earlyVoteSites = "earlyVoteSites"
+      kind = "kind"
+      mailOnly = "mailOnly"
+      otherElections = "otherElections"
+      pollingLocations = "pollingLocations"
+      precinctId = "precinctId"
+      state = "state"

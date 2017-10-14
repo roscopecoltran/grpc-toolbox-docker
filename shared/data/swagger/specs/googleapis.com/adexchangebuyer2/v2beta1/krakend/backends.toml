@@ -1,0 +1,536 @@
+[[backends]]
+  group = "ad-exchange-buyer-api-ii-v2beta1"
+  url_pattern = "/v2beta1/accounts/{accountId}/clients"
+  method = "GET"
+  host = ["https://adexchangebuyer.googleapis.com"]
+  url_keys = ["accountId"]
+  query_string_params = ["pageSize", "pageToken"]
+  whitelist = ["clients", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the latest features for managing Ad Exchange accounts, Real-Time Bidding configurations and auction metrics, and Marketplace programmatic deals."
+    version = "v2beta1"
+    slug = "ad-exchange-buyer-api-ii-v2beta1-v2beta1-accounts-accountid-clients"
+    schemes = ["https"]
+    hosts = ["https://adexchangebuyer.googleapis.com"]
+    topics = ["accounts"]
+    [backends.extra_config.mapping]
+      clients = "clients"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "ad-exchange-buyer-api-ii-v2beta1"
+  url_pattern = "/v2beta1/accounts/{accountId}/clients/{clientAccountId}"
+  method = "GET"
+  host = ["https://adexchangebuyer.googleapis.com"]
+  url_keys = ["accountId", "clientAccountId"]
+  whitelist = ["clientAccountId", "clientName", "entityId", "entityName", "entityType", "role", "status", "visibleToSeller"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the latest features for managing Ad Exchange accounts, Real-Time Bidding configurations and auction metrics, and Marketplace programmatic deals."
+    version = "v2beta1"
+    slug = "ad-exchange-buyer-api-ii-v2beta1-v2beta1-accounts-accountid-clients-clientaccountid"
+    schemes = ["https"]
+    hosts = ["https://adexchangebuyer.googleapis.com"]
+    topics = ["accounts"]
+    [backends.extra_config.mapping]
+      clientAccountId = "clientAccountId"
+      clientName = "clientName"
+      entityId = "entityId"
+      entityName = "entityName"
+      entityType = "entityType"
+      role = "role"
+      status = "status"
+      visibleToSeller = "visibleToSeller"
+
+[[backends]]
+  group = "ad-exchange-buyer-api-ii-v2beta1"
+  url_pattern = "/v2beta1/accounts/{accountId}/clients/{clientAccountId}/invitations"
+  method = "GET"
+  host = ["https://adexchangebuyer.googleapis.com"]
+  url_keys = ["accountId", "clientAccountId"]
+  query_string_params = ["pageSize", "pageToken"]
+  whitelist = ["invitations", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the latest features for managing Ad Exchange accounts, Real-Time Bidding configurations and auction metrics, and Marketplace programmatic deals."
+    version = "v2beta1"
+    slug = "ad-exchange-buyer-api-ii-v2beta1-v2beta1-accounts-accountid-clients-clientaccountid-invitations"
+    schemes = ["https"]
+    hosts = ["https://adexchangebuyer.googleapis.com"]
+    topics = ["accounts"]
+    [backends.extra_config.mapping]
+      invitations = "invitations"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "ad-exchange-buyer-api-ii-v2beta1"
+  url_pattern = "/v2beta1/accounts/{accountId}/clients/{clientAccountId}/invitations/{invitationId}"
+  method = "GET"
+  host = ["https://adexchangebuyer.googleapis.com"]
+  url_keys = ["accountId", "clientAccountId", "invitationId"]
+  whitelist = ["clientAccountId", "email", "invitationId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the latest features for managing Ad Exchange accounts, Real-Time Bidding configurations and auction metrics, and Marketplace programmatic deals."
+    version = "v2beta1"
+    slug = "ad-exchange-buyer-api-ii-v2beta1-v2beta1-accounts-accountid-clients-clientaccountid-invitations-invitationid"
+    schemes = ["https"]
+    hosts = ["https://adexchangebuyer.googleapis.com"]
+    topics = ["accounts"]
+    [backends.extra_config.mapping]
+      clientAccountId = "clientAccountId"
+      email = "email"
+      invitationId = "invitationId"
+
+[[backends]]
+  group = "ad-exchange-buyer-api-ii-v2beta1"
+  url_pattern = "/v2beta1/accounts/{accountId}/clients/{clientAccountId}/users"
+  method = "GET"
+  host = ["https://adexchangebuyer.googleapis.com"]
+  url_keys = ["accountId", "clientAccountId"]
+  query_string_params = ["pageSize", "pageToken"]
+  whitelist = ["nextPageToken", "users"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the latest features for managing Ad Exchange accounts, Real-Time Bidding configurations and auction metrics, and Marketplace programmatic deals."
+    version = "v2beta1"
+    slug = "ad-exchange-buyer-api-ii-v2beta1-v2beta1-accounts-accountid-clients-clientaccountid-users"
+    schemes = ["https"]
+    hosts = ["https://adexchangebuyer.googleapis.com"]
+    topics = ["accounts"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      users = "users"
+
+[[backends]]
+  group = "ad-exchange-buyer-api-ii-v2beta1"
+  url_pattern = "/v2beta1/accounts/{accountId}/clients/{clientAccountId}/users/{userId}"
+  method = "GET"
+  host = ["https://adexchangebuyer.googleapis.com"]
+  url_keys = ["accountId", "clientAccountId", "userId"]
+  whitelist = ["clientAccountId", "email", "status", "userId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the latest features for managing Ad Exchange accounts, Real-Time Bidding configurations and auction metrics, and Marketplace programmatic deals."
+    version = "v2beta1"
+    slug = "ad-exchange-buyer-api-ii-v2beta1-v2beta1-accounts-accountid-clients-clientaccountid-users-userid"
+    schemes = ["https"]
+    hosts = ["https://adexchangebuyer.googleapis.com"]
+    topics = ["accounts"]
+    [backends.extra_config.mapping]
+      clientAccountId = "clientAccountId"
+      email = "email"
+      status = "status"
+      userId = "userId"
+
+[[backends]]
+  group = "ad-exchange-buyer-api-ii-v2beta1"
+  url_pattern = "/v2beta1/accounts/{accountId}/creatives"
+  method = "GET"
+  host = ["https://adexchangebuyer.googleapis.com"]
+  url_keys = ["accountId"]
+  query_string_params = ["pageSize", "pageToken", "query"]
+  whitelist = ["creatives", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the latest features for managing Ad Exchange accounts, Real-Time Bidding configurations and auction metrics, and Marketplace programmatic deals."
+    version = "v2beta1"
+    slug = "ad-exchange-buyer-api-ii-v2beta1-v2beta1-accounts-accountid-creatives"
+    schemes = ["https"]
+    hosts = ["https://adexchangebuyer.googleapis.com"]
+    topics = ["accounts"]
+    [backends.extra_config.mapping]
+      creatives = "creatives"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "ad-exchange-buyer-api-ii-v2beta1"
+  url_pattern = "/v2beta1/accounts/{accountId}/creatives/{creativeId}"
+  method = "GET"
+  host = ["https://adexchangebuyer.googleapis.com"]
+  url_keys = ["accountId", "creativeId"]
+  whitelist = ["accountId", "adChoicesDestinationUrl", "advertiserName", "agencyId", "apiUpdateTime", "attributes", "clickThroughUrls", "corrections", "creativeId", "dealsStatus", "detectedAdvertiserIds", "detectedDomains", "detectedLanguages", "detectedProductCategories", "detectedSensitiveCategories", "impressionTrackingUrls", "openAuctionStatus", "restrictedCategories", "servingRestrictions", "vendorIds", "version"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the latest features for managing Ad Exchange accounts, Real-Time Bidding configurations and auction metrics, and Marketplace programmatic deals."
+    version = "v2beta1"
+    slug = "ad-exchange-buyer-api-ii-v2beta1-v2beta1-accounts-accountid-creatives-creativeid"
+    schemes = ["https"]
+    hosts = ["https://adexchangebuyer.googleapis.com"]
+    topics = ["accounts"]
+    [backends.extra_config.mapping]
+      accountId = "accountId"
+      adChoicesDestinationUrl = "adChoicesDestinationUrl"
+      advertiserName = "advertiserName"
+      agencyId = "agencyId"
+      apiUpdateTime = "apiUpdateTime"
+      attributes = "attributes"
+      clickThroughUrls = "clickThroughUrls"
+      corrections = "corrections"
+      creativeId = "creativeId"
+      dealsStatus = "dealsStatus"
+      detectedAdvertiserIds = "detectedAdvertiserIds"
+      detectedDomains = "detectedDomains"
+      detectedLanguages = "detectedLanguages"
+      detectedProductCategories = "detectedProductCategories"
+      detectedSensitiveCategories = "detectedSensitiveCategories"
+      impressionTrackingUrls = "impressionTrackingUrls"
+      openAuctionStatus = "openAuctionStatus"
+      restrictedCategories = "restrictedCategories"
+      servingRestrictions = "servingRestrictions"
+      vendorIds = "vendorIds"
+      version = "version"
+
+[[backends]]
+  group = "ad-exchange-buyer-api-ii-v2beta1"
+  url_pattern = "/v2beta1/accounts/{accountId}/creatives/{creativeId}/dealAssociations"
+  method = "GET"
+  host = ["https://adexchangebuyer.googleapis.com"]
+  url_keys = ["accountId", "creativeId"]
+  query_string_params = ["pageSize", "pageToken", "query"]
+  whitelist = ["associations", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the latest features for managing Ad Exchange accounts, Real-Time Bidding configurations and auction metrics, and Marketplace programmatic deals."
+    version = "v2beta1"
+    slug = "ad-exchange-buyer-api-ii-v2beta1-v2beta1-accounts-accountid-creatives-creativeid-dealassociations"
+    schemes = ["https"]
+    hosts = ["https://adexchangebuyer.googleapis.com"]
+    topics = ["accounts"]
+    [backends.extra_config.mapping]
+      associations = "associations"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "ad-exchange-buyer-api-ii-v2beta1"
+  url_pattern = "/v2beta1/accounts/{accountId}/creatives/{creativeId}/dealAssociations:add"
+  method = "POST"
+  host = ["https://adexchangebuyer.googleapis.com"]
+  url_keys = ["accountId", "creativeId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the latest features for managing Ad Exchange accounts, Real-Time Bidding configurations and auction metrics, and Marketplace programmatic deals."
+    version = "v2beta1"
+    slug = "ad-exchange-buyer-api-ii-v2beta1-v2beta1-accounts-accountid-creatives-creativeid-dealassociations-add"
+    schemes = ["https"]
+    hosts = ["https://adexchangebuyer.googleapis.com"]
+    topics = ["accounts"]
+
+[[backends]]
+  group = "ad-exchange-buyer-api-ii-v2beta1"
+  url_pattern = "/v2beta1/accounts/{accountId}/creatives/{creativeId}/dealAssociations:remove"
+  method = "POST"
+  host = ["https://adexchangebuyer.googleapis.com"]
+  url_keys = ["accountId", "creativeId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the latest features for managing Ad Exchange accounts, Real-Time Bidding configurations and auction metrics, and Marketplace programmatic deals."
+    version = "v2beta1"
+    slug = "ad-exchange-buyer-api-ii-v2beta1-v2beta1-accounts-accountid-creatives-creativeid-dealassociations-remove"
+    schemes = ["https"]
+    hosts = ["https://adexchangebuyer.googleapis.com"]
+    topics = ["accounts"]
+
+[[backends]]
+  group = "ad-exchange-buyer-api-ii-v2beta1"
+  url_pattern = "/v2beta1/accounts/{accountId}/creatives/{creativeId}:stopWatching"
+  method = "POST"
+  host = ["https://adexchangebuyer.googleapis.com"]
+  url_keys = ["accountId", "creativeId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the latest features for managing Ad Exchange accounts, Real-Time Bidding configurations and auction metrics, and Marketplace programmatic deals."
+    version = "v2beta1"
+    slug = "ad-exchange-buyer-api-ii-v2beta1-v2beta1-accounts-accountid-creatives-creativeid-stopwatching"
+    schemes = ["https"]
+    hosts = ["https://adexchangebuyer.googleapis.com"]
+    topics = ["accounts"]
+
+[[backends]]
+  group = "ad-exchange-buyer-api-ii-v2beta1"
+  url_pattern = "/v2beta1/accounts/{accountId}/creatives/{creativeId}:watch"
+  method = "POST"
+  host = ["https://adexchangebuyer.googleapis.com"]
+  url_keys = ["accountId", "creativeId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the latest features for managing Ad Exchange accounts, Real-Time Bidding configurations and auction metrics, and Marketplace programmatic deals."
+    version = "v2beta1"
+    slug = "ad-exchange-buyer-api-ii-v2beta1-v2beta1-accounts-accountid-creatives-creativeid-watch"
+    schemes = ["https"]
+    hosts = ["https://adexchangebuyer.googleapis.com"]
+    topics = ["accounts"]
+
+[[backends]]
+  group = "ad-exchange-buyer-api-ii-v2beta1"
+  url_pattern = "/v2beta1/accounts/{accountId}/filterSets"
+  method = "GET"
+  host = ["https://adexchangebuyer.googleapis.com"]
+  url_keys = ["accountId"]
+  query_string_params = ["pageSize", "pageToken"]
+  whitelist = ["filterSets", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the latest features for managing Ad Exchange accounts, Real-Time Bidding configurations and auction metrics, and Marketplace programmatic deals."
+    version = "v2beta1"
+    slug = "ad-exchange-buyer-api-ii-v2beta1-v2beta1-accounts-accountid-filtersets"
+    schemes = ["https"]
+    hosts = ["https://adexchangebuyer.googleapis.com"]
+    topics = ["accounts"]
+    [backends.extra_config.mapping]
+      filterSets = "filterSets"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "ad-exchange-buyer-api-ii-v2beta1"
+  url_pattern = "/v2beta1/accounts/{accountId}/filterSets/{filterSetId}"
+  method = "GET"
+  host = ["https://adexchangebuyer.googleapis.com"]
+  url_keys = ["accountId", "filterSetId"]
+  whitelist = ["buyerAccountId", "creativeId", "dealId", "environment", "filterSetId", "format", "ownerAccountId", "platforms", "sellerNetworkIds", "timeSeriesGranularity"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the latest features for managing Ad Exchange accounts, Real-Time Bidding configurations and auction metrics, and Marketplace programmatic deals."
+    version = "v2beta1"
+    slug = "ad-exchange-buyer-api-ii-v2beta1-v2beta1-accounts-accountid-filtersets-filtersetid"
+    schemes = ["https"]
+    hosts = ["https://adexchangebuyer.googleapis.com"]
+    topics = ["accounts"]
+    [backends.extra_config.mapping]
+      buyerAccountId = "buyerAccountId"
+      creativeId = "creativeId"
+      dealId = "dealId"
+      environment = "environment"
+      filterSetId = "filterSetId"
+      format = "format"
+      ownerAccountId = "ownerAccountId"
+      platforms = "platforms"
+      sellerNetworkIds = "sellerNetworkIds"
+      timeSeriesGranularity = "timeSeriesGranularity"
+
+[[backends]]
+  group = "ad-exchange-buyer-api-ii-v2beta1"
+  url_pattern = "/v2beta1/accounts/{accountId}/filterSets/{filterSetId}/bidMetrics"
+  method = "GET"
+  host = ["https://adexchangebuyer.googleapis.com"]
+  url_keys = ["accountId", "filterSetId"]
+  query_string_params = ["pageSize", "pageToken"]
+  whitelist = ["bidMetricsRows", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the latest features for managing Ad Exchange accounts, Real-Time Bidding configurations and auction metrics, and Marketplace programmatic deals."
+    version = "v2beta1"
+    slug = "ad-exchange-buyer-api-ii-v2beta1-v2beta1-accounts-accountid-filtersets-filtersetid-bidmetrics"
+    schemes = ["https"]
+    hosts = ["https://adexchangebuyer.googleapis.com"]
+    topics = ["accounts"]
+    [backends.extra_config.mapping]
+      bidMetricsRows = "bidMetricsRows"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "ad-exchange-buyer-api-ii-v2beta1"
+  url_pattern = "/v2beta1/accounts/{accountId}/filterSets/{filterSetId}/bidResponseErrors"
+  method = "GET"
+  host = ["https://adexchangebuyer.googleapis.com"]
+  url_keys = ["accountId", "filterSetId"]
+  query_string_params = ["pageSize", "pageToken"]
+  whitelist = ["calloutStatusRows", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the latest features for managing Ad Exchange accounts, Real-Time Bidding configurations and auction metrics, and Marketplace programmatic deals."
+    version = "v2beta1"
+    slug = "ad-exchange-buyer-api-ii-v2beta1-v2beta1-accounts-accountid-filtersets-filtersetid-bidresponseerrors"
+    schemes = ["https"]
+    hosts = ["https://adexchangebuyer.googleapis.com"]
+    topics = ["accounts"]
+    [backends.extra_config.mapping]
+      calloutStatusRows = "calloutStatusRows"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "ad-exchange-buyer-api-ii-v2beta1"
+  url_pattern = "/v2beta1/accounts/{accountId}/filterSets/{filterSetId}/bidResponsesWithoutBids"
+  method = "GET"
+  host = ["https://adexchangebuyer.googleapis.com"]
+  url_keys = ["accountId", "filterSetId"]
+  query_string_params = ["pageSize", "pageToken"]
+  whitelist = ["bidResponseWithoutBidsStatusRows", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the latest features for managing Ad Exchange accounts, Real-Time Bidding configurations and auction metrics, and Marketplace programmatic deals."
+    version = "v2beta1"
+    slug = "ad-exchange-buyer-api-ii-v2beta1-v2beta1-accounts-accountid-filtersets-filtersetid-bidresponseswithoutbids"
+    schemes = ["https"]
+    hosts = ["https://adexchangebuyer.googleapis.com"]
+    topics = ["accounts"]
+    [backends.extra_config.mapping]
+      bidResponseWithoutBidsStatusRows = "bidResponseWithoutBidsStatusRows"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "ad-exchange-buyer-api-ii-v2beta1"
+  url_pattern = "/v2beta1/accounts/{accountId}/filterSets/{filterSetId}/filteredBidRequests"
+  method = "GET"
+  host = ["https://adexchangebuyer.googleapis.com"]
+  url_keys = ["accountId", "filterSetId"]
+  query_string_params = ["pageSize", "pageToken"]
+  whitelist = ["calloutStatusRows", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the latest features for managing Ad Exchange accounts, Real-Time Bidding configurations and auction metrics, and Marketplace programmatic deals."
+    version = "v2beta1"
+    slug = "ad-exchange-buyer-api-ii-v2beta1-v2beta1-accounts-accountid-filtersets-filtersetid-filteredbidrequests"
+    schemes = ["https"]
+    hosts = ["https://adexchangebuyer.googleapis.com"]
+    topics = ["accounts"]
+    [backends.extra_config.mapping]
+      calloutStatusRows = "calloutStatusRows"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "ad-exchange-buyer-api-ii-v2beta1"
+  url_pattern = "/v2beta1/accounts/{accountId}/filterSets/{filterSetId}/filteredBids"
+  method = "GET"
+  host = ["https://adexchangebuyer.googleapis.com"]
+  url_keys = ["accountId", "filterSetId"]
+  query_string_params = ["pageSize", "pageToken"]
+  whitelist = ["creativeStatusRows", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the latest features for managing Ad Exchange accounts, Real-Time Bidding configurations and auction metrics, and Marketplace programmatic deals."
+    version = "v2beta1"
+    slug = "ad-exchange-buyer-api-ii-v2beta1-v2beta1-accounts-accountid-filtersets-filtersetid-filteredbids"
+    schemes = ["https"]
+    hosts = ["https://adexchangebuyer.googleapis.com"]
+    topics = ["accounts"]
+    [backends.extra_config.mapping]
+      creativeStatusRows = "creativeStatusRows"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "ad-exchange-buyer-api-ii-v2beta1"
+  url_pattern = "/v2beta1/accounts/{accountId}/filterSets/{filterSetId}/filteredBids/{creativeStatusId}/creatives"
+  method = "GET"
+  host = ["https://adexchangebuyer.googleapis.com"]
+  url_keys = ["accountId", "creativeStatusId", "filterSetId"]
+  query_string_params = ["pageSize", "pageToken"]
+  whitelist = ["filteredBidCreativeRows", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the latest features for managing Ad Exchange accounts, Real-Time Bidding configurations and auction metrics, and Marketplace programmatic deals."
+    version = "v2beta1"
+    slug = "ad-exchange-buyer-api-ii-v2beta1-v2beta1-accounts-accountid-filtersets-filtersetid-filteredbids-creativestatusid-creatives"
+    schemes = ["https"]
+    hosts = ["https://adexchangebuyer.googleapis.com"]
+    topics = ["accounts"]
+    [backends.extra_config.mapping]
+      filteredBidCreativeRows = "filteredBidCreativeRows"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "ad-exchange-buyer-api-ii-v2beta1"
+  url_pattern = "/v2beta1/accounts/{accountId}/filterSets/{filterSetId}/filteredBids/{creativeStatusId}/details"
+  method = "GET"
+  host = ["https://adexchangebuyer.googleapis.com"]
+  url_keys = ["accountId", "creativeStatusId", "filterSetId"]
+  query_string_params = ["pageSize", "pageToken"]
+  whitelist = ["detailType", "filteredBidDetailRows", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the latest features for managing Ad Exchange accounts, Real-Time Bidding configurations and auction metrics, and Marketplace programmatic deals."
+    version = "v2beta1"
+    slug = "ad-exchange-buyer-api-ii-v2beta1-v2beta1-accounts-accountid-filtersets-filtersetid-filteredbids-creativestatusid-details"
+    schemes = ["https"]
+    hosts = ["https://adexchangebuyer.googleapis.com"]
+    topics = ["accounts"]
+    [backends.extra_config.mapping]
+      detailType = "detailType"
+      filteredBidDetailRows = "filteredBidDetailRows"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "ad-exchange-buyer-api-ii-v2beta1"
+  url_pattern = "/v2beta1/accounts/{accountId}/filterSets/{filterSetId}/impressionMetrics"
+  method = "GET"
+  host = ["https://adexchangebuyer.googleapis.com"]
+  url_keys = ["accountId", "filterSetId"]
+  query_string_params = ["pageSize", "pageToken"]
+  whitelist = ["impressionMetricsRows", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the latest features for managing Ad Exchange accounts, Real-Time Bidding configurations and auction metrics, and Marketplace programmatic deals."
+    version = "v2beta1"
+    slug = "ad-exchange-buyer-api-ii-v2beta1-v2beta1-accounts-accountid-filtersets-filtersetid-impressionmetrics"
+    schemes = ["https"]
+    hosts = ["https://adexchangebuyer.googleapis.com"]
+    topics = ["accounts"]
+    [backends.extra_config.mapping]
+      impressionMetricsRows = "impressionMetricsRows"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "ad-exchange-buyer-api-ii-v2beta1"
+  url_pattern = "/v2beta1/accounts/{accountId}/filterSets/{filterSetId}/losingBids"
+  method = "GET"
+  host = ["https://adexchangebuyer.googleapis.com"]
+  url_keys = ["accountId", "filterSetId"]
+  query_string_params = ["pageSize", "pageToken"]
+  whitelist = ["creativeStatusRows", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the latest features for managing Ad Exchange accounts, Real-Time Bidding configurations and auction metrics, and Marketplace programmatic deals."
+    version = "v2beta1"
+    slug = "ad-exchange-buyer-api-ii-v2beta1-v2beta1-accounts-accountid-filtersets-filtersetid-losingbids"
+    schemes = ["https"]
+    hosts = ["https://adexchangebuyer.googleapis.com"]
+    topics = ["accounts"]
+    [backends.extra_config.mapping]
+      creativeStatusRows = "creativeStatusRows"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "ad-exchange-buyer-api-ii-v2beta1"
+  url_pattern = "/v2beta1/accounts/{accountId}/filterSets/{filterSetId}/nonBillableWinningBids"
+  method = "GET"
+  host = ["https://adexchangebuyer.googleapis.com"]
+  url_keys = ["accountId", "filterSetId"]
+  query_string_params = ["pageSize", "pageToken"]
+  whitelist = ["nextPageToken", "nonBillableWinningBidStatusRows"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the latest features for managing Ad Exchange accounts, Real-Time Bidding configurations and auction metrics, and Marketplace programmatic deals."
+    version = "v2beta1"
+    slug = "ad-exchange-buyer-api-ii-v2beta1-v2beta1-accounts-accountid-filtersets-filtersetid-nonbillablewinningbids"
+    schemes = ["https"]
+    hosts = ["https://adexchangebuyer.googleapis.com"]
+    topics = ["accounts"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      nonBillableWinningBidStatusRows = "nonBillableWinningBidStatusRows"

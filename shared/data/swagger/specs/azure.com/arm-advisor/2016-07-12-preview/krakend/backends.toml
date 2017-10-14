@@ -1,0 +1,53 @@
+[[backends]]
+  group = "advisormanagementclient-2016-07-12-preview"
+  url_pattern = "/providers/Microsoft"
+  method = "ADVISOR/OPERATIONS"
+  encoding = "json"
+  host = ["https://management.azure.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "azure.com"
+    description = "REST APIs for Azure Advisor"
+    version = "2016-07-12-preview"
+    slug = "advisormanagementclient-2016-07-12-preview-providers-microsoft"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://management.azure.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "advisormanagementclient-2016-07-12-preview"
+  url_pattern = "/subscriptions/{subscriptionId}/providers/Microsoft"
+  method = "ADVISOR/GENERATERECOMMENDATIONS"
+  encoding = "json"
+  host = ["https://management.azure.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "azure.com"
+    description = "REST APIs for Azure Advisor"
+    version = "2016-07-12-preview"
+    slug = "advisormanagementclient-2016-07-12-preview-subscriptions-subscriptionid-providers-microsoft"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://management.azure.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "advisormanagementclient-2016-07-12-preview"
+  url_pattern = "/{resourceUri}/providers/Microsoft"
+  method = "ADVISOR/RECOMMENDATIONS/{RECOMMENDATIONID}"
+  encoding = "json"
+  host = ["https://management.azure.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "azure.com"
+    description = "REST APIs for Azure Advisor"
+    version = "2016-07-12-preview"
+    slug = "advisormanagementclient-2016-07-12-preview-resourceuri-providers-microsoft"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://management.azure.com"]
+    topics = ["cloud"]

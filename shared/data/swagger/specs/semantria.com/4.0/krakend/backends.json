@@ -1,0 +1,544 @@
+{
+	"backends": [
+		{
+			"group": "semantria-4-0",
+			"url_pattern": "/blacklist",
+			"method": "{CONTENT_TYPE}",
+			"encoding": "json",
+			"host": [
+				"https://api.semantria.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "semantria.com",
+				"description": "Semantria applies Text and Sentiment Analysis to tweets, facebook posts, surveys, reviews or enterprise content.",
+				"version": "4.0",
+				"slug": "semantria-4-0-blacklist",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json",
+					"xml"
+				],
+				"hosts": [
+					"https://api.semantria.com"
+				],
+				"topics": [
+					"social",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "semantria-4-0",
+			"url_pattern": "/categories",
+			"method": "{CONTENT_TYPE}",
+			"encoding": "json",
+			"host": [
+				"https://api.semantria.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "semantria.com",
+				"description": "Semantria applies Text and Sentiment Analysis to tweets, facebook posts, surveys, reviews or enterprise content.",
+				"version": "4.0",
+				"slug": "semantria-4-0-categories",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json",
+					"xml"
+				],
+				"hosts": [
+					"https://api.semantria.com"
+				],
+				"topics": [
+					"social",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "semantria-4-0",
+			"url_pattern": "/collection",
+			"method": "{CONTENT_TYPE}",
+			"encoding": "json",
+			"host": [
+				"https://api.semantria.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "semantria.com",
+				"description": "Semantria applies Text and Sentiment Analysis to tweets, facebook posts, surveys, reviews or enterprise content.",
+				"version": "4.0",
+				"slug": "semantria-4-0-collection",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json",
+					"xml"
+				],
+				"hosts": [
+					"https://api.semantria.com"
+				],
+				"topics": [
+					"social",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "semantria-4-0",
+			"url_pattern": "/collection/processed",
+			"method": "{CONTENT_TYPE}",
+			"encoding": "json",
+			"host": [
+				"https://api.semantria.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "semantria.com",
+				"description": "Semantria applies Text and Sentiment Analysis to tweets, facebook posts, surveys, reviews or enterprise content.",
+				"version": "4.0",
+				"slug": "semantria-4-0-collection-processed",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json",
+					"xml"
+				],
+				"hosts": [
+					"https://api.semantria.com"
+				],
+				"topics": [
+					"social",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "semantria-4-0",
+			"url_pattern": "/collection/{collection_id}",
+			"method": "{CONTENT_TYPE}",
+			"encoding": "json",
+			"host": [
+				"https://api.semantria.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "semantria.com",
+				"description": "Semantria applies Text and Sentiment Analysis to tweets, facebook posts, surveys, reviews or enterprise content.",
+				"version": "4.0",
+				"slug": "semantria-4-0-collection-collection-id",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json",
+					"xml"
+				],
+				"hosts": [
+					"https://api.semantria.com"
+				],
+				"topics": [
+					"social",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "semantria-4-0",
+			"url_pattern": "/configurations",
+			"method": "{CONTENT_TYPE}",
+			"encoding": "json",
+			"host": [
+				"https://api.semantria.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "semantria.com",
+				"description": "Semantria applies Text and Sentiment Analysis to tweets, facebook posts, surveys, reviews or enterprise content.",
+				"version": "4.0",
+				"slug": "semantria-4-0-configurations",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json",
+					"xml"
+				],
+				"hosts": [
+					"https://api.semantria.com"
+				],
+				"topics": [
+					"social",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "semantria-4-0",
+			"url_pattern": "/document",
+			"method": "{CONTENT_TYPE}",
+			"encoding": "json",
+			"host": [
+				"https://api.semantria.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "semantria.com",
+				"description": "Semantria applies Text and Sentiment Analysis to tweets, facebook posts, surveys, reviews or enterprise content.",
+				"version": "4.0",
+				"slug": "semantria-4-0-document",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json",
+					"xml"
+				],
+				"hosts": [
+					"https://api.semantria.com"
+				],
+				"topics": [
+					"social",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "semantria-4-0",
+			"url_pattern": "/document/batch",
+			"method": "{CONTENT_TYPE}",
+			"encoding": "json",
+			"host": [
+				"https://api.semantria.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "semantria.com",
+				"description": "Semantria applies Text and Sentiment Analysis to tweets, facebook posts, surveys, reviews or enterprise content.",
+				"version": "4.0",
+				"slug": "semantria-4-0-document-batch",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json",
+					"xml"
+				],
+				"hosts": [
+					"https://api.semantria.com"
+				],
+				"topics": [
+					"social",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "semantria-4-0",
+			"url_pattern": "/document/processed",
+			"method": "{CONTENT_TYPE}",
+			"encoding": "json",
+			"host": [
+				"https://api.semantria.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "semantria.com",
+				"description": "Semantria applies Text and Sentiment Analysis to tweets, facebook posts, surveys, reviews or enterprise content.",
+				"version": "4.0",
+				"slug": "semantria-4-0-document-processed",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json",
+					"xml"
+				],
+				"hosts": [
+					"https://api.semantria.com"
+				],
+				"topics": [
+					"social",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "semantria-4-0",
+			"url_pattern": "/document/{document_id}",
+			"method": "{CONTENT_TYPE}",
+			"encoding": "json",
+			"host": [
+				"https://api.semantria.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "semantria.com",
+				"description": "Semantria applies Text and Sentiment Analysis to tweets, facebook posts, surveys, reviews or enterprise content.",
+				"version": "4.0",
+				"slug": "semantria-4-0-document-document-id",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json",
+					"xml"
+				],
+				"hosts": [
+					"https://api.semantria.com"
+				],
+				"topics": [
+					"social",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "semantria-4-0",
+			"url_pattern": "/entities",
+			"method": "{CONTENT_TYPE}",
+			"encoding": "json",
+			"host": [
+				"https://api.semantria.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "semantria.com",
+				"description": "Semantria applies Text and Sentiment Analysis to tweets, facebook posts, surveys, reviews or enterprise content.",
+				"version": "4.0",
+				"slug": "semantria-4-0-entities",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json",
+					"xml"
+				],
+				"hosts": [
+					"https://api.semantria.com"
+				],
+				"topics": [
+					"social",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "semantria-4-0",
+			"url_pattern": "/features",
+			"method": "{CONTENT_TYPE}",
+			"encoding": "json",
+			"host": [
+				"https://api.semantria.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "semantria.com",
+				"description": "Semantria applies Text and Sentiment Analysis to tweets, facebook posts, surveys, reviews or enterprise content.",
+				"version": "4.0",
+				"slug": "semantria-4-0-features",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json",
+					"xml"
+				],
+				"hosts": [
+					"https://api.semantria.com"
+				],
+				"topics": [
+					"social",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "semantria-4-0",
+			"url_pattern": "/phrases",
+			"method": "{CONTENT_TYPE}",
+			"encoding": "json",
+			"host": [
+				"https://api.semantria.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "semantria.com",
+				"description": "Semantria applies Text and Sentiment Analysis to tweets, facebook posts, surveys, reviews or enterprise content.",
+				"version": "4.0",
+				"slug": "semantria-4-0-phrases",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json",
+					"xml"
+				],
+				"hosts": [
+					"https://api.semantria.com"
+				],
+				"topics": [
+					"social",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "semantria-4-0",
+			"url_pattern": "/queries",
+			"method": "{CONTENT_TYPE}",
+			"encoding": "json",
+			"host": [
+				"https://api.semantria.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "semantria.com",
+				"description": "Semantria applies Text and Sentiment Analysis to tweets, facebook posts, surveys, reviews or enterprise content.",
+				"version": "4.0",
+				"slug": "semantria-4-0-queries",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json",
+					"xml"
+				],
+				"hosts": [
+					"https://api.semantria.com"
+				],
+				"topics": [
+					"social",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "semantria-4-0",
+			"url_pattern": "/statistics",
+			"method": "{CONTENT_TYPE}",
+			"encoding": "json",
+			"host": [
+				"https://api.semantria.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "semantria.com",
+				"description": "Semantria applies Text and Sentiment Analysis to tweets, facebook posts, surveys, reviews or enterprise content.",
+				"version": "4.0",
+				"slug": "semantria-4-0-statistics",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json",
+					"xml"
+				],
+				"hosts": [
+					"https://api.semantria.com"
+				],
+				"topics": [
+					"social",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "semantria-4-0",
+			"url_pattern": "/status",
+			"method": "{CONTENT_TYPE}",
+			"encoding": "json",
+			"host": [
+				"https://api.semantria.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "semantria.com",
+				"description": "Semantria applies Text and Sentiment Analysis to tweets, facebook posts, surveys, reviews or enterprise content.",
+				"version": "4.0",
+				"slug": "semantria-4-0-status",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json",
+					"xml"
+				],
+				"hosts": [
+					"https://api.semantria.com"
+				],
+				"topics": [
+					"social",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "semantria-4-0",
+			"url_pattern": "/subscription",
+			"method": "{CONTENT_TYPE}",
+			"encoding": "json",
+			"host": [
+				"https://api.semantria.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "semantria.com",
+				"description": "Semantria applies Text and Sentiment Analysis to tweets, facebook posts, surveys, reviews or enterprise content.",
+				"version": "4.0",
+				"slug": "semantria-4-0-subscription",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json",
+					"xml"
+				],
+				"hosts": [
+					"https://api.semantria.com"
+				],
+				"topics": [
+					"social",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "semantria-4-0",
+			"url_pattern": "/taxonomy",
+			"method": "{CONTENT_TYPE}",
+			"encoding": "json",
+			"host": [
+				"https://api.semantria.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "semantria.com",
+				"description": "Semantria applies Text and Sentiment Analysis to tweets, facebook posts, surveys, reviews or enterprise content.",
+				"version": "4.0",
+				"slug": "semantria-4-0-taxonomy",
+				"schemes": [
+					"https"
+				],
+				"produces": [
+					"json",
+					"xml"
+				],
+				"hosts": [
+					"https://api.semantria.com"
+				],
+				"topics": [
+					"social",
+					"text"
+				]
+			}
+		}
+	]
+}

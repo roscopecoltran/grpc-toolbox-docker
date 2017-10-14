@@ -1,0 +1,212 @@
+{
+	"backends": [
+		{
+			"group": "admin-reports-reports-v1",
+			"url_pattern": "/admin/reports/v1/activity/users/{userKey}/applications/{applicationName}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"etag",
+				"items",
+				"kind",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Fetches reports for the administrators of G Suite customers about the usage, collaboration, security, and risk for their users.",
+				"version": "reports_v1",
+				"slug": "admin-reports-reports-v1-admin-reports-v1-activity-users-userkey-applications-applicationname",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"etag": "etag",
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"analytics"
+				]
+			}
+		},
+		{
+			"group": "admin-reports-reports-v1",
+			"url_pattern": "/admin/reports/v1/activity/users/{userKey}/applications/{applicationName}/watch",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"address",
+				"expiration",
+				"id",
+				"kind",
+				"params",
+				"params.additionalProperties",
+				"payload",
+				"resourceId",
+				"resourceUri",
+				"token"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Fetches reports for the administrators of G Suite customers about the usage, collaboration, security, and risk for their users.",
+				"version": "reports_v1",
+				"slug": "admin-reports-reports-v1-admin-reports-v1-activity-users-userkey-applications-applicationname-watch",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"address": "address",
+					"expiration": "expiration",
+					"id": "id",
+					"kind": "kind",
+					"params": "params",
+					"params.additionalProperties": "params.additionalProperties",
+					"payload": "payload",
+					"resourceId": "resourceId",
+					"resourceUri": "resourceUri",
+					"token": "token"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"analytics"
+				]
+			}
+		},
+		{
+			"group": "admin-reports-reports-v1",
+			"url_pattern": "/admin/reports/v1/admin/reports_v1/channels/stop",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Fetches reports for the administrators of G Suite customers about the usage, collaboration, security, and risk for their users.",
+				"version": "reports_v1",
+				"slug": "admin-reports-reports-v1-admin-reports-v1-admin-reports-v1-channels-stop",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"analytics"
+				]
+			}
+		},
+		{
+			"group": "admin-reports-reports-v1",
+			"url_pattern": "/admin/reports/v1/usage/dates/{date}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"etag",
+				"kind",
+				"nextPageToken",
+				"usageReports",
+				"warnings",
+				"warnings.code",
+				"warnings.data",
+				"warnings.data.items",
+				"warnings.data.items.key",
+				"warnings.data.items.value",
+				"warnings.message"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Fetches reports for the administrators of G Suite customers about the usage, collaboration, security, and risk for their users.",
+				"version": "reports_v1",
+				"slug": "admin-reports-reports-v1-admin-reports-v1-usage-dates-date",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"etag": "etag",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken",
+					"usageReports": "usageReports",
+					"warnings": "warnings",
+					"warnings.code": "warnings.code",
+					"warnings.data": "warnings.data",
+					"warnings.data.items": "warnings.data.items",
+					"warnings.data.items.key": "warnings.data.items.key",
+					"warnings.data.items.value": "warnings.data.items.value",
+					"warnings.message": "warnings.message"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"analytics"
+				]
+			}
+		},
+		{
+			"group": "admin-reports-reports-v1",
+			"url_pattern": "/admin/reports/v1/usage/users/{userKey}/dates/{date}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"etag",
+				"kind",
+				"nextPageToken",
+				"usageReports",
+				"warnings",
+				"warnings.code",
+				"warnings.data",
+				"warnings.data.items",
+				"warnings.data.items.key",
+				"warnings.data.items.value",
+				"warnings.message"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Fetches reports for the administrators of G Suite customers about the usage, collaboration, security, and risk for their users.",
+				"version": "reports_v1",
+				"slug": "admin-reports-reports-v1-admin-reports-v1-usage-users-userkey-dates-date",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"etag": "etag",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken",
+					"usageReports": "usageReports",
+					"warnings": "warnings",
+					"warnings.code": "warnings.code",
+					"warnings.data": "warnings.data",
+					"warnings.data.items": "warnings.data.items",
+					"warnings.data.items.key": "warnings.data.items.key",
+					"warnings.data.items.value": "warnings.data.items.value",
+					"warnings.message": "warnings.message"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				],
+				"topics": [
+					"analytics"
+				]
+			}
+		}
+	]
+}

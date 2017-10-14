@@ -1,0 +1,711 @@
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#ApproveAssignment"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-approveassignment"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#AssociateQualificationWithWorker"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-associatequalificationwithworker"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#CreateAdditionalAssignmentsForHIT"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-createadditionalassignmentsforhit"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#CreateHIT"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-createhit"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#CreateHITType"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-createhittype"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#CreateHITWithHITType"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-createhitwithhittype"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#CreateQualificationType"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-createqualificationtype"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#CreateWorkerBlock"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-createworkerblock"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#DeleteHIT"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-deletehit"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#DeleteQualificationType"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-deletequalificationtype"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#DeleteWorkerBlock"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-deleteworkerblock"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#DisassociateQualificationFromWorker"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-disassociatequalificationfromworker"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#GetAccountBalance"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-getaccountbalance"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#GetAssignment"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-getassignment"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#GetFileUploadURL"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-getfileuploadurl"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#GetHIT"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-gethit"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#GetQualificationScore"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-getqualificationscore"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#GetQualificationType"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-getqualificationtype"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#ListAssignmentsForHIT"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  query_string_params = ["MaxResults", "NextToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-listassignmentsforhit"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#ListBonusPayments"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  query_string_params = ["MaxResults", "NextToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-listbonuspayments"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#ListHITs"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  query_string_params = ["MaxResults", "NextToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-listhits"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#ListHITsForQualificationType"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  query_string_params = ["MaxResults", "NextToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-listhitsforqualificationtype"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#ListQualificationRequests"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  query_string_params = ["MaxResults", "NextToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-listqualificationrequests"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#ListQualificationTypes"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  query_string_params = ["MaxResults", "NextToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-listqualificationtypes"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#ListReviewPolicyResultsForHIT"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  query_string_params = ["MaxResults", "NextToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-listreviewpolicyresultsforhit"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#ListReviewableHITs"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  query_string_params = ["MaxResults", "NextToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-listreviewablehits"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#ListWorkerBlocks"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  query_string_params = ["MaxResults", "NextToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-listworkerblocks"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#ListWorkersWithQualificationType"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  query_string_params = ["MaxResults", "NextToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-listworkerswithqualificationtype"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#NotifyWorkers"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-notifyworkers"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#RejectAssignment"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-rejectassignment"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#RejectQualificationRequest"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-rejectqualificationrequest"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#SendBonus"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-sendbonus"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#SendTestEventNotification"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-sendtesteventnotification"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#UpdateExpirationForHIT"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-updateexpirationforhit"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#UpdateHITReviewStatus"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-updatehitreviewstatus"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#UpdateHITTypeOfHIT"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-updatehittypeofhit"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#UpdateNotificationSettings"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-updatenotificationsettings"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/#UpdateQualificationType"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17-updatequalificationtype"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "amazon-mechanical-turk-2017-01-17"
+  url_pattern = "/"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mturk-requester.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<fullname>Amazon Mechanical Turk API Reference</fullname>"
+    version = "2017-01-17"
+    slug = "amazon-mechanical-turk-2017-01-17"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mturk-requester.amazonaws.com"]
+    topics = ["cloud"]

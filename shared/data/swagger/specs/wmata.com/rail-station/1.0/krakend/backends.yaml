@@ -1,0 +1,321 @@
+backends:
+- group: rail-station-information-1-0
+  url_pattern: /Rail.svc/Lines
+  method: GET
+  host:
+  - https://api.wmata.com
+  concurrent_calls: 1
+  extra_config:
+    provider: wmata.com
+    description: Rail line and station information, including locations, fares, times,
+      and parking.
+    version: "1.0"
+    slug: rail-station-information-1-0-rail-svc-lines
+    schemes:
+    - http
+    - https
+    hosts:
+    - http://api.wmata.com
+    - https://api.wmata.com
+    topics:
+    - transport
+- group: rail-station-information-1-0
+  url_pattern: /Rail.svc/Path
+  method: GET
+  host:
+  - https://api.wmata.com
+  concurrent_calls: 1
+  extra_config:
+    provider: wmata.com
+    description: Rail line and station information, including locations, fares, times,
+      and parking.
+    version: "1.0"
+    slug: rail-station-information-1-0-rail-svc-path
+    schemes:
+    - http
+    - https
+    hosts:
+    - http://api.wmata.com
+    - https://api.wmata.com
+    topics:
+    - transport
+- group: rail-station-information-1-0
+  url_pattern: /Rail.svc/SrcStationToDstStationInfo
+  method: GET
+  host:
+  - https://api.wmata.com
+  concurrent_calls: 1
+  extra_config:
+    provider: wmata.com
+    description: Rail line and station information, including locations, fares, times,
+      and parking.
+    version: "1.0"
+    slug: rail-station-information-1-0-rail-svc-srcstationtodststationinfo
+    schemes:
+    - http
+    - https
+    hosts:
+    - http://api.wmata.com
+    - https://api.wmata.com
+    topics:
+    - transport
+- group: rail-station-information-1-0
+  url_pattern: /Rail.svc/StationEntrances
+  method: GET
+  host:
+  - https://api.wmata.com
+  concurrent_calls: 1
+  extra_config:
+    provider: wmata.com
+    description: Rail line and station information, including locations, fares, times,
+      and parking.
+    version: "1.0"
+    slug: rail-station-information-1-0-rail-svc-stationentrances
+    schemes:
+    - http
+    - https
+    hosts:
+    - http://api.wmata.com
+    - https://api.wmata.com
+    topics:
+    - transport
+- group: rail-station-information-1-0
+  url_pattern: /Rail.svc/StationInfo
+  method: GET
+  host:
+  - https://api.wmata.com
+  concurrent_calls: 1
+  extra_config:
+    provider: wmata.com
+    description: Rail line and station information, including locations, fares, times,
+      and parking.
+    version: "1.0"
+    slug: rail-station-information-1-0-rail-svc-stationinfo
+    schemes:
+    - http
+    - https
+    hosts:
+    - http://api.wmata.com
+    - https://api.wmata.com
+    topics:
+    - transport
+- group: rail-station-information-1-0
+  url_pattern: /Rail.svc/StationParking
+  method: GET
+  host:
+  - https://api.wmata.com
+  concurrent_calls: 1
+  extra_config:
+    provider: wmata.com
+    description: Rail line and station information, including locations, fares, times,
+      and parking.
+    version: "1.0"
+    slug: rail-station-information-1-0-rail-svc-stationparking
+    schemes:
+    - http
+    - https
+    hosts:
+    - http://api.wmata.com
+    - https://api.wmata.com
+    topics:
+    - transport
+- group: rail-station-information-1-0
+  url_pattern: /Rail.svc/StationTimes
+  method: GET
+  host:
+  - https://api.wmata.com
+  concurrent_calls: 1
+  extra_config:
+    provider: wmata.com
+    description: Rail line and station information, including locations, fares, times,
+      and parking.
+    version: "1.0"
+    slug: rail-station-information-1-0-rail-svc-stationtimes
+    schemes:
+    - http
+    - https
+    hosts:
+    - http://api.wmata.com
+    - https://api.wmata.com
+    topics:
+    - transport
+- group: rail-station-information-1-0
+  url_pattern: /Rail.svc/Stations
+  method: GET
+  host:
+  - https://api.wmata.com
+  concurrent_calls: 1
+  extra_config:
+    provider: wmata.com
+    description: Rail line and station information, including locations, fares, times,
+      and parking.
+    version: "1.0"
+    slug: rail-station-information-1-0-rail-svc-stations
+    schemes:
+    - http
+    - https
+    hosts:
+    - http://api.wmata.com
+    - https://api.wmata.com
+    topics:
+    - transport
+- group: rail-station-information-1-0
+  url_pattern: /Rail.svc/json/jLines
+  method: GET
+  host:
+  - https://api.wmata.com
+  concurrent_calls: 1
+  extra_config:
+    provider: wmata.com
+    description: Rail line and station information, including locations, fares, times,
+      and parking.
+    version: "1.0"
+    slug: rail-station-information-1-0-rail-svc-json-jlines
+    schemes:
+    - http
+    - https
+    hosts:
+    - http://api.wmata.com
+    - https://api.wmata.com
+    topics:
+    - transport
+- group: rail-station-information-1-0
+  url_pattern: /Rail.svc/json/jPath
+  method: GET
+  host:
+  - https://api.wmata.com
+  concurrent_calls: 1
+  extra_config:
+    provider: wmata.com
+    description: Rail line and station information, including locations, fares, times,
+      and parking.
+    version: "1.0"
+    slug: rail-station-information-1-0-rail-svc-json-jpath
+    schemes:
+    - http
+    - https
+    hosts:
+    - http://api.wmata.com
+    - https://api.wmata.com
+    topics:
+    - transport
+- group: rail-station-information-1-0
+  url_pattern: /Rail.svc/json/jSrcStationToDstStationInfo
+  method: GET
+  host:
+  - https://api.wmata.com
+  concurrent_calls: 1
+  extra_config:
+    provider: wmata.com
+    description: Rail line and station information, including locations, fares, times,
+      and parking.
+    version: "1.0"
+    slug: rail-station-information-1-0-rail-svc-json-jsrcstationtodststationinfo
+    schemes:
+    - http
+    - https
+    hosts:
+    - http://api.wmata.com
+    - https://api.wmata.com
+    topics:
+    - transport
+- group: rail-station-information-1-0
+  url_pattern: /Rail.svc/json/jStationEntrances
+  method: GET
+  host:
+  - https://api.wmata.com
+  concurrent_calls: 1
+  extra_config:
+    provider: wmata.com
+    description: Rail line and station information, including locations, fares, times,
+      and parking.
+    version: "1.0"
+    slug: rail-station-information-1-0-rail-svc-json-jstationentrances
+    schemes:
+    - http
+    - https
+    hosts:
+    - http://api.wmata.com
+    - https://api.wmata.com
+    topics:
+    - transport
+- group: rail-station-information-1-0
+  url_pattern: /Rail.svc/json/jStationInfo
+  method: GET
+  host:
+  - https://api.wmata.com
+  concurrent_calls: 1
+  extra_config:
+    provider: wmata.com
+    description: Rail line and station information, including locations, fares, times,
+      and parking.
+    version: "1.0"
+    slug: rail-station-information-1-0-rail-svc-json-jstationinfo
+    schemes:
+    - http
+    - https
+    hosts:
+    - http://api.wmata.com
+    - https://api.wmata.com
+    topics:
+    - transport
+- group: rail-station-information-1-0
+  url_pattern: /Rail.svc/json/jStationParking
+  method: GET
+  host:
+  - https://api.wmata.com
+  concurrent_calls: 1
+  extra_config:
+    provider: wmata.com
+    description: Rail line and station information, including locations, fares, times,
+      and parking.
+    version: "1.0"
+    slug: rail-station-information-1-0-rail-svc-json-jstationparking
+    schemes:
+    - http
+    - https
+    hosts:
+    - http://api.wmata.com
+    - https://api.wmata.com
+    topics:
+    - transport
+- group: rail-station-information-1-0
+  url_pattern: /Rail.svc/json/jStationTimes
+  method: GET
+  host:
+  - https://api.wmata.com
+  concurrent_calls: 1
+  extra_config:
+    provider: wmata.com
+    description: Rail line and station information, including locations, fares, times,
+      and parking.
+    version: "1.0"
+    slug: rail-station-information-1-0-rail-svc-json-jstationtimes
+    schemes:
+    - http
+    - https
+    hosts:
+    - http://api.wmata.com
+    - https://api.wmata.com
+    topics:
+    - transport
+- group: rail-station-information-1-0
+  url_pattern: /Rail.svc/json/jStations
+  method: GET
+  host:
+  - https://api.wmata.com
+  concurrent_calls: 1
+  extra_config:
+    provider: wmata.com
+    description: Rail line and station information, including locations, fares, times,
+      and parking.
+    version: "1.0"
+    slug: rail-station-information-1-0-rail-svc-json-jstations
+    schemes:
+    - http
+    - https
+    hosts:
+    - http://api.wmata.com
+    - https://api.wmata.com
+    topics:
+    - transport

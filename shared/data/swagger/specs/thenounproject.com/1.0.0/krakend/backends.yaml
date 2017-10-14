@@ -1,0 +1,320 @@
+backends:
+- group: the-noun-project-1-0-0
+  url_pattern: /collection/{id}
+  method: GET
+  encoding: json
+  host:
+  - http://api.thenounproject.com
+  url_keys:
+  - id
+  concurrent_calls: 1
+  extra_config:
+    provider: thenounproject.com
+    description: Icons for Everything
+    version: 1.0.0
+    slug: the-noun-project-1-0-0-collection-id
+    schemes:
+    - http
+    produces:
+    - json
+    hosts:
+    - http://api.thenounproject.com
+    topics:
+    - collection
+    - media
+- group: the-noun-project-1-0-0
+  url_pattern: /collection/{id}/icons
+  method: GET
+  encoding: json
+  host:
+  - http://api.thenounproject.com
+  url_keys:
+  - id
+  query_string_params:
+  - limit
+  - offset
+  - page
+  concurrent_calls: 1
+  extra_config:
+    provider: thenounproject.com
+    description: Icons for Everything
+    version: 1.0.0
+    slug: the-noun-project-1-0-0-collection-id-icons
+    schemes:
+    - http
+    produces:
+    - json
+    hosts:
+    - http://api.thenounproject.com
+    topics:
+    - collection
+    - media
+- group: the-noun-project-1-0-0
+  url_pattern: /collection/{slug}
+  method: GET
+  encoding: json
+  host:
+  - http://api.thenounproject.com
+  url_keys:
+  - slug
+  concurrent_calls: 1
+  extra_config:
+    provider: thenounproject.com
+    description: Icons for Everything
+    version: 1.0.0
+    slug: the-noun-project-1-0-0-collection-slug
+    schemes:
+    - http
+    produces:
+    - json
+    hosts:
+    - http://api.thenounproject.com
+    topics:
+    - collection
+    - media
+- group: the-noun-project-1-0-0
+  url_pattern: /collection/{slug}/icons
+  method: GET
+  encoding: json
+  host:
+  - http://api.thenounproject.com
+  url_keys:
+  - slug
+  query_string_params:
+  - limit
+  - offset
+  - page
+  concurrent_calls: 1
+  extra_config:
+    provider: thenounproject.com
+    description: Icons for Everything
+    version: 1.0.0
+    slug: the-noun-project-1-0-0-collection-slug-icons
+    schemes:
+    - http
+    produces:
+    - json
+    hosts:
+    - http://api.thenounproject.com
+    topics:
+    - collection
+    - media
+- group: the-noun-project-1-0-0
+  url_pattern: /collections
+  method: GET
+  encoding: json
+  host:
+  - http://api.thenounproject.com
+  query_string_params:
+  - limit
+  - offset
+  - page
+  concurrent_calls: 1
+  extra_config:
+    provider: thenounproject.com
+    description: Icons for Everything
+    version: 1.0.0
+    slug: the-noun-project-1-0-0-collections
+    schemes:
+    - http
+    produces:
+    - json
+    hosts:
+    - http://api.thenounproject.com
+    topics:
+    - collections
+    - media
+- group: the-noun-project-1-0-0
+  url_pattern: /icon/{id}
+  method: GET
+  encoding: json
+  host:
+  - http://api.thenounproject.com
+  url_keys:
+  - id
+  concurrent_calls: 1
+  extra_config:
+    provider: thenounproject.com
+    description: Icons for Everything
+    version: 1.0.0
+    slug: the-noun-project-1-0-0-icon-id
+    schemes:
+    - http
+    produces:
+    - json
+    hosts:
+    - http://api.thenounproject.com
+    topics:
+    - icon
+    - media
+- group: the-noun-project-1-0-0
+  url_pattern: /icon/{term}
+  method: GET
+  encoding: json
+  host:
+  - http://api.thenounproject.com
+  url_keys:
+  - term
+  concurrent_calls: 1
+  extra_config:
+    provider: thenounproject.com
+    description: Icons for Everything
+    version: 1.0.0
+    slug: the-noun-project-1-0-0-icon-term
+    schemes:
+    - http
+    produces:
+    - json
+    hosts:
+    - http://api.thenounproject.com
+    topics:
+    - icon
+    - media
+- group: the-noun-project-1-0-0
+  url_pattern: /icons/recent_uploads
+  method: GET
+  encoding: json
+  host:
+  - http://api.thenounproject.com
+  query_string_params:
+  - limit
+  - offset
+  - page
+  concurrent_calls: 1
+  extra_config:
+    provider: thenounproject.com
+    description: Icons for Everything
+    version: 1.0.0
+    slug: the-noun-project-1-0-0-icons-recent-uploads
+    schemes:
+    - http
+    produces:
+    - json
+    hosts:
+    - http://api.thenounproject.com
+    topics:
+    - icons
+    - media
+- group: the-noun-project-1-0-0
+  url_pattern: /icons/{term}
+  method: GET
+  encoding: json
+  host:
+  - http://api.thenounproject.com
+  url_keys:
+  - term
+  query_string_params:
+  - limit
+  - limit_to_public_domain
+  - offset
+  - page
+  concurrent_calls: 1
+  extra_config:
+    provider: thenounproject.com
+    description: Icons for Everything
+    version: 1.0.0
+    slug: the-noun-project-1-0-0-icons-term
+    schemes:
+    - http
+    produces:
+    - json
+    hosts:
+    - http://api.thenounproject.com
+    topics:
+    - icons
+    - media
+- group: the-noun-project-1-0-0
+  url_pattern: /oauth/usage
+  method: GET
+  encoding: json
+  host:
+  - http://api.thenounproject.com
+  concurrent_calls: 1
+  extra_config:
+    provider: thenounproject.com
+    description: Icons for Everything
+    version: 1.0.0
+    slug: the-noun-project-1-0-0-oauth-usage
+    schemes:
+    - http
+    produces:
+    - json
+    hosts:
+    - http://api.thenounproject.com
+    topics:
+    - media
+    - oauth
+- group: the-noun-project-1-0-0
+  url_pattern: /user/{user_id}/collections
+  method: GET
+  encoding: json
+  host:
+  - http://api.thenounproject.com
+  url_keys:
+  - user_id
+  concurrent_calls: 1
+  extra_config:
+    provider: thenounproject.com
+    description: Icons for Everything
+    version: 1.0.0
+    slug: the-noun-project-1-0-0-user-user-id-collections
+    schemes:
+    - http
+    produces:
+    - json
+    hosts:
+    - http://api.thenounproject.com
+    topics:
+    - media
+    - user
+- group: the-noun-project-1-0-0
+  url_pattern: /user/{user_id}/collections/{slug}
+  method: GET
+  encoding: json
+  host:
+  - http://api.thenounproject.com
+  url_keys:
+  - slug
+  - user_id
+  concurrent_calls: 1
+  extra_config:
+    provider: thenounproject.com
+    description: Icons for Everything
+    version: 1.0.0
+    slug: the-noun-project-1-0-0-user-user-id-collections-slug
+    schemes:
+    - http
+    produces:
+    - json
+    hosts:
+    - http://api.thenounproject.com
+    topics:
+    - media
+    - user
+- group: the-noun-project-1-0-0
+  url_pattern: /user/{username}/uploads
+  method: GET
+  encoding: json
+  host:
+  - http://api.thenounproject.com
+  url_keys:
+  - username
+  query_string_params:
+  - limit
+  - offset
+  - page
+  concurrent_calls: 1
+  extra_config:
+    provider: thenounproject.com
+    description: Icons for Everything
+    version: 1.0.0
+    slug: the-noun-project-1-0-0-user-username-uploads
+    schemes:
+    - http
+    produces:
+    - json
+    hosts:
+    - http://api.thenounproject.com
+    topics:
+    - media
+    - user

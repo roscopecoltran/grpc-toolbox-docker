@@ -1,0 +1,66 @@
+{
+	"backends": [
+		{
+			"group": "billingclient-2017-02-27-preview",
+			"url_pattern": "/providers/Microsoft",
+			"method": "BILLING/OPERATIONS",
+			"encoding": "json",
+			"host": [
+				"https://management.azure.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "azure.com",
+				"description": "Billing client provides access to billing resources for Azure Web-Direct subscriptions. Other subscription types which were not purchased directly through the Azure web portal are not supported through this preview API.",
+				"version": "2017-02-27-preview",
+				"slug": "billingclient-2017-02-27-preview-providers-microsoft",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://management.azure.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "billingclient-2017-02-27-preview",
+			"url_pattern": "/subscriptions/{subscriptionId}/providers/Microsoft",
+			"method": "BILLING/INVOICES",
+			"encoding": "json",
+			"host": [
+				"https://management.azure.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "azure.com",
+				"description": "Billing client provides access to billing resources for Azure Web-Direct subscriptions. Other subscription types which were not purchased directly through the Azure web portal are not supported through this preview API.",
+				"version": "2017-02-27-preview",
+				"slug": "billingclient-2017-02-27-preview-subscriptions-subscriptionid-providers-microsoft",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://management.azure.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		}
+	]
+}

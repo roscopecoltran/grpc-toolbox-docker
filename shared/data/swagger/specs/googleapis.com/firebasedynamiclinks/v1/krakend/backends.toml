@@ -1,0 +1,69 @@
+[[backends]]
+  group = "firebase-dynamic-links-v1"
+  url_pattern = "/v1/installAttribution"
+  method = "POST"
+  host = ["https://firebasedynamiclinks-ipv6.googleapis.com"]
+  whitelist = ["appMinimumVersion", "attributionConfidence", "deepLink", "externalBrowserDestinationLink", "fallbackLink", "invitationId", "isStrongMatchExecutable", "matchMessage", "requestedLink", "resolvedLink", "utmCampaign", "utmMedium", "utmSource"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Programmatically creates and manages Firebase Dynamic Links."
+    version = "v1"
+    slug = "firebase-dynamic-links-v1-v1-installattribution"
+    schemes = ["https"]
+    hosts = ["https://firebasedynamiclinks-ipv6.googleapis.com"]
+    topics = ["v1"]
+    [backends.extra_config.mapping]
+      appMinimumVersion = "appMinimumVersion"
+      attributionConfidence = "attributionConfidence"
+      deepLink = "deepLink"
+      externalBrowserDestinationLink = "externalBrowserDestinationLink"
+      fallbackLink = "fallbackLink"
+      invitationId = "invitationId"
+      isStrongMatchExecutable = "isStrongMatchExecutable"
+      matchMessage = "matchMessage"
+      requestedLink = "requestedLink"
+      resolvedLink = "resolvedLink"
+      utmCampaign = "utmCampaign"
+      utmMedium = "utmMedium"
+      utmSource = "utmSource"
+
+[[backends]]
+  group = "firebase-dynamic-links-v1"
+  url_pattern = "/v1/shortLinks"
+  method = "POST"
+  host = ["https://firebasedynamiclinks-ipv6.googleapis.com"]
+  whitelist = ["previewLink", "shortLink", "warning"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Programmatically creates and manages Firebase Dynamic Links."
+    version = "v1"
+    slug = "firebase-dynamic-links-v1-v1-shortlinks"
+    schemes = ["https"]
+    hosts = ["https://firebasedynamiclinks-ipv6.googleapis.com"]
+    topics = ["shortlinks"]
+    [backends.extra_config.mapping]
+      previewLink = "previewLink"
+      shortLink = "shortLink"
+      warning = "warning"
+
+[[backends]]
+  group = "firebase-dynamic-links-v1"
+  url_pattern = "/v1/{dynamicLink}/linkStats"
+  method = "GET"
+  host = ["https://firebasedynamiclinks-ipv6.googleapis.com"]
+  url_keys = ["dynamicLink"]
+  query_string_params = ["durationDays"]
+  whitelist = ["linkEventStats"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Programmatically creates and manages Firebase Dynamic Links."
+    version = "v1"
+    slug = "firebase-dynamic-links-v1-v1-dynamiclink-linkstats"
+    schemes = ["https"]
+    hosts = ["https://firebasedynamiclinks-ipv6.googleapis.com"]
+    topics = ["v1"]
+    [backends.extra_config.mapping]
+      linkEventStats = "linkEventStats"

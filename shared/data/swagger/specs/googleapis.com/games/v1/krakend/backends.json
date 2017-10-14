@@ -1,0 +1,1470 @@
+{
+	"backends": [
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/achievements",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"items",
+				"kind",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-achievements",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/achievements/updateMultiple",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"kind",
+				"updatedAchievements"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-achievements-updatemultiple",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"kind": "kind",
+					"updatedAchievements": "updatedAchievements"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/achievements/{achievementId}/increment",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"currentSteps",
+				"kind",
+				"newlyUnlocked"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-achievements-achievementid-increment",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"currentSteps": "currentSteps",
+					"kind": "kind",
+					"newlyUnlocked": "newlyUnlocked"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/achievements/{achievementId}/reveal",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"currentState",
+				"kind"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-achievements-achievementid-reveal",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"currentState": "currentState",
+					"kind": "kind"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/achievements/{achievementId}/setStepsAtLeast",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"currentSteps",
+				"kind",
+				"newlyUnlocked"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-achievements-achievementid-setstepsatleast",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"currentSteps": "currentSteps",
+					"kind": "kind",
+					"newlyUnlocked": "newlyUnlocked"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/achievements/{achievementId}/unlock",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"kind",
+				"newlyUnlocked"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-achievements-achievementid-unlock",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"kind": "kind",
+					"newlyUnlocked": "newlyUnlocked"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/applications/played",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-applications-played",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/applications/{applicationId}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"achievement_count",
+				"assets",
+				"author",
+				"description",
+				"enabledFeatures",
+				"id",
+				"instances",
+				"kind",
+				"lastUpdatedTimestamp",
+				"leaderboard_count",
+				"name",
+				"themeColor"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-applications-applicationid",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"achievement_count": "achievement_count",
+					"assets": "assets",
+					"author": "author",
+					"description": "description",
+					"enabledFeatures": "enabledFeatures",
+					"id": "id",
+					"instances": "instances",
+					"kind": "kind",
+					"lastUpdatedTimestamp": "lastUpdatedTimestamp",
+					"leaderboard_count": "leaderboard_count",
+					"name": "name",
+					"themeColor": "themeColor"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/applications/{applicationId}/verify",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"alternate_player_id",
+				"kind",
+				"player_id"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-applications-applicationid-verify",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"alternate_player_id": "alternate_player_id",
+					"kind": "kind",
+					"player_id": "player_id"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/eventDefinitions",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"items",
+				"kind",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-eventdefinitions",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/events",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"items",
+				"kind",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-events",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/leaderboards",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"items",
+				"kind",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-leaderboards",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/leaderboards/scores",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"kind",
+				"submittedScores"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-leaderboards-scores",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"kind": "kind",
+					"submittedScores": "submittedScores"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/leaderboards/{leaderboardId}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"iconUrl",
+				"id",
+				"isIconUrlDefault",
+				"kind",
+				"name",
+				"order"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-leaderboards-leaderboardid",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"iconUrl": "iconUrl",
+					"id": "id",
+					"isIconUrlDefault": "isIconUrlDefault",
+					"kind": "kind",
+					"name": "name",
+					"order": "order"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/leaderboards/{leaderboardId}/scores",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"beatenScoreTimeSpans",
+				"formattedScore",
+				"kind",
+				"leaderboardId",
+				"scoreTag",
+				"unbeatenScores"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-leaderboards-leaderboardid-scores",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"beatenScoreTimeSpans": "beatenScoreTimeSpans",
+					"formattedScore": "formattedScore",
+					"kind": "kind",
+					"leaderboardId": "leaderboardId",
+					"scoreTag": "scoreTag",
+					"unbeatenScores": "unbeatenScores"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/leaderboards/{leaderboardId}/scores/{collection}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"items",
+				"kind",
+				"nextPageToken",
+				"numScores",
+				"prevPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-leaderboards-leaderboardid-scores-collection",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken",
+					"numScores": "numScores",
+					"prevPageToken": "prevPageToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/leaderboards/{leaderboardId}/window/{collection}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"items",
+				"kind",
+				"nextPageToken",
+				"numScores",
+				"prevPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-leaderboards-leaderboardid-window-collection",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken",
+					"numScores": "numScores",
+					"prevPageToken": "prevPageToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/metagameConfig",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"currentVersion",
+				"kind",
+				"playerLevels"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-metagameconfig",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"currentVersion": "currentVersion",
+					"kind": "kind",
+					"playerLevels": "playerLevels"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/players/me/players/{collection}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"items",
+				"kind",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-players-me-players-collection",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/players/{playerId}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"avatarImageUrl",
+				"bannerUrlLandscape",
+				"bannerUrlPortrait",
+				"displayName",
+				"kind",
+				"name",
+				"name.familyName",
+				"name.givenName",
+				"originalPlayerId",
+				"playerId",
+				"title"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-players-playerid",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"avatarImageUrl": "avatarImageUrl",
+					"bannerUrlLandscape": "bannerUrlLandscape",
+					"bannerUrlPortrait": "bannerUrlPortrait",
+					"displayName": "displayName",
+					"kind": "kind",
+					"name": "name",
+					"name.familyName": "name.familyName",
+					"name.givenName": "name.givenName",
+					"originalPlayerId": "originalPlayerId",
+					"playerId": "playerId",
+					"title": "title"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/players/{playerId}/achievements",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"items",
+				"kind",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-players-playerid-achievements",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/players/{playerId}/categories/{collection}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"items",
+				"kind",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-players-playerid-categories-collection",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/players/{playerId}/leaderboards/{leaderboardId}/scores/{timeSpan}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"items",
+				"kind",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-players-playerid-leaderboards-leaderboardid-scores-timespan",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/players/{playerId}/quests",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"items",
+				"kind",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-players-playerid-quests",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/players/{playerId}/snapshots",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"items",
+				"kind",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-players-playerid-snapshots",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/pushtokens/remove",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-pushtokens-remove",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/quests/{questId}/accept",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"acceptedTimestampMillis",
+				"applicationId",
+				"bannerUrl",
+				"description",
+				"endTimestampMillis",
+				"iconUrl",
+				"id",
+				"isDefaultBannerUrl",
+				"isDefaultIconUrl",
+				"kind",
+				"lastUpdatedTimestampMillis",
+				"milestones",
+				"name",
+				"notifyTimestampMillis",
+				"startTimestampMillis",
+				"state"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-quests-questid-accept",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"acceptedTimestampMillis": "acceptedTimestampMillis",
+					"applicationId": "applicationId",
+					"bannerUrl": "bannerUrl",
+					"description": "description",
+					"endTimestampMillis": "endTimestampMillis",
+					"iconUrl": "iconUrl",
+					"id": "id",
+					"isDefaultBannerUrl": "isDefaultBannerUrl",
+					"isDefaultIconUrl": "isDefaultIconUrl",
+					"kind": "kind",
+					"lastUpdatedTimestampMillis": "lastUpdatedTimestampMillis",
+					"milestones": "milestones",
+					"name": "name",
+					"notifyTimestampMillis": "notifyTimestampMillis",
+					"startTimestampMillis": "startTimestampMillis",
+					"state": "state"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/revisions/check",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"apiVersion",
+				"kind",
+				"revisionStatus"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-revisions-check",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"apiVersion": "apiVersion",
+					"kind": "kind",
+					"revisionStatus": "revisionStatus"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/rooms",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"items",
+				"kind",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-rooms",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/rooms/create",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"applicationId",
+				"description",
+				"inviterId",
+				"kind",
+				"participants",
+				"roomId",
+				"roomStatusVersion",
+				"status",
+				"variant"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-rooms-create",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"applicationId": "applicationId",
+					"description": "description",
+					"inviterId": "inviterId",
+					"kind": "kind",
+					"participants": "participants",
+					"roomId": "roomId",
+					"roomStatusVersion": "roomStatusVersion",
+					"status": "status",
+					"variant": "variant"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/rooms/{roomId}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"applicationId",
+				"description",
+				"inviterId",
+				"kind",
+				"participants",
+				"roomId",
+				"roomStatusVersion",
+				"status",
+				"variant"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-rooms-roomid",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"applicationId": "applicationId",
+					"description": "description",
+					"inviterId": "inviterId",
+					"kind": "kind",
+					"participants": "participants",
+					"roomId": "roomId",
+					"roomStatusVersion": "roomStatusVersion",
+					"status": "status",
+					"variant": "variant"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/rooms/{roomId}/decline",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"applicationId",
+				"description",
+				"inviterId",
+				"kind",
+				"participants",
+				"roomId",
+				"roomStatusVersion",
+				"status",
+				"variant"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-rooms-roomid-decline",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"applicationId": "applicationId",
+					"description": "description",
+					"inviterId": "inviterId",
+					"kind": "kind",
+					"participants": "participants",
+					"roomId": "roomId",
+					"roomStatusVersion": "roomStatusVersion",
+					"status": "status",
+					"variant": "variant"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/rooms/{roomId}/dismiss",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-rooms-roomid-dismiss",
+				"schemes": [
+					"https"
+				],
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/rooms/{roomId}/join",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"applicationId",
+				"description",
+				"inviterId",
+				"kind",
+				"participants",
+				"roomId",
+				"roomStatusVersion",
+				"status",
+				"variant"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-rooms-roomid-join",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"applicationId": "applicationId",
+					"description": "description",
+					"inviterId": "inviterId",
+					"kind": "kind",
+					"participants": "participants",
+					"roomId": "roomId",
+					"roomStatusVersion": "roomStatusVersion",
+					"status": "status",
+					"variant": "variant"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/rooms/{roomId}/leave",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"applicationId",
+				"description",
+				"inviterId",
+				"kind",
+				"participants",
+				"roomId",
+				"roomStatusVersion",
+				"status",
+				"variant"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-rooms-roomid-leave",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"applicationId": "applicationId",
+					"description": "description",
+					"inviterId": "inviterId",
+					"kind": "kind",
+					"participants": "participants",
+					"roomId": "roomId",
+					"roomStatusVersion": "roomStatusVersion",
+					"status": "status",
+					"variant": "variant"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/rooms/{roomId}/reportstatus",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"kind",
+				"participants",
+				"roomId",
+				"status",
+				"statusVersion"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-rooms-roomid-reportstatus",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"kind": "kind",
+					"participants": "participants",
+					"roomId": "roomId",
+					"status": "status",
+					"statusVersion": "statusVersion"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/snapshots/{snapshotId}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"description",
+				"driveId",
+				"durationMillis",
+				"id",
+				"kind",
+				"lastModifiedMillis",
+				"progressValue",
+				"title",
+				"uniqueName"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-snapshots-snapshotid",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"description": "description",
+					"driveId": "driveId",
+					"durationMillis": "durationMillis",
+					"id": "id",
+					"kind": "kind",
+					"lastModifiedMillis": "lastModifiedMillis",
+					"progressValue": "progressValue",
+					"title": "title",
+					"uniqueName": "uniqueName"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/turnbasedmatches",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"items",
+				"kind",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-turnbasedmatches",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"items": "items",
+					"kind": "kind",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/turnbasedmatches/create",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"applicationId",
+				"description",
+				"inviterId",
+				"kind",
+				"matchId",
+				"matchNumber",
+				"matchVersion",
+				"participants",
+				"pendingParticipantId",
+				"rematchId",
+				"results",
+				"status",
+				"userMatchStatus",
+				"variant",
+				"withParticipantId"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-turnbasedmatches-create",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"applicationId": "applicationId",
+					"description": "description",
+					"inviterId": "inviterId",
+					"kind": "kind",
+					"matchId": "matchId",
+					"matchNumber": "matchNumber",
+					"matchVersion": "matchVersion",
+					"participants": "participants",
+					"pendingParticipantId": "pendingParticipantId",
+					"rematchId": "rematchId",
+					"results": "results",
+					"status": "status",
+					"userMatchStatus": "userMatchStatus",
+					"variant": "variant",
+					"withParticipantId": "withParticipantId"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/turnbasedmatches/sync",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"items",
+				"kind",
+				"moreAvailable",
+				"nextPageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-turnbasedmatches-sync",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"items": "items",
+					"kind": "kind",
+					"moreAvailable": "moreAvailable",
+					"nextPageToken": "nextPageToken"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/turnbasedmatches/{matchId}",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"applicationId",
+				"description",
+				"inviterId",
+				"kind",
+				"matchId",
+				"matchNumber",
+				"matchVersion",
+				"participants",
+				"pendingParticipantId",
+				"rematchId",
+				"results",
+				"status",
+				"userMatchStatus",
+				"variant",
+				"withParticipantId"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-turnbasedmatches-matchid",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"applicationId": "applicationId",
+					"description": "description",
+					"inviterId": "inviterId",
+					"kind": "kind",
+					"matchId": "matchId",
+					"matchNumber": "matchNumber",
+					"matchVersion": "matchVersion",
+					"participants": "participants",
+					"pendingParticipantId": "pendingParticipantId",
+					"rematchId": "rematchId",
+					"results": "results",
+					"status": "status",
+					"userMatchStatus": "userMatchStatus",
+					"variant": "variant",
+					"withParticipantId": "withParticipantId"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "google-play-game-services-v1",
+			"url_pattern": "/games/v1/turnbasedmatches/{matchId}/rematch",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"kind"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "The API for Google Play Game Services.",
+				"version": "v1",
+				"slug": "google-play-game-services-v1-games-v1-turnbasedmatches-matchid-rematch",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"kind": "kind"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		}
+	]
+}

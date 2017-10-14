@@ -1,0 +1,355 @@
+backends:
+- group: google-cloud-machine-learning-engine-v1
+  url_pattern: /v1/{name}
+  method: GET
+  host:
+  - https://ml.googleapis.com
+  url_keys:
+  - name
+  whitelist:
+  - createTime
+  - endTime
+  - errorMessage
+  - jobId
+  - startTime
+  - state
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: An API to enable creating and using machine learning models.
+    version: v1
+    slug: google-cloud-machine-learning-engine-v1-v1-name
+    schemes:
+    - https
+    mapping:
+      createTime: createTime
+      endTime: endTime
+      errorMessage: errorMessage
+      jobId: jobId
+      startTime: startTime
+      state: state
+    hosts:
+    - https://ml.googleapis.com
+    topics:
+    - machine-learning
+    - projects
+- group: google-cloud-machine-learning-engine-v1
+  url_pattern: /v1/{name}/operations
+  method: GET
+  host:
+  - https://ml.googleapis.com
+  url_keys:
+  - name
+  query_string_params:
+  - filter
+  - pageSize
+  - pageToken
+  whitelist:
+  - nextPageToken
+  - operations
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: An API to enable creating and using machine learning models.
+    version: v1
+    slug: google-cloud-machine-learning-engine-v1-v1-name-operations
+    schemes:
+    - https
+    mapping:
+      nextPageToken: nextPageToken
+      operations: operations
+    hosts:
+    - https://ml.googleapis.com
+    topics:
+    - machine-learning
+    - projects
+- group: google-cloud-machine-learning-engine-v1
+  url_pattern: /v1/{name}:cancel
+  method: POST
+  host:
+  - https://ml.googleapis.com
+  url_keys:
+  - name
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: An API to enable creating and using machine learning models.
+    version: v1
+    slug: google-cloud-machine-learning-engine-v1-v1-name-cancel
+    schemes:
+    - https
+    hosts:
+    - https://ml.googleapis.com
+    topics:
+    - machine-learning
+    - projects
+- group: google-cloud-machine-learning-engine-v1
+  url_pattern: /v1/{name}:getConfig
+  method: GET
+  host:
+  - https://ml.googleapis.com
+  url_keys:
+  - name
+  whitelist:
+  - serviceAccount
+  - serviceAccountProject
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: An API to enable creating and using machine learning models.
+    version: v1
+    slug: google-cloud-machine-learning-engine-v1-v1-name-getconfig
+    schemes:
+    - https
+    mapping:
+      serviceAccount: serviceAccount
+      serviceAccountProject: serviceAccountProject
+    hosts:
+    - https://ml.googleapis.com
+    topics:
+    - machine-learning
+    - projects
+- group: google-cloud-machine-learning-engine-v1
+  url_pattern: /v1/{name}:predict
+  method: POST
+  host:
+  - https://ml.googleapis.com
+  url_keys:
+  - name
+  whitelist:
+  - contentType
+  - data
+  - extensions
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: An API to enable creating and using machine learning models.
+    version: v1
+    slug: google-cloud-machine-learning-engine-v1-v1-name-predict
+    schemes:
+    - https
+    mapping:
+      contentType: contentType
+      data: data
+      extensions: extensions
+    hosts:
+    - https://ml.googleapis.com
+    topics:
+    - machine-learning
+    - projects
+- group: google-cloud-machine-learning-engine-v1
+  url_pattern: /v1/{name}:setDefault
+  method: POST
+  host:
+  - https://ml.googleapis.com
+  url_keys:
+  - name
+  whitelist:
+  - createTime
+  - deploymentUri
+  - description
+  - errorMessage
+  - isDefault
+  - lastUseTime
+  - name
+  - runtimeVersion
+  - state
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: An API to enable creating and using machine learning models.
+    version: v1
+    slug: google-cloud-machine-learning-engine-v1-v1-name-setdefault
+    schemes:
+    - https
+    mapping:
+      createTime: createTime
+      deploymentUri: deploymentUri
+      description: description
+      errorMessage: errorMessage
+      isDefault: isDefault
+      lastUseTime: lastUseTime
+      name: name
+      runtimeVersion: runtimeVersion
+      state: state
+    hosts:
+    - https://ml.googleapis.com
+    topics:
+    - machine-learning
+    - projects
+- group: google-cloud-machine-learning-engine-v1
+  url_pattern: /v1/{parent}/jobs
+  method: GET
+  host:
+  - https://ml.googleapis.com
+  url_keys:
+  - parent
+  query_string_params:
+  - filter
+  - pageSize
+  - pageToken
+  whitelist:
+  - jobs
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: An API to enable creating and using machine learning models.
+    version: v1
+    slug: google-cloud-machine-learning-engine-v1-v1-parent-jobs
+    schemes:
+    - https
+    mapping:
+      jobs: jobs
+      nextPageToken: nextPageToken
+    hosts:
+    - https://ml.googleapis.com
+    topics:
+    - machine-learning
+    - projects
+- group: google-cloud-machine-learning-engine-v1
+  url_pattern: /v1/{parent}/models
+  method: GET
+  host:
+  - https://ml.googleapis.com
+  url_keys:
+  - parent
+  query_string_params:
+  - pageSize
+  - pageToken
+  whitelist:
+  - models
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: An API to enable creating and using machine learning models.
+    version: v1
+    slug: google-cloud-machine-learning-engine-v1-v1-parent-models
+    schemes:
+    - https
+    mapping:
+      models: models
+      nextPageToken: nextPageToken
+    hosts:
+    - https://ml.googleapis.com
+    topics:
+    - machine-learning
+    - projects
+- group: google-cloud-machine-learning-engine-v1
+  url_pattern: /v1/{parent}/versions
+  method: GET
+  host:
+  - https://ml.googleapis.com
+  url_keys:
+  - parent
+  query_string_params:
+  - pageSize
+  - pageToken
+  whitelist:
+  - nextPageToken
+  - versions
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: An API to enable creating and using machine learning models.
+    version: v1
+    slug: google-cloud-machine-learning-engine-v1-v1-parent-versions
+    schemes:
+    - https
+    mapping:
+      nextPageToken: nextPageToken
+      versions: versions
+    hosts:
+    - https://ml.googleapis.com
+    topics:
+    - machine-learning
+    - projects
+- group: google-cloud-machine-learning-engine-v1
+  url_pattern: /v1/{resource}:getIamPolicy
+  method: GET
+  host:
+  - https://ml.googleapis.com
+  url_keys:
+  - resource
+  whitelist:
+  - auditConfigs
+  - bindings
+  - etag
+  - iamOwned
+  - version
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: An API to enable creating and using machine learning models.
+    version: v1
+    slug: google-cloud-machine-learning-engine-v1-v1-resource-getiampolicy
+    schemes:
+    - https
+    mapping:
+      auditConfigs: auditConfigs
+      bindings: bindings
+      etag: etag
+      iamOwned: iamOwned
+      version: version
+    hosts:
+    - https://ml.googleapis.com
+    topics:
+    - machine-learning
+    - projects
+- group: google-cloud-machine-learning-engine-v1
+  url_pattern: /v1/{resource}:setIamPolicy
+  method: POST
+  host:
+  - https://ml.googleapis.com
+  url_keys:
+  - resource
+  whitelist:
+  - auditConfigs
+  - bindings
+  - etag
+  - iamOwned
+  - version
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: An API to enable creating and using machine learning models.
+    version: v1
+    slug: google-cloud-machine-learning-engine-v1-v1-resource-setiampolicy
+    schemes:
+    - https
+    mapping:
+      auditConfigs: auditConfigs
+      bindings: bindings
+      etag: etag
+      iamOwned: iamOwned
+      version: version
+    hosts:
+    - https://ml.googleapis.com
+    topics:
+    - machine-learning
+    - projects
+- group: google-cloud-machine-learning-engine-v1
+  url_pattern: /v1/{resource}:testIamPermissions
+  method: POST
+  host:
+  - https://ml.googleapis.com
+  url_keys:
+  - resource
+  whitelist:
+  - permissions
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: An API to enable creating and using machine learning models.
+    version: v1
+    slug: google-cloud-machine-learning-engine-v1-v1-resource-testiampermissions
+    schemes:
+    - https
+    mapping:
+      permissions: permissions
+    hosts:
+    - https://ml.googleapis.com
+    topics:
+    - machine-learning
+    - projects

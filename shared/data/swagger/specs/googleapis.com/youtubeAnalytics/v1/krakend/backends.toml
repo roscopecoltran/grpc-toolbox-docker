@@ -1,0 +1,63 @@
+[[backends]]
+  group = "youtube-analytics-v1"
+  url_pattern = "/youtube/analytics/v1/groupItems"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Retrieves your YouTube Analytics data."
+    version = "v1"
+    slug = "youtube-analytics-v1-youtube-analytics-v1-groupitems"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics", "media"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+
+[[backends]]
+  group = "youtube-analytics-v1"
+  url_pattern = "/youtube/analytics/v1/groups"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Retrieves your YouTube Analytics data."
+    version = "v1"
+    slug = "youtube-analytics-v1-youtube-analytics-v1-groups"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics", "media"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "youtube-analytics-v1"
+  url_pattern = "/youtube/analytics/v1/reports"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["columnHeaders", "columnHeaders.columnType", "columnHeaders.dataType", "columnHeaders.name", "kind", "rows"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Retrieves your YouTube Analytics data."
+    version = "v1"
+    slug = "youtube-analytics-v1-youtube-analytics-v1-reports"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics", "media"]
+    [backends.extra_config.mapping]
+      columnHeaders = "columnHeaders"
+      columnType = "columnType"
+      dataType = "dataType"
+      kind = "kind"
+      name = "name"
+      rows = "rows"

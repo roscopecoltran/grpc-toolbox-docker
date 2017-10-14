@@ -1,0 +1,879 @@
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/achievements"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-achievements"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/achievements/updateMultiple"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "updatedAchievements"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-achievements-updatemultiple"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      updatedAchievements = "updatedAchievements"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/achievements/{achievementId}/increment"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["currentSteps", "kind", "newlyUnlocked"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-achievements-achievementid-increment"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      currentSteps = "currentSteps"
+      kind = "kind"
+      newlyUnlocked = "newlyUnlocked"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/achievements/{achievementId}/reveal"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["currentState", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-achievements-achievementid-reveal"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      currentState = "currentState"
+      kind = "kind"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/achievements/{achievementId}/setStepsAtLeast"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["currentSteps", "kind", "newlyUnlocked"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-achievements-achievementid-setstepsatleast"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      currentSteps = "currentSteps"
+      kind = "kind"
+      newlyUnlocked = "newlyUnlocked"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/achievements/{achievementId}/unlock"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "newlyUnlocked"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-achievements-achievementid-unlock"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      newlyUnlocked = "newlyUnlocked"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/applications/played"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-applications-played"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/applications/{applicationId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["achievement_count", "assets", "author", "description", "enabledFeatures", "id", "instances", "kind", "lastUpdatedTimestamp", "leaderboard_count", "name", "themeColor"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-applications-applicationid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      achievement_count = "achievement_count"
+      assets = "assets"
+      author = "author"
+      description = "description"
+      enabledFeatures = "enabledFeatures"
+      id = "id"
+      instances = "instances"
+      kind = "kind"
+      lastUpdatedTimestamp = "lastUpdatedTimestamp"
+      leaderboard_count = "leaderboard_count"
+      name = "name"
+      themeColor = "themeColor"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/applications/{applicationId}/verify"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["alternate_player_id", "kind", "player_id"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-applications-applicationid-verify"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      alternate_player_id = "alternate_player_id"
+      kind = "kind"
+      player_id = "player_id"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/eventDefinitions"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-eventdefinitions"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/events"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-events"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/leaderboards"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-leaderboards"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/leaderboards/scores"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "submittedScores"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-leaderboards-scores"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      submittedScores = "submittedScores"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/leaderboards/{leaderboardId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["iconUrl", "id", "isIconUrlDefault", "kind", "name", "order"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-leaderboards-leaderboardid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      iconUrl = "iconUrl"
+      id = "id"
+      isIconUrlDefault = "isIconUrlDefault"
+      kind = "kind"
+      name = "name"
+      order = "order"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/leaderboards/{leaderboardId}/scores"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["beatenScoreTimeSpans", "formattedScore", "kind", "leaderboardId", "scoreTag", "unbeatenScores"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-leaderboards-leaderboardid-scores"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      beatenScoreTimeSpans = "beatenScoreTimeSpans"
+      formattedScore = "formattedScore"
+      kind = "kind"
+      leaderboardId = "leaderboardId"
+      scoreTag = "scoreTag"
+      unbeatenScores = "unbeatenScores"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/leaderboards/{leaderboardId}/scores/{collection}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["items", "kind", "nextPageToken", "numScores", "prevPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-leaderboards-leaderboardid-scores-collection"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+      numScores = "numScores"
+      prevPageToken = "prevPageToken"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/leaderboards/{leaderboardId}/window/{collection}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["items", "kind", "nextPageToken", "numScores", "prevPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-leaderboards-leaderboardid-window-collection"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+      numScores = "numScores"
+      prevPageToken = "prevPageToken"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/metagameConfig"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["currentVersion", "kind", "playerLevels"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-metagameconfig"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      currentVersion = "currentVersion"
+      kind = "kind"
+      playerLevels = "playerLevels"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/players/me/players/{collection}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-players-me-players-collection"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/players/{playerId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["avatarImageUrl", "bannerUrlLandscape", "bannerUrlPortrait", "displayName", "kind", "name", "name.familyName", "name.givenName", "originalPlayerId", "playerId", "title"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-players-playerid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      avatarImageUrl = "avatarImageUrl"
+      bannerUrlLandscape = "bannerUrlLandscape"
+      bannerUrlPortrait = "bannerUrlPortrait"
+      displayName = "displayName"
+      familyName = "familyName"
+      givenName = "givenName"
+      kind = "kind"
+      name = "name"
+      originalPlayerId = "originalPlayerId"
+      playerId = "playerId"
+      title = "title"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/players/{playerId}/achievements"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-players-playerid-achievements"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/players/{playerId}/categories/{collection}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-players-playerid-categories-collection"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/players/{playerId}/leaderboards/{leaderboardId}/scores/{timeSpan}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-players-playerid-leaderboards-leaderboardid-scores-timespan"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/players/{playerId}/quests"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-players-playerid-quests"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/players/{playerId}/snapshots"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-players-playerid-snapshots"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/pushtokens/remove"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-pushtokens-remove"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/quests/{questId}/accept"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["acceptedTimestampMillis", "applicationId", "bannerUrl", "description", "endTimestampMillis", "iconUrl", "id", "isDefaultBannerUrl", "isDefaultIconUrl", "kind", "lastUpdatedTimestampMillis", "milestones", "name", "notifyTimestampMillis", "startTimestampMillis", "state"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-quests-questid-accept"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      acceptedTimestampMillis = "acceptedTimestampMillis"
+      applicationId = "applicationId"
+      bannerUrl = "bannerUrl"
+      description = "description"
+      endTimestampMillis = "endTimestampMillis"
+      iconUrl = "iconUrl"
+      id = "id"
+      isDefaultBannerUrl = "isDefaultBannerUrl"
+      isDefaultIconUrl = "isDefaultIconUrl"
+      kind = "kind"
+      lastUpdatedTimestampMillis = "lastUpdatedTimestampMillis"
+      milestones = "milestones"
+      name = "name"
+      notifyTimestampMillis = "notifyTimestampMillis"
+      startTimestampMillis = "startTimestampMillis"
+      state = "state"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/revisions/check"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["apiVersion", "kind", "revisionStatus"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-revisions-check"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      apiVersion = "apiVersion"
+      kind = "kind"
+      revisionStatus = "revisionStatus"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/rooms"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-rooms"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/rooms/create"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["applicationId", "description", "inviterId", "kind", "participants", "roomId", "roomStatusVersion", "status", "variant"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-rooms-create"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      applicationId = "applicationId"
+      description = "description"
+      inviterId = "inviterId"
+      kind = "kind"
+      participants = "participants"
+      roomId = "roomId"
+      roomStatusVersion = "roomStatusVersion"
+      status = "status"
+      variant = "variant"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/rooms/{roomId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["applicationId", "description", "inviterId", "kind", "participants", "roomId", "roomStatusVersion", "status", "variant"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-rooms-roomid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      applicationId = "applicationId"
+      description = "description"
+      inviterId = "inviterId"
+      kind = "kind"
+      participants = "participants"
+      roomId = "roomId"
+      roomStatusVersion = "roomStatusVersion"
+      status = "status"
+      variant = "variant"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/rooms/{roomId}/decline"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["applicationId", "description", "inviterId", "kind", "participants", "roomId", "roomStatusVersion", "status", "variant"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-rooms-roomid-decline"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      applicationId = "applicationId"
+      description = "description"
+      inviterId = "inviterId"
+      kind = "kind"
+      participants = "participants"
+      roomId = "roomId"
+      roomStatusVersion = "roomStatusVersion"
+      status = "status"
+      variant = "variant"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/rooms/{roomId}/dismiss"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-rooms-roomid-dismiss"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/rooms/{roomId}/join"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["applicationId", "description", "inviterId", "kind", "participants", "roomId", "roomStatusVersion", "status", "variant"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-rooms-roomid-join"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      applicationId = "applicationId"
+      description = "description"
+      inviterId = "inviterId"
+      kind = "kind"
+      participants = "participants"
+      roomId = "roomId"
+      roomStatusVersion = "roomStatusVersion"
+      status = "status"
+      variant = "variant"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/rooms/{roomId}/leave"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["applicationId", "description", "inviterId", "kind", "participants", "roomId", "roomStatusVersion", "status", "variant"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-rooms-roomid-leave"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      applicationId = "applicationId"
+      description = "description"
+      inviterId = "inviterId"
+      kind = "kind"
+      participants = "participants"
+      roomId = "roomId"
+      roomStatusVersion = "roomStatusVersion"
+      status = "status"
+      variant = "variant"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/rooms/{roomId}/reportstatus"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind", "participants", "roomId", "status", "statusVersion"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-rooms-roomid-reportstatus"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"
+      participants = "participants"
+      roomId = "roomId"
+      status = "status"
+      statusVersion = "statusVersion"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/snapshots/{snapshotId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["description", "driveId", "durationMillis", "id", "kind", "lastModifiedMillis", "progressValue", "title", "uniqueName"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-snapshots-snapshotid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      description = "description"
+      driveId = "driveId"
+      durationMillis = "durationMillis"
+      id = "id"
+      kind = "kind"
+      lastModifiedMillis = "lastModifiedMillis"
+      progressValue = "progressValue"
+      title = "title"
+      uniqueName = "uniqueName"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/turnbasedmatches"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-turnbasedmatches"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/turnbasedmatches/create"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["applicationId", "description", "inviterId", "kind", "matchId", "matchNumber", "matchVersion", "participants", "pendingParticipantId", "rematchId", "results", "status", "userMatchStatus", "variant", "withParticipantId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-turnbasedmatches-create"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      applicationId = "applicationId"
+      description = "description"
+      inviterId = "inviterId"
+      kind = "kind"
+      matchId = "matchId"
+      matchNumber = "matchNumber"
+      matchVersion = "matchVersion"
+      participants = "participants"
+      pendingParticipantId = "pendingParticipantId"
+      rematchId = "rematchId"
+      results = "results"
+      status = "status"
+      userMatchStatus = "userMatchStatus"
+      variant = "variant"
+      withParticipantId = "withParticipantId"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/turnbasedmatches/sync"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["items", "kind", "moreAvailable", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-turnbasedmatches-sync"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      items = "items"
+      kind = "kind"
+      moreAvailable = "moreAvailable"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/turnbasedmatches/{matchId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["applicationId", "description", "inviterId", "kind", "matchId", "matchNumber", "matchVersion", "participants", "pendingParticipantId", "rematchId", "results", "status", "userMatchStatus", "variant", "withParticipantId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-turnbasedmatches-matchid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      applicationId = "applicationId"
+      description = "description"
+      inviterId = "inviterId"
+      kind = "kind"
+      matchId = "matchId"
+      matchNumber = "matchNumber"
+      matchVersion = "matchVersion"
+      participants = "participants"
+      pendingParticipantId = "pendingParticipantId"
+      rematchId = "rematchId"
+      results = "results"
+      status = "status"
+      userMatchStatus = "userMatchStatus"
+      variant = "variant"
+      withParticipantId = "withParticipantId"
+
+[[backends]]
+  group = "google-play-game-services-v1"
+  url_pattern = "/games/v1/turnbasedmatches/{matchId}/rematch"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The API for Google Play Game Services."
+    version = "v1"
+    slug = "google-play-game-services-v1-games-v1-turnbasedmatches-matchid-rematch"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"

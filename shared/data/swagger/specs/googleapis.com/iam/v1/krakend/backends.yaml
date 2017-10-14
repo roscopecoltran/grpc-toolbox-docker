@@ -1,0 +1,384 @@
+backends:
+- group: google-identity-and-access-management-iam-v1
+  url_pattern: /v1/permissions:queryTestablePermissions
+  method: POST
+  host:
+  - https://iam.googleapis.com
+  whitelist:
+  - nextPageToken
+  - permissions
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages identity and access control for Google Cloud Platform resources,
+      including the creation of service accounts, which you can use to authenticate
+      to Google and make API calls.
+    version: v1
+    slug: google-identity-and-access-management-iam-v1-v1-permissions-querytestablepermissions
+    schemes:
+    - https
+    mapping:
+      nextPageToken: nextPageToken
+      permissions: permissions
+    hosts:
+    - https://iam.googleapis.com
+    topics:
+    - permissions
+- group: google-identity-and-access-management-iam-v1
+  url_pattern: /v1/roles
+  method: GET
+  host:
+  - https://iam.googleapis.com
+  query_string_params:
+  - pageSize
+  - pageToken
+  - parent
+  - showDeleted
+  - view
+  whitelist:
+  - nextPageToken
+  - roles
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages identity and access control for Google Cloud Platform resources,
+      including the creation of service accounts, which you can use to authenticate
+      to Google and make API calls.
+    version: v1
+    slug: google-identity-and-access-management-iam-v1-v1-roles
+    schemes:
+    - https
+    mapping:
+      nextPageToken: nextPageToken
+      roles: roles
+    hosts:
+    - https://iam.googleapis.com
+    topics:
+    - roles
+- group: google-identity-and-access-management-iam-v1
+  url_pattern: /v1/roles:queryGrantableRoles
+  method: POST
+  host:
+  - https://iam.googleapis.com
+  whitelist:
+  - nextPageToken
+  - roles
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages identity and access control for Google Cloud Platform resources,
+      including the creation of service accounts, which you can use to authenticate
+      to Google and make API calls.
+    version: v1
+    slug: google-identity-and-access-management-iam-v1-v1-roles-querygrantableroles
+    schemes:
+    - https
+    mapping:
+      nextPageToken: nextPageToken
+      roles: roles
+    hosts:
+    - https://iam.googleapis.com
+    topics:
+    - roles
+- group: google-identity-and-access-management-iam-v1
+  url_pattern: /v1/{name}
+  method: GET
+  host:
+  - https://iam.googleapis.com
+  url_keys:
+  - name
+  query_string_params:
+  - publicKeyType
+  whitelist:
+  - deleted
+  - description
+  - etag
+  - includedPermissions
+  - name
+  - stage
+  - title
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages identity and access control for Google Cloud Platform resources,
+      including the creation of service accounts, which you can use to authenticate
+      to Google and make API calls.
+    version: v1
+    slug: google-identity-and-access-management-iam-v1-v1-name
+    schemes:
+    - https
+    mapping:
+      deleted: deleted
+      description: description
+      etag: etag
+      includedPermissions: includedPermissions
+      name: name
+      stage: stage
+      title: title
+    hosts:
+    - https://iam.googleapis.com
+    topics:
+    - roles
+- group: google-identity-and-access-management-iam-v1
+  url_pattern: /v1/{name}/keys
+  method: GET
+  host:
+  - https://iam.googleapis.com
+  url_keys:
+  - name
+  query_string_params:
+  - keyTypes
+  whitelist:
+  - keys
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages identity and access control for Google Cloud Platform resources,
+      including the creation of service accounts, which you can use to authenticate
+      to Google and make API calls.
+    version: v1
+    slug: google-identity-and-access-management-iam-v1-v1-name-keys
+    schemes:
+    - https
+    mapping:
+      keys: keys
+    hosts:
+    - https://iam.googleapis.com
+    topics:
+    - projects
+- group: google-identity-and-access-management-iam-v1
+  url_pattern: /v1/{name}/serviceAccounts
+  method: GET
+  host:
+  - https://iam.googleapis.com
+  url_keys:
+  - name
+  query_string_params:
+  - pageSize
+  - pageToken
+  whitelist:
+  - accounts
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages identity and access control for Google Cloud Platform resources,
+      including the creation of service accounts, which you can use to authenticate
+      to Google and make API calls.
+    version: v1
+    slug: google-identity-and-access-management-iam-v1-v1-name-serviceaccounts
+    schemes:
+    - https
+    mapping:
+      accounts: accounts
+      nextPageToken: nextPageToken
+    hosts:
+    - https://iam.googleapis.com
+    topics:
+    - projects
+- group: google-identity-and-access-management-iam-v1
+  url_pattern: /v1/{name}:signBlob
+  method: POST
+  host:
+  - https://iam.googleapis.com
+  url_keys:
+  - name
+  whitelist:
+  - keyId
+  - signature
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages identity and access control for Google Cloud Platform resources,
+      including the creation of service accounts, which you can use to authenticate
+      to Google and make API calls.
+    version: v1
+    slug: google-identity-and-access-management-iam-v1-v1-name-signblob
+    schemes:
+    - https
+    mapping:
+      keyId: keyId
+      signature: signature
+    hosts:
+    - https://iam.googleapis.com
+    topics:
+    - projects
+- group: google-identity-and-access-management-iam-v1
+  url_pattern: /v1/{name}:signJwt
+  method: POST
+  host:
+  - https://iam.googleapis.com
+  url_keys:
+  - name
+  whitelist:
+  - keyId
+  - signedJwt
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages identity and access control for Google Cloud Platform resources,
+      including the creation of service accounts, which you can use to authenticate
+      to Google and make API calls.
+    version: v1
+    slug: google-identity-and-access-management-iam-v1-v1-name-signjwt
+    schemes:
+    - https
+    mapping:
+      keyId: keyId
+      signedJwt: signedJwt
+    hosts:
+    - https://iam.googleapis.com
+    topics:
+    - projects
+- group: google-identity-and-access-management-iam-v1
+  url_pattern: /v1/{name}:undelete
+  method: POST
+  host:
+  - https://iam.googleapis.com
+  url_keys:
+  - name
+  whitelist:
+  - deleted
+  - description
+  - etag
+  - includedPermissions
+  - name
+  - stage
+  - title
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages identity and access control for Google Cloud Platform resources,
+      including the creation of service accounts, which you can use to authenticate
+      to Google and make API calls.
+    version: v1
+    slug: google-identity-and-access-management-iam-v1-v1-name-undelete
+    schemes:
+    - https
+    mapping:
+      deleted: deleted
+      description: description
+      etag: etag
+      includedPermissions: includedPermissions
+      name: name
+      stage: stage
+      title: title
+    hosts:
+    - https://iam.googleapis.com
+    topics:
+    - projects
+- group: google-identity-and-access-management-iam-v1
+  url_pattern: /v1/{parent}/roles
+  method: GET
+  host:
+  - https://iam.googleapis.com
+  url_keys:
+  - parent
+  query_string_params:
+  - pageSize
+  - pageToken
+  - showDeleted
+  - view
+  whitelist:
+  - nextPageToken
+  - roles
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages identity and access control for Google Cloud Platform resources,
+      including the creation of service accounts, which you can use to authenticate
+      to Google and make API calls.
+    version: v1
+    slug: google-identity-and-access-management-iam-v1-v1-parent-roles
+    schemes:
+    - https
+    mapping:
+      nextPageToken: nextPageToken
+      roles: roles
+    hosts:
+    - https://iam.googleapis.com
+    topics:
+    - projects
+- group: google-identity-and-access-management-iam-v1
+  url_pattern: /v1/{resource}:getIamPolicy
+  method: POST
+  host:
+  - https://iam.googleapis.com
+  url_keys:
+  - resource
+  whitelist:
+  - bindings
+  - etag
+  - version
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages identity and access control for Google Cloud Platform resources,
+      including the creation of service accounts, which you can use to authenticate
+      to Google and make API calls.
+    version: v1
+    slug: google-identity-and-access-management-iam-v1-v1-resource-getiampolicy
+    schemes:
+    - https
+    mapping:
+      bindings: bindings
+      etag: etag
+      version: version
+    hosts:
+    - https://iam.googleapis.com
+    topics:
+    - projects
+- group: google-identity-and-access-management-iam-v1
+  url_pattern: /v1/{resource}:setIamPolicy
+  method: POST
+  host:
+  - https://iam.googleapis.com
+  url_keys:
+  - resource
+  whitelist:
+  - bindings
+  - etag
+  - version
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages identity and access control for Google Cloud Platform resources,
+      including the creation of service accounts, which you can use to authenticate
+      to Google and make API calls.
+    version: v1
+    slug: google-identity-and-access-management-iam-v1-v1-resource-setiampolicy
+    schemes:
+    - https
+    mapping:
+      bindings: bindings
+      etag: etag
+      version: version
+    hosts:
+    - https://iam.googleapis.com
+    topics:
+    - projects
+- group: google-identity-and-access-management-iam-v1
+  url_pattern: /v1/{resource}:testIamPermissions
+  method: POST
+  host:
+  - https://iam.googleapis.com
+  url_keys:
+  - resource
+  whitelist:
+  - permissions
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Manages identity and access control for Google Cloud Platform resources,
+      including the creation of service accounts, which you can use to authenticate
+      to Google and make API calls.
+    version: v1
+    slug: google-identity-and-access-management-iam-v1-v1-resource-testiampermissions
+    schemes:
+    - https
+    mapping:
+      permissions: permissions
+    hosts:
+    - https://iam.googleapis.com
+    topics:
+    - projects

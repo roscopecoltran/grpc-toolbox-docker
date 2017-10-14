@@ -1,0 +1,51 @@
+{
+	"backends": [
+		{
+			"group": "sentence-separator-apis-0-0-1",
+			"url_pattern": "/api/17/sentence-separate/heuristics",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://api.apitore.com"
+			],
+			"whitelist": [
+				"endTime",
+				"log",
+				"processTime",
+				"sentences",
+				"startTime",
+				"text"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "apitore.com",
+				"description": "Simple sentence separator.\u003cBR /\u003e[Endpoint] https://api.apitore.com/api/17",
+				"version": "0.0.1",
+				"slug": "sentence-separator-apis-0-0-1-api-17-sentence-separate-heuristics",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"endTime": "endTime",
+					"log": "log",
+					"processTime": "processTime",
+					"sentences": "sentences",
+					"startTime": "startTime",
+					"text": "text"
+				},
+				"hosts": [
+					"https://api.apitore.com"
+				],
+				"topics": [
+					"text"
+				]
+			}
+		}
+	]
+}

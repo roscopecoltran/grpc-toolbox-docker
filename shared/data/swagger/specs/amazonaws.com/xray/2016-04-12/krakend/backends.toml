@@ -1,0 +1,107 @@
+[[backends]]
+  group = "aws-x-ray-2016-04-12"
+  url_pattern = "/ServiceGraph"
+  method = "POST"
+  encoding = "json"
+  host = ["http://xray.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS X-Ray provides APIs for managing debug traces and retrieving service maps and other data created by processing those traces."
+    version = "2016-04-12"
+    slug = "aws-x-ray-2016-04-12-servicegraph"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://xray.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-x-ray-2016-04-12"
+  url_pattern = "/TelemetryRecords"
+  method = "POST"
+  encoding = "json"
+  host = ["http://xray.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS X-Ray provides APIs for managing debug traces and retrieving service maps and other data created by processing those traces."
+    version = "2016-04-12"
+    slug = "aws-x-ray-2016-04-12-telemetryrecords"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://xray.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-x-ray-2016-04-12"
+  url_pattern = "/TraceGraph"
+  method = "POST"
+  encoding = "json"
+  host = ["http://xray.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS X-Ray provides APIs for managing debug traces and retrieving service maps and other data created by processing those traces."
+    version = "2016-04-12"
+    slug = "aws-x-ray-2016-04-12-tracegraph"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://xray.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-x-ray-2016-04-12"
+  url_pattern = "/TraceSegments"
+  method = "POST"
+  encoding = "json"
+  host = ["http://xray.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS X-Ray provides APIs for managing debug traces and retrieving service maps and other data created by processing those traces."
+    version = "2016-04-12"
+    slug = "aws-x-ray-2016-04-12-tracesegments"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://xray.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-x-ray-2016-04-12"
+  url_pattern = "/TraceSummaries"
+  method = "POST"
+  encoding = "json"
+  host = ["http://xray.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS X-Ray provides APIs for managing debug traces and retrieving service maps and other data created by processing those traces."
+    version = "2016-04-12"
+    slug = "aws-x-ray-2016-04-12-tracesummaries"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://xray.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-x-ray-2016-04-12"
+  url_pattern = "/Traces"
+  method = "POST"
+  encoding = "json"
+  host = ["http://xray.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "AWS X-Ray provides APIs for managing debug traces and retrieving service maps and other data created by processing those traces."
+    version = "2016-04-12"
+    slug = "aws-x-ray-2016-04-12-traces"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://xray.amazonaws.com"]
+    topics = ["cloud"]

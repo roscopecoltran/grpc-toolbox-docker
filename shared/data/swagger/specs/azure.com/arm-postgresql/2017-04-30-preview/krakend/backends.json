@@ -1,0 +1,97 @@
+{
+	"backends": [
+		{
+			"group": "postgresqlmanagementclient-2017-04-30-preview",
+			"url_pattern": "/providers/Microsoft",
+			"method": "DBFORPOSTGRESQL/OPERATIONS",
+			"encoding": "json",
+			"host": [
+				"https://management.azure.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "azure.com",
+				"description": "The Microsoft Azure management API provides create, read, update, and delete functionality for Azure PostgreSQL resources including servers, databases, firewall rules, log files and configurations.",
+				"version": "2017-04-30-preview",
+				"slug": "postgresqlmanagementclient-2017-04-30-preview-providers-microsoft",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://management.azure.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "postgresqlmanagementclient-2017-04-30-preview",
+			"url_pattern": "/subscriptions/{subscriptionId}/providers/Microsoft",
+			"method": "DBFORPOSTGRESQL/SERVERS",
+			"encoding": "json",
+			"host": [
+				"https://management.azure.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "azure.com",
+				"description": "The Microsoft Azure management API provides create, read, update, and delete functionality for Azure PostgreSQL resources including servers, databases, firewall rules, log files and configurations.",
+				"version": "2017-04-30-preview",
+				"slug": "postgresqlmanagementclient-2017-04-30-preview-subscriptions-subscriptionid-providers-microsoft",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://management.azure.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "postgresqlmanagementclient-2017-04-30-preview",
+			"url_pattern": "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft",
+			"method": "DBFORPOSTGRESQL/SERVERS",
+			"encoding": "json",
+			"host": [
+				"https://management.azure.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "azure.com",
+				"description": "The Microsoft Azure management API provides create, read, update, and delete functionality for Azure PostgreSQL resources including servers, databases, firewall rules, log files and configurations.",
+				"version": "2017-04-30-preview",
+				"slug": "postgresqlmanagementclient-2017-04-30-preview-subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://management.azure.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		}
+	]
+}

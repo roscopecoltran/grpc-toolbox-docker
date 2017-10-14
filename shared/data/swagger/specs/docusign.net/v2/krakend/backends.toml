@@ -1,0 +1,3741 @@
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/service_information"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["buildBranch", "buildBranchDeployedDateTime", "buildSHA", "buildVersion", "linkedSites", "serviceVersions"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-service-information"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      buildBranch = "buildBranch"
+      buildBranchDeployedDateTime = "buildBranchDeployedDateTime"
+      buildSHA = "buildSHA"
+      buildVersion = "buildVersion"
+      linkedSites = "linkedSites"
+      serviceVersions = "serviceVersions"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["resources"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      resources = "resources"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts"
+  method = "POST"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/provisioning"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["defaultConnectionId", "defaultPlanId", "distributorCode", "distributorPassword", "passwordRuleText", "planPromotionText", "purchaseOrderOrPromAllowed"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-provisioning"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      defaultConnectionId = "defaultConnectionId"
+      defaultPlanId = "defaultPlanId"
+      distributorCode = "distributorCode"
+      distributorPassword = "distributorPassword"
+      passwordRuleText = "passwordRuleText"
+      planPromotionText = "planPromotionText"
+      purchaseOrderOrPromAllowed = "purchaseOrderOrPromAllowed"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["accountIdGuid", "accountName", "allowTransactionRooms", "billingPeriodDaysRemaining", "billingPeriodEndDate", "billingPeriodEnvelopesAllowed", "billingPeriodEnvelopesSent", "billingPeriodStartDate", "billingProfile", "canCancelRenewal", "canUpgrade", "connectPermission", "createdDate", "currencyCode", "currentPlanId", "distributorCode", "docuSignLandingUrl", "envelopeSendingBlocked", "envelopeUnitPrice", "forgottenPasswordQuestionsCount", "isDowngrade", "paymentMethod", "planClassification", "planEndDate", "planName", "planStartDate", "seatsAllowed", "seatsInUse", "status21CFRPart11", "suspensionDate", "suspensionStatus"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      accountIdGuid = "accountIdGuid"
+      accountName = "accountName"
+      allowTransactionRooms = "allowTransactionRooms"
+      billingPeriodDaysRemaining = "billingPeriodDaysRemaining"
+      billingPeriodEndDate = "billingPeriodEndDate"
+      billingPeriodEnvelopesAllowed = "billingPeriodEnvelopesAllowed"
+      billingPeriodEnvelopesSent = "billingPeriodEnvelopesSent"
+      billingPeriodStartDate = "billingPeriodStartDate"
+      billingProfile = "billingProfile"
+      canCancelRenewal = "canCancelRenewal"
+      canUpgrade = "canUpgrade"
+      connectPermission = "connectPermission"
+      createdDate = "createdDate"
+      currencyCode = "currencyCode"
+      currentPlanId = "currentPlanId"
+      distributorCode = "distributorCode"
+      docuSignLandingUrl = "docuSignLandingUrl"
+      envelopeSendingBlocked = "envelopeSendingBlocked"
+      envelopeUnitPrice = "envelopeUnitPrice"
+      forgottenPasswordQuestionsCount = "forgottenPasswordQuestionsCount"
+      isDowngrade = "isDowngrade"
+      paymentMethod = "paymentMethod"
+      planClassification = "planClassification"
+      planEndDate = "planEndDate"
+      planName = "planName"
+      planStartDate = "planStartDate"
+      seatsAllowed = "seatsAllowed"
+      seatsInUse = "seatsInUse"
+      status21CFRPart11 = "status21CFRPart11"
+      suspensionDate = "suspensionDate"
+      suspensionStatus = "suspensionStatus"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/billing_charges"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["billingChargeItems"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-billing-charges"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      billingChargeItems = "billingChargeItems"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/billing_invoices"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["billingInvoices", "nextUri", "previousUri"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-billing-invoices"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      billingInvoices = "billingInvoices"
+      nextUri = "nextUri"
+      previousUri = "previousUri"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/billing_invoices/{invoiceId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["amount", "balance", "dueDate", "invoiceId", "invoiceItems", "invoiceNumber", "invoiceUri", "nonTaxableAmount", "pdfAvailable", "taxableAmount"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-billing-invoices-invoiceid"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      amount = "amount"
+      balance = "balance"
+      dueDate = "dueDate"
+      invoiceId = "invoiceId"
+      invoiceItems = "invoiceItems"
+      invoiceNumber = "invoiceNumber"
+      invoiceUri = "invoiceUri"
+      nonTaxableAmount = "nonTaxableAmount"
+      pdfAvailable = "pdfAvailable"
+      taxableAmount = "taxableAmount"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/billing_invoices_past_due"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["billingInvoices", "pastDueBalance", "paymentAllowed"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-billing-invoices-past-due"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      billingInvoices = "billingInvoices"
+      pastDueBalance = "pastDueBalance"
+      paymentAllowed = "paymentAllowed"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/billing_payments"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["billingPayments", "nextUri", "previousUri"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-billing-payments"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      billingPayments = "billingPayments"
+      nextUri = "nextUri"
+      previousUri = "previousUri"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/billing_payments/{paymentId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["amount", "description", "paymentDate", "paymentId", "paymentNumber"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-billing-payments-paymentid"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      amount = "amount"
+      description = "description"
+      paymentDate = "paymentDate"
+      paymentId = "paymentId"
+      paymentNumber = "paymentNumber"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/billing_plan"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["billingAddressIsCreditCardAddress", "successorPlans"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-billing-plan"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      billingAddressIsCreditCardAddress = "billingAddressIsCreditCardAddress"
+      successorPlans = "successorPlans"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/billing_plan/credit_card"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["cardNumber", "cardType", "expirationMonth", "expirationYear", "nameOnCard"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-billing-plan-credit-card"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      cardNumber = "cardNumber"
+      cardType = "cardType"
+      expirationMonth = "expirationMonth"
+      expirationYear = "expirationYear"
+      nameOnCard = "nameOnCard"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/brands"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["brands", "recipientBrandIdDefault", "senderBrandIdDefault"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-brands"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      brands = "brands"
+      recipientBrandIdDefault = "recipientBrandIdDefault"
+      senderBrandIdDefault = "senderBrandIdDefault"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/brands/{brandId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["brandCompany", "brandId", "brandName", "colors", "emailContent", "isOverridingCompanyName", "isSendingDefault", "isSigningDefault", "landingPages", "links"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-brands-brandid"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      brandCompany = "brandCompany"
+      brandId = "brandId"
+      brandName = "brandName"
+      colors = "colors"
+      emailContent = "emailContent"
+      isOverridingCompanyName = "isOverridingCompanyName"
+      isSendingDefault = "isSendingDefault"
+      isSigningDefault = "isSigningDefault"
+      landingPages = "landingPages"
+      links = "links"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/brands/{brandId}/file"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-brands-brandid-file"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/brands/{brandId}/logos/{logoType}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-brands-brandid-logos-logotype"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/brands/{brandId}/resources"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["resourcesContentTypes"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-brands-brandid-resources"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      resourcesContentTypes = "resourcesContentTypes"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/brands/{brandId}/resources/{resourceContentType}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-brands-brandid-resources-resourcecontenttype"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/bulk_envelopes"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["bulkEnvelopeStatuses", "endPosition", "nextUri", "previousUri", "resultSetSize", "startPosition", "totalSetSize"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-bulk-envelopes"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      bulkEnvelopeStatuses = "bulkEnvelopeStatuses"
+      endPosition = "endPosition"
+      nextUri = "nextUri"
+      previousUri = "previousUri"
+      resultSetSize = "resultSetSize"
+      startPosition = "startPosition"
+      totalSetSize = "totalSetSize"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/bulk_envelopes/{batchId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["batchId", "batchSize", "bulkEnvelopes", "bulkEnvelopesBatchUri", "endPosition", "failed", "nextUri", "previousUri", "queued", "resultSetSize", "sent", "startPosition", "submittedDate", "totalSetSize"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-bulk-envelopes-batchid"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      batchId = "batchId"
+      batchSize = "batchSize"
+      bulkEnvelopes = "bulkEnvelopes"
+      bulkEnvelopesBatchUri = "bulkEnvelopesBatchUri"
+      endPosition = "endPosition"
+      failed = "failed"
+      nextUri = "nextUri"
+      previousUri = "previousUri"
+      queued = "queued"
+      resultSetSize = "resultSetSize"
+      sent = "sent"
+      startPosition = "startPosition"
+      submittedDate = "submittedDate"
+      totalSetSize = "totalSetSize"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/chunked_uploads"
+  method = "POST"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-chunked-uploads"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/chunked_uploads/{chunkedUploadId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["checksum", "chunkedUploadId", "chunkedUploadParts", "chunkedUploadUri", "committed", "expirationDateTime", "maxChunkedUploadParts", "maxTotalSize", "totalSize"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-chunked-uploads-chunkeduploadid"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      checksum = "checksum"
+      chunkedUploadId = "chunkedUploadId"
+      chunkedUploadParts = "chunkedUploadParts"
+      chunkedUploadUri = "chunkedUploadUri"
+      committed = "committed"
+      expirationDateTime = "expirationDateTime"
+      maxChunkedUploadParts = "maxChunkedUploadParts"
+      maxTotalSize = "maxTotalSize"
+      totalSize = "totalSize"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/connect"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["configurations", "totalRecords"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-connect"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      configurations = "configurations"
+      totalRecords = "totalRecords"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/connect/failures"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["failures", "logs", "totalRecords"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-connect-failures"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      failures = "failures"
+      logs = "logs"
+      totalRecords = "totalRecords"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/connect/logs"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["failures", "logs", "totalRecords"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-connect-logs"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      failures = "failures"
+      logs = "logs"
+      totalRecords = "totalRecords"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/connect/logs/{logId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["accountId", "configUrl", "connectDebugLog", "connectId", "created", "email", "envelopeId", "error", "failureId", "failureUri", "lastTry", "logId", "logUri", "retryCount", "retryUri", "status", "subject", "userName"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-connect-logs-logid"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      accountId = "accountId"
+      configUrl = "configUrl"
+      connectDebugLog = "connectDebugLog"
+      connectId = "connectId"
+      created = "created"
+      email = "email"
+      envelopeId = "envelopeId"
+      error = "error"
+      failureId = "failureId"
+      failureUri = "failureUri"
+      lastTry = "lastTry"
+      logId = "logId"
+      logUri = "logUri"
+      retryCount = "retryCount"
+      retryUri = "retryUri"
+      status = "status"
+      subject = "subject"
+      userName = "userName"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/connect/{connectId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["configurations", "totalRecords"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-connect-connectid"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      configurations = "configurations"
+      totalRecords = "totalRecords"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/connect/{connectId}/users"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["allUsersSelected", "endPosition", "nextUri", "previousUri", "resultSetSize", "startPosition", "totalSetSize", "users"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-connect-connectid-users"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      allUsersSelected = "allUsersSelected"
+      endPosition = "endPosition"
+      nextUri = "nextUri"
+      previousUri = "previousUri"
+      resultSetSize = "resultSetSize"
+      startPosition = "startPosition"
+      totalSetSize = "totalSetSize"
+      users = "users"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/consumer_disclosure"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["accountEsignId", "allowCDWithdraw", "changeEmail", "changeEmailOther", "companyName", "companyPhone", "copyCostPerPage", "copyFeeCollectionMethod", "copyRequestEmail", "custom", "enableEsign", "esignAgreement", "esignText", "languageCode", "mustAgreeToEsign", "pdfId", "useBrand", "useConsumerDisclosureWithinAccount", "withdrawAddressLine1", "withdrawAddressLine2", "withdrawByEmail", "withdrawByMail", "withdrawByPhone", "withdrawCity", "withdrawConsequences", "withdrawEmail", "withdrawOther", "withdrawPhone", "withdrawPostalCode", "withdrawState"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-consumer-disclosure"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      accountEsignId = "accountEsignId"
+      allowCDWithdraw = "allowCDWithdraw"
+      changeEmail = "changeEmail"
+      changeEmailOther = "changeEmailOther"
+      companyName = "companyName"
+      companyPhone = "companyPhone"
+      copyCostPerPage = "copyCostPerPage"
+      copyFeeCollectionMethod = "copyFeeCollectionMethod"
+      copyRequestEmail = "copyRequestEmail"
+      custom = "custom"
+      enableEsign = "enableEsign"
+      esignAgreement = "esignAgreement"
+      esignText = "esignText"
+      languageCode = "languageCode"
+      mustAgreeToEsign = "mustAgreeToEsign"
+      pdfId = "pdfId"
+      useBrand = "useBrand"
+      useConsumerDisclosureWithinAccount = "useConsumerDisclosureWithinAccount"
+      withdrawAddressLine1 = "withdrawAddressLine1"
+      withdrawAddressLine2 = "withdrawAddressLine2"
+      withdrawByEmail = "withdrawByEmail"
+      withdrawByMail = "withdrawByMail"
+      withdrawByPhone = "withdrawByPhone"
+      withdrawCity = "withdrawCity"
+      withdrawConsequences = "withdrawConsequences"
+      withdrawEmail = "withdrawEmail"
+      withdrawOther = "withdrawOther"
+      withdrawPhone = "withdrawPhone"
+      withdrawPostalCode = "withdrawPostalCode"
+      withdrawState = "withdrawState"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/consumer_disclosure/{langCode}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["accountEsignId", "allowCDWithdraw", "changeEmail", "changeEmailOther", "companyName", "companyPhone", "copyCostPerPage", "copyFeeCollectionMethod", "copyRequestEmail", "custom", "enableEsign", "esignAgreement", "esignText", "languageCode", "mustAgreeToEsign", "pdfId", "useBrand", "useConsumerDisclosureWithinAccount", "withdrawAddressLine1", "withdrawAddressLine2", "withdrawByEmail", "withdrawByMail", "withdrawByPhone", "withdrawCity", "withdrawConsequences", "withdrawEmail", "withdrawOther", "withdrawPhone", "withdrawPostalCode", "withdrawState"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-consumer-disclosure-langcode"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      accountEsignId = "accountEsignId"
+      allowCDWithdraw = "allowCDWithdraw"
+      changeEmail = "changeEmail"
+      changeEmailOther = "changeEmailOther"
+      companyName = "companyName"
+      companyPhone = "companyPhone"
+      copyCostPerPage = "copyCostPerPage"
+      copyFeeCollectionMethod = "copyFeeCollectionMethod"
+      copyRequestEmail = "copyRequestEmail"
+      custom = "custom"
+      enableEsign = "enableEsign"
+      esignAgreement = "esignAgreement"
+      esignText = "esignText"
+      languageCode = "languageCode"
+      mustAgreeToEsign = "mustAgreeToEsign"
+      pdfId = "pdfId"
+      useBrand = "useBrand"
+      useConsumerDisclosureWithinAccount = "useConsumerDisclosureWithinAccount"
+      withdrawAddressLine1 = "withdrawAddressLine1"
+      withdrawAddressLine2 = "withdrawAddressLine2"
+      withdrawByEmail = "withdrawByEmail"
+      withdrawByMail = "withdrawByMail"
+      withdrawByPhone = "withdrawByPhone"
+      withdrawCity = "withdrawCity"
+      withdrawConsequences = "withdrawConsequences"
+      withdrawEmail = "withdrawEmail"
+      withdrawOther = "withdrawOther"
+      withdrawPhone = "withdrawPhone"
+      withdrawPostalCode = "withdrawPostalCode"
+      withdrawState = "withdrawState"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/contacts"
+  method = "POST"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-contacts"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/contacts/{contactId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["contacts", "endPosition", "nextUri", "previousUri", "resultSetSize", "startPosition", "totalSetSize"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-contacts-contactid"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      contacts = "contacts"
+      endPosition = "endPosition"
+      nextUri = "nextUri"
+      previousUri = "previousUri"
+      resultSetSize = "resultSetSize"
+      startPosition = "startPosition"
+      totalSetSize = "totalSetSize"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/custom_fields"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["listCustomFields", "textCustomFields"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-custom-fields"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      listCustomFields = "listCustomFields"
+      textCustomFields = "textCustomFields"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/eMortgage/transactions"
+  method = "POST"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-emortgage-transactions"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["endPosition", "envelopeTransactionStatuses", "envelopes", "nextUri", "previousUri", "resultSetSize", "startPosition", "totalSetSize"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      endPosition = "endPosition"
+      envelopeTransactionStatuses = "envelopeTransactionStatuses"
+      envelopes = "envelopes"
+      nextUri = "nextUri"
+      previousUri = "previousUri"
+      resultSetSize = "resultSetSize"
+      startPosition = "startPosition"
+      totalSetSize = "totalSetSize"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["allowMarkup", "allowReassign", "asynchronous", "attachmentsUri", "authoritativeCopy", "autoNavigation", "brandId", "brandLock", "certificateUri", "completedDateTime", "createdDateTime", "customFieldsUri", "declinedDateTime", "deletedDateTime", "deliveredDateTime", "documentsCombinedUri", "documentsUri", "emailBlurb", "emailSubject", "enableWetSign", "enforceSignerVisibility", "envelopeId", "envelopeIdStamping", "envelopeUri", "initialSentDateTime", "is21CFRPart11", "isSignatureProviderEnvelope", "lastModifiedDateTime", "messageLock", "notificationUri", "purgeState", "recipientsLock", "recipientsUri", "sentDateTime", "signingLocation", "status", "statusChangedDateTime", "templatesUri", "transactionId", "useDisclosure", "voidedDateTime", "voidedReason"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      allowMarkup = "allowMarkup"
+      allowReassign = "allowReassign"
+      asynchronous = "asynchronous"
+      attachmentsUri = "attachmentsUri"
+      authoritativeCopy = "authoritativeCopy"
+      autoNavigation = "autoNavigation"
+      brandId = "brandId"
+      brandLock = "brandLock"
+      certificateUri = "certificateUri"
+      completedDateTime = "completedDateTime"
+      createdDateTime = "createdDateTime"
+      customFieldsUri = "customFieldsUri"
+      declinedDateTime = "declinedDateTime"
+      deletedDateTime = "deletedDateTime"
+      deliveredDateTime = "deliveredDateTime"
+      documentsCombinedUri = "documentsCombinedUri"
+      documentsUri = "documentsUri"
+      emailBlurb = "emailBlurb"
+      emailSubject = "emailSubject"
+      enableWetSign = "enableWetSign"
+      enforceSignerVisibility = "enforceSignerVisibility"
+      envelopeId = "envelopeId"
+      envelopeIdStamping = "envelopeIdStamping"
+      envelopeUri = "envelopeUri"
+      initialSentDateTime = "initialSentDateTime"
+      is21CFRPart11 = "is21CFRPart11"
+      isSignatureProviderEnvelope = "isSignatureProviderEnvelope"
+      lastModifiedDateTime = "lastModifiedDateTime"
+      messageLock = "messageLock"
+      notificationUri = "notificationUri"
+      purgeState = "purgeState"
+      recipientsLock = "recipientsLock"
+      recipientsUri = "recipientsUri"
+      sentDateTime = "sentDateTime"
+      signingLocation = "signingLocation"
+      status = "status"
+      statusChangedDateTime = "statusChangedDateTime"
+      templatesUri = "templatesUri"
+      transactionId = "transactionId"
+      useDisclosure = "useDisclosure"
+      voidedDateTime = "voidedDateTime"
+      voidedReason = "voidedReason"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}/attachments"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["attachments"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid-attachments"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      attachments = "attachments"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}/attachments/{attachmentId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid-attachments-attachmentid"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}/audit_events"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["auditEvents"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid-audit-events"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      auditEvents = "auditEvents"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}/custom_fields"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["listCustomFields", "textCustomFields"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid-custom-fields"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      listCustomFields = "listCustomFields"
+      textCustomFields = "textCustomFields"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}/documents"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["envelopeDocuments", "envelopeId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid-documents"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      envelopeDocuments = "envelopeDocuments"
+      envelopeId = "envelopeId"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}/documents/{documentId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid-documents-documentid"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}/documents/{documentId}/fields"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["documentFields"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid-documents-documentid-fields"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      documentFields = "documentFields"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}/documents/{documentId}/pages"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["endPosition", "nextUri", "pages", "previousUri", "resultSetSize", "startPosition", "totalSetSize"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid-documents-documentid-pages"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      endPosition = "endPosition"
+      nextUri = "nextUri"
+      pages = "pages"
+      previousUri = "previousUri"
+      resultSetSize = "resultSetSize"
+      startPosition = "startPosition"
+      totalSetSize = "totalSetSize"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}/documents/{documentId}/pages/{pageNumber}/page_image"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid-documents-documentid-pages-pagenumber-page-image"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}/documents/{documentId}/pages/{pageNumber}/tabs"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["approveTabs", "checkboxTabs", "companyTabs", "dateSignedTabs", "dateTabs", "declineTabs", "emailAddressTabs", "emailTabs", "envelopeIdTabs", "firstNameTabs", "formulaTabs", "fullNameTabs", "initialHereTabs", "lastNameTabs", "listTabs", "noteTabs", "numberTabs", "radioGroupTabs", "signHereTabs", "signerAttachmentTabs", "ssnTabs", "textTabs", "titleTabs", "viewTabs", "zipTabs"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid-documents-documentid-pages-pagenumber-tabs"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      approveTabs = "approveTabs"
+      checkboxTabs = "checkboxTabs"
+      companyTabs = "companyTabs"
+      dateSignedTabs = "dateSignedTabs"
+      dateTabs = "dateTabs"
+      declineTabs = "declineTabs"
+      emailAddressTabs = "emailAddressTabs"
+      emailTabs = "emailTabs"
+      envelopeIdTabs = "envelopeIdTabs"
+      firstNameTabs = "firstNameTabs"
+      formulaTabs = "formulaTabs"
+      fullNameTabs = "fullNameTabs"
+      initialHereTabs = "initialHereTabs"
+      lastNameTabs = "lastNameTabs"
+      listTabs = "listTabs"
+      noteTabs = "noteTabs"
+      numberTabs = "numberTabs"
+      radioGroupTabs = "radioGroupTabs"
+      signHereTabs = "signHereTabs"
+      signerAttachmentTabs = "signerAttachmentTabs"
+      ssnTabs = "ssnTabs"
+      textTabs = "textTabs"
+      titleTabs = "titleTabs"
+      viewTabs = "viewTabs"
+      zipTabs = "zipTabs"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}/documents/{documentId}/tabs"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["approveTabs", "checkboxTabs", "companyTabs", "dateSignedTabs", "dateTabs", "declineTabs", "emailAddressTabs", "emailTabs", "envelopeIdTabs", "firstNameTabs", "formulaTabs", "fullNameTabs", "initialHereTabs", "lastNameTabs", "listTabs", "noteTabs", "numberTabs", "radioGroupTabs", "signHereTabs", "signerAttachmentTabs", "ssnTabs", "textTabs", "titleTabs", "viewTabs", "zipTabs"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid-documents-documentid-tabs"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      approveTabs = "approveTabs"
+      checkboxTabs = "checkboxTabs"
+      companyTabs = "companyTabs"
+      dateSignedTabs = "dateSignedTabs"
+      dateTabs = "dateTabs"
+      declineTabs = "declineTabs"
+      emailAddressTabs = "emailAddressTabs"
+      emailTabs = "emailTabs"
+      envelopeIdTabs = "envelopeIdTabs"
+      firstNameTabs = "firstNameTabs"
+      formulaTabs = "formulaTabs"
+      fullNameTabs = "fullNameTabs"
+      initialHereTabs = "initialHereTabs"
+      lastNameTabs = "lastNameTabs"
+      listTabs = "listTabs"
+      noteTabs = "noteTabs"
+      numberTabs = "numberTabs"
+      radioGroupTabs = "radioGroupTabs"
+      signHereTabs = "signHereTabs"
+      signerAttachmentTabs = "signerAttachmentTabs"
+      ssnTabs = "ssnTabs"
+      textTabs = "textTabs"
+      titleTabs = "titleTabs"
+      viewTabs = "viewTabs"
+      zipTabs = "zipTabs"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}/documents/{documentId}/templates"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["templates"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid-documents-documentid-templates"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      templates = "templates"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}/email_settings"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["bccEmailAddresses", "replyEmailAddressOverride", "replyEmailNameOverride"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid-email-settings"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      bccEmailAddresses = "bccEmailAddresses"
+      replyEmailAddressOverride = "replyEmailAddressOverride"
+      replyEmailNameOverride = "replyEmailNameOverride"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}/form_data"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["emailSubject", "envelopeId", "formData", "recipientFormData", "sentDateTime", "status"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid-form-data"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      emailSubject = "emailSubject"
+      envelopeId = "envelopeId"
+      formData = "formData"
+      recipientFormData = "recipientFormData"
+      sentDateTime = "sentDateTime"
+      status = "status"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}/lock"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["lockDurationInSeconds", "lockToken", "lockType", "lockedByApp", "lockedUntilDateTime", "useScratchPad"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid-lock"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      lockDurationInSeconds = "lockDurationInSeconds"
+      lockToken = "lockToken"
+      lockType = "lockType"
+      lockedByApp = "lockedByApp"
+      lockedUntilDateTime = "lockedUntilDateTime"
+      useScratchPad = "useScratchPad"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}/notification"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["useAccountDefaults"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid-notification"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      useAccountDefaults = "useAccountDefaults"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}/recipients"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["agents", "carbonCopies", "certifiedDeliveries", "currentRoutingOrder", "editors", "inPersonSigners", "intermediaries", "recipientCount", "signers"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid-recipients"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      agents = "agents"
+      carbonCopies = "carbonCopies"
+      certifiedDeliveries = "certifiedDeliveries"
+      currentRoutingOrder = "currentRoutingOrder"
+      editors = "editors"
+      inPersonSigners = "inPersonSigners"
+      intermediaries = "intermediaries"
+      recipientCount = "recipientCount"
+      signers = "signers"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}/recipients/{recipientId}/bulk_recipients"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["bulkRecipients", "endPosition", "nextUri", "previousUri", "resultSetSize", "startPosition", "totalSetSize"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid-recipients-recipientid-bulk-recipients"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      bulkRecipients = "bulkRecipients"
+      endPosition = "endPosition"
+      nextUri = "nextUri"
+      previousUri = "previousUri"
+      resultSetSize = "resultSetSize"
+      startPosition = "startPosition"
+      totalSetSize = "totalSetSize"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}/recipients/{recipientId}/consumer_disclosure"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["accountEsignId", "allowCDWithdraw", "changeEmail", "changeEmailOther", "companyName", "companyPhone", "copyCostPerPage", "copyFeeCollectionMethod", "copyRequestEmail", "custom", "enableEsign", "esignAgreement", "esignText", "languageCode", "mustAgreeToEsign", "pdfId", "useBrand", "useConsumerDisclosureWithinAccount", "withdrawAddressLine1", "withdrawAddressLine2", "withdrawByEmail", "withdrawByMail", "withdrawByPhone", "withdrawCity", "withdrawConsequences", "withdrawEmail", "withdrawOther", "withdrawPhone", "withdrawPostalCode", "withdrawState"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid-recipients-recipientid-consumer-disclosure"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      accountEsignId = "accountEsignId"
+      allowCDWithdraw = "allowCDWithdraw"
+      changeEmail = "changeEmail"
+      changeEmailOther = "changeEmailOther"
+      companyName = "companyName"
+      companyPhone = "companyPhone"
+      copyCostPerPage = "copyCostPerPage"
+      copyFeeCollectionMethod = "copyFeeCollectionMethod"
+      copyRequestEmail = "copyRequestEmail"
+      custom = "custom"
+      enableEsign = "enableEsign"
+      esignAgreement = "esignAgreement"
+      esignText = "esignText"
+      languageCode = "languageCode"
+      mustAgreeToEsign = "mustAgreeToEsign"
+      pdfId = "pdfId"
+      useBrand = "useBrand"
+      useConsumerDisclosureWithinAccount = "useConsumerDisclosureWithinAccount"
+      withdrawAddressLine1 = "withdrawAddressLine1"
+      withdrawAddressLine2 = "withdrawAddressLine2"
+      withdrawByEmail = "withdrawByEmail"
+      withdrawByMail = "withdrawByMail"
+      withdrawByPhone = "withdrawByPhone"
+      withdrawCity = "withdrawCity"
+      withdrawConsequences = "withdrawConsequences"
+      withdrawEmail = "withdrawEmail"
+      withdrawOther = "withdrawOther"
+      withdrawPhone = "withdrawPhone"
+      withdrawPostalCode = "withdrawPostalCode"
+      withdrawState = "withdrawState"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}/recipients/{recipientId}/consumer_disclosure/{langCode}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["accountEsignId", "allowCDWithdraw", "changeEmail", "changeEmailOther", "companyName", "companyPhone", "copyCostPerPage", "copyFeeCollectionMethod", "copyRequestEmail", "custom", "enableEsign", "esignAgreement", "esignText", "languageCode", "mustAgreeToEsign", "pdfId", "useBrand", "useConsumerDisclosureWithinAccount", "withdrawAddressLine1", "withdrawAddressLine2", "withdrawByEmail", "withdrawByMail", "withdrawByPhone", "withdrawCity", "withdrawConsequences", "withdrawEmail", "withdrawOther", "withdrawPhone", "withdrawPostalCode", "withdrawState"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid-recipients-recipientid-consumer-disclosure-langcode"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      accountEsignId = "accountEsignId"
+      allowCDWithdraw = "allowCDWithdraw"
+      changeEmail = "changeEmail"
+      changeEmailOther = "changeEmailOther"
+      companyName = "companyName"
+      companyPhone = "companyPhone"
+      copyCostPerPage = "copyCostPerPage"
+      copyFeeCollectionMethod = "copyFeeCollectionMethod"
+      copyRequestEmail = "copyRequestEmail"
+      custom = "custom"
+      enableEsign = "enableEsign"
+      esignAgreement = "esignAgreement"
+      esignText = "esignText"
+      languageCode = "languageCode"
+      mustAgreeToEsign = "mustAgreeToEsign"
+      pdfId = "pdfId"
+      useBrand = "useBrand"
+      useConsumerDisclosureWithinAccount = "useConsumerDisclosureWithinAccount"
+      withdrawAddressLine1 = "withdrawAddressLine1"
+      withdrawAddressLine2 = "withdrawAddressLine2"
+      withdrawByEmail = "withdrawByEmail"
+      withdrawByMail = "withdrawByMail"
+      withdrawByPhone = "withdrawByPhone"
+      withdrawCity = "withdrawCity"
+      withdrawConsequences = "withdrawConsequences"
+      withdrawEmail = "withdrawEmail"
+      withdrawOther = "withdrawOther"
+      withdrawPhone = "withdrawPhone"
+      withdrawPostalCode = "withdrawPostalCode"
+      withdrawState = "withdrawState"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}/recipients/{recipientId}/document_visibility"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["documentVisibility"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid-recipients-recipientid-document-visibility"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      documentVisibility = "documentVisibility"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}/recipients/{recipientId}/initials_image"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid-recipients-recipientid-initials-image"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}/recipients/{recipientId}/signature"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["adoptedDateTime", "createdDateTime", "externalID", "imageType", "initials150ImageId", "initialsImageUri", "isDefault", "phoneticName", "signature150ImageId", "signatureFont", "signatureId", "signatureImageUri", "signatureInitials", "signatureName", "signatureType", "stampFormat", "stampImageUri", "stampSizeMM", "stampType"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid-recipients-recipientid-signature"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      adoptedDateTime = "adoptedDateTime"
+      createdDateTime = "createdDateTime"
+      externalID = "externalID"
+      imageType = "imageType"
+      initials150ImageId = "initials150ImageId"
+      initialsImageUri = "initialsImageUri"
+      isDefault = "isDefault"
+      phoneticName = "phoneticName"
+      signature150ImageId = "signature150ImageId"
+      signatureFont = "signatureFont"
+      signatureId = "signatureId"
+      signatureImageUri = "signatureImageUri"
+      signatureInitials = "signatureInitials"
+      signatureName = "signatureName"
+      signatureType = "signatureType"
+      stampFormat = "stampFormat"
+      stampImageUri = "stampImageUri"
+      stampSizeMM = "stampSizeMM"
+      stampType = "stampType"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}/recipients/{recipientId}/signature_image"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid-recipients-recipientid-signature-image"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}/recipients/{recipientId}/tabs"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["approveTabs", "checkboxTabs", "companyTabs", "dateSignedTabs", "dateTabs", "declineTabs", "emailAddressTabs", "emailTabs", "envelopeIdTabs", "firstNameTabs", "formulaTabs", "fullNameTabs", "initialHereTabs", "lastNameTabs", "listTabs", "noteTabs", "numberTabs", "radioGroupTabs", "signHereTabs", "signerAttachmentTabs", "ssnTabs", "textTabs", "titleTabs", "viewTabs", "zipTabs"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid-recipients-recipientid-tabs"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      approveTabs = "approveTabs"
+      checkboxTabs = "checkboxTabs"
+      companyTabs = "companyTabs"
+      dateSignedTabs = "dateSignedTabs"
+      dateTabs = "dateTabs"
+      declineTabs = "declineTabs"
+      emailAddressTabs = "emailAddressTabs"
+      emailTabs = "emailTabs"
+      envelopeIdTabs = "envelopeIdTabs"
+      firstNameTabs = "firstNameTabs"
+      formulaTabs = "formulaTabs"
+      fullNameTabs = "fullNameTabs"
+      initialHereTabs = "initialHereTabs"
+      lastNameTabs = "lastNameTabs"
+      listTabs = "listTabs"
+      noteTabs = "noteTabs"
+      numberTabs = "numberTabs"
+      radioGroupTabs = "radioGroupTabs"
+      signHereTabs = "signHereTabs"
+      signerAttachmentTabs = "signerAttachmentTabs"
+      ssnTabs = "ssnTabs"
+      textTabs = "textTabs"
+      titleTabs = "titleTabs"
+      viewTabs = "viewTabs"
+      zipTabs = "zipTabs"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}/templates"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["templates"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid-templates"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      templates = "templates"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}/views/correct"
+  method = "POST"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid-views-correct"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}/views/edit"
+  method = "POST"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid-views-edit"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}/views/recipient"
+  method = "POST"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid-views-recipient"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/envelopes/{envelopeId}/views/sender"
+  method = "POST"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-envelopes-envelopeid-views-sender"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/folders"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["folders"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-folders"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      folders = "folders"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/folders/{folderId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["endPosition", "folderItems", "nextUri", "previousUri", "resultSetSize", "startPosition", "totalSetSize"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-folders-folderid"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      endPosition = "endPosition"
+      folderItems = "folderItems"
+      nextUri = "nextUri"
+      previousUri = "previousUri"
+      resultSetSize = "resultSetSize"
+      startPosition = "startPosition"
+      totalSetSize = "totalSetSize"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/groups"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["endPosition", "groups", "nextUri", "previousUri", "resultSetSize", "startPosition", "totalSetSize"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-groups"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      endPosition = "endPosition"
+      groups = "groups"
+      nextUri = "nextUri"
+      previousUri = "previousUri"
+      resultSetSize = "resultSetSize"
+      startPosition = "startPosition"
+      totalSetSize = "totalSetSize"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/groups/{groupId}/brands"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["brands", "recipientBrandIdDefault", "senderBrandIdDefault"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-groups-groupid-brands"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      brands = "brands"
+      recipientBrandIdDefault = "recipientBrandIdDefault"
+      senderBrandIdDefault = "senderBrandIdDefault"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/groups/{groupId}/users"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["endPosition", "nextUri", "previousUri", "resultSetSize", "startPosition", "totalSetSize", "users"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-groups-groupid-users"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      endPosition = "endPosition"
+      nextUri = "nextUri"
+      previousUri = "previousUri"
+      resultSetSize = "resultSetSize"
+      startPosition = "startPosition"
+      totalSetSize = "totalSetSize"
+      users = "users"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/payment_gateway_accounts"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["paymentGatewayAccounts"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-payment-gateway-accounts"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      paymentGatewayAccounts = "paymentGatewayAccounts"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/permission_profiles"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["permissionProfiles"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-permission-profiles"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      permissionProfiles = "permissionProfiles"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/permission_profiles/{permissionProfileId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["modifiedByUsername", "modifiedDateTime", "permissionProfileId", "permissionProfileName", "userCount", "users"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-permission-profiles-permissionprofileid"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      modifiedByUsername = "modifiedByUsername"
+      modifiedDateTime = "modifiedDateTime"
+      permissionProfileId = "permissionProfileId"
+      permissionProfileName = "permissionProfileName"
+      userCount = "userCount"
+      users = "users"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/powerforms"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["endPosition", "nextUri", "powerForms", "previousUri", "resultSetSize", "startPosition", "totalSetSize"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-powerforms"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      endPosition = "endPosition"
+      nextUri = "nextUri"
+      powerForms = "powerForms"
+      previousUri = "previousUri"
+      resultSetSize = "resultSetSize"
+      startPosition = "startPosition"
+      totalSetSize = "totalSetSize"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/powerforms/senders"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["endPosition", "nextUri", "powerFormSenders", "previousUri", "resultSetSize", "startPosition", "totalSetSize"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-powerforms-senders"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      endPosition = "endPosition"
+      nextUri = "nextUri"
+      powerFormSenders = "powerFormSenders"
+      previousUri = "previousUri"
+      resultSetSize = "resultSetSize"
+      startPosition = "startPosition"
+      totalSetSize = "totalSetSize"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/powerforms/{powerFormId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["createdDateTime", "emailBody", "emailSubject", "envelopes", "instructions", "isActive", "lastUsed", "limitUseInterval", "limitUseIntervalEnabled", "limitUseIntervalUnits", "maxUseEnabled", "name", "powerFormId", "powerFormUrl", "recipients", "senderName", "senderUserId", "signingMode", "templateId", "templateName", "timesUsed", "uri", "usesRemaining"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-powerforms-powerformid"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      createdDateTime = "createdDateTime"
+      emailBody = "emailBody"
+      emailSubject = "emailSubject"
+      envelopes = "envelopes"
+      instructions = "instructions"
+      isActive = "isActive"
+      lastUsed = "lastUsed"
+      limitUseInterval = "limitUseInterval"
+      limitUseIntervalEnabled = "limitUseIntervalEnabled"
+      limitUseIntervalUnits = "limitUseIntervalUnits"
+      maxUseEnabled = "maxUseEnabled"
+      name = "name"
+      powerFormId = "powerFormId"
+      powerFormUrl = "powerFormUrl"
+      recipients = "recipients"
+      senderName = "senderName"
+      senderUserId = "senderUserId"
+      signingMode = "signingMode"
+      templateId = "templateId"
+      templateName = "templateName"
+      timesUsed = "timesUsed"
+      uri = "uri"
+      usesRemaining = "usesRemaining"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/powerforms/{powerFormId}/form_data"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["envelopes"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-powerforms-powerformid-form-data"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      envelopes = "envelopes"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/recipient_names"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["multipleUsers", "recipientNames", "reservedRecipientEmail"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-recipient-names"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      multipleUsers = "multipleUsers"
+      recipientNames = "recipientNames"
+      reservedRecipientEmail = "reservedRecipientEmail"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/search_folders/{searchFolderId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["endPosition", "folderItems", "nextUri", "previousUri", "resultSetSize", "startPosition", "totalRows"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-search-folders-searchfolderid"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      endPosition = "endPosition"
+      folderItems = "folderItems"
+      nextUri = "nextUri"
+      previousUri = "previousUri"
+      resultSetSize = "resultSetSize"
+      startPosition = "startPosition"
+      totalRows = "totalRows"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/settings"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["accountSettings"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-settings"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      accountSettings = "accountSettings"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/settings/enote_configuration"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["connectConfigured", "eNoteConfigured", "organization", "password", "userName"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-settings-enote-configuration"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      connectConfigured = "connectConfigured"
+      eNoteConfigured = "eNoteConfigured"
+      organization = "organization"
+      password = "password"
+      userName = "userName"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/settings/password_rules"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["expirePassword", "expirePasswordDays", "lockoutDurationMinutes", "lockoutDurationType", "minimumPasswordAgeDays", "minimumPasswordLength", "passwordIncludeDigit", "passwordIncludeDigitOrSpecialCharacter", "passwordIncludeLowerCase", "passwordIncludeSpecialCharacter", "passwordIncludeUpperCase", "passwordStrengthType", "questionsRequired"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-settings-password-rules"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      expirePassword = "expirePassword"
+      expirePasswordDays = "expirePasswordDays"
+      lockoutDurationMinutes = "lockoutDurationMinutes"
+      lockoutDurationType = "lockoutDurationType"
+      minimumPasswordAgeDays = "minimumPasswordAgeDays"
+      minimumPasswordLength = "minimumPasswordLength"
+      passwordIncludeDigit = "passwordIncludeDigit"
+      passwordIncludeDigitOrSpecialCharacter = "passwordIncludeDigitOrSpecialCharacter"
+      passwordIncludeLowerCase = "passwordIncludeLowerCase"
+      passwordIncludeSpecialCharacter = "passwordIncludeSpecialCharacter"
+      passwordIncludeUpperCase = "passwordIncludeUpperCase"
+      passwordStrengthType = "passwordStrengthType"
+      questionsRequired = "questionsRequired"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/settings/tabs"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["allowTabOrder", "approveDeclineTabsEnabled", "calculatedFieldsEnabled", "checkboxTabsEnabled", "dataFieldRegexEnabled", "dataFieldSizeEnabled", "firstLastEmailTabsEnabled", "listTabsEnabled", "noteTabsEnabled", "radioTabsEnabled", "savingCustomTabsEnabled", "senderToChangeTabAssignmentsEnabled", "sharedCustomTabsEnabled", "tabDataLabelEnabled", "tabLocationEnabled", "tabLockingEnabled", "tabScaleEnabled", "tabTextFormattingEnabled", "textTabsEnabled"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-settings-tabs"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      allowTabOrder = "allowTabOrder"
+      approveDeclineTabsEnabled = "approveDeclineTabsEnabled"
+      calculatedFieldsEnabled = "calculatedFieldsEnabled"
+      checkboxTabsEnabled = "checkboxTabsEnabled"
+      dataFieldRegexEnabled = "dataFieldRegexEnabled"
+      dataFieldSizeEnabled = "dataFieldSizeEnabled"
+      firstLastEmailTabsEnabled = "firstLastEmailTabsEnabled"
+      listTabsEnabled = "listTabsEnabled"
+      noteTabsEnabled = "noteTabsEnabled"
+      radioTabsEnabled = "radioTabsEnabled"
+      savingCustomTabsEnabled = "savingCustomTabsEnabled"
+      senderToChangeTabAssignmentsEnabled = "senderToChangeTabAssignmentsEnabled"
+      sharedCustomTabsEnabled = "sharedCustomTabsEnabled"
+      tabDataLabelEnabled = "tabDataLabelEnabled"
+      tabLocationEnabled = "tabLocationEnabled"
+      tabLockingEnabled = "tabLockingEnabled"
+      tabScaleEnabled = "tabScaleEnabled"
+      tabTextFormattingEnabled = "tabTextFormattingEnabled"
+      textTabsEnabled = "textTabsEnabled"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/shared_access"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["accountId", "endPosition", "nextUri", "previousUri", "resultSetSize", "sharedAccess", "startPosition", "totalSetSize"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-shared-access"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      accountId = "accountId"
+      endPosition = "endPosition"
+      nextUri = "nextUri"
+      previousUri = "previousUri"
+      resultSetSize = "resultSetSize"
+      sharedAccess = "sharedAccess"
+      startPosition = "startPosition"
+      totalSetSize = "totalSetSize"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/signatureProviders"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["signatureProviders"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-signatureproviders"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      signatureProviders = "signatureProviders"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/signing_groups"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["groups"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-signing-groups"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      groups = "groups"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/signing_groups/{signingGroupId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["created", "createdBy", "groupEmail", "groupName", "groupType", "modified", "modifiedBy", "signingGroupId", "users"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-signing-groups-signinggroupid"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      created = "created"
+      createdBy = "createdBy"
+      groupEmail = "groupEmail"
+      groupName = "groupName"
+      groupType = "groupType"
+      modified = "modified"
+      modifiedBy = "modifiedBy"
+      signingGroupId = "signingGroupId"
+      users = "users"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/signing_groups/{signingGroupId}/users"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["users"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-signing-groups-signinggroupid-users"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      users = "users"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/supported_languages"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["languages"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-supported-languages"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      languages = "languages"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/tab_definitions"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["tabs"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-tab-definitions"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      tabs = "tabs"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/tab_definitions/{customTabId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["anchor", "anchorCaseSensitive", "anchorHorizontalAlignment", "anchorIgnoreIfNotPresent", "anchorMatchWholeWord", "anchorUnits", "anchorXOffset", "anchorYOffset", "bold", "concealValueOnDocument", "createdByDisplayName", "createdByUserId", "customTabId", "disableAutoSize", "editable", "font", "fontColor", "fontSize", "height", "includedInEmail", "initialValue", "italic", "items", "lastModified", "lastModifiedByDisplayName", "lastModifiedByUserId", "locked", "maximumLength", "name", "required", "scaleValue", "shared", "stampType", "tabLabel", "underline", "validationMessage", "validationPattern", "width"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-tab-definitions-customtabid"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      anchor = "anchor"
+      anchorCaseSensitive = "anchorCaseSensitive"
+      anchorHorizontalAlignment = "anchorHorizontalAlignment"
+      anchorIgnoreIfNotPresent = "anchorIgnoreIfNotPresent"
+      anchorMatchWholeWord = "anchorMatchWholeWord"
+      anchorUnits = "anchorUnits"
+      anchorXOffset = "anchorXOffset"
+      anchorYOffset = "anchorYOffset"
+      bold = "bold"
+      concealValueOnDocument = "concealValueOnDocument"
+      createdByDisplayName = "createdByDisplayName"
+      createdByUserId = "createdByUserId"
+      customTabId = "customTabId"
+      disableAutoSize = "disableAutoSize"
+      editable = "editable"
+      font = "font"
+      fontColor = "fontColor"
+      fontSize = "fontSize"
+      height = "height"
+      includedInEmail = "includedInEmail"
+      initialValue = "initialValue"
+      italic = "italic"
+      items = "items"
+      lastModified = "lastModified"
+      lastModifiedByDisplayName = "lastModifiedByDisplayName"
+      lastModifiedByUserId = "lastModifiedByUserId"
+      locked = "locked"
+      maximumLength = "maximumLength"
+      name = "name"
+      required = "required"
+      scaleValue = "scaleValue"
+      shared = "shared"
+      stampType = "stampType"
+      tabLabel = "tabLabel"
+      underline = "underline"
+      validationMessage = "validationMessage"
+      validationPattern = "validationPattern"
+      width = "width"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/templates"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["endPosition", "envelopeTemplates", "folders", "nextUri", "previousUri", "resultSetSize", "startPosition", "totalSetSize"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-templates"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      endPosition = "endPosition"
+      envelopeTemplates = "envelopeTemplates"
+      folders = "folders"
+      nextUri = "nextUri"
+      previousUri = "previousUri"
+      resultSetSize = "resultSetSize"
+      startPosition = "startPosition"
+      totalSetSize = "totalSetSize"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/templates/{templateId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["allowMarkup", "allowReassign", "asynchronous", "attachmentsUri", "authoritativeCopy", "autoNavigation", "brandId", "brandLock", "certificateUri", "completedDateTime", "createdDateTime", "customFieldsUri", "declinedDateTime", "deletedDateTime", "deliveredDateTime", "documents", "documentsCombinedUri", "documentsUri", "emailBlurb", "emailSubject", "enableWetSign", "enforceSignerVisibility", "envelopeId", "envelopeIdStamping", "envelopeUri", "initialSentDateTime", "is21CFRPart11", "isSignatureProviderEnvelope", "lastModifiedDateTime", "messageLock", "notificationUri", "purgeState", "recipientsLock", "recipientsUri", "sentDateTime", "signingLocation", "status", "statusChangedDateTime", "templatesUri", "transactionId", "useDisclosure", "voidedDateTime", "voidedReason"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-templates-templateid"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      allowMarkup = "allowMarkup"
+      allowReassign = "allowReassign"
+      asynchronous = "asynchronous"
+      attachmentsUri = "attachmentsUri"
+      authoritativeCopy = "authoritativeCopy"
+      autoNavigation = "autoNavigation"
+      brandId = "brandId"
+      brandLock = "brandLock"
+      certificateUri = "certificateUri"
+      completedDateTime = "completedDateTime"
+      createdDateTime = "createdDateTime"
+      customFieldsUri = "customFieldsUri"
+      declinedDateTime = "declinedDateTime"
+      deletedDateTime = "deletedDateTime"
+      deliveredDateTime = "deliveredDateTime"
+      documents = "documents"
+      documentsCombinedUri = "documentsCombinedUri"
+      documentsUri = "documentsUri"
+      emailBlurb = "emailBlurb"
+      emailSubject = "emailSubject"
+      enableWetSign = "enableWetSign"
+      enforceSignerVisibility = "enforceSignerVisibility"
+      envelopeId = "envelopeId"
+      envelopeIdStamping = "envelopeIdStamping"
+      envelopeUri = "envelopeUri"
+      initialSentDateTime = "initialSentDateTime"
+      is21CFRPart11 = "is21CFRPart11"
+      isSignatureProviderEnvelope = "isSignatureProviderEnvelope"
+      lastModifiedDateTime = "lastModifiedDateTime"
+      messageLock = "messageLock"
+      notificationUri = "notificationUri"
+      purgeState = "purgeState"
+      recipientsLock = "recipientsLock"
+      recipientsUri = "recipientsUri"
+      sentDateTime = "sentDateTime"
+      signingLocation = "signingLocation"
+      status = "status"
+      statusChangedDateTime = "statusChangedDateTime"
+      templatesUri = "templatesUri"
+      transactionId = "transactionId"
+      useDisclosure = "useDisclosure"
+      voidedDateTime = "voidedDateTime"
+      voidedReason = "voidedReason"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/templates/{templateId}/custom_fields"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["listCustomFields", "textCustomFields"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-templates-templateid-custom-fields"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      listCustomFields = "listCustomFields"
+      textCustomFields = "textCustomFields"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/templates/{templateId}/documents"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["templateDocuments", "templateId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-templates-templateid-documents"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      templateDocuments = "templateDocuments"
+      templateId = "templateId"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/templates/{templateId}/documents/{documentId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-templates-templateid-documents-documentid"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/templates/{templateId}/documents/{documentId}/fields"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["documentFields"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-templates-templateid-documents-documentid-fields"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      documentFields = "documentFields"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/templates/{templateId}/documents/{documentId}/pages"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["endPosition", "nextUri", "pages", "previousUri", "resultSetSize", "startPosition", "totalSetSize"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-templates-templateid-documents-documentid-pages"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      endPosition = "endPosition"
+      nextUri = "nextUri"
+      pages = "pages"
+      previousUri = "previousUri"
+      resultSetSize = "resultSetSize"
+      startPosition = "startPosition"
+      totalSetSize = "totalSetSize"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/templates/{templateId}/documents/{documentId}/pages/{pageNumber}/page_image"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-templates-templateid-documents-documentid-pages-pagenumber-page-image"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/templates/{templateId}/documents/{documentId}/pages/{pageNumber}/tabs"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["approveTabs", "checkboxTabs", "companyTabs", "dateSignedTabs", "dateTabs", "declineTabs", "emailAddressTabs", "emailTabs", "envelopeIdTabs", "firstNameTabs", "formulaTabs", "fullNameTabs", "initialHereTabs", "lastNameTabs", "listTabs", "noteTabs", "numberTabs", "radioGroupTabs", "signHereTabs", "signerAttachmentTabs", "ssnTabs", "textTabs", "titleTabs", "viewTabs", "zipTabs"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-templates-templateid-documents-documentid-pages-pagenumber-tabs"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      approveTabs = "approveTabs"
+      checkboxTabs = "checkboxTabs"
+      companyTabs = "companyTabs"
+      dateSignedTabs = "dateSignedTabs"
+      dateTabs = "dateTabs"
+      declineTabs = "declineTabs"
+      emailAddressTabs = "emailAddressTabs"
+      emailTabs = "emailTabs"
+      envelopeIdTabs = "envelopeIdTabs"
+      firstNameTabs = "firstNameTabs"
+      formulaTabs = "formulaTabs"
+      fullNameTabs = "fullNameTabs"
+      initialHereTabs = "initialHereTabs"
+      lastNameTabs = "lastNameTabs"
+      listTabs = "listTabs"
+      noteTabs = "noteTabs"
+      numberTabs = "numberTabs"
+      radioGroupTabs = "radioGroupTabs"
+      signHereTabs = "signHereTabs"
+      signerAttachmentTabs = "signerAttachmentTabs"
+      ssnTabs = "ssnTabs"
+      textTabs = "textTabs"
+      titleTabs = "titleTabs"
+      viewTabs = "viewTabs"
+      zipTabs = "zipTabs"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/templates/{templateId}/documents/{documentId}/tabs"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["approveTabs", "checkboxTabs", "companyTabs", "dateSignedTabs", "dateTabs", "declineTabs", "emailAddressTabs", "emailTabs", "envelopeIdTabs", "firstNameTabs", "formulaTabs", "fullNameTabs", "initialHereTabs", "lastNameTabs", "listTabs", "noteTabs", "numberTabs", "radioGroupTabs", "signHereTabs", "signerAttachmentTabs", "ssnTabs", "textTabs", "titleTabs", "viewTabs", "zipTabs"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-templates-templateid-documents-documentid-tabs"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      approveTabs = "approveTabs"
+      checkboxTabs = "checkboxTabs"
+      companyTabs = "companyTabs"
+      dateSignedTabs = "dateSignedTabs"
+      dateTabs = "dateTabs"
+      declineTabs = "declineTabs"
+      emailAddressTabs = "emailAddressTabs"
+      emailTabs = "emailTabs"
+      envelopeIdTabs = "envelopeIdTabs"
+      firstNameTabs = "firstNameTabs"
+      formulaTabs = "formulaTabs"
+      fullNameTabs = "fullNameTabs"
+      initialHereTabs = "initialHereTabs"
+      lastNameTabs = "lastNameTabs"
+      listTabs = "listTabs"
+      noteTabs = "noteTabs"
+      numberTabs = "numberTabs"
+      radioGroupTabs = "radioGroupTabs"
+      signHereTabs = "signHereTabs"
+      signerAttachmentTabs = "signerAttachmentTabs"
+      ssnTabs = "ssnTabs"
+      textTabs = "textTabs"
+      titleTabs = "titleTabs"
+      viewTabs = "viewTabs"
+      zipTabs = "zipTabs"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/templates/{templateId}/lock"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["lockDurationInSeconds", "lockToken", "lockType", "lockedByApp", "lockedUntilDateTime", "useScratchPad"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-templates-templateid-lock"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      lockDurationInSeconds = "lockDurationInSeconds"
+      lockToken = "lockToken"
+      lockType = "lockType"
+      lockedByApp = "lockedByApp"
+      lockedUntilDateTime = "lockedUntilDateTime"
+      useScratchPad = "useScratchPad"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/templates/{templateId}/notification"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["useAccountDefaults"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-templates-templateid-notification"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      useAccountDefaults = "useAccountDefaults"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/templates/{templateId}/recipients"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["agents", "carbonCopies", "certifiedDeliveries", "currentRoutingOrder", "editors", "inPersonSigners", "intermediaries", "recipientCount", "signers"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-templates-templateid-recipients"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      agents = "agents"
+      carbonCopies = "carbonCopies"
+      certifiedDeliveries = "certifiedDeliveries"
+      currentRoutingOrder = "currentRoutingOrder"
+      editors = "editors"
+      inPersonSigners = "inPersonSigners"
+      intermediaries = "intermediaries"
+      recipientCount = "recipientCount"
+      signers = "signers"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/templates/{templateId}/recipients/{recipientId}/bulk_recipients"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["bulkRecipients", "endPosition", "nextUri", "previousUri", "resultSetSize", "startPosition", "totalSetSize"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-templates-templateid-recipients-recipientid-bulk-recipients"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      bulkRecipients = "bulkRecipients"
+      endPosition = "endPosition"
+      nextUri = "nextUri"
+      previousUri = "previousUri"
+      resultSetSize = "resultSetSize"
+      startPosition = "startPosition"
+      totalSetSize = "totalSetSize"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/templates/{templateId}/recipients/{recipientId}/document_visibility"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["documentVisibility"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-templates-templateid-recipients-recipientid-document-visibility"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      documentVisibility = "documentVisibility"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/templates/{templateId}/recipients/{recipientId}/tabs"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["approveTabs", "checkboxTabs", "companyTabs", "dateSignedTabs", "dateTabs", "declineTabs", "emailAddressTabs", "emailTabs", "envelopeIdTabs", "firstNameTabs", "formulaTabs", "fullNameTabs", "initialHereTabs", "lastNameTabs", "listTabs", "noteTabs", "numberTabs", "radioGroupTabs", "signHereTabs", "signerAttachmentTabs", "ssnTabs", "textTabs", "titleTabs", "viewTabs", "zipTabs"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-templates-templateid-recipients-recipientid-tabs"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      approveTabs = "approveTabs"
+      checkboxTabs = "checkboxTabs"
+      companyTabs = "companyTabs"
+      dateSignedTabs = "dateSignedTabs"
+      dateTabs = "dateTabs"
+      declineTabs = "declineTabs"
+      emailAddressTabs = "emailAddressTabs"
+      emailTabs = "emailTabs"
+      envelopeIdTabs = "envelopeIdTabs"
+      firstNameTabs = "firstNameTabs"
+      formulaTabs = "formulaTabs"
+      fullNameTabs = "fullNameTabs"
+      initialHereTabs = "initialHereTabs"
+      lastNameTabs = "lastNameTabs"
+      listTabs = "listTabs"
+      noteTabs = "noteTabs"
+      numberTabs = "numberTabs"
+      radioGroupTabs = "radioGroupTabs"
+      signHereTabs = "signHereTabs"
+      signerAttachmentTabs = "signerAttachmentTabs"
+      ssnTabs = "ssnTabs"
+      textTabs = "textTabs"
+      titleTabs = "titleTabs"
+      viewTabs = "viewTabs"
+      zipTabs = "zipTabs"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/templates/{templateId}/views/edit"
+  method = "POST"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-templates-templateid-views-edit"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/unsupported_file_types"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["fileTypes"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-unsupported-file-types"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      fileTypes = "fileTypes"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/users"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["endPosition", "nextUri", "previousUri", "resultSetSize", "startPosition", "totalSetSize", "users"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-users"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      endPosition = "endPosition"
+      nextUri = "nextUri"
+      previousUri = "previousUri"
+      resultSetSize = "resultSetSize"
+      startPosition = "startPosition"
+      totalSetSize = "totalSetSize"
+      users = "users"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/users/{userId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["activationAccessCode", "createdDateTime", "customSettings", "email", "enableConnectForUser", "firstName", "groupList", "initialsImageUri", "isAdmin", "lastLogin", "lastName", "loginStatus", "middleName", "password", "passwordExpiration", "permissionProfileId", "permissionProfileName", "profileImageUri", "sendActivationOnInvalidLogin", "signatureImageUri", "suffixName", "title", "uri", "userId", "userName", "userProfileLastModifiedDate", "userSettings", "userStatus", "userType"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-users-userid"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      activationAccessCode = "activationAccessCode"
+      createdDateTime = "createdDateTime"
+      customSettings = "customSettings"
+      email = "email"
+      enableConnectForUser = "enableConnectForUser"
+      firstName = "firstName"
+      groupList = "groupList"
+      initialsImageUri = "initialsImageUri"
+      isAdmin = "isAdmin"
+      lastLogin = "lastLogin"
+      lastName = "lastName"
+      loginStatus = "loginStatus"
+      middleName = "middleName"
+      password = "password"
+      passwordExpiration = "passwordExpiration"
+      permissionProfileId = "permissionProfileId"
+      permissionProfileName = "permissionProfileName"
+      profileImageUri = "profileImageUri"
+      sendActivationOnInvalidLogin = "sendActivationOnInvalidLogin"
+      signatureImageUri = "signatureImageUri"
+      suffixName = "suffixName"
+      title = "title"
+      uri = "uri"
+      userId = "userId"
+      userName = "userName"
+      userProfileLastModifiedDate = "userProfileLastModifiedDate"
+      userSettings = "userSettings"
+      userStatus = "userStatus"
+      userType = "userType"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/users/{userId}/cloud_storage"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["storageProviders"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-users-userid-cloud-storage"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      storageProviders = "storageProviders"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/users/{userId}/cloud_storage/{serviceId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["storageProviders"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-users-userid-cloud-storage-serviceid"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      storageProviders = "storageProviders"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/users/{userId}/cloud_storage/{serviceId}/folders"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["endPosition", "id", "items", "name", "nextUri", "previousUri", "resultSetSize", "startPosition", "totalSetSize"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-users-userid-cloud-storage-serviceid-folders"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      endPosition = "endPosition"
+      id = "id"
+      items = "items"
+      name = "name"
+      nextUri = "nextUri"
+      previousUri = "previousUri"
+      resultSetSize = "resultSetSize"
+      startPosition = "startPosition"
+      totalSetSize = "totalSetSize"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/users/{userId}/cloud_storage/{serviceId}/folders/{folderId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["endPosition", "id", "items", "name", "nextUri", "previousUri", "resultSetSize", "startPosition", "totalSetSize"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-users-userid-cloud-storage-serviceid-folders-folderid"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      endPosition = "endPosition"
+      id = "id"
+      items = "items"
+      name = "name"
+      nextUri = "nextUri"
+      previousUri = "previousUri"
+      resultSetSize = "resultSetSize"
+      startPosition = "startPosition"
+      totalSetSize = "totalSetSize"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/users/{userId}/custom_settings"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["customSettings"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-users-userid-custom-settings"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      customSettings = "customSettings"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/users/{userId}/profile"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["authenticationMethods", "companyName", "displayOrganizationInfo", "displayPersonalInfo", "displayProfile", "displayUsageHistory", "profileImageUri", "title", "userProfileLastModifiedDate"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-users-userid-profile"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      authenticationMethods = "authenticationMethods"
+      companyName = "companyName"
+      displayOrganizationInfo = "displayOrganizationInfo"
+      displayPersonalInfo = "displayPersonalInfo"
+      displayProfile = "displayProfile"
+      displayUsageHistory = "displayUsageHistory"
+      profileImageUri = "profileImageUri"
+      title = "title"
+      userProfileLastModifiedDate = "userProfileLastModifiedDate"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/users/{userId}/profile/image"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-users-userid-profile-image"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/users/{userId}/settings"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["userSettings"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-users-userid-settings"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      userSettings = "userSettings"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/users/{userId}/signatures"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["userSignatures"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-users-userid-signatures"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      userSignatures = "userSignatures"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/users/{userId}/signatures/{signatureId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["adoptedDateTime", "createdDateTime", "externalID", "imageType", "initials150ImageId", "initialsImageUri", "isDefault", "phoneticName", "signature150ImageId", "signatureFont", "signatureId", "signatureImageUri", "signatureInitials", "signatureName", "signatureType", "stampFormat", "stampImageUri", "stampSizeMM", "stampType"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-users-userid-signatures-signatureid"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      adoptedDateTime = "adoptedDateTime"
+      createdDateTime = "createdDateTime"
+      externalID = "externalID"
+      imageType = "imageType"
+      initials150ImageId = "initials150ImageId"
+      initialsImageUri = "initialsImageUri"
+      isDefault = "isDefault"
+      phoneticName = "phoneticName"
+      signature150ImageId = "signature150ImageId"
+      signatureFont = "signatureFont"
+      signatureId = "signatureId"
+      signatureImageUri = "signatureImageUri"
+      signatureInitials = "signatureInitials"
+      signatureName = "signatureName"
+      signatureType = "signatureType"
+      stampFormat = "stampFormat"
+      stampImageUri = "stampImageUri"
+      stampSizeMM = "stampSizeMM"
+      stampType = "stampType"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/users/{userId}/signatures/{signatureId}/{imageType}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-users-userid-signatures-signatureid-imagetype"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/users/{userId}/social"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["socialAccountInformation", "userId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-users-userid-social"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      socialAccountInformation = "socialAccountInformation"
+      userId = "userId"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/views/console"
+  method = "POST"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-views-console"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/watermark"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["displayAngle", "enabled", "font", "fontColor", "fontSize", "id", "imageBase64", "transparency", "watermarkText"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-watermark"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      displayAngle = "displayAngle"
+      enabled = "enabled"
+      font = "font"
+      fontColor = "fontColor"
+      fontSize = "fontSize"
+      id = "id"
+      imageBase64 = "imageBase64"
+      transparency = "transparency"
+      watermarkText = "watermarkText"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/workspaces"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["endPosition", "resultSetSize", "startPosition", "totalSetSize", "workspaces"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-workspaces"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      endPosition = "endPosition"
+      resultSetSize = "resultSetSize"
+      startPosition = "startPosition"
+      totalSetSize = "totalSetSize"
+      workspaces = "workspaces"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/workspaces/{workspaceId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["billableAccountId", "created", "lastModified", "status", "workspaceBaseUrl", "workspaceDescription", "workspaceId", "workspaceName", "workspaceUri"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-workspaces-workspaceid"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      billableAccountId = "billableAccountId"
+      created = "created"
+      lastModified = "lastModified"
+      status = "status"
+      workspaceBaseUrl = "workspaceBaseUrl"
+      workspaceDescription = "workspaceDescription"
+      workspaceId = "workspaceId"
+      workspaceName = "workspaceName"
+      workspaceUri = "workspaceUri"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/workspaces/{workspaceId}/folders/{folderId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["endPosition", "items", "parentFolders", "resultSetSize", "startPosition", "totalSetSize", "workspaceId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-workspaces-workspaceid-folders-folderid"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      endPosition = "endPosition"
+      items = "items"
+      parentFolders = "parentFolders"
+      resultSetSize = "resultSetSize"
+      startPosition = "startPosition"
+      totalSetSize = "totalSetSize"
+      workspaceId = "workspaceId"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/workspaces/{workspaceId}/folders/{folderId}/files"
+  method = "POST"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-workspaces-workspaceid-folders-folderid-files"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/workspaces/{workspaceId}/folders/{folderId}/files/{fileId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-workspaces-workspaceid-folders-folderid-files-fileid"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/accounts/{accountId}/workspaces/{workspaceId}/folders/{folderId}/files/{fileId}/pages"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["endPosition", "nextUri", "pages", "previousUri", "resultSetSize", "startPosition", "totalSetSize"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-accounts-accountid-workspaces-workspaceid-folders-folderid-files-fileid-pages"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      endPosition = "endPosition"
+      nextUri = "nextUri"
+      pages = "pages"
+      previousUri = "previousUri"
+      resultSetSize = "resultSetSize"
+      startPosition = "startPosition"
+      totalSetSize = "totalSetSize"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/billing_plans"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["billingPlans"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-billing-plans"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      billingPlans = "billingPlans"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/billing_plans/{billingPlanId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["successorPlans"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-billing-plans-billingplanid"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      successorPlans = "successorPlans"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/current_user/password_rules"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["userId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-current-user-password-rules"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      userId = "userId"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/diagnostics/request_logs"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["apiRequestLogs"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-diagnostics-request-logs"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      apiRequestLogs = "apiRequestLogs"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/diagnostics/request_logs/{requestLogId}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-diagnostics-request-logs-requestlogid"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/diagnostics/settings"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["apiRequestLogMaxEntries", "apiRequestLogRemainingEntries", "apiRequestLogging"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-diagnostics-settings"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      apiRequestLogMaxEntries = "apiRequestLogMaxEntries"
+      apiRequestLogRemainingEntries = "apiRequestLogRemainingEntries"
+      apiRequestLogging = "apiRequestLogging"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/login_information"
+  method = "GET"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  whitelist = ["apiPassword", "loginAccounts"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-login-information"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+    [backends.extra_config.mapping]
+      apiPassword = "apiPassword"
+      loginAccounts = "loginAccounts"
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/oauth2/revoke"
+  method = "POST"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-oauth2-revoke"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]
+
+[[backends]]
+  group = "docusign-v2"
+  url_pattern = "/restapi/v2/oauth2/token"
+  method = "POST"
+  encoding = "json"
+  host = ["https://www.docusign.net"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "docusign.net"
+    description = "The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign."
+    version = "v2"
+    slug = "docusign-v2-restapi-v2-oauth2-token"
+    schemes = ["https"]
+    consumes = ["json", "xml"]
+    produces = ["json"]
+    hosts = ["https://www.docusign.net"]
+    topics = ["ecommerce"]

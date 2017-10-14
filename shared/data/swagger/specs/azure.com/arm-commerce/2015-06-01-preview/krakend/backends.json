@@ -1,0 +1,37 @@
+{
+	"backends": [
+		{
+			"group": "usagemanagementclient-2015-06-01-preview",
+			"url_pattern": "/subscriptions/{subscriptionId}/providers/Microsoft",
+			"method": "COMMERCE/RATECARD",
+			"encoding": "json",
+			"host": [
+				"https://management.azure.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "azure.com",
+				"version": "2015-06-01-preview",
+				"slug": "usagemanagementclient-2015-06-01-preview-subscriptions-subscriptionid-providers-microsoft",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json",
+					"json"
+				],
+				"produces": [
+					"json",
+					"json"
+				],
+				"hosts": [
+					"https://management.azure.com"
+				],
+				"topics": [
+					"cloud",
+					"ecommerce"
+				]
+			}
+		}
+	]
+}

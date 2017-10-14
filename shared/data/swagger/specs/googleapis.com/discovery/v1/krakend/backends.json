@@ -1,0 +1,162 @@
+{
+	"backends": [
+		{
+			"group": "apis-discovery-service-v1",
+			"url_pattern": "/discovery/v1/apis",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"discoveryVersion",
+				"items",
+				"items.description",
+				"items.discoveryLink",
+				"items.discoveryRestUrl",
+				"items.documentationLink",
+				"items.icons",
+				"items.icons.x16",
+				"items.icons.x32",
+				"items.id",
+				"items.kind",
+				"items.labels",
+				"items.labels.items",
+				"items.name",
+				"items.preferred",
+				"items.title",
+				"items.version",
+				"kind"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Provides information about other Google APIs, such as what APIs are available, the resource, and method details for each API.",
+				"version": "v1",
+				"slug": "apis-discovery-service-v1-discovery-v1-apis",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"discoveryVersion": "discoveryVersion",
+					"items": "items",
+					"items.description": "items.description",
+					"items.discoveryLink": "items.discoveryLink",
+					"items.discoveryRestUrl": "items.discoveryRestUrl",
+					"items.documentationLink": "items.documentationLink",
+					"items.icons": "items.icons",
+					"items.icons.x16": "items.icons.x16",
+					"items.icons.x32": "items.icons.x32",
+					"items.id": "items.id",
+					"items.kind": "items.kind",
+					"items.labels": "items.labels",
+					"items.labels.items": "items.labels.items",
+					"items.name": "items.name",
+					"items.preferred": "items.preferred",
+					"items.title": "items.title",
+					"items.version": "items.version",
+					"kind": "kind"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		},
+		{
+			"group": "apis-discovery-service-v1",
+			"url_pattern": "/discovery/v1/apis/{api}/{version}/rest",
+			"method": "GET",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"auth",
+				"auth.oauth2",
+				"auth.oauth2.scopes",
+				"auth.oauth2.scopes.additionalProperties",
+				"auth.oauth2.scopes.additionalProperties.description",
+				"basePath",
+				"baseUrl",
+				"batchPath",
+				"canonicalName",
+				"description",
+				"discoveryVersion",
+				"documentationLink",
+				"etag",
+				"exponentialBackoffDefault",
+				"features",
+				"icons",
+				"icons.x16",
+				"icons.x32",
+				"id",
+				"kind",
+				"labels",
+				"methods",
+				"name",
+				"ownerDomain",
+				"ownerName",
+				"packagePath",
+				"parameters",
+				"protocol",
+				"resources",
+				"revision",
+				"rootUrl",
+				"schemas",
+				"servicePath",
+				"title",
+				"version",
+				"version_module"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "Provides information about other Google APIs, such as what APIs are available, the resource, and method details for each API.",
+				"version": "v1",
+				"slug": "apis-discovery-service-v1-discovery-v1-apis-api-version-rest",
+				"schemes": [
+					"https"
+				],
+				"mapping": {
+					"auth": "auth",
+					"auth.oauth2": "auth.oauth2",
+					"auth.oauth2.scopes": "auth.oauth2.scopes",
+					"auth.oauth2.scopes.additionalProperties": "auth.oauth2.scopes.additionalProperties",
+					"auth.oauth2.scopes.additionalProperties.description": "auth.oauth2.scopes.additionalProperties.description",
+					"basePath": "basePath",
+					"baseUrl": "baseUrl",
+					"batchPath": "batchPath",
+					"canonicalName": "canonicalName",
+					"description": "description",
+					"discoveryVersion": "discoveryVersion",
+					"documentationLink": "documentationLink",
+					"etag": "etag",
+					"exponentialBackoffDefault": "exponentialBackoffDefault",
+					"features": "features",
+					"icons": "icons",
+					"icons.x16": "icons.x16",
+					"icons.x32": "icons.x32",
+					"id": "id",
+					"kind": "kind",
+					"labels": "labels",
+					"methods": "methods",
+					"name": "name",
+					"ownerDomain": "ownerDomain",
+					"ownerName": "ownerName",
+					"packagePath": "packagePath",
+					"parameters": "parameters",
+					"protocol": "protocol",
+					"resources": "resources",
+					"revision": "revision",
+					"rootUrl": "rootUrl",
+					"schemas": "schemas",
+					"servicePath": "servicePath",
+					"title": "title",
+					"version": "version",
+					"version_module": "version_module"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		}
+	]
+}

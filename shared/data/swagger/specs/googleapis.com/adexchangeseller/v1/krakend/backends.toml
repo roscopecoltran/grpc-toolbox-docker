@@ -1,0 +1,237 @@
+[[backends]]
+  group = "ad-exchange-seller-v1"
+  url_pattern = "/adexchangeseller/v1/adclients"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the inventory of Ad Exchange seller users and generates reports."
+    version = "v1"
+    slug = "ad-exchange-seller-v1-adexchangeseller-v1-adclients"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "ad-exchange-seller-v1"
+  url_pattern = "/adexchangeseller/v1/adclients/{adClientId}/adunits"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the inventory of Ad Exchange seller users and generates reports."
+    version = "v1"
+    slug = "ad-exchange-seller-v1-adexchangeseller-v1-adclients-adclientid-adunits"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "ad-exchange-seller-v1"
+  url_pattern = "/adexchangeseller/v1/adclients/{adClientId}/adunits/{adUnitId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["code", "id", "kind", "name", "status"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the inventory of Ad Exchange seller users and generates reports."
+    version = "v1"
+    slug = "ad-exchange-seller-v1-adexchangeseller-v1-adclients-adclientid-adunits-adunitid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      code = "code"
+      id = "id"
+      kind = "kind"
+      name = "name"
+      status = "status"
+
+[[backends]]
+  group = "ad-exchange-seller-v1"
+  url_pattern = "/adexchangeseller/v1/adclients/{adClientId}/adunits/{adUnitId}/customchannels"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the inventory of Ad Exchange seller users and generates reports."
+    version = "v1"
+    slug = "ad-exchange-seller-v1-adexchangeseller-v1-adclients-adclientid-adunits-adunitid-customchannels"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "ad-exchange-seller-v1"
+  url_pattern = "/adexchangeseller/v1/adclients/{adClientId}/customchannels"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the inventory of Ad Exchange seller users and generates reports."
+    version = "v1"
+    slug = "ad-exchange-seller-v1-adexchangeseller-v1-adclients-adclientid-customchannels"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "ad-exchange-seller-v1"
+  url_pattern = "/adexchangeseller/v1/adclients/{adClientId}/customchannels/{customChannelId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["code", "id", "kind", "name", "targetingInfo", "targetingInfo.adsAppearOn", "targetingInfo.description", "targetingInfo.location", "targetingInfo.siteLanguage"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the inventory of Ad Exchange seller users and generates reports."
+    version = "v1"
+    slug = "ad-exchange-seller-v1-adexchangeseller-v1-adclients-adclientid-customchannels-customchannelid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      adsAppearOn = "adsAppearOn"
+      code = "code"
+      description = "description"
+      id = "id"
+      kind = "kind"
+      location = "location"
+      name = "name"
+      siteLanguage = "siteLanguage"
+      targetingInfo = "targetingInfo"
+
+[[backends]]
+  group = "ad-exchange-seller-v1"
+  url_pattern = "/adexchangeseller/v1/adclients/{adClientId}/customchannels/{customChannelId}/adunits"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the inventory of Ad Exchange seller users and generates reports."
+    version = "v1"
+    slug = "ad-exchange-seller-v1-adexchangeseller-v1-adclients-adclientid-customchannels-customchannelid-adunits"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "ad-exchange-seller-v1"
+  url_pattern = "/adexchangeseller/v1/adclients/{adClientId}/urlchannels"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the inventory of Ad Exchange seller users and generates reports."
+    version = "v1"
+    slug = "ad-exchange-seller-v1-adexchangeseller-v1-adclients-adclientid-urlchannels"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "ad-exchange-seller-v1"
+  url_pattern = "/adexchangeseller/v1/reports"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["averages", "headers", "headers.currency", "headers.name", "kind", "rows", "rows.items", "totalMatchedRows", "totals", "warnings"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the inventory of Ad Exchange seller users and generates reports."
+    version = "v1"
+    slug = "ad-exchange-seller-v1-adexchangeseller-v1-reports"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      averages = "averages"
+      currency = "currency"
+      headers = "headers"
+      items = "items"
+      kind = "kind"
+      name = "name"
+      rows = "rows"
+      totalMatchedRows = "totalMatchedRows"
+      totals = "totals"
+      warnings = "warnings"
+
+[[backends]]
+  group = "ad-exchange-seller-v1"
+  url_pattern = "/adexchangeseller/v1/reports/saved"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the inventory of Ad Exchange seller users and generates reports."
+    version = "v1"
+    slug = "ad-exchange-seller-v1-adexchangeseller-v1-reports-saved"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "ad-exchange-seller-v1"
+  url_pattern = "/adexchangeseller/v1/reports/{savedReportId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["averages", "headers", "headers.currency", "headers.name", "kind", "rows", "rows.items", "totalMatchedRows", "totals", "warnings"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Accesses the inventory of Ad Exchange seller users and generates reports."
+    version = "v1"
+    slug = "ad-exchange-seller-v1-adexchangeseller-v1-reports-savedreportid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      averages = "averages"
+      currency = "currency"
+      headers = "headers"
+      items = "items"
+      kind = "kind"
+      name = "name"
+      rows = "rows"
+      totalMatchedRows = "totalMatchedRows"
+      totals = "totals"
+      warnings = "warnings"

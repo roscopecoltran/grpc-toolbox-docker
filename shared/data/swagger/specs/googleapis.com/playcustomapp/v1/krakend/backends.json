@@ -1,0 +1,36 @@
+{
+	"backends": [
+		{
+			"group": "google-play-custom-app-publishing-v1",
+			"url_pattern": "/playcustomapp/v1/accounts/{account}/customApps",
+			"method": "POST",
+			"host": [
+				"https://www.googleapis.com"
+			],
+			"whitelist": [
+				"languageCode",
+				"title"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "googleapis.com",
+				"description": "An API to publish custom Android apps.",
+				"version": "v1",
+				"slug": "google-play-custom-app-publishing-v1-playcustomapp-v1-accounts-account-customapps",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"octet-stream"
+				],
+				"mapping": {
+					"languageCode": "languageCode",
+					"title": "title"
+				},
+				"hosts": [
+					"https://www.googleapis.com"
+				]
+			}
+		}
+	]
+}

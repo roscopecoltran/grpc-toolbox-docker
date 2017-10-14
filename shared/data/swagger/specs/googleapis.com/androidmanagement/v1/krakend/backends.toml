@@ -1,0 +1,191 @@
+[[backends]]
+  group = "android-management-v1"
+  url_pattern = "/v1/enterprises"
+  method = "POST"
+  host = ["https://androidmanagement.googleapis.com"]
+  query_string_params = ["enterpriseToken", "projectId", "signupUrlName"]
+  whitelist = ["appAutoApprovalEnabled", "enabledNotificationTypes", "enterpriseDisplayName", "name", "primaryColor", "pubsubTopic"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Android Management API provides remote enterprise management of Android devices and apps."
+    version = "v1"
+    slug = "android-management-v1-v1-enterprises"
+    schemes = ["https"]
+    hosts = ["https://androidmanagement.googleapis.com"]
+    topics = ["enterprises"]
+    [backends.extra_config.mapping]
+      appAutoApprovalEnabled = "appAutoApprovalEnabled"
+      enabledNotificationTypes = "enabledNotificationTypes"
+      enterpriseDisplayName = "enterpriseDisplayName"
+      name = "name"
+      primaryColor = "primaryColor"
+      pubsubTopic = "pubsubTopic"
+
+[[backends]]
+  group = "android-management-v1"
+  url_pattern = "/v1/signupUrls"
+  method = "POST"
+  host = ["https://androidmanagement.googleapis.com"]
+  query_string_params = ["callbackUrl", "projectId"]
+  whitelist = ["name", "url"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Android Management API provides remote enterprise management of Android devices and apps."
+    version = "v1"
+    slug = "android-management-v1-v1-signupurls"
+    schemes = ["https"]
+    hosts = ["https://androidmanagement.googleapis.com"]
+    topics = ["signupurls"]
+    [backends.extra_config.mapping]
+      name = "name"
+      url = "url"
+
+[[backends]]
+  group = "android-management-v1"
+  url_pattern = "/v1/{name}"
+  method = "GET"
+  host = ["https://androidmanagement.googleapis.com"]
+  url_keys = ["name"]
+  query_string_params = ["filter", "pageSize", "pageToken"]
+  whitelist = ["nextPageToken", "operations"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Android Management API provides remote enterprise management of Android devices and apps."
+    version = "v1"
+    slug = "android-management-v1-v1-name"
+    schemes = ["https"]
+    hosts = ["https://androidmanagement.googleapis.com"]
+    topics = ["enterprises"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      operations = "operations"
+
+[[backends]]
+  group = "android-management-v1"
+  url_pattern = "/v1/{name}:cancel"
+  method = "POST"
+  host = ["https://androidmanagement.googleapis.com"]
+  url_keys = ["name"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Android Management API provides remote enterprise management of Android devices and apps."
+    version = "v1"
+    slug = "android-management-v1-v1-name-cancel"
+    schemes = ["https"]
+    hosts = ["https://androidmanagement.googleapis.com"]
+    topics = ["enterprises"]
+
+[[backends]]
+  group = "android-management-v1"
+  url_pattern = "/v1/{name}:issueCommand"
+  method = "POST"
+  host = ["https://androidmanagement.googleapis.com"]
+  url_keys = ["name"]
+  whitelist = ["done", "metadata", "name", "response"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Android Management API provides remote enterprise management of Android devices and apps."
+    version = "v1"
+    slug = "android-management-v1-v1-name-issuecommand"
+    schemes = ["https"]
+    hosts = ["https://androidmanagement.googleapis.com"]
+    topics = ["enterprises"]
+    [backends.extra_config.mapping]
+      done = "done"
+      metadata = "metadata"
+      name = "name"
+      response = "response"
+
+[[backends]]
+  group = "android-management-v1"
+  url_pattern = "/v1/{parent}/devices"
+  method = "GET"
+  host = ["https://androidmanagement.googleapis.com"]
+  url_keys = ["parent"]
+  query_string_params = ["pageSize", "pageToken"]
+  whitelist = ["devices", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Android Management API provides remote enterprise management of Android devices and apps."
+    version = "v1"
+    slug = "android-management-v1-v1-parent-devices"
+    schemes = ["https"]
+    hosts = ["https://androidmanagement.googleapis.com"]
+    topics = ["enterprises"]
+    [backends.extra_config.mapping]
+      devices = "devices"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "android-management-v1"
+  url_pattern = "/v1/{parent}/enrollmentTokens"
+  method = "POST"
+  host = ["https://androidmanagement.googleapis.com"]
+  url_keys = ["parent"]
+  whitelist = ["additionalData", "duration", "expirationTimestamp", "name", "policyName", "qrCode", "value"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Android Management API provides remote enterprise management of Android devices and apps."
+    version = "v1"
+    slug = "android-management-v1-v1-parent-enrollmenttokens"
+    schemes = ["https"]
+    hosts = ["https://androidmanagement.googleapis.com"]
+    topics = ["enterprises"]
+    [backends.extra_config.mapping]
+      additionalData = "additionalData"
+      duration = "duration"
+      expirationTimestamp = "expirationTimestamp"
+      name = "name"
+      policyName = "policyName"
+      qrCode = "qrCode"
+      value = "value"
+
+[[backends]]
+  group = "android-management-v1"
+  url_pattern = "/v1/{parent}/policies"
+  method = "GET"
+  host = ["https://androidmanagement.googleapis.com"]
+  url_keys = ["parent"]
+  query_string_params = ["pageSize", "pageToken"]
+  whitelist = ["nextPageToken", "policies"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Android Management API provides remote enterprise management of Android devices and apps."
+    version = "v1"
+    slug = "android-management-v1-v1-parent-policies"
+    schemes = ["https"]
+    hosts = ["https://androidmanagement.googleapis.com"]
+    topics = ["enterprises"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      policies = "policies"
+
+[[backends]]
+  group = "android-management-v1"
+  url_pattern = "/v1/{parent}/webTokens"
+  method = "POST"
+  host = ["https://androidmanagement.googleapis.com"]
+  url_keys = ["parent"]
+  whitelist = ["name", "parentFrameUrl", "permissions", "value"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Android Management API provides remote enterprise management of Android devices and apps."
+    version = "v1"
+    slug = "android-management-v1-v1-parent-webtokens"
+    schemes = ["https"]
+    hosts = ["https://androidmanagement.googleapis.com"]
+    topics = ["enterprises"]
+    [backends.extra_config.mapping]
+      name = "name"
+      parentFrameUrl = "parentFrameUrl"
+      permissions = "permissions"
+      value = "value"

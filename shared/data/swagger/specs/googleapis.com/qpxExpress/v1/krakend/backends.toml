@@ -1,0 +1,16 @@
+[[backends]]
+  group = "qpx-express-v1"
+  url_pattern = "/qpxExpress/v1/trips/search"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Finds the least expensive flights between an origin and a destination."
+    version = "v1"
+    slug = "qpx-express-v1-qpxexpress-v1-trips-search"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    [backends.extra_config.mapping]
+      kind = "kind"

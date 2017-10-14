@@ -1,0 +1,2839 @@
+backends:
+- group: reverb-3-0
+  url_pattern: /api/accounts
+  method: POST
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-accounts
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/articles
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-articles
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/articles/featured
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-articles-featured
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/articles/multiple
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-articles-multiple
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/articles/recently_featured
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-articles-recently-featured
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/articles/{slug}
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-articles-slug
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/articles/{slug}/related-listings
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-articles-slug-related-listings
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/auth/forgot_password
+  method: POST
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-auth-forgot-password
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/autosuggest
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-autosuggest
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/bump/new/bids
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-bump-new-bids
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/cart
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-cart
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/cart/move_to_watch_list/{cart_item_id}
+  method: POST
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-cart-move-to-watch-list-cart-item-id
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/cart/{id}
+  method: POST
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-cart-id
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/categories
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-categories
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/categories/flat
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-categories-flat
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/categories/taxonomy
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-categories-taxonomy
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/categories/{product_type}/{category}
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-categories-product-type-category
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/categories/{uuid}
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-categories-uuid
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/collections
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-collections
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/collections/{slug}
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-collections-slug
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/comparison_shopping_pages
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-comparison-shopping-pages
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/comparison_shopping_pages/also_purchased
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-comparison-shopping-pages-also-purchased
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/comparison_shopping_pages/also_viewed
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-comparison-shopping-pages-also-viewed
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/comparison_shopping_pages/find
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-comparison-shopping-pages-find
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/comparison_shopping_pages/similar
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-comparison-shopping-pages-similar
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/comparison_shopping_pages/{id}
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-comparison-shopping-pages-id
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/comparison_shopping_pages/{id}/listings
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-comparison-shopping-pages-id-listings
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/comparison_shopping_pages/{id}/reviews
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-comparison-shopping-pages-id-reviews
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/conversations/{id}/offer
+  method: POST
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-conversations-id-offer
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/countries
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-countries
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/curated_set/{user_id}/handpicked
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-curated-set-user-id-handpicked
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/curated_sets/{slug}
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-curated-sets-slug
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/currencies/display
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-currencies-display
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/currencies/listing
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-currencies-listing
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/feedback/{feedback_id}
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-feedback-feedback-id
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/handpicked/{slug}
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-handpicked-slug
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/listing_conditions
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-listing-conditions
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/listings
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-listings
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/listings/all
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-listings-all
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/listings/{id}/negotiation
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-listings-id-negotiation
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/listings/{id}/offer
+  method: POST
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-listings-id-offer
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/listings/{listing_id}/bump
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-listings-listing-id-bump
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/listings/{listing_id}/bump/{budget_type}
+  method: POST
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-listings-listing-id-bump-budget-type
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/listings/{listing_id}/conversations
+  method: POST
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-listings-listing-id-conversations
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/listings/{listing_id}/images
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-listings-listing-id-images
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/listings/{listing_id}/product_bundle
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-listings-listing-id-product-bundle
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/listings/{listing_id}/sales
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-listings-listing-id-sales
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/listings/{slug}
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-listings-slug
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/listings/{slug}/edit
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-listings-slug-edit
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/listings/{slug}/flag
+  method: POST
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-listings-slug-flag
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/listings/{slug}/reviews
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-listings-slug-reviews
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/listings/{slug}/similar_listings
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-listings-slug-similar-listings
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/account
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-account
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/addresses
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-addresses
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/conversations
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-conversations
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/conversations/{conversation_id}/messages
+  method: POST
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-conversations-conversation-id-messages
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/conversations/{id}
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-conversations-id
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/counts
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-counts
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/curated_set/product/{product_id}
+  method: POST
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-curated-set-product-product-id
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/feed
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-feed
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/feed/customize
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-feed-customize
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/feed/grid
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-feed-grid
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/feedback/received
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-feedback-received
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/feedback/sent
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-feedback-sent
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/follows
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-follows
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/follows/articles
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-follows-articles
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/follows/brands/{slug}
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-follows-brands-slug
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/follows/categories/{category}/{subcategory}
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-follows-categories-category-subcategory
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/follows/categories/{identifier}
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-follows-categories-identifier
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/follows/collections/{slug}
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-follows-collections-slug
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/follows/handpicked/{slug}
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-follows-handpicked-slug
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/follows/search
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-follows-search
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/follows/shops/{slug}
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-follows-shops-slug
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/follows/{follow_id}/alert
+  method: POST
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-follows-follow-id-alert
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/listings
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-listings
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/listings/drafts
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-listings-drafts
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/listings/negotiations
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-listings-negotiations
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/lists
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-lists
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/negotiations/buying
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-negotiations-buying
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/negotiations/{id}
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-negotiations-id
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/negotiations/{id}/accept
+  method: POST
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-negotiations-id-accept
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/negotiations/{id}/counter
+  method: POST
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-negotiations-id-counter
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/negotiations/{id}/decline
+  method: POST
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-negotiations-id-decline
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/orders/awaiting_feedback
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-orders-awaiting-feedback
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/orders/buying/all
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-orders-buying-all
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/orders/buying/unpaid
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-orders-buying-unpaid
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/orders/buying/{id}
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-orders-buying-id
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/orders/buying/{id}/mark_received
+  method: POST
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-orders-buying-id-mark-received
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/orders/selling/all
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-orders-selling-all
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/orders/selling/awaiting_shipment
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-orders-selling-awaiting-shipment
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/orders/selling/buyer_history/{buyer_id}
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-orders-selling-buyer-history-buyer-id
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/orders/selling/unpaid
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-orders-selling-unpaid
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/orders/selling/{id}
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-orders-selling-id
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/orders/selling/{id}/mark_picked_up
+  method: POST
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-orders-selling-id-mark-picked-up
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/orders/selling/{id}/ship
+  method: POST
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-orders-selling-id-ship
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/payments/selling
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-payments-selling
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/payments/selling/{id}
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-payments-selling-id
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/viewed_listings
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-viewed-listings
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/my/wishlist
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-my-wishlist
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/orders/{order_id}/feedback/buyer
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-orders-order-id-feedback-buyer
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/orders/{order_id}/feedback/seller
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-orders-order-id-feedback-seller
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/payment_methods
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-payment-methods
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/priceguide
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-priceguide
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/priceguide/{id}
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-priceguide-id
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/priceguide/{id}/transactions
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-priceguide-id-transactions
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/priceguide/{id}/transactions/summary
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-priceguide-id-transactions-summary
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/private/shops/by_slug/{slug}
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-private-shops-by-slug-slug
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/products/reviews/{id}
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-products-reviews-id
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/products/{slug}/reviews
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-products-slug-reviews
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/sales/reverb
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-sales-reverb
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/sales/seller
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-sales-seller
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/sales/{sale_id}/listings
+  method: POST
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-sales-sale-id-listings
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/sales/{slug}
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-sales-slug
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/shipping/providers
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-shipping-providers
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/shipping/regions
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-shipping-regions
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/shop
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-shop
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/shop/listing_conditions
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-shop-listing-conditions
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/shop/payment_methods
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-shop-payment-methods
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/shop/stats
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-shop-stats
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/shop/stats/activity
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-shop-stats-activity
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/shop/vacation
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-shop-vacation
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/shops/{shop_id}/shipping_profiles
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-shops-shop-id-shipping-profiles
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/shops/{slug}
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-shops-slug
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/shops/{slug}/feedback
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-shops-slug-feedback
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/shops/{slug}/feedback/buyer
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-shops-slug-feedback-buyer
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/shops/{slug}/feedback/seller
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-shops-slug-feedback-seller
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/wants
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-wants
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/webhooks/registrations
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-webhooks-registrations
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce
+- group: reverb-3-0
+  url_pattern: /api/webhooks/registrations/{id}
+  method: GET
+  encoding: json
+  host:
+  - https://api.reverb.com
+  concurrent_calls: 1
+  extra_config:
+    provider: reverb.com
+    description: reverb
+    version: "3.0"
+    slug: reverb-3-0-api-webhooks-registrations-id
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    hosts:
+    - https://api.reverb.com
+    topics:
+    - ecommerce

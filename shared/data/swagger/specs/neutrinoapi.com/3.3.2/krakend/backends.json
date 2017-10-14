@@ -1,0 +1,1446 @@
+{
+	"backends": [
+		{
+			"group": "neutrinoapi-3-3-2",
+			"url_pattern": "/bad-word-filter",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://neutrinoapi.com"
+			],
+			"whitelist": [
+				"badWordsList",
+				"badWordsTotal",
+				"censoredContent",
+				"isBad"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "neutrinoapi.com",
+				"description": "The general-purpose API",
+				"version": "3.3.2",
+				"slug": "neutrinoapi-3-3-2-bad-word-filter",
+				"schemes": [
+					"https"
+				],
+				"form_data": [
+					"censor-character",
+					"content",
+					"output-case"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"badWordsList": "badWordsList",
+					"badWordsTotal": "badWordsTotal",
+					"censoredContent": "censoredContent",
+					"isBad": "isBad"
+				},
+				"hosts": [
+					"https://neutrinoapi.com"
+				],
+				"topics": [
+					"data-tools",
+					"email",
+					"location",
+					"messaging",
+					"telecom",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "neutrinoapi-3-3-2",
+			"url_pattern": "/bin-lookup",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://neutrinoapi.com"
+			],
+			"whitelist": [
+				"cardBrand",
+				"cardCategory",
+				"cardType",
+				"country",
+				"countryCode",
+				"ipBlocklisted",
+				"ipBlocklists",
+				"ipCity",
+				"ipCountry",
+				"ipCountryCode",
+				"ipMatchesBin",
+				"ipRegion",
+				"issuer",
+				"issuerPhone",
+				"issuerWebsite",
+				"valid"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "neutrinoapi.com",
+				"description": "The general-purpose API",
+				"version": "3.3.2",
+				"slug": "neutrinoapi-3-3-2-bin-lookup",
+				"schemes": [
+					"https"
+				],
+				"form_data": [
+					"bin-number",
+					"customer-ip",
+					"output-case"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"cardBrand": "cardBrand",
+					"cardCategory": "cardCategory",
+					"cardType": "cardType",
+					"country": "country",
+					"countryCode": "countryCode",
+					"ipBlocklisted": "ipBlocklisted",
+					"ipBlocklists": "ipBlocklists",
+					"ipCity": "ipCity",
+					"ipCountry": "ipCountry",
+					"ipCountryCode": "ipCountryCode",
+					"ipMatchesBin": "ipMatchesBin",
+					"ipRegion": "ipRegion",
+					"issuer": "issuer",
+					"issuerPhone": "issuerPhone",
+					"issuerWebsite": "issuerWebsite",
+					"valid": "valid"
+				},
+				"hosts": [
+					"https://neutrinoapi.com"
+				],
+				"topics": [
+					"e-commerce",
+					"email",
+					"location",
+					"messaging",
+					"telecom",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "neutrinoapi-3-3-2",
+			"url_pattern": "/code-highlight",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://neutrinoapi.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "neutrinoapi.com",
+				"description": "The general-purpose API",
+				"version": "3.3.2",
+				"slug": "neutrinoapi-3-3-2-code-highlight",
+				"schemes": [
+					"https"
+				],
+				"form_data": [
+					"add-keyword-links",
+					"content",
+					"type"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://neutrinoapi.com"
+				],
+				"topics": [
+					"data-tools",
+					"email",
+					"location",
+					"messaging",
+					"telecom",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "neutrinoapi-3-3-2",
+			"url_pattern": "/convert",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://neutrinoapi.com"
+			],
+			"whitelist": [
+				"fromType",
+				"fromValue",
+				"result",
+				"toType",
+				"valid"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "neutrinoapi.com",
+				"description": "The general-purpose API",
+				"version": "3.3.2",
+				"slug": "neutrinoapi-3-3-2-convert",
+				"schemes": [
+					"https"
+				],
+				"form_data": [
+					"from-type",
+					"from-value",
+					"output-case",
+					"to-type"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"fromType": "fromType",
+					"fromValue": "fromValue",
+					"result": "result",
+					"toType": "toType",
+					"valid": "valid"
+				},
+				"hosts": [
+					"https://neutrinoapi.com"
+				],
+				"topics": [
+					"data-tools",
+					"email",
+					"location",
+					"messaging",
+					"telecom",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "neutrinoapi-3-3-2",
+			"url_pattern": "/email-validate",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://neutrinoapi.com"
+			],
+			"whitelist": [
+				"domain",
+				"domainError",
+				"email",
+				"isDisposable",
+				"isFreemail",
+				"syntaxError",
+				"typosFixed",
+				"valid"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "neutrinoapi.com",
+				"description": "The general-purpose API",
+				"version": "3.3.2",
+				"slug": "neutrinoapi-3-3-2-email-validate",
+				"schemes": [
+					"https"
+				],
+				"form_data": [
+					"email",
+					"fix-typos",
+					"output-case"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"domain": "domain",
+					"domainError": "domainError",
+					"email": "email",
+					"isDisposable": "isDisposable",
+					"isFreemail": "isFreemail",
+					"syntaxError": "syntaxError",
+					"typosFixed": "typosFixed",
+					"valid": "valid"
+				},
+				"hosts": [
+					"https://neutrinoapi.com"
+				],
+				"topics": [
+					"data-tools",
+					"email",
+					"location",
+					"messaging",
+					"telecom",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "neutrinoapi-3-3-2",
+			"url_pattern": "/geocode-address",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://neutrinoapi.com"
+			],
+			"whitelist": [
+				"found",
+				"locations"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "neutrinoapi.com",
+				"description": "The general-purpose API",
+				"version": "3.3.2",
+				"slug": "neutrinoapi-3-3-2-geocode-address",
+				"schemes": [
+					"https"
+				],
+				"form_data": [
+					"address",
+					"country-code",
+					"fuzzy-search",
+					"language-code",
+					"output-case"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"found": "found",
+					"locations": "locations"
+				},
+				"hosts": [
+					"https://neutrinoapi.com"
+				],
+				"topics": [
+					"email",
+					"geolocation",
+					"location",
+					"messaging",
+					"telecom",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "neutrinoapi-3-3-2",
+			"url_pattern": "/geocode-reverse",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://neutrinoapi.com"
+			],
+			"whitelist": [
+				"address",
+				"addressComponents",
+				"addressComponents.additionalProperties",
+				"city",
+				"country",
+				"countryCode",
+				"found",
+				"postalCode",
+				"state"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "neutrinoapi.com",
+				"description": "The general-purpose API",
+				"version": "3.3.2",
+				"slug": "neutrinoapi-3-3-2-geocode-reverse",
+				"schemes": [
+					"https"
+				],
+				"form_data": [
+					"language-code",
+					"latitude",
+					"longitude",
+					"output-case"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"address": "address",
+					"addressComponents": "addressComponents",
+					"addressComponents.additionalProperties": "addressComponents.additionalProperties",
+					"city": "city",
+					"country": "country",
+					"countryCode": "countryCode",
+					"found": "found",
+					"postalCode": "postalCode",
+					"state": "state"
+				},
+				"hosts": [
+					"https://neutrinoapi.com"
+				],
+				"topics": [
+					"email",
+					"geolocation",
+					"location",
+					"messaging",
+					"telecom",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "neutrinoapi-3-3-2",
+			"url_pattern": "/hlr-lookup",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://neutrinoapi.com"
+			],
+			"whitelist": [
+				"countryCode",
+				"hlrStatus",
+				"hlrValid",
+				"imsi",
+				"internationalCallingCode",
+				"internationalNumber",
+				"isMobile",
+				"isPorted",
+				"isRoaming",
+				"localNumber",
+				"location",
+				"mcc",
+				"mnc",
+				"msin",
+				"numberType",
+				"numberValid",
+				"originNetwork",
+				"portedNetwork"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "neutrinoapi.com",
+				"description": "The general-purpose API",
+				"version": "3.3.2",
+				"slug": "neutrinoapi-3-3-2-hlr-lookup",
+				"schemes": [
+					"https"
+				],
+				"form_data": [
+					"country-code",
+					"number",
+					"output-case"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"countryCode": "countryCode",
+					"hlrStatus": "hlrStatus",
+					"hlrValid": "hlrValid",
+					"imsi": "imsi",
+					"internationalCallingCode": "internationalCallingCode",
+					"internationalNumber": "internationalNumber",
+					"isMobile": "isMobile",
+					"isPorted": "isPorted",
+					"isRoaming": "isRoaming",
+					"localNumber": "localNumber",
+					"location": "location",
+					"mcc": "mcc",
+					"mnc": "mnc",
+					"msin": "msin",
+					"numberType": "numberType",
+					"numberValid": "numberValid",
+					"originNetwork": "originNetwork",
+					"portedNetwork": "portedNetwork"
+				},
+				"hosts": [
+					"https://neutrinoapi.com"
+				],
+				"topics": [
+					"email",
+					"location",
+					"messaging",
+					"telecom",
+					"telephony",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "neutrinoapi-3-3-2",
+			"url_pattern": "/host-reputation",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://neutrinoapi.com"
+			],
+			"whitelist": [
+				"isListed",
+				"listCount",
+				"lists"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "neutrinoapi.com",
+				"description": "The general-purpose API",
+				"version": "3.3.2",
+				"slug": "neutrinoapi-3-3-2-host-reputation",
+				"schemes": [
+					"https"
+				],
+				"form_data": [
+					"host",
+					"output-case"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"isListed": "isListed",
+					"listCount": "listCount",
+					"lists": "lists"
+				},
+				"hosts": [
+					"https://neutrinoapi.com"
+				],
+				"topics": [
+					"email",
+					"location",
+					"messaging",
+					"security-and-networking",
+					"telecom",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "neutrinoapi-3-3-2",
+			"url_pattern": "/html-clean",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://neutrinoapi.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "neutrinoapi.com",
+				"description": "The general-purpose API",
+				"version": "3.3.2",
+				"slug": "neutrinoapi-3-3-2-html-clean",
+				"schemes": [
+					"https"
+				],
+				"form_data": [
+					"content",
+					"output-type"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://neutrinoapi.com"
+				],
+				"topics": [
+					"data-tools",
+					"email",
+					"location",
+					"messaging",
+					"telecom",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "neutrinoapi-3-3-2",
+			"url_pattern": "/html-extract-tags",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://neutrinoapi.com"
+			],
+			"whitelist": [
+				"total",
+				"values"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "neutrinoapi.com",
+				"description": "The general-purpose API",
+				"version": "3.3.2",
+				"slug": "neutrinoapi-3-3-2-html-extract-tags",
+				"schemes": [
+					"https"
+				],
+				"form_data": [
+					"attribute",
+					"base-url",
+					"content",
+					"output-case",
+					"tag"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"total": "total",
+					"values": "values"
+				},
+				"hosts": [
+					"https://neutrinoapi.com"
+				],
+				"topics": [
+					"data-tools",
+					"email",
+					"location",
+					"messaging",
+					"telecom",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "neutrinoapi-3-3-2",
+			"url_pattern": "/html5-render",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://neutrinoapi.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "neutrinoapi.com",
+				"description": "The general-purpose API",
+				"version": "3.3.2",
+				"slug": "neutrinoapi-3-3-2-html5-render",
+				"schemes": [
+					"https"
+				],
+				"form_data": [
+					"content",
+					"css",
+					"format",
+					"forms",
+					"grayscale",
+					"image-height",
+					"image-width",
+					"landscape",
+					"margin",
+					"margin-bottom",
+					"margin-left",
+					"margin-right",
+					"margin-top",
+					"media-print",
+					"media-queries",
+					"output-case",
+					"page-size",
+					"title",
+					"zoom"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://neutrinoapi.com"
+				],
+				"topics": [
+					"email",
+					"imaging",
+					"location",
+					"messaging",
+					"telecom",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "neutrinoapi-3-3-2",
+			"url_pattern": "/image-resize",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://neutrinoapi.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "neutrinoapi.com",
+				"description": "The general-purpose API",
+				"version": "3.3.2",
+				"slug": "neutrinoapi-3-3-2-image-resize",
+				"schemes": [
+					"https"
+				],
+				"form_data": [
+					"format",
+					"height",
+					"image-url",
+					"width"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://neutrinoapi.com"
+				],
+				"topics": [
+					"email",
+					"imaging",
+					"location",
+					"messaging",
+					"telecom",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "neutrinoapi-3-3-2",
+			"url_pattern": "/image-watermark",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://neutrinoapi.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "neutrinoapi.com",
+				"description": "The general-purpose API",
+				"version": "3.3.2",
+				"slug": "neutrinoapi-3-3-2-image-watermark",
+				"schemes": [
+					"https"
+				],
+				"form_data": [
+					"format",
+					"height",
+					"image-url",
+					"opacity",
+					"position",
+					"watermark-url",
+					"width"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://neutrinoapi.com"
+				],
+				"topics": [
+					"email",
+					"imaging",
+					"location",
+					"messaging",
+					"telecom",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "neutrinoapi-3-3-2",
+			"url_pattern": "/ip-blocklist",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://neutrinoapi.com"
+			],
+			"whitelist": [
+				"isBot",
+				"isDshield",
+				"isExploitBot",
+				"isHijacked",
+				"isListed",
+				"isMalware",
+				"isProxy",
+				"isSpamBot",
+				"isSpider",
+				"isSpyware",
+				"isTor",
+				"isVpn",
+				"lastSeen",
+				"listCount"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "neutrinoapi.com",
+				"description": "The general-purpose API",
+				"version": "3.3.2",
+				"slug": "neutrinoapi-3-3-2-ip-blocklist",
+				"schemes": [
+					"https"
+				],
+				"form_data": [
+					"ip",
+					"output-case"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"isBot": "isBot",
+					"isDshield": "isDshield",
+					"isExploitBot": "isExploitBot",
+					"isHijacked": "isHijacked",
+					"isListed": "isListed",
+					"isMalware": "isMalware",
+					"isProxy": "isProxy",
+					"isSpamBot": "isSpamBot",
+					"isSpider": "isSpider",
+					"isSpyware": "isSpyware",
+					"isTor": "isTor",
+					"isVpn": "isVpn",
+					"lastSeen": "lastSeen",
+					"listCount": "listCount"
+				},
+				"hosts": [
+					"https://neutrinoapi.com"
+				],
+				"topics": [
+					"email",
+					"location",
+					"messaging",
+					"security-and-networking",
+					"telecom",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "neutrinoapi-3-3-2",
+			"url_pattern": "/ip-info",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://neutrinoapi.com"
+			],
+			"whitelist": [
+				"city",
+				"country",
+				"countryCode",
+				"hostname",
+				"latitude",
+				"longitude",
+				"region",
+				"valid"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "neutrinoapi.com",
+				"description": "The general-purpose API",
+				"version": "3.3.2",
+				"slug": "neutrinoapi-3-3-2-ip-info",
+				"schemes": [
+					"https"
+				],
+				"form_data": [
+					"ip",
+					"output-case",
+					"reverse-lookup"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"city": "city",
+					"country": "country",
+					"countryCode": "countryCode",
+					"hostname": "hostname",
+					"latitude": "latitude",
+					"longitude": "longitude",
+					"region": "region",
+					"valid": "valid"
+				},
+				"hosts": [
+					"https://neutrinoapi.com"
+				],
+				"topics": [
+					"email",
+					"geolocation",
+					"location",
+					"messaging",
+					"telecom",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "neutrinoapi-3-3-2",
+			"url_pattern": "/ip-probe",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://neutrinoapi.com"
+			],
+			"whitelist": [
+				"city",
+				"country",
+				"country-code",
+				"hostname",
+				"ip",
+				"provider-description",
+				"provider-domain",
+				"provider-type",
+				"provider-website",
+				"region",
+				"valid"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "neutrinoapi.com",
+				"description": "The general-purpose API",
+				"version": "3.3.2",
+				"slug": "neutrinoapi-3-3-2-ip-probe",
+				"schemes": [
+					"https"
+				],
+				"form_data": [
+					"ip",
+					"output-case"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"city": "city",
+					"country": "country",
+					"country-code": "country-code",
+					"hostname": "hostname",
+					"ip": "ip",
+					"provider-description": "provider-description",
+					"provider-domain": "provider-domain",
+					"provider-type": "provider-type",
+					"provider-website": "provider-website",
+					"region": "region",
+					"valid": "valid"
+				},
+				"hosts": [
+					"https://neutrinoapi.com"
+				],
+				"topics": [
+					"email",
+					"location",
+					"messaging",
+					"security-and-networking",
+					"telecom",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "neutrinoapi-3-3-2",
+			"url_pattern": "/phone-playback",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://neutrinoapi.com"
+			],
+			"whitelist": [
+				"calling",
+				"number-valid"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "neutrinoapi.com",
+				"description": "The general-purpose API",
+				"version": "3.3.2",
+				"slug": "neutrinoapi-3-3-2-phone-playback",
+				"schemes": [
+					"https"
+				],
+				"form_data": [
+					"audio-url",
+					"number",
+					"output-case"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"calling": "calling",
+					"number-valid": "number-valid"
+				},
+				"hosts": [
+					"https://neutrinoapi.com"
+				],
+				"topics": [
+					"email",
+					"location",
+					"messaging",
+					"telecom",
+					"telephony",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "neutrinoapi-3-3-2",
+			"url_pattern": "/phone-validate",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://neutrinoapi.com"
+			],
+			"whitelist": [
+				"countryCode",
+				"internationalCallingCode",
+				"internationalNumber",
+				"isMobile",
+				"localNumber",
+				"location",
+				"valid"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "neutrinoapi.com",
+				"description": "The general-purpose API",
+				"version": "3.3.2",
+				"slug": "neutrinoapi-3-3-2-phone-validate",
+				"schemes": [
+					"https"
+				],
+				"form_data": [
+					"country-code",
+					"ip",
+					"number",
+					"output-case"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"countryCode": "countryCode",
+					"internationalCallingCode": "internationalCallingCode",
+					"internationalNumber": "internationalNumber",
+					"isMobile": "isMobile",
+					"localNumber": "localNumber",
+					"location": "location",
+					"valid": "valid"
+				},
+				"hosts": [
+					"https://neutrinoapi.com"
+				],
+				"topics": [
+					"data-tools",
+					"email",
+					"location",
+					"messaging",
+					"telecom",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "neutrinoapi-3-3-2",
+			"url_pattern": "/phone-verify",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://neutrinoapi.com"
+			],
+			"whitelist": [
+				"calling",
+				"numberValid",
+				"securityCode"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "neutrinoapi.com",
+				"description": "The general-purpose API",
+				"version": "3.3.2",
+				"slug": "neutrinoapi-3-3-2-phone-verify",
+				"schemes": [
+					"https"
+				],
+				"form_data": [
+					"code-length",
+					"country-code",
+					"language-code",
+					"number",
+					"output-case",
+					"playback-delay",
+					"security-code"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"calling": "calling",
+					"numberValid": "numberValid",
+					"securityCode": "securityCode"
+				},
+				"hosts": [
+					"https://neutrinoapi.com"
+				],
+				"topics": [
+					"email",
+					"location",
+					"messaging",
+					"telecom",
+					"telephony",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "neutrinoapi-3-3-2",
+			"url_pattern": "/qr-code",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://neutrinoapi.com"
+			],
+			"query_string_params": [
+				"width"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "neutrinoapi.com",
+				"description": "The general-purpose API",
+				"version": "3.3.2",
+				"slug": "neutrinoapi-3-3-2-qr-code",
+				"schemes": [
+					"https"
+				],
+				"form_data": [
+					"bg-color",
+					"content",
+					"fg-color",
+					"height"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"https://neutrinoapi.com"
+				],
+				"topics": [
+					"email",
+					"imaging",
+					"location",
+					"messaging",
+					"telecom",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "neutrinoapi-3-3-2",
+			"url_pattern": "/sms-verify",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://neutrinoapi.com"
+			],
+			"whitelist": [
+				"numberValid",
+				"securityCode",
+				"sent"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "neutrinoapi.com",
+				"description": "The general-purpose API",
+				"version": "3.3.2",
+				"slug": "neutrinoapi-3-3-2-sms-verify",
+				"schemes": [
+					"https"
+				],
+				"form_data": [
+					"code-length",
+					"country-code",
+					"language-code",
+					"number",
+					"output-case",
+					"security-code"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"numberValid": "numberValid",
+					"securityCode": "securityCode",
+					"sent": "sent"
+				},
+				"hosts": [
+					"https://neutrinoapi.com"
+				],
+				"topics": [
+					"email",
+					"location",
+					"messaging",
+					"telecom",
+					"telephony",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "neutrinoapi-3-3-2",
+			"url_pattern": "/url-info",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://neutrinoapi.com"
+			],
+			"whitelist": [
+				"content",
+				"contentEncoding",
+				"contentSize",
+				"contentType",
+				"httpOk",
+				"httpRedirect",
+				"httpStatus",
+				"httpStatusMessage",
+				"loadTime",
+				"query",
+				"query.additionalProperties",
+				"real",
+				"serverCity",
+				"serverCountry",
+				"serverCountryCode",
+				"serverHostname",
+				"serverIp",
+				"serverName",
+				"serverRegion",
+				"url",
+				"urlPath",
+				"urlPort",
+				"urlProtocol",
+				"valid"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "neutrinoapi.com",
+				"description": "The general-purpose API",
+				"version": "3.3.2",
+				"slug": "neutrinoapi-3-3-2-url-info",
+				"schemes": [
+					"https"
+				],
+				"form_data": [
+					"fetch-content",
+					"output-case",
+					"url"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"content": "content",
+					"contentEncoding": "contentEncoding",
+					"contentSize": "contentSize",
+					"contentType": "contentType",
+					"httpOk": "httpOk",
+					"httpRedirect": "httpRedirect",
+					"httpStatus": "httpStatus",
+					"httpStatusMessage": "httpStatusMessage",
+					"loadTime": "loadTime",
+					"query": "query",
+					"query.additionalProperties": "query.additionalProperties",
+					"real": "real",
+					"serverCity": "serverCity",
+					"serverCountry": "serverCountry",
+					"serverCountryCode": "serverCountryCode",
+					"serverHostname": "serverHostname",
+					"serverIp": "serverIp",
+					"serverName": "serverName",
+					"serverRegion": "serverRegion",
+					"url": "url",
+					"urlPath": "urlPath",
+					"urlPort": "urlPort",
+					"urlProtocol": "urlProtocol",
+					"valid": "valid"
+				},
+				"hosts": [
+					"https://neutrinoapi.com"
+				],
+				"topics": [
+					"email",
+					"location",
+					"messaging",
+					"security-and-networking",
+					"telecom",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "neutrinoapi-3-3-2",
+			"url_pattern": "/user-agent-info",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://neutrinoapi.com"
+			],
+			"whitelist": [
+				"browserName",
+				"isAndroid",
+				"isIos",
+				"isMobile",
+				"mobileBrand",
+				"mobileBrowser",
+				"mobileModel",
+				"mobileScreenHeight",
+				"mobileScreenWidth",
+				"operatingSystem",
+				"operatingSystemFamily",
+				"operatingSystemVersion",
+				"producer",
+				"version"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "neutrinoapi.com",
+				"description": "The general-purpose API",
+				"version": "3.3.2",
+				"slug": "neutrinoapi-3-3-2-user-agent-info",
+				"schemes": [
+					"https"
+				],
+				"form_data": [
+					"output-case",
+					"user-agent"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"browserName": "browserName",
+					"isAndroid": "isAndroid",
+					"isIos": "isIos",
+					"isMobile": "isMobile",
+					"mobileBrand": "mobileBrand",
+					"mobileBrowser": "mobileBrowser",
+					"mobileModel": "mobileModel",
+					"mobileScreenHeight": "mobileScreenHeight",
+					"mobileScreenWidth": "mobileScreenWidth",
+					"operatingSystem": "operatingSystem",
+					"operatingSystemFamily": "operatingSystemFamily",
+					"operatingSystemVersion": "operatingSystemVersion",
+					"producer": "producer",
+					"version": "version"
+				},
+				"hosts": [
+					"https://neutrinoapi.com"
+				],
+				"topics": [
+					"data-tools",
+					"email",
+					"location",
+					"messaging",
+					"telecom",
+					"text"
+				]
+			}
+		},
+		{
+			"group": "neutrinoapi-3-3-2",
+			"url_pattern": "/verify-security-code",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"https://neutrinoapi.com"
+			],
+			"whitelist": [
+				"verified"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "neutrinoapi.com",
+				"description": "The general-purpose API",
+				"version": "3.3.2",
+				"slug": "neutrinoapi-3-3-2-verify-security-code",
+				"schemes": [
+					"https"
+				],
+				"form_data": [
+					"output-case",
+					"security-code"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"verified": "verified"
+				},
+				"hosts": [
+					"https://neutrinoapi.com"
+				],
+				"topics": [
+					"email",
+					"location",
+					"messaging",
+					"telecom",
+					"telephony",
+					"text"
+				]
+			}
+		}
+	]
+}

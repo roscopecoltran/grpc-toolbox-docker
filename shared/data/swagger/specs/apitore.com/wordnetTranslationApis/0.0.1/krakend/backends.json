@@ -1,0 +1,51 @@
+{
+	"backends": [
+		{
+			"group": "wordnet-translation-apis-0-0-1",
+			"url_pattern": "/api/45/wordnet-simple/translation",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://api.apitore.com"
+			],
+			"whitelist": [
+				"endTime",
+				"entries",
+				"log",
+				"processTime",
+				"startTime",
+				"word"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "apitore.com",
+				"description": "Return translation words.\u003cBR /\u003e[Endpoint] https://api.apitore.com/api/45",
+				"version": "0.0.1",
+				"slug": "wordnet-translation-apis-0-0-1-api-45-wordnet-simple-translation",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"endTime": "endTime",
+					"entries": "entries",
+					"log": "log",
+					"processTime": "processTime",
+					"startTime": "startTime",
+					"word": "word"
+				},
+				"hosts": [
+					"https://api.apitore.com"
+				],
+				"topics": [
+					"text"
+				]
+			}
+		}
+	]
+}

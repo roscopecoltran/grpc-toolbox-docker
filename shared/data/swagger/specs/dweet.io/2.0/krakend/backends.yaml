@@ -1,0 +1,346 @@
+backends:
+- group: dweet-io-2-0
+  url_pattern: /alert/{who}/when/{thing}/{condition}
+  method: GET
+  host:
+  - https://dweet.io
+  url_keys:
+  - condition
+  - thing
+  - who
+  query_string_params:
+  - key
+  concurrent_calls: 1
+  extra_config:
+    provider: dweet.io
+    description: Dweet.io allows users to share data from mobile, tablets, and pcs,
+      and them to other devices and accounts across social media platforms. Dweet.io
+      provides an API to access the different functionality of the Dweet.io service.
+      Users can make REST calls to read and create dweets, lock and unlock things,
+      and perform other calls. The API returns JSON and JSONP.
+    version: "2.0"
+    slug: dweet-io-2-0-alert-who-when-thing-condition
+    schemes:
+    - https
+    hosts:
+    - https://dweet.io
+    topics:
+    - alerts
+    - iot
+- group: dweet-io-2-0
+  url_pattern: /dweet/for/{thing}
+  method: POST
+  host:
+  - https://dweet.io
+  url_keys:
+  - thing
+  query_string_params:
+  - key
+  concurrent_calls: 1
+  extra_config:
+    provider: dweet.io
+    description: Dweet.io allows users to share data from mobile, tablets, and pcs,
+      and them to other devices and accounts across social media platforms. Dweet.io
+      provides an API to access the different functionality of the Dweet.io service.
+      Users can make REST calls to read and create dweets, lock and unlock things,
+      and perform other calls. The API returns JSON and JSONP.
+    version: "2.0"
+    slug: dweet-io-2-0-dweet-for-thing
+    schemes:
+    - https
+    hosts:
+    - https://dweet.io
+    topics:
+    - dweets
+    - iot
+- group: dweet-io-2-0
+  url_pattern: /dweet/quietly/for/{thing}
+  method: POST
+  host:
+  - https://dweet.io
+  url_keys:
+  - thing
+  query_string_params:
+  - key
+  concurrent_calls: 1
+  extra_config:
+    provider: dweet.io
+    description: Dweet.io allows users to share data from mobile, tablets, and pcs,
+      and them to other devices and accounts across social media platforms. Dweet.io
+      provides an API to access the different functionality of the Dweet.io service.
+      Users can make REST calls to read and create dweets, lock and unlock things,
+      and perform other calls. The API returns JSON and JSONP.
+    version: "2.0"
+    slug: dweet-io-2-0-dweet-quietly-for-thing
+    schemes:
+    - https
+    hosts:
+    - https://dweet.io
+    topics:
+    - dweets
+    - iot
+- group: dweet-io-2-0
+  url_pattern: /get/alert/for/{thing}
+  method: GET
+  host:
+  - https://dweet.io
+  url_keys:
+  - thing
+  query_string_params:
+  - key
+  concurrent_calls: 1
+  extra_config:
+    provider: dweet.io
+    description: Dweet.io allows users to share data from mobile, tablets, and pcs,
+      and them to other devices and accounts across social media platforms. Dweet.io
+      provides an API to access the different functionality of the Dweet.io service.
+      Users can make REST calls to read and create dweets, lock and unlock things,
+      and perform other calls. The API returns JSON and JSONP.
+    version: "2.0"
+    slug: dweet-io-2-0-get-alert-for-thing
+    schemes:
+    - https
+    hosts:
+    - https://dweet.io
+    topics:
+    - alerts
+    - iot
+- group: dweet-io-2-0
+  url_pattern: /get/dweets/for/{thing}
+  method: GET
+  host:
+  - https://dweet.io
+  url_keys:
+  - thing
+  query_string_params:
+  - key
+  concurrent_calls: 1
+  extra_config:
+    provider: dweet.io
+    description: Dweet.io allows users to share data from mobile, tablets, and pcs,
+      and them to other devices and accounts across social media platforms. Dweet.io
+      provides an API to access the different functionality of the Dweet.io service.
+      Users can make REST calls to read and create dweets, lock and unlock things,
+      and perform other calls. The API returns JSON and JSONP.
+    version: "2.0"
+    slug: dweet-io-2-0-get-dweets-for-thing
+    schemes:
+    - https
+    hosts:
+    - https://dweet.io
+    topics:
+    - dweets
+    - iot
+- group: dweet-io-2-0
+  url_pattern: /get/latest/dweet/for/{thing}
+  method: GET
+  host:
+  - https://dweet.io
+  url_keys:
+  - thing
+  query_string_params:
+  - key
+  concurrent_calls: 1
+  extra_config:
+    provider: dweet.io
+    description: Dweet.io allows users to share data from mobile, tablets, and pcs,
+      and them to other devices and accounts across social media platforms. Dweet.io
+      provides an API to access the different functionality of the Dweet.io service.
+      Users can make REST calls to read and create dweets, lock and unlock things,
+      and perform other calls. The API returns JSON and JSONP.
+    version: "2.0"
+    slug: dweet-io-2-0-get-latest-dweet-for-thing
+    schemes:
+    - https
+    hosts:
+    - https://dweet.io
+    topics:
+    - dweets
+    - iot
+- group: dweet-io-2-0
+  url_pattern: /get/stored/alerts/for/{thing}
+  method: GET
+  host:
+  - https://dweet.io
+  url_keys:
+  - thing
+  query_string_params:
+  - date
+  - hour
+  - key
+  - responseType
+  concurrent_calls: 1
+  extra_config:
+    provider: dweet.io
+    description: Dweet.io allows users to share data from mobile, tablets, and pcs,
+      and them to other devices and accounts across social media platforms. Dweet.io
+      provides an API to access the different functionality of the Dweet.io service.
+      Users can make REST calls to read and create dweets, lock and unlock things,
+      and perform other calls. The API returns JSON and JSONP.
+    version: "2.0"
+    slug: dweet-io-2-0-get-stored-alerts-for-thing
+    schemes:
+    - https
+    hosts:
+    - https://dweet.io
+    topics:
+    - iot
+    - storage
+- group: dweet-io-2-0
+  url_pattern: /get/stored/dweets/for/{thing}
+  method: GET
+  host:
+  - https://dweet.io
+  url_keys:
+  - thing
+  query_string_params:
+  - date
+  - hour
+  - key
+  - responseType
+  concurrent_calls: 1
+  extra_config:
+    provider: dweet.io
+    description: Dweet.io allows users to share data from mobile, tablets, and pcs,
+      and them to other devices and accounts across social media platforms. Dweet.io
+      provides an API to access the different functionality of the Dweet.io service.
+      Users can make REST calls to read and create dweets, lock and unlock things,
+      and perform other calls. The API returns JSON and JSONP.
+    version: "2.0"
+    slug: dweet-io-2-0-get-stored-dweets-for-thing
+    schemes:
+    - https
+    hosts:
+    - https://dweet.io
+    topics:
+    - iot
+    - storage
+- group: dweet-io-2-0
+  url_pattern: /listen/for/dweets/from/{thing}
+  method: GET
+  host:
+  - https://dweet.io
+  url_keys:
+  - thing
+  concurrent_calls: 1
+  extra_config:
+    provider: dweet.io
+    description: Dweet.io allows users to share data from mobile, tablets, and pcs,
+      and them to other devices and accounts across social media platforms. Dweet.io
+      provides an API to access the different functionality of the Dweet.io service.
+      Users can make REST calls to read and create dweets, lock and unlock things,
+      and perform other calls. The API returns JSON and JSONP.
+    version: "2.0"
+    slug: dweet-io-2-0-listen-for-dweets-from-thing
+    schemes:
+    - https
+    hosts:
+    - https://dweet.io
+    topics:
+    - dweets
+    - iot
+- group: dweet-io-2-0
+  url_pattern: /lock/{thing}
+  method: GET
+  host:
+  - https://dweet.io
+  url_keys:
+  - thing
+  query_string_params:
+  - key
+  - lock
+  concurrent_calls: 1
+  extra_config:
+    provider: dweet.io
+    description: Dweet.io allows users to share data from mobile, tablets, and pcs,
+      and them to other devices and accounts across social media platforms. Dweet.io
+      provides an API to access the different functionality of the Dweet.io service.
+      Users can make REST calls to read and create dweets, lock and unlock things,
+      and perform other calls. The API returns JSON and JSONP.
+    version: "2.0"
+    slug: dweet-io-2-0-lock-thing
+    schemes:
+    - https
+    hosts:
+    - https://dweet.io
+    topics:
+    - iot
+    - locks
+- group: dweet-io-2-0
+  url_pattern: /remove/alert/for/{thing}
+  method: GET
+  host:
+  - https://dweet.io
+  url_keys:
+  - thing
+  query_string_params:
+  - key
+  concurrent_calls: 1
+  extra_config:
+    provider: dweet.io
+    description: Dweet.io allows users to share data from mobile, tablets, and pcs,
+      and them to other devices and accounts across social media platforms. Dweet.io
+      provides an API to access the different functionality of the Dweet.io service.
+      Users can make REST calls to read and create dweets, lock and unlock things,
+      and perform other calls. The API returns JSON and JSONP.
+    version: "2.0"
+    slug: dweet-io-2-0-remove-alert-for-thing
+    schemes:
+    - https
+    hosts:
+    - https://dweet.io
+    topics:
+    - alerts
+    - iot
+- group: dweet-io-2-0
+  url_pattern: /remove/lock/{lock}
+  method: GET
+  host:
+  - https://dweet.io
+  url_keys:
+  - lock
+  query_string_params:
+  - key
+  concurrent_calls: 1
+  extra_config:
+    provider: dweet.io
+    description: Dweet.io allows users to share data from mobile, tablets, and pcs,
+      and them to other devices and accounts across social media platforms. Dweet.io
+      provides an API to access the different functionality of the Dweet.io service.
+      Users can make REST calls to read and create dweets, lock and unlock things,
+      and perform other calls. The API returns JSON and JSONP.
+    version: "2.0"
+    slug: dweet-io-2-0-remove-lock-lock
+    schemes:
+    - https
+    hosts:
+    - https://dweet.io
+    topics:
+    - iot
+    - locks
+- group: dweet-io-2-0
+  url_pattern: /unlock/{thing}
+  method: GET
+  host:
+  - https://dweet.io
+  url_keys:
+  - thing
+  query_string_params:
+  - key
+  concurrent_calls: 1
+  extra_config:
+    provider: dweet.io
+    description: Dweet.io allows users to share data from mobile, tablets, and pcs,
+      and them to other devices and accounts across social media platforms. Dweet.io
+      provides an API to access the different functionality of the Dweet.io service.
+      Users can make REST calls to read and create dweets, lock and unlock things,
+      and perform other calls. The API returns JSON and JSONP.
+    version: "2.0"
+    slug: dweet-io-2-0-unlock-thing
+    schemes:
+    - https
+    hosts:
+    - https://dweet.io
+    topics:
+    - iot
+    - locks

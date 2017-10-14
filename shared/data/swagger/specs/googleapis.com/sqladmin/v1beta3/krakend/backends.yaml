@@ -1,0 +1,471 @@
+backends:
+- group: cloud-sql-administration-v1beta3
+  url_pattern: /sql/v1beta3/flags
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - items
+  - kind
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Creates and configures Cloud SQL instances, which provide fully-managed
+      MySQL databases.
+    version: v1beta3
+    slug: cloud-sql-administration-v1beta3-sql-v1beta3-flags
+    schemes:
+    - https
+    mapping:
+      items: items
+      kind: kind
+    hosts:
+    - https://www.googleapis.com
+- group: cloud-sql-administration-v1beta3
+  url_pattern: /sql/v1beta3/projects/{project}/instances
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - items
+  - kind
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Creates and configures Cloud SQL instances, which provide fully-managed
+      MySQL databases.
+    version: v1beta3
+    slug: cloud-sql-administration-v1beta3-sql-v1beta3-projects-project-instances
+    schemes:
+    - https
+    mapping:
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+    hosts:
+    - https://www.googleapis.com
+- group: cloud-sql-administration-v1beta3
+  url_pattern: /sql/v1beta3/projects/{project}/instances/clone
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - kind
+  - operation
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Creates and configures Cloud SQL instances, which provide fully-managed
+      MySQL databases.
+    version: v1beta3
+    slug: cloud-sql-administration-v1beta3-sql-v1beta3-projects-project-instances-clone
+    schemes:
+    - https
+    mapping:
+      kind: kind
+      operation: operation
+    hosts:
+    - https://www.googleapis.com
+- group: cloud-sql-administration-v1beta3
+  url_pattern: /sql/v1beta3/projects/{project}/instances/{instance}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - connectionName
+  - currentDiskSize
+  - databaseVersion
+  - etag
+  - instance
+  - instanceType
+  - ipAddresses
+  - ipv6Address
+  - kind
+  - masterInstanceName
+  - maxDiskSize
+  - project
+  - region
+  - replicaNames
+  - serviceAccountEmailAddress
+  - state
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Creates and configures Cloud SQL instances, which provide fully-managed
+      MySQL databases.
+    version: v1beta3
+    slug: cloud-sql-administration-v1beta3-sql-v1beta3-projects-project-instances-instance
+    schemes:
+    - https
+    mapping:
+      connectionName: connectionName
+      currentDiskSize: currentDiskSize
+      databaseVersion: databaseVersion
+      etag: etag
+      instance: instance
+      instanceType: instanceType
+      ipAddresses: ipAddresses
+      ipv6Address: ipv6Address
+      kind: kind
+      masterInstanceName: masterInstanceName
+      maxDiskSize: maxDiskSize
+      project: project
+      region: region
+      replicaNames: replicaNames
+      serviceAccountEmailAddress: serviceAccountEmailAddress
+      state: state
+    hosts:
+    - https://www.googleapis.com
+- group: cloud-sql-administration-v1beta3
+  url_pattern: /sql/v1beta3/projects/{project}/instances/{instance}/backupRuns
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - items
+  - kind
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Creates and configures Cloud SQL instances, which provide fully-managed
+      MySQL databases.
+    version: v1beta3
+    slug: cloud-sql-administration-v1beta3-sql-v1beta3-projects-project-instances-instance-backupruns
+    schemes:
+    - https
+    mapping:
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+    hosts:
+    - https://www.googleapis.com
+- group: cloud-sql-administration-v1beta3
+  url_pattern: /sql/v1beta3/projects/{project}/instances/{instance}/backupRuns/{backupConfiguration}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - backupConfiguration
+  - dueTime
+  - endTime
+  - enqueuedTime
+  - instance
+  - kind
+  - startTime
+  - status
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Creates and configures Cloud SQL instances, which provide fully-managed
+      MySQL databases.
+    version: v1beta3
+    slug: cloud-sql-administration-v1beta3-sql-v1beta3-projects-project-instances-instance-backupruns-backupconfiguration
+    schemes:
+    - https
+    mapping:
+      backupConfiguration: backupConfiguration
+      dueTime: dueTime
+      endTime: endTime
+      enqueuedTime: enqueuedTime
+      instance: instance
+      kind: kind
+      startTime: startTime
+      status: status
+    hosts:
+    - https://www.googleapis.com
+- group: cloud-sql-administration-v1beta3
+  url_pattern: /sql/v1beta3/projects/{project}/instances/{instance}/export
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - kind
+  - operation
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Creates and configures Cloud SQL instances, which provide fully-managed
+      MySQL databases.
+    version: v1beta3
+    slug: cloud-sql-administration-v1beta3-sql-v1beta3-projects-project-instances-instance-export
+    schemes:
+    - https
+    mapping:
+      kind: kind
+      operation: operation
+    hosts:
+    - https://www.googleapis.com
+- group: cloud-sql-administration-v1beta3
+  url_pattern: /sql/v1beta3/projects/{project}/instances/{instance}/import
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - kind
+  - operation
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Creates and configures Cloud SQL instances, which provide fully-managed
+      MySQL databases.
+    version: v1beta3
+    slug: cloud-sql-administration-v1beta3-sql-v1beta3-projects-project-instances-instance-import
+    schemes:
+    - https
+    mapping:
+      kind: kind
+      operation: operation
+    hosts:
+    - https://www.googleapis.com
+- group: cloud-sql-administration-v1beta3
+  url_pattern: /sql/v1beta3/projects/{project}/instances/{instance}/operations
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - items
+  - kind
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Creates and configures Cloud SQL instances, which provide fully-managed
+      MySQL databases.
+    version: v1beta3
+    slug: cloud-sql-administration-v1beta3-sql-v1beta3-projects-project-instances-instance-operations
+    schemes:
+    - https
+    mapping:
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+    hosts:
+    - https://www.googleapis.com
+- group: cloud-sql-administration-v1beta3
+  url_pattern: /sql/v1beta3/projects/{project}/instances/{instance}/operations/{operation}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - endTime
+  - enqueuedTime
+  - error
+  - instance
+  - kind
+  - operation
+  - operationType
+  - startTime
+  - state
+  - userEmailAddress
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Creates and configures Cloud SQL instances, which provide fully-managed
+      MySQL databases.
+    version: v1beta3
+    slug: cloud-sql-administration-v1beta3-sql-v1beta3-projects-project-instances-instance-operations-operation
+    schemes:
+    - https
+    mapping:
+      endTime: endTime
+      enqueuedTime: enqueuedTime
+      error: error
+      instance: instance
+      kind: kind
+      operation: operation
+      operationType: operationType
+      startTime: startTime
+      state: state
+      userEmailAddress: userEmailAddress
+    hosts:
+    - https://www.googleapis.com
+- group: cloud-sql-administration-v1beta3
+  url_pattern: /sql/v1beta3/projects/{project}/instances/{instance}/promoteReplica
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - kind
+  - operation
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Creates and configures Cloud SQL instances, which provide fully-managed
+      MySQL databases.
+    version: v1beta3
+    slug: cloud-sql-administration-v1beta3-sql-v1beta3-projects-project-instances-instance-promotereplica
+    schemes:
+    - https
+    mapping:
+      kind: kind
+      operation: operation
+    hosts:
+    - https://www.googleapis.com
+- group: cloud-sql-administration-v1beta3
+  url_pattern: /sql/v1beta3/projects/{project}/instances/{instance}/resetSslConfig
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - kind
+  - operation
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Creates and configures Cloud SQL instances, which provide fully-managed
+      MySQL databases.
+    version: v1beta3
+    slug: cloud-sql-administration-v1beta3-sql-v1beta3-projects-project-instances-instance-resetsslconfig
+    schemes:
+    - https
+    mapping:
+      kind: kind
+      operation: operation
+    hosts:
+    - https://www.googleapis.com
+- group: cloud-sql-administration-v1beta3
+  url_pattern: /sql/v1beta3/projects/{project}/instances/{instance}/restart
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - kind
+  - operation
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Creates and configures Cloud SQL instances, which provide fully-managed
+      MySQL databases.
+    version: v1beta3
+    slug: cloud-sql-administration-v1beta3-sql-v1beta3-projects-project-instances-instance-restart
+    schemes:
+    - https
+    mapping:
+      kind: kind
+      operation: operation
+    hosts:
+    - https://www.googleapis.com
+- group: cloud-sql-administration-v1beta3
+  url_pattern: /sql/v1beta3/projects/{project}/instances/{instance}/restoreBackup
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - kind
+  - operation
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Creates and configures Cloud SQL instances, which provide fully-managed
+      MySQL databases.
+    version: v1beta3
+    slug: cloud-sql-administration-v1beta3-sql-v1beta3-projects-project-instances-instance-restorebackup
+    schemes:
+    - https
+    mapping:
+      kind: kind
+      operation: operation
+    hosts:
+    - https://www.googleapis.com
+- group: cloud-sql-administration-v1beta3
+  url_pattern: /sql/v1beta3/projects/{project}/instances/{instance}/setRootPassword
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - kind
+  - operation
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Creates and configures Cloud SQL instances, which provide fully-managed
+      MySQL databases.
+    version: v1beta3
+    slug: cloud-sql-administration-v1beta3-sql-v1beta3-projects-project-instances-instance-setrootpassword
+    schemes:
+    - https
+    mapping:
+      kind: kind
+      operation: operation
+    hosts:
+    - https://www.googleapis.com
+- group: cloud-sql-administration-v1beta3
+  url_pattern: /sql/v1beta3/projects/{project}/instances/{instance}/sslCerts
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - items
+  - kind
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Creates and configures Cloud SQL instances, which provide fully-managed
+      MySQL databases.
+    version: v1beta3
+    slug: cloud-sql-administration-v1beta3-sql-v1beta3-projects-project-instances-instance-sslcerts
+    schemes:
+    - https
+    mapping:
+      items: items
+      kind: kind
+    hosts:
+    - https://www.googleapis.com
+- group: cloud-sql-administration-v1beta3
+  url_pattern: /sql/v1beta3/projects/{project}/instances/{instance}/sslCerts/{sha1Fingerprint}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - cert
+  - certSerialNumber
+  - commonName
+  - createTime
+  - expirationTime
+  - instance
+  - kind
+  - sha1Fingerprint
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Creates and configures Cloud SQL instances, which provide fully-managed
+      MySQL databases.
+    version: v1beta3
+    slug: cloud-sql-administration-v1beta3-sql-v1beta3-projects-project-instances-instance-sslcerts-sha1fingerprint
+    schemes:
+    - https
+    mapping:
+      cert: cert
+      certSerialNumber: certSerialNumber
+      commonName: commonName
+      createTime: createTime
+      expirationTime: expirationTime
+      instance: instance
+      kind: kind
+      sha1Fingerprint: sha1Fingerprint
+    hosts:
+    - https://www.googleapis.com
+- group: cloud-sql-administration-v1beta3
+  url_pattern: /sql/v1beta3/projects/{project}/tiers
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - items
+  - kind
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Creates and configures Cloud SQL instances, which provide fully-managed
+      MySQL databases.
+    version: v1beta3
+    slug: cloud-sql-administration-v1beta3-sql-v1beta3-projects-project-tiers
+    schemes:
+    - https
+    mapping:
+      items: items
+      kind: kind
+    hosts:
+    - https://www.googleapis.com

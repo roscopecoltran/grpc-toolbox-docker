@@ -1,0 +1,253 @@
+[[backends]]
+  group = "google-partners-v2"
+  url_pattern = "/v2/analytics"
+  method = "GET"
+  host = ["https://partners.googleapis.com"]
+  query_string_params = ["pageSize", "pageToken", "requestMetadata.experimentIds", "requestMetadata.locale", "requestMetadata.partnersSessionId", "requestMetadata.trafficSource.trafficSourceId", "requestMetadata.trafficSource.trafficSubId", "requestMetadata.userOverrides.ipAddress", "requestMetadata.userOverrides.userId"]
+  whitelist = ["analytics", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Searches certified companies and creates contact leads with them, and also audits the usage of clients."
+    version = "v2"
+    slug = "google-partners-v2-v2-analytics"
+    schemes = ["https"]
+    hosts = ["https://partners.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      analytics = "analytics"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "google-partners-v2"
+  url_pattern = "/v2/clientMessages:log"
+  method = "POST"
+  host = ["https://partners.googleapis.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Searches certified companies and creates contact leads with them, and also audits the usage of clients."
+    version = "v2"
+    slug = "google-partners-v2-v2-clientmessages-log"
+    schemes = ["https"]
+    hosts = ["https://partners.googleapis.com"]
+    topics = ["clientmessages"]
+
+[[backends]]
+  group = "google-partners-v2"
+  url_pattern = "/v2/companies"
+  method = "GET"
+  host = ["https://partners.googleapis.com"]
+  query_string_params = ["address", "companyName", "gpsMotivations", "industries", "languageCodes", "maxMonthlyBudget.currencyCode", "maxMonthlyBudget.nanos", "maxMonthlyBudget.units", "minMonthlyBudget.currencyCode", "minMonthlyBudget.nanos", "minMonthlyBudget.units", "orderBy", "pageSize", "pageToken", "requestMetadata.experimentIds", "requestMetadata.locale", "requestMetadata.partnersSessionId", "requestMetadata.trafficSource.trafficSourceId", "requestMetadata.trafficSource.trafficSubId", "requestMetadata.userOverrides.ipAddress", "requestMetadata.userOverrides.userId", "services", "specializations", "view", "websiteUrl"]
+  whitelist = ["companies", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Searches certified companies and creates contact leads with them, and also audits the usage of clients."
+    version = "v2"
+    slug = "google-partners-v2-v2-companies"
+    schemes = ["https"]
+    hosts = ["https://partners.googleapis.com"]
+    topics = ["companies"]
+    [backends.extra_config.mapping]
+      companies = "companies"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "google-partners-v2"
+  url_pattern = "/v2/companies/{companyId}"
+  method = "GET"
+  host = ["https://partners.googleapis.com"]
+  url_keys = ["companyId"]
+  query_string_params = ["address", "currencyCode", "orderBy", "requestMetadata.experimentIds", "requestMetadata.locale", "requestMetadata.partnersSessionId", "requestMetadata.trafficSource.trafficSourceId", "requestMetadata.trafficSource.trafficSubId", "requestMetadata.userOverrides.ipAddress", "requestMetadata.userOverrides.userId", "view"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Searches certified companies and creates contact leads with them, and also audits the usage of clients."
+    version = "v2"
+    slug = "google-partners-v2-v2-companies-companyid"
+    schemes = ["https"]
+    hosts = ["https://partners.googleapis.com"]
+    topics = ["companies"]
+
+[[backends]]
+  group = "google-partners-v2"
+  url_pattern = "/v2/companies/{companyId}/leads"
+  method = "POST"
+  host = ["https://partners.googleapis.com"]
+  url_keys = ["companyId"]
+  whitelist = ["recaptchaStatus"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Searches certified companies and creates contact leads with them, and also audits the usage of clients."
+    version = "v2"
+    slug = "google-partners-v2-v2-companies-companyid-leads"
+    schemes = ["https"]
+    hosts = ["https://partners.googleapis.com"]
+    topics = ["companies"]
+    [backends.extra_config.mapping]
+      recaptchaStatus = "recaptchaStatus"
+
+[[backends]]
+  group = "google-partners-v2"
+  url_pattern = "/v2/exams/{examType}/token"
+  method = "GET"
+  host = ["https://partners.googleapis.com"]
+  url_keys = ["examType"]
+  query_string_params = ["requestMetadata.experimentIds", "requestMetadata.locale", "requestMetadata.partnersSessionId", "requestMetadata.trafficSource.trafficSourceId", "requestMetadata.trafficSource.trafficSubId", "requestMetadata.userOverrides.ipAddress", "requestMetadata.userOverrides.userId"]
+  whitelist = ["examId", "examType", "token"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Searches certified companies and creates contact leads with them, and also audits the usage of clients."
+    version = "v2"
+    slug = "google-partners-v2-v2-exams-examtype-token"
+    schemes = ["https"]
+    hosts = ["https://partners.googleapis.com"]
+    topics = ["exams"]
+    [backends.extra_config.mapping]
+      examId = "examId"
+      examType = "examType"
+      token = "token"
+
+[[backends]]
+  group = "google-partners-v2"
+  url_pattern = "/v2/leads"
+  method = "GET"
+  host = ["https://partners.googleapis.com"]
+  query_string_params = ["orderBy", "pageSize", "pageToken", "requestMetadata.experimentIds", "requestMetadata.locale", "requestMetadata.partnersSessionId", "requestMetadata.trafficSource.trafficSourceId", "requestMetadata.trafficSource.trafficSubId", "requestMetadata.userOverrides.ipAddress", "requestMetadata.userOverrides.userId"]
+  whitelist = ["leads", "nextPageToken", "totalSize"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Searches certified companies and creates contact leads with them, and also audits the usage of clients."
+    version = "v2"
+    slug = "google-partners-v2-v2-leads"
+    schemes = ["https"]
+    hosts = ["https://partners.googleapis.com"]
+    topics = ["leads"]
+    [backends.extra_config.mapping]
+      leads = "leads"
+      nextPageToken = "nextPageToken"
+      totalSize = "totalSize"
+
+[[backends]]
+  group = "google-partners-v2"
+  url_pattern = "/v2/offers"
+  method = "GET"
+  host = ["https://partners.googleapis.com"]
+  query_string_params = ["requestMetadata.experimentIds", "requestMetadata.locale", "requestMetadata.partnersSessionId", "requestMetadata.trafficSource.trafficSourceId", "requestMetadata.trafficSource.trafficSubId", "requestMetadata.userOverrides.ipAddress", "requestMetadata.userOverrides.userId"]
+  whitelist = ["availableOffers", "noOfferReason"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Searches certified companies and creates contact leads with them, and also audits the usage of clients."
+    version = "v2"
+    slug = "google-partners-v2-v2-offers"
+    schemes = ["https"]
+    hosts = ["https://partners.googleapis.com"]
+    topics = ["offers"]
+    [backends.extra_config.mapping]
+      availableOffers = "availableOffers"
+      noOfferReason = "noOfferReason"
+
+[[backends]]
+  group = "google-partners-v2"
+  url_pattern = "/v2/offers/history"
+  method = "GET"
+  host = ["https://partners.googleapis.com"]
+  query_string_params = ["entireCompany", "orderBy", "pageSize", "pageToken", "requestMetadata.experimentIds", "requestMetadata.locale", "requestMetadata.partnersSessionId", "requestMetadata.trafficSource.trafficSourceId", "requestMetadata.trafficSource.trafficSubId", "requestMetadata.userOverrides.ipAddress", "requestMetadata.userOverrides.userId"]
+  whitelist = ["canShowEntireCompany", "nextPageToken", "offers", "showingEntireCompany", "totalResults"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Searches certified companies and creates contact leads with them, and also audits the usage of clients."
+    version = "v2"
+    slug = "google-partners-v2-v2-offers-history"
+    schemes = ["https"]
+    hosts = ["https://partners.googleapis.com"]
+    topics = ["offers"]
+    [backends.extra_config.mapping]
+      canShowEntireCompany = "canShowEntireCompany"
+      nextPageToken = "nextPageToken"
+      offers = "offers"
+      showingEntireCompany = "showingEntireCompany"
+      totalResults = "totalResults"
+
+[[backends]]
+  group = "google-partners-v2"
+  url_pattern = "/v2/partnersstatus"
+  method = "GET"
+  host = ["https://partners.googleapis.com"]
+  query_string_params = ["requestMetadata.experimentIds", "requestMetadata.locale", "requestMetadata.partnersSessionId", "requestMetadata.trafficSource.trafficSourceId", "requestMetadata.trafficSource.trafficSubId", "requestMetadata.userOverrides.ipAddress", "requestMetadata.userOverrides.userId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Searches certified companies and creates contact leads with them, and also audits the usage of clients."
+    version = "v2"
+    slug = "google-partners-v2-v2-partnersstatus"
+    schemes = ["https"]
+    hosts = ["https://partners.googleapis.com"]
+    topics = ["v2"]
+
+[[backends]]
+  group = "google-partners-v2"
+  url_pattern = "/v2/userEvents:log"
+  method = "POST"
+  host = ["https://partners.googleapis.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Searches certified companies and creates contact leads with them, and also audits the usage of clients."
+    version = "v2"
+    slug = "google-partners-v2-v2-userevents-log"
+    schemes = ["https"]
+    hosts = ["https://partners.googleapis.com"]
+    topics = ["userevents"]
+
+[[backends]]
+  group = "google-partners-v2"
+  url_pattern = "/v2/userStates"
+  method = "GET"
+  host = ["https://partners.googleapis.com"]
+  query_string_params = ["requestMetadata.experimentIds", "requestMetadata.locale", "requestMetadata.partnersSessionId", "requestMetadata.trafficSource.trafficSourceId", "requestMetadata.trafficSource.trafficSubId", "requestMetadata.userOverrides.ipAddress", "requestMetadata.userOverrides.userId"]
+  whitelist = ["userStates"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Searches certified companies and creates contact leads with them, and also audits the usage of clients."
+    version = "v2"
+    slug = "google-partners-v2-v2-userstates"
+    schemes = ["https"]
+    hosts = ["https://partners.googleapis.com"]
+    topics = ["userstates"]
+    [backends.extra_config.mapping]
+      userStates = "userStates"
+
+[[backends]]
+  group = "google-partners-v2"
+  url_pattern = "/v2/users/{userId}"
+  method = "GET"
+  host = ["https://partners.googleapis.com"]
+  url_keys = ["userId"]
+  query_string_params = ["requestMetadata.experimentIds", "requestMetadata.locale", "requestMetadata.partnersSessionId", "requestMetadata.trafficSource.trafficSourceId", "requestMetadata.trafficSource.trafficSubId", "requestMetadata.userOverrides.ipAddress", "requestMetadata.userOverrides.userId", "userView"]
+  whitelist = ["availableAdwordsManagerAccounts", "certificationStatus", "companyVerificationEmail", "examStatus", "id", "internalId", "lastAccessTime", "primaryEmails"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Searches certified companies and creates contact leads with them, and also audits the usage of clients."
+    version = "v2"
+    slug = "google-partners-v2-v2-users-userid"
+    schemes = ["https"]
+    hosts = ["https://partners.googleapis.com"]
+    topics = ["users"]
+    [backends.extra_config.mapping]
+      availableAdwordsManagerAccounts = "availableAdwordsManagerAccounts"
+      certificationStatus = "certificationStatus"
+      companyVerificationEmail = "companyVerificationEmail"
+      examStatus = "examStatus"
+      id = "id"
+      internalId = "internalId"
+      lastAccessTime = "lastAccessTime"
+      primaryEmails = "primaryEmails"

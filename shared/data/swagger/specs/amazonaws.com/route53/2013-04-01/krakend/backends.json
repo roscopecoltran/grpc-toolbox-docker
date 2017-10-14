@@ -1,0 +1,1187 @@
+{
+	"backends": [
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/change/{Id}",
+			"method": "GET",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"url_keys": [
+				"Id"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-change-id",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/checkeripranges",
+			"method": "GET",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-checkeripranges",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/delegationset",
+			"method": "GET",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-delegationset",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/delegationset/{Id}",
+			"method": "GET",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"url_keys": [
+				"Id"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-delegationset-id",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/geolocation",
+			"method": "GET",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-geolocation",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/geolocations",
+			"method": "GET",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-geolocations",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/healthcheck",
+			"method": "GET",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"query_string_params": [
+				"Marker",
+				"MaxItems"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-healthcheck",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/healthcheck/{HealthCheckId}",
+			"method": "POST",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"url_keys": [
+				"HealthCheckId"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-healthcheck-healthcheckid",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/healthcheck/{HealthCheckId}/lastfailurereason",
+			"method": "GET",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"url_keys": [
+				"HealthCheckId"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-healthcheck-healthcheckid-lastfailurereason",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/healthcheck/{HealthCheckId}/status",
+			"method": "GET",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"url_keys": [
+				"HealthCheckId"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-healthcheck-healthcheckid-status",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/healthcheckcount",
+			"method": "GET",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-healthcheckcount",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/hostedzone",
+			"method": "GET",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"query_string_params": [
+				"Marker",
+				"MaxItems"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-hostedzone",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/hostedzone/{Id}",
+			"method": "POST",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"url_keys": [
+				"Id"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-hostedzone-id",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/hostedzone/{Id}/associatevpc",
+			"method": "POST",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"url_keys": [
+				"Id"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-hostedzone-id-associatevpc",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/hostedzone/{Id}/authorizevpcassociation",
+			"method": "GET",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"url_keys": [
+				"Id"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-hostedzone-id-authorizevpcassociation",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/hostedzone/{Id}/deauthorizevpcassociation",
+			"method": "POST",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"url_keys": [
+				"Id"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-hostedzone-id-deauthorizevpcassociation",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/hostedzone/{Id}/disassociatevpc",
+			"method": "POST",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"url_keys": [
+				"Id"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-hostedzone-id-disassociatevpc",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/hostedzone/{Id}/rrset",
+			"method": "GET",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"url_keys": [
+				"Id"
+			],
+			"query_string_params": [
+				"MaxItems",
+				"StartRecordIdentifier",
+				"StartRecordName",
+				"StartRecordType"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-hostedzone-id-rrset",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/hostedzone/{Id}/rrset/",
+			"method": "POST",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"url_keys": [
+				"Id"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-hostedzone-id-rrset",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/hostedzonecount",
+			"method": "GET",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-hostedzonecount",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/hostedzonesbyname",
+			"method": "GET",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-hostedzonesbyname",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/queryloggingconfig",
+			"method": "GET",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-queryloggingconfig",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/queryloggingconfig/{Id}",
+			"method": "GET",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"url_keys": [
+				"Id"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-queryloggingconfig-id",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/tags/{ResourceType}",
+			"method": "POST",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"url_keys": [
+				"ResourceType"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-tags-resourcetype",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/tags/{ResourceType}/{ResourceId}",
+			"method": "GET",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"url_keys": [
+				"ResourceId",
+				"ResourceType"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-tags-resourcetype-resourceid",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/testdnsanswer",
+			"method": "GET",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-testdnsanswer",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/trafficpolicies",
+			"method": "GET",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-trafficpolicies",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/trafficpolicies/{Id}/versions",
+			"method": "GET",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"url_keys": [
+				"Id"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-trafficpolicies-id-versions",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/trafficpolicy",
+			"method": "POST",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-trafficpolicy",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/trafficpolicy/{Id}",
+			"method": "POST",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"url_keys": [
+				"Id"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-trafficpolicy-id",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/trafficpolicy/{Id}/{Version}",
+			"method": "POST",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"url_keys": [
+				"Id",
+				"Version"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-trafficpolicy-id-version",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/trafficpolicyinstance",
+			"method": "POST",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-trafficpolicyinstance",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/trafficpolicyinstance/{Id}",
+			"method": "POST",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"url_keys": [
+				"Id"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-trafficpolicyinstance-id",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/trafficpolicyinstancecount",
+			"method": "GET",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-trafficpolicyinstancecount",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/trafficpolicyinstances",
+			"method": "GET",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-trafficpolicyinstances",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/trafficpolicyinstances/hostedzone",
+			"method": "GET",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-trafficpolicyinstances-hostedzone",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-route-53-2013-04-01",
+			"url_pattern": "/2013-04-01/trafficpolicyinstances/trafficpolicy",
+			"method": "GET",
+			"encoding": "xml",
+			"host": [
+				"http://route53.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2013-04-01",
+				"slug": "amazon-route-53-2013-04-01-2013-04-01-trafficpolicyinstances-trafficpolicy",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"xml"
+				],
+				"produces": [
+					"xml"
+				],
+				"hosts": [
+					"http://route53.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		}
+	]
+}

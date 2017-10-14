@@ -1,0 +1,193 @@
+backends:
+- group: replica-pool-v1beta1
+  url_pattern: /replicapool/v1beta1/projects/{projectName}/zones/{zone}/pools
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - nextPageToken
+  - resources
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: The Replica Pool API allows users to declaratively provision and
+      manage groups of Google Compute Engine instances based on a common template.
+    version: v1beta1
+    slug: replica-pool-v1beta1-replicapool-v1beta1-projects-projectname-zones-zone-pools
+    schemes:
+    - https
+    mapping:
+      nextPageToken: nextPageToken
+      resources: resources
+    hosts:
+    - https://www.googleapis.com
+- group: replica-pool-v1beta1
+  url_pattern: /replicapool/v1beta1/projects/{projectName}/zones/{zone}/pools/{poolName}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - autoRestart
+  - baseInstanceName
+  - currentNumReplicas
+  - description
+  - healthChecks
+  - initialNumReplicas
+  - labels
+  - name
+  - numReplicas
+  - resourceViews
+  - selfLink
+  - targetPool
+  - targetPools
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: The Replica Pool API allows users to declaratively provision and
+      manage groups of Google Compute Engine instances based on a common template.
+    version: v1beta1
+    slug: replica-pool-v1beta1-replicapool-v1beta1-projects-projectname-zones-zone-pools-poolname
+    schemes:
+    - https
+    mapping:
+      autoRestart: autoRestart
+      baseInstanceName: baseInstanceName
+      currentNumReplicas: currentNumReplicas
+      description: description
+      healthChecks: healthChecks
+      initialNumReplicas: initialNumReplicas
+      labels: labels
+      name: name
+      numReplicas: numReplicas
+      resourceViews: resourceViews
+      selfLink: selfLink
+      targetPool: targetPool
+      targetPools: targetPools
+    hosts:
+    - https://www.googleapis.com
+- group: replica-pool-v1beta1
+  url_pattern: /replicapool/v1beta1/projects/{projectName}/zones/{zone}/pools/{poolName}/replicas
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - nextPageToken
+  - resources
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: The Replica Pool API allows users to declaratively provision and
+      manage groups of Google Compute Engine instances based on a common template.
+    version: v1beta1
+    slug: replica-pool-v1beta1-replicapool-v1beta1-projects-projectname-zones-zone-pools-poolname-replicas
+    schemes:
+    - https
+    mapping:
+      nextPageToken: nextPageToken
+      resources: resources
+    hosts:
+    - https://www.googleapis.com
+- group: replica-pool-v1beta1
+  url_pattern: /replicapool/v1beta1/projects/{projectName}/zones/{zone}/pools/{poolName}/replicas/{replicaName}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - name
+  - selfLink
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: The Replica Pool API allows users to declaratively provision and
+      manage groups of Google Compute Engine instances based on a common template.
+    version: v1beta1
+    slug: replica-pool-v1beta1-replicapool-v1beta1-projects-projectname-zones-zone-pools-poolname-replicas-replicaname
+    schemes:
+    - https
+    mapping:
+      name: name
+      selfLink: selfLink
+    hosts:
+    - https://www.googleapis.com
+- group: replica-pool-v1beta1
+  url_pattern: /replicapool/v1beta1/projects/{projectName}/zones/{zone}/pools/{poolName}/replicas/{replicaName}/restart
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - name
+  - selfLink
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: The Replica Pool API allows users to declaratively provision and
+      manage groups of Google Compute Engine instances based on a common template.
+    version: v1beta1
+    slug: replica-pool-v1beta1-replicapool-v1beta1-projects-projectname-zones-zone-pools-poolname-replicas-replicaname-restart
+    schemes:
+    - https
+    mapping:
+      name: name
+      selfLink: selfLink
+    hosts:
+    - https://www.googleapis.com
+- group: replica-pool-v1beta1
+  url_pattern: /replicapool/v1beta1/projects/{projectName}/zones/{zone}/pools/{poolName}/resize
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - autoRestart
+  - baseInstanceName
+  - currentNumReplicas
+  - description
+  - healthChecks
+  - initialNumReplicas
+  - labels
+  - name
+  - numReplicas
+  - resourceViews
+  - selfLink
+  - targetPool
+  - targetPools
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: The Replica Pool API allows users to declaratively provision and
+      manage groups of Google Compute Engine instances based on a common template.
+    version: v1beta1
+    slug: replica-pool-v1beta1-replicapool-v1beta1-projects-projectname-zones-zone-pools-poolname-resize
+    schemes:
+    - https
+    mapping:
+      autoRestart: autoRestart
+      baseInstanceName: baseInstanceName
+      currentNumReplicas: currentNumReplicas
+      description: description
+      healthChecks: healthChecks
+      initialNumReplicas: initialNumReplicas
+      labels: labels
+      name: name
+      numReplicas: numReplicas
+      resourceViews: resourceViews
+      selfLink: selfLink
+      targetPool: targetPool
+      targetPools: targetPools
+    hosts:
+    - https://www.googleapis.com
+- group: replica-pool-v1beta1
+  url_pattern: /replicapool/v1beta1/projects/{projectName}/zones/{zone}/pools/{poolName}/updateTemplate
+  method: POST
+  host:
+  - https://www.googleapis.com
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: The Replica Pool API allows users to declaratively provision and
+      manage groups of Google Compute Engine instances based on a common template.
+    version: v1beta1
+    slug: replica-pool-v1beta1-replicapool-v1beta1-projects-projectname-zones-zone-pools-poolname-updatetemplate
+    schemes:
+    - https
+    hosts:
+    - https://www.googleapis.com

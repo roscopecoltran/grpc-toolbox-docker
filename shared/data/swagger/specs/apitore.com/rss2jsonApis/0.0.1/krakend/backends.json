@@ -1,0 +1,60 @@
+{
+	"backends": [
+		{
+			"group": "rss2json-apis-0-0-1",
+			"url_pattern": "/api/28/rome/rss2json",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"https://api.apitore.com"
+			],
+			"whitelist": [
+				"author",
+				"description",
+				"endTime",
+				"entries",
+				"link",
+				"log",
+				"num",
+				"processTime",
+				"pubDate",
+				"rss",
+				"startTime",
+				"title"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "apitore.com",
+				"description": "Rss to Json.\u003cBR /\u003e[Endpoint] https://api.apitore.com/api/28",
+				"version": "0.0.1",
+				"slug": "rss2json-apis-0-0-1-api-28-rome-rss2json",
+				"schemes": [
+					"https"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"mapping": {
+					"author": "author",
+					"description": "description",
+					"endTime": "endTime",
+					"entries": "entries",
+					"link": "link",
+					"log": "log",
+					"num": "num",
+					"processTime": "processTime",
+					"pubDate": "pubDate",
+					"rss": "rss",
+					"startTime": "startTime",
+					"title": "title"
+				},
+				"hosts": [
+					"https://api.apitore.com"
+				]
+			}
+		}
+	]
+}

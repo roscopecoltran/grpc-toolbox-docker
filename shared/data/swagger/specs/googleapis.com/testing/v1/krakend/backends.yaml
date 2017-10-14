@@ -1,0 +1,119 @@
+backends:
+- group: google-cloud-testing-v1
+  url_pattern: /v1/projects/{projectId}/testMatrices
+  method: POST
+  host:
+  - https://testing.googleapis.com
+  url_keys:
+  - projectId
+  query_string_params:
+  - requestId
+  whitelist:
+  - invalidMatrixDetails
+  - projectId
+  - state
+  - testExecutions
+  - testMatrixId
+  - timestamp
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Allows developers to run automated tests for their mobile applications
+      on Google infrastructure.
+    version: v1
+    slug: google-cloud-testing-v1-v1-projects-projectid-testmatrices
+    schemes:
+    - https
+    mapping:
+      invalidMatrixDetails: invalidMatrixDetails
+      projectId: projectId
+      state: state
+      testExecutions: testExecutions
+      testMatrixId: testMatrixId
+      timestamp: timestamp
+    hosts:
+    - https://testing.googleapis.com
+    topics:
+    - projects
+- group: google-cloud-testing-v1
+  url_pattern: /v1/projects/{projectId}/testMatrices/{testMatrixId}
+  method: GET
+  host:
+  - https://testing.googleapis.com
+  url_keys:
+  - projectId
+  - testMatrixId
+  whitelist:
+  - invalidMatrixDetails
+  - projectId
+  - state
+  - testExecutions
+  - testMatrixId
+  - timestamp
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Allows developers to run automated tests for their mobile applications
+      on Google infrastructure.
+    version: v1
+    slug: google-cloud-testing-v1-v1-projects-projectid-testmatrices-testmatrixid
+    schemes:
+    - https
+    mapping:
+      invalidMatrixDetails: invalidMatrixDetails
+      projectId: projectId
+      state: state
+      testExecutions: testExecutions
+      testMatrixId: testMatrixId
+      timestamp: timestamp
+    hosts:
+    - https://testing.googleapis.com
+    topics:
+    - projects
+- group: google-cloud-testing-v1
+  url_pattern: /v1/projects/{projectId}/testMatrices/{testMatrixId}:cancel
+  method: POST
+  host:
+  - https://testing.googleapis.com
+  url_keys:
+  - projectId
+  - testMatrixId
+  whitelist:
+  - testState
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Allows developers to run automated tests for their mobile applications
+      on Google infrastructure.
+    version: v1
+    slug: google-cloud-testing-v1-v1-projects-projectid-testmatrices-testmatrixid-cancel
+    schemes:
+    - https
+    mapping:
+      testState: testState
+    hosts:
+    - https://testing.googleapis.com
+    topics:
+    - projects
+- group: google-cloud-testing-v1
+  url_pattern: /v1/testEnvironmentCatalog/{environmentType}
+  method: GET
+  host:
+  - https://testing.googleapis.com
+  url_keys:
+  - environmentType
+  query_string_params:
+  - projectId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Allows developers to run automated tests for their mobile applications
+      on Google infrastructure.
+    version: v1
+    slug: google-cloud-testing-v1-v1-testenvironmentcatalog-environmenttype
+    schemes:
+    - https
+    hosts:
+    - https://testing.googleapis.com
+    topics:
+    - testenvironmentcatalog

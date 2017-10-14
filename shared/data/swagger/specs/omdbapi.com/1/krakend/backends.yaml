@@ -1,0 +1,129 @@
+backends:
+- group: omdb-1
+  url_pattern: /
+  method: GET
+  encoding: json
+  host:
+  - https://www.omdbapi.com
+  query_string_params:
+  - callback
+  - i
+  - page
+  - plot
+  - r
+  - s
+  - t
+  - tomatoes
+  - type
+  - v
+  - "y"
+  whitelist:
+  - Actors
+  - Awards
+  - BoxOffice
+  - Country
+  - DVD
+  - Director
+  - Genre
+  - Language
+  - Metascore
+  - Plot
+  - Poster
+  - Production
+  - Rated
+  - Released
+  - Response
+  - Runtime
+  - Search
+  - Search.Poster
+  - Search.Title
+  - Search.Type
+  - Search.Year
+  - Search.imdbID
+  - Title
+  - Type
+  - Website
+  - Writer
+  - Year
+  - imdbID
+  - imdbRating
+  - imdbVotes
+  - tomatoConsensus
+  - tomatoFresh
+  - tomatoImage
+  - tomatoMeter
+  - tomatoRating
+  - tomatoReviews
+  - tomatoRotten
+  - tomatoURL
+  - tomatoUserMeter
+  - tomatoUserRating
+  - tomatoUserReviews
+  - totalResults
+  - totalSeasons
+  concurrent_calls: 1
+  extra_config:
+    provider: omdbapi.com
+    description: The Open Movie Database. The OMDb API is a free web service to obtain
+      movie information, all content and images on the site are contributed and maintained
+      by our users.
+    version: "1"
+    slug: omdb-1
+    schemes:
+    - http
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    - xml
+    mapping:
+      Actors: Actors
+      Awards: Awards
+      BoxOffice: BoxOffice
+      Country: Country
+      DVD: DVD
+      Director: Director
+      Genre: Genre
+      Language: Language
+      Metascore: Metascore
+      Plot: Plot
+      Poster: Poster
+      Production: Production
+      Rated: Rated
+      Released: Released
+      Response: Response
+      Runtime: Runtime
+      Search: Search
+      Search.Poster: Search.Poster
+      Search.Title: Search.Title
+      Search.Type: Search.Type
+      Search.Year: Search.Year
+      Search.imdbID: Search.imdbID
+      Title: Title
+      Type: Type
+      Website: Website
+      Writer: Writer
+      Year: Year
+      imdbID: imdbID
+      imdbRating: imdbRating
+      imdbVotes: imdbVotes
+      tomatoConsensus: tomatoConsensus
+      tomatoFresh: tomatoFresh
+      tomatoImage: tomatoImage
+      tomatoMeter: tomatoMeter
+      tomatoRating: tomatoRating
+      tomatoReviews: tomatoReviews
+      tomatoRotten: tomatoRotten
+      tomatoURL: tomatoURL
+      tomatoUserMeter: tomatoUserMeter
+      tomatoUserRating: tomatoUserRating
+      tomatoUserReviews: tomatoUserReviews
+      totalResults: totalResults
+      totalSeasons: totalSeasons
+    hosts:
+    - http://www.omdbapi.com
+    - https://www.omdbapi.com
+    topics:
+    - media
+    - open-data

@@ -1,0 +1,263 @@
+backends:
+- group: dlp-v2beta1
+  url_pattern: /v2beta1/content:deidentify
+  method: POST
+  host:
+  - https://dlp.googleapis.com
+  whitelist:
+  - items
+  - summaries
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: The Google Data Loss Prevention API provides methods for detection
+      of privacy-sensitive fragments in text, images, and Google Cloud Platform storage
+      repositories.
+    version: v2beta1
+    slug: dlp-v2beta1-v2beta1-content-deidentify
+    schemes:
+    - https
+    mapping:
+      items: items
+      summaries: summaries
+    hosts:
+    - https://dlp.googleapis.com
+    topics:
+    - content
+- group: dlp-v2beta1
+  url_pattern: /v2beta1/content:inspect
+  method: POST
+  host:
+  - https://dlp.googleapis.com
+  whitelist:
+  - results
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: The Google Data Loss Prevention API provides methods for detection
+      of privacy-sensitive fragments in text, images, and Google Cloud Platform storage
+      repositories.
+    version: v2beta1
+    slug: dlp-v2beta1-v2beta1-content-inspect
+    schemes:
+    - https
+    mapping:
+      results: results
+    hosts:
+    - https://dlp.googleapis.com
+    topics:
+    - content
+- group: dlp-v2beta1
+  url_pattern: /v2beta1/content:redact
+  method: POST
+  host:
+  - https://dlp.googleapis.com
+  whitelist:
+  - items
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: The Google Data Loss Prevention API provides methods for detection
+      of privacy-sensitive fragments in text, images, and Google Cloud Platform storage
+      repositories.
+    version: v2beta1
+    slug: dlp-v2beta1-v2beta1-content-redact
+    schemes:
+    - https
+    mapping:
+      items: items
+    hosts:
+    - https://dlp.googleapis.com
+    topics:
+    - content
+- group: dlp-v2beta1
+  url_pattern: /v2beta1/dataSource:analyze
+  method: POST
+  host:
+  - https://dlp.googleapis.com
+  whitelist:
+  - done
+  - metadata
+  - name
+  - response
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: The Google Data Loss Prevention API provides methods for detection
+      of privacy-sensitive fragments in text, images, and Google Cloud Platform storage
+      repositories.
+    version: v2beta1
+    slug: dlp-v2beta1-v2beta1-datasource-analyze
+    schemes:
+    - https
+    mapping:
+      done: done
+      metadata: metadata
+      name: name
+      response: response
+    hosts:
+    - https://dlp.googleapis.com
+    topics:
+    - datasource
+- group: dlp-v2beta1
+  url_pattern: /v2beta1/inspect/operations
+  method: POST
+  host:
+  - https://dlp.googleapis.com
+  whitelist:
+  - done
+  - metadata
+  - name
+  - response
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: The Google Data Loss Prevention API provides methods for detection
+      of privacy-sensitive fragments in text, images, and Google Cloud Platform storage
+      repositories.
+    version: v2beta1
+    slug: dlp-v2beta1-v2beta1-inspect-operations
+    schemes:
+    - https
+    mapping:
+      done: done
+      metadata: metadata
+      name: name
+      response: response
+    hosts:
+    - https://dlp.googleapis.com
+    topics:
+    - inspect
+- group: dlp-v2beta1
+  url_pattern: /v2beta1/rootCategories
+  method: GET
+  host:
+  - https://dlp.googleapis.com
+  query_string_params:
+  - languageCode
+  whitelist:
+  - categories
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: The Google Data Loss Prevention API provides methods for detection
+      of privacy-sensitive fragments in text, images, and Google Cloud Platform storage
+      repositories.
+    version: v2beta1
+    slug: dlp-v2beta1-v2beta1-rootcategories
+    schemes:
+    - https
+    mapping:
+      categories: categories
+    hosts:
+    - https://dlp.googleapis.com
+    topics:
+    - rootcategories
+- group: dlp-v2beta1
+  url_pattern: /v2beta1/rootCategories/{category}/infoTypes
+  method: GET
+  host:
+  - https://dlp.googleapis.com
+  url_keys:
+  - category
+  query_string_params:
+  - languageCode
+  whitelist:
+  - infoTypes
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: The Google Data Loss Prevention API provides methods for detection
+      of privacy-sensitive fragments in text, images, and Google Cloud Platform storage
+      repositories.
+    version: v2beta1
+    slug: dlp-v2beta1-v2beta1-rootcategories-category-infotypes
+    schemes:
+    - https
+    mapping:
+      infoTypes: infoTypes
+    hosts:
+    - https://dlp.googleapis.com
+    topics:
+    - rootcategories
+- group: dlp-v2beta1
+  url_pattern: /v2beta1/{name}
+  method: GET
+  host:
+  - https://dlp.googleapis.com
+  url_keys:
+  - name
+  whitelist:
+  - done
+  - metadata
+  - name
+  - response
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: The Google Data Loss Prevention API provides methods for detection
+      of privacy-sensitive fragments in text, images, and Google Cloud Platform storage
+      repositories.
+    version: v2beta1
+    slug: dlp-v2beta1-v2beta1-name
+    schemes:
+    - https
+    mapping:
+      done: done
+      metadata: metadata
+      name: name
+      response: response
+    hosts:
+    - https://dlp.googleapis.com
+    topics:
+    - inspect
+- group: dlp-v2beta1
+  url_pattern: /v2beta1/{name}/findings
+  method: GET
+  host:
+  - https://dlp.googleapis.com
+  url_keys:
+  - name
+  query_string_params:
+  - filter
+  - pageSize
+  - pageToken
+  whitelist:
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: The Google Data Loss Prevention API provides methods for detection
+      of privacy-sensitive fragments in text, images, and Google Cloud Platform storage
+      repositories.
+    version: v2beta1
+    slug: dlp-v2beta1-v2beta1-name-findings
+    schemes:
+    - https
+    mapping:
+      nextPageToken: nextPageToken
+    hosts:
+    - https://dlp.googleapis.com
+    topics:
+    - inspect
+- group: dlp-v2beta1
+  url_pattern: /v2beta1/{name}:cancel
+  method: POST
+  host:
+  - https://dlp.googleapis.com
+  url_keys:
+  - name
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: The Google Data Loss Prevention API provides methods for detection
+      of privacy-sensitive fragments in text, images, and Google Cloud Platform storage
+      repositories.
+    version: v2beta1
+    slug: dlp-v2beta1-v2beta1-name-cancel
+    schemes:
+    - https
+    hosts:
+    - https://dlp.googleapis.com
+    topics:
+    - inspect

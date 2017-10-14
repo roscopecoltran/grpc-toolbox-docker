@@ -1,0 +1,85 @@
+backends:
+- group: bikewise-api-v2-v2
+  url_pattern: /api/v2/incidents
+  method: GET
+  encoding: json
+  host:
+  - https://bikewise.org
+  concurrent_calls: 1
+  extra_config:
+    provider: bikewise.org
+    description: |
+      <p>This is an API for accessing information about bicycling related incidents. You can find the source code on <a href="https://github.com/bikeindex/bikewise">GitHub</a>.</p>
+    version: v2
+    slug: bikewise-api-v2-v2-api-v2-incidents
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://bikewise.org
+    topics:
+    - open-data
+- group: bikewise-api-v2-v2
+  url_pattern: /api/v2/incidents/{id}
+  method: GET
+  encoding: json
+  host:
+  - https://bikewise.org
+  concurrent_calls: 1
+  extra_config:
+    provider: bikewise.org
+    description: |
+      <p>This is an API for accessing information about bicycling related incidents. You can find the source code on <a href="https://github.com/bikeindex/bikewise">GitHub</a>.</p>
+    version: v2
+    slug: bikewise-api-v2-v2-api-v2-incidents-id
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://bikewise.org
+    topics:
+    - open-data
+- group: bikewise-api-v2-v2
+  url_pattern: /api/v2/locations
+  method: GET
+  encoding: json
+  host:
+  - https://bikewise.org
+  concurrent_calls: 1
+  extra_config:
+    provider: bikewise.org
+    description: |
+      <p>This is an API for accessing information about bicycling related incidents. You can find the source code on <a href="https://github.com/bikeindex/bikewise">GitHub</a>.</p>
+    version: v2
+    slug: bikewise-api-v2-v2-api-v2-locations
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://bikewise.org
+    topics:
+    - open-data
+- group: bikewise-api-v2-v2
+  url_pattern: /api/v2/locations/markers
+  method: GET
+  encoding: json
+  host:
+  - https://bikewise.org
+  concurrent_calls: 1
+  extra_config:
+    provider: bikewise.org
+    description: |
+      <p>This is an API for accessing information about bicycling related incidents. You can find the source code on <a href="https://github.com/bikeindex/bikewise">GitHub</a>.</p>
+    version: v2
+    slug: bikewise-api-v2-v2-api-v2-locations-markers
+    schemes:
+    - https
+    produces:
+    - json
+    hosts:
+    - https://bikewise.org
+    topics:
+    - open-data

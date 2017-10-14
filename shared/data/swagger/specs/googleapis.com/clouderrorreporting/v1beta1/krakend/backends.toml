@@ -1,0 +1,80 @@
+[[backends]]
+  group = "stackdriver-error-reporting-v1beta1"
+  url_pattern = "/v1beta1/{groupName}"
+  method = "GET"
+  host = ["https://clouderrorreporting.googleapis.com"]
+  url_keys = ["groupName"]
+  whitelist = ["groupId", "name", "trackingIssues"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Groups and counts similar errors from cloud services and applications, reports new errors, and provides access to error groups and their associated errors.\n"
+    version = "v1beta1"
+    slug = "stackdriver-error-reporting-v1beta1-v1beta1-groupname"
+    schemes = ["https"]
+    hosts = ["https://clouderrorreporting.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      groupId = "groupId"
+      name = "name"
+      trackingIssues = "trackingIssues"
+
+[[backends]]
+  group = "stackdriver-error-reporting-v1beta1"
+  url_pattern = "/v1beta1/{projectName}/events"
+  method = "GET"
+  host = ["https://clouderrorreporting.googleapis.com"]
+  url_keys = ["projectName"]
+  query_string_params = ["groupId", "pageSize", "pageToken", "serviceFilter.resourceType", "serviceFilter.service", "serviceFilter.version", "timeRange.period"]
+  whitelist = ["errorEvents", "nextPageToken", "timeRangeBegin"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Groups and counts similar errors from cloud services and applications, reports new errors, and provides access to error groups and their associated errors.\n"
+    version = "v1beta1"
+    slug = "stackdriver-error-reporting-v1beta1-v1beta1-projectname-events"
+    schemes = ["https"]
+    hosts = ["https://clouderrorreporting.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      errorEvents = "errorEvents"
+      nextPageToken = "nextPageToken"
+      timeRangeBegin = "timeRangeBegin"
+
+[[backends]]
+  group = "stackdriver-error-reporting-v1beta1"
+  url_pattern = "/v1beta1/{projectName}/events:report"
+  method = "POST"
+  host = ["https://clouderrorreporting.googleapis.com"]
+  url_keys = ["projectName"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Groups and counts similar errors from cloud services and applications, reports new errors, and provides access to error groups and their associated errors.\n"
+    version = "v1beta1"
+    slug = "stackdriver-error-reporting-v1beta1-v1beta1-projectname-events-report"
+    schemes = ["https"]
+    hosts = ["https://clouderrorreporting.googleapis.com"]
+    topics = ["projects"]
+
+[[backends]]
+  group = "stackdriver-error-reporting-v1beta1"
+  url_pattern = "/v1beta1/{projectName}/groupStats"
+  method = "GET"
+  host = ["https://clouderrorreporting.googleapis.com"]
+  url_keys = ["projectName"]
+  query_string_params = ["alignment", "alignmentTime", "groupId", "order", "pageSize", "pageToken", "serviceFilter.resourceType", "serviceFilter.service", "serviceFilter.version", "timeRange.period", "timedCountDuration"]
+  whitelist = ["errorGroupStats", "nextPageToken", "timeRangeBegin"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Groups and counts similar errors from cloud services and applications, reports new errors, and provides access to error groups and their associated errors.\n"
+    version = "v1beta1"
+    slug = "stackdriver-error-reporting-v1beta1-v1beta1-projectname-groupstats"
+    schemes = ["https"]
+    hosts = ["https://clouderrorreporting.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      errorGroupStats = "errorGroupStats"
+      nextPageToken = "nextPageToken"
+      timeRangeBegin = "timeRangeBegin"

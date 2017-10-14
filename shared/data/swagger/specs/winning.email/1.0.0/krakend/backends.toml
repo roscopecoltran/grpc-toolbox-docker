@@ -1,0 +1,53 @@
+[[backends]]
+  group = "winning-email-1-0-0"
+  url_pattern = "/api/v1/email-booster"
+  method = "POST"
+  encoding = "json"
+  host = ["https://winning.email"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "winning.email"
+    description = "The Winning Email API allows you to access our services from your applications. Contact us if you need help with anything, or require access to something we don't yet offer. The API overview is available <a href='/api/v1/docs' target='_blank'>here</a>."
+    version = "1.0.0"
+    slug = "winning-email-1-0-0-api-v1-email-booster"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://winning.email"]
+    topics = ["email", "marketing"]
+
+[[backends]]
+  group = "winning-email-1-0-0"
+  url_pattern = "/api/v1/rate-limit-status"
+  method = "GET"
+  encoding = "json"
+  host = ["https://winning.email"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "winning.email"
+    description = "The Winning Email API allows you to access our services from your applications. Contact us if you need help with anything, or require access to something we don't yet offer. The API overview is available <a href='/api/v1/docs' target='_blank'>here</a>."
+    version = "1.0.0"
+    slug = "winning-email-1-0-0-api-v1-rate-limit-status"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://winning.email"]
+    topics = ["email", "marketing"]
+
+[[backends]]
+  group = "winning-email-1-0-0"
+  url_pattern = "/api/v1/status"
+  method = "GET"
+  encoding = "json"
+  host = ["https://winning.email"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "winning.email"
+    description = "The Winning Email API allows you to access our services from your applications. Contact us if you need help with anything, or require access to something we don't yet offer. The API overview is available <a href='/api/v1/docs' target='_blank'>here</a>."
+    version = "1.0.0"
+    slug = "winning-email-1-0-0-api-v1-status"
+    schemes = ["https"]
+    consumes = ["x-www-form-urlencoded"]
+    produces = ["json"]
+    hosts = ["https://winning.email"]
+    topics = ["email", "marketing"]

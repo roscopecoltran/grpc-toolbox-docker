@@ -1,0 +1,197 @@
+[[backends]]
+  group = "google-vault-v1"
+  url_pattern = "/v1/matters"
+  method = "GET"
+  host = ["https://vault.googleapis.com"]
+  query_string_params = ["pageSize", "pageToken", "state", "view"]
+  whitelist = ["matters", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Archiving and eDiscovery for G Suite."
+    version = "v1"
+    slug = "google-vault-v1-v1-matters"
+    schemes = ["https"]
+    hosts = ["https://vault.googleapis.com"]
+    topics = ["matters"]
+    [backends.extra_config.mapping]
+      matters = "matters"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "google-vault-v1"
+  url_pattern = "/v1/matters/{matterId}"
+  method = "GET"
+  host = ["https://vault.googleapis.com"]
+  url_keys = ["matterId"]
+  query_string_params = ["view"]
+  whitelist = ["description", "matterId", "matterPermissions", "name", "state"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Archiving and eDiscovery for G Suite."
+    version = "v1"
+    slug = "google-vault-v1-v1-matters-matterid"
+    schemes = ["https"]
+    hosts = ["https://vault.googleapis.com"]
+    topics = ["matters"]
+    [backends.extra_config.mapping]
+      description = "description"
+      matterId = "matterId"
+      matterPermissions = "matterPermissions"
+      name = "name"
+      state = "state"
+
+[[backends]]
+  group = "google-vault-v1"
+  url_pattern = "/v1/matters/{matterId}/holds"
+  method = "GET"
+  host = ["https://vault.googleapis.com"]
+  url_keys = ["matterId"]
+  query_string_params = ["pageSize", "pageToken"]
+  whitelist = ["holds", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Archiving and eDiscovery for G Suite."
+    version = "v1"
+    slug = "google-vault-v1-v1-matters-matterid-holds"
+    schemes = ["https"]
+    hosts = ["https://vault.googleapis.com"]
+    topics = ["matters"]
+    [backends.extra_config.mapping]
+      holds = "holds"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "google-vault-v1"
+  url_pattern = "/v1/matters/{matterId}/holds/{holdId}"
+  method = "GET"
+  host = ["https://vault.googleapis.com"]
+  url_keys = ["holdId", "matterId"]
+  whitelist = ["accounts", "corpus", "holdId", "name", "updateTime"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Archiving and eDiscovery for G Suite."
+    version = "v1"
+    slug = "google-vault-v1-v1-matters-matterid-holds-holdid"
+    schemes = ["https"]
+    hosts = ["https://vault.googleapis.com"]
+    topics = ["matters"]
+    [backends.extra_config.mapping]
+      accounts = "accounts"
+      corpus = "corpus"
+      holdId = "holdId"
+      name = "name"
+      updateTime = "updateTime"
+
+[[backends]]
+  group = "google-vault-v1"
+  url_pattern = "/v1/matters/{matterId}/holds/{holdId}/accounts"
+  method = "GET"
+  host = ["https://vault.googleapis.com"]
+  url_keys = ["holdId", "matterId"]
+  whitelist = ["accounts"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Archiving and eDiscovery for G Suite."
+    version = "v1"
+    slug = "google-vault-v1-v1-matters-matterid-holds-holdid-accounts"
+    schemes = ["https"]
+    hosts = ["https://vault.googleapis.com"]
+    topics = ["matters"]
+    [backends.extra_config.mapping]
+      accounts = "accounts"
+
+[[backends]]
+  group = "google-vault-v1"
+  url_pattern = "/v1/matters/{matterId}:addPermissions"
+  method = "POST"
+  host = ["https://vault.googleapis.com"]
+  url_keys = ["matterId"]
+  whitelist = ["accountId", "role"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Archiving and eDiscovery for G Suite."
+    version = "v1"
+    slug = "google-vault-v1-v1-matters-matterid-addpermissions"
+    schemes = ["https"]
+    hosts = ["https://vault.googleapis.com"]
+    topics = ["matters"]
+    [backends.extra_config.mapping]
+      accountId = "accountId"
+      role = "role"
+
+[[backends]]
+  group = "google-vault-v1"
+  url_pattern = "/v1/matters/{matterId}:close"
+  method = "POST"
+  host = ["https://vault.googleapis.com"]
+  url_keys = ["matterId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Archiving and eDiscovery for G Suite."
+    version = "v1"
+    slug = "google-vault-v1-v1-matters-matterid-close"
+    schemes = ["https"]
+    hosts = ["https://vault.googleapis.com"]
+    topics = ["matters"]
+
+[[backends]]
+  group = "google-vault-v1"
+  url_pattern = "/v1/matters/{matterId}:removePermissions"
+  method = "POST"
+  host = ["https://vault.googleapis.com"]
+  url_keys = ["matterId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Archiving and eDiscovery for G Suite."
+    version = "v1"
+    slug = "google-vault-v1-v1-matters-matterid-removepermissions"
+    schemes = ["https"]
+    hosts = ["https://vault.googleapis.com"]
+    topics = ["matters"]
+
+[[backends]]
+  group = "google-vault-v1"
+  url_pattern = "/v1/matters/{matterId}:reopen"
+  method = "POST"
+  host = ["https://vault.googleapis.com"]
+  url_keys = ["matterId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Archiving and eDiscovery for G Suite."
+    version = "v1"
+    slug = "google-vault-v1-v1-matters-matterid-reopen"
+    schemes = ["https"]
+    hosts = ["https://vault.googleapis.com"]
+    topics = ["matters"]
+
+[[backends]]
+  group = "google-vault-v1"
+  url_pattern = "/v1/matters/{matterId}:undelete"
+  method = "POST"
+  host = ["https://vault.googleapis.com"]
+  url_keys = ["matterId"]
+  whitelist = ["description", "matterId", "matterPermissions", "name", "state"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "Archiving and eDiscovery for G Suite."
+    version = "v1"
+    slug = "google-vault-v1-v1-matters-matterid-undelete"
+    schemes = ["https"]
+    hosts = ["https://vault.googleapis.com"]
+    topics = ["matters"]
+    [backends.extra_config.mapping]
+      description = "description"
+      matterId = "matterId"
+      matterPermissions = "matterPermissions"
+      name = "name"
+      state = "state"

@@ -1,0 +1,389 @@
+backends:
+- group: ad-exchange-seller-v2-0
+  url_pattern: /adexchangeseller/v2.0/accounts
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - items
+  - kind
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses the inventory of Ad Exchange seller users and generates
+      reports.
+    version: v2.0
+    slug: ad-exchange-seller-v2-0-adexchangeseller-v2-0-accounts
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+    hosts:
+    - https://www.googleapis.com
+- group: ad-exchange-seller-v2-0
+  url_pattern: /adexchangeseller/v2.0/accounts/{accountId}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - id
+  - kind
+  - name
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses the inventory of Ad Exchange seller users and generates
+      reports.
+    version: v2.0
+    slug: ad-exchange-seller-v2-0-adexchangeseller-v2-0-accounts-accountid
+    schemes:
+    - https
+    mapping:
+      id: id
+      kind: kind
+      name: name
+    hosts:
+    - https://www.googleapis.com
+- group: ad-exchange-seller-v2-0
+  url_pattern: /adexchangeseller/v2.0/accounts/{accountId}/adclients
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - items
+  - kind
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses the inventory of Ad Exchange seller users and generates
+      reports.
+    version: v2.0
+    slug: ad-exchange-seller-v2-0-adexchangeseller-v2-0-accounts-accountid-adclients
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+    hosts:
+    - https://www.googleapis.com
+- group: ad-exchange-seller-v2-0
+  url_pattern: /adexchangeseller/v2.0/accounts/{accountId}/adclients/{adClientId}/customchannels
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - items
+  - kind
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses the inventory of Ad Exchange seller users and generates
+      reports.
+    version: v2.0
+    slug: ad-exchange-seller-v2-0-adexchangeseller-v2-0-accounts-accountid-adclients-adclientid-customchannels
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+    hosts:
+    - https://www.googleapis.com
+- group: ad-exchange-seller-v2-0
+  url_pattern: /adexchangeseller/v2.0/accounts/{accountId}/adclients/{adClientId}/customchannels/{customChannelId}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - code
+  - id
+  - kind
+  - name
+  - targetingInfo
+  - targetingInfo.adsAppearOn
+  - targetingInfo.description
+  - targetingInfo.location
+  - targetingInfo.siteLanguage
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses the inventory of Ad Exchange seller users and generates
+      reports.
+    version: v2.0
+    slug: ad-exchange-seller-v2-0-adexchangeseller-v2-0-accounts-accountid-adclients-adclientid-customchannels-customchannelid
+    schemes:
+    - https
+    mapping:
+      code: code
+      id: id
+      kind: kind
+      name: name
+      targetingInfo: targetingInfo
+      targetingInfo.adsAppearOn: targetingInfo.adsAppearOn
+      targetingInfo.description: targetingInfo.description
+      targetingInfo.location: targetingInfo.location
+      targetingInfo.siteLanguage: targetingInfo.siteLanguage
+    hosts:
+    - https://www.googleapis.com
+- group: ad-exchange-seller-v2-0
+  url_pattern: /adexchangeseller/v2.0/accounts/{accountId}/adclients/{adClientId}/urlchannels
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - items
+  - kind
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses the inventory of Ad Exchange seller users and generates
+      reports.
+    version: v2.0
+    slug: ad-exchange-seller-v2-0-adexchangeseller-v2-0-accounts-accountid-adclients-adclientid-urlchannels
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+    hosts:
+    - https://www.googleapis.com
+- group: ad-exchange-seller-v2-0
+  url_pattern: /adexchangeseller/v2.0/accounts/{accountId}/alerts
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - items
+  - kind
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses the inventory of Ad Exchange seller users and generates
+      reports.
+    version: v2.0
+    slug: ad-exchange-seller-v2-0-adexchangeseller-v2-0-accounts-accountid-alerts
+    schemes:
+    - https
+    mapping:
+      items: items
+      kind: kind
+    hosts:
+    - https://www.googleapis.com
+- group: ad-exchange-seller-v2-0
+  url_pattern: /adexchangeseller/v2.0/accounts/{accountId}/metadata/dimensions
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - items
+  - kind
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses the inventory of Ad Exchange seller users and generates
+      reports.
+    version: v2.0
+    slug: ad-exchange-seller-v2-0-adexchangeseller-v2-0-accounts-accountid-metadata-dimensions
+    schemes:
+    - https
+    mapping:
+      items: items
+      kind: kind
+    hosts:
+    - https://www.googleapis.com
+- group: ad-exchange-seller-v2-0
+  url_pattern: /adexchangeseller/v2.0/accounts/{accountId}/metadata/metrics
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - items
+  - kind
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses the inventory of Ad Exchange seller users and generates
+      reports.
+    version: v2.0
+    slug: ad-exchange-seller-v2-0-adexchangeseller-v2-0-accounts-accountid-metadata-metrics
+    schemes:
+    - https
+    mapping:
+      items: items
+      kind: kind
+    hosts:
+    - https://www.googleapis.com
+- group: ad-exchange-seller-v2-0
+  url_pattern: /adexchangeseller/v2.0/accounts/{accountId}/preferreddeals
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - items
+  - kind
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses the inventory of Ad Exchange seller users and generates
+      reports.
+    version: v2.0
+    slug: ad-exchange-seller-v2-0-adexchangeseller-v2-0-accounts-accountid-preferreddeals
+    schemes:
+    - https
+    mapping:
+      items: items
+      kind: kind
+    hosts:
+    - https://www.googleapis.com
+- group: ad-exchange-seller-v2-0
+  url_pattern: /adexchangeseller/v2.0/accounts/{accountId}/preferreddeals/{dealId}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - advertiserName
+  - buyerNetworkName
+  - currencyCode
+  - endTime
+  - fixedCpm
+  - id
+  - kind
+  - startTime
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses the inventory of Ad Exchange seller users and generates
+      reports.
+    version: v2.0
+    slug: ad-exchange-seller-v2-0-adexchangeseller-v2-0-accounts-accountid-preferreddeals-dealid
+    schemes:
+    - https
+    mapping:
+      advertiserName: advertiserName
+      buyerNetworkName: buyerNetworkName
+      currencyCode: currencyCode
+      endTime: endTime
+      fixedCpm: fixedCpm
+      id: id
+      kind: kind
+      startTime: startTime
+    hosts:
+    - https://www.googleapis.com
+- group: ad-exchange-seller-v2-0
+  url_pattern: /adexchangeseller/v2.0/accounts/{accountId}/reports
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - averages
+  - headers
+  - headers.currency
+  - headers.name
+  - kind
+  - rows
+  - rows.items
+  - totalMatchedRows
+  - totals
+  - warnings
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses the inventory of Ad Exchange seller users and generates
+      reports.
+    version: v2.0
+    slug: ad-exchange-seller-v2-0-adexchangeseller-v2-0-accounts-accountid-reports
+    schemes:
+    - https
+    mapping:
+      averages: averages
+      headers: headers
+      headers.currency: headers.currency
+      headers.name: headers.name
+      kind: kind
+      rows: rows
+      rows.items: rows.items
+      totalMatchedRows: totalMatchedRows
+      totals: totals
+      warnings: warnings
+    hosts:
+    - https://www.googleapis.com
+- group: ad-exchange-seller-v2-0
+  url_pattern: /adexchangeseller/v2.0/accounts/{accountId}/reports/saved
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - etag
+  - items
+  - kind
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses the inventory of Ad Exchange seller users and generates
+      reports.
+    version: v2.0
+    slug: ad-exchange-seller-v2-0-adexchangeseller-v2-0-accounts-accountid-reports-saved
+    schemes:
+    - https
+    mapping:
+      etag: etag
+      items: items
+      kind: kind
+      nextPageToken: nextPageToken
+    hosts:
+    - https://www.googleapis.com
+- group: ad-exchange-seller-v2-0
+  url_pattern: /adexchangeseller/v2.0/accounts/{accountId}/reports/{savedReportId}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - averages
+  - headers
+  - headers.currency
+  - headers.name
+  - kind
+  - rows
+  - rows.items
+  - totalMatchedRows
+  - totals
+  - warnings
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Accesses the inventory of Ad Exchange seller users and generates
+      reports.
+    version: v2.0
+    slug: ad-exchange-seller-v2-0-adexchangeseller-v2-0-accounts-accountid-reports-savedreportid
+    schemes:
+    - https
+    mapping:
+      averages: averages
+      headers: headers
+      headers.currency: headers.currency
+      headers.name: headers.name
+      kind: kind
+      rows: rows
+      rows.items: rows.items
+      totalMatchedRows: totalMatchedRows
+      totals: totals
+      warnings: warnings
+    hosts:
+    - https://www.googleapis.com

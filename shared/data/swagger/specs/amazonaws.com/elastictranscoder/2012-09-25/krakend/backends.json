@@ -1,0 +1,344 @@
+{
+	"backends": [
+		{
+			"group": "amazon-elastic-transcoder-2012-09-25",
+			"url_pattern": "/2012-09-25/jobs",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://elastictranscoder.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cfullname\u003eAWS Elastic Transcoder Service\u003c/fullname\u003e \u003cp\u003eThe AWS Elastic Transcoder Service.\u003c/p\u003e",
+				"version": "2012-09-25",
+				"slug": "amazon-elastic-transcoder-2012-09-25-2012-09-25-jobs",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://elastictranscoder.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-elastic-transcoder-2012-09-25",
+			"url_pattern": "/2012-09-25/jobs/{Id}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://elastictranscoder.amazonaws.com"
+			],
+			"url_keys": [
+				"Id"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cfullname\u003eAWS Elastic Transcoder Service\u003c/fullname\u003e \u003cp\u003eThe AWS Elastic Transcoder Service.\u003c/p\u003e",
+				"version": "2012-09-25",
+				"slug": "amazon-elastic-transcoder-2012-09-25-2012-09-25-jobs-id",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://elastictranscoder.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-elastic-transcoder-2012-09-25",
+			"url_pattern": "/2012-09-25/jobsByPipeline/{PipelineId}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://elastictranscoder.amazonaws.com"
+			],
+			"url_keys": [
+				"PipelineId"
+			],
+			"query_string_params": [
+				"PageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cfullname\u003eAWS Elastic Transcoder Service\u003c/fullname\u003e \u003cp\u003eThe AWS Elastic Transcoder Service.\u003c/p\u003e",
+				"version": "2012-09-25",
+				"slug": "amazon-elastic-transcoder-2012-09-25-2012-09-25-jobsbypipeline-pipelineid",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://elastictranscoder.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-elastic-transcoder-2012-09-25",
+			"url_pattern": "/2012-09-25/jobsByStatus/{Status}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://elastictranscoder.amazonaws.com"
+			],
+			"url_keys": [
+				"Status"
+			],
+			"query_string_params": [
+				"PageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cfullname\u003eAWS Elastic Transcoder Service\u003c/fullname\u003e \u003cp\u003eThe AWS Elastic Transcoder Service.\u003c/p\u003e",
+				"version": "2012-09-25",
+				"slug": "amazon-elastic-transcoder-2012-09-25-2012-09-25-jobsbystatus-status",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://elastictranscoder.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-elastic-transcoder-2012-09-25",
+			"url_pattern": "/2012-09-25/pipelines",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://elastictranscoder.amazonaws.com"
+			],
+			"query_string_params": [
+				"PageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cfullname\u003eAWS Elastic Transcoder Service\u003c/fullname\u003e \u003cp\u003eThe AWS Elastic Transcoder Service.\u003c/p\u003e",
+				"version": "2012-09-25",
+				"slug": "amazon-elastic-transcoder-2012-09-25-2012-09-25-pipelines",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://elastictranscoder.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-elastic-transcoder-2012-09-25",
+			"url_pattern": "/2012-09-25/pipelines/{Id}/notifications",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://elastictranscoder.amazonaws.com"
+			],
+			"url_keys": [
+				"Id"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cfullname\u003eAWS Elastic Transcoder Service\u003c/fullname\u003e \u003cp\u003eThe AWS Elastic Transcoder Service.\u003c/p\u003e",
+				"version": "2012-09-25",
+				"slug": "amazon-elastic-transcoder-2012-09-25-2012-09-25-pipelines-id-notifications",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://elastictranscoder.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-elastic-transcoder-2012-09-25",
+			"url_pattern": "/2012-09-25/pipelines/{Id}/status",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://elastictranscoder.amazonaws.com"
+			],
+			"url_keys": [
+				"Id"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cfullname\u003eAWS Elastic Transcoder Service\u003c/fullname\u003e \u003cp\u003eThe AWS Elastic Transcoder Service.\u003c/p\u003e",
+				"version": "2012-09-25",
+				"slug": "amazon-elastic-transcoder-2012-09-25-2012-09-25-pipelines-id-status",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://elastictranscoder.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-elastic-transcoder-2012-09-25",
+			"url_pattern": "/2012-09-25/presets",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://elastictranscoder.amazonaws.com"
+			],
+			"query_string_params": [
+				"PageToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cfullname\u003eAWS Elastic Transcoder Service\u003c/fullname\u003e \u003cp\u003eThe AWS Elastic Transcoder Service.\u003c/p\u003e",
+				"version": "2012-09-25",
+				"slug": "amazon-elastic-transcoder-2012-09-25-2012-09-25-presets",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://elastictranscoder.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-elastic-transcoder-2012-09-25",
+			"url_pattern": "/2012-09-25/presets/{Id}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://elastictranscoder.amazonaws.com"
+			],
+			"url_keys": [
+				"Id"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cfullname\u003eAWS Elastic Transcoder Service\u003c/fullname\u003e \u003cp\u003eThe AWS Elastic Transcoder Service.\u003c/p\u003e",
+				"version": "2012-09-25",
+				"slug": "amazon-elastic-transcoder-2012-09-25-2012-09-25-presets-id",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://elastictranscoder.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-elastic-transcoder-2012-09-25",
+			"url_pattern": "/2012-09-25/roleTests",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://elastictranscoder.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cfullname\u003eAWS Elastic Transcoder Service\u003c/fullname\u003e \u003cp\u003eThe AWS Elastic Transcoder Service.\u003c/p\u003e",
+				"version": "2012-09-25",
+				"slug": "amazon-elastic-transcoder-2012-09-25-2012-09-25-roletests",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://elastictranscoder.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		}
+	]
+}

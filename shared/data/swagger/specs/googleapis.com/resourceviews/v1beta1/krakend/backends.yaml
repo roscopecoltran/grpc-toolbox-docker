@@ -1,0 +1,229 @@
+backends:
+- group: resource-views-v1beta1
+  url_pattern: /resourceviews/v1beta1/projects/{projectName}/regions/{region}/resourceViews
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - nextPageToken
+  - resourceViews
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: The Resource View API allows users to create and manage logical sets
+      of Google Compute Engine instances.
+    version: v1beta1
+    slug: resource-views-v1beta1-resourceviews-v1beta1-projects-projectname-regions-region-resourceviews
+    schemes:
+    - https
+    mapping:
+      nextPageToken: nextPageToken
+      resourceViews: resourceViews
+    hosts:
+    - https://www.googleapis.com
+- group: resource-views-v1beta1
+  url_pattern: /resourceviews/v1beta1/projects/{projectName}/regions/{region}/resourceViews/{resourceViewName}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - creationTime
+  - description
+  - id
+  - kind
+  - labels
+  - lastModified
+  - members
+  - name
+  - numMembers
+  - selfLink
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: The Resource View API allows users to create and manage logical sets
+      of Google Compute Engine instances.
+    version: v1beta1
+    slug: resource-views-v1beta1-resourceviews-v1beta1-projects-projectname-regions-region-resourceviews-resourceviewname
+    schemes:
+    - https
+    mapping:
+      creationTime: creationTime
+      description: description
+      id: id
+      kind: kind
+      labels: labels
+      lastModified: lastModified
+      members: members
+      name: name
+      numMembers: numMembers
+      selfLink: selfLink
+    hosts:
+    - https://www.googleapis.com
+- group: resource-views-v1beta1
+  url_pattern: /resourceviews/v1beta1/projects/{projectName}/regions/{region}/resourceViews/{resourceViewName}/addResources
+  method: POST
+  host:
+  - https://www.googleapis.com
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: The Resource View API allows users to create and manage logical sets
+      of Google Compute Engine instances.
+    version: v1beta1
+    slug: resource-views-v1beta1-resourceviews-v1beta1-projects-projectname-regions-region-resourceviews-resourceviewname-addresources
+    schemes:
+    - https
+    hosts:
+    - https://www.googleapis.com
+- group: resource-views-v1beta1
+  url_pattern: /resourceviews/v1beta1/projects/{projectName}/regions/{region}/resourceViews/{resourceViewName}/removeResources
+  method: POST
+  host:
+  - https://www.googleapis.com
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: The Resource View API allows users to create and manage logical sets
+      of Google Compute Engine instances.
+    version: v1beta1
+    slug: resource-views-v1beta1-resourceviews-v1beta1-projects-projectname-regions-region-resourceviews-resourceviewname-removeresources
+    schemes:
+    - https
+    hosts:
+    - https://www.googleapis.com
+- group: resource-views-v1beta1
+  url_pattern: /resourceviews/v1beta1/projects/{projectName}/regions/{region}/resourceViews/{resourceViewName}/resources
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - members
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: The Resource View API allows users to create and manage logical sets
+      of Google Compute Engine instances.
+    version: v1beta1
+    slug: resource-views-v1beta1-resourceviews-v1beta1-projects-projectname-regions-region-resourceviews-resourceviewname-resources
+    schemes:
+    - https
+    mapping:
+      members: members
+      nextPageToken: nextPageToken
+    hosts:
+    - https://www.googleapis.com
+- group: resource-views-v1beta1
+  url_pattern: /resourceviews/v1beta1/projects/{projectName}/zones/{zone}/resourceViews
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - nextPageToken
+  - resourceViews
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: The Resource View API allows users to create and manage logical sets
+      of Google Compute Engine instances.
+    version: v1beta1
+    slug: resource-views-v1beta1-resourceviews-v1beta1-projects-projectname-zones-zone-resourceviews
+    schemes:
+    - https
+    mapping:
+      nextPageToken: nextPageToken
+      resourceViews: resourceViews
+    hosts:
+    - https://www.googleapis.com
+- group: resource-views-v1beta1
+  url_pattern: /resourceviews/v1beta1/projects/{projectName}/zones/{zone}/resourceViews/{resourceViewName}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - creationTime
+  - description
+  - id
+  - kind
+  - labels
+  - lastModified
+  - members
+  - name
+  - numMembers
+  - selfLink
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: The Resource View API allows users to create and manage logical sets
+      of Google Compute Engine instances.
+    version: v1beta1
+    slug: resource-views-v1beta1-resourceviews-v1beta1-projects-projectname-zones-zone-resourceviews-resourceviewname
+    schemes:
+    - https
+    mapping:
+      creationTime: creationTime
+      description: description
+      id: id
+      kind: kind
+      labels: labels
+      lastModified: lastModified
+      members: members
+      name: name
+      numMembers: numMembers
+      selfLink: selfLink
+    hosts:
+    - https://www.googleapis.com
+- group: resource-views-v1beta1
+  url_pattern: /resourceviews/v1beta1/projects/{projectName}/zones/{zone}/resourceViews/{resourceViewName}/addResources
+  method: POST
+  host:
+  - https://www.googleapis.com
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: The Resource View API allows users to create and manage logical sets
+      of Google Compute Engine instances.
+    version: v1beta1
+    slug: resource-views-v1beta1-resourceviews-v1beta1-projects-projectname-zones-zone-resourceviews-resourceviewname-addresources
+    schemes:
+    - https
+    hosts:
+    - https://www.googleapis.com
+- group: resource-views-v1beta1
+  url_pattern: /resourceviews/v1beta1/projects/{projectName}/zones/{zone}/resourceViews/{resourceViewName}/removeResources
+  method: POST
+  host:
+  - https://www.googleapis.com
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: The Resource View API allows users to create and manage logical sets
+      of Google Compute Engine instances.
+    version: v1beta1
+    slug: resource-views-v1beta1-resourceviews-v1beta1-projects-projectname-zones-zone-resourceviews-resourceviewname-removeresources
+    schemes:
+    - https
+    hosts:
+    - https://www.googleapis.com
+- group: resource-views-v1beta1
+  url_pattern: /resourceviews/v1beta1/projects/{projectName}/zones/{zone}/resourceViews/{resourceViewName}/resources
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - members
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: The Resource View API allows users to create and manage logical sets
+      of Google Compute Engine instances.
+    version: v1beta1
+    slug: resource-views-v1beta1-resourceviews-v1beta1-projects-projectname-zones-zone-resourceviews-resourceviewname-resources
+    schemes:
+    - https
+    mapping:
+      members: members
+      nextPageToken: nextPageToken
+    hosts:
+    - https://www.googleapis.com

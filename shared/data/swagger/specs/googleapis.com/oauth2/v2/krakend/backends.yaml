@@ -1,0 +1,159 @@
+backends:
+- group: google-oauth2-v2
+  url_pattern: /oauth2/v2/certs
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - keys
+  - keys.alg
+  - keys.e
+  - keys.kid
+  - keys.kty
+  - keys.n
+  - keys.use
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Obtains end-user authorization grants for use with other Google APIs.
+    version: v2
+    slug: google-oauth2-v2-oauth2-v2-certs
+    schemes:
+    - https
+    mapping:
+      keys: keys
+      keys.alg: keys.alg
+      keys.e: keys.e
+      keys.kid: keys.kid
+      keys.kty: keys.kty
+      keys.n: keys.n
+      keys.use: keys.use
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - security
+- group: google-oauth2-v2
+  url_pattern: /oauth2/v2/tokeninfo
+  method: POST
+  host:
+  - https://www.googleapis.com
+  query_string_params:
+  - access_token
+  - id_token
+  - token_handle
+  whitelist:
+  - access_type
+  - audience
+  - email
+  - expires_in
+  - issued_to
+  - scope
+  - token_handle
+  - user_id
+  - verified_email
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Obtains end-user authorization grants for use with other Google APIs.
+    version: v2
+    slug: google-oauth2-v2-oauth2-v2-tokeninfo
+    schemes:
+    - https
+    mapping:
+      access_type: access_type
+      audience: audience
+      email: email
+      expires_in: expires_in
+      issued_to: issued_to
+      scope: scope
+      token_handle: token_handle
+      user_id: user_id
+      verified_email: verified_email
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - security
+- group: google-oauth2-v2
+  url_pattern: /oauth2/v2/userinfo
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - email
+  - family_name
+  - gender
+  - given_name
+  - hd
+  - id
+  - link
+  - locale
+  - name
+  - picture
+  - verified_email
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Obtains end-user authorization grants for use with other Google APIs.
+    version: v2
+    slug: google-oauth2-v2-oauth2-v2-userinfo
+    schemes:
+    - https
+    mapping:
+      email: email
+      family_name: family_name
+      gender: gender
+      given_name: given_name
+      hd: hd
+      id: id
+      link: link
+      locale: locale
+      name: name
+      picture: picture
+      verified_email: verified_email
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - security
+    - userinfo
+- group: google-oauth2-v2
+  url_pattern: /userinfo/v2/me
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - email
+  - family_name
+  - gender
+  - given_name
+  - hd
+  - id
+  - link
+  - locale
+  - name
+  - picture
+  - verified_email
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Obtains end-user authorization grants for use with other Google APIs.
+    version: v2
+    slug: google-oauth2-v2-userinfo-v2-me
+    schemes:
+    - https
+    mapping:
+      email: email
+      family_name: family_name
+      gender: gender
+      given_name: given_name
+      hd: hd
+      id: id
+      link: link
+      locale: locale
+      name: name
+      picture: picture
+      verified_email: verified_email
+    hosts:
+    - https://www.googleapis.com
+    topics:
+    - security
+    - userinfo

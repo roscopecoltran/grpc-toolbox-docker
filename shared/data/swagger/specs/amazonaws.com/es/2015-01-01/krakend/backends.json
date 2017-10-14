@@ -1,0 +1,366 @@
+{
+	"backends": [
+		{
+			"group": "amazon-elasticsearch-service-2015-01-01",
+			"url_pattern": "/2015-01-01/domain",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://es.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cfullname\u003eAmazon Elasticsearch Configuration Service\u003c/fullname\u003e \u003cp\u003eUse the Amazon Elasticsearch configuration API to create, configure, and manage Elasticsearch domains.\u003c/p\u003e \u003cp\u003eThe endpoint for configuration service requests is region-specific: es.\u003ci\u003eregion\u003c/i\u003e.amazonaws.com. For example, es.us-east-1.amazonaws.com. For a current list of supported regions and endpoints, see \u003ca href=\"http://docs.aws.amazon.com/general/latest/gr/rande.html#elasticsearch-service-regions\" target=\"_blank\"\u003eRegions and Endpoints\u003c/a\u003e.\u003c/p\u003e",
+				"version": "2015-01-01",
+				"slug": "amazon-elasticsearch-service-2015-01-01-2015-01-01-domain",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://es.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-elasticsearch-service-2015-01-01",
+			"url_pattern": "/2015-01-01/es/domain-info",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://es.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cfullname\u003eAmazon Elasticsearch Configuration Service\u003c/fullname\u003e \u003cp\u003eUse the Amazon Elasticsearch configuration API to create, configure, and manage Elasticsearch domains.\u003c/p\u003e \u003cp\u003eThe endpoint for configuration service requests is region-specific: es.\u003ci\u003eregion\u003c/i\u003e.amazonaws.com. For example, es.us-east-1.amazonaws.com. For a current list of supported regions and endpoints, see \u003ca href=\"http://docs.aws.amazon.com/general/latest/gr/rande.html#elasticsearch-service-regions\" target=\"_blank\"\u003eRegions and Endpoints\u003c/a\u003e.\u003c/p\u003e",
+				"version": "2015-01-01",
+				"slug": "amazon-elasticsearch-service-2015-01-01-2015-01-01-es-domain-info",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://es.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-elasticsearch-service-2015-01-01",
+			"url_pattern": "/2015-01-01/es/domain",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://es.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cfullname\u003eAmazon Elasticsearch Configuration Service\u003c/fullname\u003e \u003cp\u003eUse the Amazon Elasticsearch configuration API to create, configure, and manage Elasticsearch domains.\u003c/p\u003e \u003cp\u003eThe endpoint for configuration service requests is region-specific: es.\u003ci\u003eregion\u003c/i\u003e.amazonaws.com. For example, es.us-east-1.amazonaws.com. For a current list of supported regions and endpoints, see \u003ca href=\"http://docs.aws.amazon.com/general/latest/gr/rande.html#elasticsearch-service-regions\" target=\"_blank\"\u003eRegions and Endpoints\u003c/a\u003e.\u003c/p\u003e",
+				"version": "2015-01-01",
+				"slug": "amazon-elasticsearch-service-2015-01-01-2015-01-01-es-domain",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://es.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-elasticsearch-service-2015-01-01",
+			"url_pattern": "/2015-01-01/es/domain/{DomainName}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://es.amazonaws.com"
+			],
+			"url_keys": [
+				"DomainName"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cfullname\u003eAmazon Elasticsearch Configuration Service\u003c/fullname\u003e \u003cp\u003eUse the Amazon Elasticsearch configuration API to create, configure, and manage Elasticsearch domains.\u003c/p\u003e \u003cp\u003eThe endpoint for configuration service requests is region-specific: es.\u003ci\u003eregion\u003c/i\u003e.amazonaws.com. For example, es.us-east-1.amazonaws.com. For a current list of supported regions and endpoints, see \u003ca href=\"http://docs.aws.amazon.com/general/latest/gr/rande.html#elasticsearch-service-regions\" target=\"_blank\"\u003eRegions and Endpoints\u003c/a\u003e.\u003c/p\u003e",
+				"version": "2015-01-01",
+				"slug": "amazon-elasticsearch-service-2015-01-01-2015-01-01-es-domain-domainname",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://es.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-elasticsearch-service-2015-01-01",
+			"url_pattern": "/2015-01-01/es/domain/{DomainName}/config",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://es.amazonaws.com"
+			],
+			"url_keys": [
+				"DomainName"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cfullname\u003eAmazon Elasticsearch Configuration Service\u003c/fullname\u003e \u003cp\u003eUse the Amazon Elasticsearch configuration API to create, configure, and manage Elasticsearch domains.\u003c/p\u003e \u003cp\u003eThe endpoint for configuration service requests is region-specific: es.\u003ci\u003eregion\u003c/i\u003e.amazonaws.com. For example, es.us-east-1.amazonaws.com. For a current list of supported regions and endpoints, see \u003ca href=\"http://docs.aws.amazon.com/general/latest/gr/rande.html#elasticsearch-service-regions\" target=\"_blank\"\u003eRegions and Endpoints\u003c/a\u003e.\u003c/p\u003e",
+				"version": "2015-01-01",
+				"slug": "amazon-elasticsearch-service-2015-01-01-2015-01-01-es-domain-domainname-config",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://es.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-elasticsearch-service-2015-01-01",
+			"url_pattern": "/2015-01-01/es/instanceTypeLimits/{ElasticsearchVersion}/{InstanceType}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://es.amazonaws.com"
+			],
+			"url_keys": [
+				"ElasticsearchVersion",
+				"InstanceType"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cfullname\u003eAmazon Elasticsearch Configuration Service\u003c/fullname\u003e \u003cp\u003eUse the Amazon Elasticsearch configuration API to create, configure, and manage Elasticsearch domains.\u003c/p\u003e \u003cp\u003eThe endpoint for configuration service requests is region-specific: es.\u003ci\u003eregion\u003c/i\u003e.amazonaws.com. For example, es.us-east-1.amazonaws.com. For a current list of supported regions and endpoints, see \u003ca href=\"http://docs.aws.amazon.com/general/latest/gr/rande.html#elasticsearch-service-regions\" target=\"_blank\"\u003eRegions and Endpoints\u003c/a\u003e.\u003c/p\u003e",
+				"version": "2015-01-01",
+				"slug": "amazon-elasticsearch-service-2015-01-01-2015-01-01-es-instancetypelimits-elasticsearchversion-instancetype",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://es.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-elasticsearch-service-2015-01-01",
+			"url_pattern": "/2015-01-01/es/instanceTypes/{ElasticsearchVersion}",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://es.amazonaws.com"
+			],
+			"url_keys": [
+				"ElasticsearchVersion"
+			],
+			"query_string_params": [
+				"MaxResults",
+				"NextToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cfullname\u003eAmazon Elasticsearch Configuration Service\u003c/fullname\u003e \u003cp\u003eUse the Amazon Elasticsearch configuration API to create, configure, and manage Elasticsearch domains.\u003c/p\u003e \u003cp\u003eThe endpoint for configuration service requests is region-specific: es.\u003ci\u003eregion\u003c/i\u003e.amazonaws.com. For example, es.us-east-1.amazonaws.com. For a current list of supported regions and endpoints, see \u003ca href=\"http://docs.aws.amazon.com/general/latest/gr/rande.html#elasticsearch-service-regions\" target=\"_blank\"\u003eRegions and Endpoints\u003c/a\u003e.\u003c/p\u003e",
+				"version": "2015-01-01",
+				"slug": "amazon-elasticsearch-service-2015-01-01-2015-01-01-es-instancetypes-elasticsearchversion",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://es.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-elasticsearch-service-2015-01-01",
+			"url_pattern": "/2015-01-01/es/versions",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://es.amazonaws.com"
+			],
+			"query_string_params": [
+				"MaxResults",
+				"NextToken"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cfullname\u003eAmazon Elasticsearch Configuration Service\u003c/fullname\u003e \u003cp\u003eUse the Amazon Elasticsearch configuration API to create, configure, and manage Elasticsearch domains.\u003c/p\u003e \u003cp\u003eThe endpoint for configuration service requests is region-specific: es.\u003ci\u003eregion\u003c/i\u003e.amazonaws.com. For example, es.us-east-1.amazonaws.com. For a current list of supported regions and endpoints, see \u003ca href=\"http://docs.aws.amazon.com/general/latest/gr/rande.html#elasticsearch-service-regions\" target=\"_blank\"\u003eRegions and Endpoints\u003c/a\u003e.\u003c/p\u003e",
+				"version": "2015-01-01",
+				"slug": "amazon-elasticsearch-service-2015-01-01-2015-01-01-es-versions",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://es.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-elasticsearch-service-2015-01-01",
+			"url_pattern": "/2015-01-01/tags-removal",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://es.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cfullname\u003eAmazon Elasticsearch Configuration Service\u003c/fullname\u003e \u003cp\u003eUse the Amazon Elasticsearch configuration API to create, configure, and manage Elasticsearch domains.\u003c/p\u003e \u003cp\u003eThe endpoint for configuration service requests is region-specific: es.\u003ci\u003eregion\u003c/i\u003e.amazonaws.com. For example, es.us-east-1.amazonaws.com. For a current list of supported regions and endpoints, see \u003ca href=\"http://docs.aws.amazon.com/general/latest/gr/rande.html#elasticsearch-service-regions\" target=\"_blank\"\u003eRegions and Endpoints\u003c/a\u003e.\u003c/p\u003e",
+				"version": "2015-01-01",
+				"slug": "amazon-elasticsearch-service-2015-01-01-2015-01-01-tags-removal",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://es.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-elasticsearch-service-2015-01-01",
+			"url_pattern": "/2015-01-01/tags",
+			"method": "POST",
+			"encoding": "json",
+			"host": [
+				"http://es.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cfullname\u003eAmazon Elasticsearch Configuration Service\u003c/fullname\u003e \u003cp\u003eUse the Amazon Elasticsearch configuration API to create, configure, and manage Elasticsearch domains.\u003c/p\u003e \u003cp\u003eThe endpoint for configuration service requests is region-specific: es.\u003ci\u003eregion\u003c/i\u003e.amazonaws.com. For example, es.us-east-1.amazonaws.com. For a current list of supported regions and endpoints, see \u003ca href=\"http://docs.aws.amazon.com/general/latest/gr/rande.html#elasticsearch-service-regions\" target=\"_blank\"\u003eRegions and Endpoints\u003c/a\u003e.\u003c/p\u003e",
+				"version": "2015-01-01",
+				"slug": "amazon-elasticsearch-service-2015-01-01-2015-01-01-tags",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://es.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-elasticsearch-service-2015-01-01",
+			"url_pattern": "/2015-01-01/tags/",
+			"method": "GET",
+			"encoding": "json",
+			"host": [
+				"http://es.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"description": "\u003cfullname\u003eAmazon Elasticsearch Configuration Service\u003c/fullname\u003e \u003cp\u003eUse the Amazon Elasticsearch configuration API to create, configure, and manage Elasticsearch domains.\u003c/p\u003e \u003cp\u003eThe endpoint for configuration service requests is region-specific: es.\u003ci\u003eregion\u003c/i\u003e.amazonaws.com. For example, es.us-east-1.amazonaws.com. For a current list of supported regions and endpoints, see \u003ca href=\"http://docs.aws.amazon.com/general/latest/gr/rande.html#elasticsearch-service-regions\" target=\"_blank\"\u003eRegions and Endpoints\u003c/a\u003e.\u003c/p\u003e",
+				"version": "2015-01-01",
+				"slug": "amazon-elasticsearch-service-2015-01-01-2015-01-01-tags",
+				"schemes": [
+					"http"
+				],
+				"consumes": [
+					"json"
+				],
+				"produces": [
+					"json"
+				],
+				"hosts": [
+					"http://es.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		}
+	]
+}

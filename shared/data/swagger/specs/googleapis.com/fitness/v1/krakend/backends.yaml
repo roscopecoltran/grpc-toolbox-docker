@@ -1,0 +1,147 @@
+backends:
+- group: fitness-v1
+  url_pattern: /fitness/v1/users/{userId}/dataSources
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - dataSource
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Stores and accesses user data in the fitness store from apps on any
+      platform.
+    version: v1
+    slug: fitness-v1-fitness-v1-users-userid-datasources
+    schemes:
+    - https
+    mapping:
+      dataSource: dataSource
+    hosts:
+    - https://www.googleapis.com
+- group: fitness-v1
+  url_pattern: /fitness/v1/users/{userId}/dataSources/{dataSourceId}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - dataQualityStandard
+  - dataStreamId
+  - dataStreamName
+  - name
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Stores and accesses user data in the fitness store from apps on any
+      platform.
+    version: v1
+    slug: fitness-v1-fitness-v1-users-userid-datasources-datasourceid
+    schemes:
+    - https
+    mapping:
+      dataQualityStandard: dataQualityStandard
+      dataStreamId: dataStreamId
+      dataStreamName: dataStreamName
+      name: name
+    hosts:
+    - https://www.googleapis.com
+- group: fitness-v1
+  url_pattern: /fitness/v1/users/{userId}/dataSources/{dataSourceId}/dataPointChanges
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - dataSourceId
+  - deletedDataPoint
+  - insertedDataPoint
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Stores and accesses user data in the fitness store from apps on any
+      platform.
+    version: v1
+    slug: fitness-v1-fitness-v1-users-userid-datasources-datasourceid-datapointchanges
+    schemes:
+    - https
+    mapping:
+      dataSourceId: dataSourceId
+      deletedDataPoint: deletedDataPoint
+      insertedDataPoint: insertedDataPoint
+      nextPageToken: nextPageToken
+    hosts:
+    - https://www.googleapis.com
+- group: fitness-v1
+  url_pattern: /fitness/v1/users/{userId}/dataSources/{dataSourceId}/datasets/{datasetId}
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - dataSourceId
+  - maxEndTimeNs
+  - minStartTimeNs
+  - nextPageToken
+  - point
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Stores and accesses user data in the fitness store from apps on any
+      platform.
+    version: v1
+    slug: fitness-v1-fitness-v1-users-userid-datasources-datasourceid-datasets-datasetid
+    schemes:
+    - https
+    mapping:
+      dataSourceId: dataSourceId
+      maxEndTimeNs: maxEndTimeNs
+      minStartTimeNs: minStartTimeNs
+      nextPageToken: nextPageToken
+      point: point
+    hosts:
+    - https://www.googleapis.com
+- group: fitness-v1
+  url_pattern: /fitness/v1/users/{userId}/dataset:aggregate
+  method: POST
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - bucket
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Stores and accesses user data in the fitness store from apps on any
+      platform.
+    version: v1
+    slug: fitness-v1-fitness-v1-users-userid-dataset-aggregate
+    schemes:
+    - https
+    mapping:
+      bucket: bucket
+    hosts:
+    - https://www.googleapis.com
+- group: fitness-v1
+  url_pattern: /fitness/v1/users/{userId}/sessions
+  method: GET
+  host:
+  - https://www.googleapis.com
+  whitelist:
+  - deletedSession
+  - hasMoreData
+  - nextPageToken
+  - session
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Stores and accesses user data in the fitness store from apps on any
+      platform.
+    version: v1
+    slug: fitness-v1-fitness-v1-users-userid-sessions
+    schemes:
+    - https
+    mapping:
+      deletedSession: deletedSession
+      hasMoreData: hasMoreData
+      nextPageToken: nextPageToken
+      session: session
+    hosts:
+    - https://www.googleapis.com

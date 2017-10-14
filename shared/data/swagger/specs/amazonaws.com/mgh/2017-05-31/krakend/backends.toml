@@ -1,0 +1,287 @@
+[[backends]]
+  group = "aws-migration-hub-2017-05-31"
+  url_pattern = "/#AssociateDiscoveredResource"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mgh.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<p/>"
+    version = "2017-05-31"
+    slug = "aws-migration-hub-2017-05-31-associatediscoveredresource"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mgh.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-migration-hub-2017-05-31"
+  url_pattern = "/#CreateProgressUpdateStream"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mgh.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<p/>"
+    version = "2017-05-31"
+    slug = "aws-migration-hub-2017-05-31-createprogressupdatestream"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mgh.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-migration-hub-2017-05-31"
+  url_pattern = "/#DeleteProgressUpdateStream"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mgh.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<p/>"
+    version = "2017-05-31"
+    slug = "aws-migration-hub-2017-05-31-deleteprogressupdatestream"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mgh.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-migration-hub-2017-05-31"
+  url_pattern = "/#DescribeApplicationState"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mgh.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<p/>"
+    version = "2017-05-31"
+    slug = "aws-migration-hub-2017-05-31-describeapplicationstate"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mgh.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-migration-hub-2017-05-31"
+  url_pattern = "/#DescribeMigrationTask"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mgh.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<p/>"
+    version = "2017-05-31"
+    slug = "aws-migration-hub-2017-05-31-describemigrationtask"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mgh.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-migration-hub-2017-05-31"
+  url_pattern = "/#DisassociateCreatedArtifact"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mgh.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<p/>"
+    version = "2017-05-31"
+    slug = "aws-migration-hub-2017-05-31-disassociatecreatedartifact"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mgh.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-migration-hub-2017-05-31"
+  url_pattern = "/#DisassociateDiscoveredResource"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mgh.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<p/>"
+    version = "2017-05-31"
+    slug = "aws-migration-hub-2017-05-31-disassociatediscoveredresource"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mgh.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-migration-hub-2017-05-31"
+  url_pattern = "/#ImportMigrationTask"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mgh.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<p/>"
+    version = "2017-05-31"
+    slug = "aws-migration-hub-2017-05-31-importmigrationtask"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mgh.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-migration-hub-2017-05-31"
+  url_pattern = "/#ListCreatedArtifacts"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mgh.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<p/>"
+    version = "2017-05-31"
+    slug = "aws-migration-hub-2017-05-31-listcreatedartifacts"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mgh.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-migration-hub-2017-05-31"
+  url_pattern = "/#ListDiscoveredResources"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mgh.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<p/>"
+    version = "2017-05-31"
+    slug = "aws-migration-hub-2017-05-31-listdiscoveredresources"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mgh.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-migration-hub-2017-05-31"
+  url_pattern = "/#ListMigrationTasks"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mgh.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<p/>"
+    version = "2017-05-31"
+    slug = "aws-migration-hub-2017-05-31-listmigrationtasks"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mgh.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-migration-hub-2017-05-31"
+  url_pattern = "/#ListProgressUpdateStreams"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mgh.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<p/>"
+    version = "2017-05-31"
+    slug = "aws-migration-hub-2017-05-31-listprogressupdatestreams"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mgh.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-migration-hub-2017-05-31"
+  url_pattern = "/#NotifyApplicationState"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mgh.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<p/>"
+    version = "2017-05-31"
+    slug = "aws-migration-hub-2017-05-31-notifyapplicationstate"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mgh.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-migration-hub-2017-05-31"
+  url_pattern = "/#NotifyMigrationTaskState"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mgh.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<p/>"
+    version = "2017-05-31"
+    slug = "aws-migration-hub-2017-05-31-notifymigrationtaskstate"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mgh.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-migration-hub-2017-05-31"
+  url_pattern = "/#PutResourceAttributes"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mgh.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<p/>"
+    version = "2017-05-31"
+    slug = "aws-migration-hub-2017-05-31-putresourceattributes"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mgh.amazonaws.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "aws-migration-hub-2017-05-31"
+  url_pattern = "/"
+  method = "POST"
+  encoding = "json"
+  host = ["http://mgh.amazonaws.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "amazonaws.com"
+    description = "<p/>"
+    version = "2017-05-31"
+    slug = "aws-migration-hub-2017-05-31"
+    schemes = ["http"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["http://mgh.amazonaws.com"]
+    topics = ["cloud"]

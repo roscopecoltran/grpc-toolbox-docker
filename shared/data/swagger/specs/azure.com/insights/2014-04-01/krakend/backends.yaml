@@ -1,0 +1,30 @@
+backends:
+- group: insightsclient-2014-04-01
+  url_pattern: /{resourceUri}/usages
+  method: GET
+  encoding: json
+  host:
+  - https://management.azure.com
+  query_string_params:
+  - $filter
+  - api-version
+  whitelist:
+  - value
+  concurrent_calls: 1
+  extra_config:
+    provider: azure.com
+    version: 2014-04-01
+    slug: insightsclient-2014-04-01-resourceuri-usages
+    schemes:
+    - https
+    consumes:
+    - json
+    produces:
+    - json
+    mapping:
+      value: value
+    hosts:
+    - https://management.azure.com
+    topics:
+    - cloud
+    - usagemetrics

@@ -1,0 +1,551 @@
+backends:
+- group: amazon-cloudsearch-2011-02-01
+  url_pattern: /#DefineIndexField
+  method: POST
+  host:
+  - http://cloudsearch.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon CloudSearch Configuration Service</fullname> <p>You
+      use the configuration service to create, configure, and manage search domains.
+      Configuration service requests are submitted using the AWS Query protocol. AWS
+      Query requests are HTTP or HTTPS requests submitted via HTTP GET or POST with
+      a query parameter named Action.</p> <p>The endpoint for configuration service
+      requests is region-specific: cloudsearch.<i>region</i>.amazonaws.com. For example,
+      cloudsearch.us-east-1.amazonaws.com. For a current list of supported regions
+      and endpoints, see <a href="http://docs.aws.amazon.com/general/latest/gr/rande.html#cloudsearch_region">Regions
+      and Endpoints</a>.</p>'
+    version: 2011-02-01
+    slug: amazon-cloudsearch-2011-02-01-defineindexfield
+    schemes:
+    - http
+    hosts:
+    - http://cloudsearch.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudsearch-2011-02-01
+  url_pattern: /#DefineRankExpression
+  method: POST
+  host:
+  - http://cloudsearch.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon CloudSearch Configuration Service</fullname> <p>You
+      use the configuration service to create, configure, and manage search domains.
+      Configuration service requests are submitted using the AWS Query protocol. AWS
+      Query requests are HTTP or HTTPS requests submitted via HTTP GET or POST with
+      a query parameter named Action.</p> <p>The endpoint for configuration service
+      requests is region-specific: cloudsearch.<i>region</i>.amazonaws.com. For example,
+      cloudsearch.us-east-1.amazonaws.com. For a current list of supported regions
+      and endpoints, see <a href="http://docs.aws.amazon.com/general/latest/gr/rande.html#cloudsearch_region">Regions
+      and Endpoints</a>.</p>'
+    version: 2011-02-01
+    slug: amazon-cloudsearch-2011-02-01-definerankexpression
+    schemes:
+    - http
+    hosts:
+    - http://cloudsearch.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudsearch-2011-02-01
+  url_pattern: /#DeleteDomain
+  method: POST
+  host:
+  - http://cloudsearch.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon CloudSearch Configuration Service</fullname> <p>You
+      use the configuration service to create, configure, and manage search domains.
+      Configuration service requests are submitted using the AWS Query protocol. AWS
+      Query requests are HTTP or HTTPS requests submitted via HTTP GET or POST with
+      a query parameter named Action.</p> <p>The endpoint for configuration service
+      requests is region-specific: cloudsearch.<i>region</i>.amazonaws.com. For example,
+      cloudsearch.us-east-1.amazonaws.com. For a current list of supported regions
+      and endpoints, see <a href="http://docs.aws.amazon.com/general/latest/gr/rande.html#cloudsearch_region">Regions
+      and Endpoints</a>.</p>'
+    version: 2011-02-01
+    slug: amazon-cloudsearch-2011-02-01-deletedomain
+    schemes:
+    - http
+    hosts:
+    - http://cloudsearch.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudsearch-2011-02-01
+  url_pattern: /#DeleteIndexField
+  method: POST
+  host:
+  - http://cloudsearch.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon CloudSearch Configuration Service</fullname> <p>You
+      use the configuration service to create, configure, and manage search domains.
+      Configuration service requests are submitted using the AWS Query protocol. AWS
+      Query requests are HTTP or HTTPS requests submitted via HTTP GET or POST with
+      a query parameter named Action.</p> <p>The endpoint for configuration service
+      requests is region-specific: cloudsearch.<i>region</i>.amazonaws.com. For example,
+      cloudsearch.us-east-1.amazonaws.com. For a current list of supported regions
+      and endpoints, see <a href="http://docs.aws.amazon.com/general/latest/gr/rande.html#cloudsearch_region">Regions
+      and Endpoints</a>.</p>'
+    version: 2011-02-01
+    slug: amazon-cloudsearch-2011-02-01-deleteindexfield
+    schemes:
+    - http
+    hosts:
+    - http://cloudsearch.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudsearch-2011-02-01
+  url_pattern: /#DeleteRankExpression
+  method: POST
+  host:
+  - http://cloudsearch.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon CloudSearch Configuration Service</fullname> <p>You
+      use the configuration service to create, configure, and manage search domains.
+      Configuration service requests are submitted using the AWS Query protocol. AWS
+      Query requests are HTTP or HTTPS requests submitted via HTTP GET or POST with
+      a query parameter named Action.</p> <p>The endpoint for configuration service
+      requests is region-specific: cloudsearch.<i>region</i>.amazonaws.com. For example,
+      cloudsearch.us-east-1.amazonaws.com. For a current list of supported regions
+      and endpoints, see <a href="http://docs.aws.amazon.com/general/latest/gr/rande.html#cloudsearch_region">Regions
+      and Endpoints</a>.</p>'
+    version: 2011-02-01
+    slug: amazon-cloudsearch-2011-02-01-deleterankexpression
+    schemes:
+    - http
+    hosts:
+    - http://cloudsearch.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudsearch-2011-02-01
+  url_pattern: /#DescribeAvailabilityOptions
+  method: POST
+  host:
+  - http://cloudsearch.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon CloudSearch Configuration Service</fullname> <p>You
+      use the configuration service to create, configure, and manage search domains.
+      Configuration service requests are submitted using the AWS Query protocol. AWS
+      Query requests are HTTP or HTTPS requests submitted via HTTP GET or POST with
+      a query parameter named Action.</p> <p>The endpoint for configuration service
+      requests is region-specific: cloudsearch.<i>region</i>.amazonaws.com. For example,
+      cloudsearch.us-east-1.amazonaws.com. For a current list of supported regions
+      and endpoints, see <a href="http://docs.aws.amazon.com/general/latest/gr/rande.html#cloudsearch_region">Regions
+      and Endpoints</a>.</p>'
+    version: 2011-02-01
+    slug: amazon-cloudsearch-2011-02-01-describeavailabilityoptions
+    schemes:
+    - http
+    hosts:
+    - http://cloudsearch.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudsearch-2011-02-01
+  url_pattern: /#DescribeDefaultSearchField
+  method: POST
+  host:
+  - http://cloudsearch.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon CloudSearch Configuration Service</fullname> <p>You
+      use the configuration service to create, configure, and manage search domains.
+      Configuration service requests are submitted using the AWS Query protocol. AWS
+      Query requests are HTTP or HTTPS requests submitted via HTTP GET or POST with
+      a query parameter named Action.</p> <p>The endpoint for configuration service
+      requests is region-specific: cloudsearch.<i>region</i>.amazonaws.com. For example,
+      cloudsearch.us-east-1.amazonaws.com. For a current list of supported regions
+      and endpoints, see <a href="http://docs.aws.amazon.com/general/latest/gr/rande.html#cloudsearch_region">Regions
+      and Endpoints</a>.</p>'
+    version: 2011-02-01
+    slug: amazon-cloudsearch-2011-02-01-describedefaultsearchfield
+    schemes:
+    - http
+    hosts:
+    - http://cloudsearch.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudsearch-2011-02-01
+  url_pattern: /#DescribeDomains
+  method: POST
+  host:
+  - http://cloudsearch.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon CloudSearch Configuration Service</fullname> <p>You
+      use the configuration service to create, configure, and manage search domains.
+      Configuration service requests are submitted using the AWS Query protocol. AWS
+      Query requests are HTTP or HTTPS requests submitted via HTTP GET or POST with
+      a query parameter named Action.</p> <p>The endpoint for configuration service
+      requests is region-specific: cloudsearch.<i>region</i>.amazonaws.com. For example,
+      cloudsearch.us-east-1.amazonaws.com. For a current list of supported regions
+      and endpoints, see <a href="http://docs.aws.amazon.com/general/latest/gr/rande.html#cloudsearch_region">Regions
+      and Endpoints</a>.</p>'
+    version: 2011-02-01
+    slug: amazon-cloudsearch-2011-02-01-describedomains
+    schemes:
+    - http
+    hosts:
+    - http://cloudsearch.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudsearch-2011-02-01
+  url_pattern: /#DescribeIndexFields
+  method: POST
+  host:
+  - http://cloudsearch.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon CloudSearch Configuration Service</fullname> <p>You
+      use the configuration service to create, configure, and manage search domains.
+      Configuration service requests are submitted using the AWS Query protocol. AWS
+      Query requests are HTTP or HTTPS requests submitted via HTTP GET or POST with
+      a query parameter named Action.</p> <p>The endpoint for configuration service
+      requests is region-specific: cloudsearch.<i>region</i>.amazonaws.com. For example,
+      cloudsearch.us-east-1.amazonaws.com. For a current list of supported regions
+      and endpoints, see <a href="http://docs.aws.amazon.com/general/latest/gr/rande.html#cloudsearch_region">Regions
+      and Endpoints</a>.</p>'
+    version: 2011-02-01
+    slug: amazon-cloudsearch-2011-02-01-describeindexfields
+    schemes:
+    - http
+    hosts:
+    - http://cloudsearch.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudsearch-2011-02-01
+  url_pattern: /#DescribeRankExpressions
+  method: POST
+  host:
+  - http://cloudsearch.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon CloudSearch Configuration Service</fullname> <p>You
+      use the configuration service to create, configure, and manage search domains.
+      Configuration service requests are submitted using the AWS Query protocol. AWS
+      Query requests are HTTP or HTTPS requests submitted via HTTP GET or POST with
+      a query parameter named Action.</p> <p>The endpoint for configuration service
+      requests is region-specific: cloudsearch.<i>region</i>.amazonaws.com. For example,
+      cloudsearch.us-east-1.amazonaws.com. For a current list of supported regions
+      and endpoints, see <a href="http://docs.aws.amazon.com/general/latest/gr/rande.html#cloudsearch_region">Regions
+      and Endpoints</a>.</p>'
+    version: 2011-02-01
+    slug: amazon-cloudsearch-2011-02-01-describerankexpressions
+    schemes:
+    - http
+    hosts:
+    - http://cloudsearch.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudsearch-2011-02-01
+  url_pattern: /#DescribeServiceAccessPolicies
+  method: POST
+  host:
+  - http://cloudsearch.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon CloudSearch Configuration Service</fullname> <p>You
+      use the configuration service to create, configure, and manage search domains.
+      Configuration service requests are submitted using the AWS Query protocol. AWS
+      Query requests are HTTP or HTTPS requests submitted via HTTP GET or POST with
+      a query parameter named Action.</p> <p>The endpoint for configuration service
+      requests is region-specific: cloudsearch.<i>region</i>.amazonaws.com. For example,
+      cloudsearch.us-east-1.amazonaws.com. For a current list of supported regions
+      and endpoints, see <a href="http://docs.aws.amazon.com/general/latest/gr/rande.html#cloudsearch_region">Regions
+      and Endpoints</a>.</p>'
+    version: 2011-02-01
+    slug: amazon-cloudsearch-2011-02-01-describeserviceaccesspolicies
+    schemes:
+    - http
+    hosts:
+    - http://cloudsearch.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudsearch-2011-02-01
+  url_pattern: /#DescribeStemmingOptions
+  method: POST
+  host:
+  - http://cloudsearch.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon CloudSearch Configuration Service</fullname> <p>You
+      use the configuration service to create, configure, and manage search domains.
+      Configuration service requests are submitted using the AWS Query protocol. AWS
+      Query requests are HTTP or HTTPS requests submitted via HTTP GET or POST with
+      a query parameter named Action.</p> <p>The endpoint for configuration service
+      requests is region-specific: cloudsearch.<i>region</i>.amazonaws.com. For example,
+      cloudsearch.us-east-1.amazonaws.com. For a current list of supported regions
+      and endpoints, see <a href="http://docs.aws.amazon.com/general/latest/gr/rande.html#cloudsearch_region">Regions
+      and Endpoints</a>.</p>'
+    version: 2011-02-01
+    slug: amazon-cloudsearch-2011-02-01-describestemmingoptions
+    schemes:
+    - http
+    hosts:
+    - http://cloudsearch.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudsearch-2011-02-01
+  url_pattern: /#DescribeStopwordOptions
+  method: POST
+  host:
+  - http://cloudsearch.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon CloudSearch Configuration Service</fullname> <p>You
+      use the configuration service to create, configure, and manage search domains.
+      Configuration service requests are submitted using the AWS Query protocol. AWS
+      Query requests are HTTP or HTTPS requests submitted via HTTP GET or POST with
+      a query parameter named Action.</p> <p>The endpoint for configuration service
+      requests is region-specific: cloudsearch.<i>region</i>.amazonaws.com. For example,
+      cloudsearch.us-east-1.amazonaws.com. For a current list of supported regions
+      and endpoints, see <a href="http://docs.aws.amazon.com/general/latest/gr/rande.html#cloudsearch_region">Regions
+      and Endpoints</a>.</p>'
+    version: 2011-02-01
+    slug: amazon-cloudsearch-2011-02-01-describestopwordoptions
+    schemes:
+    - http
+    hosts:
+    - http://cloudsearch.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudsearch-2011-02-01
+  url_pattern: /#DescribeSynonymOptions
+  method: POST
+  host:
+  - http://cloudsearch.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon CloudSearch Configuration Service</fullname> <p>You
+      use the configuration service to create, configure, and manage search domains.
+      Configuration service requests are submitted using the AWS Query protocol. AWS
+      Query requests are HTTP or HTTPS requests submitted via HTTP GET or POST with
+      a query parameter named Action.</p> <p>The endpoint for configuration service
+      requests is region-specific: cloudsearch.<i>region</i>.amazonaws.com. For example,
+      cloudsearch.us-east-1.amazonaws.com. For a current list of supported regions
+      and endpoints, see <a href="http://docs.aws.amazon.com/general/latest/gr/rande.html#cloudsearch_region">Regions
+      and Endpoints</a>.</p>'
+    version: 2011-02-01
+    slug: amazon-cloudsearch-2011-02-01-describesynonymoptions
+    schemes:
+    - http
+    hosts:
+    - http://cloudsearch.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudsearch-2011-02-01
+  url_pattern: /#IndexDocuments
+  method: POST
+  host:
+  - http://cloudsearch.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon CloudSearch Configuration Service</fullname> <p>You
+      use the configuration service to create, configure, and manage search domains.
+      Configuration service requests are submitted using the AWS Query protocol. AWS
+      Query requests are HTTP or HTTPS requests submitted via HTTP GET or POST with
+      a query parameter named Action.</p> <p>The endpoint for configuration service
+      requests is region-specific: cloudsearch.<i>region</i>.amazonaws.com. For example,
+      cloudsearch.us-east-1.amazonaws.com. For a current list of supported regions
+      and endpoints, see <a href="http://docs.aws.amazon.com/general/latest/gr/rande.html#cloudsearch_region">Regions
+      and Endpoints</a>.</p>'
+    version: 2011-02-01
+    slug: amazon-cloudsearch-2011-02-01-indexdocuments
+    schemes:
+    - http
+    hosts:
+    - http://cloudsearch.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudsearch-2011-02-01
+  url_pattern: /#UpdateAvailabilityOptions
+  method: POST
+  host:
+  - http://cloudsearch.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon CloudSearch Configuration Service</fullname> <p>You
+      use the configuration service to create, configure, and manage search domains.
+      Configuration service requests are submitted using the AWS Query protocol. AWS
+      Query requests are HTTP or HTTPS requests submitted via HTTP GET or POST with
+      a query parameter named Action.</p> <p>The endpoint for configuration service
+      requests is region-specific: cloudsearch.<i>region</i>.amazonaws.com. For example,
+      cloudsearch.us-east-1.amazonaws.com. For a current list of supported regions
+      and endpoints, see <a href="http://docs.aws.amazon.com/general/latest/gr/rande.html#cloudsearch_region">Regions
+      and Endpoints</a>.</p>'
+    version: 2011-02-01
+    slug: amazon-cloudsearch-2011-02-01-updateavailabilityoptions
+    schemes:
+    - http
+    hosts:
+    - http://cloudsearch.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudsearch-2011-02-01
+  url_pattern: /#UpdateDefaultSearchField
+  method: POST
+  host:
+  - http://cloudsearch.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon CloudSearch Configuration Service</fullname> <p>You
+      use the configuration service to create, configure, and manage search domains.
+      Configuration service requests are submitted using the AWS Query protocol. AWS
+      Query requests are HTTP or HTTPS requests submitted via HTTP GET or POST with
+      a query parameter named Action.</p> <p>The endpoint for configuration service
+      requests is region-specific: cloudsearch.<i>region</i>.amazonaws.com. For example,
+      cloudsearch.us-east-1.amazonaws.com. For a current list of supported regions
+      and endpoints, see <a href="http://docs.aws.amazon.com/general/latest/gr/rande.html#cloudsearch_region">Regions
+      and Endpoints</a>.</p>'
+    version: 2011-02-01
+    slug: amazon-cloudsearch-2011-02-01-updatedefaultsearchfield
+    schemes:
+    - http
+    hosts:
+    - http://cloudsearch.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudsearch-2011-02-01
+  url_pattern: /#UpdateServiceAccessPolicies
+  method: POST
+  host:
+  - http://cloudsearch.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon CloudSearch Configuration Service</fullname> <p>You
+      use the configuration service to create, configure, and manage search domains.
+      Configuration service requests are submitted using the AWS Query protocol. AWS
+      Query requests are HTTP or HTTPS requests submitted via HTTP GET or POST with
+      a query parameter named Action.</p> <p>The endpoint for configuration service
+      requests is region-specific: cloudsearch.<i>region</i>.amazonaws.com. For example,
+      cloudsearch.us-east-1.amazonaws.com. For a current list of supported regions
+      and endpoints, see <a href="http://docs.aws.amazon.com/general/latest/gr/rande.html#cloudsearch_region">Regions
+      and Endpoints</a>.</p>'
+    version: 2011-02-01
+    slug: amazon-cloudsearch-2011-02-01-updateserviceaccesspolicies
+    schemes:
+    - http
+    hosts:
+    - http://cloudsearch.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudsearch-2011-02-01
+  url_pattern: /#UpdateStemmingOptions
+  method: POST
+  host:
+  - http://cloudsearch.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon CloudSearch Configuration Service</fullname> <p>You
+      use the configuration service to create, configure, and manage search domains.
+      Configuration service requests are submitted using the AWS Query protocol. AWS
+      Query requests are HTTP or HTTPS requests submitted via HTTP GET or POST with
+      a query parameter named Action.</p> <p>The endpoint for configuration service
+      requests is region-specific: cloudsearch.<i>region</i>.amazonaws.com. For example,
+      cloudsearch.us-east-1.amazonaws.com. For a current list of supported regions
+      and endpoints, see <a href="http://docs.aws.amazon.com/general/latest/gr/rande.html#cloudsearch_region">Regions
+      and Endpoints</a>.</p>'
+    version: 2011-02-01
+    slug: amazon-cloudsearch-2011-02-01-updatestemmingoptions
+    schemes:
+    - http
+    hosts:
+    - http://cloudsearch.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudsearch-2011-02-01
+  url_pattern: /#UpdateStopwordOptions
+  method: POST
+  host:
+  - http://cloudsearch.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon CloudSearch Configuration Service</fullname> <p>You
+      use the configuration service to create, configure, and manage search domains.
+      Configuration service requests are submitted using the AWS Query protocol. AWS
+      Query requests are HTTP or HTTPS requests submitted via HTTP GET or POST with
+      a query parameter named Action.</p> <p>The endpoint for configuration service
+      requests is region-specific: cloudsearch.<i>region</i>.amazonaws.com. For example,
+      cloudsearch.us-east-1.amazonaws.com. For a current list of supported regions
+      and endpoints, see <a href="http://docs.aws.amazon.com/general/latest/gr/rande.html#cloudsearch_region">Regions
+      and Endpoints</a>.</p>'
+    version: 2011-02-01
+    slug: amazon-cloudsearch-2011-02-01-updatestopwordoptions
+    schemes:
+    - http
+    hosts:
+    - http://cloudsearch.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudsearch-2011-02-01
+  url_pattern: /#UpdateSynonymOptions
+  method: POST
+  host:
+  - http://cloudsearch.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon CloudSearch Configuration Service</fullname> <p>You
+      use the configuration service to create, configure, and manage search domains.
+      Configuration service requests are submitted using the AWS Query protocol. AWS
+      Query requests are HTTP or HTTPS requests submitted via HTTP GET or POST with
+      a query parameter named Action.</p> <p>The endpoint for configuration service
+      requests is region-specific: cloudsearch.<i>region</i>.amazonaws.com. For example,
+      cloudsearch.us-east-1.amazonaws.com. For a current list of supported regions
+      and endpoints, see <a href="http://docs.aws.amazon.com/general/latest/gr/rande.html#cloudsearch_region">Regions
+      and Endpoints</a>.</p>'
+    version: 2011-02-01
+    slug: amazon-cloudsearch-2011-02-01-updatesynonymoptions
+    schemes:
+    - http
+    hosts:
+    - http://cloudsearch.amazonaws.com
+    topics:
+    - cloud
+- group: amazon-cloudsearch-2011-02-01
+  url_pattern: /
+  method: POST
+  host:
+  - http://cloudsearch.amazonaws.com
+  concurrent_calls: 1
+  extra_config:
+    provider: amazonaws.com
+    description: '<fullname>Amazon CloudSearch Configuration Service</fullname> <p>You
+      use the configuration service to create, configure, and manage search domains.
+      Configuration service requests are submitted using the AWS Query protocol. AWS
+      Query requests are HTTP or HTTPS requests submitted via HTTP GET or POST with
+      a query parameter named Action.</p> <p>The endpoint for configuration service
+      requests is region-specific: cloudsearch.<i>region</i>.amazonaws.com. For example,
+      cloudsearch.us-east-1.amazonaws.com. For a current list of supported regions
+      and endpoints, see <a href="http://docs.aws.amazon.com/general/latest/gr/rande.html#cloudsearch_region">Regions
+      and Endpoints</a>.</p>'
+    version: 2011-02-01
+    slug: amazon-cloudsearch-2011-02-01
+    schemes:
+    - http
+    hosts:
+    - http://cloudsearch.amazonaws.com
+    topics:
+    - cloud

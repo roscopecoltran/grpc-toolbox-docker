@@ -1,0 +1,54 @@
+[[backends]]
+  group = "notificationhubsmanagementclient-2014-09-01"
+  url_pattern = "/subscriptions/{subscriptionId}/providers/Microsoft"
+  method = "NOTIFICATIONHUBS/CHECKNAMESPACEAVAILABILITY"
+  encoding = "json"
+  host = ["https://management.azure.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "azure.com"
+    description = "Azure NotificationHub client"
+    version = "2014-09-01"
+    slug = "notificationhubsmanagementclient-2014-09-01-subscriptions-subscriptionid-providers-microsoft"
+    schemes = ["https"]
+    consumes = ["json", "json"]
+    produces = ["json", "json"]
+    hosts = ["https://management.azure.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "notificationhubsmanagementclient-2014-09-01"
+  url_pattern = "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft"
+  method = "NOTIFICATIONHUBS/NAMESPACES"
+  encoding = "json"
+  host = ["https://management.azure.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "azure.com"
+    description = "Azure NotificationHub client"
+    version = "2014-09-01"
+    slug = "notificationhubsmanagementclient-2014-09-01-subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft"
+    schemes = ["https"]
+    consumes = ["json", "json"]
+    produces = ["json", "json"]
+    hosts = ["https://management.azure.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "notificationhubsmanagementclient-2014-09-01"
+  url_pattern = "/{operationStatusLink}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://management.azure.com"]
+  url_keys = ["operationStatusLink"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "azure.com"
+    description = "Azure NotificationHub client"
+    version = "2014-09-01"
+    slug = "notificationhubsmanagementclient-2014-09-01-operationstatuslink"
+    schemes = ["https"]
+    consumes = ["json", "json"]
+    produces = ["json", "json"]
+    hosts = ["https://management.azure.com"]
+    topics = ["cloud", "namespaces"]

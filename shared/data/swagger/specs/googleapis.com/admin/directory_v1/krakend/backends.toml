@@ -1,0 +1,1060 @@
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/admin/directory_v1/channels/stop"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-admin-directory-v1-channels-stop"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/customer/{customerId}/devices/chromeos"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["chromeosdevices", "etag", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-customer-customerid-devices-chromeos"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      chromeosdevices = "chromeosdevices"
+      etag = "etag"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/customer/{customerId}/devices/chromeos/moveDevicesToOu"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-customer-customerid-devices-chromeos-movedevicestoou"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/customer/{customerId}/devices/chromeos/{deviceId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["activeTimeRanges", "activeTimeRanges.activeTime", "activeTimeRanges.date", "annotatedAssetId", "annotatedLocation", "annotatedUser", "bootMode", "deviceId", "etag", "ethernetMacAddress", "firmwareVersion", "kind", "lastEnrollmentTime", "lastSync", "macAddress", "meid", "model", "notes", "orderNumber", "orgUnitPath", "osVersion", "platformVersion", "recentUsers", "recentUsers.email", "serialNumber", "status", "supportEndDate", "willAutoRenew"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-customer-customerid-devices-chromeos-deviceid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      activeTime = "activeTime"
+      activeTimeRanges = "activeTimeRanges"
+      annotatedAssetId = "annotatedAssetId"
+      annotatedLocation = "annotatedLocation"
+      annotatedUser = "annotatedUser"
+      bootMode = "bootMode"
+      date = "date"
+      deviceId = "deviceId"
+      email = "email"
+      etag = "etag"
+      ethernetMacAddress = "ethernetMacAddress"
+      firmwareVersion = "firmwareVersion"
+      kind = "kind"
+      lastEnrollmentTime = "lastEnrollmentTime"
+      lastSync = "lastSync"
+      macAddress = "macAddress"
+      meid = "meid"
+      model = "model"
+      notes = "notes"
+      orderNumber = "orderNumber"
+      orgUnitPath = "orgUnitPath"
+      osVersion = "osVersion"
+      platformVersion = "platformVersion"
+      recentUsers = "recentUsers"
+      serialNumber = "serialNumber"
+      status = "status"
+      supportEndDate = "supportEndDate"
+      willAutoRenew = "willAutoRenew"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/customer/{customerId}/devices/chromeos/{resourceId}/action"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-customer-customerid-devices-chromeos-resourceid-action"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/customer/{customerId}/devices/mobile"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "kind", "mobiledevices", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-customer-customerid-devices-mobile"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      kind = "kind"
+      mobiledevices = "mobiledevices"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/customer/{customerId}/devices/mobile/{resourceId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["adbStatus", "applications", "applications.displayName", "applications.packageName", "applications.permission", "applications.permission.items", "applications.versionCode", "applications.versionName", "basebandVersion", "bootloaderVersion", "brand", "buildNumber", "defaultLanguage", "developerOptionsStatus", "deviceCompromisedStatus", "deviceId", "devicePasswordStatus", "email", "encryptionStatus", "etag", "firstSync", "hardware", "hardwareId", "imei", "kernelVersion", "kind", "lastSync", "managedAccountIsOnOwnerProfile", "manufacturer", "meid", "model", "name", "networkOperator", "os", "otherAccountsInfo", "privilege", "releaseVersion", "resourceId", "securityPatchLevel", "serialNumber", "status", "supportsWorkProfile", "unknownSourcesStatus", "userAgent", "wifiMacAddress"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-customer-customerid-devices-mobile-resourceid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      adbStatus = "adbStatus"
+      applications = "applications"
+      basebandVersion = "basebandVersion"
+      bootloaderVersion = "bootloaderVersion"
+      brand = "brand"
+      buildNumber = "buildNumber"
+      defaultLanguage = "defaultLanguage"
+      developerOptionsStatus = "developerOptionsStatus"
+      deviceCompromisedStatus = "deviceCompromisedStatus"
+      deviceId = "deviceId"
+      devicePasswordStatus = "devicePasswordStatus"
+      displayName = "displayName"
+      email = "email"
+      encryptionStatus = "encryptionStatus"
+      etag = "etag"
+      firstSync = "firstSync"
+      hardware = "hardware"
+      hardwareId = "hardwareId"
+      imei = "imei"
+      items = "items"
+      kernelVersion = "kernelVersion"
+      kind = "kind"
+      lastSync = "lastSync"
+      managedAccountIsOnOwnerProfile = "managedAccountIsOnOwnerProfile"
+      manufacturer = "manufacturer"
+      meid = "meid"
+      model = "model"
+      name = "name"
+      networkOperator = "networkOperator"
+      os = "os"
+      otherAccountsInfo = "otherAccountsInfo"
+      packageName = "packageName"
+      permission = "permission"
+      privilege = "privilege"
+      releaseVersion = "releaseVersion"
+      resourceId = "resourceId"
+      securityPatchLevel = "securityPatchLevel"
+      serialNumber = "serialNumber"
+      status = "status"
+      supportsWorkProfile = "supportsWorkProfile"
+      unknownSourcesStatus = "unknownSourcesStatus"
+      userAgent = "userAgent"
+      versionCode = "versionCode"
+      versionName = "versionName"
+      wifiMacAddress = "wifiMacAddress"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/customer/{customerId}/devices/mobile/{resourceId}/action"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-customer-customerid-devices-mobile-resourceid-action"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/customer/{customerId}/orgunits"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "kind", "organizationUnits"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-customer-customerid-orgunits"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      kind = "kind"
+      organizationUnits = "organizationUnits"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/customer/{customerId}/orgunits/{orgUnitPath}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["blockInheritance", "description", "etag", "kind", "name", "orgUnitId", "orgUnitPath", "parentOrgUnitId", "parentOrgUnitPath"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-customer-customerid-orgunits-orgunitpath"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      blockInheritance = "blockInheritance"
+      description = "description"
+      etag = "etag"
+      kind = "kind"
+      name = "name"
+      orgUnitId = "orgUnitId"
+      orgUnitPath = "orgUnitPath"
+      parentOrgUnitId = "parentOrgUnitId"
+      parentOrgUnitPath = "parentOrgUnitPath"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/customer/{customerId}/schemas"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "kind", "schemas"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-customer-customerid-schemas"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      kind = "kind"
+      schemas = "schemas"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/customer/{customerId}/schemas/{schemaKey}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "fields", "kind", "schemaId", "schemaName"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-customer-customerid-schemas-schemakey"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      fields = "fields"
+      kind = "kind"
+      schemaId = "schemaId"
+      schemaName = "schemaName"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/customer/{customer}/domainaliases"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["domainAliases", "etag", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-customer-customer-domainaliases"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      domainAliases = "domainAliases"
+      etag = "etag"
+      kind = "kind"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/customer/{customer}/domainaliases/{domainAliasName}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["creationTime", "domainAliasName", "etag", "kind", "parentDomainName", "verified"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-customer-customer-domainaliases-domainaliasname"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      creationTime = "creationTime"
+      domainAliasName = "domainAliasName"
+      etag = "etag"
+      kind = "kind"
+      parentDomainName = "parentDomainName"
+      verified = "verified"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/customer/{customer}/domains"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["domains", "etag", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-customer-customer-domains"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      domains = "domains"
+      etag = "etag"
+      kind = "kind"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/customer/{customer}/domains/{domainName}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["creationTime", "domainAliases", "domainName", "etag", "isPrimary", "kind", "verified"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-customer-customer-domains-domainname"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      creationTime = "creationTime"
+      domainAliases = "domainAliases"
+      domainName = "domainName"
+      etag = "etag"
+      isPrimary = "isPrimary"
+      kind = "kind"
+      verified = "verified"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/customer/{customer}/notifications"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken", "unreadNotificationsCount"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-customer-customer-notifications"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+      unreadNotificationsCount = "unreadNotificationsCount"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/customer/{customer}/notifications/{notificationId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["body", "etag", "fromAddress", "isUnread", "kind", "notificationId", "sendTime", "subject"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-customer-customer-notifications-notificationid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      body = "body"
+      etag = "etag"
+      fromAddress = "fromAddress"
+      isUnread = "isUnread"
+      kind = "kind"
+      notificationId = "notificationId"
+      sendTime = "sendTime"
+      subject = "subject"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/customer/{customer}/resources/calendars"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-customer-customer-resources-calendars"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/customer/{customer}/resources/calendars/{calendarResourceId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etags", "generatedResourceName", "kind", "resourceDescription", "resourceEmail", "resourceId", "resourceName", "resourceType"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-customer-customer-resources-calendars-calendarresourceid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      etags = "etags"
+      generatedResourceName = "generatedResourceName"
+      kind = "kind"
+      resourceDescription = "resourceDescription"
+      resourceEmail = "resourceEmail"
+      resourceId = "resourceId"
+      resourceName = "resourceName"
+      resourceType = "resourceType"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/customer/{customer}/roleassignments"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-customer-customer-roleassignments"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/customer/{customer}/roleassignments/{roleAssignmentId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["assignedTo", "etag", "kind", "orgUnitId", "roleAssignmentId", "roleId", "scopeType"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-customer-customer-roleassignments-roleassignmentid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      assignedTo = "assignedTo"
+      etag = "etag"
+      kind = "kind"
+      orgUnitId = "orgUnitId"
+      roleAssignmentId = "roleAssignmentId"
+      roleId = "roleId"
+      scopeType = "scopeType"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/customer/{customer}/roles"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-customer-customer-roles"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/customer/{customer}/roles/ALL/privileges"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-customer-customer-roles-all-privileges"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/customer/{customer}/roles/{roleId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "isSuperAdminRole", "isSystemRole", "kind", "roleDescription", "roleId", "roleName", "rolePrivileges", "rolePrivileges.privilegeName", "rolePrivileges.serviceId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-customer-customer-roles-roleid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      isSuperAdminRole = "isSuperAdminRole"
+      isSystemRole = "isSystemRole"
+      kind = "kind"
+      privilegeName = "privilegeName"
+      roleDescription = "roleDescription"
+      roleId = "roleId"
+      roleName = "roleName"
+      rolePrivileges = "rolePrivileges"
+      serviceId = "serviceId"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/customers/{customerKey}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["alternateEmail", "customerCreationTime", "customerDomain", "etag", "id", "kind", "language", "phoneNumber"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-customers-customerkey"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      alternateEmail = "alternateEmail"
+      customerCreationTime = "customerCreationTime"
+      customerDomain = "customerDomain"
+      etag = "etag"
+      id = "id"
+      kind = "kind"
+      language = "language"
+      phoneNumber = "phoneNumber"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/groups"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "groups", "kind", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-groups"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      groups = "groups"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/groups/{groupKey}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["adminCreated", "aliases", "description", "directMembersCount", "email", "etag", "id", "kind", "name", "nonEditableAliases"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-groups-groupkey"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      adminCreated = "adminCreated"
+      aliases = "aliases"
+      description = "description"
+      directMembersCount = "directMembersCount"
+      email = "email"
+      etag = "etag"
+      id = "id"
+      kind = "kind"
+      name = "name"
+      nonEditableAliases = "nonEditableAliases"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/groups/{groupKey}/aliases"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["aliases", "etag", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-groups-groupkey-aliases"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      aliases = "aliases"
+      etag = "etag"
+      kind = "kind"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/groups/{groupKey}/members"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "kind", "members", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-groups-groupkey-members"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      kind = "kind"
+      members = "members"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/groups/{groupKey}/members/{memberKey}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["email", "etag", "id", "kind", "role", "status"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-groups-groupkey-members-memberkey"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      email = "email"
+      etag = "etag"
+      id = "id"
+      kind = "kind"
+      role = "role"
+      status = "status"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/users"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "kind", "nextPageToken", "trigger_event", "users"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-users"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      kind = "kind"
+      nextPageToken = "nextPageToken"
+      trigger_event = "trigger_event"
+      users = "users"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/users/watch"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["address", "expiration", "id", "kind", "params", "params.additionalProperties", "payload", "resourceId", "resourceUri", "token"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-users-watch"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      additionalProperties = "additionalProperties"
+      address = "address"
+      expiration = "expiration"
+      id = "id"
+      kind = "kind"
+      params = "params"
+      payload = "payload"
+      resourceId = "resourceId"
+      resourceUri = "resourceUri"
+      token = "token"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/users/{userKey}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["agreedToTerms", "aliases", "changePasswordAtNextLogin", "creationTime", "customSchemas", "customerId", "deletionTime", "etag", "hashFunction", "id", "includeInGlobalAddressList", "ipWhitelisted", "isAdmin", "isDelegatedAdmin", "isEnforcedIn2Sv", "isEnrolledIn2Sv", "isMailboxSetup", "kind", "lastLoginTime", "nonEditableAliases", "orgUnitPath", "password", "primaryEmail", "suspended", "suspensionReason", "thumbnailPhotoEtag", "thumbnailPhotoUrl"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-users-userkey"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      agreedToTerms = "agreedToTerms"
+      aliases = "aliases"
+      changePasswordAtNextLogin = "changePasswordAtNextLogin"
+      creationTime = "creationTime"
+      customSchemas = "customSchemas"
+      customerId = "customerId"
+      deletionTime = "deletionTime"
+      etag = "etag"
+      hashFunction = "hashFunction"
+      id = "id"
+      includeInGlobalAddressList = "includeInGlobalAddressList"
+      ipWhitelisted = "ipWhitelisted"
+      isAdmin = "isAdmin"
+      isDelegatedAdmin = "isDelegatedAdmin"
+      isEnforcedIn2Sv = "isEnforcedIn2Sv"
+      isEnrolledIn2Sv = "isEnrolledIn2Sv"
+      isMailboxSetup = "isMailboxSetup"
+      kind = "kind"
+      lastLoginTime = "lastLoginTime"
+      nonEditableAliases = "nonEditableAliases"
+      orgUnitPath = "orgUnitPath"
+      password = "password"
+      primaryEmail = "primaryEmail"
+      suspended = "suspended"
+      suspensionReason = "suspensionReason"
+      thumbnailPhotoEtag = "thumbnailPhotoEtag"
+      thumbnailPhotoUrl = "thumbnailPhotoUrl"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/users/{userKey}/aliases"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["aliases", "etag", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-users-userkey-aliases"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      aliases = "aliases"
+      etag = "etag"
+      kind = "kind"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/users/{userKey}/aliases/watch"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["address", "expiration", "id", "kind", "params", "params.additionalProperties", "payload", "resourceId", "resourceUri", "token"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-users-userkey-aliases-watch"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      additionalProperties = "additionalProperties"
+      address = "address"
+      expiration = "expiration"
+      id = "id"
+      kind = "kind"
+      params = "params"
+      payload = "payload"
+      resourceId = "resourceId"
+      resourceUri = "resourceUri"
+      token = "token"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/users/{userKey}/asps"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-users-userkey-asps"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/users/{userKey}/asps/{codeId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["codeId", "creationTime", "etag", "kind", "lastTimeUsed", "name", "userKey"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-users-userkey-asps-codeid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      codeId = "codeId"
+      creationTime = "creationTime"
+      etag = "etag"
+      kind = "kind"
+      lastTimeUsed = "lastTimeUsed"
+      name = "name"
+      userKey = "userKey"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/users/{userKey}/makeAdmin"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-users-userkey-makeadmin"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/users/{userKey}/photos/thumbnail"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "height", "id", "kind", "mimeType", "photoData", "primaryEmail", "width"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-users-userkey-photos-thumbnail"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      height = "height"
+      id = "id"
+      kind = "kind"
+      mimeType = "mimeType"
+      photoData = "photoData"
+      primaryEmail = "primaryEmail"
+      width = "width"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/users/{userKey}/tokens"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-users-userkey-tokens"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/users/{userKey}/tokens/{clientId}"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["anonymous", "clientId", "displayText", "etag", "kind", "nativeApp", "scopes", "userKey"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-users-userkey-tokens-clientid"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      anonymous = "anonymous"
+      clientId = "clientId"
+      displayText = "displayText"
+      etag = "etag"
+      kind = "kind"
+      nativeApp = "nativeApp"
+      scopes = "scopes"
+      userKey = "userKey"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/users/{userKey}/undelete"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-users-userkey-undelete"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/users/{userKey}/verificationCodes"
+  method = "GET"
+  host = ["https://www.googleapis.com"]
+  whitelist = ["etag", "items", "kind"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-users-userkey-verificationcodes"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+    [backends.extra_config.mapping]
+      etag = "etag"
+      items = "items"
+      kind = "kind"
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/users/{userKey}/verificationCodes/generate"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-users-userkey-verificationcodes-generate"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]
+
+[[backends]]
+  group = "admin-directory-directory-v1"
+  url_pattern = "/admin/directory/v1/users/{userKey}/verificationCodes/invalidate"
+  method = "POST"
+  host = ["https://www.googleapis.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Admin SDK Directory API lets you view and manage enterprise resources such as users and groups, administrative notifications, security features, and more."
+    version = "directory_v1"
+    slug = "admin-directory-directory-v1-admin-directory-v1-users-userkey-verificationcodes-invalidate"
+    schemes = ["https"]
+    hosts = ["https://www.googleapis.com"]
+    topics = ["analytics"]

@@ -1,0 +1,131 @@
+[[backends]]
+  group = "box-2-0-uploads-2-0"
+  url_pattern = "/api/2.0/files/content"
+  method = "POST"
+  encoding = "json"
+  host = ["https://upload.box.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "box.com"
+    description = "The Box Uploads API allows users to add a new file or add a new file version in the same way as uploading file."
+    version = "2.0"
+    slug = "box-2-0-uploads-2-0-api-2-0-files-content"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://upload.box.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "box-2-0-uploads-2-0"
+  url_pattern = "/api/2.0/files/upload_sessions"
+  method = "POST"
+  encoding = "json"
+  host = ["https://upload.box.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "box.com"
+    description = "The Box Uploads API allows users to add a new file or add a new file version in the same way as uploading file."
+    version = "2.0"
+    slug = "box-2-0-uploads-2-0-api-2-0-files-upload-sessions"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://upload.box.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "box-2-0-uploads-2-0"
+  url_pattern = "/api/2.0/files/upload_sessions/{SESSION_ID}"
+  method = "GET"
+  encoding = "json"
+  host = ["https://upload.box.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "box.com"
+    description = "The Box Uploads API allows users to add a new file or add a new file version in the same way as uploading file."
+    version = "2.0"
+    slug = "box-2-0-uploads-2-0-api-2-0-files-upload-sessions-session-id"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://upload.box.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "box-2-0-uploads-2-0"
+  url_pattern = "/api/2.0/files/upload_sessions/{SESSION_ID}/commit"
+  method = "POST"
+  encoding = "json"
+  host = ["https://upload.box.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "box.com"
+    description = "The Box Uploads API allows users to add a new file or add a new file version in the same way as uploading file."
+    version = "2.0"
+    slug = "box-2-0-uploads-2-0-api-2-0-files-upload-sessions-session-id-commit"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://upload.box.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "box-2-0-uploads-2-0"
+  url_pattern = "/api/2.0/files/upload_sessions/{SESSION_ID}/parts"
+  method = "GET"
+  encoding = "json"
+  host = ["https://upload.box.com"]
+  whitelist = ["entries", "limit", "offset", "total_count"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "box.com"
+    description = "The Box Uploads API allows users to add a new file or add a new file version in the same way as uploading file."
+    version = "2.0"
+    slug = "box-2-0-uploads-2-0-api-2-0-files-upload-sessions-session-id-parts"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://upload.box.com"]
+    topics = ["cloud"]
+    [backends.extra_config.mapping]
+      entries = "entries"
+      limit = "limit"
+      offset = "offset"
+      total_count = "total_count"
+
+[[backends]]
+  group = "box-2-0-uploads-2-0"
+  url_pattern = "/api/2.0/files/{FILE_ID}/content"
+  method = "POST"
+  encoding = "json"
+  host = ["https://upload.box.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "box.com"
+    description = "The Box Uploads API allows users to add a new file or add a new file version in the same way as uploading file."
+    version = "2.0"
+    slug = "box-2-0-uploads-2-0-api-2-0-files-file-id-content"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://upload.box.com"]
+    topics = ["cloud"]
+
+[[backends]]
+  group = "box-2-0-uploads-2-0"
+  url_pattern = "/api/2.0/files/{FILE_ID}/upload_sessions"
+  method = "POST"
+  encoding = "json"
+  host = ["https://upload.box.com"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "box.com"
+    description = "The Box Uploads API allows users to add a new file or add a new file version in the same way as uploading file."
+    version = "2.0"
+    slug = "box-2-0-uploads-2-0-api-2-0-files-file-id-upload-sessions"
+    schemes = ["https"]
+    consumes = ["json"]
+    produces = ["json"]
+    hosts = ["https://upload.box.com"]
+    topics = ["cloud"]

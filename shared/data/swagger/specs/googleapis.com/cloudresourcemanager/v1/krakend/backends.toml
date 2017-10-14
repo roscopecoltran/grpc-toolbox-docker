@@ -1,0 +1,388 @@
+[[backends]]
+  group = "google-cloud-resource-manager-v1"
+  url_pattern = "/v1/liens"
+  method = "GET"
+  host = ["https://cloudresourcemanager.googleapis.com"]
+  query_string_params = ["pageSize", "pageToken", "parent"]
+  whitelist = ["liens", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Cloud Resource Manager API provides methods for creating, reading, and updating project metadata."
+    version = "v1"
+    slug = "google-cloud-resource-manager-v1-v1-liens"
+    schemes = ["https"]
+    hosts = ["https://cloudresourcemanager.googleapis.com"]
+    topics = ["liens"]
+    [backends.extra_config.mapping]
+      liens = "liens"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "google-cloud-resource-manager-v1"
+  url_pattern = "/v1/organizations:search"
+  method = "POST"
+  host = ["https://cloudresourcemanager.googleapis.com"]
+  whitelist = ["nextPageToken", "organizations"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Cloud Resource Manager API provides methods for creating, reading, and updating project metadata."
+    version = "v1"
+    slug = "google-cloud-resource-manager-v1-v1-organizations-search"
+    schemes = ["https"]
+    hosts = ["https://cloudresourcemanager.googleapis.com"]
+    topics = ["organizations"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      organizations = "organizations"
+
+[[backends]]
+  group = "google-cloud-resource-manager-v1"
+  url_pattern = "/v1/projects"
+  method = "GET"
+  host = ["https://cloudresourcemanager.googleapis.com"]
+  query_string_params = ["filter", "pageSize", "pageToken"]
+  whitelist = ["nextPageToken", "projects"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Cloud Resource Manager API provides methods for creating, reading, and updating project metadata."
+    version = "v1"
+    slug = "google-cloud-resource-manager-v1-v1-projects"
+    schemes = ["https"]
+    hosts = ["https://cloudresourcemanager.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      projects = "projects"
+
+[[backends]]
+  group = "google-cloud-resource-manager-v1"
+  url_pattern = "/v1/projects/{projectId}"
+  method = "GET"
+  host = ["https://cloudresourcemanager.googleapis.com"]
+  url_keys = ["projectId"]
+  whitelist = ["createTime", "labels", "labels.additionalProperties", "lifecycleState", "name", "projectId", "projectNumber"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Cloud Resource Manager API provides methods for creating, reading, and updating project metadata."
+    version = "v1"
+    slug = "google-cloud-resource-manager-v1-v1-projects-projectid"
+    schemes = ["https"]
+    hosts = ["https://cloudresourcemanager.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      additionalProperties = "additionalProperties"
+      createTime = "createTime"
+      labels = "labels"
+      lifecycleState = "lifecycleState"
+      name = "name"
+      projectId = "projectId"
+      projectNumber = "projectNumber"
+
+[[backends]]
+  group = "google-cloud-resource-manager-v1"
+  url_pattern = "/v1/projects/{projectId}:getAncestry"
+  method = "POST"
+  host = ["https://cloudresourcemanager.googleapis.com"]
+  url_keys = ["projectId"]
+  whitelist = ["ancestor"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Cloud Resource Manager API provides methods for creating, reading, and updating project metadata."
+    version = "v1"
+    slug = "google-cloud-resource-manager-v1-v1-projects-projectid-getancestry"
+    schemes = ["https"]
+    hosts = ["https://cloudresourcemanager.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      ancestor = "ancestor"
+
+[[backends]]
+  group = "google-cloud-resource-manager-v1"
+  url_pattern = "/v1/projects/{projectId}:undelete"
+  method = "POST"
+  host = ["https://cloudresourcemanager.googleapis.com"]
+  url_keys = ["projectId"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Cloud Resource Manager API provides methods for creating, reading, and updating project metadata."
+    version = "v1"
+    slug = "google-cloud-resource-manager-v1-v1-projects-projectid-undelete"
+    schemes = ["https"]
+    hosts = ["https://cloudresourcemanager.googleapis.com"]
+    topics = ["projects"]
+
+[[backends]]
+  group = "google-cloud-resource-manager-v1"
+  url_pattern = "/v1/projects/{resource}:getIamPolicy"
+  method = "POST"
+  host = ["https://cloudresourcemanager.googleapis.com"]
+  url_keys = ["resource"]
+  whitelist = ["auditConfigs", "bindings", "etag", "version"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Cloud Resource Manager API provides methods for creating, reading, and updating project metadata."
+    version = "v1"
+    slug = "google-cloud-resource-manager-v1-v1-projects-resource-getiampolicy"
+    schemes = ["https"]
+    hosts = ["https://cloudresourcemanager.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      auditConfigs = "auditConfigs"
+      bindings = "bindings"
+      etag = "etag"
+      version = "version"
+
+[[backends]]
+  group = "google-cloud-resource-manager-v1"
+  url_pattern = "/v1/projects/{resource}:setIamPolicy"
+  method = "POST"
+  host = ["https://cloudresourcemanager.googleapis.com"]
+  url_keys = ["resource"]
+  whitelist = ["auditConfigs", "bindings", "etag", "version"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Cloud Resource Manager API provides methods for creating, reading, and updating project metadata."
+    version = "v1"
+    slug = "google-cloud-resource-manager-v1-v1-projects-resource-setiampolicy"
+    schemes = ["https"]
+    hosts = ["https://cloudresourcemanager.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      auditConfigs = "auditConfigs"
+      bindings = "bindings"
+      etag = "etag"
+      version = "version"
+
+[[backends]]
+  group = "google-cloud-resource-manager-v1"
+  url_pattern = "/v1/projects/{resource}:testIamPermissions"
+  method = "POST"
+  host = ["https://cloudresourcemanager.googleapis.com"]
+  url_keys = ["resource"]
+  whitelist = ["permissions"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Cloud Resource Manager API provides methods for creating, reading, and updating project metadata."
+    version = "v1"
+    slug = "google-cloud-resource-manager-v1-v1-projects-resource-testiampermissions"
+    schemes = ["https"]
+    hosts = ["https://cloudresourcemanager.googleapis.com"]
+    topics = ["projects"]
+    [backends.extra_config.mapping]
+      permissions = "permissions"
+
+[[backends]]
+  group = "google-cloud-resource-manager-v1"
+  url_pattern = "/v1/{name}"
+  method = "GET"
+  host = ["https://cloudresourcemanager.googleapis.com"]
+  url_keys = ["name"]
+  whitelist = ["done", "metadata", "name", "response"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Cloud Resource Manager API provides methods for creating, reading, and updating project metadata."
+    version = "v1"
+    slug = "google-cloud-resource-manager-v1-v1-name"
+    schemes = ["https"]
+    hosts = ["https://cloudresourcemanager.googleapis.com"]
+    topics = ["operations"]
+    [backends.extra_config.mapping]
+      done = "done"
+      metadata = "metadata"
+      name = "name"
+      response = "response"
+
+[[backends]]
+  group = "google-cloud-resource-manager-v1"
+  url_pattern = "/v1/{resource}:clearOrgPolicy"
+  method = "POST"
+  host = ["https://cloudresourcemanager.googleapis.com"]
+  url_keys = ["resource"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Cloud Resource Manager API provides methods for creating, reading, and updating project metadata."
+    version = "v1"
+    slug = "google-cloud-resource-manager-v1-v1-resource-clearorgpolicy"
+    schemes = ["https"]
+    hosts = ["https://cloudresourcemanager.googleapis.com"]
+    topics = ["folders"]
+
+[[backends]]
+  group = "google-cloud-resource-manager-v1"
+  url_pattern = "/v1/{resource}:getEffectiveOrgPolicy"
+  method = "POST"
+  host = ["https://cloudresourcemanager.googleapis.com"]
+  url_keys = ["resource"]
+  whitelist = ["constraint", "etag", "updateTime", "version"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Cloud Resource Manager API provides methods for creating, reading, and updating project metadata."
+    version = "v1"
+    slug = "google-cloud-resource-manager-v1-v1-resource-geteffectiveorgpolicy"
+    schemes = ["https"]
+    hosts = ["https://cloudresourcemanager.googleapis.com"]
+    topics = ["folders"]
+    [backends.extra_config.mapping]
+      constraint = "constraint"
+      etag = "etag"
+      updateTime = "updateTime"
+      version = "version"
+
+[[backends]]
+  group = "google-cloud-resource-manager-v1"
+  url_pattern = "/v1/{resource}:getIamPolicy"
+  method = "POST"
+  host = ["https://cloudresourcemanager.googleapis.com"]
+  url_keys = ["resource"]
+  whitelist = ["auditConfigs", "bindings", "etag", "version"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Cloud Resource Manager API provides methods for creating, reading, and updating project metadata."
+    version = "v1"
+    slug = "google-cloud-resource-manager-v1-v1-resource-getiampolicy"
+    schemes = ["https"]
+    hosts = ["https://cloudresourcemanager.googleapis.com"]
+    topics = ["organizations"]
+    [backends.extra_config.mapping]
+      auditConfigs = "auditConfigs"
+      bindings = "bindings"
+      etag = "etag"
+      version = "version"
+
+[[backends]]
+  group = "google-cloud-resource-manager-v1"
+  url_pattern = "/v1/{resource}:getOrgPolicy"
+  method = "POST"
+  host = ["https://cloudresourcemanager.googleapis.com"]
+  url_keys = ["resource"]
+  whitelist = ["constraint", "etag", "updateTime", "version"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Cloud Resource Manager API provides methods for creating, reading, and updating project metadata."
+    version = "v1"
+    slug = "google-cloud-resource-manager-v1-v1-resource-getorgpolicy"
+    schemes = ["https"]
+    hosts = ["https://cloudresourcemanager.googleapis.com"]
+    topics = ["folders"]
+    [backends.extra_config.mapping]
+      constraint = "constraint"
+      etag = "etag"
+      updateTime = "updateTime"
+      version = "version"
+
+[[backends]]
+  group = "google-cloud-resource-manager-v1"
+  url_pattern = "/v1/{resource}:listAvailableOrgPolicyConstraints"
+  method = "POST"
+  host = ["https://cloudresourcemanager.googleapis.com"]
+  url_keys = ["resource"]
+  whitelist = ["constraints", "nextPageToken"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Cloud Resource Manager API provides methods for creating, reading, and updating project metadata."
+    version = "v1"
+    slug = "google-cloud-resource-manager-v1-v1-resource-listavailableorgpolicyconstraints"
+    schemes = ["https"]
+    hosts = ["https://cloudresourcemanager.googleapis.com"]
+    topics = ["folders"]
+    [backends.extra_config.mapping]
+      constraints = "constraints"
+      nextPageToken = "nextPageToken"
+
+[[backends]]
+  group = "google-cloud-resource-manager-v1"
+  url_pattern = "/v1/{resource}:listOrgPolicies"
+  method = "POST"
+  host = ["https://cloudresourcemanager.googleapis.com"]
+  url_keys = ["resource"]
+  whitelist = ["nextPageToken", "policies"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Cloud Resource Manager API provides methods for creating, reading, and updating project metadata."
+    version = "v1"
+    slug = "google-cloud-resource-manager-v1-v1-resource-listorgpolicies"
+    schemes = ["https"]
+    hosts = ["https://cloudresourcemanager.googleapis.com"]
+    topics = ["folders"]
+    [backends.extra_config.mapping]
+      nextPageToken = "nextPageToken"
+      policies = "policies"
+
+[[backends]]
+  group = "google-cloud-resource-manager-v1"
+  url_pattern = "/v1/{resource}:setIamPolicy"
+  method = "POST"
+  host = ["https://cloudresourcemanager.googleapis.com"]
+  url_keys = ["resource"]
+  whitelist = ["auditConfigs", "bindings", "etag", "version"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Cloud Resource Manager API provides methods for creating, reading, and updating project metadata."
+    version = "v1"
+    slug = "google-cloud-resource-manager-v1-v1-resource-setiampolicy"
+    schemes = ["https"]
+    hosts = ["https://cloudresourcemanager.googleapis.com"]
+    topics = ["organizations"]
+    [backends.extra_config.mapping]
+      auditConfigs = "auditConfigs"
+      bindings = "bindings"
+      etag = "etag"
+      version = "version"
+
+[[backends]]
+  group = "google-cloud-resource-manager-v1"
+  url_pattern = "/v1/{resource}:setOrgPolicy"
+  method = "POST"
+  host = ["https://cloudresourcemanager.googleapis.com"]
+  url_keys = ["resource"]
+  whitelist = ["constraint", "etag", "updateTime", "version"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Cloud Resource Manager API provides methods for creating, reading, and updating project metadata."
+    version = "v1"
+    slug = "google-cloud-resource-manager-v1-v1-resource-setorgpolicy"
+    schemes = ["https"]
+    hosts = ["https://cloudresourcemanager.googleapis.com"]
+    topics = ["folders"]
+    [backends.extra_config.mapping]
+      constraint = "constraint"
+      etag = "etag"
+      updateTime = "updateTime"
+      version = "version"
+
+[[backends]]
+  group = "google-cloud-resource-manager-v1"
+  url_pattern = "/v1/{resource}:testIamPermissions"
+  method = "POST"
+  host = ["https://cloudresourcemanager.googleapis.com"]
+  url_keys = ["resource"]
+  whitelist = ["permissions"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "googleapis.com"
+    description = "The Google Cloud Resource Manager API provides methods for creating, reading, and updating project metadata."
+    version = "v1"
+    slug = "google-cloud-resource-manager-v1-v1-resource-testiampermissions"
+    schemes = ["https"]
+    hosts = ["https://cloudresourcemanager.googleapis.com"]
+    topics = ["organizations"]
+    [backends.extra_config.mapping]
+      permissions = "permissions"

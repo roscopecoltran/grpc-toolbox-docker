@@ -1,0 +1,1246 @@
+{
+	"backends": [
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#AddTagsToResource",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-addtagstoresource",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#AuthorizeDBSecurityGroupIngress",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-authorizedbsecuritygroupingress",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#CopyDBParameterGroup",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-copydbparametergroup",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#CopyDBSnapshot",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-copydbsnapshot",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#CopyOptionGroup",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-copyoptiongroup",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#CreateDBInstance",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-createdbinstance",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#CreateDBInstanceReadReplica",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-createdbinstancereadreplica",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#CreateDBParameterGroup",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-createdbparametergroup",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#CreateDBSecurityGroup",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-createdbsecuritygroup",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#CreateDBSnapshot",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-createdbsnapshot",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#CreateDBSubnetGroup",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-createdbsubnetgroup",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#CreateEventSubscription",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-createeventsubscription",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#CreateOptionGroup",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-createoptiongroup",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#DeleteDBInstance",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-deletedbinstance",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#DeleteDBParameterGroup",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-deletedbparametergroup",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#DeleteDBSecurityGroup",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-deletedbsecuritygroup",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#DeleteDBSnapshot",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-deletedbsnapshot",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#DeleteDBSubnetGroup",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-deletedbsubnetgroup",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#DeleteEventSubscription",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-deleteeventsubscription",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#DeleteOptionGroup",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-deleteoptiongroup",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#DescribeDBEngineVersions",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-describedbengineversions",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#DescribeDBInstances",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-describedbinstances",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#DescribeDBLogFiles",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-describedblogfiles",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#DescribeDBParameterGroups",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-describedbparametergroups",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#DescribeDBParameters",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-describedbparameters",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#DescribeDBSecurityGroups",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-describedbsecuritygroups",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#DescribeDBSnapshots",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-describedbsnapshots",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#DescribeDBSubnetGroups",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-describedbsubnetgroups",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#DescribeEngineDefaultParameters",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-describeenginedefaultparameters",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#DescribeEventCategories",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-describeeventcategories",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#DescribeEventSubscriptions",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-describeeventsubscriptions",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#DescribeEvents",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-describeevents",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#DescribeOptionGroupOptions",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-describeoptiongroupoptions",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#DescribeOptionGroups",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-describeoptiongroups",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#DescribeOrderableDBInstanceOptions",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-describeorderabledbinstanceoptions",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#DescribeReservedDBInstances",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-describereserveddbinstances",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#DescribeReservedDBInstancesOfferings",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-describereserveddbinstancesofferings",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#DownloadDBLogFilePortion",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-downloaddblogfileportion",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#ListTagsForResource",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-listtagsforresource",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#ModifyDBInstance",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-modifydbinstance",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#ModifyDBParameterGroup",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-modifydbparametergroup",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#ModifyDBSubnetGroup",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-modifydbsubnetgroup",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#ModifyEventSubscription",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-modifyeventsubscription",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#ModifyOptionGroup",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-modifyoptiongroup",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#PromoteReadReplica",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-promotereadreplica",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#PurchaseReservedDBInstancesOffering",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-purchasereserveddbinstancesoffering",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#RebootDBInstance",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-rebootdbinstance",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#RemoveSourceIdentifierFromSubscription",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-removesourceidentifierfromsubscription",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#RemoveTagsFromResource",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-removetagsfromresource",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#ResetDBParameterGroup",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-resetdbparametergroup",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#RestoreDBInstanceFromDBSnapshot",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-restoredbinstancefromdbsnapshot",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#RestoreDBInstanceToPointInTime",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-restoredbinstancetopointintime",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/#RevokeDBSecurityGroupIngress",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01-revokedbsecuritygroupingress",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		},
+		{
+			"group": "amazon-relational-database-service-2014-09-01",
+			"url_pattern": "/",
+			"method": "POST",
+			"host": [
+				"http://rds.amazonaws.com"
+			],
+			"concurrent_calls": 1,
+			"extra_config": {
+				"provider": "amazonaws.com",
+				"version": "2014-09-01",
+				"slug": "amazon-relational-database-service-2014-09-01",
+				"schemes": [
+					"http"
+				],
+				"hosts": [
+					"http://rds.amazonaws.com"
+				],
+				"topics": [
+					"cloud"
+				]
+			}
+		}
+	]
+}

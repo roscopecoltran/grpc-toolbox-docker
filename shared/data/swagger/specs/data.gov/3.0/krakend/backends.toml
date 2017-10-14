@@ -1,0 +1,41 @@
+[[backends]]
+  group = "regulations-gov-3-0"
+  url_pattern = "/regulations/v3/docket"
+  method = "{RESPONSE_FORMAT}"
+  host = ["https://api.data.gov"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "data.gov"
+    description = "Provides public users access to federal regulatory content."
+    version = "3.0"
+    slug = "regulations-gov-3-0-regulations-v3-docket"
+    schemes = ["https"]
+    hosts = ["https://api.data.gov"]
+
+[[backends]]
+  group = "regulations-gov-3-0"
+  url_pattern = "/regulations/v3/document"
+  method = "{RESPONSE_FORMAT}"
+  host = ["https://api.data.gov"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "data.gov"
+    description = "Provides public users access to federal regulatory content."
+    version = "3.0"
+    slug = "regulations-gov-3-0-regulations-v3-document"
+    schemes = ["https"]
+    hosts = ["https://api.data.gov"]
+
+[[backends]]
+  group = "regulations-gov-3-0"
+  url_pattern = "/regulations/v3/documents"
+  method = "{RESPONSE_FORMAT}"
+  host = ["https://api.data.gov"]
+  concurrent_calls = 1
+  [backends.extra_config]
+    provider = "data.gov"
+    description = "Provides public users access to federal regulatory content."
+    version = "3.0"
+    slug = "regulations-gov-3-0-regulations-v3-documents"
+    schemes = ["https"]
+    hosts = ["https://api.data.gov"]

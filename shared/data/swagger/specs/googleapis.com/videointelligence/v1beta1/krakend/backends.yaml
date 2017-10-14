@@ -1,0 +1,28 @@
+backends:
+- group: cloud-video-intelligence-v1beta1
+  url_pattern: /v1beta1/videos:annotate
+  method: POST
+  host:
+  - https://videointelligence.googleapis.com
+  whitelist:
+  - done
+  - metadata
+  - name
+  - response
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Cloud Video Intelligence API.
+    version: v1beta1
+    slug: cloud-video-intelligence-v1beta1-v1beta1-videos-annotate
+    schemes:
+    - https
+    mapping:
+      done: done
+      metadata: metadata
+      name: name
+      response: response
+    hosts:
+    - https://videointelligence.googleapis.com
+    topics:
+    - videos

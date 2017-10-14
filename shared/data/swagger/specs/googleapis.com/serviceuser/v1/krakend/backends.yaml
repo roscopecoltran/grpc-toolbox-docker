@@ -1,0 +1,121 @@
+backends:
+- group: google-service-user-v1
+  url_pattern: /v1/services:search
+  method: GET
+  host:
+  - https://serviceuser.googleapis.com
+  query_string_params:
+  - pageSize
+  - pageToken
+  whitelist:
+  - nextPageToken
+  - services
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Enables services that service consumers want to use on Google Cloud
+      Platform, lists the available or enabled services, or disables services that
+      service consumers no longer use.
+    version: v1
+    slug: google-service-user-v1-v1-services-search
+    schemes:
+    - https
+    mapping:
+      nextPageToken: nextPageToken
+      services: services
+    hosts:
+    - https://serviceuser.googleapis.com
+    topics:
+    - services
+- group: google-service-user-v1
+  url_pattern: /v1/{name}:disable
+  method: POST
+  host:
+  - https://serviceuser.googleapis.com
+  url_keys:
+  - name
+  whitelist:
+  - done
+  - metadata
+  - name
+  - response
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Enables services that service consumers want to use on Google Cloud
+      Platform, lists the available or enabled services, or disables services that
+      service consumers no longer use.
+    version: v1
+    slug: google-service-user-v1-v1-name-disable
+    schemes:
+    - https
+    mapping:
+      done: done
+      metadata: metadata
+      name: name
+      response: response
+    hosts:
+    - https://serviceuser.googleapis.com
+    topics:
+    - projects
+- group: google-service-user-v1
+  url_pattern: /v1/{name}:enable
+  method: POST
+  host:
+  - https://serviceuser.googleapis.com
+  url_keys:
+  - name
+  whitelist:
+  - done
+  - metadata
+  - name
+  - response
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Enables services that service consumers want to use on Google Cloud
+      Platform, lists the available or enabled services, or disables services that
+      service consumers no longer use.
+    version: v1
+    slug: google-service-user-v1-v1-name-enable
+    schemes:
+    - https
+    mapping:
+      done: done
+      metadata: metadata
+      name: name
+      response: response
+    hosts:
+    - https://serviceuser.googleapis.com
+    topics:
+    - projects
+- group: google-service-user-v1
+  url_pattern: /v1/{parent}/services
+  method: GET
+  host:
+  - https://serviceuser.googleapis.com
+  url_keys:
+  - parent
+  query_string_params:
+  - pageSize
+  - pageToken
+  whitelist:
+  - nextPageToken
+  - services
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Enables services that service consumers want to use on Google Cloud
+      Platform, lists the available or enabled services, or disables services that
+      service consumers no longer use.
+    version: v1
+    slug: google-service-user-v1-v1-parent-services
+    schemes:
+    - https
+    mapping:
+      nextPageToken: nextPageToken
+      services: services
+    hosts:
+    - https://serviceuser.googleapis.com
+    topics:
+    - projects

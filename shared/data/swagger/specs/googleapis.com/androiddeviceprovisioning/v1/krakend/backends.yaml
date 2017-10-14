@@ -1,0 +1,302 @@
+backends:
+- group: android-device-provisioning-partner-v1
+  url_pattern: /v1/partners/{metadataOwnerId}/devices/{deviceId}/metadata
+  method: POST
+  host:
+  - https://androiddeviceprovisioning.googleapis.com
+  url_keys:
+  - deviceId
+  - metadataOwnerId
+  whitelist:
+  - entries
+  - entries.additionalProperties
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Automates reseller integration into zero-touch enrollment by assigning
+      devices to customers and creating device reports.
+    version: v1
+    slug: android-device-provisioning-partner-v1-v1-partners-metadataownerid-devices-deviceid-metadata
+    schemes:
+    - https
+    mapping:
+      entries: entries
+      entries.additionalProperties: entries.additionalProperties
+    hosts:
+    - https://androiddeviceprovisioning.googleapis.com
+    topics:
+    - partners
+- group: android-device-provisioning-partner-v1
+  url_pattern: /v1/partners/{partnerId}/customers
+  method: GET
+  host:
+  - https://androiddeviceprovisioning.googleapis.com
+  url_keys:
+  - partnerId
+  whitelist:
+  - customers
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Automates reseller integration into zero-touch enrollment by assigning
+      devices to customers and creating device reports.
+    version: v1
+    slug: android-device-provisioning-partner-v1-v1-partners-partnerid-customers
+    schemes:
+    - https
+    mapping:
+      customers: customers
+    hosts:
+    - https://androiddeviceprovisioning.googleapis.com
+    topics:
+    - partners
+- group: android-device-provisioning-partner-v1
+  url_pattern: /v1/partners/{partnerId}/devices:claim
+  method: POST
+  host:
+  - https://androiddeviceprovisioning.googleapis.com
+  url_keys:
+  - partnerId
+  whitelist:
+  - deviceId
+  - deviceName
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Automates reseller integration into zero-touch enrollment by assigning
+      devices to customers and creating device reports.
+    version: v1
+    slug: android-device-provisioning-partner-v1-v1-partners-partnerid-devices-claim
+    schemes:
+    - https
+    mapping:
+      deviceId: deviceId
+      deviceName: deviceName
+    hosts:
+    - https://androiddeviceprovisioning.googleapis.com
+    topics:
+    - partners
+- group: android-device-provisioning-partner-v1
+  url_pattern: /v1/partners/{partnerId}/devices:claimAsync
+  method: POST
+  host:
+  - https://androiddeviceprovisioning.googleapis.com
+  url_keys:
+  - partnerId
+  whitelist:
+  - done
+  - metadata
+  - name
+  - response
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Automates reseller integration into zero-touch enrollment by assigning
+      devices to customers and creating device reports.
+    version: v1
+    slug: android-device-provisioning-partner-v1-v1-partners-partnerid-devices-claimasync
+    schemes:
+    - https
+    mapping:
+      done: done
+      metadata: metadata
+      name: name
+      response: response
+    hosts:
+    - https://androiddeviceprovisioning.googleapis.com
+    topics:
+    - partners
+- group: android-device-provisioning-partner-v1
+  url_pattern: /v1/partners/{partnerId}/devices:findByIdentifier
+  method: POST
+  host:
+  - https://androiddeviceprovisioning.googleapis.com
+  url_keys:
+  - partnerId
+  whitelist:
+  - devices
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Automates reseller integration into zero-touch enrollment by assigning
+      devices to customers and creating device reports.
+    version: v1
+    slug: android-device-provisioning-partner-v1-v1-partners-partnerid-devices-findbyidentifier
+    schemes:
+    - https
+    mapping:
+      devices: devices
+      nextPageToken: nextPageToken
+    hosts:
+    - https://androiddeviceprovisioning.googleapis.com
+    topics:
+    - partners
+- group: android-device-provisioning-partner-v1
+  url_pattern: /v1/partners/{partnerId}/devices:findByOwner
+  method: POST
+  host:
+  - https://androiddeviceprovisioning.googleapis.com
+  url_keys:
+  - partnerId
+  whitelist:
+  - devices
+  - nextPageToken
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Automates reseller integration into zero-touch enrollment by assigning
+      devices to customers and creating device reports.
+    version: v1
+    slug: android-device-provisioning-partner-v1-v1-partners-partnerid-devices-findbyowner
+    schemes:
+    - https
+    mapping:
+      devices: devices
+      nextPageToken: nextPageToken
+    hosts:
+    - https://androiddeviceprovisioning.googleapis.com
+    topics:
+    - partners
+- group: android-device-provisioning-partner-v1
+  url_pattern: /v1/partners/{partnerId}/devices:unclaim
+  method: POST
+  host:
+  - https://androiddeviceprovisioning.googleapis.com
+  url_keys:
+  - partnerId
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Automates reseller integration into zero-touch enrollment by assigning
+      devices to customers and creating device reports.
+    version: v1
+    slug: android-device-provisioning-partner-v1-v1-partners-partnerid-devices-unclaim
+    schemes:
+    - https
+    hosts:
+    - https://androiddeviceprovisioning.googleapis.com
+    topics:
+    - partners
+- group: android-device-provisioning-partner-v1
+  url_pattern: /v1/partners/{partnerId}/devices:unclaimAsync
+  method: POST
+  host:
+  - https://androiddeviceprovisioning.googleapis.com
+  url_keys:
+  - partnerId
+  whitelist:
+  - done
+  - metadata
+  - name
+  - response
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Automates reseller integration into zero-touch enrollment by assigning
+      devices to customers and creating device reports.
+    version: v1
+    slug: android-device-provisioning-partner-v1-v1-partners-partnerid-devices-unclaimasync
+    schemes:
+    - https
+    mapping:
+      done: done
+      metadata: metadata
+      name: name
+      response: response
+    hosts:
+    - https://androiddeviceprovisioning.googleapis.com
+    topics:
+    - partners
+- group: android-device-provisioning-partner-v1
+  url_pattern: /v1/partners/{partnerId}/devices:updateMetadataAsync
+  method: POST
+  host:
+  - https://androiddeviceprovisioning.googleapis.com
+  url_keys:
+  - partnerId
+  whitelist:
+  - done
+  - metadata
+  - name
+  - response
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Automates reseller integration into zero-touch enrollment by assigning
+      devices to customers and creating device reports.
+    version: v1
+    slug: android-device-provisioning-partner-v1-v1-partners-partnerid-devices-updatemetadataasync
+    schemes:
+    - https
+    mapping:
+      done: done
+      metadata: metadata
+      name: name
+      response: response
+    hosts:
+    - https://androiddeviceprovisioning.googleapis.com
+    topics:
+    - partners
+- group: android-device-provisioning-partner-v1
+  url_pattern: /v1/{name}
+  method: GET
+  host:
+  - https://androiddeviceprovisioning.googleapis.com
+  url_keys:
+  - name
+  whitelist:
+  - claims
+  - configuration
+  - deviceId
+  - name
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Automates reseller integration into zero-touch enrollment by assigning
+      devices to customers and creating device reports.
+    version: v1
+    slug: android-device-provisioning-partner-v1-v1-name
+    schemes:
+    - https
+    mapping:
+      claims: claims
+      configuration: configuration
+      deviceId: deviceId
+      name: name
+    hosts:
+    - https://androiddeviceprovisioning.googleapis.com
+    topics:
+    - partners
+- group: android-device-provisioning-partner-v1
+  url_pattern: /v1/{parent}/customers
+  method: POST
+  host:
+  - https://androiddeviceprovisioning.googleapis.com
+  url_keys:
+  - parent
+  whitelist:
+  - adminEmails
+  - companyId
+  - companyName
+  - name
+  - ownerEmails
+  concurrent_calls: 1
+  extra_config:
+    provider: googleapis.com
+    description: Automates reseller integration into zero-touch enrollment by assigning
+      devices to customers and creating device reports.
+    version: v1
+    slug: android-device-provisioning-partner-v1-v1-parent-customers
+    schemes:
+    - https
+    mapping:
+      adminEmails: adminEmails
+      companyId: companyId
+      companyName: companyName
+      name: name
+      ownerEmails: ownerEmails
+    hosts:
+    - https://androiddeviceprovisioning.googleapis.com
+    topics:
+    - partners
