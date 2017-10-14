@@ -1,0 +1,49 @@
+doctype html
+html(lang="ja", xhtml="http://www.w3.org/1999/xhtml")
+    head
+        include includes/head.pug
+    body
+        include includes/header.pug
+        .container.main-body
+            #wrapper
+                h3 Generate gRPC Proto file from JSON REST
+                form.form-group(method='POST', action='/proto')
+                    h5 gRPC Service Name
+                    input.form-control(id='service')
+                    h5 Proto File Package Name
+                    input.form-control(id='pkg')
+                    br
+                    div.card.container
+                        h5 RPC Name
+                        input.form-control(id='rpc')
+                        h5 RPC Mode
+                        select.selectpicker#rpc_mode
+                            option(value='1') Normal
+                            option(value='2') Server Side Stream
+                            option(value='3') Client Side Stream
+                            option(value='4') Bidirectional Stream
+                        div.left
+                            h5 Request JSON Name
+                            input.form-control.box-left(id='reqname')
+                            h5 Request JSON Body
+                            textarea.form-control.box-left(id='reqbody')
+                        div.left
+                            h5.left-margin1 Response JSON Name
+                            input.form-control.box-right(id='resname')
+                            h5.left-margin1 Response JSON Body
+                            textarea.form-control.box-right(id='resbody')
+                    br
+                    input.form-control.add-btn.btn.btn-success(type='button', id='add', value='Add RPC', onClick='')
+                    br
+                    br
+                    input.form-control.btn.btn-primary(type='button', id='gen', name='send', value='generate')
+                h5 Proto File Output
+                form.form-group
+                    textarea.form-control(id='proto-file', readonly='true')
+        p
+            center
+                a(href='http://github.com/kpango/jrpc') github.com/kpango/jrpc
+        footer.footer
+            center
+                small © 2017 kpango
+

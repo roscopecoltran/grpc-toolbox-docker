@@ -1,0 +1,8 @@
+package: github.com/kpango/jrpc
+import:
+- package: github.com/kpango/gache
+- package: github.com/kpango/glog
+  repo: https://github.com/kpango/glg.git
+  vcs: git
+- package: github.com/kpango/gouter
+- package: github.com/pkg/profile

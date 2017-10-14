@@ -2,13 +2,8 @@
 # Install CRANE binary: $ go get -v github.com/michaelsauter/crane
 services:
 
-  # Notes:
-  #  - From LOCAL:
-  #    - [TO DO]
-  #  - From DOCKER CONTAINER:
-  #    - $ letmegrpc --addr=$SERVICE_ADDRESS --httpaddr=0.0.0.0:8080 --proto_path=/var/letmegrpc/protos /var/letmegrpc/protos/$PROTO_FILE
-  dev:
-    container_name: letmegrpc-alpine
+  letmegrpc_dev:
+    container_name: letmegrpc_dev-alpine
     build:
       context: .
       file: "letmegrpc-alpine.dockerfile"
@@ -28,11 +23,42 @@ services:
     - etcd1
     command: ["/bin/bash"]
 
+  jrpc_dev:
+    container_name: jrpc_dev-alpine
+    build:
+      context: .
+      file: "letmegrpc-alpine.dockerfile"
+    rm: true
+    interactive: true
+    tty: true
+    ports:
+    - 8083:8083
+    #volume:
+    #- "$PWD/shared/data/protos:/data/letmegrpc/protos"
+    requires:
+    - etcd1
+    links:
+    - etcd1
+    command: ["/bin/bash"]
+
+  # grpc_toolbox:
+  #  container_name: grpc-toolbox
+  #  build:
+  #    context: .
+  #    file: "letmegrpc-alpine.dockerfile"
+  #  ports:
+  #  - 8083:8083
+  #  requires:
+  #  - etcd1
+  #  links:
+  #  - etcd1
+  #  command: ["grpc-toolbox"]
+
   # Notes:
   #  - From LOCAL:
   #    - $ open http://localhost:8080/TestService/Foo
   #    - $ open http://localhost:8080/Scraper/Engine
-  server_alpine:
+  letmegrpc_alpine:
     container_name: letmegrpc-alpine
     build:
       context: .
@@ -72,7 +98,7 @@ services:
     - etcd1
     # command: ["letmegrpc", "--addr=$SERVICE_ADDRESS", "--httpaddr=0.0.0.0:8080", "--proto_path=/var/letmegrpc/protos", "/var/letmegrpc/protos/$PROTO_FILE"]
 
-  letmegrpc_etcd1:
+  etcd1:
     image: quay.io/coreos/etcd:v3.2.4
     hostname: etcd1
     container_name: letmegrpc-etcd1
@@ -95,13 +121,18 @@ services:
 
 groups:
   default:
-  - dev
+  # - grpc_toolbox
+  - letmegrpc_alpine 
+  - etcd1
+  dev:
+  - letmegrpc_dev
+  - jrpc_dev
   - etcd1
   ubuntu:
-  - server_ubuntu
+  - letmegrpc__ubuntu
   - etcd1
   alpine: 
-  - server_alpine 
+  - letmegrpc_alpine 
   - etcd1
 
 accelerated-mounts:

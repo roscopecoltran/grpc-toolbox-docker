@@ -2,18 +2,12 @@
 version: '3'
 services:
 
-  protos:
-    image: tianon/true
-    container_name: grpc-data
-    volumes:
-    - "./shared/data/protos:/data/letmegrpc/protos"
-
   # Notes:
   #  - From LOCAL:
   #    - [TO DO]
   #  - From DOCKER CONTAINER:
   #    - $ letmegrpc --addr=$SERVICE_ADDRESS --httpaddr=0.0.0.0:8080 --proto_path=/var/letmegrpc/protos /var/letmegrpc/protos/$PROTO_FILE
-  dev:
+  letmegrpc_dev:
     container_name: letmegrpc-alpine
     build:
       context: .
@@ -23,8 +17,8 @@ services:
     - SERVICE_ADDRESS=localhost:8888
     ports:
     - 8080:8080
-    volumes_from:
-    - protos
+    volumes:
+    - "./shared/data/protos:/data/letmegrpc/protos"
     depends_on:
     - etcd1
     links:
@@ -35,7 +29,7 @@ services:
   #  - From LOCAL:
   #    - $ open http://localhost:8080/TestService/Foo
   #    - $ open http://localhost:8080/Scraper/Engine
-  server_alpine:
+  letmegrpc_alpine:
     container_name: letmegrpc-alpine
     build:
       context: .
@@ -45,8 +39,8 @@ services:
     - SERVICE_ADDRESS=localhost:8888
     ports:
     - 8080:8080
-    volumes_from:
-    - protos
+    volumes:
+    - "./shared/data/protos:/data/letmegrpc/protos"
     depends_on:
     - etcd1
     links:
@@ -57,7 +51,7 @@ services:
   #  - From LOCAL:
   #    - $ open http://localhost:8080/TestService/Foo
   #    - $ open http://localhost:8080/Scraper/Engine
-  server_ubuntu:
+  letmegrpc_ubuntu:
     container_name: letmegrpc-ubuntu
     build:
       context: .
@@ -67,13 +61,41 @@ services:
     - SERVICE_ADDRESS=localhost:8888
     ports:
     - 8080:8080
-    volumes_from:
-    - protos
+    volumes:
+    - "./shared/data/protos:/data/letmegrpc/protos"
     depends_on:
     - etcd1
     links:
     - etcd1
     # command: ["letmegrpc", "--addr=$SERVICE_ADDRESS", "--httpaddr=0.0.0.0:8080", "--proto_path=/var/letmegrpc/protos", "/var/letmegrpc/protos/$PROTO_FILE"]
+
+  jrpc_dev:
+    container_name: jrpc_dev-alpine
+    build:
+      context: .
+      dockerfile: "jrpc-alpine.dockerfile"
+    ports:
+    - 8083:8083
+    #volume:
+    #- "$PWD/shared/data/protos:/data/jrpc/protos"
+    depends_on:
+    - etcd1
+    links:
+    - etcd1
+    command: ["/bin/bash"]
+
+  # grpc_toolbox:
+  #  container_name: grpc-toolbox
+  #  build:
+  #    context: .
+  #    dockerfile: "letmegrpc-alpine.dockerfile"
+  #  ports:
+  #  - 8083:8083
+  #  depends_on:
+  #  - etcd1
+  #  links:
+  #  - etcd1
+  #  command: ["grpc-toolbox"]
 
   etcd1:
     image: quay.io/coreos/etcd:v3.2.4
@@ -83,7 +105,7 @@ services:
     - "2379:2379"
     - "2380:2380"
     volumes:
-    - ./shared/data/etcd/unit_1:/etcd-data
+    - ./shared/etcd/unit_1:/etcd-data
     restart: always
     environment:
     - ETCD_NAME=etcd1

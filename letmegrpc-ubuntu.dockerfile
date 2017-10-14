@@ -1,6 +1,10 @@
 FROM golang
 MAINTAINER Rudolf Pliva rpliva@seznam.cz
 
+# notes: mainly focused on protobuf v3.x (features protoc generator, ...)
+# build: docker build -t letmegrpc:ubuntu14 -f letmegrpc-ubuntu.dockerfile --no-cache .
+# run: docker run --rm -ti -p 3000:3000 -v `pwd`:/app letmegrpc:ubuntu14
+
 # install protobuf
 RUN apt-get update && apt-get install curl unzip -y 
 RUN curl -OL https://github.com/google/protobuf/releases/download/v3.0.0/protoc-3.0.0-linux-x86_64.zip \

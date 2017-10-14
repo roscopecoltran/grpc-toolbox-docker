@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja" xhtml="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta content="JSON REST to gRPC proto Convertor" name="description">
+    <meta content="go, golang, json, protobuf, protoc, grpc, http2" name="keywords">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Yusuke Kato" name="author">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link href="http://netdna.bootstrapcdn.com/bootswatch/3.0.0/spacelab/bootstrap.min.css" media="screen" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>json rest to grpc proto convertor</title>
+    <div class="container">
+      <div class="navbar navbar-default navbar-top" style="margin-bottom: 0px !important;">
+        <div class="navbar-header">
+          <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="http://kpango.net">Home</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="http://kpango.net/categories">Category List</a></li>
+            <li><a href="http://kpango.net/projects">My Projects</a></li>
+            <li><a href="http://kpango.net/notes">Notes</a></li>
+            <li><a href="http://kpango.net/hacks">Hacks</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right visible-xs">
+            <li><a href="http://github.com/kpango">Github</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="page-header" style="margin-top: 0px !important;"><img src="img/gopher.jpg" style="padding:5px 15px 15px; float:left; width:8%;"><a href="https://kpango.net">
+            <h1>kpango.net</h1></a><small>I'm an software engineer of Yahoo!JAPAN who loves go, Rust and Nim</small></div>
+      </div>
+    </header>
+    <div class="container main-body">
+      <div id="wrapper">
+        <h3>Generate gRPC Proto file from JSON REST</h3>
+        <form class="form-group" method="POST" action="/proto">
+          <h5>gRPC Service Name</h5>
+          <input class="form-control" id="service">
+          <h5>Proto File Package Name</h5>
+          <input class="form-control" id="pkg"><br>
+          <div class="card container">
+            <h5>RPC Name</h5>
+            <input class="form-control" id="rpc">
+            <h5>RPC Mode</h5>
+            <select class="selectpicker" id="rpc_mode">
+              <option value="1">Normal</option>
+              <option value="2">Server Side Stream</option>
+              <option value="3">Client Side Stream</option>
+              <option value="4">Bidirectional Stream</option>
+            </select>
+            <div class="left">
+              <h5>Request JSON Name</h5>
+              <input class="form-control box-left" id="reqname">
+              <h5>Request JSON Body</h5>
+              <textarea class="form-control box-left" id="reqbody"></textarea>
+            </div>
+            <div class="left">
+              <h5 class="left-margin1">Response JSON Name</h5>
+              <input class="form-control box-right" id="resname">
+              <h5 class="left-margin1">Response JSON Body</h5>
+              <textarea class="form-control box-right" id="resbody"></textarea>
+            </div>
+          </div><br>
+          <input class="form-control add-btn btn btn-success" type="button" id="add" value="Add RPC" onClick=""><br><br>
+          <input class="form-control btn btn-primary" type="button" id="gen" name="send" value="generate">
+        </form>
+        <h5>Proto File Output</h5>
+        <form class="form-group">
+          <textarea class="form-control" id="proto-file" readonly="true"></textarea>
+        </form>
+      </div>
+    </div>
+    <p>
+      <center><a href="http://github.com/kpango/jrpc">github.com/kpango/jrpc</a></center>
+    </p>
+    <footer class="footer">
+      <center><small>© 2017 kpango</small></center>
+    </footer>
+  </body>
+</html>

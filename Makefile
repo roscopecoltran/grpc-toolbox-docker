@@ -17,16 +17,21 @@ ARCH := amd64
 ### DOCKER_COMPOSE ##################################################################################################
 .PHONY: compose-dev
 compose-dev:
-	@docker-compose up dev
+	@docker-compose up letmegrpc_dev jrpc_dev
+
+.PHONY: compose-letmegrpc-dev
+compose-letmegrpc-dev:
+	@docker-compose up letmegrpc_dev
 
 .PHONY: compose-alpine
-compose-alpine:
-	@docker-compose up server_alpine
+compose-letmegrpc-alpine:
+	@docker-compose up letmegrpc_alpine
 
 .PHONY: compose-ubuntu
-compose-ubuntu:
-	@docker-compose up server_ubuntu
+compose-letmegrpc-ubuntu:
+	@docker-compose up letmegrpc_ubuntu
 
+# to clean and check later... ^^
 ### CRANE ###########################################################################################################
 .PHONY: crane
 crane:
