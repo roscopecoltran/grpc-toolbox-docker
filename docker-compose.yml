@@ -41,6 +41,9 @@ services:
     # command: ["letmegrpc", "--addr=$SERVICE_ADDRESS", "--httpaddr=0.0.0.0:8080", "--proto_path=/data/letmegrpc/protos", "/data/letmegrpc/protos/$PROTO_FILE"]
     # $ letmegrpc --addr=$SERVICE_ADDRESS --httpaddr=0.0.0.0:8080 --proto_path=/data/letmegrpc/protos /data/letmegrpc/protos/$PROTO_FILE
 
+  # Notes:
+  #  - From LOCAL:
+  #    - $ open http://localhost:8083/
   # refs:
   #  - https://github.com/kpango/jrpc
   jrpc_dist:
@@ -57,7 +60,7 @@ services:
     - etcd1
     links:
     - etcd1
-    command: ["jrpc-web"]
+    command: ["/app/jrpc-web"]
 
   # Notes:
   #  - From LOCAL:
@@ -104,6 +107,11 @@ services:
     - etcd1
     # command: ["letmegrpc", "--addr=$SERVICE_ADDRESS", "--httpaddr=0.0.0.0:8080", "--proto_path=/var/letmegrpc/protos", "/var/letmegrpc/protos/$PROTO_FILE"]
 
+  # Notes:
+  #  - From LOCAL:
+  #    - $ open http://localhost:8083/
+  # refs:
+  #  - https://github.com/kpango/jrpc
   jrpc_dev:
     container_name: jrpc_dev-alpine
     build:
@@ -113,28 +121,15 @@ services:
     - 8083:8083
     env_file: .env
     volumes:
+    - "$PWD/src:/go/src"
     - "$PWD/shared/testdata/protos:/data/jrpc/protos"
     depends_on:
     - etcd1
     links:
     - etcd1
-    command: ["/bin/bash"]
-
-  jrpc_dist:
-    container_name: jrpc-alpine
-    build:
-      context: .
-      dockerfile: "jrpc-alpine.dockerfile"
-    ports:
-    - 8083:8083
-    env_file: .env
-    volumes:
-    - "$PWD/shared/testdata/protos:/data/jrpc/protos"
-    depends_on:
-    - etcd1
-    links:
-    - etcd1
-    command: ["/bin/bash"]
+    # command: ["/bin/bash"]
+    command: ["go", "run", "web/main.go"]
+    # command: ["/app/jrpc-web"]
 
   etcd1:
     image: quay.io/coreos/etcd:v3.2.4

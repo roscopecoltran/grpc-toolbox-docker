@@ -9,11 +9,15 @@ import (
 	"github.com/kpango/gache"
 	glog "github.com/kpango/glog"
 	"github.com/kpango/jrpc"
+	"github.com/kpango/jrpc/web/config"
 	"github.com/kpango/jrpc/web/model"
 )
 
 func JRPC(w http.ResponseWriter, r *http.Request) {
-	http.ServeFile(w, r, "public/"+r.URL.Path[1:])
+	publicDir := fmt.Sprintf("%s/%s", config.FrontEndPrefixPath, r.URL.Path[1:])
+	fmt.Printf("publicDir: %s\n", publicDir)
+	http.ServeFile(w, r, publicDir)
+	//http.ServeFile(w, r, "public/"+r.URL.Path[1:])
 }
 
 func Index(w http.ResponseWriter, r *http.Request) {

@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/kpango/glog"
+	glog "github.com/kpango/glog"
 )
 
 type gouter struct {

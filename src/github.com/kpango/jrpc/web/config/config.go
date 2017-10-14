@@ -9,6 +9,10 @@ const (
 	// Server Port
 	ServerPort = ":8083"
 
+	// Prefix Path holding the WEB UI static files
+	FrontEndPrefixPath = "/go/src/github.com/kpango/jrpc/web/public"
+	// FrontEndPrefixPath = "."
+
 	// log related settings
 	LogFilePath = "/data/logs/jrpc/api.log"
 	LogPerm     = 0755
