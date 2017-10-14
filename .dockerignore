@@ -13,6 +13,21 @@ config.default.ini
 dist/grawler
 dist/scraper-*
 
+shared/data/swagger
+shared/data/swagger/
+shared/data/swagger/**
+
+backends.json
+backends.toml
+backends.yaml
+
+flatten.json
+flatten.toml
+flatten.yaml
+
+swagger.json
+swagger.yaml
+
 proto/
 
 # Folders
@@ -217,6 +232,10 @@ shared/data/grafana/lib
 shared/data/grafana/log
 
 shared/data/etcd/member
+
+src/github.com/mozilla-services/react-jsonschema-form/node_modules
+src/github.com/mozilla-services/react-jsonschema-form/node_modules/
+src/github.com/mozilla-services/react-jsonschema-form/node_modules/**
 
 node_modules
 node_modules/

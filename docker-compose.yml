@@ -85,7 +85,7 @@ services:
     command: ["letmegrpc", "--addr=${SERVICE_ADDRESS}", "--httpaddr=0.0.0.0:8080", "--proto_path=/data/letmegrpc/protos", "/data/letmegrpc/protos/${PROTO_FILE}"]
     # command: ["/bin/bash"]
     # command: ["letmegrpc", "--addr=$SERVICE_ADDRESS", "--httpaddr=0.0.0.0:8080", "--proto_path=/data/letmegrpc/protos", "/data/letmegrpc/protos/$PROTO_FILE"]
-    # 
+
 
   # Notes:
   #  - From LOCAL:
@@ -130,6 +130,25 @@ services:
     # command: ["/bin/bash"]
     command: ["go", "run", "web/main.go"]
     # command: ["/app/jrpc-web"]
+
+  rjsf_dev:
+    container_name: rjsf_dev-alpine
+    build:
+      context: .
+      dockerfile: "react-jsonschema-form-alpine.dockerfile"
+    ports:
+    - 3008:3008
+    environment:
+    - RJSF_DEV_SERVER=localhost:3008
+    # - NODE_ENV=production
+    # - NODE_PATH=/data/node_modules # ref. https://stackoverflow.com/questions/26293049/specify-path-to-node-modules-in-package-json
+    volumes:
+    - "$PWD/src/github.com/mozilla-services/react-jsonschema-form:/nodejs/src/github.com/mozilla-services/react-jsonschema-form"
+    - "$PWD/shared/dist/rjsf:/data/build"
+    - "$PWD/shared/testdata/jsonschema:/data/rjsf/jsonschema"
+    working_dir: /nodejs/src/github.com/mozilla-services/react-jsonschema-form
+    command: ["/scripts/build-rjsf.sh", "rebuild-all"]
+    # command: ["/scripts/build-rjsf.sh", "rebuild-bash-all"]
 
   etcd1:
     image: quay.io/coreos/etcd:v3.2.4

@@ -37,6 +37,10 @@ cmd/ng-admin/static/node_modules
 cmd/ng-admin/static/node_modules/
 cmd/ng-admin/static/node_modules/**
 
+src/github.com/mozilla-services/react-jsonschema-form/node_modules
+src/github.com/mozilla-services/react-jsonschema-form/node_modules/
+src/github.com/mozilla-services/react-jsonschema-form/node_modules/**
+
 bower_components
 bower_components/
 bower_components/**
